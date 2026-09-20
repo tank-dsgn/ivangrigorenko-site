@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  /* Брейкпоинты сайта: mobile < 800, tablet 800–1279, desktop >= 1280 */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 800px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Палитра (slate + indigo из оригинала) */
+  --color-ink: #0f172a;        /* slate-900 — заголовки */
+  --color-body: #475569;       /* slate-600 — описания */
+  --color-body-strong: #334155;/* slate-700 — подзаголовок в футере */
+  --color-muted: #64748b;      /* slate-500 — теги, неактивная навигация */
+  --color-faint: #94a3b8;      /* slate-400 — иконки соцсетей */
+  --color-surface: #f1f5f9;    /* slate-100 — подложка карточки */
+  --color-accent: #4f46e5;     /* indigo-600 — акцент */
+  --color-accent-soft: #6366f1;/* indigo-500 — бургер */
+
+  --shadow-card: 0 8px 20px 0 rgb(0 0 0 / 0.1);
+  --shadow-card-hover: 0 16px 32px 0 rgb(0 0 0 / 0.14);
+
+  --ease-figma: cubic-bezier(0, 0, 0.58, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
