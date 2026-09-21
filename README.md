@@ -10,6 +10,18 @@
 - Tailwind CSS 4 (CSS-first, без `tailwind.config`)
 - Деплой на Vercel
 
+## Деплой
+
+Репозиторий подключён к Vercel-проекту `ivangrigorenko-site` (команда Tank-dsgn).
+Push в `main` автоматически выкатывает прод на https://ivangrigorenko-site.vercel.app,
+push в любую другую ветку создаёт preview-деплой.
+
+Ручной деплой, если он зачем-то понадобится:
+
+```bash
+npx vercel@latest deploy --prod
+```
+
 ## Запуск
 
 Node лежит в `~/.local/node/bin` и не входит в PATH по умолчанию:
