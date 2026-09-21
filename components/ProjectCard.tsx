@@ -1,34 +1,32 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Project } from "@/lib/projects";
+import { caseHref, type Project } from "@/lib/content/home";
+import type { Lang } from "@/lib/site";
 
 export default function ProjectCard({
   project,
+  lang,
   priority = false,
 }: {
   project: Project;
+  lang: Lang;
   priority?: boolean;
 }) {
-  const { href, tag, tagNarrow, title, description, image, backdrop, zoom, mobileImageHeight } =
+  const { slug, tag, tagNarrow, title, description, image, backdrop, zoom, mobileImageHeight } =
     project;
 
   return (
     <Link
-      href={href}
-      // страниц кейсов пока нет — убрать, когда появятся
-      prefetch={false}
+      href={caseHref(slug, lang)}
       className="group shadow-card focus-visible:outline-accent block overflow-hidden rounded-xl bg-white focus-visible:outline-2 focus-visible:outline-offset-2 xl:rounded-3xl"
     >
       <div className="flex flex-col md:h-80 md:flex-row xl:h-100">
-        {/* Панель с картинкой: слева на планшете и десктопе, сверху на телефоне */}
         <div
           className="relative h-[var(--img-h)] shrink-0 overflow-hidden md:h-full md:w-96 xl:w-[548px]"
           style={
             {
               background: backdrop,
-              // высота панели на телефоне; с md её задаёт h-full
               "--img-h": `${mobileImageHeight ?? 240}px`,
-              // базовое кадрирование: cover + зум, повторяющий кроп из Figma
               "--zoom": zoom ?? 1,
             } as React.CSSProperties
           }
@@ -43,7 +41,6 @@ export default function ProjectCard({
           />
         </div>
 
-        {/* Текстовая панель */}
         <div className="flex flex-1 flex-col px-5 pt-4 pb-10 md:p-6">
           <p className="text-muted text-[12px] leading-4 uppercase xl:text-[14px] xl:leading-5">
             {tagNarrow ? (

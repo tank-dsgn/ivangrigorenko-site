@@ -1,6 +1,6 @@
-import { redirect } from "next/navigation";
+import HomePage from "@/components/HomePage";
 
-// Корень пока ведёт на русскую главную — английская версия будет отдельной страницей
-export default function Root() {
-  redirect("/home-ru");
+// Корень сайта — английская главная, как в оригинале
+export default function HomeEn() {
+  return <HomePage lang="en" />;
 }
