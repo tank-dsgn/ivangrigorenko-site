@@ -28,6 +28,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
+ * Сгенерированная из Figma вёрстка задаёт картинкам точные размеры из макета.
+ * Сброс Tailwind (img { max-width: 100% }) их обрезает, поэтому здесь он снят.
+ */
+.figma-page img {
+  max-width: none;
+}
+
 body {
   background: #fff;
   -webkit-font-smoothing: antialiased;
