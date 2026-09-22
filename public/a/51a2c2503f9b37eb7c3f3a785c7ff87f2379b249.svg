@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="18" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 18 18" width="18">
+<g clip-path="url(#clip0_0_47788)" id="Frame 77481949">
+<circle cx="9" cy="9" fill="var(--fill-0, #039844)" id="Ellipse 6" r="9"/>
+<g clip-path="url(#clip1_0_47788)" id="sun">
+<path d="M8.99935 3.16699V4.33366M8.99935 13.667V14.8337M4.87528 4.87626L5.69779 5.69876M12.3011 12.3021L13.1236 13.1246M3.16602 9.00033H4.33268M13.666 9.00033H14.8327M5.69779 12.3021L4.87528 13.1246M13.1236 4.87626L12.3011 5.69876M11.3327 9.00033C11.3327 10.289 10.288 11.3337 8.99935 11.3337C7.71068 11.3337 6.66602 10.289 6.66602 9.00033C6.66602 7.71166 7.71068 6.66699 8.99935 6.66699C10.288 6.66699 11.3327 7.71166 11.3327 9.00033Z" id="Vector" stroke="var(--stroke-0, white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.16667"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_47788">
+<rect fill="white" height="18" width="18"/>
+</clipPath>
+<clipPath id="clip1_0_47788">
+<rect fill="white" height="14" transform="translate(2 2)" width="14"/>
+</clipPath>
+</defs>
+</svg>

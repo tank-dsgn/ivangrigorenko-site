@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="18.6667" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 18.6667 18.6667" width="18.6667">
+<g id="sun">
+<path d="M9.33255 1.55583V3.11139M9.33255 15.5558V17.1114M3.8338 3.83486L4.93046 4.93153M13.7349 13.736L14.8316 14.8326M1.55477 9.33361H3.11033M15.5548 9.33361H17.1103M4.93046 13.736L3.8338 14.8326M14.8316 3.83486L13.7349 4.93153M12.4437 9.33361C12.4437 11.0518 11.0508 12.4447 9.33255 12.4447C7.61433 12.4447 6.22144 11.0518 6.22144 9.33361C6.22144 7.61539 7.61433 6.2225 9.33255 6.2225C11.0508 6.2225 12.4437 7.61539 12.4437 9.33361Z" id="Vector" stroke="var(--stroke-0, white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.55556"/>
+</g>
+</svg>

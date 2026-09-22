@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="38" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 315 38" width="315">
+<path d="M0 35C0 15.67 15.67 0 35 0H280C299.33 0 315 15.67 315 35V38H0V35Z" fill="url(#paint0_linear_0_47471)" id="Rectangle 3215"/>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_0_47471" x1="157.5" x2="157.5" y1="24.5" y2="0">
+<stop stop-opacity="0"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>

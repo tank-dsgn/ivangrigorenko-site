@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="430.824" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 488.464 430.824" width="488.464">
+<g id="Backgound Glow Effects" opacity="0.3">
+<g filter="url(#filter0_f_0_47546)" id="Glow Effect">
+<circle cx="98.7768" cy="214.698" fill="url(#paint0_linear_0_47546)" fill-opacity="0.94" r="19.587"/>
+</g>
+<g filter="url(#filter1_f_0_47546)" id="Glow Effect_2" opacity="0.3">
+<rect fill="var(--fill-0, #5DCCEF)" fill-opacity="0.75" height="144.609" rx="2.97902" transform="rotate(-18.2148 161.966 239.577)" width="239.409" x="161.966" y="239.577"/>
+</g>
+<g filter="url(#filter2_f_0_47546)" id="Glow Effect_3" opacity="0.11">
+<circle cx="88.9982" cy="88.9982" fill="var(--fill-0, #3758F9)" r="29.4178"/>
+</g>
+</g>
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="158.335" id="filter0_f_0_47546" width="158.335" x="19.6095" y="135.531">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+<feGaussianBlur result="effect1_foregroundBlur_0_47546" stdDeviation="29.7902"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="319.965" id="filter1_f_0_47546" width="380.382" x="108.082" y="110.859">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+<feGaussianBlur result="effect1_foregroundBlur_0_47546" stdDeviation="27.3325"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="177.996" id="filter2_f_0_47546" width="177.996" x="0" y="0">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+<feGaussianBlur result="effect1_foregroundBlur_0_47546" stdDeviation="29.7902"/>
+</filter>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_0_47546" x1="79.1898" x2="118.364" y1="214.698" y2="214.698">
+<stop stop-color="#E0C3FC"/>
+<stop offset="1" stop-color="#8EC5FC"/>
+</linearGradient>
+</defs>
+</svg>

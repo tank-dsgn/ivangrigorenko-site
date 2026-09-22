@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="14" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 14 14" width="14">
+<path d="M7 0L0.349209 5.70068C0.127563 5.89066 0 6.16801 0 6.45993V7C0 7.55228 0.447715 8 1 8V13C1 13.5523 1.44772 14 2 14H4C4.55228 14 5 13.5523 5 13V9H9V13C9 13.5523 9.44772 14 10 14H12C12.5523 14 13 13.5523 13 13V8C13.5523 8 14 7.55228 14 7V6.45993C14 6.16801 13.8724 5.89066 13.6508 5.70068L7 0Z" fill="var(--fill-0, #94A4C0)" id="vector"/>
+</svg>

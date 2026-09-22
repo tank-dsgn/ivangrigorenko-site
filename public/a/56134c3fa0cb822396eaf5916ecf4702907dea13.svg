@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="500.491" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 447.679 500.491" width="447.679">
+<g filter="url(#filter0_f_0_48674)" id="Glow Effect" opacity="0.11">
+<ellipse cx="223.839" cy="250.245" fill="var(--fill-0, #3758F9)" rx="56.311" ry="82.7171"/>
+</g>
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="500.491" id="filter0_f_0_48674" width="447.679" x="0" y="0">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+<feGaussianBlur result="effect1_foregroundBlur_0_48674" stdDeviation="83.7641"/>
+</filter>
+</defs>
+</svg>

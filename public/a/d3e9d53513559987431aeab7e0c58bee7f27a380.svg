@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 16 16" width="16">
+<g id="vector">
+<path d="M8 0.666667V3.33333" id="Vector" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M13.1853 2.81462L11.3 4.69995" id="Vector_2" opacity="0.9" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M15.3333 8H12.6667" id="Vector_3" opacity="0.8" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M13.1853 13.1853L11.3 11.3" id="Vector_4" opacity="0.7" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M8 15.3333V12.6667" id="Vector_5" opacity="0.6" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M2.8147 13.1853L4.70003 11.3" id="Vector_6" opacity="0.5" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M0.666667 8H3.33333" id="Vector_7" opacity="0.4" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+<path d="M2.8147 2.81462L4.70003 4.69995" id="Vector_8" opacity="0.3" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+</g>
+</svg>

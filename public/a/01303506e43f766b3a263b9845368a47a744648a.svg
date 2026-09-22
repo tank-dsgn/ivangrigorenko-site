@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="15.3333" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 12 15.3333" width="12">
+<path d="M3.33333 2H2C1.26362 2 0.666667 2.59695 0.666667 3.33333V13.3333C0.666667 14.0697 1.26362 14.6667 2 14.6667H10C10.7364 14.6667 11.3333 14.0697 11.3333 13.3333V3.33333C11.3333 2.59695 10.7364 2 10 2H8.66667M5.66667 6.66667H3.33333M8.66667 6.66667H8.33333M4 9.33333H3.33333M3.33333 3.33333V1.33333C3.33333 0.965147 3.63181 0.666667 4 0.666667H8C8.3682 0.666667 8.66667 0.965147 8.66667 1.33333V3.33333H3.33333Z" id="Vector" stroke="var(--stroke-0, black)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1.33333"/>
+</svg>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="6" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 26 6" width="26">
+<g id="Pagination">
+<circle cx="3" cy="3" fill="var(--fill-0, #BFD9BF)" id="Ellipse 134" r="3"/>
+<circle cx="13" cy="3" fill="var(--fill-0, #07873F)" id="Ellipse 135" r="3"/>
+<circle cx="23" cy="3" fill="var(--fill-0, #BFD9BF)" id="Ellipse 136" r="3"/>
+</g>
+</svg>

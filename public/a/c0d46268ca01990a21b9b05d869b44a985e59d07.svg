@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="167.608" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 287 167.608" width="287">
+<g id="overlay">
+<path d="M0 0H287V167.608H0V0Z" fill="url(#paint0_radial_0_47523)" fill-opacity="0.54"/>
+<path d="M0 0H287V167.608H0V0Z" fill="url(#paint1_linear_0_47523)" fill-opacity="0.79"/>
+</g>
+<defs>
+<radialGradient cx="0" cy="0" gradientTransform="translate(143.5 83.804) rotate(90) scale(37.9355 64.9581)" gradientUnits="userSpaceOnUse" id="paint0_radial_0_47523" r="1">
+<stop stop-opacity="0.66"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_0_47523" x1="143.5" x2="143.5" y1="167.608" y2="55.4949">
+<stop/>
+<stop offset="0.45" stop-opacity="0.83"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

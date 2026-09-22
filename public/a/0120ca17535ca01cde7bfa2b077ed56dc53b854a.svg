@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="18" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 22 18" width="22">
+<g id="Vector">
+<path clip-rule="evenodd" d="M3 2C2.44772 2 2 2.44772 2 3V4.38197L11 8.88197L20 4.38197V3C20 2.44771 19.5523 2 19 2H3ZM20 6.61803L11 11.118L2 6.61803V15C2 15.5523 2.44772 16 3 16H19C19.5523 16 20 15.5523 20 15V6.61803ZM0 3C0 1.34315 1.34315 0 3 0H19C20.6569 0 22 1.34315 22 3V15C22 16.6569 20.6569 18 19 18H3C1.34315 18 0 16.6569 0 15V3Z" fill="var(--fill-0, #78716C)" fill-rule="evenodd" id="Vector_2"/>
+</g>
+</svg>
