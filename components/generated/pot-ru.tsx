@@ -10,7 +10,7 @@ export default function PotRu() {
       {/* Mobile — 375px */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "328px", flexShrink: 0, backgroundImage: "linear-gradient(325.6deg, #85d785 0%, #307630 100%)", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-251px", top: "-1px", width: "876.3px", height: "330.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ca6e7e6e19b69b8a354d5cc6ccd927909b14dd3.png)" }} />
+        <div style={{ position: "absolute", left: "-251px", top: "-1px", width: "876.3px", height: "330.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ca6e7e6e19b69b8a354d5cc6ccd927909b14dd3.webp)" }} />
         <div style={{ position: "absolute", left: "0", top: "89px", width: "375px", height: "239px", backgroundImage: "linear-gradient(180deg, rgba(4, 13, 4, 0) 0%, #040d04 100%)" }} />
         <p style={{ position: "absolute", left: "19px", top: "248px", width: "338px", height: "48px", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Мобильное Приложение iOS — UX/UI, Дизайн Система, Прототипирование`}</p>
       </div>
@@ -95,7 +95,7 @@ export default function PotRu() {
                 <div style={{ alignSelf: "stretch", height: "249px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "97px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "97px", flexShrink: 0, background: "#fafaf9", borderRadius: "6.93px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "0", top: "0.75px", width: "77.81px", height: "116.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.png)" }} />
+                      <div style={{ position: "absolute", left: "0", top: "0.75px", width: "77.81px", height: "116.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "72px", display: "flex", flexDirection: "column", gap: "4px" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Анна, 28 лет`}</p>
@@ -109,7 +109,7 @@ export default function PotRu() {
                 <div style={{ alignSelf: "stretch", height: "249px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "97px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "97px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-2px", top: "-2.11px", width: "82.39px", height: "112.71px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.png)" }} />
+                      <div style={{ position: "absolute", left: "-2px", top: "-2.11px", width: "82.39px", height: "112.71px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "52px", display: "flex", flexDirection: "column", gap: "4px" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Дмитрий, 36 лет`}</p>
@@ -123,7 +123,7 @@ export default function PotRu() {
                 <div style={{ alignSelf: "stretch", height: "229px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "97px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "97px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-3.11px", top: "0", width: "82.47px", height: "109px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.png)" }} />
+                      <div style={{ position: "absolute", left: "-3.11px", top: "0", width: "82.47px", height: "109px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "52px", display: "flex", flexDirection: "column", gap: "4px" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Ольга, 45 лет`}</p>
@@ -163,7 +163,7 @@ export default function PotRu() {
           <div style={{ alignSelf: "stretch", height: "257.17px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма флоу`}</p>
             <div style={{ alignSelf: "stretch", height: "229.17px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "16px 16px 16px 16px", background: "#ffffff", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "197.17px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/503bfd92bd993609cc9ec983a993b694283294ce.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "197.17px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/503bfd92bd993609cc9ec983a993b694283294ce.webp)" }} />
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function PotRu() {
             </div>
           </div>
           <img
-            src="/a/2026ad0836de07458436b55ef841cd1db5e6b8cd.png"
+            src="/a/2026ad0836de07458436b55ef841cd1db5e6b8cd.webp"
             alt=""
             aria-hidden="true"
             loading="lazy"
@@ -240,7 +240,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "588px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/38b7df3976944339d73684dde72db224be9f8182.png"
+              src="/a/38b7df3976944339d73684dde72db224be9f8182.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -248,7 +248,7 @@ export default function PotRu() {
               style={{ width: "284.65px", height: "588px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/e0b4df34402aade0e3305b09de46fc0202e441f9.png"
+              src="/a/e0b4df34402aade0e3305b09de46fc0202e441f9.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -263,7 +263,7 @@ export default function PotRu() {
                     <div style={{ alignSelf: "stretch", height: "340.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "18.87px", alignItems: "center" }}>
                       <div style={{ width: "198.12px", height: "218.82px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "4.13px", alignItems: "center" }}>
                         <div style={{ alignSelf: "stretch", height: "218.82px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.08px", alignItems: "center" }}>
-                          <div style={{ width: "162.74px", height: "162.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.png)" }} />
+                          <div style={{ width: "162.74px", height: "162.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
                           <p style={{ alignSelf: "stretch", fontSize: "20.05px", lineHeight: "24.18px", fontWeight: 400, textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
                         </div>
                       </div>
@@ -304,7 +304,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/43da59c133fe0aa597f951c42e1c4fe4e905ca1e.png"
+              src="/a/43da59c133fe0aa597f951c42e1c4fe4e905ca1e.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -312,7 +312,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/ebe2d9dbdc22bf7a4b5a85dc47be1f9336baeac6.png"
+              src="/a/ebe2d9dbdc22bf7a4b5a85dc47be1f9336baeac6.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -320,7 +320,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/e964003387da22690c7188693446100ead9c1b33.png"
+              src="/a/e964003387da22690c7188693446100ead9c1b33.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -328,7 +328,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/ae2c4cbb9cbe75e6502bf6c992b1b473fd15e6a5.png"
+              src="/a/ae2c4cbb9cbe75e6502bf6c992b1b473fd15e6a5.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -336,7 +336,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/58c094e2c8db8833f78f3486b43c7db058f09590.png"
+              src="/a/58c094e2c8db8833f78f3486b43c7db058f09590.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -344,7 +344,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/0d11079dba34f59aa16a6c71f0df406b35e4e573.png"
+              src="/a/0d11079dba34f59aa16a6c71f0df406b35e4e573.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -360,7 +360,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/1bba4bbbaddbaf5b85985c554686b229b4ed8ac3.png"
+              src="/a/1bba4bbbaddbaf5b85985c554686b229b4ed8ac3.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -368,7 +368,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/02dfed51b9ecfd80fc6de30c5e4f78579e0586d2.png"
+              src="/a/02dfed51b9ecfd80fc6de30c5e4f78579e0586d2.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -404,7 +404,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/b7bd5e9d15c94ec30918663523783b0539075e4d.png"
+              src="/a/b7bd5e9d15c94ec30918663523783b0539075e4d.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -412,7 +412,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/98d0dc2bfb1b680a6b3fce9810e4214a4f8ba19f.png"
+              src="/a/98d0dc2bfb1b680a6b3fce9810e4214a4f8ba19f.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -420,7 +420,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/2745f199f23720df77211678dc0f82f68c1f79ed.png"
+              src="/a/2745f199f23720df77211678dc0f82f68c1f79ed.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -436,7 +436,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/07cf55609220f48a3d35eaaaa74e8d50169226ca.png"
+              src="/a/07cf55609220f48a3d35eaaaa74e8d50169226ca.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -444,7 +444,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/063faa86b0babed44842e5f04a488a0d9c00c097.png"
+              src="/a/063faa86b0babed44842e5f04a488a0d9c00c097.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -452,7 +452,7 @@ export default function PotRu() {
               style={{ width: "285.12px", height: "588.97px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/a11b36d2451fc4952d8ac55b791c7ad4f4be57ff.png"
+              src="/a/a11b36d2451fc4952d8ac55b791c7ad4f4be57ff.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -500,10 +500,10 @@ export default function PotRu() {
         </div>
         <div style={{ alignSelf: "stretch", height: "441.32px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
           <div style={{ alignSelf: "stretch", height: "210.59px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "8px 8px 8px 8px", background: "#e4ebe3", borderRadius: "8px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "194.59px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3862147c2b4db453cc083cd1e6d53799a88569e3.png)", borderRadius: "4px" }} />
+            <div style={{ alignSelf: "stretch", height: "194.59px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3862147c2b4db453cc083cd1e6d53799a88569e3.webp)", borderRadius: "4px" }} />
           </div>
           <div style={{ alignSelf: "stretch", height: "214.73px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "8px 8px 8px 8px", background: "#e4ebe3", borderRadius: "8px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "198.73px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cd2138f177b8811d98063fcbe01b59b1db233963.png)", borderRadius: "4px" }} />
+            <div style={{ alignSelf: "stretch", height: "198.73px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cd2138f177b8811d98063fcbe01b59b1db233963.webp)", borderRadius: "4px" }} />
           </div>
         </div>
       </div>
@@ -513,12 +513,12 @@ export default function PotRu() {
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Подборка экранов, которые передают ясный, естественный и гармоничный опыт Pot`}</p>
         </div>
         <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/652a3d973f560c7583b7d408f1a261ec8cc10132.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/346f4584006fd630d9555d007ffaa12bd69eba3f.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f67b49aa91f46c8722f6ff13f1e61ee68c716f30.png)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/652a3d973f560c7583b7d408f1a261ec8cc10132.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/346f4584006fd630d9555d007ffaa12bd69eba3f.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f67b49aa91f46c8722f6ff13f1e61ee68c716f30.webp)" }} />
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "472px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", background: "#000000", backgroundImage: "linear-gradient(323.65deg, rgba(28, 79, 28, 0.6) 0%, rgba(91, 224, 91, 0.6) 100%)", overflow: "hidden" }}>
@@ -540,31 +540,31 @@ export default function PotRu() {
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -575,7 +575,7 @@ export default function PotRu() {
       {/* Tablet — 800px */}
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "456px", flexShrink: 0, backgroundImage: "linear-gradient(325.6deg, #85d785 0%, #307630 100%)", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-208.78px", top: "-1px", width: "1215.86px", height: "458.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ca6e7e6e19b69b8a354d5cc6ccd927909b14dd3.png)" }} />
+        <div style={{ position: "absolute", left: "-208.78px", top: "-1px", width: "1215.86px", height: "458.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ca6e7e6e19b69b8a354d5cc6ccd927909b14dd3.webp)" }} />
         <div style={{ position: "absolute", left: "0", top: "217px", width: "800px", height: "239px", backgroundImage: "linear-gradient(180deg, rgba(4, 13, 4, 0) 0%, #040d04 100%)" }} />
         <p style={{ position: "absolute", left: "19px", top: "376px", width: "763px", height: "28px", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Мобильное Приложение iOS — UX/UI, Дизайн Система, Прототипирование`}</p>
       </div>
@@ -659,7 +659,7 @@ export default function PotRu() {
               <div style={{ alignSelf: "stretch", height: "196px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "16px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "24px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "0", width: "120px", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.png)" }} />
+                    <div style={{ position: "absolute", left: "0", top: "0", width: "120px", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "146px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "54px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -673,7 +673,7 @@ export default function PotRu() {
               <div style={{ alignSelf: "stretch", height: "196px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "16px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "24px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "-8px", width: "120px", height: "164.17px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.png)" }} />
+                    <div style={{ position: "absolute", left: "0", top: "-8px", width: "120px", height: "164.17px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "146px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "54px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -687,7 +687,7 @@ export default function PotRu() {
               <div style={{ alignSelf: "stretch", height: "196px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "16px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "24px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "-5px", width: "123px", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.png)" }} />
+                    <div style={{ position: "absolute", left: "0", top: "-5px", width: "123px", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "146px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "54px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -728,7 +728,7 @@ export default function PotRu() {
           <div style={{ alignSelf: "stretch", height: "513.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма флоу`}</p>
             <div style={{ alignSelf: "stretch", height: "485.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "437.28px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/503bfd92bd993609cc9ec983a993b694283294ce.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "437.28px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/503bfd92bd993609cc9ec983a993b694283294ce.webp)" }} />
             </div>
           </div>
         </div>
@@ -752,7 +752,7 @@ export default function PotRu() {
           <div style={{ width: "530.75px", height: "630.18px", flexShrink: 0, position: "relative" }}>
             <div style={{ position: "absolute", left: "0", top: "26.89px", width: "292.15px", height: "603.5px", background: "#000000", borderRadius: "45.95px", boxShadow: "0 3.39px 13.55px 0 rgba(13, 18, 46, 0.2)" }}>
               <div style={{ position: "absolute", left: "12.35px", top: "12.34px", width: "267.46px", height: "578.81px", borderRadius: "13.72px", overflow: "hidden" }}>
-                <div style={{ position: "absolute", left: "0.36px", top: "0.08px", width: "266.2px", height: "578.37px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/dbe87c56ef6e87e6597604e1b7ced10adde81df9.png)" }} />
+                <div style={{ position: "absolute", left: "0.36px", top: "0.08px", width: "266.2px", height: "578.37px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/dbe87c56ef6e87e6597604e1b7ced10adde81df9.webp)" }} />
                 <div style={{ position: "absolute", left: "90.52px", top: "4.11px", width: "86.41px", height: "21.95px", background: "#000000", borderRadius: "32.3px" }} />
               </div>
               <img
@@ -766,7 +766,7 @@ export default function PotRu() {
             </div>
             <div style={{ position: "absolute", left: "238.6px", top: "-0.21px", width: "292.15px", height: "603.5px", background: "#000000", borderRadius: "45.95px", boxShadow: "0 3.39px 13.55px 0 rgba(13, 18, 46, 0.2)" }}>
               <div style={{ position: "absolute", left: "12.35px", top: "12.34px", width: "267.46px", height: "578.81px", borderRadius: "13.72px", overflow: "hidden" }}>
-                <div style={{ position: "absolute", left: "0", top: "0", width: "266.4px", height: "578.81px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/21f9cb5ba9d07d27f9c741411264be0e9269660e.png)", borderRadius: "34.29px" }} />
+                <div style={{ position: "absolute", left: "0", top: "0", width: "266.4px", height: "578.81px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/21f9cb5ba9d07d27f9c741411264be0e9269660e.webp)", borderRadius: "34.29px" }} />
                 <div style={{ position: "absolute", left: "90.52px", top: "4.11px", width: "86.41px", height: "21.95px", background: "#000000", borderRadius: "32.3px" }} />
               </div>
               <img
@@ -807,7 +807,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "588px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/38b7df3976944339d73684dde72db224be9f8182.png"
+              src="/a/38b7df3976944339d73684dde72db224be9f8182.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -815,7 +815,7 @@ export default function PotRu() {
               style={{ width: "284.65px", height: "588px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/e0b4df34402aade0e3305b09de46fc0202e441f9.png"
+              src="/a/e0b4df34402aade0e3305b09de46fc0202e441f9.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -830,7 +830,7 @@ export default function PotRu() {
                     <div style={{ alignSelf: "stretch", height: "340.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "18.87px", alignItems: "center" }}>
                       <div style={{ width: "198.12px", height: "218.82px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "4.13px", alignItems: "center" }}>
                         <div style={{ alignSelf: "stretch", height: "218.82px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.08px", alignItems: "center" }}>
-                          <div style={{ width: "162.74px", height: "162.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.png)" }} />
+                          <div style={{ width: "162.74px", height: "162.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
                           <p style={{ alignSelf: "stretch", fontSize: "20.05px", lineHeight: "24.18px", fontWeight: 400, textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
                         </div>
                       </div>
@@ -871,7 +871,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", padding: "0 40px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/c73eb5cd6473dda2808ede4405d68bddbd896abe.png"
+              src="/a/c73eb5cd6473dda2808ede4405d68bddbd896abe.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -879,7 +879,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/526096e0741473f0d6d524c88e8a233a00306f3f.png"
+              src="/a/526096e0741473f0d6d524c88e8a233a00306f3f.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -887,7 +887,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/8d207b697680264fe0283cd30b3d221dfb821f0c.png"
+              src="/a/8d207b697680264fe0283cd30b3d221dfb821f0c.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -895,7 +895,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/d29faa51fdb9a3e8c4f1ceef60fde232ecfc6f5b.png"
+              src="/a/d29faa51fdb9a3e8c4f1ceef60fde232ecfc6f5b.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -903,7 +903,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/fcf955a1e54a44fc19ee82eb3d8d3da0a986f687.png"
+              src="/a/fcf955a1e54a44fc19ee82eb3d8d3da0a986f687.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -911,7 +911,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/eecfbd2f8cbdf295492c7030d6c6a04e23cc6164.png"
+              src="/a/eecfbd2f8cbdf295492c7030d6c6a04e23cc6164.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -928,7 +928,7 @@ export default function PotRu() {
           <div style={{ width: "528px", height: "626.92px", flexShrink: 0, position: "relative" }}>
             <div style={{ position: "absolute", left: "0", top: "26.75px", width: "290.64px", height: "600.38px", background: "#000000", borderRadius: "45.71px", boxShadow: "0 3.37px 13.48px 0 rgba(13, 18, 46, 0.2)" }}>
               <div style={{ position: "absolute", left: "12.28px", top: "12.28px", width: "266.08px", height: "575.82px", borderRadius: "34.54px", overflow: "hidden" }}>
-                <div style={{ position: "absolute", left: "0.5px", top: "0.41px", width: "264.52px", height: "574.74px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8fdae8c8127e876d3b843f93a43f0045bf96726a.png)" }} />
+                <div style={{ position: "absolute", left: "0.5px", top: "0.41px", width: "264.52px", height: "574.74px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8fdae8c8127e876d3b843f93a43f0045bf96726a.webp)" }} />
                 <div style={{ position: "absolute", left: "90.05px", top: "4.09px", width: "85.96px", height: "21.83px", background: "#000000", borderRadius: "32.14px" }} />
               </div>
               <img
@@ -942,7 +942,7 @@ export default function PotRu() {
             </div>
             <div style={{ position: "absolute", left: "237.36px", top: "-0.21px", width: "290.64px", height: "600.38px", background: "#000000", borderRadius: "45.71px", boxShadow: "0 3.37px 13.48px 0 rgba(13, 18, 46, 0.2)" }}>
               <div style={{ position: "absolute", left: "12.28px", top: "12.28px", width: "266.08px", height: "575.82px", borderRadius: "34.54px", overflow: "hidden" }}>
-                <div style={{ position: "absolute", left: "0.5px", top: "0.41px", width: "264.52px", height: "574.74px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a34f32c9261b788a776d2c9eb7889448617571ad.png)" }} />
+                <div style={{ position: "absolute", left: "0.5px", top: "0.41px", width: "264.52px", height: "574.74px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a34f32c9261b788a776d2c9eb7889448617571ad.webp)" }} />
                 <div style={{ position: "absolute", left: "90.06px", top: "4.09px", width: "85.96px", height: "21.83px", background: "#000000", borderRadius: "32.14px" }} />
               </div>
               <img
@@ -983,7 +983,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
             <img
-              src="/a/b7bd5e9d15c94ec30918663523783b0539075e4d.png"
+              src="/a/b7bd5e9d15c94ec30918663523783b0539075e4d.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -991,7 +991,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/98d0dc2bfb1b680a6b3fce9810e4214a4f8ba19f.png"
+              src="/a/98d0dc2bfb1b680a6b3fce9810e4214a4f8ba19f.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -999,7 +999,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/2745f199f23720df77211678dc0f82f68c1f79ed.png"
+              src="/a/2745f199f23720df77211678dc0f82f68c1f79ed.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -1015,7 +1015,7 @@ export default function PotRu() {
           </div>
           <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", padding: "0 40px 0 40px", overflow: "hidden" }}>
             <img
-              src="/a/07cf55609220f48a3d35eaaaa74e8d50169226ca.png"
+              src="/a/07cf55609220f48a3d35eaaaa74e8d50169226ca.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -1023,7 +1023,7 @@ export default function PotRu() {
               style={{ width: "285.13px", height: "589px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/063faa86b0babed44842e5f04a488a0d9c00c097.png"
+              src="/a/063faa86b0babed44842e5f04a488a0d9c00c097.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -1031,7 +1031,7 @@ export default function PotRu() {
               style={{ width: "285.12px", height: "588.97px", flexShrink: 0, background: "#000000" }}
             />
             <img
-              src="/a/a11b36d2451fc4952d8ac55b791c7ad4f4be57ff.png"
+              src="/a/a11b36d2451fc4952d8ac55b791c7ad4f4be57ff.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -1049,7 +1049,7 @@ export default function PotRu() {
             <div style={{ width: "531.07px", height: "630.57px", flexShrink: 0, position: "relative" }}>
               <div style={{ position: "absolute", left: "0", top: "26.91px", width: "292.33px", height: "603.87px", background: "#000000", borderRadius: "45.98px", boxShadow: "0 3.39px 13.56px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "12.35px", top: "12.35px", width: "267.62px", height: "579.17px", borderRadius: "34.74px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.51px", top: "0.41px", width: "266.06px", height: "578.08px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cb41a82a9ff4a148ad8c82e7dd674e97707976ce.png)" }} />
+                  <div style={{ position: "absolute", left: "0.51px", top: "0.41px", width: "266.06px", height: "578.08px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cb41a82a9ff4a148ad8c82e7dd674e97707976ce.webp)" }} />
                   <div style={{ position: "absolute", left: "90.58px", top: "4.12px", width: "86.46px", height: "21.96px", background: "#000000", borderRadius: "32.32px" }} />
                 </div>
                 <img
@@ -1094,10 +1094,10 @@ export default function PotRu() {
         </div>
         <div style={{ alignSelf: "stretch", height: "924.02px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
           <div style={{ alignSelf: "stretch", height: "445.44px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "8px 8px 8px 8px", background: "#e4ebe3", borderRadius: "16px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "429.44px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3862147c2b4db453cc083cd1e6d53799a88569e3.png)", borderRadius: "12px" }} />
+            <div style={{ alignSelf: "stretch", height: "429.44px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3862147c2b4db453cc083cd1e6d53799a88569e3.webp)", borderRadius: "12px" }} />
           </div>
           <div style={{ alignSelf: "stretch", height: "454.58px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "8px 8px 8px 8px", background: "#e4ebe3", borderRadius: "16px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "438.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cd2138f177b8811d98063fcbe01b59b1db233963.png)", borderRadius: "12px" }} />
+            <div style={{ alignSelf: "stretch", height: "438.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cd2138f177b8811d98063fcbe01b59b1db233963.webp)", borderRadius: "12px" }} />
           </div>
         </div>
       </div>
@@ -1107,12 +1107,12 @@ export default function PotRu() {
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Подборка экранов, которые передают ясный, естественный и гармоничный опыт Pot`}</p>
         </div>
         <div style={{ alignSelf: "stretch", height: "589px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", padding: "0 40px 0 40px", overflow: "hidden" }}>
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/652a3d973f560c7583b7d408f1a261ec8cc10132.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/346f4584006fd630d9555d007ffaa12bd69eba3f.png)" }} />
-          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f67b49aa91f46c8722f6ff13f1e61ee68c716f30.png)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/652a3d973f560c7583b7d408f1a261ec8cc10132.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/346f4584006fd630d9555d007ffaa12bd69eba3f.webp)" }} />
+          <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f67b49aa91f46c8722f6ff13f1e61ee68c716f30.webp)" }} />
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "320px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 40px 40px 40px", background: "#000000", backgroundImage: "linear-gradient(323.65deg, rgba(28, 79, 28, 0.6) 0%, rgba(91, 224, 91, 0.6) 100%)", overflow: "hidden" }}>
@@ -1134,31 +1134,31 @@ export default function PotRu() {
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -1170,7 +1170,7 @@ export default function PotRu() {
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(325.6deg, #85d785 0%, #307630 100%)", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "-453px", top: "0", width: "2186px", height: "824px", overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: "-0.33px", top: "0.17px", width: "2186px", height: "824.02px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ca6e7e6e19b69b8a354d5cc6ccd927909b14dd3.png)" }} />
+          <div style={{ position: "absolute", left: "-0.33px", top: "0.17px", width: "2186px", height: "824.02px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ca6e7e6e19b69b8a354d5cc6ccd927909b14dd3.webp)" }} />
         </div>
         <div style={{ position: "absolute", left: "0", top: "256px", width: "1280px", height: "568px", backgroundImage: "linear-gradient(180deg, rgba(4, 13, 4, 0) 0%, #040d04 100%)" }} />
         <p style={{ position: "absolute", left: "182px", top: "692px", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Мобильное Приложение iOS — UX/UI, Дизайн Система, Прототипирование`}</p>
@@ -1251,7 +1251,7 @@ export default function PotRu() {
               <div style={{ alignSelf: "stretch", height: "212px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "0", width: "120px", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.png)" }} />
+                    <div style={{ position: "absolute", left: "0", top: "0", width: "120px", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "140px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -1265,7 +1265,7 @@ export default function PotRu() {
               <div style={{ alignSelf: "stretch", height: "212px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "0", width: "119.15px", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.png)" }} />
+                    <div style={{ position: "absolute", left: "0", top: "0", width: "119.15px", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "140px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -1279,7 +1279,7 @@ export default function PotRu() {
               <div style={{ alignSelf: "stretch", height: "212px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "2px", top: "0", width: "120.29px", height: "159px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.png)" }} />
+                    <div style={{ position: "absolute", left: "2px", top: "0", width: "120.29px", height: "159px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "140px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -1321,7 +1321,7 @@ export default function PotRu() {
           <div style={{ alignSelf: "stretch", height: "715.1px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма флоу`}</p>
             <div style={{ alignSelf: "stretch", height: "683.1px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "635.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/503bfd92bd993609cc9ec983a993b694283294ce.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "635.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/503bfd92bd993609cc9ec983a993b694283294ce.webp)" }} />
             </div>
           </div>
         </div>
@@ -1344,7 +1344,7 @@ export default function PotRu() {
             <div style={{ width: "626.76px", height: "744.18px", flexShrink: 0, position: "relative" }}>
               <div style={{ position: "absolute", left: "0", top: "31.75px", width: "345px", height: "712.68px", background: "#000000", borderRadius: "54.26px", boxShadow: "0 4px 16px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "14.58px", top: "14.58px", width: "315.85px", height: "683.52px", borderRadius: "16.2px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.42px", top: "0.1px", width: "314.35px", height: "683px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/dbe87c56ef6e87e6597604e1b7ced10adde81df9.png)" }} />
+                  <div style={{ position: "absolute", left: "0.42px", top: "0.1px", width: "314.35px", height: "683px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/dbe87c56ef6e87e6597604e1b7ced10adde81df9.webp)" }} />
                   <div style={{ position: "absolute", left: "106.9px", top: "4.86px", width: "102.04px", height: "25.92px", background: "#000000", borderRadius: "38.15px" }} />
                 </div>
                 <img
@@ -1358,7 +1358,7 @@ export default function PotRu() {
               </div>
               <div style={{ position: "absolute", left: "281.76px", top: "-0.25px", width: "345px", height: "712.68px", background: "#000000", borderRadius: "54.26px", boxShadow: "0 4px 16px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "14.58px", top: "14.58px", width: "315.85px", height: "683.52px", borderRadius: "16.2px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "314.59px", height: "683.52px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/21f9cb5ba9d07d27f9c741411264be0e9269660e.png)", borderRadius: "40.49px" }} />
+                  <div style={{ position: "absolute", left: "0", top: "0", width: "314.59px", height: "683.52px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/21f9cb5ba9d07d27f9c741411264be0e9269660e.webp)", borderRadius: "40.49px" }} />
                   <div style={{ position: "absolute", left: "106.9px", top: "4.86px", width: "102.04px", height: "25.92px", background: "#000000", borderRadius: "38.15px" }} />
                 </div>
                 <img
@@ -1385,7 +1385,7 @@ export default function PotRu() {
                         <div style={{ alignSelf: "stretch", height: "402.03px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
                           <div style={{ width: "211.53px", height: "233.31px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
                             <div style={{ alignSelf: "stretch", height: "233.31px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                              <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.png)" }} />
+                              <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
                               <p style={{ alignSelf: "stretch", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
                             </div>
                           </div>
@@ -1425,7 +1425,7 @@ export default function PotRu() {
                             <div style={{ alignSelf: "stretch", height: "240.39px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
                               <div style={{ width: "211.58px", height: "173.8px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
                                 <div style={{ alignSelf: "stretch", height: "173.8px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                                  <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.png)" }} />
+                                  <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
                                 </div>
                               </div>
                               <div style={{ alignSelf: "stretch", height: "59.04px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "5.04px" }}>
@@ -1466,7 +1466,7 @@ export default function PotRu() {
                       <div style={{ position: "absolute", left: "10.07px", top: "71.6px", width: "256.85px", height: "277.97px", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
                         <div style={{ alignSelf: "stretch", height: "226.35px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
                           <div style={{ alignSelf: "stretch", height: "226.35px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                            <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.png)" }} />
+                            <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
                             <div style={{ alignSelf: "stretch", height: "45.04px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "5.04px" }}>
                               <p style={{ alignSelf: "stretch", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, textAlign: "center", color: "#1c1917" }}>{`Check your email`}</p>
                               <p style={{ alignSelf: "stretch", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, textAlign: "center", color: "#78716c" }}>{`We have sent you password resend instrucstions`}</p>
@@ -1492,7 +1492,7 @@ export default function PotRu() {
               </div>
               <div style={{ position: "absolute", left: "1604px", top: "-1px", width: "1024px", height: "630px", display: "flex", flexDirection: "row", gap: "122px", justifyContent: "space-between", alignItems: "center" }}>
                 <img
-                  src="/a/a5fbeea2b271058f3724c422a2dbae311831fb4f.png"
+                  src="/a/a5fbeea2b271058f3724c422a2dbae311831fb4f.webp"
                   alt=""
                   aria-hidden="true"
                   loading="lazy"
@@ -1500,7 +1500,7 @@ export default function PotRu() {
                   style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000" }}
                 />
                 <img
-                  src="/a/527198e66837807af3135d0704c16dc33106b4a2.png"
+                  src="/a/527198e66837807af3135d0704c16dc33106b4a2.webp"
                   alt=""
                   aria-hidden="true"
                   loading="lazy"
@@ -1515,7 +1515,7 @@ export default function PotRu() {
                         <div style={{ alignSelf: "stretch", height: "363.08px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
                           <div style={{ width: "211.59px", height: "233.36px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
                             <div style={{ alignSelf: "stretch", height: "233.36px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                              <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.png)" }} />
+                              <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
                               <p style={{ alignSelf: "stretch", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 400, textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
                             </div>
                           </div>
@@ -1609,7 +1609,7 @@ export default function PotRu() {
           <div style={{ position: "absolute", left: "42px", top: "208px", width: "1184px", height: "634px" }}>
             <div style={{ position: "absolute", left: "-1518px", top: "1px", width: "2628px", height: "629px" }}>
               <img
-                src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.png"
+                src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.webp"
                 alt=""
                 aria-hidden="true"
                 loading="lazy"
@@ -1618,7 +1618,7 @@ export default function PotRu() {
               />
               <div style={{ position: "absolute", left: "1604px", top: "-1px", width: "1024px", height: "630px", display: "flex", flexDirection: "row", gap: "122px", justifyContent: "space-between", alignItems: "center" }}>
                 <img
-                  src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.png"
+                  src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.webp"
                   alt=""
                   aria-hidden="true"
                   loading="lazy"
@@ -1626,7 +1626,7 @@ export default function PotRu() {
                   style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000" }}
                 />
                 <img
-                  src="/a/0051fb6812319fde09dab8da5dc252eb8b964825.png"
+                  src="/a/0051fb6812319fde09dab8da5dc252eb8b964825.webp"
                   alt=""
                   aria-hidden="true"
                   loading="lazy"
@@ -1634,7 +1634,7 @@ export default function PotRu() {
                   style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000" }}
                 />
                 <img
-                  src="/a/3b25164b07ea5c7a83c8ed130d8b54e38d7e2a7a.png"
+                  src="/a/3b25164b07ea5c7a83c8ed130d8b54e38d7e2a7a.webp"
                   alt=""
                   aria-hidden="true"
                   loading="lazy"
@@ -1700,7 +1700,7 @@ export default function PotRu() {
             <div style={{ width: "626.76px", height: "744.18px", flexShrink: 0, position: "relative" }}>
               <div style={{ position: "absolute", left: "0", top: "31.75px", width: "345px", height: "712.68px", background: "#000000", borderRadius: "54.26px", boxShadow: "0 4px 16px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "14.58px", top: "14.58px", width: "315.85px", height: "683.52px", borderRadius: "41px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.6px", top: "0.48px", width: "314px", height: "682.24px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8fdae8c8127e876d3b843f93a43f0045bf96726a.png)" }} />
+                  <div style={{ position: "absolute", left: "0.6px", top: "0.48px", width: "314px", height: "682.24px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8fdae8c8127e876d3b843f93a43f0045bf96726a.webp)" }} />
                   <div style={{ position: "absolute", left: "106.9px", top: "4.86px", width: "102.04px", height: "25.92px", background: "#000000", borderRadius: "38.15px" }} />
                 </div>
                 <img
@@ -1714,7 +1714,7 @@ export default function PotRu() {
               </div>
               <div style={{ position: "absolute", left: "281.76px", top: "-0.25px", width: "345px", height: "712.68px", background: "#000000", borderRadius: "54.26px", boxShadow: "0 4px 16px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "14.58px", top: "14.58px", width: "315.85px", height: "683.52px", borderRadius: "41px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.6px", top: "0.48px", width: "314px", height: "682.24px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a34f32c9261b788a776d2c9eb7889448617571ad.png)" }} />
+                  <div style={{ position: "absolute", left: "0.6px", top: "0.48px", width: "314px", height: "682.24px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a34f32c9261b788a776d2c9eb7889448617571ad.webp)" }} />
                   <div style={{ position: "absolute", left: "106.9px", top: "4.86px", width: "102.04px", height: "25.92px", background: "#000000", borderRadius: "38.15px" }} />
                 </div>
                 <img
@@ -1748,7 +1748,7 @@ export default function PotRu() {
               </div>
             </div>
             <img
-              src="/a/765b05f532cd90723731b0d9f80a748e92d61370.png"
+              src="/a/765b05f532cd90723731b0d9f80a748e92d61370.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -1764,7 +1764,7 @@ export default function PotRu() {
               <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
             </div>
             <img
-              src="/a/2b554031b9d428c69c347505b8414bac07e09b1d.png"
+              src="/a/2b554031b9d428c69c347505b8414bac07e09b1d.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -1782,7 +1782,7 @@ export default function PotRu() {
             <div style={{ width: "626.76px", height: "744.18px", flexShrink: 0, position: "relative" }}>
               <div style={{ position: "absolute", left: "0", top: "31.75px", width: "345px", height: "712.68px", background: "#000000", borderRadius: "54.26px", boxShadow: "0 4px 16px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "14.58px", top: "14.58px", width: "315.85px", height: "683.52px", borderRadius: "41px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.6px", top: "0.48px", width: "314px", height: "682.24px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cb41a82a9ff4a148ad8c82e7dd674e97707976ce.png)" }} />
+                  <div style={{ position: "absolute", left: "0.6px", top: "0.48px", width: "314px", height: "682.24px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cb41a82a9ff4a148ad8c82e7dd674e97707976ce.webp)" }} />
                   <div style={{ position: "absolute", left: "106.9px", top: "4.86px", width: "102.04px", height: "25.92px", background: "#000000", borderRadius: "38.15px" }} />
                 </div>
                 <img
@@ -1828,10 +1828,10 @@ export default function PotRu() {
         <div style={{ position: "absolute", left: "48px", top: "212px", width: "1184px", height: "634px" }}>
           <div style={{ position: "absolute", left: "-1524px", top: "1px", width: "2628px", height: "629px" }}>
             <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "634px", background: "#e4ebe3", borderRadius: "24px", overflow: "hidden" }}>
-              <div style={{ position: "absolute", left: "16px", top: "16px", width: "992px", height: "618px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cd2138f177b8811d98063fcbe01b59b1db233963.png)" }} />
+              <div style={{ position: "absolute", left: "16px", top: "16px", width: "992px", height: "618px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cd2138f177b8811d98063fcbe01b59b1db233963.webp)" }} />
             </div>
             <div style={{ position: "absolute", left: "1604px", top: "-3px", width: "1024px", height: "634px", background: "#e4ebe3", borderRadius: "24px", overflow: "hidden" }}>
-              <div style={{ position: "absolute", left: "16px", top: "16px", width: "992px", height: "605.12px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3862147c2b4db453cc083cd1e6d53799a88569e3.png)" }} />
+              <div style={{ position: "absolute", left: "16px", top: "16px", width: "992px", height: "605.12px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3862147c2b4db453cc083cd1e6d53799a88569e3.webp)" }} />
             </div>
           </div>
           <div style={{ position: "absolute", left: "0", top: "295px", width: "1184px", height: "40px", display: "flex", flexDirection: "row", gap: "1031px", justifyContent: "space-between", alignItems: "center" }}>
@@ -1884,14 +1884,14 @@ export default function PotRu() {
         <div style={{ position: "absolute", left: "48px", top: "212px", width: "1184px", height: "704px" }}>
           <div style={{ position: "absolute", left: "78px", top: "1px", width: "2628px", height: "703px" }}>
             <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "704px", background: "#e4ebe3", borderRadius: "24px", overflow: "hidden" }}>
-              <div style={{ position: "absolute", left: "31px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.png)" }} />
-              <div style={{ position: "absolute", left: "362.72px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.png)" }} />
-              <div style={{ position: "absolute", left: "694.92px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.png)" }} />
+              <div style={{ position: "absolute", left: "31px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.webp)" }} />
+              <div style={{ position: "absolute", left: "362.72px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.webp)" }} />
+              <div style={{ position: "absolute", left: "694.92px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.webp)" }} />
             </div>
             <div style={{ position: "absolute", left: "1604px", top: "-1px", width: "1024px", height: "704px", background: "#e4ebe3", borderRadius: "24px", overflow: "hidden" }}>
-              <div style={{ position: "absolute", left: "31px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f67b49aa91f46c8722f6ff13f1e61ee68c716f30.png)" }} />
-              <div style={{ position: "absolute", left: "362.72px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/346f4584006fd630d9555d007ffaa12bd69eba3f.png)" }} />
-              <div style={{ position: "absolute", left: "694.92px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/652a3d973f560c7583b7d408f1a261ec8cc10132.png)" }} />
+              <div style={{ position: "absolute", left: "31px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f67b49aa91f46c8722f6ff13f1e61ee68c716f30.webp)" }} />
+              <div style={{ position: "absolute", left: "362.72px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/346f4584006fd630d9555d007ffaa12bd69eba3f.webp)" }} />
+              <div style={{ position: "absolute", left: "694.92px", top: "31.51px", width: "298.08px", height: "646px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/652a3d973f560c7583b7d408f1a261ec8cc10132.webp)" }} />
             </div>
           </div>
           <div style={{ position: "absolute", left: "0", top: "332px", width: "1184px", height: "40px", display: "flex", flexDirection: "row", gap: "1031px", justifyContent: "space-between", alignItems: "center" }}>
@@ -1954,31 +1954,31 @@ export default function PotRu() {
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>

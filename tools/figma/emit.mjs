@@ -39,7 +39,9 @@ function tagFor(node) {
   return "div";
 }
 
-export function createEmitter({ assets, indentUnit = "  " }) {
+export function createEmitter({ assets, assetMap = {}, indentUnit = "  " }) {
+  /** Тяжёлые PNG переведены в WebP — подменяем имя файла по карте */
+  const resolve = (url) => `/a/${assetMap[url] ?? url}`;
   const usedAssets = new Set();
 
   function emit(node, parent, depth) {
@@ -51,12 +53,13 @@ export function createEmitter({ assets, indentUnit = "  " }) {
     const style = {
       ...(node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode ? absolutePosition(node) : {}),
       ...sizing(node, parent),
-      ...frameStyle(node, assets),
+      ...frameStyle(node, assets, assetMap),
     };
 
     // Картинка или сгенерированный из Figma SVG — отдельный тег <img>
     const asset = nodeAsset(node, assets);
     if (asset) {
+      asset.src = resolve(asset.src.replace("/a/", ""));
       usedAssets.add(asset.src);
       const s = styleLiteral(style);
       return `${pad}<img\n${pad}${indentUnit}src=${JSON.stringify(asset.src)}\n${pad}${indentUnit}alt=""\n${pad}${indentUnit}aria-hidden="true"\n${pad}${indentUnit}loading="lazy"\n${pad}${indentUnit}decoding="async"\n${s ? `${pad}${indentUnit}style=${s}\n` : ""}${pad}/>\n`;

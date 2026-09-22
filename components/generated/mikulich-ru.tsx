@@ -11,7 +11,7 @@ export default function MikulichRu() {
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "406px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "0", top: "0", width: "1280px", height: "771px", overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: "-157px", top: "-284px", width: "637.15px", height: "969.1px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.png)" }} />
+          <div style={{ position: "absolute", left: "-157px", top: "-284px", width: "637.15px", height: "969.1px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.webp)" }} />
           <div style={{ position: "absolute", left: "0", top: "0", width: "375px", height: "406px", background: "rgba(24, 41, 52, 0.8)" }} />
         </div>
         <div style={{ position: "absolute", left: "0", top: "103px", width: "375px", height: "303px", backgroundImage: "linear-gradient(180deg, rgba(4, 13, 4, 0) 0%, #040d04 100%)" }} />
@@ -72,7 +72,7 @@ export default function MikulichRu() {
           <div style={{ alignSelf: "stretch", height: "247.64px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Инсайты`}</p>
             <div style={{ alignSelf: "stretch", height: "223.64px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "8px 8px 8px 8px", background: "#edf4fa", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "207.64px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.png)", borderRadius: "8px" }} />
+              <div style={{ alignSelf: "stretch", height: "207.64px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.webp)", borderRadius: "8px" }} />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function MikulichRu() {
           <div style={{ width: "335px", height: "742px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", alignItems: "center", overflow: "hidden" }}>
             <div style={{ width: "335px", height: "335px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "12px", overflow: "hidden" }}>
               <div style={{ width: "335px", height: "335px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-187px", top: "-4.39px", width: "599.84px", height: "375.03px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c25f0d397b15b15cf387317d772b84f3d8eb6ee4.png)" }} />
+                <div style={{ position: "absolute", left: "-187px", top: "-4.39px", width: "599.84px", height: "375.03px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c25f0d397b15b15cf387317d772b84f3d8eb6ee4.webp)" }} />
                 <div style={{ position: "absolute", left: "0", top: "-0.36px", width: "335px", height: "335px", background: "rgba(24, 41, 52, 0.71)", borderRadius: "12px" }} />
                 <div style={{ position: "absolute", left: "119px", top: "1.64px", width: "97.79px", height: "331.8px", overflow: "hidden" }}>
                   <img
@@ -208,7 +208,7 @@ export default function MikulichRu() {
             />
             <div style={{ width: "335px", height: "335px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "12px", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "335px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-30px", top: "-19.64px", width: "365px", height: "487px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.png)" }} />
+                <div style={{ position: "absolute", left: "-30px", top: "-19.64px", width: "365px", height: "487px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
                 <div style={{ position: "absolute", left: "0", top: "-0.64px", width: "335px", height: "336px", background: "rgba(24, 41, 52, 0.8)", borderRadius: "12px" }} />
                 <p style={{ position: "absolute", left: "94px", top: "111.36px", fontSize: "84px", lineHeight: "113.23px", fontWeight: 400, letterSpacing: "2.1px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
               </div>
@@ -227,7 +227,7 @@ export default function MikulichRu() {
             <div style={{ width: "277.6px", height: "136.06px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/78f87c229e2cde3f40479fd5898d33f86b251779.png)" }} />
             <div style={{ width: "279px", height: "126.65px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/49705eceb0236236753a25262dedeaf84662205f.png)" }} />
             <div style={{ width: "258.95px", height: "98.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/81433d97c8c80e9c6a9821c9ab26b2ad6e9e8243.png)" }} />
-            <div style={{ width: "166.69px", height: "166.69px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ff9587218826a624f121db4d4845a4d549631d6b.png)" }} />
+            <div style={{ width: "166.69px", height: "166.69px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ff9587218826a624f121db4d4845a4d549631d6b.webp)" }} />
             <div style={{ width: "259.86px", height: "93.05px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/aeb3ed01d583113287497bdc65f1690c8d2c33b6.png)" }} />
           </div>
         </div>
@@ -239,7 +239,7 @@ export default function MikulichRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#94a3b8" }}>{`Точно выверенный контур силуэта внутри инициалов перекликается с ювелирной работой хирурга, его скрупулёзностью и умением формировать идеальные линии женской красоты`}</p>
           </div>
           <div style={{ alignSelf: "stretch", height: "138.41px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#06181e", borderRadius: "25.51px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "138.41px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "138.41px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.webp)" }} />
           </div>
         </div>
       </div>
@@ -300,13 +300,13 @@ export default function MikulichRu() {
             <div style={{ alignSelf: "stretch", height: "200.57px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Визитные карточки`}</p>
               <div style={{ alignSelf: "stretch", height: "176.57px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "176.57px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "176.57px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "204px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`медицинская форма`}</p>
               <div style={{ alignSelf: "stretch", height: "180px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "180px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "180px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
               </div>
             </div>
           </div>
@@ -331,31 +331,31 @@ export default function MikulichRu() {
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -367,7 +367,7 @@ export default function MikulichRu() {
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "453px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "0", top: "0", width: "1705px", height: "775px", overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: "-157px", top: "-475px", width: "1062.15px", height: "1615.52px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.png)" }} />
+          <div style={{ position: "absolute", left: "-157px", top: "-475px", width: "1062.15px", height: "1615.52px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.webp)" }} />
           <div style={{ position: "absolute", left: "0", top: "0", width: "800px", height: "440px", background: "rgba(24, 41, 52, 0.8)" }} />
         </div>
         <div style={{ position: "absolute", left: "0", top: "107px", width: "800px", height: "346px", backgroundImage: "linear-gradient(180deg, rgba(4, 13, 4, 0) 0%, #040d04 100%)" }} />
@@ -428,7 +428,7 @@ export default function MikulichRu() {
           <div style={{ alignSelf: "stretch", height: "503.83px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Инсайты`}</p>
             <div style={{ alignSelf: "stretch", height: "479.83px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "16px 16px 16px 16px", background: "#edf4fa", borderRadius: "16px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "447.83px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.png)", borderRadius: "12px" }} />
+              <div style={{ alignSelf: "stretch", height: "447.83px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.webp)", borderRadius: "12px" }} />
             </div>
           </div>
         </div>
@@ -445,7 +445,7 @@ export default function MikulichRu() {
             <div style={{ width: "325.07px", height: "334.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "16px", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`силуэт`}</p>
               <img
-                src="/a/98d1886f28c4d7b25e7621866ce25763debab98d.png"
+                src="/a/98d1886f28c4d7b25e7621866ce25763debab98d.webp"
                 alt=""
                 aria-hidden="true"
                 loading="lazy"
@@ -464,7 +464,7 @@ export default function MikulichRu() {
             <div style={{ width: "325.07px", height: "334.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "16px", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`инициалы`}</p>
               <div style={{ alignSelf: "stretch", height: "310px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-31.29px", top: "-16.33px", width: "359.38px", height: "479.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.png)" }} />
+                <div style={{ position: "absolute", left: "-31.29px", top: "-16.33px", width: "359.38px", height: "479.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
                 <div style={{ position: "absolute", left: "0.62px", top: "-0.83px", width: "325px", height: "311px", background: "rgba(24, 41, 52, 0.8)", borderRadius: "12px" }} />
                 <p style={{ position: "absolute", left: "89.62px", top: "99.17px", fontSize: "83px", lineHeight: "111.88px", fontWeight: 400, letterSpacing: "2.08px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
               </div>
@@ -488,7 +488,7 @@ export default function MikulichRu() {
               <div style={{ width: "235px", height: "405px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", alignItems: "center" }}>
                 <div style={{ width: "235px", height: "115px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/78f87c229e2cde3f40479fd5898d33f86b251779.png)" }} />
                 <div style={{ width: "219px", height: "83px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/81433d97c8c80e9c6a9821c9ab26b2ad6e9e8243.png)" }} />
-                <div style={{ width: "127px", height: "127px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ff9587218826a624f121db4d4845a4d549631d6b.png)" }} />
+                <div style={{ width: "127px", height: "127px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ff9587218826a624f121db4d4845a4d549631d6b.webp)" }} />
               </div>
             </div>
           </div>
@@ -501,7 +501,7 @@ export default function MikulichRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#94a3b8" }}>{`Точно выверенный контур силуэта внутри инициалов перекликается с ювелирной работой хирурга, его скрупулёзностью и умением формировать идеальные линии женской красоты`}</p>
           </div>
           <div style={{ width: "720px", height: "297.48px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", background: "#06181e", borderRadius: "25.51px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "297.48px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "297.48px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.webp)" }} />
           </div>
         </div>
       </div>
@@ -564,13 +564,13 @@ export default function MikulichRu() {
             <div style={{ alignSelf: "stretch", height: "404px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Визитные карточки`}</p>
               <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "379.5px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "379.5px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "404px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`медицинская форма`}</p>
               <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
               </div>
             </div>
           </div>
@@ -595,31 +595,31 @@ export default function MikulichRu() {
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -631,7 +631,7 @@ export default function MikulichRu() {
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "0", top: "0", width: "1280px", height: "824px", overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: "-165px", top: "-613.32px", width: "1484px", height: "2257.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.png)" }} />
+          <div style={{ position: "absolute", left: "-165px", top: "-613.32px", width: "1484px", height: "2257.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.webp)" }} />
           <div style={{ position: "absolute", left: "0", top: "0", width: "1280px", height: "824px", background: "rgba(24, 41, 52, 0.8)" }} />
         </div>
         <div style={{ position: "absolute", left: "0", top: "256px", width: "1280px", height: "568px", backgroundImage: "linear-gradient(180deg, rgba(4, 13, 4, 0) 0%, #040d04 100%)" }} />
@@ -690,7 +690,7 @@ export default function MikulichRu() {
           <div style={{ alignSelf: "stretch", height: "715.66px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Инсайты`}</p>
             <div style={{ alignSelf: "stretch", height: "683.66px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "24.53px 24.53px 24.53px 24.53px", background: "#edf4fa", borderRadius: "24.53px", overflow: "hidden" }}>
-              <div style={{ width: "974.95px", height: "634.6px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.png)", borderRadius: "12.57px" }} />
+              <div style={{ width: "974.95px", height: "634.6px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.webp)", borderRadius: "12.57px" }} />
             </div>
           </div>
         </div>
@@ -707,7 +707,7 @@ export default function MikulichRu() {
             <div style={{ position: "absolute", left: "0", top: "0", width: "440px", height: "518px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`силуэт`}</p>
               <img
-                src="/a/a5640a8720b977ac615098802fc5db17e559c651.png"
+                src="/a/a5640a8720b977ac615098802fc5db17e559c651.webp"
                 alt=""
                 aria-hidden="true"
                 loading="lazy"
@@ -726,7 +726,7 @@ export default function MikulichRu() {
             <div style={{ position: "absolute", left: "584px", top: "0", width: "440px", height: "518px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`инициалы`}</p>
               <div style={{ alignSelf: "stretch", height: "482px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-75.48px", top: "-37.7px", width: "519.97px", height: "693.42px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.png)" }} />
+                <div style={{ position: "absolute", left: "-75.48px", top: "-37.7px", width: "519.97px", height: "693.42px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
                 <div style={{ position: "absolute", left: "0", top: "-0.76px", width: "440.3px", height: "484.33px", background: "rgba(24, 41, 52, 0.8)" }} />
                 <p style={{ position: "absolute", left: "122px", top: "166px", fontSize: "112px", lineHeight: "150.98px", fontWeight: 400, letterSpacing: "2.8px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
               </div>
@@ -751,7 +751,7 @@ export default function MikulichRu() {
             <div style={{ width: "1024px", height: "204.25px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "80px" }}>
               <div style={{ width: "1024px", height: "204.25px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "56px", justifyContent: "space-between", alignItems: "center", overflow: "hidden" }}>
                 <div style={{ width: "303px", height: "108.5px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/aeb3ed01d583113287497bdc65f1690c8d2c33b6.png)" }} />
-                <div style={{ width: "204.25px", height: "204.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ff9587218826a624f121db4d4845a4d549631d6b.png)" }} />
+                <div style={{ width: "204.25px", height: "204.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ff9587218826a624f121db4d4845a4d549631d6b.webp)" }} />
                 <div style={{ width: "291px", height: "110.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/81433d97c8c80e9c6a9821c9ab26b2ad6e9e8243.png)" }} />
               </div>
             </div>
@@ -765,7 +765,7 @@ export default function MikulichRu() {
             <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#94a3b8" }}>{`Точно выверенный контур силуэта внутри инициалов перекликается с ювелирной работой хирурга, его скрупулёзностью и умением формировать идеальные линии женской красоты`}</p>
           </div>
           <div style={{ width: "1024px", height: "451.25px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "24px 24px 24px 24px", background: "#06181e", borderRadius: "24px", overflow: "hidden" }}>
-            <div style={{ width: "976px", height: "403.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.png)" }} />
+            <div style={{ width: "976px", height: "403.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.webp)" }} />
           </div>
         </div>
       </div>
@@ -822,14 +822,14 @@ export default function MikulichRu() {
             <div style={{ alignSelf: "stretch", height: "575px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Визитные карточки`}</p>
               <div style={{ alignSelf: "stretch", height: "541px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden" }}>
-                <div style={{ width: "1035.89px", height: "546px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.png)" }} />
+                <div style={{ width: "1035.89px", height: "546px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.webp)" }} />
                 <div style={{ flex: "1 1 0%", alignSelf: "stretch", height: "1px", flexShrink: 0, background: "#7893a8", borderRadius: "24px" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "575px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <p style={{ position: "absolute", left: "0", top: "0", width: "1024px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`медицинская форма`}</p>
               <div style={{ position: "absolute", left: "0", top: "32px", width: "1024px", height: "543px", display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "640px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "640px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
               </div>
             </div>
           </div>
@@ -853,31 +853,31 @@ export default function MikulichRu() {
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>

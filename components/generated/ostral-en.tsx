@@ -10,7 +10,7 @@ export default function OstralEn() {
       {/* Mobile — 375px */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "406px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-212px", top: "0", width: "696.68px", height: "406px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.png)" }} />
+        <div style={{ position: "absolute", left: "-212px", top: "0", width: "696.68px", height: "406px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.webp)" }} />
         <div style={{ position: "absolute", left: "20px", top: "178px", width: "335px", height: "172px", display: "flex", flexDirection: "column", gap: "60px", justifyContent: "flex-end", alignItems: "center" }}>
           <p style={{ alignSelf: "stretch", fontSize: "60px", lineHeight: "64px", fontWeight: 400, letterSpacing: "1px", textAlign: "center", textTransform: "uppercase", color: "#ffffff" }}>{`Ostral`}</p>
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Web Platform — UX/UI, Data Visualization, Prototyping`}</p>
@@ -47,7 +47,7 @@ export default function OstralEn() {
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "400px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-53px", top: "0", width: "849.25px", height: "609px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.png)" }} />
+        <div style={{ position: "absolute", left: "-53px", top: "0", width: "849.25px", height: "609px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.webp)" }} />
         <div style={{ alignSelf: "stretch", height: "336px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
           <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#ffffff" }}>{`Problem Statement`}</p>
           <div style={{ alignSelf: "stretch", height: "296px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -57,7 +57,7 @@ export default function OstralEn() {
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "1820px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", background: "#fdfdff", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-133.73px", top: "0", width: "2897.76px", height: "2078px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.png)", opacity: 0.100000001490116 }} />
+        <div style={{ position: "absolute", left: "-133.73px", top: "0", width: "2897.76px", height: "2078px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         <div style={{ alignSelf: "stretch", height: "1756px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "160px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Users`}</p>
@@ -72,7 +72,7 @@ export default function OstralEn() {
                 <div style={{ alignSelf: "stretch", height: "168px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "96px", flexShrink: 0, background: "#ffffff", borderRadius: "4px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-15px", top: "-13px", width: "93.43px", height: "109px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/96d317046e142ab164bd66ae259f3b32c5c8c9de.png)" }} />
+                      <div style={{ position: "absolute", left: "-15px", top: "-13px", width: "93.43px", height: "109px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/96d317046e142ab164bd66ae259f3b32c5c8c9de.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "48px", display: "flex", flexDirection: "column" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Mark, 42`}</p>
@@ -109,7 +109,7 @@ export default function OstralEn() {
                 <div style={{ alignSelf: "stretch", height: "168px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "96px", flexShrink: 0, background: "#ffffff", borderRadius: "4px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-93.67px", top: "0", width: "220.86px", height: "96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7404a9ad3d166627d95a8019e558c428b2fa63b8.png)" }} />
+                      <div style={{ position: "absolute", left: "-93.67px", top: "0", width: "220.86px", height: "96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7404a9ad3d166627d95a8019e558c428b2fa63b8.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "48px", display: "flex", flexDirection: "column" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Anna, 38`}</p>
@@ -146,7 +146,7 @@ export default function OstralEn() {
                 <div style={{ alignSelf: "stretch", height: "168px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "96px", flexShrink: 0, background: "#ffffff", borderRadius: "4px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-17px", top: "0", width: "121.89px", height: "98.09px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/adce442e1fbb055b8b5e3032cbc4c22905df28c9.png)" }} />
+                      <div style={{ position: "absolute", left: "-17px", top: "0", width: "121.89px", height: "98.09px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/adce442e1fbb055b8b5e3032cbc4c22905df28c9.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "48px", display: "flex", flexDirection: "column" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Thomas, 47`}</p>
@@ -186,7 +186,7 @@ export default function OstralEn() {
           </div>
           <div style={{ alignSelf: "stretch", height: "335.74px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Flow diagram`}</p>
-            <div style={{ alignSelf: "stretch", height: "307.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/db4ce63c2e23f794d15da7c949131bc531f4a6c2.png)", borderRadius: "8px" }} />
+            <div style={{ alignSelf: "stretch", height: "307.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/db4ce63c2e23f794d15da7c949131bc531f4a6c2.webp)", borderRadius: "8px" }} />
           </div>
         </div>
       </div>
@@ -196,19 +196,19 @@ export default function OstralEn() {
             <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Key Screens`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Interfaces were designed for three user scenarios: the engineer works with the findings map and defect cards, the manager analyses risks and escalates decisions, the programs lead tracks campaign progress and prepares documentation packages`}</p>
           </div>
-          <div style={{ position: "absolute", left: "-32.77px", top: "0.26px", width: "599.63px", height: "430px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.png)", opacity: 0.100000001490116 }} />
+          <div style={{ position: "absolute", left: "-32.77px", top: "0.26px", width: "599.63px", height: "430px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         </div>
         <div style={{ alignSelf: "stretch", height: "294.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "16px 20px 16px 20px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Authorization`}</p>
-            <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/80c58814fe8da83aa98d71d7c0a5c81a171ca85f.png)", borderRadius: "4px" }} />
+            <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/80c58814fe8da83aa98d71d7c0a5c81a171ca85f.webp)", borderRadius: "4px" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "294.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "16px 20px 16px 20px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Dashboard`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7b4902c8bb3d82ec05644920e15f3c4aa26fd799.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7b4902c8bb3d82ec05644920e15f3c4aa26fd799.webp)" }} />
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Site Map`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d8be41a67a060d8524998b7b0a3a1485c715af.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d8be41a67a060d8524998b7b0a3a1485c715af.webp)" }} />
             </div>
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Map — Area Filter`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8becd891fffd4bac71c0b60b8ebf1f6bc14dedc2.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8becd891fffd4bac71c0b60b8ebf1f6bc14dedc2.webp)" }} />
             </div>
           </div>
         </div>
@@ -232,7 +232,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk by Area`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/87e9173d454fdddf44d50bc557fb6de948f2a6a9.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/87e9173d454fdddf44d50bc557fb6de948f2a6a9.webp)" }} />
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk by Material`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/44fb4147b9aa6858b00239786dbdb08312460038.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/44fb4147b9aa6858b00239786dbdb08312460038.webp)" }} />
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk Projection`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c7cb646e9e2d4861b8d725819c6cc2fb36be6d9c.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c7cb646e9e2d4861b8d725819c6cc2fb36be6d9c.webp)" }} />
             </div>
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Campaign Progress`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ca802e5fd7d3bb1bb467fea8c93b921c180d7f11.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ca802e5fd7d3bb1bb467fea8c93b921c180d7f11.webp)" }} />
             </div>
           </div>
         </div>
@@ -264,13 +264,13 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Inspection Deliverables`}</p>
             <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d3a483807f711f351a21ae844767604878bfb5e6.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "238.22px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d3a483807f711f351a21ae844767604878bfb5e6.webp)" }} />
             </div>
           </div>
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "568px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-226px", top: "0", width: "1730.94px", height: "1241.26px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.png)" }} />
+        <div style={{ position: "absolute", left: "-226px", top: "0", width: "1730.94px", height: "1241.26px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.webp)" }} />
         <div style={{ alignSelf: "stretch", height: "504px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
           <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#ffffff" }}>{`Conclusion`}</p>
           <div style={{ alignSelf: "stretch", height: "464px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -289,31 +289,31 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -324,7 +324,7 @@ export default function OstralEn() {
       {/* Tablet — 800px */}
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "454px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-6px", top: "0", width: "811.65px", height: "473px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.png)" }} />
+        <div style={{ position: "absolute", left: "-6px", top: "0", width: "811.65px", height: "473px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.webp)" }} />
         <div style={{ position: "absolute", left: "20px", top: "197px", width: "760px", height: "201px", display: "flex", flexDirection: "column", gap: "105px", justifyContent: "flex-end", alignItems: "center" }}>
           <p style={{ alignSelf: "stretch", fontSize: "68px", lineHeight: "68px", fontWeight: 400, letterSpacing: "1px", textAlign: "center", textTransform: "uppercase", color: "#ffffff" }}>{`Ostral`}</p>
           <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Web Platform — UX/UI, Data Visualization, Prototyping`}</p>
@@ -361,7 +361,7 @@ export default function OstralEn() {
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "272px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 40px 40px 40px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-53px", top: "0", width: "906px", height: "649.7px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.png)" }} />
+        <div style={{ position: "absolute", left: "-53px", top: "0", width: "906px", height: "649.7px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.webp)" }} />
         <div style={{ alignSelf: "stretch", height: "192px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
           <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#ffffff" }}>{`Problem Statement`}</p>
           <div style={{ alignSelf: "stretch", height: "152px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -371,7 +371,7 @@ export default function OstralEn() {
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "1548px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "40px 40px 40px 40px", background: "#fdfdff", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-16px", top: "0", width: "2335.78px", height: "1675px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.png)", opacity: 0.100000001490116 }} />
+        <div style={{ position: "absolute", left: "-16px", top: "0", width: "2335.78px", height: "1675px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         <div style={{ alignSelf: "stretch", height: "1468px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "112px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Users`}</p>
@@ -386,7 +386,7 @@ export default function OstralEn() {
                 <div style={{ alignSelf: "stretch", height: "148px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "96px", flexShrink: 0, background: "#ffffff", borderRadius: "4px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-12px", top: "-13.67px", width: "97.43px", height: "113.67px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/96d317046e142ab164bd66ae259f3b32c5c8c9de.png)" }} />
+                      <div style={{ position: "absolute", left: "-12px", top: "-13.67px", width: "97.43px", height: "113.67px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/96d317046e142ab164bd66ae259f3b32c5c8c9de.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "48px", display: "flex", flexDirection: "column" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Mark, 42`}</p>
@@ -423,7 +423,7 @@ export default function OstralEn() {
                 <div style={{ alignSelf: "stretch", height: "148px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "96px", flexShrink: 0, background: "#ffffff", borderRadius: "4px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-91px", top: "0", width: "221px", height: "96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7404a9ad3d166627d95a8019e558c428b2fa63b8.png)" }} />
+                      <div style={{ position: "absolute", left: "-91px", top: "0", width: "221px", height: "96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7404a9ad3d166627d95a8019e558c428b2fa63b8.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "48px", display: "flex", flexDirection: "column" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Anna, 38`}</p>
@@ -460,7 +460,7 @@ export default function OstralEn() {
                 <div style={{ alignSelf: "stretch", height: "148px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "96px", flexShrink: 0, background: "#ffffff", borderRadius: "4px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-21px", top: "0", width: "119.29px", height: "96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/adce442e1fbb055b8b5e3032cbc4c22905df28c9.png)" }} />
+                      <div style={{ position: "absolute", left: "-21px", top: "0", width: "119.29px", height: "96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/adce442e1fbb055b8b5e3032cbc4c22905df28c9.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "48px", display: "flex", flexDirection: "column" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Thomas, 47`}</p>
@@ -500,7 +500,7 @@ export default function OstralEn() {
           </div>
           <div style={{ alignSelf: "stretch", height: "689.41px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Flow diagram`}</p>
-            <div style={{ alignSelf: "stretch", height: "661.41px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/db4ce63c2e23f794d15da7c949131bc531f4a6c2.png)", borderRadius: "8px" }} />
+            <div style={{ alignSelf: "stretch", height: "661.41px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/db4ce63c2e23f794d15da7c949131bc531f4a6c2.webp)", borderRadius: "8px" }} />
           </div>
         </div>
       </div>
@@ -510,19 +510,19 @@ export default function OstralEn() {
             <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Key Screens`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Interfaces were designed for three user scenarios: the engineer works with the findings map and defect cards, the manager analyses risks and escalates decisions, the programs lead tracks campaign progress and prepares documentation packages`}</p>
           </div>
-          <div style={{ position: "absolute", left: "-32.77px", top: "0.26px", width: "892.77px", height: "640.21px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.png)", opacity: 0.100000001490116 }} />
+          <div style={{ position: "absolute", left: "-32.77px", top: "0.26px", width: "892.77px", height: "640.21px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         </div>
         <div style={{ alignSelf: "stretch", height: "568px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "16px 40px 16px 40px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Authorization`}</p>
-            <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/80c58814fe8da83aa98d71d7c0a5c81a171ca85f.png)", borderRadius: "4px" }} />
+            <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/80c58814fe8da83aa98d71d7c0a5c81a171ca85f.webp)", borderRadius: "4px" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "568px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "16px 40px 16px 40px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Dashboard`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7b4902c8bb3d82ec05644920e15f3c4aa26fd799.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7b4902c8bb3d82ec05644920e15f3c4aa26fd799.webp)" }} />
             </div>
           </div>
         </div>
@@ -530,7 +530,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Site Map`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d8be41a67a060d8524998b7b0a3a1485c715af.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d8be41a67a060d8524998b7b0a3a1485c715af.webp)" }} />
             </div>
           </div>
         </div>
@@ -538,7 +538,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Map — Area Filter`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8becd891fffd4bac71c0b60b8ebf1f6bc14dedc2.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8becd891fffd4bac71c0b60b8ebf1f6bc14dedc2.webp)" }} />
             </div>
           </div>
         </div>
@@ -546,7 +546,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk by Area`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/87e9173d454fdddf44d50bc557fb6de948f2a6a9.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/87e9173d454fdddf44d50bc557fb6de948f2a6a9.webp)" }} />
             </div>
           </div>
         </div>
@@ -554,7 +554,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk by Material`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/44fb4147b9aa6858b00239786dbdb08312460038.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/44fb4147b9aa6858b00239786dbdb08312460038.webp)" }} />
             </div>
           </div>
         </div>
@@ -562,7 +562,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk Projection`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c7cb646e9e2d4861b8d725819c6cc2fb36be6d9c.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c7cb646e9e2d4861b8d725819c6cc2fb36be6d9c.webp)" }} />
             </div>
           </div>
         </div>
@@ -570,7 +570,7 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Campaign Progress`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ca802e5fd7d3bb1bb467fea8c93b921c180d7f11.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ca802e5fd7d3bb1bb467fea8c93b921c180d7f11.webp)" }} />
             </div>
           </div>
         </div>
@@ -578,13 +578,13 @@ export default function OstralEn() {
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Inspection Deliverables`}</p>
             <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "4px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d3a483807f711f351a21ae844767604878bfb5e6.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "512px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d3a483807f711f351a21ae844767604878bfb5e6.webp)" }} />
             </div>
           </div>
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "368px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "40px 40px 40px 40px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", top: "0", width: "831.95px", height: "596.59px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.png)" }} />
+        <div style={{ position: "absolute", left: "0", top: "0", width: "831.95px", height: "596.59px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.webp)" }} />
         <div style={{ alignSelf: "stretch", height: "288px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
           <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#ffffff" }}>{`Conclusion`}</p>
           <div style={{ alignSelf: "stretch", height: "248px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -603,31 +603,31 @@ export default function OstralEn() {
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -638,7 +638,7 @@ export default function OstralEn() {
       {/* Desktop — 1280px */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "746px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", padding: "100px 128px 120px 128px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", top: "0.03px", width: "1280px", height: "745.94px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.png)" }} />
+        <div style={{ position: "absolute", left: "0", top: "0.03px", width: "1280px", height: "745.94px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.webp)" }} />
         <div style={{ width: "1024px", height: "330px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "180px", justifyContent: "flex-end", alignItems: "center" }}>
           <p style={{ alignSelf: "stretch", fontSize: "115px", lineHeight: "118px", fontWeight: 400, letterSpacing: "1px", textAlign: "center", textTransform: "uppercase", color: "#ffffff" }}>{`Ostral`}</p>
           <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Web Platform — UX/UI, Data Visualization, Prototyping`}</p>
@@ -674,7 +674,7 @@ export default function OstralEn() {
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "452px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-53px", top: "0", width: "1368px", height: "981px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.png)" }} />
+        <div style={{ position: "absolute", left: "-53px", top: "0", width: "1368px", height: "981px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.webp)" }} />
         <div style={{ width: "1024px", height: "212px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#ffffff" }}>{`Problem Statement`}</p>
           <div style={{ alignSelf: "stretch", height: "156px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -684,7 +684,7 @@ export default function OstralEn() {
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "1514px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#fdfdff", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-879.94px", top: "0", width: "2250.72px", height: "1614px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.png)", opacity: 0.100000001490116 }} />
+        <div style={{ position: "absolute", left: "-879.94px", top: "0", width: "2250.72px", height: "1614px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         <div style={{ width: "1024px", height: "1274px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "112px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Users`}</p>
@@ -697,7 +697,7 @@ export default function OstralEn() {
             <div style={{ alignSelf: "stretch", height: "314px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px", padding: "32px 32px 32px 32px", background: "rgba(255, 255, 255, 0.6)", borderRadius: "12px" }}>
               <div style={{ alignSelf: "stretch", height: "148px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px" }}>
                 <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#ffffff", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "-35px", top: "-22.42px", width: "166.29px", height: "194px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/96d317046e142ab164bd66ae259f3b32c5c8c9de.png)" }} />
+                  <div style={{ position: "absolute", left: "-35px", top: "-22.42px", width: "166.29px", height: "194px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/96d317046e142ab164bd66ae259f3b32c5c8c9de.webp)" }} />
                 </div>
                 <div style={{ flex: "1 1 0%", height: "120px", display: "flex", flexDirection: "column", gap: "16px", justifyContent: "center" }}>
                   <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -731,7 +731,7 @@ export default function OstralEn() {
               <div style={{ alignSelf: "stretch", height: "338px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px", padding: "32px 32px 32px 32px", background: "rgba(255, 255, 255, 0.6)", borderRadius: "12px" }}>
                 <div style={{ alignSelf: "stretch", height: "148px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#161724", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "-148px", top: "0", width: "340px", height: "147.79px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7404a9ad3d166627d95a8019e558c428b2fa63b8.png)" }} />
+                    <div style={{ position: "absolute", left: "-148px", top: "0", width: "340px", height: "147.79px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7404a9ad3d166627d95a8019e558c428b2fa63b8.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "120px", display: "flex", flexDirection: "column", gap: "16px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -766,7 +766,7 @@ export default function OstralEn() {
               <div style={{ alignSelf: "stretch", height: "338px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px", padding: "32px 32px 32px 32px", background: "rgba(255, 255, 255, 0.6)", borderRadius: "12px" }}>
                 <div style={{ alignSelf: "stretch", height: "148px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#161724", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "-37px", top: "0", width: "203.79px", height: "164px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/adce442e1fbb055b8b5e3032cbc4c22905df28c9.png)" }} />
+                    <div style={{ position: "absolute", left: "-37px", top: "0", width: "203.79px", height: "164px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/adce442e1fbb055b8b5e3032cbc4c22905df28c9.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "120px", display: "flex", flexDirection: "column", gap: "16px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -807,7 +807,7 @@ export default function OstralEn() {
           </div>
           <div style={{ alignSelf: "stretch", height: "972.67px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Flow diagram`}</p>
-            <div style={{ alignSelf: "stretch", height: "940.67px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/db4ce63c2e23f794d15da7c949131bc531f4a6c2.png)", borderRadius: "12px" }} />
+            <div style={{ alignSelf: "stretch", height: "940.67px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/db4ce63c2e23f794d15da7c949131bc531f4a6c2.webp)", borderRadius: "12px" }} />
           </div>
         </div>
       </div>
@@ -817,19 +817,19 @@ export default function OstralEn() {
             <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Key Screens`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Interfaces were designed for three user scenarios: the engineer works with the findings map and defect cards, the manager analyses risks and escalates decisions, the programs lead tracks campaign progress and prepares documentation packages`}</p>
           </div>
-          <div style={{ position: "absolute", left: "-880px", top: "0.33px", width: "2250.72px", height: "1614px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.png)", opacity: 0.100000001490116 }} />
+          <div style={{ position: "absolute", left: "-880px", top: "0.33px", width: "2250.72px", height: "1614px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         </div>
         <div style={{ alignSelf: "stretch", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "0 56px 0 56px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", borderRadius: "12px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Authorization`}</p>
-            <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/80c58814fe8da83aa98d71d7c0a5c81a171ca85f.png)", borderRadius: "8px" }} />
+            <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/80c58814fe8da83aa98d71d7c0a5c81a171ca85f.webp)", borderRadius: "8px" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "962.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "88px 56px 0 56px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Dashboard`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7b4902c8bb3d82ec05644920e15f3c4aa26fd799.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7b4902c8bb3d82ec05644920e15f3c4aa26fd799.webp)" }} />
             </div>
           </div>
         </div>
@@ -837,7 +837,7 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Site Map`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d8be41a67a060d8524998b7b0a3a1485c715af.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d8be41a67a060d8524998b7b0a3a1485c715af.webp)" }} />
             </div>
           </div>
         </div>
@@ -845,7 +845,7 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Map — Area Filter`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8becd891fffd4bac71c0b60b8ebf1f6bc14dedc2.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8becd891fffd4bac71c0b60b8ebf1f6bc14dedc2.webp)" }} />
             </div>
           </div>
         </div>
@@ -853,7 +853,7 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk by Area`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/87e9173d454fdddf44d50bc557fb6de948f2a6a9.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/87e9173d454fdddf44d50bc557fb6de948f2a6a9.webp)" }} />
             </div>
           </div>
         </div>
@@ -861,7 +861,7 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk by Material`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/44fb4147b9aa6858b00239786dbdb08312460038.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/44fb4147b9aa6858b00239786dbdb08312460038.webp)" }} />
             </div>
           </div>
         </div>
@@ -869,7 +869,7 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Analytics — Risk Projection`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c7cb646e9e2d4861b8d725819c6cc2fb36be6d9c.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c7cb646e9e2d4861b8d725819c6cc2fb36be6d9c.webp)" }} />
             </div>
           </div>
         </div>
@@ -877,7 +877,7 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Campaign Progress`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ca802e5fd7d3bb1bb467fea8c93b921c180d7f11.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ca802e5fd7d3bb1bb467fea8c93b921c180d7f11.webp)" }} />
             </div>
           </div>
         </div>
@@ -885,13 +885,13 @@ export default function OstralEn() {
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Inspection Deliverables`}</p>
             <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d3a483807f711f351a21ae844767604878bfb5e6.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "830.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d3a483807f711f351a21ae844767604878bfb5e6.webp)" }} />
             </div>
           </div>
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "-53px", top: "0", width: "1368px", height: "981px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.png)" }} />
+        <div style={{ position: "absolute", left: "-53px", top: "0", width: "1368px", height: "981px", flexShrink: 0, background: "rgba(23, 23, 35, 0.93)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/06cd067adca2859ac66c4531196799cf4e9bfc9a.webp)" }} />
         <div style={{ width: "1024px", height: "296px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
           <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#ffffff" }}>{`Conclusion`}</p>
           <div style={{ alignSelf: "stretch", height: "240px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -910,31 +910,31 @@ export default function OstralEn() {
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>

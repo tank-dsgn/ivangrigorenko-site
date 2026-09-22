@@ -120,22 +120,22 @@ export default function VvRu() {
           <div style={{ alignSelf: "stretch", height: "497.75px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`повторяющиеся решения`}</p>
             <div style={{ alignSelf: "stretch", height: "473.75px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/206712a1f72a62ee771238c8883440b712650924.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/206712a1f72a62ee771238c8883440b712650924.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "497.75px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Несогласованные параметры`}</p>
             <div style={{ alignSelf: "stretch", height: "473.75px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
               <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/99143e4d72515bc4aa0a9ce07972591834802ba7.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3362fe5dfe4e086d0384889acab9adc72849fadf.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "218.88px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3362fe5dfe4e086d0384889acab9adc72849fadf.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "502.98px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Фрагментация локальных компонентов`}</p>
             <div style={{ alignSelf: "stretch", height: "478.98px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "221.49px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "221.49px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/158f0996ee48003493082ebf48d1e37822ee9c5b.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "221.49px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "221.49px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/158f0996ee48003493082ebf48d1e37822ee9c5b.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function VvRu() {
             decoding="async"
             style={{ position: "absolute", left: "-707px", top: "-1067px", width: "1710px", height: "2066px", flexShrink: 0 }}
           />
-          <div style={{ alignSelf: "stretch", height: "176px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05754268326d87f16c51cddfec2a50337e6f97db.png)" }} />
+          <div style={{ alignSelf: "stretch", height: "176px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05754268326d87f16c51cddfec2a50337e6f97db.webp)" }} />
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "2536.2px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", background: "#ffffff", overflow: "hidden", position: "relative" }}>
@@ -232,22 +232,22 @@ export default function VvRu() {
           <div style={{ alignSelf: "stretch", height: "707.16px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`типографика`}</p>
             <div style={{ alignSelf: "stretch", height: "683.16px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "323.9px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.9px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "706.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`цвета`}</p>
             <div style={{ alignSelf: "stretch", height: "682.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "706.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`размеры`}</p>
             <div style={{ alignSelf: "stretch", height: "682.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.png)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#06181e" }}>{`Применение токенов`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Каждый элемент интерфейса связан с системой токенов: изменения в базе автоматически масштабируются на весь UI без ручной правки компонентов`}</p>
           </div>
-          <div style={{ alignSelf: "stretch", height: "174.54px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f129e219daa9142e1b9350c0381f7ddc0d5ed771.png)" }} />
+          <div style={{ alignSelf: "stretch", height: "174.54px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f129e219daa9142e1b9350c0381f7ddc0d5ed771.webp)" }} />
         </div>
         <img
           src="/a/eea6c061c11b93d02a34ea92b0f7ea3cff547f28.svg"
@@ -284,7 +284,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Это единое рабочее пространство: токены, стили, компоненты и документация структурированы по уровням и связаны между собой для удобной навигации и поддержки`}</p>
           </div>
           <div style={{ alignSelf: "stretch", height: "201.89px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "12px 12px 12px 12px", background: "#f1f0f9", borderRadius: "12px" }}>
-            <div style={{ alignSelf: "stretch", height: "177.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.png)", borderRadius: "8px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
+            <div style={{ alignSelf: "stretch", height: "177.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.webp)", borderRadius: "8px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
           </div>
         </div>
         <img
@@ -303,7 +303,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Компоненты построены на токенах и переменных и управляются параметрически. Это позволяет поддерживать консистентность интерфейса и масштабировать дизайн-систему без усложнения структуры`}</p>
           </div>
           <div style={{ alignSelf: "stretch", height: "228.01px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-            <div style={{ alignSelf: "stretch", height: "204.01px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.png)", borderRadius: "8px" }} />
+            <div style={{ alignSelf: "stretch", height: "204.01px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.webp)", borderRadius: "8px" }} />
           </div>
         </div>
         <img
@@ -322,7 +322,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Сформирован базовый набор из 300+ иконок, интегрированный в дизайн-систему. Размеры 16px / 20px / 24px применяются как стандартизированные варианты, обеспечивая единый масштаб и согласованность иконок во всех компонентах. Все иконки разработаны в едином стиле`}</p>
           </div>
           <div style={{ alignSelf: "stretch", height: "215.36px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "8766.52px 8766.52px 8766.52px 8766.52px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "215.36px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c63f3e168e11d680302e8ef145f817fc7ea1aec4.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "215.36px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c63f3e168e11d680302e8ef145f817fc7ea1aec4.webp)" }} />
           </div>
         </div>
         <img
@@ -361,31 +361,31 @@ export default function VvRu() {
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -506,22 +506,22 @@ export default function VvRu() {
           <div style={{ alignSelf: "stretch", height: "293.88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`повторяющиеся решения`}</p>
             <div style={{ alignSelf: "stretch", height: "269.88px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", justifyContent: "center", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/206712a1f72a62ee771238c8883440b712650924.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/206712a1f72a62ee771238c8883440b712650924.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "293.88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Несогласованные параметры`}</p>
             <div style={{ alignSelf: "stretch", height: "269.88px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", justifyContent: "center", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
               <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/99143e4d72515bc4aa0a9ce07972591834802ba7.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3362fe5dfe4e086d0384889acab9adc72849fadf.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "237.88px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3362fe5dfe4e086d0384889acab9adc72849fadf.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "296.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Фрагментация локальных компонентов`}</p>
             <div style={{ alignSelf: "stretch", height: "272.72px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", justifyContent: "center", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "240.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "240.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/158f0996ee48003493082ebf48d1e37822ee9c5b.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "240.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "240.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/158f0996ee48003493082ebf48d1e37822ee9c5b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
         </div>
@@ -596,7 +596,7 @@ export default function VvRu() {
               <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#94a3b8" }}>{`В системе сознательно выбрана двухуровневая архитектура токенов — без избыточной сложности. Примитивы содержат сырые значения, а семантика определяет их роль в интерфейсе. Этого подхода достаточно для гибкости, масштабирования и комфортной работы`}</p>
             </div>
           </div>
-          <div style={{ alignSelf: "stretch", height: "260px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f004e79f4475a9e0fbb2f5fa25477ef7c53bbe02.png)" }} />
+          <div style={{ alignSelf: "stretch", height: "260px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f004e79f4475a9e0fbb2f5fa25477ef7c53bbe02.webp)" }} />
         </div>
         <img
           src="/a/8e9f7fa0b7ef9549c95421d0e0932e2d4fda39d0.svg"
@@ -618,22 +618,22 @@ export default function VvRu() {
           <div style={{ alignSelf: "stretch", height: "408.02px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`типографика`}</p>
             <div style={{ width: "720px", height: "384.02px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "352.02px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "352.02px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "407.32px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`цвета`}</p>
             <div style={{ width: "720px", height: "383.32px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "407.32px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`размеры`}</p>
             <div style={{ width: "720px", height: "383.32px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
             </div>
           </div>
         </div>
@@ -652,7 +652,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#06181e" }}>{`Применение токенов`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Каждый элемент интерфейса связан с системой токенов: изменения в базе автоматически масштабируются на весь UI без ручной правки компонентов`}</p>
           </div>
-          <div style={{ width: "736px", height: "424.5px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/493cdd0acf17f558f2d36baffe07eadb540ce9b2.png)" }} />
+          <div style={{ width: "736px", height: "424.5px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/493cdd0acf17f558f2d36baffe07eadb540ce9b2.webp)" }} />
         </div>
         <img
           src="/a/44935543ee41dc159d05b09f55e93ab107b0dc52.svg"
@@ -670,7 +670,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Это единое рабочее пространство: токены, стили, компоненты и документация структурированы по уровням и связаны между собой для удобной навигации и поддержки`}</p>
           </div>
           <div style={{ width: "720px", height: "425.54px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "16px 16px 16px 16px", background: "#f1f0f9", borderRadius: "16px" }}>
-            <div style={{ alignSelf: "stretch", height: "393.54px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.png)", borderRadius: "12px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
+            <div style={{ alignSelf: "stretch", height: "393.54px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.webp)", borderRadius: "12px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
           </div>
         </div>
         <img
@@ -689,7 +689,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Компоненты построены на токенах и переменных и управляются параметрически. Это позволяет поддерживать консистентность интерфейса и масштабировать дизайн-систему без усложнения структуры`}</p>
           </div>
           <div style={{ width: "720px", height: "483.32px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-            <div style={{ alignSelf: "stretch", height: "451.32px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.png)", borderRadius: "12px" }} />
+            <div style={{ alignSelf: "stretch", height: "451.32px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.webp)", borderRadius: "12px" }} />
           </div>
         </div>
         <img
@@ -708,7 +708,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Сформирован базовый набор из 300+ иконок, интегрированный в дизайн-систему. Размеры 16px / 20px / 24px применяются как стандартизированные варианты, обеспечивая единый масштаб и согласованность иконок во всех компонентах. Все иконки разработаны в едином стиле`}</p>
           </div>
           <div style={{ width: "720px", height: "462.86px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "8766.52px 8766.52px 8766.52px 8766.52px", overflow: "hidden" }}>
-            <div style={{ alignSelf: "stretch", height: "462.86px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c63f3e168e11d680302e8ef145f817fc7ea1aec4.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "462.86px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c63f3e168e11d680302e8ef145f817fc7ea1aec4.webp)" }} />
           </div>
         </div>
         <img
@@ -747,31 +747,31 @@ export default function VvRu() {
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -885,22 +885,22 @@ export default function VvRu() {
             <div style={{ width: "1024px", height: "415px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`повторяющиеся решения`}</p>
               <div style={{ width: "1024px", height: "383px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ flex: "1 1 0%", height: "335px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                <div style={{ flex: "1 1 0%", height: "335px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/206712a1f72a62ee771238c8883440b712650924.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                <div style={{ flex: "1 1 0%", height: "335px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                <div style={{ flex: "1 1 0%", height: "335px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/206712a1f72a62ee771238c8883440b712650924.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
               </div>
             </div>
             <div style={{ width: "1024px", height: "415px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Несогласованные параметры`}</p>
               <div style={{ width: "1024px", height: "383px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ width: "476px", height: "335px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/53e7894b5c6e66b7f2292cf5695a64e761a774b0.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                <div style={{ width: "476px", height: "335px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/53e7894b5c6e66b7f2292cf5695a64e761a774b0.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
                 <div style={{ width: "476px", height: "335px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8d7b3ed2383ed8c8edab40c8736de2fc2f63f540.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
               </div>
             </div>
             <div style={{ width: "1024px", height: "419px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Фрагментация локальных  компонентов`}</p>
               <div style={{ width: "1024px", height: "387px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ width: "476px", height: "339px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                <div style={{ width: "476px", height: "339px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/158f0996ee48003493082ebf48d1e37822ee9c5b.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                <div style={{ width: "476px", height: "339px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                <div style={{ width: "476px", height: "339px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/158f0996ee48003493082ebf48d1e37822ee9c5b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
               </div>
             </div>
           </div>
@@ -1624,8 +1624,8 @@ export default function VvRu() {
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Semantic`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", height: "501px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                    <div style={{ width: "482px", height: "502px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "502px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
                   </div>
                 </div>
               </div>
@@ -1639,8 +1639,8 @@ export default function VvRu() {
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Semantic`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", height: "501px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
                   </div>
                 </div>
               </div>
@@ -1654,8 +1654,8 @@ export default function VvRu() {
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Semantic`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", height: "501px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.png)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
                   </div>
                 </div>
               </div>
@@ -1911,7 +1911,7 @@ export default function VvRu() {
             <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Это единое рабочее пространство: токены, стили, компоненты и документация структурированы по уровням и связаны между собой для удобной навигации и поддержки`}</p>
           </div>
           <div style={{ width: "947.05px", height: "562.26px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "24px 24px 24px 24px", background: "#f1f0f9", borderRadius: "16px" }}>
-            <div style={{ width: "899.05px", height: "514.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.png)", borderRadius: "8px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
+            <div style={{ width: "899.05px", height: "514.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.webp)", borderRadius: "8px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
           </div>
         </div>
       </div>
@@ -1930,7 +1930,7 @@ export default function VvRu() {
             <p style={{ width: "834px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Компоненты построены на токенах и переменных и управляются параметрически. Это позволяет поддерживать консистентность интерфейса и масштабировать дизайн-систему без усложнения структуры`}</p>
           </div>
           <div style={{ width: "980px", height: "655px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px" }}>
-            <div style={{ width: "932px", height: "611.38px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.png)" }} />
+            <div style={{ width: "932px", height: "611.38px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.webp)" }} />
           </div>
         </div>
       </div>
@@ -1949,7 +1949,7 @@ export default function VvRu() {
             <p style={{ width: "978px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Сформирован базовый набор из 300+ иконок, интегрированный в дизайн-систему. Размеры 16px / 20px / 24px применяются как стандартизированные варианты, обеспечивая единый масштаб и согласованность иконок во всех компонентах. Все иконки разработаны в едином стиле`}</p>
           </div>
           <div style={{ width: "882px", height: "566.37px", flexShrink: 0, borderRadius: "8766.52px 8766.52px 8766.52px 8766.52px", overflow: "hidden", position: "relative" }}>
-            <div style={{ position: "absolute", left: "-12.27px", top: "-13.15px", width: "906.68px", height: "614.59px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4af12855fff0583a56be390f055299fbfefbccd5.png)" }} />
+            <div style={{ position: "absolute", left: "-12.27px", top: "-13.15px", width: "906.68px", height: "614.59px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4af12855fff0583a56be390f055299fbfefbccd5.webp)" }} />
             <div style={{ position: "absolute", left: "0", top: "0", width: "882px", height: "566.37px" }} />
           </div>
         </div>
@@ -1980,31 +1980,31 @@ export default function VvRu() {
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>

@@ -1,7 +1,14 @@
 export type Lang = "ru" | "en";
 
-/** Ассеты с оригинального сайта лежат в /public/a под своим хешем из Figma Sites */
-export const asset = (hash: string) => `/a/${hash}`;
+import assetMap from "@/lib/asset-map.json";
+
+/**
+ * Ассеты с оригинального сайта лежат в /public/a под своим хешем из Figma Sites.
+ * Тяжёлые PNG переведены в WebP — подмену держит карта, поэтому в коде
+ * везде остаётся исходное имя из выгрузки.
+ */
+export const asset = (hash: string) =>
+  `/a/${(assetMap as Record<string, string>)[hash] ?? hash}`;
 
 export const LOGO_WIDE = asset("a1576d14b0113138eb9b3cc4048c7c7909f4d72c.svg");
 export const LOGO_SMALL = asset("848bd3970b66f72b3bd1f6a9616c471f5a5d254f.svg");

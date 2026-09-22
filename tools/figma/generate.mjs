@@ -10,6 +10,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { createEmitter, componentName } from "./emit.mjs";
+import assetMap from "../../lib/asset-map.json" with { type: "json" };
 
 const BUNDLE = "39c51217-69ff-4444-95d1-588378532cd6";
 const ORIGIN = "https://ivangrigorenko.com";
@@ -79,7 +80,7 @@ async function main() {
     .map((id) => nodeById[id])
     .filter((n) => n?.isBreakpointFrame);
 
-  const { emit, usedAssets } = createEmitter({ assets });
+  const { emit, usedAssets } = createEmitter({ assets, assetMap });
 
   const keepShell = rest.includes("--keep-shell");
   const shell = { header: {}, footer: {} };

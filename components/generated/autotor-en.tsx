@@ -12,7 +12,7 @@ export default function AutotorEn() {
       <div style={{ alignSelf: "stretch", height: "336.19px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "48px 20px 48px 20px", backgroundImage: "linear-gradient(138.91deg, #6ddfcb 0%, #369887 100%)", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "0", top: "0", width: "375px", height: "336.19px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(78, 193, 173, 0) 0%, rgba(44, 47, 48, 0.408) 62.5%, rgba(0, 0, 0, 0.6) 100%)" }} />
         <div style={{ alignSelf: "stretch", height: "240.19px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px", alignItems: "center" }}>
-          <div style={{ alignSelf: "stretch", height: "190.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23fba15410e9396f49b111b8154ae779b090e4da.png)" }} />
+          <div style={{ alignSelf: "stretch", height: "190.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23fba15410e9396f49b111b8154ae779b090e4da.webp)" }} />
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Paid features for Autotor.pl— UX/UI Design & Monetization`}</p>
         </div>
       </div>
@@ -73,7 +73,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "178.94px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`competitors`}</p>
             <div style={{ alignSelf: "stretch", height: "154.94px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "154.94px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "154.94px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.webp)" }} />
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`In addition to competitor analysis, a survey was conducted among the target audience to understand which promotion features users actually consider useful`}</p>
@@ -88,7 +88,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "235.39px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Paid features flow diagram`}</p>
             <div style={{ alignSelf: "stretch", height: "211.39px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "211.39px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "211.39px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp)" }} />
             </div>
           </div>
         </div>
@@ -103,37 +103,37 @@ export default function AutotorEn() {
         <div style={{ alignSelf: "stretch", height: "282.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "32px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "226.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Promotion offer screen`}</p>
-            <div style={{ alignSelf: "stretch", height: "198.72px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0fc38ef16c9dcb40de28aa2e5006b81bcbf6ffe7.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "198.72px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0fc38ef16c9dcb40de28aa2e5006b81bcbf6ffe7.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "274.89px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "226.89px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Selected features modal`}</p>
-            <div style={{ alignSelf: "stretch", height: "198.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d88735e6710701b3d95d08054ea7a29f38623219.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "198.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d88735e6710701b3d95d08054ea7a29f38623219.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "274.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "226.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Selected features & payment details`}</p>
-            <div style={{ alignSelf: "stretch", height: "198.72px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ab3e6399f59df1b112a4d09cd633b5f5bbf9aa0a.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "198.72px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ab3e6399f59df1b112a4d09cd633b5f5bbf9aa0a.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "275px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "227px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Bank transfer details`}</p>
-            <div style={{ alignSelf: "stretch", height: "199px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/00aa3923fa2379fdb954fe67ecc952e2e3d370cb.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "199px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/00aa3923fa2379fdb954fe67ecc952e2e3d370cb.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "274.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "226.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Account dashboard / My listings`}</p>
-            <div style={{ alignSelf: "stretch", height: "198.72px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/815cedc2761f9617a46b085342db769a36f0b0e2.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "198.72px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/815cedc2761f9617a46b085342db769a36f0b0e2.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "291px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 20px 40px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "227px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Transaction history`}</p>
-            <div style={{ alignSelf: "stretch", height: "199px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d0c2b70ef7493882b5fa87153c80e652a86c9e1.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "199px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d0c2b70ef7493882b5fa87153c80e652a86c9e1.webp)" }} />
           </div>
         </div>
       </div>
@@ -156,31 +156,31 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -193,7 +193,7 @@ export default function AutotorEn() {
       <div style={{ alignSelf: "stretch", height: "567px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "64px 20px 64px 20px", backgroundImage: "linear-gradient(138.91deg, #6ddfcb 0%, #369887 100%)", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "0", top: "0", width: "800px", height: "567px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(78, 193, 173, 0) 0%, rgba(44, 47, 48, 0.408) 62.5%, rgba(0, 0, 0, 0.6) 100%)" }} />
         <div style={{ alignSelf: "stretch", height: "439px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px", alignItems: "center" }}>
-          <div style={{ alignSelf: "stretch", height: "409px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23fba15410e9396f49b111b8154ae779b090e4da.png)" }} />
+          <div style={{ alignSelf: "stretch", height: "409px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23fba15410e9396f49b111b8154ae779b090e4da.webp)" }} />
           <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Paid features for Autotor.pl— UX/UI Design & Monetization`}</p>
         </div>
       </div>
@@ -254,7 +254,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "357px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`competitors`}</p>
             <div style={{ alignSelf: "stretch", height: "333px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "333px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "333px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.webp)" }} />
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`In addition to competitor analysis, a survey was conducted among the target audience to understand which promotion features users actually consider useful`}</p>
@@ -269,7 +269,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "478.33px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Paid features flow diagram`}</p>
             <div style={{ alignSelf: "stretch", height: "454.33px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "454.33px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "454.33px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp)" }} />
             </div>
           </div>
         </div>
@@ -284,37 +284,37 @@ export default function AutotorEn() {
         <div style={{ alignSelf: "stretch", height: "519.11px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "40px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "455.11px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Promotion offer screen`}</p>
-            <div style={{ alignSelf: "stretch", height: "427.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0fc38ef16c9dcb40de28aa2e5006b81bcbf6ffe7.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "427.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0fc38ef16c9dcb40de28aa2e5006b81bcbf6ffe7.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "503.46px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "455.46px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Selected features modal`}</p>
-            <div style={{ alignSelf: "stretch", height: "427.46px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d88735e6710701b3d95d08054ea7a29f38623219.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "427.46px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d88735e6710701b3d95d08054ea7a29f38623219.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "503.11px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "455.11px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Selected features & payment details`}</p>
-            <div style={{ alignSelf: "stretch", height: "427.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ab3e6399f59df1b112a4d09cd633b5f5bbf9aa0a.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "427.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ab3e6399f59df1b112a4d09cd633b5f5bbf9aa0a.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "503.71px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "455.71px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Bank transfer details`}</p>
-            <div style={{ alignSelf: "stretch", height: "427.71px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/00aa3923fa2379fdb954fe67ecc952e2e3d370cb.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "427.71px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/00aa3923fa2379fdb954fe67ecc952e2e3d370cb.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "503.11px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "455.11px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Account dashboard / My listings`}</p>
-            <div style={{ alignSelf: "stretch", height: "427.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/815cedc2761f9617a46b085342db769a36f0b0e2.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "427.11px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/815cedc2761f9617a46b085342db769a36f0b0e2.webp)" }} />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "519.71px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 40px 40px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "455.71px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
             <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Transaction history`}</p>
-            <div style={{ alignSelf: "stretch", height: "427.71px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d0c2b70ef7493882b5fa87153c80e652a86c9e1.png)" }} />
+            <div style={{ alignSelf: "stretch", height: "427.71px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d0c2b70ef7493882b5fa87153c80e652a86c9e1.webp)" }} />
           </div>
         </div>
       </div>
@@ -337,31 +337,31 @@ export default function AutotorEn() {
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -377,7 +377,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "528px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "14.67px", justifyContent: "center", alignItems: "center", position: "relative" }}>
             <p style={{ position: "absolute", left: "-166px", top: "91px", fontSize: "255px", lineHeight: "347.26px", fontWeight: 700, textAlign: "center", color: "rgba(57, 129, 117, 0.17)" }}>{`AUTOTOR`}</p>
             <img
-              src="/a/75c711e6f0b30055f077c5d5ef86732ce2814ffc.png"
+              src="/a/75c711e6f0b30055f077c5d5ef86732ce2814ffc.webp"
               alt=""
               aria-hidden="true"
               loading="lazy"
@@ -439,7 +439,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "477px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`competitors`}</p>
             <div style={{ width: "960px", height: "444px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px" }}>
-              <div style={{ width: "960px", height: "444px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.png)" }} />
+              <div style={{ width: "960px", height: "444px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.webp)" }} />
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`In addition to competitor analysis, a survey was conducted among the target audience to understand which promotion features users actually consider useful`}</p>
@@ -454,7 +454,7 @@ export default function AutotorEn() {
           <div style={{ alignSelf: "stretch", height: "655px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Paid features flow diagram`}</p>
             <div style={{ alignSelf: "stretch", height: "623px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ width: "910px", height: "575px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3738c2a4bab17035fe86467e8ea38b5458f88fba.png)" }} />
+              <div style={{ width: "910px", height: "575px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3738c2a4bab17035fe86467e8ea38b5458f88fba.webp)" }} />
             </div>
           </div>
         </div>
@@ -470,8 +470,8 @@ export default function AutotorEn() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Promotion offer screen`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/965fd0479393cb49eadcda04edbf3c077b6ab8d7.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "97.33px", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d4396201ed91a2f49d8ba0c278829faf461d0754.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/965fd0479393cb49eadcda04edbf3c077b6ab8d7.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "97.33px", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d4396201ed91a2f49d8ba0c278829faf461d0754.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
               <div style={{ position: "absolute", left: "0", top: "649.7px", width: "267.67px", height: "26.53px" }} />
             </div>
           </div>
@@ -480,8 +480,8 @@ export default function AutotorEn() {
           <div style={{ width: "1168px", height: "719.62px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Selected features modal`}</p>
             <div style={{ width: "1166.54px", height: "675.62px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "913.79px", height: "675.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f05739c341791ab6f1417e2787bad43fc6d8bef9.png)", borderRadius: "9.91px", boxShadow: "0 4.95px 19.81px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "899.21px", top: "97.44px", width: "267.33px", height: "578.41px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d16b0c11330f27666adbcaffac08cca8b949bb68.png)", borderRadius: "9.72px", boxShadow: "0 4.86px 19.44px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "0", width: "913.79px", height: "675.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f05739c341791ab6f1417e2787bad43fc6d8bef9.webp)", borderRadius: "9.91px", boxShadow: "0 4.95px 19.81px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "899.21px", top: "97.44px", width: "267.33px", height: "578.41px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d16b0c11330f27666adbcaffac08cca8b949bb68.webp)", borderRadius: "9.72px", boxShadow: "0 4.86px 19.44px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -489,8 +489,8 @@ export default function AutotorEn() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Selected features & payment details`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/eed3aad48b69455ed9479550e959342573c4cf32.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "90.03px", width: "267.67px", height: "586.43px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd9f54f0ded8bda2c9e08c206861fde95a06a6d2.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/eed3aad48b69455ed9479550e959342573c4cf32.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "90.03px", width: "267.67px", height: "586.43px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd9f54f0ded8bda2c9e08c206861fde95a06a6d2.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
               <div style={{ position: "absolute", left: "0", top: "649.7px", width: "267.67px", height: "26.53px" }} />
             </div>
           </div>
@@ -580,7 +580,7 @@ export default function AutotorEn() {
                                 </div>
                               </div>
                             </div>
-                            <div style={{ position: "absolute", left: "913px", top: "658.27px", width: "438px", height: "659.27px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b03585ac7679a28541387695f6a7899d0c69146e.png)" }} />
+                            <div style={{ position: "absolute", left: "913px", top: "658.27px", width: "438px", height: "659.27px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b03585ac7679a28541387695f6a7899d0c69146e.webp)" }} />
                           </div>
                         </div>
                       </div>
@@ -748,7 +748,7 @@ export default function AutotorEn() {
                   </div>
                 </div>
               </div>
-              <div style={{ position: "absolute", left: "900.05px", top: "96.95px", width: "267.95px", height: "580.35px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cd7611a62cbe95fa4ba5bd9984321432d1a1533.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "900.05px", top: "96.95px", width: "267.95px", height: "580.35px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cd7611a62cbe95fa4ba5bd9984321432d1a1533.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -809,7 +809,7 @@ export default function AutotorEn() {
                           </div>
                           <div style={{ alignSelf: "stretch", height: "89.15px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "17.16px" }}>
                             <div style={{ width: "152.25px", height: "85.78px", flexShrink: 0, borderRadius: "8.58px", overflow: "hidden", position: "relative" }}>
-                              <div style={{ position: "absolute", left: "-0.3px", top: "-5.16px", width: "153.3px", height: "127.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/9fcec51304b659e7b6f75ea68e69fdeeaaf9dd52.png)" }} />
+                              <div style={{ position: "absolute", left: "-0.3px", top: "-5.16px", width: "153.3px", height: "127.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/9fcec51304b659e7b6f75ea68e69fdeeaaf9dd52.webp)" }} />
                               <div style={{ position: "absolute", left: "0", top: "-0.49px", width: "152.25px", height: "85.78px", background: "rgba(0, 0, 0, 0.5)" }} />
                               <p style={{ position: "absolute", left: "28.76px", top: "31.15px", fontSize: "14.3px", lineHeight: "22.87px", fontWeight: 500, color: "#ffffff" }}>{`W moderacji`}</p>
                             </div>
@@ -907,7 +907,7 @@ export default function AutotorEn() {
                   </div>
                 </div>
               </div>
-              <div style={{ position: "absolute", left: "0", top: "97.33px", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23b29a04e3932fde7b2bca9aa74b1f7cb9ea4d5b.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "97.33px", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23b29a04e3932fde7b2bca9aa74b1f7cb9ea4d5b.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
               <div style={{ position: "absolute", left: "0", top: "649.7px", width: "267.67px", height: "26.53px" }} />
             </div>
           </div>
@@ -1198,7 +1198,7 @@ export default function AutotorEn() {
                   </div>
                 </div>
               </div>
-              <div style={{ position: "absolute", left: "899.77px", top: "96.95px", width: "268.23px", height: "580.35px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4f6486a3cb014d7db518e59e8decf90023d51dd6.png)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "899.77px", top: "96.95px", width: "268.23px", height: "580.35px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4f6486a3cb014d7db518e59e8decf90023d51dd6.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -1221,31 +1221,31 @@ export default function AutotorEn() {
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>

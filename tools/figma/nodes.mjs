@@ -54,13 +54,13 @@ export function linearGradient(fill) {
 }
 
 /** Заливка картинкой: ссылка на ассет и режим вписывания */
-export function imageFill(node, assets) {
+export function imageFill(node, assets, assetMap = {}) {
   const f = (node.fills || []).find((x) => x.visible !== false && x.type === "IMAGE");
   if (!f) return null;
   const a = assets[f.imageRef];
   if (!a) return null;
   return {
-    src: `/a/${a.url}`,
+    src: `/a/${assetMap[a.url] ?? a.url}`,
     fit: f.scaleMode === "FIT" ? "contain" : "cover",
     width: f.originalImageWidth,
     height: f.originalImageHeight,
@@ -91,7 +91,7 @@ export function fontWeight(style = {}) {
 const ALIGN = { MIN: "flex-start", CENTER: "center", MAX: "flex-end", SPACE_BETWEEN: "space-between", STRETCH: "stretch", BASELINE: "baseline" };
 
 /** Стили самого фрейма: направление, отступы, выравнивание, фон, скругления, тени */
-export function frameStyle(node, assets) {
+export function frameStyle(node, assets, assetMap = {}) {
   const s = {};
   if (node.layoutMode === "HORIZONTAL" || node.layoutMode === "VERTICAL") {
     s.display = "flex";
@@ -109,7 +109,7 @@ export function frameStyle(node, assets) {
 
   // Слои фона: картинка снизу, градиенты поверх — как в Figma
   const layers = [];
-  const img = imageFill(node, assets);
+  const img = imageFill(node, assets, assetMap);
   if (img) { s.backgroundSize = img.fit; s.backgroundPosition = "center"; s.backgroundRepeat = "no-repeat"; }
   for (const f of node.fills || []) {
     if (f.visible === false) continue;

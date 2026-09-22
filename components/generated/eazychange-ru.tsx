@@ -11,9 +11,9 @@ export default function EazychangeRu() {
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "10764.82px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", overflow: "hidden" }}>
         <div style={{ alignSelf: "stretch", height: "418px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-          <div style={{ position: "absolute", left: "-438px", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.png)" }} />
+          <div style={{ position: "absolute", left: "-438px", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.webp)" }} />
           <div style={{ position: "absolute", left: "0", top: "0", width: "375px", height: "426px", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
-          <div style={{ position: "absolute", left: "99px", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.png)" }} />
+          <div style={{ position: "absolute", left: "99px", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
           <p style={{ position: "absolute", left: "20px", top: "290px", width: "335px", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
         </div>
         <div style={{ alignSelf: "stretch", height: "1008px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", padding: "32px 20px 32px 20px", background: "#ffffff", overflow: "hidden" }}>
@@ -104,7 +104,7 @@ export default function EazychangeRu() {
                   <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                       <div style={{ width: "102.08px", height: "126px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                        <div style={{ position: "absolute", left: "-12.54px", top: "-0.93px", width: "127.15px", height: "127.15px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.png)" }} />
+                        <div style={{ position: "absolute", left: "-12.54px", top: "-0.93px", width: "127.15px", height: "127.15px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                       </div>
                       <div style={{ flex: "1 1 0%", height: "124px", display: "flex", flexDirection: "column", gap: "12px" }}>
                         <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -153,7 +153,7 @@ export default function EazychangeRu() {
                   <div style={{ alignSelf: "stretch", height: "125px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     <div style={{ alignSelf: "stretch", height: "125px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                       <div style={{ width: "101.27px", height: "125px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                        <div style={{ position: "absolute", left: "0", top: "-13.43px", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.png)" }} />
+                        <div style={{ position: "absolute", left: "0", top: "-13.43px", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
                       </div>
                       <div style={{ flex: "1 1 0%", height: "108px", display: "flex", flexDirection: "column", gap: "12px" }}>
                         <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -273,7 +273,7 @@ export default function EazychangeRu() {
             <div style={{ alignSelf: "stretch", height: "209.74px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", borderRadius: "24px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`карта сайта`}</p>
               <div style={{ alignSelf: "stretch", height: "193.74px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "8px 8px 8px 8px", background: "#ffffff", borderRadius: "12px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "177.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8a094f3b11029365a0d7dc6c4bb1639c12564aa5.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "177.74px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8a094f3b11029365a0d7dc6c4bb1639c12564aa5.webp)" }} />
               </div>
             </div>
           </div>
@@ -287,7 +287,7 @@ export default function EazychangeRu() {
             <div style={{ alignSelf: "stretch", height: "207px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Итерация 1.0`}</p>
               <div style={{ alignSelf: "stretch", height: "179px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-5.3px", top: "-4.7px", width: "340.44px", height: "190px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.png)" }} />
+                <div style={{ position: "absolute", left: "-5.3px", top: "-4.7px", width: "340.44px", height: "190px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
               </div>
             </div>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Бумажные прототипы стали фундаментом всей структуры приложения и позволили с самого начала выстроить логику обмена, опираясь на реальные сценарии использования`}</p>
@@ -309,7 +309,7 @@ export default function EazychangeRu() {
               <div style={{ alignSelf: "stretch", height: "226px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
                 <div style={{ alignSelf: "stretch", height: "202px", flexShrink: 0, background: "#f7f8fa", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "335px", height: "201.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.png)" }} />
+                  <div style={{ position: "absolute", left: "0", top: "0", width: "335px", height: "201.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "130px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -340,56 +340,56 @@ export default function EazychangeRu() {
                 <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Финальные экраны`}</p>
                 <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`После утверждения пользовательских сценариев перешли к разработке дизайна, визуальной части — созданию чистых, адаптивных интерфейсов`}</p>
               </div>
-              <div style={{ alignSelf: "stretch", height: "200.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a9b82a37ab94a5fa65b16dce6942a807fc155158.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "200.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a9b82a37ab94a5fa65b16dce6942a807fc155158.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "231.48px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "183.48px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Основной экран обмена`}</p>
-              <div style={{ alignSelf: "stretch", height: "159.48px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/73ed58e5de5e7d6eaf2d44260c6a7d3b9eaee64b.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "159.48px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/73ed58e5de5e7d6eaf2d44260c6a7d3b9eaee64b.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "260.85px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "212.85px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Выбор криптовалюты`}</p>
-              <div style={{ alignSelf: "stretch", height: "188.85px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ba0dc07b3ad3c861e146a1fa9590a8804836bc41.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "188.85px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ba0dc07b3ad3c861e146a1fa9590a8804836bc41.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "261.13px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "213.13px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`QR-сканирование`}</p>
-              <div style={{ alignSelf: "stretch", height: "189.13px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d938a791088a35355114316e478d5836bf90343.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "189.13px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d938a791088a35355114316e478d5836bf90343.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "260.73px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "212.73px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Ожидание депозита`}</p>
-              <div style={{ alignSelf: "stretch", height: "188.73px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1304b1f78666d54abe69c628331e71a70d8141e6.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "188.73px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1304b1f78666d54abe69c628331e71a70d8141e6.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "264.9px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(48, 166, 74, 0.1) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "216.9px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Получение подтверждения`}</p>
-              <div style={{ alignSelf: "stretch", height: "192.9px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/66b38ca5dcf572cb5890ef7ef1d4b84c3a1aa009.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "192.9px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/66b38ca5dcf572cb5890ef7ef1d4b84c3a1aa009.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "800px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
             <div style={{ alignSelf: "stretch", height: "267px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "219px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`правила пользования`}</p>
-                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cae8afda5b7cd60c2fc374a03e003546c12231de.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cae8afda5b7cd60c2fc374a03e003546c12231de.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "266px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "218px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`контакты`}</p>
-                <div style={{ alignSelf: "stretch", height: "194px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/723015d8df4dcb33001fb771d59532247e3694a6.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "194px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/723015d8df4dcb33001fb771d59532247e3694a6.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "267px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "219px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`поддержка`}</p>
-                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.webp)" }} />
               </div>
             </div>
           </div>
@@ -427,8 +427,8 @@ export default function EazychangeRu() {
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "447.84px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
-              <div style={{ alignSelf: "stretch", height: "217.84px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2d47deb959696e6c89b5f714974f38dad999e9a4.png)" }} />
-              <div style={{ alignSelf: "stretch", height: "218px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b40b8ed6aecc40b6477716a9609ad98a43be97a7.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "217.84px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2d47deb959696e6c89b5f714974f38dad999e9a4.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "218px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b40b8ed6aecc40b6477716a9609ad98a43be97a7.webp)" }} />
             </div>
           </div>
         </div>
@@ -452,31 +452,31 @@ export default function EazychangeRu() {
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -488,9 +488,9 @@ export default function EazychangeRu() {
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "12631.51px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", overflow: "hidden" }}>
         <div style={{ alignSelf: "stretch", height: "398px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-          <div style={{ position: "absolute", left: "-226px", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.png)" }} />
+          <div style={{ position: "absolute", left: "-226px", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.webp)" }} />
           <div style={{ position: "absolute", left: "0", top: "0", width: "800px", height: "426px", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
-          <div style={{ position: "absolute", left: "311px", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.png)" }} />
+          <div style={{ position: "absolute", left: "311px", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
           <p style={{ position: "absolute", left: "49.07px", top: "290px", width: "704px", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
         </div>
         <div style={{ alignSelf: "stretch", height: "744px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", padding: "40px 40px 40px 40px", background: "#ffffff", overflow: "hidden" }}>
@@ -612,7 +612,7 @@ export default function EazychangeRu() {
                   <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                       <div style={{ width: "102.08px", height: "126px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                        <div style={{ position: "absolute", left: "-13px", top: "-0.56px", width: "127.38px", height: "127.38px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.png)" }} />
+                        <div style={{ position: "absolute", left: "-13px", top: "-0.56px", width: "127.38px", height: "127.38px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                       </div>
                       <div style={{ flex: "1 1 0%", height: "92px", display: "flex", flexDirection: "column", gap: "12px" }}>
                         <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -666,7 +666,7 @@ export default function EazychangeRu() {
                 <div style={{ alignSelf: "stretch", height: "381px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                   <div style={{ alignSelf: "stretch", height: "125px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "101.27px", height: "125px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "0", top: "-13.43px", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.png)" }} />
+                      <div style={{ position: "absolute", left: "0", top: "-13.43px", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "76px", display: "flex", flexDirection: "column", gap: "12px" }}>
                       <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -791,7 +791,7 @@ export default function EazychangeRu() {
             <div style={{ alignSelf: "stretch", height: "424.25px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", borderRadius: "24px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`карта сайта`}</p>
               <div style={{ alignSelf: "stretch", height: "408.25px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "8px 8px 8px 8px", background: "#ffffff", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "392.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8a094f3b11029365a0d7dc6c4bb1639c12564aa5.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "392.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8a094f3b11029365a0d7dc6c4bb1639c12564aa5.webp)" }} />
               </div>
             </div>
           </div>
@@ -805,7 +805,7 @@ export default function EazychangeRu() {
             <div style={{ alignSelf: "stretch", height: "412.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Итерация 1.0`}</p>
               <div style={{ alignSelf: "stretch", height: "384.72px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-20px", top: "-13.8px", width: "740.37px", height: "413.21px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.png)" }} />
+                <div style={{ position: "absolute", left: "-20px", top: "-13.8px", width: "740.37px", height: "413.21px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
               </div>
             </div>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Бумажные прототипы стали фундаментом всей структуры приложения и позволили с самого начала выстроить логику обмена, опираясь на реальные сценарии использования`}</p>
@@ -827,7 +827,7 @@ export default function EazychangeRu() {
               <div style={{ alignSelf: "stretch", height: "458.15px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
                 <div style={{ alignSelf: "stretch", height: "434.15px", flexShrink: 0, background: "#f7f8fa", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "720px", height: "433.86px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.png)" }} />
+                  <div style={{ position: "absolute", left: "0", top: "0", width: "720px", height: "433.86px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "251.82px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -858,56 +858,56 @@ export default function EazychangeRu() {
                 <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Финальные экраны`}</p>
                 <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`После утверждения пользовательских сценариев перешли к разработке дизайна, визуальной части — созданию чистых, адаптивных интерфейсов`}</p>
               </div>
-              <div style={{ alignSelf: "stretch", height: "430.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a9b82a37ab94a5fa65b16dce6942a807fc155158.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "430.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a9b82a37ab94a5fa65b16dce6942a807fc155158.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "414.77px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "366.77px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Основной экран обмена`}</p>
-              <div style={{ alignSelf: "stretch", height: "342.77px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/73ed58e5de5e7d6eaf2d44260c6a7d3b9eaee64b.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "342.77px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/73ed58e5de5e7d6eaf2d44260c6a7d3b9eaee64b.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "477.89px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "429.89px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Выбор криптовалюты`}</p>
-              <div style={{ alignSelf: "stretch", height: "405.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ba0dc07b3ad3c861e146a1fa9590a8804836bc41.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "405.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ba0dc07b3ad3c861e146a1fa9590a8804836bc41.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "478.49px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "430.49px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`QR-сканирование`}</p>
-              <div style={{ alignSelf: "stretch", height: "406.49px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d938a791088a35355114316e478d5836bf90343.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "406.49px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d938a791088a35355114316e478d5836bf90343.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "477.63px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "429.63px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Ожидание депозита`}</p>
-              <div style={{ alignSelf: "stretch", height: "405.63px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1304b1f78666d54abe69c628331e71a70d8141e6.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "405.63px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1304b1f78666d54abe69c628331e71a70d8141e6.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "486.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(48, 166, 74, 0.1) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", height: "438.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Получение подтверждения`}</p>
-              <div style={{ alignSelf: "stretch", height: "414.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/66b38ca5dcf572cb5890ef7ef1d4b84c3a1aa009.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "414.58px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/66b38ca5dcf572cb5890ef7ef1d4b84c3a1aa009.webp)" }} />
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "1471.16px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
             <div style={{ alignSelf: "stretch", height: "491.1px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "443.1px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`правила пользования`}</p>
-                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cae8afda5b7cd60c2fc374a03e003546c12231de.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cae8afda5b7cd60c2fc374a03e003546c12231de.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "488.96px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "440.96px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`контакты`}</p>
-                <div style={{ alignSelf: "stretch", height: "416.96px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/723015d8df4dcb33001fb771d59532247e3694a6.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "416.96px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/723015d8df4dcb33001fb771d59532247e3694a6.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "491.1px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "443.1px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`поддержка`}</p>
-                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.png)" }} />
+                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.webp)" }} />
               </div>
             </div>
           </div>
@@ -945,8 +945,8 @@ export default function EazychangeRu() {
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "952.38px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", alignItems: "center", borderRadius: "16px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "468.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2d47deb959696e6c89b5f714974f38dad999e9a4.png)" }} />
-              <div style={{ alignSelf: "stretch", height: "468.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b40b8ed6aecc40b6477716a9609ad98a43be97a7.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "468.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2d47deb959696e6c89b5f714974f38dad999e9a4.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "468.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b40b8ed6aecc40b6477716a9609ad98a43be97a7.webp)" }} />
             </div>
           </div>
         </div>
@@ -970,31 +970,31 @@ export default function EazychangeRu() {
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
             </div>
             <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
@@ -1006,7 +1006,7 @@ export default function EazychangeRu() {
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, display: "flex", flexDirection: "column", overflow: "hidden", position: "relative" }}>
         <img
-          src="/a/4193c8d1926b98c05d1201591e32544c43950ea5.png"
+          src="/a/4193c8d1926b98c05d1201591e32544c43950ea5.webp"
           alt=""
           aria-hidden="true"
           loading="lazy"
@@ -1015,7 +1015,7 @@ export default function EazychangeRu() {
         />
         <div style={{ flex: "1 1 0%", alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
         <div style={{ position: "absolute", left: "199px", top: "208px", width: "882px", height: "409px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>
-          <div style={{ width: "329px", height: "329px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.png)" }} />
+          <div style={{ width: "329px", height: "329px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
           <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
         </div>
       </div>
@@ -1136,7 +1136,7 @@ export default function EazychangeRu() {
                 <div style={{ flex: "1 1 0%", height: "356px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "181px", height: "351.42px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                     <div style={{ width: "181px", height: "223.42px", flexShrink: 0, background: "#fafaf9", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-42.42px", top: "0.42px", width: "261.13px", height: "261.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.png)" }} />
+                      <div style={{ position: "absolute", left: "-42.42px", top: "0.42px", width: "261.13px", height: "261.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                     </div>
                     <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 300, color: "#64748b" }}>{`«Мне не нужен гламур — дайте мне инструмент, который работает стабильно и не мешает работать.»`}</p>
                   </div>
@@ -1188,7 +1188,7 @@ export default function EazychangeRu() {
               <div style={{ alignSelf: "stretch", height: "402px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ width: "181px", height: "327.42px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                   <div style={{ width: "181px", height: "223.42px", flexShrink: 0, background: "#fafaf9", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "-10px", top: "-12px", width: "201.64px", height: "302.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.png)" }} />
+                    <div style={{ position: "absolute", left: "-10px", top: "-12px", width: "201.64px", height: "302.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
                   </div>
                   <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 300, color: "#64748b" }}>{`«Хочу просто обменять крипту — без лишней возни и страха, что где-то подвох.»`}</p>
                 </div>
@@ -1315,7 +1315,7 @@ export default function EazychangeRu() {
           <div style={{ alignSelf: "stretch", height: "576.14px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", borderRadius: "24px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`карта сайта`}</p>
             <div style={{ width: "960px", height: "556.14px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px", overflow: "hidden" }}>
-              <div style={{ alignSelf: "stretch", height: "508.14px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8a094f3b11029365a0d7dc6c4bb1639c12564aa5.png)" }} />
+              <div style={{ alignSelf: "stretch", height: "508.14px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/8a094f3b11029365a0d7dc6c4bb1639c12564aa5.webp)" }} />
             </div>
           </div>
         </div>
@@ -1329,7 +1329,7 @@ export default function EazychangeRu() {
           <div style={{ alignSelf: "stretch", height: "584px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Итерация 1.0`}</p>
             <div style={{ alignSelf: "stretch", height: "552px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-              <div style={{ position: "absolute", left: "-43px", top: "-9.89px", width: "1024px", height: "571.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.png)" }} />
+              <div style={{ position: "absolute", left: "-43px", top: "-9.89px", width: "1024px", height: "571.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Бумажные прототипы стали фундаментом всей структуры приложения и позволили с самого начала выстроить логику обмена, опираясь на реальные сценарии использования`}</p>
@@ -1351,7 +1351,7 @@ export default function EazychangeRu() {
             <div style={{ alignSelf: "stretch", height: "450px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
               <div style={{ alignSelf: "stretch", height: "418px", flexShrink: 0, background: "#f7f8fa", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "0", top: "-136px", width: "960px", height: "578.48px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.png)" }} />
+                <div style={{ position: "absolute", left: "0", top: "-136px", width: "960px", height: "578.48px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "268px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -1490,7 +1490,7 @@ export default function EazychangeRu() {
                 style={{ position: "absolute", left: "-104px", top: "225px", width: "1168.54px", height: "127.04px", flexShrink: 0, opacity: 0.100000001490116 }}
               />
               <img
-                src="/a/cce69267a956744b41c1deebd9a147a3c08582a2.png"
+                src="/a/cce69267a956744b41c1deebd9a147a3c08582a2.webp"
                 alt=""
                 aria-hidden="true"
                 loading="lazy"
@@ -1504,9 +1504,9 @@ export default function EazychangeRu() {
           <div style={{ width: "1168px", height: "580px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Основной экран обмена`}</p>
             <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "408.69px", top: "0.17px", width: "762.31px", height: "536px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cda8a3991749d86375e87030ea37aa8f84deab28.png)", borderRadius: "8px", boxShadow: "0 5.01px 20.05px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "145.56px", top: "65.32px", width: "362.08px", height: "471.09px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/63cc0e96dbe552131b111150a3b0e2ea08b7161b.png)", borderRadius: "8px", boxShadow: "0 5.01px 20.05px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "118.47px", width: "190.67px", height: "417.94px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/50be23fdf6681fe69749a8ee1a1ac9b0db168e71.png)", borderRadius: "8px", boxShadow: "0 5.01px 20.05px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "408.69px", top: "0.17px", width: "762.31px", height: "536px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cda8a3991749d86375e87030ea37aa8f84deab28.webp)", borderRadius: "8px", boxShadow: "0 5.01px 20.05px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "145.56px", top: "65.32px", width: "362.08px", height: "471.09px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/63cc0e96dbe552131b111150a3b0e2ea08b7161b.webp)", borderRadius: "8px", boxShadow: "0 5.01px 20.05px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "118.47px", width: "190.67px", height: "417.94px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/50be23fdf6681fe69749a8ee1a1ac9b0db168e71.webp)", borderRadius: "8px", boxShadow: "0 5.01px 20.05px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -1514,8 +1514,8 @@ export default function EazychangeRu() {
           <div style={{ width: "1168px", height: "685.18px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Выбор криптовалюты`}</p>
             <div style={{ width: "1168px", height: "641.18px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "914.08px", height: "641.29px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e0a3360f3f89901980c18eb14c7d491cdf4f0da8.png)", borderRadius: "8px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "900.23px", top: "114.37px", width: "268.05px", height: "526.82px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a231ae2d58007904f93f3034fbdc2d46e792455e.png)", borderRadius: "8px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "0", width: "914.08px", height: "641.29px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e0a3360f3f89901980c18eb14c7d491cdf4f0da8.webp)", borderRadius: "8px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "900.23px", top: "114.37px", width: "268.05px", height: "526.82px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a231ae2d58007904f93f3034fbdc2d46e792455e.webp)", borderRadius: "8px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -1523,8 +1523,8 @@ export default function EazychangeRu() {
           <div style={{ width: "1168px", height: "686.53px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`QR-сканирование`}</p>
             <div style={{ width: "1168px", height: "642.53px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.62px", top: "0", width: "914.38px", height: "641.03px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/923899f3a0fc65796e81392c86286b65ca62d45a.png)", borderRadius: "8px", boxShadow: "0 4.9px 19.58px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "98.57px", width: "269.82px", height: "543.96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/78c7d5dee9e02c68cd86c00bfe146fdc8c5f017e.png)", borderRadius: "8px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "253.62px", top: "0", width: "914.38px", height: "641.03px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/923899f3a0fc65796e81392c86286b65ca62d45a.webp)", borderRadius: "8px", boxShadow: "0 4.9px 19.58px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "98.57px", width: "269.82px", height: "543.96px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/78c7d5dee9e02c68cd86c00bfe146fdc8c5f017e.webp)", borderRadius: "8px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -1532,8 +1532,8 @@ export default function EazychangeRu() {
           <div style={{ width: "1168px", height: "684.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Ожидание депозита`}</p>
             <div style={{ width: "1168px", height: "640.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "915.65px", height: "640.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fcabbda10daecc887ab2ae52a980385fed229665.png)", borderRadius: "8px", boxShadow: "0 4.87px 19.48px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "898px", top: "97px", width: "270px", height: "543px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0dca41d40497b28f49b7babc3cb27742bf1cb6c5.png)", borderRadius: "8px", boxShadow: "0 4.87px 19.48px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "0", width: "915.65px", height: "640.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fcabbda10daecc887ab2ae52a980385fed229665.webp)", borderRadius: "8px", boxShadow: "0 4.87px 19.48px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "898px", top: "97px", width: "270px", height: "543px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0dca41d40497b28f49b7babc3cb27742bf1cb6c5.webp)", borderRadius: "8px", boxShadow: "0 4.87px 19.48px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -1541,8 +1541,8 @@ export default function EazychangeRu() {
           <div style={{ width: "1168px", height: "700px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Получение подтверждения`}</p>
             <div style={{ width: "1168px", height: "656px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.46px", top: "0", width: "914.54px", height: "655.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d80e8f1394de0cb52915abc1aad0fc0b5ed0e8.png)", borderRadius: "8px", boxShadow: "0 4.86px 19.46px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "113px", width: "270px", height: "543px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7fbece39d0f401fc7a2dce98102b117f77caf6b2.png)", borderRadius: "8px", boxShadow: "0 4.86px 19.46px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "253.46px", top: "0", width: "914.54px", height: "655.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/18d80e8f1394de0cb52915abc1aad0fc0b5ed0e8.webp)", borderRadius: "8px", boxShadow: "0 4.86px 19.46px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "113px", width: "270px", height: "543px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7fbece39d0f401fc7a2dce98102b117f77caf6b2.webp)", borderRadius: "8px", boxShadow: "0 4.86px 19.46px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -1552,22 +1552,22 @@ export default function EazychangeRu() {
               <div style={{ position: "absolute", left: "0", top: "0", width: "1053px", height: "654px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#334155" }}>{`Правила пользования`}</p>
                 <div style={{ width: "1053.99px", height: "610.22px", flexShrink: 0, borderRadius: "8px", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "228.67px", top: "0", width: "825.33px", height: "610.22px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/927df20668ce25312dc7351849262848586f257b.png)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
-                  <div style={{ position: "absolute", left: "0", top: "120.92px", width: "243.65px", height: "489.1px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/39edf9e90b6fcd64ecdda2360f3cfd872e99dd71.png)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
+                  <div style={{ position: "absolute", left: "228.67px", top: "0", width: "825.33px", height: "610.22px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/927df20668ce25312dc7351849262848586f257b.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
+                  <div style={{ position: "absolute", left: "0", top: "120.92px", width: "243.65px", height: "489.1px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/39edf9e90b6fcd64ecdda2360f3cfd872e99dd71.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                 </div>
               </div>
               <div style={{ position: "absolute", left: "1453px", top: "0", width: "1053px", height: "654px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
                 <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`контакты`}</p>
                 <div style={{ width: "1053px", height: "608.95px", flexShrink: 0, borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "826.2px", height: "608.95px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/25339d274336d5880ecd8da5def35f932595db71.png)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
-                  <div style={{ position: "absolute", left: "809.42px", top: "98.75px", width: "243.58px", height: "510.2px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/571b134d0c9f3fdd0794f1fda141524bf98befb7.png)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
+                  <div style={{ position: "absolute", left: "0", top: "0", width: "826.2px", height: "608.95px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/25339d274336d5880ecd8da5def35f932595db71.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
+                  <div style={{ position: "absolute", left: "809.42px", top: "98.75px", width: "243.58px", height: "510.2px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/571b134d0c9f3fdd0794f1fda141524bf98befb7.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                 </div>
               </div>
               <div style={{ position: "absolute", left: "2906px", top: "0", width: "1053px", height: "654px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
                 <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`поддержка`}</p>
                 <div style={{ width: "1053px", height: "610.26px", flexShrink: 0, borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "826.48px", height: "610.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d1d6b0c82b4b8a944f96a9478fd923acb8a22346.png)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
-                  <div style={{ position: "absolute", left: "809.33px", top: "109.76px", width: "243.66px", height: "500.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6f8811e0fb47708c01f5f09fd3d271ddf5c33a2e.png)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
+                  <div style={{ position: "absolute", left: "0", top: "0", width: "826.48px", height: "610.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d1d6b0c82b4b8a944f96a9478fd923acb8a22346.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
+                  <div style={{ position: "absolute", left: "809.33px", top: "109.76px", width: "243.66px", height: "500.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6f8811e0fb47708c01f5f09fd3d271ddf5c33a2e.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                 </div>
               </div>
             </div>
@@ -1659,7 +1659,7 @@ export default function EazychangeRu() {
           </div>
         </div>
         <div style={{ width: "1168px", height: "400.04px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "16px 16px 16px 16px", background: "#f7f8fa", borderRadius: "24px", overflow: "hidden" }}>
-          <div style={{ alignSelf: "stretch", height: "368.04px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e89e1fdfec8f5f169835bdcf4ab8b9861637f10c.png)" }} />
+          <div style={{ alignSelf: "stretch", height: "368.04px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e89e1fdfec8f5f169835bdcf4ab8b9861637f10c.webp)" }} />
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "424px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "100px 158px 100px 158px", backgroundImage: "linear-gradient(326.71deg, #070727 0.52%, #19198d 100%)", overflow: "hidden" }}>
@@ -1680,31 +1680,31 @@ export default function EazychangeRu() {
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png)" }} />
+                <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.png)" }} />
+                <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.png)" }} />
+                <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
             </div>
             <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png)" }} />
+                <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
             </div>
