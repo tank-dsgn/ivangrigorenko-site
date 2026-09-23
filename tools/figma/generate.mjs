@@ -91,6 +91,71 @@ function resolveTree(nodeById, id, depth = 0) {
  */
 const SHELL_TAGS = new Set(["HEADER", "FOOTER"]);
 
+/**
+ * Разрезает страницу на секции: по файлу на секцию макета.
+ * Внутри каждого файла — три брейкпоинта, как и раньше.
+ */
+async function emitSections({ slug, frames, nodeById, emit, shell, outDir }) {
+  const dir = outDir || `components/generated/${slug}`;
+  await mkdir(resolve(dir), { recursive: true });
+
+  // секции берём с десктопа — он полный; на других брейкпоинтах порядок тот же
+  const byIndex = new Map();
+  for (const bp of BREAKPOINTS) {
+    const frame = frames.find((f) => Math.round(f.size?.x) === bp.width);
+    if (!frame) continue;
+    const tree = resolveTree(nodeById, frame.id);
+    const visible = (tree.children || []).filter(
+      (c) => c.visible !== false && !SHELL_TAGS.has(c.accessibleHTMLTag)
+    );
+    visible.forEach((node, i) => {
+      if (!byIndex.has(i)) byIndex.set(i, { name: node.name, parts: [] });
+      byIndex.get(i).parts.push({ bp, node, tree });
+    });
+  }
+
+  const used = new Map();
+  const files = [];
+  for (const [i, sec] of byIndex) {
+    let base = componentName(sec.name, `Section${i + 1}`);
+    const n = (used.get(base) || 0) + 1;
+    used.set(base, n);
+    const comp = n > 1 ? `${base}${n}` : base;
+
+    const body = sec.parts
+      .map(
+        ({ bp, node, tree }) =>
+          `      {/* ${bp.label} */}\n` +
+          `      <div className=${JSON.stringify(("figma-page " + bp.className).trim())}>\n` +
+          emit(node, tree, 3) +
+          `      </div>\n`
+      )
+      .join("");
+
+    const hasLink = body.includes("<Link ");
+    const src =
+      `// Секция «${sec.name}» — сгенерировано из Figma.\n` +
+      `// Перегенерировать: node tools/figma/generate.mjs ${slug} --sections\n\n` +
+      (hasLink ? `import Link from "next/link";\n\n` : "") +
+      `export default function ${comp}() {\n  return (\n    <>\n${body}    </>\n  );\n}\n`;
+
+    await writeFile(`${dir}/${comp}.tsx`, src, "utf8");
+    files.push({ comp, name: sec.name });
+  }
+
+  const index =
+    `// Порядок секций страницы ${slug}. Сгенерировано.\n\n` +
+    files.map((f) => `import ${f.comp} from "./${f.comp}";`).join("\n") +
+    `\n\nexport const shell = ${JSON.stringify(shell)} as const;\n\n` +
+    `export default function Page() {\n  return (\n    <>\n` +
+    files.map((f) => `      {/* ${f.name} */}\n      <${f.comp} />\n`).join("") +
+    `    </>\n  );\n}\n`;
+  await writeFile(`${dir}/index.tsx`, index, "utf8");
+
+  console.log(`${slug}: ${files.length} секций → ${dir}/`);
+  for (const f of files) console.log(`    ${f.comp}.tsx  «${f.name}»`);
+}
+
 async function main() {
   const [, , slug, ...rest] = process.argv;
   if (!slug) {
@@ -115,7 +180,8 @@ async function main() {
     assets,
     assetMap,
     linkByName: linkMapByName(nodeById),
-    textOverrides: overrides.text[lang] || {},
+    // правки страницы идут поверх языковых
+    textOverrides: { ...(overrides.text[lang] || {}), ...(overrides.pages?.[slug] || {}) },
     cardTargets: overrides.cards,
     lang,
   });
@@ -140,6 +206,14 @@ async function main() {
       `      {/* ${bp.label} — ${Math.round(frame.size.x)}px */}\n` +
         `      <div className=${JSON.stringify(("figma-page " + bp.className).trim())}>\n${inner}      </div>\n`
     );
+  }
+
+  // --sections: каждая секция макета уезжает в свой файл со своим именем.
+  // Так страница читается как список секций, а не как одна простыня.
+  if (rest.includes("--sections")) {
+    await emitSections({ slug, frames, nodeById, emit, shell, outDir: arg("--out") });
+    console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
+    return;
   }
 
   const name = componentName(slug.replace(/-/g, " "), "Page");

@@ -1,0 +1,49 @@
+// Секция «Hero» — сгенерировано из Figma.
+// Перегенерировать: node tools/figma/generate.mjs autotor-ru --sections
+
+export default function Hero() {
+  return (
+    <>
+      {/* Mobile */}
+      <div className="figma-page md:hidden">
+      <div style={{ alignSelf: "stretch", height: "336.19px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "48px 20px 48px 20px", backgroundImage: "linear-gradient(138.91deg, #6ddfcb 0%, #369887 100%)", overflow: "hidden", position: "relative" }}>
+        <div style={{ position: "absolute", left: "0", top: "0", width: "375px", height: "336.19px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(78, 193, 173, 0) 0%, rgba(44, 47, 48, 0.408) 62.5%, rgba(0, 0, 0, 0.6) 100%)" }} />
+        <div style={{ alignSelf: "stretch", height: "240.19px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px", alignItems: "center" }}>
+          <div style={{ alignSelf: "stretch", height: "190.19px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23fba15410e9396f49b111b8154ae779b090e4da.webp)" }} />
+          <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Разработка Платных Функции для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
+        </div>
+      </div>
+      </div>
+      {/* Tablet */}
+      <div className="figma-page hidden md:block xl:hidden">
+      <div style={{ alignSelf: "stretch", height: "567px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "64px 20px 64px 20px", backgroundImage: "linear-gradient(138.91deg, #6ddfcb 0%, #369887 100%)", overflow: "hidden", position: "relative" }}>
+        <div style={{ position: "absolute", left: "0", top: "0", width: "800px", height: "567px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(78, 193, 173, 0) 0%, rgba(44, 47, 48, 0.408) 62.5%, rgba(0, 0, 0, 0.6) 100%)" }} />
+        <div style={{ alignSelf: "stretch", height: "439px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px", alignItems: "center" }}>
+          <div style={{ alignSelf: "stretch", height: "409px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23fba15410e9396f49b111b8154ae779b090e4da.webp)" }} />
+          <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Разработка Платных Функции для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
+        </div>
+      </div>
+      </div>
+      {/* Desktop */}
+      <div className="figma-page hidden xl:block">
+      <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", backgroundImage: "linear-gradient(138.91deg, #6ddfcb 0%, #369887 100%)", overflow: "hidden", position: "relative" }}>
+        <div style={{ position: "absolute", left: "0", top: "0", width: "1280px", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(78, 193, 173, 0) 0%, rgba(44, 47, 48, 0.408) 62.5%, rgba(0, 0, 0, 0.6) 100%)" }} />
+        <div style={{ width: "880px", height: "584px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
+          <div style={{ alignSelf: "stretch", height: "528px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "14.67px", justifyContent: "center", alignItems: "center", position: "relative" }}>
+            <p style={{ position: "absolute", left: "-166px", top: "90px", fontSize: "255px", lineHeight: "347.26px", fontWeight: 700, textAlign: "center", color: "rgba(57, 129, 117, 0.17)" }}>{`AUTOTOR`}</p>
+            <img
+              src="/a/3e25172e72a63a6ff97ef62382ea02d6462aeade.webp"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "880px", height: "530.75px", flexShrink: 0 }}
+            />
+          </div>
+          <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Разработка Платных Функции для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
+        </div>
+      </div>
+      </div>
+    </>
+  );
+}
