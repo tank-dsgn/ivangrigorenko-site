@@ -1,6 +1,8 @@
 // Сгенерировано из Figma: tools/figma/generate.mjs pot-en
 // Править руками не нужно — перезапустите генератор после правок в макете.
 
+import Link from "next/link";
+
 /** На каких брейкпоинтах макет показывает шапку и футер */
 export const shell = {"header":{"mobile":true,"tablet":true,"desktop":true},"footer":{"mobile":true,"tablet":true,"desktop":true}} as const;
 
@@ -181,8 +183,8 @@ export default function PotEn() {
         <div style={{ alignSelf: "stretch", height: "812.73px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "112px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
             <div style={{ alignSelf: "stretch", height: "112px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Тёплый старт`}</p>
-              <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Персонаж Pot мгновенно вызывает симпатию и снижает барьер перед первым действием`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Warm Start`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The Pot character instantly evokes sympathy and lowers the barrier before the first action`}</p>
             </div>
           </div>
           <div style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", position: "relative" }}>
@@ -216,8 +218,8 @@ export default function PotEn() {
         </div>
         <div style={{ alignSelf: "stretch", height: "812px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Вход в приложение`}</p>
-            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
+            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`App Login`}</p>
+            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
           </div>
           <div style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", position: "relative" }}>
             <div style={{ position: "absolute", left: "4px", top: "4px", width: "24px", height: "24px", overflow: "hidden" }}>
@@ -380,8 +382,8 @@ export default function PotEn() {
         </div>
         <div style={{ alignSelf: "stretch", height: "813px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Личный цифровой сад`}</p>
-            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
+            <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Personal Digital Garden`}</p>
+            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
           </div>
           <div style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", position: "relative" }}>
             <div style={{ position: "absolute", left: "4px", top: "4px", width: "24px", height: "24px", overflow: "hidden" }}>
@@ -535,40 +537,40 @@ export default function PotEn() {
         <div style={{ flex: "1 1 0%", height: "1659.28px", display: "flex", flexDirection: "column", gap: "20px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
             <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Смотрите также`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`See also`}</p>
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
-            <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+            <Link href="/autotor-en" style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
-            </div>
-            <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
+            </Link>
+            <Link href="/pot-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
+            </Link>
+            <Link href="/ostral-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
+            </Link>
+            <Link href="/vv-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
+            </Link>
+            <Link href="/mikulich-en" style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
-            </div>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
+            </Link>
           </div>
         </div>
       </div>
@@ -784,8 +786,8 @@ export default function PotEn() {
         </div>
         <div style={{ alignSelf: "stretch", height: "804px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Вход в приложение`}</p>
-            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
+            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`App Login`}</p>
+            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
           </div>
           <div style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", position: "relative" }}>
             <div style={{ position: "absolute", left: "4px", top: "4px", width: "24px", height: "24px", overflow: "hidden" }}>
@@ -960,8 +962,8 @@ export default function PotEn() {
         </div>
         <div style={{ alignSelf: "stretch", height: "813px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Личный цифровой сад`}</p>
-            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
+            <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Personal Digital Garden`}</p>
+            <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
           </div>
           <div style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", position: "relative" }}>
             <div style={{ position: "absolute", left: "4px", top: "4px", width: "24px", height: "24px", overflow: "hidden" }}>
@@ -1130,40 +1132,40 @@ export default function PotEn() {
         <div style={{ width: "720px", height: "1011.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
             <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Смотрите также`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`See also`}</p>
             </div>
           </div>
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
-            <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+            <Link href="/autotor-en" style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
-            </div>
-            <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
+            </Link>
+            <Link href="/pot-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
-            </div>
-            <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
+            </Link>
+            <Link href="/ostral-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
+            </Link>
+            <Link href="/vv-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
+            </Link>
+            <Link href="/mikulich-en" style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
-            </div>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
+            </Link>
           </div>
         </div>
       </div>
@@ -1592,8 +1594,8 @@ export default function PotEn() {
           </div>
           <div style={{ position: "absolute", left: "128px", top: "100px", width: "1024px", height: "72px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
             <div style={{ flex: "1 1 0%", height: "72px", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`Вход в приложение`}</p>
-              <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
+              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`App Login`}</p>
+              <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
             </div>
             <div style={{ width: "40px", height: "22px", flexShrink: 0, background: "#cdf4dc", borderRadius: "11.29px", position: "relative" }}>
               <img
@@ -1688,8 +1690,8 @@ export default function PotEn() {
           </div>
           <div style={{ position: "absolute", left: "128px", top: "100px", width: "1024px", height: "72px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
             <div style={{ flex: "1 1 0%", height: "72px", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`Онбординг`}</p>
-              <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Короткие вопросы помогают настроить приложение под опыт, условия дома и цели пользователя`}</p>
+              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`Onboarding`}</p>
+              <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Short questions help customize the app based on the user’s experience, home conditions, and goals`}</p>
             </div>
           </div>
         </div>
@@ -1735,8 +1737,8 @@ export default function PotEn() {
           <div style={{ width: "1024px", height: "742px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px" }}>
             <div style={{ width: "1024px", height: "72px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
               <div style={{ flex: "1 1 0%", height: "72px", display: "flex", flexDirection: "column", gap: "8px" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`Вход в приложение`}</p>
-                <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
+                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`App Login`}</p>
+                <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
               <div style={{ width: "40px", height: "22px", flexShrink: 0, background: "#cdf4dc", borderRadius: "11.29px", position: "relative" }}>
                 <img
@@ -1824,8 +1826,8 @@ export default function PotEn() {
       </div>
       <div style={{ alignSelf: "stretch", height: "978px", flexShrink: 0, background: "#000000", backgroundImage: "linear-gradient(325.15deg, rgba(28, 79, 28, 0.6) 0%, rgba(91, 224, 91, 0.6) 100%)", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "128px", top: "100px", width: "1024px", height: "72px", display: "flex", flexDirection: "column", gap: "8px" }}>
-          <p style={{ alignSelf: "stretch", fontSize: "30px", lineHeight: "36px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Дизайн-система Pot`}</p>
-          <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#e2e8f0" }}>{`Токены и элементы UI, которые формируют визуальный язык Pot`}</p>
+          <p style={{ alignSelf: "stretch", fontSize: "30px", lineHeight: "36px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Pot Design System`}</p>
+          <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#e2e8f0" }}>{`UI tokens and elements that define Pot’s visual language`}</p>
         </div>
         <div style={{ position: "absolute", left: "48px", top: "212px", width: "1184px", height: "634px" }}>
           <div style={{ position: "absolute", left: "-1524px", top: "1px", width: "2628px", height: "629px" }}>
@@ -1880,8 +1882,8 @@ export default function PotEn() {
       </div>
       <div style={{ alignSelf: "stretch", height: "1048px", flexShrink: 0, background: "#000000", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "128px", top: "100px", width: "1024px", height: "72px", display: "flex", flexDirection: "column", gap: "8px" }}>
-          <p style={{ alignSelf: "stretch", fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`Скриншоты для App Store`}</p>
-          <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Подборка экранов, которые передают ясный, естественный и гармоничный опыт Pot`}</p>
+          <p style={{ alignSelf: "stretch", fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`App Store Screenshots`}</p>
+          <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`A selection of screens that convey a clear, natural, and harmonious Pot experience`}</p>
         </div>
         <div style={{ position: "absolute", left: "48px", top: "212px", width: "1184px", height: "704px" }}>
           <div style={{ position: "absolute", left: "78px", top: "1px", width: "2628px", height: "703px" }}>
@@ -1950,40 +1952,40 @@ export default function PotEn() {
         <div style={{ width: "960px", height: "742px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px" }}>
           <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
             <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`Смотрите также`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`See also`}</p>
             </div>
           </div>
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+            <Link href="/autotor-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
+            </Link>
+            <Link href="/pot-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
+            </Link>
+            <Link href="/ostral-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
+            </Link>
+            <Link href="/vv-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
+            </Link>
+            <Link href="/mikulich-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
-            </div>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 // Сгенерировано из Figma: tools/figma/generate.mjs eazychange-en
 // Править руками не нужно — перезапустите генератор после правок в макете.
 
+import Link from "next/link";
+
 /** На каких брейкпоинтах макет показывает шапку и футер */
 export const shell = {"header":{"mobile":true,"tablet":true,"desktop":true},"footer":{"mobile":false,"tablet":true,"desktop":true}} as const;
 
@@ -45,11 +47,11 @@ export default function EazychangeEn() {
                 </div>
               </div>
             </div>
-            <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row" }}>
+            <a href="https://eazychange.com" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row" }}>
               <div style={{ width: "152px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#ffffff" }}>{`View case study`}</p>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#ffffff" }}>{`Visit website`}</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "376px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(326.71deg, #070727 0.52%, #19198d 100%)", overflow: "hidden" }}>
@@ -445,40 +447,40 @@ export default function EazychangeEn() {
           <div style={{ flex: "1 1 0%", height: "1659.28px", display: "flex", flexDirection: "column", gap: "20px", alignItems: "center" }}>
             <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
               <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-                <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Смотрите также`}</p>
+                <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`See also`}</p>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
-              <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <Link href="/autotor-en" style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                   <div style={{ position: "absolute", left: "-40.26px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
                 </div>
-                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
-              </div>
-              <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
+              </Link>
+              <Link href="/pot-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                   <div style={{ position: "absolute", left: "-2.69px", top: "-1.79px", width: "305.74px", height: "284.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
                 </div>
-                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
-              </div>
-              <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
+              </Link>
+              <Link href="/ostral-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                   <div style={{ position: "absolute", left: "-88.61px", top: "0", width: "478.71px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
                 </div>
-                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
-              </div>
-              <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
+              </Link>
+              <Link href="/vv-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                   <div style={{ position: "absolute", left: "-91.68px", top: "-15.79px", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
                 </div>
-                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
-              </div>
-              <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
+              </Link>
+              <Link href="/mikulich-en" style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                   <div style={{ position: "absolute", left: "-41.45px", top: "0", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
                 </div>
-                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
-              </div>
+                <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -493,7 +495,7 @@ export default function EazychangeEn() {
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "24px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", justifyContent: "center" }}>
-            <div style={{ width: "24px", height: "24px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
+            <a href="https://www.behance.net/ivangrigorenko" target="_blank" rel="noopener noreferrer" style={{ width: "24px", height: "24px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <img
                 src="/a/f0d5d271cd2e42df84ae7de00882f4bb366f26a5.svg"
                 alt=""
@@ -502,8 +504,8 @@ export default function EazychangeEn() {
                 decoding="async"
                 style={{ position: "absolute", left: "0", top: "5px", width: "24px", height: "15px", background: "#94a3b8" }}
               />
-            </div>
-            <div style={{ width: "24px", height: "24px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
+            </a>
+            <a href="https://www.linkedin.com/in/ivan-grigorenko-1382b0156/" target="_blank" rel="noopener noreferrer" style={{ width: "24px", height: "24px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <img
                 src="/a/9e078540bb5edbd54985d9751b1c0c281c8b5949.svg"
                 alt=""
@@ -512,8 +514,8 @@ export default function EazychangeEn() {
                 decoding="async"
                 style={{ position: "absolute", left: "0", top: "0", width: "24px", height: "24px", background: "#94a3b8" }}
               />
-            </div>
-            <div style={{ width: "24px", height: "24px", flexShrink: 0, position: "relative" }}>
+            </a>
+            <a href="https://dribbble.com/ivangrigorenko" target="_blank" rel="noopener noreferrer" style={{ width: "24px", height: "24px", flexShrink: 0, position: "relative" }}>
               <img
                 src="/a/c0627244b4e3c62c6d56030769075b04a3317ce2.svg"
                 alt=""
@@ -522,7 +524,7 @@ export default function EazychangeEn() {
                 decoding="async"
                 style={{ position: "absolute", left: "0", top: "0", width: "24px", height: "24px", background: "#94a3b8" }}
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -565,11 +567,11 @@ export default function EazychangeEn() {
                 </div>
               </div>
             </div>
-            <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row" }}>
+            <a href="https://eazychange.com" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row" }}>
               <div style={{ width: "152px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#ffffff" }}>{`View case study`}</p>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#ffffff" }}>{`Visit website`}</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div style={{ alignSelf: "stretch", height: "248px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "40px 40px 40px 40px", backgroundImage: "linear-gradient(326.71deg, #070727 0.52%, #19198d 100%)", overflow: "hidden" }}>
@@ -1007,40 +1009,40 @@ export default function EazychangeEn() {
         <div style={{ width: "720px", height: "1011.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
             <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Смотрите также`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`See also`}</p>
             </div>
           </div>
           <div style={{ width: "624px", height: "959.28px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
-            <div style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+            <Link href="/autotor-en" style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-40px", top: "0", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
-            </div>
-            <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
+            </Link>
+            <Link href="/pot-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-2px", top: "-1.79px", width: "304.83px", height: "283.77px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
-            </div>
-            <div style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
+            </Link>
+            <Link href="/ostral-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               <div style={{ alignSelf: "stretch", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-114.81px", top: "-16px", width: "533.62px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
+            </Link>
+            <Link href="/vv-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-93px", top: "-16.52px", width: "486px", height: "312.89px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`дизайн-система`}</p>
-            </div>
-            <div style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
+            </Link>
+            <Link href="/mikulich-en" style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "16px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-41px", top: "0", width: "382.23px", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
-            </div>
+              <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
+            </Link>
           </div>
         </div>
       </div>
@@ -1089,11 +1091,11 @@ export default function EazychangeEn() {
               </div>
             </div>
           </div>
-          <div style={{ width: "130px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row" }}>
+          <a href="https://eazychange.com" target="_blank" rel="noopener noreferrer" style={{ width: "130px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row" }}>
             <div style={{ width: "152px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px" }}>
-              <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#ffffff" }}>{`View case study`}</p>
+              <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#ffffff" }}>{`Visit website`}</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div style={{ alignSelf: "stretch", height: "424px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "100px 158px 100px 158px", backgroundImage: "linear-gradient(326.71deg, #070727 0.52%, #19198d 100%)", overflow: "hidden" }}>
@@ -1592,21 +1594,21 @@ export default function EazychangeEn() {
           <div style={{ width: "1168px", height: "666px", flexShrink: 0, position: "relative" }}>
             <div style={{ position: "absolute", left: "58px", top: "12px", width: "3959px", height: "654px" }}>
               <div style={{ position: "absolute", left: "0", top: "0", width: "1053px", height: "654px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
-                <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#334155" }}>{`Правила пользования`}</p>
+                <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#334155" }}>{`Terms of use`}</p>
                 <div style={{ width: "1053.99px", height: "610.22px", flexShrink: 0, borderRadius: "8px", position: "relative" }}>
                   <div style={{ position: "absolute", left: "228.67px", top: "0", width: "825.33px", height: "610.22px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/927df20668ce25312dc7351849262848586f257b.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                   <div style={{ position: "absolute", left: "0", top: "120.92px", width: "243.65px", height: "489.1px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/39edf9e90b6fcd64ecdda2360f3cfd872e99dd71.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                 </div>
               </div>
               <div style={{ position: "absolute", left: "1453px", top: "0", width: "1053px", height: "654px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
-                <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`контакты`}</p>
+                <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`Contacts`}</p>
                 <div style={{ width: "1053px", height: "608.95px", flexShrink: 0, borderRadius: "8px", overflow: "hidden", position: "relative" }}>
                   <div style={{ position: "absolute", left: "0", top: "0", width: "826.2px", height: "608.95px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/25339d274336d5880ecd8da5def35f932595db71.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                   <div style={{ position: "absolute", left: "809.42px", top: "98.75px", width: "243.58px", height: "510.2px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/571b134d0c9f3fdd0794f1fda141524bf98befb7.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                 </div>
               </div>
               <div style={{ position: "absolute", left: "2906px", top: "0", width: "1053px", height: "654px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
-                <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`поддержка`}</p>
+                <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`Support`}</p>
                 <div style={{ width: "1053px", height: "610.26px", flexShrink: 0, borderRadius: "8px", overflow: "hidden", position: "relative" }}>
                   <div style={{ position: "absolute", left: "0", top: "0", width: "826.48px", height: "610.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d1d6b0c82b4b8a944f96a9478fd923acb8a22346.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
                   <div style={{ position: "absolute", left: "809.33px", top: "109.76px", width: "243.66px", height: "500.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6f8811e0fb47708c01f5f09fd3d271ddf5c33a2e.webp)", borderRadius: "8px", boxShadow: "0 4.39px 17.56px 0 rgba(13, 18, 46, 0.2)" }} />
@@ -1716,40 +1718,40 @@ export default function EazychangeEn() {
         <div style={{ width: "960px", height: "742px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px" }}>
           <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
             <div style={{ alignSelf: "stretch", height: "28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`Смотрите также`}</p>
+              <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`See also`}</p>
             </div>
           </div>
           <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+            <Link href="/autotor-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce платформа`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
+            </Link>
+            <Link href="/pot-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-0.14px", top: "0", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Приложение для растений`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
+            </Link>
+            <Link href="/ostral-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-90.79px", top: "0", width: "485.58px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Инспекционная платформа`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
+            </Link>
+            <Link href="/vv-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-93.08px", top: "-17.05px", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Дизайн-Система`}</p>
-            </div>
-            <div style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
+            </Link>
+            <Link href="/mikulich-en" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
               </div>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`логотип и Айдентика`}</p>
-            </div>
+              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
+            </Link>
           </div>
         </div>
       </div>

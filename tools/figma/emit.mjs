@@ -5,7 +5,34 @@
 
 import { absolutePosition, frameStyle, nodeAsset, sizing, textStyle } from "./nodes.mjs";
 
-const VOID_TEXT_TAGS = new Set(["h1", "h2", "h3", "h4", "h5", "h6", "p", "span", "li"]);
+/**
+ * Клик по узлу в Figma задан интеракцией. Достаём из неё адрес:
+ * URL — внешняя ссылка, INTERNAL_NODE — переход на другую страницу сайта.
+ */
+/** Первый текст внутри узла — по нему опознаём карточку проекта */
+function firstText(node, depth = 0) {
+  if (depth > 6 || !node) return null;
+  if (node.characters) return node.characters.trim();
+  for (const c of node.children || []) {
+    const t = firstText(c, depth + 1);
+    if (t) return t;
+  }
+  return null;
+}
+
+function linkOf(node, linkByName) {
+  const byName = linkByName[node.name];
+  if (byName) return { ...byName, internal: byName.href.startsWith("/") };
+  for (const i of node.interactions || []) {
+    if (i.event?.interactionType !== "ON_CLICK") continue;
+    for (const a of i.actions || []) {
+      const href = a.connectionURL;
+      if (!href) continue;
+      return { href, newTab: Boolean(a.openUrlInNewTab), internal: href.startsWith("/") };
+    }
+  }
+  return null;
+}
 
 /** Имя компонента из имени слоя в Figma */
 export function componentName(name, fallback) {
@@ -39,12 +66,27 @@ function tagFor(node) {
   return "div";
 }
 
-export function createEmitter({ assets, assetMap = {}, indentUnit = "  " }) {
+export function createEmitter({
+  assets,
+  assetMap = {},
+  linkByName = {},
+  textOverrides = {},
+  cardTargets = {},
+  lang = "ru",
+  indentUnit = "  ",
+}) {
+  // В макете одна и та же подпись встречается в разном регистре
+  // («Дизайн-Система» и «дизайн-система»), поэтому ищем без учёта регистра
+  const lower = (obj) =>
+    Object.fromEntries(Object.entries(obj).map(([k, v]) => [k.toLowerCase(), v]));
+  const textMap = lower(textOverrides);
+  const cardMap = lower(cardTargets);
   /** Тяжёлые PNG переведены в WebP — подменяем имя файла по карте */
   const resolve = (url) => `/a/${assetMap[url] ?? url}`;
   const usedAssets = new Set();
+  const usedLinks = new Set();
 
-  function emit(node, parent, depth) {
+  function emit(node, parent, depth, insideLink = false) {
     const pad = indentUnit.repeat(depth);
 
     // Невидимые узлы в вёрстку не попадают
@@ -69,7 +111,8 @@ export function createEmitter({ assets, assetMap = {}, indentUnit = "  " }) {
       Object.assign(style, textStyle(node));
       const tag = tagFor(node);
       const s = styleLiteral(style);
-      const text = (node.characters || "").replace(/\u00a0/g, " ");
+      const raw = (node.characters || "").replace(/\u00a0/g, " ");
+      const text = textMap[raw.trim().toLowerCase()] ?? raw;
       const lines = text.split("\n");
       const content =
         lines.length > 1
@@ -87,13 +130,31 @@ export function createEmitter({ assets, assetMap = {}, indentUnit = "  " }) {
     );
     if (hasAbsoluteKid && !style.position) style.position = "relative";
 
-    const kids = visibleKids.map((c) => emit(c, node, depth + 1)).join("");
-    const tag = tagFor(node);
+    // вложенные ссылки недопустимы — если мы уже внутри <a>, детей не оборачиваем
+    let link = insideLink ? null : linkOf(node, linkByName);
+    if (!link && !insideLink && node.name === "Card-projects-small") {
+      const slug = cardMap[(firstText(node) || "").toLowerCase()];
+      if (slug) link = { href: `/${slug}-${lang}`, internal: true, newTab: false };
+    }
+    const kids = visibleKids
+      .map((c) => emit(c, node, depth + 1, insideLink || Boolean(link)))
+      .join("");
     const s = styleLiteral(style);
 
+    if (link) {
+      usedLinks.add(link.href);
+      const attrs = link.internal
+        ? `href=${JSON.stringify(link.href)}`
+        : `href=${JSON.stringify(link.href)}${link.newTab ? ' target="_blank" rel="noopener noreferrer"' : ""}`;
+      const tagName = link.internal ? "Link" : "a";
+      if (!kids) return `${pad}<${tagName} ${attrs}${s ? ` style=${s}` : ""} />\n`;
+      return `${pad}<${tagName} ${attrs}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tagName}>\n`;
+    }
+
+    const tag = tagFor(node);
     if (!kids) return `${pad}<${tag}${s ? ` style=${s}` : ""} />\n`;
     return `${pad}<${tag}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
   }
 
-  return { emit, usedAssets };
+  return { emit, usedAssets, usedLinks };
 }

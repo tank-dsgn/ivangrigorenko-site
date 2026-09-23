@@ -1,0 +1,52 @@
+{
+  "_comment": "Правки текста в инстансах компонентов. В выгрузке Figma Sites не применяются переопределения инстансов — приходит текст мастер-компонента. Эталон снят с опубликованного сайта, сверка: tools/figma/check-text.mjs",
+  "text": {
+    "ru": {
+      "View case study": "Посетить сайт"
+    },
+    "en": {
+      "View case study": "Visit website",
+      "Смотрите также": "See also",
+      "Крипто-обменник": "Crypto exchange",
+      "E-commerce платформа": "E-commerce platform",
+      "Приложение для растений": "Mobile application",
+      "Инспекционная платформа": "Inspection platform",
+      "Дизайн-Система": "Design system",
+      "логотип и Айдентика": "Brand identity & logo",
+      "Правила пользования": "Terms of use",
+      "контакты": "Contacts",
+      "поддержка": "Support",
+      "Тёплый старт": "Warm Start",
+      "Персонаж Pot мгновенно вызывает симпатию и снижает барьер перед первым действием": "The Pot character instantly evokes sympathy and lowers the barrier before the first action",
+      "Вход в приложение": "App Login",
+      "Пользователь может начать с Apple ID или email в один клик": "The user can get started with Apple ID or email in one click",
+      "Онбординг": "Onboarding",
+      "Короткие вопросы помогают настроить приложение под опыт, условия дома и цели пользователя": "Short questions help customize the app based on the user’s experience, home conditions, and goals",
+      "Личный цифровой сад": "Personal Digital Garden",
+      "Пользователь собирает растения, следит за ними и ухаживает": "The user collects plants, keeps track of them, and takes care of them",
+      "Дизайн-система Pot": "Pot Design System",
+      "Токены и элементы UI, которые формируют визуальный язык Pot": "UI tokens and elements that define Pot’s visual language",
+      "Скриншоты для App Store": "App Store Screenshots",
+      "Подборка экранов, которые передают ясный, естественный и гармоничный опыт Pot": "A selection of screens that convey a clear, natural, and harmonious Pot experience",
+      "Внутренний аудит": "Internal Audit",
+      "Анализ работы над несколькими студийными проектами выявил системные проблемы: решения повторялись, но каждый раз создавались заново, компоненты формировались локально, а параметры интерфейсов отличались от проекта к проекту. Отсутствие централизованных токенов и переменных замедляло разработку, усложняло поддержку и требовало ручной синхронизации изменений": "An analysis of work across multiple studio projects revealed systemic issues: solutions were repeatedly recreated from scratch, components were built locally for each project, and interface parameters varied from one product to another. The lack of centralized tokens and variables slowed down development, made maintenance more complex, and required manual synchronization of changes",
+      "повторяющиеся решения": "Repeated solutions",
+      "Несогласованные параметры": "Inconsistent parameters",
+      "Фрагментация локальных  компонентов": "Local components",
+      "Дизайн-токены": "Design Tokens",
+      "Дизайн-токены описывают все ключевые визуальные параметры интерфейса (типографика, цвет, размеры, отступы) через примитивные и семантические уровни, обеспечивая консистентность, переиспользуемость и прямую интеграцию с кодом. В качестве базы использованы проверенные шкалы Tailwind CSS — без избыточной кастомизации и усложнения": "Design tokens describe all key visual parameters of the interface (typography, color, sizing, spacing) through primitive and semantic layers, ensuring consistency, reusability, and seamless integration with code. As a foundation, proven Tailwind CSS scales were used — without excessive customization or unnecessary complexity",
+      "типографика": "Typography",
+      "Цвета": "Colors",
+      "размеры": "Sizes"
+    }
+  },
+  "_cards": "Подпись карточки «Смотрите также» → страница проекта. Сама ссылка в выгрузке лежит на варианте компонента, куда обход не доходит.",
+  "cards": {
+    "Крипто-обменник": "eazychange",
+    "E-commerce платформа": "autotor",
+    "Приложение для растений": "pot",
+    "Инспекционная платформа": "ostral",
+    "Дизайн-Система": "vv",
+    "логотип и Айдентика": "mikulich"
+  }
+}

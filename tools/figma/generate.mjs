@@ -11,6 +11,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { createEmitter, componentName } from "./emit.mjs";
 import assetMap from "../../lib/asset-map.json" with { type: "json" };
+import overrides from "./overrides.json" with { type: "json" };
 
 const BUNDLE = "39c51217-69ff-4444-95d1-588378532cd6";
 const ORIGIN = "https://ivangrigorenko.com";
@@ -29,6 +30,35 @@ async function loadPage(slug, jsonPath) {
   const res = await fetch(`${ORIGIN}/_json/${BUNDLE}/${name}.json`);
   if (!res.ok) throw new Error(`Не удалось скачать выгрузку ${name}: ${res.status}`);
   return res.json();
+}
+
+/**
+ * Карта «имя слоя → адрес ссылки».
+ *
+ * Интеракции в выгрузке висят на узлах внутри вариантов компонентов, куда
+ * обход видимого дерева не заходит. Но имя слоя задаёт адрес однозначно
+ * (`Frame 1000005967` — всегда /autotor-ru), поэтому связываем по имени.
+ * Имена с несколькими разными адресами пропускаем: это соцсети и пункты
+ * навигации, они собраны вручную в Header и Footer.
+ */
+function linkMapByName(nodeById) {
+  const byName = new Map();
+  for (const node of Object.values(nodeById)) {
+    for (const i of node.interactions || []) {
+      if (i.event?.interactionType !== "ON_CLICK") continue;
+      for (const a of i.actions || []) {
+        if (!a.connectionURL) continue;
+        const name = node.name;
+        if (!name) continue;
+        const entry = byName.get(name);
+        if (!entry) byName.set(name, { href: a.connectionURL, newTab: Boolean(a.openUrlInNewTab) });
+        else if (entry.href !== a.connectionURL) entry.ambiguous = true;
+      }
+    }
+  }
+  const map = {};
+  for (const [name, v] of byName) if (!v.ambiguous) map[name] = v;
+  return map;
 }
 
 /**
@@ -80,7 +110,15 @@ async function main() {
     .map((id) => nodeById[id])
     .filter((n) => n?.isBreakpointFrame);
 
-  const { emit, usedAssets } = createEmitter({ assets, assetMap });
+  const lang = slug.endsWith("-en") || slug === "index" ? "en" : "ru";
+  const { emit, usedAssets, usedLinks } = createEmitter({
+    assets,
+    assetMap,
+    linkByName: linkMapByName(nodeById),
+    textOverrides: overrides.text[lang] || {},
+    cardTargets: overrides.cards,
+    lang,
+  });
 
   const keepShell = rest.includes("--keep-shell");
   const shell = { header: {}, footer: {} };
@@ -105,9 +143,11 @@ async function main() {
   }
 
   const name = componentName(slug.replace(/-/g, " "), "Page");
+  const needsLink = [...usedLinks].some((h) => h.startsWith("/"));
   const out =
     `// Сгенерировано из Figma: tools/figma/generate.mjs ${slug}\n` +
     `// Править руками не нужно — перезапустите генератор после правок в макете.\n\n` +
+    (needsLink ? `import Link from "next/link";\n\n` : "") +
     `/** На каких брейкпоинтах макет показывает шапку и футер */\n` +
     `export const shell = ${JSON.stringify(shell)} as const;\n\n` +
     `export default function ${name}() {\n  return (\n    <>\n${parts.join("")}    </>\n  );\n}\n`;
@@ -117,7 +157,7 @@ async function main() {
   await writeFile(target, out, "utf8");
 
   console.log(`${slug}: ${frames.map((f) => f.name).join(", ")} → ${target}`);
-  console.log(`  ассетов использовано: ${usedAssets.size}, размер файла: ${(out.length / 1024).toFixed(0)} КБ`);
+  console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}, размер: ${(out.length / 1024).toFixed(0)} КБ`);
 }
 
 main().catch((e) => {

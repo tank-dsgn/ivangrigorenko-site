@@ -1,6 +1,8 @@
 // Сгенерировано из Figma: tools/figma/generate.mjs home-menu-en
 // Править руками не нужно — перезапустите генератор после правок в макете.
 
+import Link from "next/link";
+
 /** На каких брейкпоинтах макет показывает шапку и футер */
 export const shell = {"header":{"mobile":true,"tablet":true},"footer":{"mobile":false,"tablet":false}} as const;
 
@@ -11,12 +13,12 @@ export default function HomeMenuEn() {
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "756px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "24px 20px 24px 20px" }}>
         <div style={{ alignSelf: "stretch", height: "144px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-          <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center", borderRadius: "8px" }}>
+          <Link href="/about-en" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center", borderRadius: "8px" }}>
             <div style={{ width: "63px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "8px 0 8px 0" }}>
               <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#4f46e5" }}>{`About`}</p>
             </div>
-          </div>
-          <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
+          </Link>
+          <Link href="/about-en" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ width: "79px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", padding: "8px 0 8px 0" }}>
               <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#64748b" }}>{`About`}</p>
             </div>
@@ -30,8 +32,8 @@ export default function HomeMenuEn() {
                 style={{ position: "absolute", left: "7.78px", top: "5.56px", width: "5px", height: "10px", border: "1.67px solid #64748b" }}
               />
             </div>
-          </div>
-          <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
+          </Link>
+          <Link href="/about-en" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ width: "79px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", padding: "8px 0 8px 0" }}>
               <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#64748b" }}>{`Contact`}</p>
             </div>
@@ -45,7 +47,7 @@ export default function HomeMenuEn() {
                 style={{ position: "absolute", left: "7.78px", top: "5.56px", width: "5px", height: "10px", border: "1.67px solid #64748b" }}
               />
             </div>
-          </div>
+          </Link>
         </div>
         <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "4px" }}>
           <div style={{ width: "30px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "8px 4px 8px 4px" }}>
@@ -86,12 +88,12 @@ export default function HomeMenuEn() {
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "756px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", padding: "24px 40px 24px 40px" }}>
         <div style={{ alignSelf: "stretch", height: "144px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-          <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center", borderRadius: "8px" }}>
+          <Link href="/about-en" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center", borderRadius: "8px" }}>
             <div style={{ width: "63px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "8px 0 8px 0" }}>
               <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#4f46e5" }}>{`About`}</p>
             </div>
-          </div>
-          <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
+          </Link>
+          <Link href="/about-en" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ width: "79px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", padding: "8px 0 8px 0" }}>
               <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#64748b" }}>{`About`}</p>
             </div>
@@ -105,8 +107,8 @@ export default function HomeMenuEn() {
                 style={{ position: "absolute", left: "7.78px", top: "5.56px", width: "5px", height: "10px", border: "1.67px solid #64748b" }}
               />
             </div>
-          </div>
-          <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
+          </Link>
+          <Link href="/about-en" style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "232px", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ width: "79px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", padding: "8px 0 8px 0" }}>
               <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 700, color: "#64748b" }}>{`Contact`}</p>
             </div>
@@ -120,7 +122,7 @@ export default function HomeMenuEn() {
                 style={{ position: "absolute", left: "7.78px", top: "5.56px", width: "5px", height: "10px", border: "1.67px solid #64748b" }}
               />
             </div>
-          </div>
+          </Link>
         </div>
         <div style={{ alignSelf: "stretch", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "4px" }}>
           <div style={{ width: "30px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "8px 4px 8px 4px" }}>
