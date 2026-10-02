@@ -15,7 +15,9 @@ export default function Flow() {
           <div style={{ alignSelf: "stretch", height: "235.39px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма платных функций`}</p>
             <div style={{ alignSelf: "stretch", height: "211.39px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "211.39px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "211.39px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                <img src="/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-7.49px", top: "-7.24px", width: "349.61px", height: "225.37px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
         </div>
@@ -32,7 +34,9 @@ export default function Flow() {
           <div style={{ alignSelf: "stretch", height: "478.33px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма платных функций`}</p>
             <div style={{ alignSelf: "stretch", height: "454.33px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "454.33px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "454.33px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                <img src="/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-16.1px", top: "-15.56px", width: "751.4px", height: "484.38px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
         </div>
@@ -49,7 +53,9 @@ export default function Flow() {
           <div style={{ alignSelf: "stretch", height: "655.48px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма платных функций`}</p>
             <div style={{ alignSelf: "stretch", height: "623.48px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "575.48px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "575.48px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                <img src="/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-20.4px", top: "-19.72px", width: "951.77px", height: "613.55px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
         </div>

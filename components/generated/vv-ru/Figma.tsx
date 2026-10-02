@@ -16,14 +16,9 @@ export default function Figma() {
             <div style={{ alignSelf: "stretch", height: "177.89px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.webp)", borderRadius: "8px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
           </div>
         </div>
-        <img
-          src="/a/3c6ecd8606ad644b15170d2efadbdeb99cced23e.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-73px", top: "-0.19px", width: "521.47px", height: "528px", flexShrink: 0, opacity: 0.28999999165535 }}
-        />
+        <span style={{ position: "absolute", left: "-73px", right: "-73.47px", width: "521.47px", top: "-0.19px", height: "528px", flexShrink: 0, opacity: 0.28999999165535 }}>
+          <img src="/a/3c6ecd8606ad644b15170d2efadbdeb99cced23e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-359.84px", top: "-376.81px", width: "1241.14px", height: "1281.62px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
       {/* Tablet */}
@@ -38,28 +33,18 @@ export default function Figma() {
             <div style={{ alignSelf: "stretch", height: "393.54px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.webp)", borderRadius: "12px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
           </div>
         </div>
-        <img
-          src="/a/9fb6fded1c0bf1640d89184c0a705cf25f77c10e.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-155.73px", top: "-468.16px", width: "1013.74px", height: "1208.77px", flexShrink: 0, opacity: 0.0900000035762787 }}
-        />
+        <span style={{ position: "absolute", left: "-155.73px", right: "-58px", width: "1013.74px", top: "-468.16px", height: "1208.77px", flexShrink: 0, opacity: 0.0900000035762787 }}>
+          <img src="/a/9fb6fded1c0bf1640d89184c0a705cf25f77c10e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-279.89px", top: "-284.77px", width: "1573.52px", height: "1778.31px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "962px", flexShrink: 0, background: "#ffffff", overflow: "hidden", position: "relative" }}>
-        <img
-          src="/a/4694ad2e820956c4f40bc5c19cd9a8bfcffd07fa.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "0", top: "120px", width: "1779.95px", height: "1554.79px", opacity: 0.0900000035762787 }}
-        />
-        <div style={{ position: "absolute", left: "128px", top: "120px", width: "1024px", height: "722.26px", display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>
+        <span style={{ position: "absolute", left: "0", right: "-499.95px", width: "1779.95px", top: "120px", height: "1554.79px", opacity: 0.0900000035762787 }}>
+          <img src="/a/4694ad2e820956c4f40bc5c19cd9a8bfcffd07fa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-326.92px", top: "-326.92px", width: "2433.79px", height: "2208.63px", maxWidth: "none" }} />
+        </span>
+        <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "120px", width: "1024px", height: "722.26px", display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>
           <div style={{ width: "1024px", height: "112px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Структура дизайн-системы`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Это единое рабочее пространство: токены, стили, компоненты и документация структурированы по уровням и связаны между собой для удобной навигации и поддержки`}</p>

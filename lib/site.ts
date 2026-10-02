@@ -21,10 +21,14 @@ export const mailtoHref = (lang: Lang) =>
   "&body=Hi%20Ivan,%0A%0AI%20just%20checked%20your%20portfolio%20and%20really%20liked%20your%20work." +
   "%0AI'm%20interested%20in%20collaborating%20with%20you.%0A%0ARegards,%0A[Your%20Name]";
 
+/**
+ * Иконки соцсетей рисуются в своих пропорциях и центрируются в квадрате 32×32:
+ * у Behance знак шире и ниже остальных (32×20), квадратом его тянуть нельзя.
+ */
 export const socials = [
-  { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: asset("d218d31b95457388456f4f51da47d5014d56e74c.svg") },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-grigorenko-1382b0156/", icon: asset("d788591286bc66c6bc1cf78678eb2ca467468a9d.svg") },
-  { name: "Dribbble", href: "https://dribbble.com/ivangrigorenko", icon: asset("e02e8e9375f55e998afbec75fa12d3a26769b60d.svg") },
+  { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: asset("d218d31b95457388456f4f51da47d5014d56e74c.svg"), w: 32, h: 20 },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-grigorenko-1382b0156/", icon: asset("d788591286bc66c6bc1cf78678eb2ca467468a9d.svg"), w: 32, h: 32 },
+  { name: "Dribbble", href: "https://dribbble.com/ivangrigorenko", icon: asset("e02e8e9375f55e998afbec75fa12d3a26769b60d.svg"), w: 32, h: 32 },
 ];
 
 /** Главная у русской версии — /home-ru, у английской — корень сайта */

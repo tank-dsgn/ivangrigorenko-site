@@ -19,7 +19,7 @@ export default function UsersFlows() {
                 <div style={{ flex: "1 1 0%", height: "356px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "181px", height: "327.42px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                     <div style={{ width: "181px", height: "223.42px", flexShrink: 0, background: "#fafaf9", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-42.42px", top: "0.42px", width: "261.13px", height: "261.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
+                      <div style={{ position: "absolute", left: "-42.42px", top: "0.42px", bottom: "-38.13px", height: "261.13px", width: "261.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                     </div>
                     <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 300, color: "#64748b" }}>{`“I don’t need fancy visuals — I need a tool that works reliably and doesn’t get in the way.”`}</p>
                   </div>
@@ -71,7 +71,7 @@ export default function UsersFlows() {
               <div style={{ alignSelf: "stretch", height: "402px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ width: "181px", height: "327.42px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                   <div style={{ width: "181px", height: "223.42px", flexShrink: 0, background: "#fafaf9", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "-10px", top: "-12px", width: "201.64px", height: "302.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
+                    <div style={{ position: "absolute", left: "-10px", right: "-10.64px", width: "201.64px", top: "calc(50% + -123.71px)", height: "302.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
                   </div>
                   <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 300, color: "#64748b" }}>{`“I just want to exchange crypto without unnecessary steps or the fear of losing my money.”`}</p>
                 </div>
@@ -128,56 +128,36 @@ export default function UsersFlows() {
                     <p style={{ width: "136px", flexShrink: 0, fontSize: "12px", lineHeight: "16px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Selects currencies`}</p>
                   </div>
                 </div>
-                <img
-                  src="/a/0f5b5d2d5edd533c1ad710731797d29cb3bab74f.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "164px", top: "72px", width: "16.33px", height: "0", border: "1.6px solid #94a3b8" }}
-                />
+                <span style={{ position: "absolute", left: "164px", top: "72px", width: "16.33px", height: "0", border: "1.6px solid #94a3b8" }}>
+                  <img src="/a/0f5b5d2d5edd533c1ad710731797d29cb3bab74f.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "17.13px", height: "11.78px", maxWidth: "none" }} />
+                </span>
                 <div style={{ position: "absolute", left: "184.33px", top: "0", width: "160px", height: "120px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b" }}>{`Create exchange`}</p>
                   <div style={{ width: "160px", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden" }}>
                     <p style={{ width: "136px", flexShrink: 0, fontSize: "12px", lineHeight: "16px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Enters wallet address and accepts terms`}</p>
                   </div>
                 </div>
-                <img
-                  src="/a/06d645982062bd71dcf10eb0edd3c0f5c29f6460.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "348.33px", top: "72px", width: "16.33px", height: "0", border: "1.6px solid #94a3b8" }}
-                />
+                <span style={{ position: "absolute", left: "348.33px", top: "72px", width: "16.33px", height: "0", border: "1.6px solid #94a3b8" }}>
+                  <img src="/a/06d645982062bd71dcf10eb0edd3c0f5c29f6460.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "17.13px", height: "11.78px", maxWidth: "none" }} />
+                </span>
                 <div style={{ position: "absolute", left: "368.67px", top: "0", width: "160px", height: "120px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b" }}>{`Waiting for deposit`}</p>
                   <div style={{ width: "160px", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden" }}>
                     <p style={{ width: "136px", flexShrink: 0, fontSize: "12px", lineHeight: "16px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Scans QR code and sends funds`}</p>
                   </div>
                 </div>
-                <img
-                  src="/a/06d645982062bd71dcf10eb0edd3c0f5c29f6460.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "532.67px", top: "72px", width: "16.33px", height: "0", border: "1.6px solid #94a3b8" }}
-                />
+                <span style={{ position: "absolute", left: "532.67px", top: "72px", width: "16.33px", height: "0", border: "1.6px solid #94a3b8" }}>
+                  <img src="/a/06d645982062bd71dcf10eb0edd3c0f5c29f6460.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "17.13px", height: "11.78px", maxWidth: "none" }} />
+                </span>
                 <div style={{ position: "absolute", left: "553px", top: "0", width: "160px", height: "120px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b" }}>{`Exchange`}</p>
                   <div style={{ width: "160px", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden" }}>
                     <p style={{ width: "136px", flexShrink: 0, fontSize: "12px", lineHeight: "16px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Sees progress and fees`}</p>
                   </div>
                 </div>
-                <img
-                  src="/a/c504b293167d69385ce831f3d7b36885f03f4b30.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "717px", top: "72px", width: "15px", height: "0" }}
-                />
+                <span style={{ position: "absolute", left: "717px", top: "72px", width: "15px", height: "0" }}>
+                  <img src="/a/c504b293167d69385ce831f3d7b36885f03f4b30.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "15.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
                 <div style={{ position: "absolute", left: "736px", top: "0", width: "160px", height: "120px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b" }}>{`Completion`}</p>
                   <div style={{ width: "160px", height: "96px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden" }}>

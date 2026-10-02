@@ -33,9 +33,16 @@ export default function Footer({ lang }: { lang: Lang }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={x.name}
-              className="ease-figma block transition-opacity duration-200 hover:opacity-70"
+              className="ease-figma flex h-6 w-6 items-center justify-center transition-opacity duration-200 hover:opacity-70 md:h-7 md:w-7 xl:h-8 xl:w-8"
             >
-              <Image src={x.icon} alt="" aria-hidden="true" width={32} height={32} className="h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8" />
+              <Image
+                src={x.icon}
+                alt=""
+                aria-hidden="true"
+                width={x.w}
+                height={x.h}
+                className="h-auto w-full"
+              />
             </a>
           </li>
         ))}

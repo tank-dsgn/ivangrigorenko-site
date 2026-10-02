@@ -3,7 +3,7 @@
 // используется inline-style: так видно, откуда взялось каждое число,
 // и ничего не теряется на округлениях Tailwind.
 
-import { absolutePosition, frameStyle, imageFill, nodeAsset, sizing, textStyle } from "./nodes.mjs";
+import { absolutePosition, frameStyle, imageFill, nodeAsset, px, sizing, textStyle } from "./nodes.mjs";
 
 /**
  * Клик по узлу в Figma задан интеракцией. Достаём из неё адрес:
@@ -95,7 +95,7 @@ export function createEmitter({
     if (node.visible === false) return "";
 
     const style = {
-      ...(node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode ? absolutePosition(node) : {}),
+      ...(node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode ? absolutePosition(node, parent) : {}),
       ...sizing(node, parent),
       ...frameStyle(node, assets, assetMap),
     };
@@ -105,6 +105,29 @@ export function createEmitter({
     if (asset) {
       asset.src = resolve(asset.src.replace("/a/", ""));
       usedAssets.add(asset.src);
+
+      // У сгенерированных SVG свой размер: обводка и тень выходят за коробку узла.
+      // Рисуем ассет в его собственном размере и центрируем в коробке —
+      // иначе стрелки сплющиваются, а иконки тянутся не в свою пропорцию.
+      const box = node.size || {};
+      const own = asset.width && asset.height;
+      if (own && (Math.abs(asset.width - (box.x ?? 0)) > 0.5 || Math.abs(asset.height - (box.y ?? 0)) > 0.5)) {
+        const wrap = styleLiteral({ ...style, position: style.position ?? "relative" });
+        const inner = styleLiteral({
+          position: "absolute",
+          left: px((box.x ?? 0) / 2 - asset.width / 2),
+          top: px((box.y ?? 0) / 2 - asset.height / 2),
+          width: px(asset.width),
+          height: px(asset.height),
+          maxWidth: "none",
+        });
+        return (
+          `${pad}<span${wrap ? ` style=${wrap}` : ""}>\n` +
+          `${pad}${indentUnit}<img src=${JSON.stringify(asset.src)} alt="" aria-hidden="true" loading="lazy" decoding="async" style=${inner} />\n` +
+          `${pad}</span>\n`
+        );
+      }
+
       const s = styleLiteral(style);
       return `${pad}<img\n${pad}${indentUnit}src=${JSON.stringify(asset.src)}\n${pad}${indentUnit}alt=""\n${pad}${indentUnit}aria-hidden="true"\n${pad}${indentUnit}loading="lazy"\n${pad}${indentUnit}decoding="async"\n${s ? `${pad}${indentUnit}style=${s}\n` : ""}${pad}/>\n`;
     }

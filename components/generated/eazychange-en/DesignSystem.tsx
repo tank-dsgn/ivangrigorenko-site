@@ -32,14 +32,9 @@ export default function DesignSystem() {
               <div style={{ position: "absolute", left: "144px", top: "50px", width: "8px", height: "8px", background: "#f7f8fa", border: "2px solid #0052fe" }} />
               <div style={{ position: "absolute", left: "0", top: "50px", width: "8px", height: "8px", background: "#f7f8fa", border: "2px solid #0052fe" }} />
             </div>
-            <img
-              src="/a/77f35e527523042b2aa718afa3b7d5409698ceac.svg"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              style={{ position: "absolute", left: "679px", top: "37px", width: "26.5px", height: "30px", flexShrink: 0, background: "#0052fe", border: "2px solid #ffffff" }}
-            />
+            <span style={{ position: "absolute", left: "679px", top: "37px", width: "26.5px", height: "30px", flexShrink: 0, background: "#0052fe", border: "2px solid #ffffff" }}>
+              <img src="/a/77f35e527523042b2aa718afa3b7d5409698ceac.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-6.05px", top: "-6.32px", width: "38.6px", height: "42.64px", maxWidth: "none" }} />
+            </span>
           </div>
         </div>
         <div style={{ width: "1168px", height: "400.04px", flexShrink: 0, display: "flex", flexDirection: "column", padding: "16px 16px 16px 16px", background: "#f7f8fa", borderRadius: "24px", overflow: "hidden" }}>

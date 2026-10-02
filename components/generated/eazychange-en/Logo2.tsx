@@ -21,7 +21,7 @@ export default function Logo2() {
                 aria-hidden="true"
                 loading="lazy"
                 decoding="async"
-                style={{ position: "absolute", left: "112px", top: "78.14px", width: "735.5px", height: "80px" }}
+                style={{ position: "absolute", left: "calc(50% + -368px)", top: "78.14px", width: "735.5px", height: "80px" }}
               />
             </div>
           </div>

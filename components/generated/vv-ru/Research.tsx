@@ -16,7 +16,9 @@ export default function Research() {
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн системы`}</p>
             <div style={{ alignSelf: "stretch", height: "216px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
               <div style={{ alignSelf: "stretch", height: "36px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "31px", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "150.92px", height: "37.46px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ed6fc49ec09033c765160d3e268a3740a0591a0b.png)" }} />
+                <div style={{ width: "150.92px", height: "37.46px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/ed6fc49ec09033c765160d3e268a3740a0591a0b.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-8.62px", top: "-6.41px", width: "159.77px", height: "50.28px", maxWidth: "none" }} />
+                </div>
                 <div style={{ width: "155.5px", height: "30.56px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "11.46px", alignItems: "center" }}>
                   <img
                     src="/a/da50a46400171d6fd5670c0704593746c4bbb950.svg"
@@ -30,7 +32,9 @@ export default function Research() {
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "36px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "31px", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "143px", height: "42px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/45a2bd3204651f27436121d84cb4286a33095d1d.png)" }} />
+                <div style={{ width: "143px", height: "42px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/45a2bd3204651f27436121d84cb4286a33095d1d.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-4px", top: "-0.8px", width: "150.92px", height: "44.15px", maxWidth: "none" }} />
+                </div>
                 <div style={{ width: "155.5px", height: "46.38px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0ce2aa08ef4d59baeeb4060f7442871b11a0a787.png)" }} />
               </div>
               <div style={{ alignSelf: "stretch", height: "36px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "54px", justifyContent: "space-between", alignItems: "center" }}>
@@ -55,7 +59,9 @@ export default function Research() {
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "36px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "55px", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "115px", height: "35.99px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f9201f540133c62a57c6915d55f5525c6ca353c9.png)" }} />
+                <div style={{ width: "115px", height: "35.99px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/f9201f540133c62a57c6915d55f5525c6ca353c9.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-7.56px", top: "-8.69px", width: "125.47px", height: "51.19px", maxWidth: "none" }} />
+                </div>
                 <img
                   src="/a/6ff18a1854d463242329214b14e3c467ccc6fb2c.svg"
                   alt=""
@@ -84,7 +90,9 @@ export default function Research() {
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн системы`}</p>
               <div style={{ alignSelf: "stretch", height: "132px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "20px" }}>
                 <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "36px", justifyContent: "space-between", alignItems: "center" }}>
-                  <div style={{ width: "150.92px", height: "37.46px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ed6fc49ec09033c765160d3e268a3740a0591a0b.png)" }} />
+                  <div style={{ width: "150.92px", height: "37.46px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                    <img src="/a/ed6fc49ec09033c765160d3e268a3740a0591a0b.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-8.62px", top: "-6.41px", width: "159.77px", height: "50.28px", maxWidth: "none" }} />
+                  </div>
                   <div style={{ width: "155.5px", height: "30.56px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "11.46px", alignItems: "center" }}>
                     <img
                       src="/a/da50a46400171d6fd5670c0704593746c4bbb950.svg"
@@ -97,7 +105,9 @@ export default function Research() {
                     <p style={{ fontSize: "21.16px", lineHeight: "25.6px", fontWeight: 700, color: "#000000" }}>{`Spectrum`}</p>
                   </div>
                   <div style={{ width: "155.5px", height: "46.38px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0ce2aa08ef4d59baeeb4060f7442871b11a0a787.png)" }} />
-                  <div style={{ width: "143px", height: "42px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/45a2bd3204651f27436121d84cb4286a33095d1d.png)" }} />
+                  <div style={{ width: "143px", height: "42px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                    <img src="/a/45a2bd3204651f27436121d84cb4286a33095d1d.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-4px", top: "-0.8px", width: "150.92px", height: "44.15px", maxWidth: "none" }} />
+                  </div>
                 </div>
                 <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "43px", justifyContent: "space-between", alignItems: "center" }}>
                   <img
@@ -119,7 +129,9 @@ export default function Research() {
                     />
                     <p style={{ fontSize: "21.33px", lineHeight: "25.81px", fontWeight: 400, textTransform: "uppercase", color: "#000000" }}>{`Polaris`}</p>
                   </div>
-                  <div style={{ width: "115px", height: "35.99px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f9201f540133c62a57c6915d55f5525c6ca353c9.png)" }} />
+                  <div style={{ width: "115px", height: "35.99px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                    <img src="/a/f9201f540133c62a57c6915d55f5525c6ca353c9.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-7.56px", top: "-8.69px", width: "125.47px", height: "51.19px", maxWidth: "none" }} />
+                  </div>
                   <img
                     src="/a/6ff18a1854d463242329214b14e3c467ccc6fb2c.svg"
                     alt=""
@@ -148,7 +160,9 @@ export default function Research() {
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн системы`}</p>
             <div style={{ alignSelf: "stretch", height: "136px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
               <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "36px", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "175px", height: "44px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ed6fc49ec09033c765160d3e268a3740a0591a0b.png)" }} />
+                <div style={{ width: "175px", height: "44px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/ed6fc49ec09033c765160d3e268a3740a0591a0b.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-10px", top: "-7.53px", width: "185.26px", height: "59.05px", maxWidth: "none" }} />
+                </div>
                 <div style={{ width: "153.92px", height: "32px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", alignItems: "center" }}>
                   <img
                     src="/a/4cb9d8a0953bfa19ad49bb1d4eb1adbfb23433b0.svg"
@@ -183,7 +197,9 @@ export default function Research() {
                   />
                   <p style={{ fontSize: "25px", lineHeight: "30.26px", fontWeight: 400, textTransform: "uppercase", color: "#000000" }}>{`Polaris`}</p>
                 </div>
-                <div style={{ width: "134.2px", height: "44px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f9201f540133c62a57c6915d55f5525c6ca353c9.png)" }} />
+                <div style={{ width: "134.2px", height: "44px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/f9201f540133c62a57c6915d55f5525c6ca353c9.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.59px", top: "-6.6px", width: "137.5px", height: "56.1px", maxWidth: "none" }} />
+                </div>
                 <img
                   src="/a/aa52e135558a96fc78126c1cdd7039ab720155e9.svg"
                   alt=""

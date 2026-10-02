@@ -14,14 +14,9 @@ export default function ProblemStatement2() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#94a3b8" }}>{`Этот проект закрепил мой опыт проектирования дизайн-систем, работы с переменными и компонентной архитектурой, а также помог сформировать более инженерный и продуктовый подход к дизайну`}</p>
           </div>
         </div>
-        <img
-          src="/a/f1b058b14d53c700c7f1c083ac7fa02a4665c9ea.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "0", top: "-0.05px", width: "599px", height: "977px", flexShrink: 0 }}
-        />
+        <span style={{ position: "absolute", left: "0", right: "-224px", width: "599px", top: "-0.05px", height: "977px", flexShrink: 0 }}>
+          <img src="/a/f1b058b14d53c700c7f1c083ac7fa02a4665c9ea.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-330.6px", top: "-395.37px", width: "1260.21px", height: "1767.74px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
       {/* Tablet */}
@@ -34,14 +29,9 @@ export default function ProblemStatement2() {
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#94a3b8" }}>{`Этот проект закрепил мой опыт проектирования дизайн-систем, работы с переменными и компонентной архитектурой, а также помог сформировать более инженерный и продуктовый подход к дизайну`}</p>
           </div>
         </div>
-        <img
-          src="/a/cc1cb884c899ef980d3ca0ff2be793cc33d0a439.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-90px", top: "-88.05px", width: "1008px", height: "683.02px", flexShrink: 0 }}
-        />
+        <span style={{ position: "absolute", left: "-90px", right: "-118px", width: "1008px", top: "-88.05px", height: "683.02px", flexShrink: 0 }}>
+          <img src="/a/cc1cb884c899ef980d3ca0ff2be793cc33d0a439.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-309.75px", top: "-276.22px", width: "1627.51px", height: "1235.47px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
       {/* Desktop */}
@@ -53,14 +43,9 @@ export default function ProblemStatement2() {
             <p style={{ whiteSpace: "pre-line", alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#e2e8f0" }}>{`Проект VV Foundations стал практическим исследованием того, как должна работать зрелая дизайн-система: от архитектуры токенов до параметрических компонентов и понятной структуры. Система спроектирована так, чтобы упрощать масштабирование, поддерживать единый визуальный язык и снижать количество ошибок `}{"\n"}{`Этот проект закрепил мой опыт проектирования дизайн-систем, работы с переменными и компонентной архитектурой, а также помог сформировать более инженерный и продуктовый подход к дизайну`}</p>
           </div>
         </div>
-        <img
-          src="/a/5d2bb8fcc739e96051e7dbe9f2c5b41ff9b89372.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-81px", top: "-70px", width: "1779.95px", height: "1554.79px", flexShrink: 0 }}
-        />
+        <span style={{ position: "absolute", left: "-81px", right: "-418.95px", width: "1779.95px", top: "-70px", height: "1554.79px", flexShrink: 0 }}>
+          <img src="/a/5d2bb8fcc739e96051e7dbe9f2c5b41ff9b89372.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-326.92px", top: "-326.92px", width: "2433.79px", height: "2208.63px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
     </>

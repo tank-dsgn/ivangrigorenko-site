@@ -15,7 +15,9 @@ export default function Research() {
           <div style={{ alignSelf: "stretch", height: "178.94px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`конкурентный анализ`}</p>
             <div style={{ alignSelf: "stretch", height: "154.94px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "154.94px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "154.94px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                <img src="/a/558e209c749e114825e08802f2530447fa0125a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "335px", height: "154.59px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`Помимо конкурентного анализа, провёли опрос среди целевой аудитории, чтобы понять, какие функции продвижения пользователи действительно считают полезными`}</p>
@@ -33,7 +35,9 @@ export default function Research() {
           <div style={{ alignSelf: "stretch", height: "357px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`конкурентный анализ`}</p>
             <div style={{ alignSelf: "stretch", height: "333px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", height: "333px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.webp)" }} />
+              <div style={{ alignSelf: "stretch", height: "333px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                <img src="/a/558e209c749e114825e08802f2530447fa0125a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "720px", height: "332.25px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`Помимо конкурентного анализа, провёли опрос среди целевой аудитории, чтобы понять, какие функции продвижения пользователи действительно считают полезными`}</p>
@@ -51,7 +55,9 @@ export default function Research() {
           <div style={{ alignSelf: "stretch", height: "477px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`конкурентный анализ`}</p>
             <div style={{ width: "960px", height: "444px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "24px" }}>
-              <div style={{ width: "960px", height: "444px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/558e209c749e114825e08802f2530447fa0125a2.webp)" }} />
+              <div style={{ width: "960px", height: "444px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                <img src="/a/558e209c749e114825e08802f2530447fa0125a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "960px", height: "443px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Помимо конкурентного анализа, провёли опрос среди целевой аудитории, чтобы понять, какие функции продвижения пользователи действительно считают полезными`}</p>

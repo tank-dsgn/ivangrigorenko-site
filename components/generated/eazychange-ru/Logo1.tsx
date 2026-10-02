@@ -16,20 +16,20 @@ export default function Logo1() {
             <div style={{ alignSelf: "stretch", height: "446px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
               <div style={{ alignSelf: "stretch", height: "414px", flexShrink: 0, background: "#f7f8fa", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "0", top: "0", width: "960px", height: "413.79px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png)" }} />
+                <div style={{ position: "absolute", left: "calc(50% + -480px)", top: "0", bottom: "0.21px", height: "413.79px", width: "960px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "450px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
               <div style={{ alignSelf: "stretch", height: "418px", flexShrink: 0, background: "#f7f8fa", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "0", top: "-136px", width: "960px", height: "578.48px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
+                <div style={{ position: "absolute", left: "0", right: "0", width: "960px", top: "-136px", height: "578.48px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "268px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Финальный логотип`}</p>
               <div style={{ alignSelf: "stretch", height: "236px", flexShrink: 0, background: "#ffffff", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "0", top: "-0.36px", width: "960px", height: "236px" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "479px", height: "236px", background: "#ffffff", borderRadius: "24px", overflow: "hidden" }}>
+                <div style={{ position: "absolute", left: "0", top: "-0.36px", bottom: "0.36px", height: "236px", width: "960px" }}>
+                  <div style={{ position: "absolute", left: "0", top: "0", bottom: "0", height: "236px", width: "479px", background: "#ffffff", borderRadius: "24px", overflow: "hidden" }}>
                     <div style={{ position: "absolute", left: "111px", top: "83.36px", width: "256.28px", height: "70px" }}>
                       <img
                         src="/a/80f266a195ef3519d346ad4b66fe30fa7d6fde27.svg"
@@ -107,14 +107,14 @@ export default function Logo1() {
                       </div>
                     </div>
                   </div>
-                  <div style={{ position: "absolute", left: "480px", top: "0", width: "480px", height: "236px", background: "#0e1b37", borderRadius: "24px", overflow: "hidden" }}>
+                  <div style={{ position: "absolute", right: "0", top: "0", bottom: "0", height: "236px", width: "480px", background: "#0e1b37", borderRadius: "24px", overflow: "hidden" }}>
                     <img
                       src="/a/37409e98c0b363edcd6c92c28eddba69c98fa016.svg"
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
                       decoding="async"
-                      style={{ position: "absolute", left: "110px", top: "83.36px", width: "259px", height: "70px" }}
+                      style={{ position: "absolute", left: "calc(50% + -130px)", top: "calc(50% + -34.64px)", width: "259px", height: "70px" }}
                     />
                   </div>
                 </div>

@@ -22,7 +22,9 @@ export default function InContext() {
             <div style={{ alignSelf: "stretch", height: "204px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Medical Uniform`}</p>
               <div style={{ alignSelf: "stretch", height: "180px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "12px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "180px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "180px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-10.5px", top: "-0.24px", width: "356px", height: "222.5px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
           </div>
@@ -47,7 +49,9 @@ export default function InContext() {
             <div style={{ alignSelf: "stretch", height: "404px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Medical Uniform`}</p>
               <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, display: "flex", flexDirection: "column", borderRadius: "16px", overflow: "hidden" }}>
-                <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "380px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-22.57px", top: "-0.18px", width: "765.13px", height: "478.21px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
           </div>
@@ -72,7 +76,7 @@ export default function InContext() {
             </div>
             <div style={{ alignSelf: "stretch", height: "575px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <p style={{ position: "absolute", left: "0", top: "0", width: "1024px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Medical Uniform`}</p>
-              <div style={{ position: "absolute", left: "0", top: "32px", width: "1024px", height: "543px", display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden" }}>
+              <div style={{ position: "absolute", left: "0", right: "0", width: "1024px", top: "32px", bottom: "0", height: "543px", display: "flex", flexDirection: "column", borderRadius: "24px", overflow: "hidden" }}>
                 <div style={{ alignSelf: "stretch", height: "640px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
               </div>
             </div>

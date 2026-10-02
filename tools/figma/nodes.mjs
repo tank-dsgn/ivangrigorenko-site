@@ -205,11 +205,54 @@ export function sizing(node, parent) {
   return s;
 }
 
-/** Абсолютно позиционированный ребёнок: смещение берём из матрицы трансформации */
-export function absolutePosition(node) {
+/**
+ * Абсолютно позиционированный ребёнок.
+ *
+ * Смещение лежит в матрице трансформации, но привязываться к левому верхнему
+ * углу нельзя: в Figma у каждого узла есть constraints. Большая часть блоков
+ * привязана к центру, часть растягивается по ширине, часть — к правому краю.
+ * Без этого на ширине, отличной от 1280, всё разъезжается.
+ */
+export function absolutePosition(node, parent) {
   const t = node.relativeTransform;
   if (!t) return {};
-  return { position: "absolute", left: px(t[0][2]), top: px(t[1][2]) };
+
+  const x = t[0][2];
+  const y = t[1][2];
+  const w = node.size?.x;
+  const h = node.size?.y;
+  const pw = parent?.size?.x;
+  const ph = parent?.size?.y;
+  const c = node.constraints || {};
+  const s = { position: "absolute" };
+
+  // по горизонтали
+  if (pw && w != null && c.horizontal === "CENTER") {
+    s.left = `calc(50% + ${Math.round((x - pw / 2) * 100) / 100}px)`;
+  } else if (pw && w != null && c.horizontal === "RIGHT") {
+    s.right = px(pw - x - w);
+  } else if (pw && w != null && (c.horizontal === "LEFT_RIGHT" || c.horizontal === "SCALE")) {
+    s.left = px(x);
+    s.right = px(pw - x - w);
+    s.width = undefined;
+  } else {
+    s.left = px(x);
+  }
+
+  // по вертикали
+  if (ph && h != null && c.vertical === "CENTER") {
+    s.top = `calc(50% + ${Math.round((y - ph / 2) * 100) / 100}px)`;
+  } else if (ph && h != null && c.vertical === "BOTTOM") {
+    s.bottom = px(ph - y - h);
+  } else if (ph && h != null && (c.vertical === "TOP_BOTTOM" || c.vertical === "SCALE")) {
+    s.top = px(y);
+    s.bottom = px(ph - y - h);
+    s.height = undefined;
+  } else {
+    s.top = px(y);
+  }
+
+  return s;
 }
 
 export function px(v) {

@@ -17,33 +17,40 @@ export default function Tokens() {
           <div style={{ alignSelf: "stretch", height: "707.16px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`типографика`}</p>
             <div style={{ alignSelf: "stretch", height: "683.16px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "323.9px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "382px", height: "323.26px", maxWidth: "none" }} />
+              </div>
+              <div style={{ alignSelf: "stretch", height: "323.9px", flexShrink: 0, borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "382.29px", height: "323.9px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "706.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`цвета`}</p>
             <div style={{ alignSelf: "stretch", height: "682.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "382.54px", height: "323.26px", maxWidth: "none" }} />
+              </div>
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "382px", height: "323.26px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "706.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`размеры`}</p>
             <div style={{ alignSelf: "stretch", height: "682.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp)", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "382.47px", height: "323.26px", maxWidth: "none" }} />
+              </div>
+              <div style={{ alignSelf: "stretch", height: "323.26px", flexShrink: 0, borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "381.53px", height: "323.26px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
         </div>
-        <img
-          src="/a/58d68aace0837f7742a97db10ec5f36d768ff63b.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-113px", top: "-189.47px", width: "1115px", height: "2767.99px", flexShrink: 0, opacity: 0.300000011920929 }}
-        />
+        <span style={{ position: "absolute", left: "-113px", right: "-627px", width: "1115px", top: "-189.47px", height: "2767.99px", flexShrink: 0, opacity: 0.300000011920929 }}>
+          <img src="/a/58d68aace0837f7742a97db10ec5f36d768ff63b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-273.41px", top: "-546.23px", width: "1661.82px", height: "3860.45px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
       {/* Tablet */}
@@ -59,46 +66,48 @@ export default function Tokens() {
           <div style={{ alignSelf: "stretch", height: "408.02px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`типографика`}</p>
             <div style={{ width: "720px", height: "384.02px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "352.02px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "415.16px", height: "351.32px", maxWidth: "none" }} />
+              </div>
+              <div style={{ flex: "1 1 0%", height: "352.02px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "415.48px", height: "352.02px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "407.32px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`цвета`}</p>
             <div style={{ width: "720px", height: "383.32px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "415.75px", height: "351.32px", maxWidth: "none" }} />
+              </div>
+              <div style={{ flex: "1 1 0%", height: "351.32px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "415.16px", height: "351.32px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
           <div style={{ alignSelf: "stretch", height: "407.32px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`размеры`}</p>
             <div style={{ width: "720px", height: "383.32px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "12px", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-              <div style={{ flex: "1 1 0%", height: "351.32px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+              <div style={{ flex: "1 1 0%", height: "351.32px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "415.67px", height: "351.32px", maxWidth: "none" }} />
+              </div>
+              <div style={{ flex: "1 1 0%", height: "351.32px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                <img src="/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "414.65px", height: "351.32px", maxWidth: "none" }} />
+              </div>
             </div>
           </div>
         </div>
-        <img
-          src="/a/3e3763e0b951d0c4e4af8afc81a9347106757cf1.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-113px", top: "-189.47px", width: "987px", height: "1755px", flexShrink: 0, opacity: 0.200000002980232 }}
-        />
+        <span style={{ position: "absolute", left: "-113px", right: "-74px", width: "987px", top: "-189.47px", height: "1755px", flexShrink: 0, opacity: 0.200000002980232 }}>
+          <img src="/a/3e3763e0b951d0c4e4af8afc81a9347106757cf1.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-297.61px", top: "-519.41px", width: "1582.23px", height: "2793.81px", maxWidth: "none" }} />
+        </span>
       </div>
       </div>
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "1079px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden", position: "relative" }}>
-        <img
-          src="/a/da025241b9a731e65097a4ba61bad2470b6a0312.svg"
-          alt=""
-          aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          style={{ position: "absolute", left: "-113px", top: "-189px", width: "2160.95px", height: "1237.79px", flexShrink: 0, opacity: 0.300000011920929 }}
-        />
+        <span style={{ position: "absolute", left: "-113px", right: "-767.95px", width: "2160.95px", top: "-189px", height: "1237.79px", flexShrink: 0, opacity: 0.300000011920929 }}>
+          <img src="/a/da025241b9a731e65097a4ba61bad2470b6a0312.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-326.92px", top: "-326.92px", width: "2814.79px", height: "1891.63px", maxWidth: "none" }} />
+        </span>
         <div style={{ width: "1024px", height: "807px", flexShrink: 0, position: "relative" }}>
           <div style={{ position: "absolute", left: "0", top: "0.5px", width: "1024px", height: "168px", display: "flex", flexDirection: "column", gap: "16px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Дизайн-токены`}</p>
@@ -106,18 +115,22 @@ export default function Tokens() {
               <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Дизайн-токены описывают все ключевые визуальные параметры интерфейса (типографика, цвет, размеры, отступы) через примитивные и семантические уровни, обеспечивая консистентность, переиспользуемость и прямую интеграцию с кодом. В качестве базы использованы проверенные шкалы Tailwind CSS — без избыточной кастомизации и усложнения`}</p>
             </div>
           </div>
-          <div style={{ position: "absolute", left: "0", top: "208.5px", width: "4272px", height: "610px", display: "flex", flexDirection: "row", gap: "600px" }}>
+          <div style={{ position: "absolute", left: "0", right: "-3248px", width: "4272px", bottom: "-11.5px", height: "610px", display: "flex", flexDirection: "row", gap: "600px" }}>
             <div style={{ width: "1024px", height: "598px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`типографика`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "20px", top: "20px", width: "984px", height: "526px", display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + -263px)", width: "984px", height: "526px", display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ width: "984px", height: "13px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Primitive`}</p>
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Semantic`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", height: "501px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                    <div style={{ width: "482px", height: "502px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                      <img src="/a/0635ddb06a6ff259985f6ea006040dc3d22b5585.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "592.03px", height: "501px", maxWidth: "none" }} />
+                    </div>
+                    <div style={{ width: "482px", height: "502px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                      <img src="/a/4203c57715dfdacfdedb5974735f4b5252ef433a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "592.48px", height: "502px", maxWidth: "none" }} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -125,14 +138,18 @@ export default function Tokens() {
             <div style={{ width: "1024px", height: "598px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Цвета`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "20px", top: "20px", width: "984px", height: "526px", display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + -263px)", width: "984px", height: "526px", display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ width: "984px", height: "13px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Primitive`}</p>
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Semantic`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", height: "501px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                      <img src="/a/e040bde831d03e7a8fbd0e8e5df3c23d41d91ae5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "592.88px", height: "501px", maxWidth: "none" }} />
+                    </div>
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                      <img src="/a/b64bc2c9fee59ad2d8ff0871759a9b2cc39d3b5b.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "592.03px", height: "501px", maxWidth: "none" }} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -140,40 +157,34 @@ export default function Tokens() {
             <div style={{ width: "1024px", height: "598px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`размеры`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "20px", top: "20px", width: "984px", height: "526px", display: "flex", flexDirection: "column", gap: "12px" }}>
+                <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + -263px)", width: "984px", height: "526px", display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ width: "984px", height: "13px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Primitive`}</p>
                     <p style={{ width: "482px", flexShrink: 0, fontSize: "11px", lineHeight: "13.31px", fontWeight: 400, color: "#64748b" }}>{`Semantic`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", height: "501px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
-                    <div style={{ width: "482px", height: "501px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp)", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)" }} />
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                      <img src="/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "592.77px", height: "501px", maxWidth: "none" }} />
+                    </div>
+                    <div style={{ width: "482px", height: "501px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
+                      <img src="/a/cceb50b2c400a7f9cfbde30e7b16f830f98ac9ff.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "591.3px", height: "501px", maxWidth: "none" }} />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div style={{ position: "absolute", left: "40px", top: "625px", width: "1200px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "1031px", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ position: "absolute", left: "calc(50% + -600px)", top: "calc(50% + 85.5px)", width: "1200px", height: "40px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "1031px", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-            <img
-              src="/a/3c7201a4d5d6f702fa190821eceaeeb842cd2e47.svg"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              style={{ position: "absolute", left: "36.67px", top: "36.67px", width: "33.33px", height: "33.33px", border: "2px solid #e2e8f0" }}
-            />
+            <span style={{ position: "absolute", left: "36.67px", right: "-30px", width: "33.33px", top: "36.67px", bottom: "-30px", height: "33.33px", border: "2px solid #e2e8f0" }}>
+              <img src="/a/3c7201a4d5d6f702fa190821eceaeeb842cd2e47.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1px", top: "-1px", width: "35.33px", height: "35.33px", maxWidth: "none" }} />
+            </span>
           </div>
           <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-            <img
-              src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              style={{ position: "absolute", left: "3.33px", top: "3.33px", width: "33.33px", height: "33.33px", border: "2px solid #64748b" }}
-            />
+            <span style={{ position: "absolute", left: "3.33px", right: "3.33px", width: "33.33px", top: "3.33px", bottom: "3.33px", height: "33.33px", border: "2px solid #64748b" }}>
+              <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1px", top: "-1px", width: "35.33px", height: "35.33px", maxWidth: "none" }} />
+            </span>
           </div>
         </div>
         <div style={{ width: "32px", height: "8px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>

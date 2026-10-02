@@ -8,10 +8,10 @@ export default function Content() {
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "10764.82px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", overflow: "hidden" }}>
         <div style={{ alignSelf: "stretch", height: "418px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-          <div style={{ position: "absolute", left: "-438px", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.webp)" }} />
-          <div style={{ position: "absolute", left: "0", top: "0", width: "375px", height: "426px", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
-          <div style={{ position: "absolute", left: "99px", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
-          <p style={{ position: "absolute", left: "20px", top: "290px", width: "335px", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
+          <div style={{ position: "absolute", left: "calc(50% + -625.5px)", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.webp)" }} />
+          <div style={{ position: "absolute", left: "0", right: "0", width: "375px", top: "0", height: "426px", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
+          <div style={{ position: "absolute", left: "calc(50% + -88.5px)", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
+          <p style={{ position: "absolute", left: "20px", right: "20px", width: "335px", top: "290px", fontSize: "16px", lineHeight: "24px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
         </div>
         <div style={{ alignSelf: "stretch", height: "1008px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", padding: "32px 20px 32px 20px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px" }}>
@@ -101,7 +101,7 @@ export default function Content() {
                   <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                       <div style={{ width: "102.08px", height: "126px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                        <div style={{ position: "absolute", left: "-12.54px", top: "-0.93px", width: "127.15px", height: "127.15px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
+                        <div style={{ position: "absolute", left: "calc(50% + -63.58px)", top: "-0.93px", bottom: "-0.22px", height: "127.15px", width: "127.15px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                       </div>
                       <div style={{ flex: "1 1 0%", height: "124px", display: "flex", flexDirection: "column", gap: "12px" }}>
                         <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -150,7 +150,7 @@ export default function Content() {
                   <div style={{ alignSelf: "stretch", height: "125px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     <div style={{ alignSelf: "stretch", height: "125px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                       <div style={{ width: "101.27px", height: "125px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                        <div style={{ position: "absolute", left: "0", top: "-13.43px", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
+                        <div style={{ position: "absolute", left: "calc(50% + -50.63px)", top: "calc(50% + -75.93px)", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
                       </div>
                       <div style={{ flex: "1 1 0%", height: "108px", display: "flex", flexDirection: "column", gap: "12px" }}>
                         <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -201,38 +201,18 @@ export default function Content() {
                     <p style={{ width: "136px", flexShrink: 0, fontSize: "12px", lineHeight: "16px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Выбирает валюты`}</p>
                   </div>
                 </div>
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "168px", top: "120px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "168px", top: "244px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "168px", top: "367px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "168px", top: "490px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
+                <span style={{ position: "absolute", left: "calc(50% + 0.5px)", top: "120px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
+                <span style={{ position: "absolute", left: "calc(50% + 0.5px)", top: "244px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
+                <span style={{ position: "absolute", left: "calc(50% + 0.5px)", top: "367px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
+                <span style={{ position: "absolute", left: "calc(50% + 0.5px)", top: "490px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
                 <div style={{ width: "253px", height: "99px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b" }}>{`Создание обмена`}</p>
                   <div style={{ width: "253px", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden" }}>
@@ -284,7 +264,7 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "207px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Итерация 1.0`}</p>
               <div style={{ alignSelf: "stretch", height: "179px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-5.3px", top: "-4.7px", width: "340.44px", height: "190px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
+                <div style={{ position: "absolute", left: "-5.3px", right: "-0.14px", width: "340.44px", top: "calc(50% + -94.2px)", height: "190px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
               </div>
             </div>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Бумажные прототипы стали фундаментом всей структуры приложения и позволили с самого начала выстроить логику обмена, опираясь на реальные сценарии использования`}</p>
@@ -300,7 +280,7 @@ export default function Content() {
               <div style={{ alignSelf: "stretch", height: "168px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
                 <div style={{ alignSelf: "stretch", height: "144px", flexShrink: 0, background: "#f7f8fa", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "1px", top: "0", width: "334px", height: "173px", overflow: "hidden" }}>
+                  <div style={{ position: "absolute", left: "1px", right: "0", width: "334px", top: "calc(50% + -72px)", height: "173px", overflow: "hidden" }}>
                     <img src="/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "334px", height: "143.97px", maxWidth: "none" }} />
                   </div>
                 </div>
@@ -308,13 +288,13 @@ export default function Content() {
               <div style={{ alignSelf: "stretch", height: "226px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
                 <div style={{ alignSelf: "stretch", height: "202px", flexShrink: 0, background: "#f7f8fa", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "335px", height: "201.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
+                  <div style={{ position: "absolute", left: "0", right: "0", width: "335px", top: "0", height: "201.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "130px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Финальный логотип`}</p>
                 <div style={{ alignSelf: "stretch", height: "106px", flexShrink: 0, background: "#ffffff", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "335px", height: "106px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fc5e01a1018d15ddb01be23c1834de1c91cbf4ba.png)" }} />
+                  <div style={{ position: "absolute", left: "0", right: "0", width: "335px", top: "0", height: "106px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fc5e01a1018d15ddb01be23c1834de1c91cbf4ba.png)" }} />
                 </div>
               </div>
             </div>
@@ -328,7 +308,7 @@ export default function Content() {
           <div style={{ alignSelf: "stretch", height: "130px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`новый логотип`}</p>
             <div style={{ alignSelf: "stretch", height: "106px", flexShrink: 0, background: "#0e1b37", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "335px", height: "106px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a926c6a88ce091246c75a3d84de3ae8b617c5112.png)" }} />
+              <div style={{ position: "absolute", left: "0", right: "0", width: "335px", top: "0", height: "106px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a926c6a88ce091246c75a3d84de3ae8b617c5112.png)" }} />
             </div>
           </div>
         </div>
@@ -404,14 +384,9 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "136px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", position: "relative" }}>
               <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Дизайн Система`}</p>
               <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Дизайн-система упрощает создание интерфейсов, поддерживает единообразие и усиливает визуальную идентичность продукта`}</p>
-              <img
-                src="/a/cdab9c4d8a3eb269b234e10f961ac03f815088fc.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ position: "absolute", left: "159px", top: "-5px", width: "122px", height: "54.25px", flexShrink: 0 }}
-              />
+              <span style={{ position: "absolute", left: "calc(50% + -8.5px)", top: "-5px", width: "122px", height: "54.25px", flexShrink: 0 }}>
+                <img src="/a/cdab9c4d8a3eb269b234e10f961ac03f815088fc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0", top: "-3.4px", width: "122px", height: "61.04px", maxWidth: "none" }} />
+              </span>
             </div>
             <div style={{ width: "214px", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
               <div style={{ width: "172px", height: "24px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center" }}>
@@ -452,10 +427,10 @@ export default function Content() {
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "12631.51px", flexShrink: 0, display: "flex", flexDirection: "column", background: "#ffffff", overflow: "hidden" }}>
         <div style={{ alignSelf: "stretch", height: "398px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-          <div style={{ position: "absolute", left: "-226px", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.webp)" }} />
-          <div style={{ position: "absolute", left: "0", top: "0", width: "800px", height: "426px", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
-          <div style={{ position: "absolute", left: "311px", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
-          <p style={{ position: "absolute", left: "49.07px", top: "290px", width: "704px", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
+          <div style={{ position: "absolute", left: "calc(50% + -626px)", top: "-121px", width: "1875.2px", height: "938.06px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/868e3fbaf5805477663739c4dd4b8be2817e3d3b.webp)" }} />
+          <div style={{ position: "absolute", left: "0", right: "0", width: "800px", top: "0", height: "426px", backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
+          <div style={{ position: "absolute", left: "calc(50% + -89px)", top: "80px", width: "178px", height: "178px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
+          <p style={{ position: "absolute", left: "49.07px", right: "46.93px", width: "704px", top: "290px", fontSize: "18px", lineHeight: "28px", fontWeight: 700, textAlign: "center", color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
         </div>
         <div style={{ alignSelf: "stretch", height: "744px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "center", padding: "40px 40px 40px 40px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "664px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
@@ -576,7 +551,7 @@ export default function Content() {
                   <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                     <div style={{ alignSelf: "stretch", height: "126px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                       <div style={{ width: "102.08px", height: "126px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                        <div style={{ position: "absolute", left: "-13px", top: "-0.56px", width: "127.38px", height: "127.38px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
+                        <div style={{ position: "absolute", left: "calc(50% + -64.04px)", top: "calc(50% + -63.56px)", width: "127.38px", height: "127.38px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                       </div>
                       <div style={{ flex: "1 1 0%", height: "92px", display: "flex", flexDirection: "column", gap: "12px" }}>
                         <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -630,7 +605,7 @@ export default function Content() {
                 <div style={{ alignSelf: "stretch", height: "381px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
                   <div style={{ alignSelf: "stretch", height: "125px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "101.27px", height: "125px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "0", top: "-13.43px", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
+                      <div style={{ position: "absolute", left: "calc(50% + -50.63px)", top: "calc(50% + -75.93px)", width: "101.27px", height: "151.9px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/242f49189a154397cdc8de0e3037aed1fa2819ba.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "76px", display: "flex", flexDirection: "column", gap: "12px" }}>
                       <div style={{ alignSelf: "stretch", height: "48px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -686,38 +661,18 @@ export default function Content() {
                     <p style={{ width: "136px", flexShrink: 0, fontSize: "12px", lineHeight: "16px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Выбирает валюты`}</p>
                   </div>
                 </div>
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "360px", top: "125px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "360px", top: "249px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "360px", top: "372px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
-                <img
-                  src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "360px", top: "495px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}
-                />
+                <span style={{ position: "absolute", left: "calc(50% + 0px)", top: "125px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
+                <span style={{ position: "absolute", left: "calc(50% + 0px)", top: "249px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
+                <span style={{ position: "absolute", left: "calc(50% + 0px)", top: "372px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
+                <span style={{ position: "absolute", left: "calc(50% + 0px)", top: "495px", width: "13px", height: "0", flexShrink: 0, background: "#cbd5e1", border: "1.6px solid #cbd5e1" }}>
+                  <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.4px", top: "-5.89px", width: "13.8px", height: "11.78px", maxWidth: "none" }} />
+                </span>
                 <div style={{ width: "362px", height: "99px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b" }}>{`Создание обмена`}</p>
                   <div style={{ alignSelf: "stretch", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden" }}>
@@ -769,7 +724,7 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "412.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Итерация 1.0`}</p>
               <div style={{ alignSelf: "stretch", height: "384.72px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-20px", top: "-13.8px", width: "740.37px", height: "413.21px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
+                <div style={{ position: "absolute", left: "-20px", right: "-0.37px", width: "740.37px", top: "calc(50% + -206.16px)", height: "413.21px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
               </div>
             </div>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Бумажные прототипы стали фундаментом всей структуры приложения и позволили с самого начала выстроить логику обмена, опираясь на реальные сценарии использования`}</p>
@@ -785,7 +740,7 @@ export default function Content() {
               <div style={{ alignSelf: "stretch", height: "333.49px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
                 <div style={{ alignSelf: "stretch", height: "309.49px", flexShrink: 0, background: "#f7f8fa", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "1px", top: "0.48px", width: "719px", height: "311px", overflow: "hidden" }}>
+                  <div style={{ position: "absolute", left: "1px", right: "0", width: "719px", top: "calc(50% + -154.27px)", height: "311px", overflow: "hidden" }}>
                     <img src="/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-0.19px", width: "719px", height: "309.91px", maxWidth: "none" }} />
                   </div>
                 </div>
@@ -793,13 +748,13 @@ export default function Content() {
               <div style={{ alignSelf: "stretch", height: "458.15px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
                 <div style={{ alignSelf: "stretch", height: "434.15px", flexShrink: 0, background: "#f7f8fa", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "720px", height: "433.86px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
+                  <div style={{ position: "absolute", left: "0", right: "0", width: "720px", top: "0", height: "433.86px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "251.82px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Финальный логотип`}</p>
                 <div style={{ alignSelf: "stretch", height: "227.82px", flexShrink: 0, background: "#ffffff", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", width: "720px", height: "227.82px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fc5e01a1018d15ddb01be23c1834de1c91cbf4ba.png)" }} />
+                  <div style={{ position: "absolute", left: "0", right: "0", width: "720px", top: "0", height: "227.82px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fc5e01a1018d15ddb01be23c1834de1c91cbf4ba.png)" }} />
                 </div>
               </div>
             </div>
@@ -813,7 +768,7 @@ export default function Content() {
           <div style={{ alignSelf: "stretch", height: "251.37px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`новый логотип`}</p>
             <div style={{ alignSelf: "stretch", height: "227.37px", flexShrink: 0, background: "#0e1b37", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "720px", height: "227.82px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a926c6a88ce091246c75a3d84de3ae8b617c5112.png)" }} />
+              <div style={{ position: "absolute", left: "0", right: "0", width: "720px", top: "0", height: "227.82px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a926c6a88ce091246c75a3d84de3ae8b617c5112.png)" }} />
             </div>
           </div>
         </div>
@@ -889,14 +844,9 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "88px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", position: "relative" }}>
               <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Дизайн Система`}</p>
               <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Дизайн-система упрощает создание интерфейсов, поддерживает единообразие и усиливает визуальную идентичность продукта`}</p>
-              <img
-                src="/a/cdab9c4d8a3eb269b234e10f961ac03f815088fc.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ position: "absolute", left: "351px", top: "-5px", width: "122px", height: "54.25px", flexShrink: 0 }}
-              />
+              <span style={{ position: "absolute", left: "calc(50% + -9px)", top: "-5px", width: "122px", height: "54.25px", flexShrink: 0 }}>
+                <img src="/a/cdab9c4d8a3eb269b234e10f961ac03f815088fc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0", top: "-3.4px", width: "122px", height: "61.04px", maxWidth: "none" }} />
+              </span>
             </div>
             <div style={{ width: "394px", height: "24px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center" }}>
               <div style={{ width: "172px", height: "24px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center" }}>
@@ -942,10 +892,10 @@ export default function Content() {
           aria-hidden="true"
           loading="lazy"
           decoding="async"
-          style={{ position: "absolute", left: "-382px", top: "-138px", width: "2044px", height: "1022px", flexShrink: 0 }}
+          style={{ position: "absolute", left: "calc(50% + -1022px)", top: "calc(50% + -550px)", width: "2044px", height: "1022px", flexShrink: 0 }}
         />
         <div style={{ flex: "1 1 0%", alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
-        <div style={{ position: "absolute", left: "199px", top: "208px", width: "882px", height: "409px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>
+        <div style={{ position: "absolute", left: "calc(50% + -441px)", top: "calc(50% + -204px)", width: "882px", height: "409px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>
           <div style={{ width: "329px", height: "329px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
           <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#e2e8f0" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>
         </div>

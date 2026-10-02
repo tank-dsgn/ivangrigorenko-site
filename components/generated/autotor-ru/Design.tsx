@@ -111,9 +111,9 @@ export default function Design() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`предложение о продвижении объявления`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/965fd0479393cb49eadcda04edbf3c077b6ab8d7.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "97.33px", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d4396201ed91a2f49d8ba0c278829faf461d0754.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "649.7px", width: "267.67px", height: "26.53px" }} />
+              <div style={{ position: "absolute", right: "0", top: "0", bottom: "0", height: "676.47px", width: "914.93px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/965fd0479393cb49eadcda04edbf3c077b6ab8d7.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", bottom: "0", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d4396201ed91a2f49d8ba0c278829faf461d0754.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", bottom: "0.23px", width: "267.67px", height: "26.53px" }} />
             </div>
           </div>
         </div>
@@ -121,8 +121,8 @@ export default function Design() {
           <div style={{ width: "1168px", height: "719.62px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Всплывающее окно выбранных функций`}</p>
             <div style={{ width: "1166.54px", height: "675.62px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "913.79px", height: "675.62px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f05739c341791ab6f1417e2787bad43fc6d8bef9.webp)", borderRadius: "9.91px", boxShadow: "0 4.95px 19.81px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "899.21px", top: "97.44px", width: "267.33px", height: "578.41px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d16b0c11330f27666adbcaffac08cca8b949bb68.webp)", borderRadius: "9.72px", boxShadow: "0 4.86px 19.44px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", top: "0", bottom: "0", height: "675.62px", width: "913.79px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/f05739c341791ab6f1417e2787bad43fc6d8bef9.webp)", borderRadius: "9.91px", boxShadow: "0 4.95px 19.81px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", right: "0", top: "97.44px", bottom: "-0.23px", height: "578.41px", width: "267.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/d16b0c11330f27666adbcaffac08cca8b949bb68.webp)", borderRadius: "9.72px", boxShadow: "0 4.86px 19.44px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -130,9 +130,9 @@ export default function Design() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`Детали выбранных функций и способы оплаты`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/eed3aad48b69455ed9479550e959342573c4cf32.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "90.03px", width: "267.67px", height: "586.43px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd9f54f0ded8bda2c9e08c206861fde95a06a6d2.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "649.7px", width: "267.67px", height: "26.53px" }} />
+              <div style={{ position: "absolute", right: "0", top: "0", width: "914.93px", height: "676.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/eed3aad48b69455ed9479550e959342573c4cf32.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", bottom: "0", width: "267.67px", height: "586.43px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/fd9f54f0ded8bda2c9e08c206861fde95a06a6d2.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", bottom: "0.23px", width: "267.67px", height: "26.53px" }} />
             </div>
           </div>
         </div>
@@ -140,8 +140,8 @@ export default function Design() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`реквизиты для банковского перевода`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "914.93px", height: "676.47px", background: "#ffffff", borderRadius: "9.73px", overflow: "hidden", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }}>
-                <div style={{ position: "absolute", left: "0", top: "-502.48px", width: "914.93px", height: "1179px", display: "flex", flexDirection: "column", gap: "11.44px", padding: "17.16px 28.59px 17.16px 28.59px", background: "#fdfdfd", overflow: "hidden" }}>
+              <div style={{ position: "absolute", left: "0", top: "0", bottom: "0", height: "676.47px", width: "914.93px", background: "#ffffff", borderRadius: "9.73px", overflow: "hidden", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }}>
+                <div style={{ position: "absolute", left: "0", right: "0", width: "914.93px", top: "-502.48px", bottom: "-0.05px", height: "1179px", display: "flex", flexDirection: "column", gap: "11.44px", padding: "17.16px 28.59px 17.16px 28.59px", background: "#fdfdfd", overflow: "hidden" }}>
                   <div style={{ alignSelf: "stretch", height: "55.72px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "5.72px" }}>
                     <div style={{ alignSelf: "stretch", height: "35px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "22.87px", justifyContent: "space-between", alignItems: "center" }}>
                       <p style={{ flex: "1 1 0%", fontSize: "22.87px", lineHeight: "34.31px", fontWeight: 700, color: "#0b2307" }}>{`Przyspiesz sprzedaż`}</p>
@@ -221,7 +221,7 @@ export default function Design() {
                                 </div>
                               </div>
                             </div>
-                            <div style={{ position: "absolute", left: "913px", top: "658.27px", width: "438px", height: "659.27px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b03585ac7679a28541387695f6a7899d0c69146e.webp)" }} />
+                            <div style={{ position: "absolute", left: "calc(50% + 607.07px)", top: "calc(50% + 515.02px)", width: "438px", height: "659.27px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b03585ac7679a28541387695f6a7899d0c69146e.webp)" }} />
                           </div>
                         </div>
                       </div>
@@ -389,7 +389,7 @@ export default function Design() {
                   </div>
                 </div>
               </div>
-              <div style={{ position: "absolute", left: "900.05px", top: "96.95px", width: "267.95px", height: "580.35px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cd7611a62cbe95fa4ba5bd9984321432d1a1533.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", right: "0", top: "96.95px", bottom: "-0.84px", height: "580.35px", width: "267.95px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cd7611a62cbe95fa4ba5bd9984321432d1a1533.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>
@@ -397,8 +397,8 @@ export default function Design() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`личный кабинет / мои объявления`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "253.07px", top: "0", width: "914.93px", height: "676.47px", background: "#ffffff", borderRadius: "9.73px", overflow: "hidden", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }}>
-                <div style={{ position: "absolute", left: "0", top: "74.22px", width: "914.93px", height: "808.72px", display: "flex", flexDirection: "row", gap: "17.16px", padding: "17.16px 28.59px 17.16px 28.59px", background: "#fdfdfd", overflow: "hidden" }}>
+              <div style={{ position: "absolute", right: "0", top: "0", width: "914.93px", height: "676.47px", background: "#ffffff", borderRadius: "9.73px", overflow: "hidden", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }}>
+                <div style={{ position: "absolute", left: "0", right: "0", width: "914.93px", bottom: "-206.47px", height: "808.72px", display: "flex", flexDirection: "row", gap: "17.16px", padding: "17.16px 28.59px 17.16px 28.59px", background: "#fdfdfd", overflow: "hidden" }}>
                   <div style={{ flex: "1 1 0%", height: "769.88px", display: "flex", flexDirection: "column", gap: "11.44px" }}>
                     <div style={{ alignSelf: "stretch", height: "35px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "22.87px", justifyContent: "space-between", alignItems: "center" }}>
                       <p style={{ flex: "1 1 0%", fontSize: "22.87px", lineHeight: "34.31px", fontWeight: 700, color: "#0b2307" }}>{`Moje publikacje`}</p>
@@ -450,9 +450,9 @@ export default function Design() {
                           </div>
                           <div style={{ alignSelf: "stretch", height: "89.15px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "17.16px" }}>
                             <div style={{ width: "152.25px", height: "85.78px", flexShrink: 0, borderRadius: "8.58px", overflow: "hidden", position: "relative" }}>
-                              <div style={{ position: "absolute", left: "-0.3px", top: "-5.16px", width: "153.3px", height: "127.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/9fcec51304b659e7b6f75ea68e69fdeeaaf9dd52.webp)" }} />
-                              <div style={{ position: "absolute", left: "0", top: "-0.49px", width: "152.25px", height: "85.78px", background: "rgba(0, 0, 0, 0.5)" }} />
-                              <p style={{ position: "absolute", left: "28.76px", top: "31.15px", fontSize: "14.3px", lineHeight: "22.87px", fontWeight: 500, color: "#ffffff" }}>{`W moderacji`}</p>
+                              <div style={{ position: "absolute", left: "-0.3px", right: "-0.74px", width: "153.3px", top: "calc(50% + -48.04px)", height: "127.87px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/9fcec51304b659e7b6f75ea68e69fdeeaaf9dd52.webp)" }} />
+                              <div style={{ position: "absolute", left: "0", top: "calc(50% + -43.37px)", width: "152.25px", height: "85.78px", background: "rgba(0, 0, 0, 0.5)" }} />
+                              <p style={{ position: "absolute", left: "calc(50% + -47.37px)", top: "calc(50% + -11.74px)", fontSize: "14.3px", lineHeight: "22.87px", fontWeight: 500, color: "#ffffff" }}>{`W moderacji`}</p>
                             </div>
                             <div style={{ flex: "1 1 0%", height: "89.15px", display: "flex", flexDirection: "row", gap: "28.59px" }}>
                               <div style={{ width: "120px", height: "89.15px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "5.72px" }}>
@@ -548,8 +548,8 @@ export default function Design() {
                   </div>
                 </div>
               </div>
-              <div style={{ position: "absolute", left: "0", top: "97.33px", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23b29a04e3932fde7b2bca9aa74b1f7cb9ea4d5b.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
-              <div style={{ position: "absolute", left: "0", top: "649.7px", width: "267.67px", height: "26.53px" }} />
+              <div style={{ position: "absolute", left: "0", bottom: "0", width: "267.67px", height: "579.13px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/23b29a04e3932fde7b2bca9aa74b1f7cb9ea4d5b.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", left: "0", bottom: "0.23px", width: "267.67px", height: "26.53px" }} />
             </div>
           </div>
         </div>
@@ -557,7 +557,7 @@ export default function Design() {
           <div style={{ width: "1168px", height: "720.47px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", padding: "0 160px 0 160px" }}>
             <p style={{ width: "960px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`личный кабинет / история транзакций`}</p>
             <div style={{ width: "1168px", height: "676.47px", flexShrink: 0, position: "relative" }}>
-              <div style={{ position: "absolute", left: "0", top: "0", width: "914.93px", height: "676.47px", display: "flex", flexDirection: "column", background: "#ffffff", borderRadius: "9.73px", overflow: "hidden", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }}>
+              <div style={{ position: "absolute", left: "0", top: "0", bottom: "0", height: "676.47px", width: "914.93px", display: "flex", flexDirection: "column", background: "#ffffff", borderRadius: "9.73px", overflow: "hidden", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ width: "915.31px", height: "40.04px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "17.16px", alignItems: "center", padding: "0 28.6px 0 28.6px", background: "#ffffff" }}>
                   <img
                     src="/a/4cef2779325745fb9bb5c33c698154de72226eef.svg"
@@ -839,7 +839,7 @@ export default function Design() {
                   </div>
                 </div>
               </div>
-              <div style={{ position: "absolute", left: "899.77px", top: "96.95px", width: "268.23px", height: "580.35px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4f6486a3cb014d7db518e59e8decf90023d51dd6.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
+              <div style={{ position: "absolute", right: "0", top: "96.95px", bottom: "-0.84px", height: "580.35px", width: "268.23px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4f6486a3cb014d7db518e59e8decf90023d51dd6.webp)", borderRadius: "9.73px", boxShadow: "0 4.87px 19.47px 0 rgba(13, 18, 46, 0.2)" }} />
             </div>
           </div>
         </div>

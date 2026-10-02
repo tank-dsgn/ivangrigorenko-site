@@ -17,9 +17,9 @@ export default function Metafor() {
           <div style={{ width: "335px", height: "742px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", alignItems: "center", overflow: "hidden" }}>
             <div style={{ width: "335px", height: "335px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "12px", overflow: "hidden" }}>
               <div style={{ width: "335px", height: "335px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-187px", top: "-4.39px", width: "599.84px", height: "375.03px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c25f0d397b15b15cf387317d772b84f3d8eb6ee4.webp)" }} />
-                <div style={{ position: "absolute", left: "0", top: "-0.36px", width: "335px", height: "335px", background: "rgba(24, 41, 52, 0.71)", borderRadius: "12px" }} />
-                <div style={{ position: "absolute", left: "119px", top: "1.64px", width: "97.79px", height: "331.8px", overflow: "hidden" }}>
+                <div style={{ position: "absolute", left: "-187px", top: "-4.39px", bottom: "-35.64px", height: "375.03px", width: "599.84px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c25f0d397b15b15cf387317d772b84f3d8eb6ee4.webp)" }} />
+                <div style={{ position: "absolute", left: "0", right: "0", width: "335px", top: "-0.36px", bottom: "0.36px", height: "335px", background: "rgba(24, 41, 52, 0.71)", borderRadius: "12px" }} />
+                <div style={{ position: "absolute", left: "calc(50% + -48.5px)", top: "1.64px", bottom: "1.56px", height: "331.8px", width: "97.79px", overflow: "hidden" }}>
                   <img
                     src="/a/785b57ea57b7c1e75fe75f016d1805088f65309c.svg"
                     alt=""
@@ -58,7 +58,7 @@ export default function Metafor() {
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    style={{ position: "absolute", left: "14.13px", top: "257.89px", width: "6.48px", height: "73.73px", background: "#f7f7f7" }}
+                    style={{ position: "absolute", left: "14.13px", bottom: "0.18px", width: "6.48px", height: "73.73px", background: "#f7f7f7" }}
                   />
                   <img
                     src="/a/e0ce09837a4e4ba24265195855517e8094b8fb42.svg"
@@ -90,7 +90,7 @@ export default function Metafor() {
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    style={{ position: "absolute", left: "24.46px", top: "5.54px", width: "39.58px", height: "6.29px", background: "#ffffff" }}
+                    style={{ position: "absolute", left: "calc(50% + -24.44px)", top: "5.54px", width: "39.58px", height: "6.29px", background: "#ffffff" }}
                   />
                   <img
                     src="/a/ac21b2741ed5f9f3f9d8fdadfa4946a9d1f2135f.svg"
@@ -137,9 +137,9 @@ export default function Metafor() {
             />
             <div style={{ width: "335px", height: "335px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "12px", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "335px", flexShrink: 0, borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-30px", top: "-19.64px", width: "365px", height: "487px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
-                <div style={{ position: "absolute", left: "0", top: "-0.64px", width: "335px", height: "336px", background: "rgba(24, 41, 52, 0.8)", borderRadius: "12px" }} />
-                <p style={{ position: "absolute", left: "94px", top: "111.36px", fontSize: "84px", lineHeight: "113.23px", fontWeight: 400, letterSpacing: "2.1px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
+                <div style={{ position: "absolute", left: "-30px", right: "0", width: "365px", top: "calc(50% + -187.14px)", height: "487px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
+                <div style={{ position: "absolute", left: "0", right: "0", width: "335px", top: "-0.64px", bottom: "-0.36px", height: "336px", background: "rgba(24, 41, 52, 0.8)", borderRadius: "12px" }} />
+                <p style={{ position: "absolute", left: "calc(50% + -73.5px)", top: "calc(50% + -56.14px)", fontSize: "84px", lineHeight: "113.23px", fontWeight: 400, letterSpacing: "2.1px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
               </div>
             </div>
           </div>
@@ -179,9 +179,9 @@ export default function Metafor() {
             <div style={{ width: "325.07px", height: "334.52px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", borderRadius: "16px", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`инициалы`}</p>
               <div style={{ alignSelf: "stretch", height: "310px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-31.29px", top: "-16.33px", width: "359.38px", height: "479.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
-                <div style={{ position: "absolute", left: "0.62px", top: "-0.83px", width: "325px", height: "311px", background: "rgba(24, 41, 52, 0.8)", borderRadius: "12px" }} />
-                <p style={{ position: "absolute", left: "89.62px", top: "99.17px", fontSize: "83px", lineHeight: "111.88px", fontWeight: 400, letterSpacing: "2.08px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
+                <div style={{ position: "absolute", left: "-31.29px", right: "-3.02px", width: "359.38px", top: "calc(50% + -171.33px)", height: "479.26px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
+                <div style={{ position: "absolute", left: "0.62px", right: "-0.55px", width: "325px", top: "-0.83px", bottom: "-0.17px", height: "311px", background: "rgba(24, 41, 52, 0.8)", borderRadius: "12px" }} />
+                <p style={{ position: "absolute", left: "calc(50% + -72.91px)", top: "calc(50% + -55.83px)", fontSize: "83px", lineHeight: "111.88px", fontWeight: 400, letterSpacing: "2.08px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
               </div>
             </div>
           </div>
@@ -221,9 +221,9 @@ export default function Metafor() {
             <div style={{ position: "absolute", left: "584px", top: "0", width: "440px", height: "518px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "center", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`инициалы`}</p>
               <div style={{ alignSelf: "stretch", height: "482px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "-75.48px", top: "-37.7px", width: "519.97px", height: "693.42px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
+                <div style={{ position: "absolute", left: "-75.48px", top: "-37.7px", bottom: "-173.71px", height: "693.42px", width: "519.97px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/429b5956c6f667c888d0c118319dec5ee70715e4.webp)" }} />
                 <div style={{ position: "absolute", left: "0", top: "-0.76px", width: "440.3px", height: "484.33px", background: "rgba(24, 41, 52, 0.8)" }} />
-                <p style={{ position: "absolute", left: "122px", top: "166px", fontSize: "112px", lineHeight: "150.98px", fontWeight: 400, letterSpacing: "2.8px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
+                <p style={{ position: "absolute", left: "calc(50% + -98px)", top: "calc(50% + -75px)", fontSize: "112px", lineHeight: "150.98px", fontWeight: 400, letterSpacing: "2.8px", textAlign: "center", color: "#ffffff" }}>{`DM`}</p>
               </div>
             </div>
           </div>

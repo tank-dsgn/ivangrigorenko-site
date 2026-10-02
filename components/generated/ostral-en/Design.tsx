@@ -12,7 +12,7 @@ export default function Design() {
             <p style={{ alignSelf: "stretch", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Key Screens`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Interfaces were designed for three user scenarios: the engineer works with the findings map and defect cards, the manager analyses risks and escalates decisions, the programs lead tracks campaign progress and prepares documentation packages`}</p>
           </div>
-          <div style={{ position: "absolute", left: "-32.77px", top: "0.26px", width: "599.63px", height: "430px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
+          <div style={{ position: "absolute", left: "-32.77px", right: "-191.86px", width: "599.63px", top: "0.26px", height: "430px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         </div>
         <div style={{ alignSelf: "stretch", height: "294.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "16px 20px 16px 20px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "262.22px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
@@ -94,7 +94,7 @@ export default function Design() {
             <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Key Screens`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Interfaces were designed for three user scenarios: the engineer works with the findings map and defect cards, the manager analyses risks and escalates decisions, the programs lead tracks campaign progress and prepares documentation packages`}</p>
           </div>
-          <div style={{ position: "absolute", left: "-32.77px", top: "0.26px", width: "892.77px", height: "640.21px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
+          <div style={{ position: "absolute", left: "-32.77px", right: "-60px", width: "892.77px", top: "0.26px", height: "640.21px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         </div>
         <div style={{ alignSelf: "stretch", height: "568px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "16px 40px 16px 40px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", height: "536px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
@@ -176,7 +176,7 @@ export default function Design() {
             <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Key Screens`}</p>
             <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Interfaces were designed for three user scenarios: the engineer works with the findings map and defect cards, the manager analyses risks and escalates decisions, the programs lead tracks campaign progress and prepares documentation packages`}</p>
           </div>
-          <div style={{ position: "absolute", left: "-880px", top: "0.33px", width: "2250.72px", height: "1614px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
+          <div style={{ position: "absolute", left: "-880px", right: "-90.72px", width: "2250.72px", top: "0.33px", height: "1614px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6617090a67f051a943dac3342a65aefc31a469cb.webp)", opacity: 0.100000001490116 }} />
         </div>
         <div style={{ alignSelf: "stretch", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "0 56px 0 56px", background: "#fdfdff", overflow: "hidden" }}>
           <div style={{ width: "1168px", height: "874.58px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center", borderRadius: "12px" }}>

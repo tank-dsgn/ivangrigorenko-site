@@ -19,7 +19,7 @@ export default function UserResearch() {
                 <div style={{ alignSelf: "stretch", height: "229px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "97px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "97px", flexShrink: 0, background: "#fafaf9", borderRadius: "6.93px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "0", top: "0.75px", width: "77.81px", height: "116.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
+                      <div style={{ position: "absolute", left: "0", right: "0.19px", width: "77.81px", top: "calc(50% + -47.75px)", height: "116.72px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "52px", display: "flex", flexDirection: "column", gap: "4px" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Anna, 28 years old`}</p>
@@ -33,7 +33,7 @@ export default function UserResearch() {
                 <div style={{ alignSelf: "stretch", height: "209px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "97px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "97px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-2px", top: "-2.11px", width: "82.39px", height: "112.71px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
+                      <div style={{ position: "absolute", left: "-2px", right: "-2.39px", width: "82.39px", top: "calc(50% + -50.61px)", height: "112.71px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "52px", display: "flex", flexDirection: "column", gap: "4px" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Dmitry, 36 years old`}</p>
@@ -47,7 +47,7 @@ export default function UserResearch() {
                 <div style={{ alignSelf: "stretch", height: "229px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
                   <div style={{ alignSelf: "stretch", height: "97px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px" }}>
                     <div style={{ width: "78px", height: "97px", flexShrink: 0, background: "#fafaf9", borderRadius: "8px", overflow: "hidden", position: "relative" }}>
-                      <div style={{ position: "absolute", left: "-3.11px", top: "0", width: "82.47px", height: "109px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
+                      <div style={{ position: "absolute", left: "calc(50% + -42.11px)", top: "0", bottom: "-12px", height: "109px", width: "82.47px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
                     </div>
                     <div style={{ flex: "1 1 0%", height: "52px", display: "flex", flexDirection: "column", gap: "4px" }}>
                       <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, color: "#0f172a" }}>{`Olga, 45 years old`}</p>
@@ -93,7 +93,7 @@ export default function UserResearch() {
               <div style={{ alignSelf: "stretch", height: "196px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "16px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "24px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "0", width: "120px", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
+                    <div style={{ position: "absolute", left: "0", right: "0", width: "120px", top: "calc(50% + -74px)", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "146px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "54px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -107,7 +107,7 @@ export default function UserResearch() {
               <div style={{ alignSelf: "stretch", height: "196px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "16px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "24px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "-8px", width: "120px", height: "164.17px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
+                    <div style={{ position: "absolute", left: "0", right: "0", width: "120px", top: "calc(50% + -82px)", height: "164.17px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "126px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "54px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -121,7 +121,7 @@ export default function UserResearch() {
               <div style={{ alignSelf: "stretch", height: "196px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "16px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "24px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "-5px", width: "123px", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
+                    <div style={{ position: "absolute", left: "calc(50% + -60px)", top: "-5px", bottom: "-10px", height: "163px", width: "123px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "146px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "54px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "2px" }}>
@@ -168,7 +168,7 @@ export default function UserResearch() {
               <div style={{ alignSelf: "stretch", height: "212px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "0", width: "120px", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
+                    <div style={{ position: "absolute", left: "0", right: "0", width: "120px", top: "calc(50% + -74px)", height: "180px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a5bbeea235b3126f2fedf01249e855db47358eac.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "140px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -182,7 +182,7 @@ export default function UserResearch() {
               <div style={{ alignSelf: "stretch", height: "212px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "0", top: "0", width: "119.15px", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
+                    <div style={{ position: "absolute", left: "0", right: "0.85px", width: "119.15px", top: "calc(50% + -74px)", height: "163px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b552ec7fc4a540218410c285b4e70e02cb41aae5.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "140px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>
@@ -196,7 +196,7 @@ export default function UserResearch() {
               <div style={{ alignSelf: "stretch", height: "212px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "32px", padding: "32px 32px 32px 32px", background: "#ffffff", borderRadius: "24px" }}>
                 <div style={{ flex: "1 1 0%", height: "148px", display: "flex", flexDirection: "row", gap: "32px" }}>
                   <div style={{ width: "120px", height: "148px", flexShrink: 0, background: "#fafaf9", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "2px", top: "0", width: "120.29px", height: "159px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
+                    <div style={{ position: "absolute", left: "2px", right: "-2.29px", width: "120.29px", top: "calc(50% + -74px)", height: "159px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/b06b568375c9cf24eef26c6888d6f209f9d3886a.webp)" }} />
                   </div>
                   <div style={{ flex: "1 1 0%", height: "140px", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center" }}>
                     <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "column" }}>

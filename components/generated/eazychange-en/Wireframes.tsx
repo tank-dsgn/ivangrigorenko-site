@@ -15,7 +15,7 @@ export default function Wireframes() {
           <div style={{ alignSelf: "stretch", height: "584px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
             <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Iteration 1.0`}</p>
             <div style={{ alignSelf: "stretch", height: "552px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-              <div style={{ position: "absolute", left: "-42.25px", top: "-9.58px", width: "1024px", height: "571.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
+              <div style={{ position: "absolute", left: "-42.25px", right: "-21.75px", width: "1024px", top: "calc(50% + -285.58px)", height: "571.5px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
             </div>
           </div>
           <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Paper prototypes became the foundation of the entire application structure and helped define the exchange logic early on, based on real usage scenarios`}</p>
