@@ -15,7 +15,7 @@ export default function MoreProjects2() {
               <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 700, textAlign: "center", textTransform: "uppercase", color: "#0f172a" }}>{`Смотрите также`}</p>
             </div>
           </div>
-          <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px" }}>
+          <div style={{ width: "960px", height: "666px", flexShrink: 0, display: "flex", flexDirection: "row", flexWrap: "wrap", columnGap: "24px", rowGap: "24px" }}>
             <Link href="/autotor-ru" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", padding: "6px 0 0 0" }}>
               <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
                 <div style={{ position: "absolute", left: "-42px", top: "0", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />

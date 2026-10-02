@@ -3,7 +3,7 @@
 // используется inline-style: так видно, откуда взялось каждое число,
 // и ничего не теряется на округлениях Tailwind.
 
-import { absolutePosition, frameStyle, nodeAsset, sizing, textStyle } from "./nodes.mjs";
+import { absolutePosition, frameStyle, imageFill, nodeAsset, sizing, textStyle } from "./nodes.mjs";
 
 /**
  * Клик по узлу в Figma задан интеракцией. Достаём из неё адрес:
@@ -45,6 +45,8 @@ export function componentName(name, fallback) {
   const safe = /^[A-Za-z]/.test(cleaned) ? cleaned : `S${cleaned}`;
   return safe || fallback;
 }
+
+const round = (v) => Math.round(v * 100) / 100;
 
 const esc = (s) =>
   s.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$\{/g, "\\${");
@@ -123,6 +125,20 @@ export function createEmitter({
       return `${pad}<${tag}${sFixed ? ` style=${sFixed}` : ""}>${content}</${tag}>\n`;
     }
 
+    // Кадрированная заливка: картинку кладём отдельным тегом внутрь обрезающего блока,
+    // потому что фоном нужный кусок не выразить
+    const fill = imageFill(node, assets, assetMap);
+    let cropped = "";
+    if (fill?.crop) {
+      usedAssets.add(fill.src);
+      style.position = style.position || "relative";
+      style.overflow = "hidden";
+      const c = fill.crop;
+      const inner = `{{ position: "absolute", left: "${round(c.left)}px", top: "${round(c.top)}px", width: "${round(c.width)}px", height: "${round(c.height)}px", maxWidth: "none" }}`;
+      cropped =
+        `${indentUnit.repeat(depth + 1)}<img src=${JSON.stringify(fill.src)} alt="" aria-hidden="true" loading="lazy" decoding="async" style=${inner} />\n`;
+    }
+
     // Если внутри есть абсолютно позиционированные дети — этот узел им точка отсчёта
     const visibleKids = (node.children || []).filter((c) => c.visible !== false);
     const hasAbsoluteKid = visibleKids.some(
@@ -136,9 +152,9 @@ export function createEmitter({
       const slug = cardMap[(firstText(node) || "").toLowerCase()];
       if (slug) link = { href: `/${slug}-${lang}`, internal: true, newTab: false };
     }
-    const kids = visibleKids
-      .map((c) => emit(c, node, depth + 1, insideLink || Boolean(link)))
-      .join("");
+    const kids =
+      cropped +
+      visibleKids.map((c) => emit(c, node, depth + 1, insideLink || Boolean(link))).join("");
     const s = styleLiteral(style);
 
     if (link) {

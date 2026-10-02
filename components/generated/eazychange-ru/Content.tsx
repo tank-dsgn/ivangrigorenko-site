@@ -300,7 +300,9 @@ export default function Content() {
               <div style={{ alignSelf: "stretch", height: "168px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
                 <div style={{ alignSelf: "stretch", height: "144px", flexShrink: 0, background: "#f7f8fa", borderRadius: "12px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "1px", top: "0", width: "334px", height: "173px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png)" }} />
+                  <div style={{ position: "absolute", left: "1px", top: "0", width: "334px", height: "173px", overflow: "hidden" }}>
+                    <img src="/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "0px", width: "334px", height: "143.97px", maxWidth: "none" }} />
+                  </div>
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "226px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -374,19 +376,25 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "267px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "219px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`правила пользования`}</p>
-                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cae8afda5b7cd60c2fc374a03e003546c12231de.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/cae8afda5b7cd60c2fc374a03e003546c12231de.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-4px", width: "335px", height: "198.54px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "266px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "218px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`контакты`}</p>
-                <div style={{ alignSelf: "stretch", height: "194px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/723015d8df4dcb33001fb771d59532247e3694a6.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "194px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/723015d8df4dcb33001fb771d59532247e3694a6.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-4px", width: "335px", height: "198.42px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "267px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 20px 24px 20px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "219px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`поддержка`}</p>
-                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "195px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-4px", width: "335px", height: "198.72px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
           </div>
@@ -777,7 +785,9 @@ export default function Content() {
               <div style={{ alignSelf: "stretch", height: "333.49px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
                 <div style={{ alignSelf: "stretch", height: "309.49px", flexShrink: 0, background: "#f7f8fa", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "1px", top: "0.48px", width: "719px", height: "311px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png)" }} />
+                  <div style={{ position: "absolute", left: "1px", top: "0.48px", width: "719px", height: "311px", overflow: "hidden" }}>
+                    <img src="/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-0.19px", width: "719px", height: "309.91px", maxWidth: "none" }} />
+                  </div>
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "458.15px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
@@ -851,19 +861,25 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "491.1px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "443.1px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`правила пользования`}</p>
-                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/cae8afda5b7cd60c2fc374a03e003546c12231de.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/cae8afda5b7cd60c2fc374a03e003546c12231de.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-8.6px", width: "720px", height: "426.72px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "488.96px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "440.96px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`контакты`}</p>
-                <div style={{ alignSelf: "stretch", height: "416.96px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/723015d8df4dcb33001fb771d59532247e3694a6.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "416.96px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/723015d8df4dcb33001fb771d59532247e3694a6.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-8.6px", width: "720px", height: "426.45px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "491.1px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "center", padding: "24px 40px 24px 40px", background: "#ffffff", overflow: "hidden" }}>
               <div style={{ alignSelf: "stretch", height: "443.1px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#64748b" }}>{`поддержка`}</p>
-                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.webp)" }} />
+                <div style={{ alignSelf: "stretch", height: "419.1px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
+                  <img src="/a/656d687bb587b6b842cf68030fe97c5bbdef23e1.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0px", top: "-8.6px", width: "720px", height: "427.11px", maxWidth: "none" }} />
+                </div>
               </div>
             </div>
           </div>

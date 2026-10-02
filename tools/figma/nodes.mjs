@@ -53,18 +53,39 @@ export function linearGradient(fill) {
   return `linear-gradient(${Number(angle.toFixed(2))}deg, ${list})`;
 }
 
-/** Заливка картинкой: ссылка на ассет и режим вписывания */
+/**
+ * Заливка картинкой.
+ *
+ * FILL — обычное вписывание с обрезкой по краям, его достаточно отдать фоном.
+ * STRETCH — это режим «кадрирование» в Figma: какой кусок картинки показывать,
+ * описывает матрица `imageTransform`. Фоном такое не выразить, поэтому для них
+ * считаем положение и размер отдельной картинки внутри обрезающего блока.
+ */
 export function imageFill(node, assets, assetMap = {}) {
   const f = (node.fills || []).find((x) => x.visible !== false && x.type === "IMAGE");
   if (!f) return null;
   const a = assets[f.imageRef];
   if (!a) return null;
-  return {
-    src: `/a/${assetMap[a.url] ?? a.url}`,
-    fit: f.scaleMode === "FIT" ? "contain" : "cover",
-    width: f.originalImageWidth,
-    height: f.originalImageHeight,
-  };
+
+  const src = `/a/${assetMap[a.url] ?? a.url}`;
+  const box = node.size || {};
+
+  if (f.scaleMode === "STRETCH" && f.imageTransform && box.x && box.y) {
+    const [[sx, , tx], [, sy, ty]] = f.imageTransform;
+    if (sx && sy) {
+      return {
+        src,
+        crop: {
+          width: box.x / sx,
+          height: box.y / sy,
+          left: (-tx * box.x) / sx,
+          top: (-ty * box.y) / sy,
+        },
+      };
+    }
+  }
+
+  return { src, fit: f.scaleMode === "FIT" ? "contain" : "cover" };
 }
 
 /** Ассет самого узла (IMAGE и SVG ссылаются на файл по хешу) */
@@ -96,7 +117,14 @@ export function frameStyle(node, assets, assetMap = {}) {
   if (node.layoutMode === "HORIZONTAL" || node.layoutMode === "VERTICAL") {
     s.display = "flex";
     s.flexDirection = node.layoutMode === "HORIZONTAL" ? "row" : "column";
-    if (node.itemSpacing) s.gap = px(node.itemSpacing);
+    if (node.layoutWrap === "WRAP") {
+      // в Figma перенос строк задаётся отдельно, как и расстояние между рядами
+      s.flexWrap = "wrap";
+      if (node.itemSpacing) s.columnGap = px(node.itemSpacing);
+      if (node.counterAxisSpacing) s.rowGap = px(node.counterAxisSpacing);
+    } else if (node.itemSpacing) {
+      s.gap = px(node.itemSpacing);
+    }
     if (node.primaryAxisAlignItems) s.justifyContent = ALIGN[node.primaryAxisAlignItems];
     if (node.counterAxisAlignItems) s.alignItems = ALIGN[node.counterAxisAlignItems];
   }
@@ -110,7 +138,7 @@ export function frameStyle(node, assets, assetMap = {}) {
   // Слои фона: картинка снизу, градиенты поверх — как в Figma
   const layers = [];
   const img = imageFill(node, assets, assetMap);
-  if (img) { s.backgroundSize = img.fit; s.backgroundPosition = "center"; s.backgroundRepeat = "no-repeat"; }
+  if (img && !img.crop) { s.backgroundSize = img.fit; s.backgroundPosition = "center"; s.backgroundRepeat = "no-repeat"; }
   for (const f of node.fills || []) {
     if (f.visible === false) continue;
     if (f.type === "GRADIENT_LINEAR") {
@@ -118,7 +146,7 @@ export function frameStyle(node, assets, assetMap = {}) {
       if (g) layers.unshift(g);
     }
   }
-  if (img) layers.push(`url(${img.src})`);
+  if (img && !img.crop) layers.push(`url(${img.src})`);
   if (layers.length) s.backgroundImage = layers.join(", ");
 
   if (node.cornerRadius) s.borderRadius = px(node.cornerRadius);
