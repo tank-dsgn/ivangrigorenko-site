@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/metadata";
 import Header from "@/components/Header";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 
-export const metadata = { title: "ivan.grigorenko.dsgn — Обо мне" };
+export const metadata = pageMetadata({ path: "/about-ru", title: "Обо мне" });
 
 export default function AboutRu() {
   return (

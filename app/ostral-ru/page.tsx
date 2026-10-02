@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/metadata";
 import CasePage from "@/components/CasePage";
 import Body, { shell } from "@/components/generated/ostral-ru";
 
-export const metadata = { title: "ivan.grigorenko.dsgn — Ostral" };
+export const metadata = pageMetadata({ path: "/ostral-ru", title: "Ostral" });
 
 export default function Page() {
   return (

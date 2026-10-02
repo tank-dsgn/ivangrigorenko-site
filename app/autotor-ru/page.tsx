@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/metadata";
 import CasePage from "@/components/CasePage";
 import Body, { shell } from "@/components/generated/autotor-ru";
 
-export const metadata = { title: "ivan.grigorenko.dsgn — autotor.pl" };
+export const metadata = pageMetadata({ path: "/autotor-ru", title: "autotor.pl" });
 
 export default function Page() {
   return (

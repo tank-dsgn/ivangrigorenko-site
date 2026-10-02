@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import Analytics from "@/components/Analytics";
 
 const openSans = Open_Sans({
   subsets: ["latin", "cyrillic"],
@@ -29,7 +30,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ru" className={openSans.variable}>
-      <body className={`${openSans.className} antialiased`}>{children}</body>
+      <body className={`${openSans.className} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

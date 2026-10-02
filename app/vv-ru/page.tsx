@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/metadata";
 import CasePage from "@/components/CasePage";
 import Body, { shell } from "@/components/generated/vv-ru";
 
-export const metadata = { title: "ivan.grigorenko.dsgn — Дизайн-система" };
+export const metadata = pageMetadata({ path: "/vv-ru", title: "Дизайн-система" });
 
 export default function Page() {
   return (

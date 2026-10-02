@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/metadata";
 import CasePage from "@/components/CasePage";
 import Body, { shell } from "@/components/generated/pot-ru";
 
-export const metadata = { title: "ivan.grigorenko.dsgn — POT" };
+export const metadata = pageMetadata({ path: "/pot-ru", title: "POT" });
 
 export default function Page() {
   return (
