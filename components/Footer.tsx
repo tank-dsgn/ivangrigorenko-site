@@ -7,7 +7,8 @@ export default function Footer({ lang }: { lang: Lang }) {
   return (
     <footer
       id="contacts"
-      className="flex flex-col items-center px-5 pt-8 pb-8 text-center md:pt-10 md:pb-10 xl:pt-18 xl:pb-18"
+      // якорь не должен уезжать под фиксированную шапку
+      className="scroll-mt-14 xl:scroll-mt-20 flex flex-col items-center px-5 pt-8 pb-8 text-center md:pt-10 md:pb-10 xl:pt-18 xl:pb-18"
     >
       <h2 className="text-ink text-[20px] leading-7 font-semibold md:text-[24px] md:leading-8 xl:text-[30px] xl:leading-9">
         {s.footer.title}

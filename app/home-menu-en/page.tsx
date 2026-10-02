@@ -1,8 +1,15 @@
 import { pageMetadata } from "@/lib/metadata";
-import Body from "@/components/generated/home-menu-en";
+import MenuPage from "@/components/MenuPage";
 
 export const metadata = pageMetadata({ path: "/home-menu-en" });
 
 export default function Page() {
-  return <Body />;
+  return (
+    <MenuPage
+      active="work"
+      lang="en"
+      back="/"
+      altMenu="/home-menu-ru"
+    />
+  );
 }
