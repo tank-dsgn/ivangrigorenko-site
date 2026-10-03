@@ -75,8 +75,12 @@ export function createEmitter({
   textOverrides = {},
   cardTargets = {},
   lang = "ru",
+  related = null,
   indentUnit = "  ",
 }) {
+  // Счётчик карточек «Смотрите также»: сбрасывается на каждый брейкпоинт
+  let cardIndex = 0;
+  const resetCards = () => { cardIndex = 0; };
   // В макете одна и та же подпись встречается в разном регистре
   // («Дизайн-Система» и «дизайн-система»), поэтому ищем без учёта регистра
   const lower = (obj) =>
@@ -88,7 +92,7 @@ export function createEmitter({
   const usedAssets = new Set();
   const usedLinks = new Set();
 
-  function emit(node, parent, depth, insideLink = false) {
+  function emit(node, parent, depth, insideLink = false, card = null) {
     const pad = indentUnit.repeat(depth);
 
     // Невидимые узлы в вёрстку не попадают
@@ -137,7 +141,7 @@ export function createEmitter({
       const tag = tagFor(node);
       const s = styleLiteral(style);
       const raw = (node.characters || "").replace(/\u00a0/g, " ");
-      const text = textMap[raw.trim().toLowerCase()] ?? raw;
+      const text = card?.label ?? textMap[raw.trim().toLowerCase()] ?? raw;
       const lines = text.split("\n");
       const content =
         lines.length > 1
@@ -150,7 +154,21 @@ export function createEmitter({
 
     // Кадрированная заливка: картинку кладём отдельным тегом внутрь обрезающего блока,
     // потому что фоном нужный кусок не выразить
-    const fill = imageFill(node, assets, assetMap);
+    let fill = imageFill(node, assets, assetMap);
+    if (card && fill) {
+      // картинка берётся из таблицы проектов и центрируется в окне карточки
+      const boxW = node.size?.x ?? card.w;
+      const boxH = node.size?.y ?? card.h;
+      fill = {
+        src: resolve(card.image),
+        crop: {
+          width: card.w,
+          height: card.h,
+          left: boxW / 2 - card.w / 2,
+          top: boxH / 2 - card.h / 2,
+        },
+      };
+    }
     let cropped = "";
     if (fill?.crop) {
       usedAssets.add(fill.src);
@@ -171,13 +189,17 @@ export function createEmitter({
 
     // вложенные ссылки недопустимы — если мы уже внутри <a>, детей не оборачиваем
     let link = insideLink ? null : linkOf(node, linkByName);
+    if (node.name === "Card-projects-small" && related) {
+      // состав блока зависит от страницы, а в выгрузке лежит набор мастер-компонента
+      card = related[cardIndex++] || null;
+    }
     if (!link && !insideLink && node.name === "Card-projects-small") {
-      const slug = cardMap[(firstText(node) || "").toLowerCase()];
+      const slug = card?.slug ?? cardMap[(firstText(node) || "").toLowerCase()];
       if (slug) link = { href: `/${slug}-${lang}`, internal: true, newTab: false };
     }
     const kids =
       cropped +
-      visibleKids.map((c) => emit(c, node, depth + 1, insideLink || Boolean(link))).join("");
+      visibleKids.map((c) => emit(c, node, depth + 1, insideLink || Boolean(link), card)).join("");
     const s = styleLiteral(style);
 
     if (link) {
@@ -195,5 +217,5 @@ export function createEmitter({
     return `${pad}<${tag}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
   }
 
-  return { emit, usedAssets, usedLinks };
+  return { emit, usedAssets, usedLinks, resetCards };
 }

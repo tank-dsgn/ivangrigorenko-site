@@ -95,7 +95,7 @@ const SHELL_TAGS = new Set(["HEADER", "FOOTER"]);
  * Разрезает страницу на секции: по файлу на секцию макета.
  * Внутри каждого файла — три брейкпоинта, как и раньше.
  */
-async function emitSections({ slug, frames, nodeById, emit, shell, outDir }) {
+async function emitSections({ slug, frames, nodeById, emit, resetCards, shell, outDir }) {
   const dir = outDir || `components/generated/${slug}`;
   await mkdir(resolve(dir), { recursive: true });
 
@@ -123,13 +123,15 @@ async function emitSections({ slug, frames, nodeById, emit, shell, outDir }) {
     const comp = n > 1 ? `${base}${n}` : base;
 
     const body = sec.parts
-      .map(
-        ({ bp, node, tree }) =>
+      .map(({ bp, node, tree }) => {
+        resetCards();
+        return (
           `      {/* ${bp.label} */}\n` +
           `      <div className=${JSON.stringify(("figma-page " + bp.className).trim())}>\n` +
           emit(node, tree, 3) +
           `      </div>\n`
-      )
+        );
+      })
       .join("");
 
     const hasLink = body.includes("<Link ");
@@ -176,7 +178,17 @@ async function main() {
     .filter((n) => n?.isBreakpointFrame);
 
   const lang = slug.endsWith("-en") || slug === "index" ? "en" : "ru";
-  const { emit, usedAssets, usedLinks } = createEmitter({
+  const project = slug.replace(/-(ru|en)$/, "");
+
+  // «Смотрите также»: все проекты, кроме текущего, в порядке из таблицы
+  const related = (overrides.relatedOrder || [])
+    .filter((p) => p !== project)
+    .map((p) => {
+      const r = overrides.related?.[p];
+      return r ? { slug: p, label: r[lang], image: r.image, w: r.w, h: r.h } : null;
+    })
+    .filter(Boolean);
+  const { emit, usedAssets, usedLinks, resetCards } = createEmitter({
     assets,
     assetMap,
     linkByName: linkMapByName(nodeById),
@@ -184,6 +196,7 @@ async function main() {
     textOverrides: { ...(overrides.text[lang] || {}), ...(overrides.pages?.[slug] || {}) },
     cardTargets: overrides.cards,
     lang,
+    related: related.length ? related : null,
   });
 
   const keepShell = rest.includes("--keep-shell");
@@ -211,7 +224,7 @@ async function main() {
   // --sections: каждая секция макета уезжает в свой файл со своим именем.
   // Так страница читается как список секций, а не как одна простыня.
   if (rest.includes("--sections")) {
-    await emitSections({ slug, frames, nodeById, emit, shell, outDir: arg("--out") });
+    await emitSections({ slug, frames, nodeById, emit, resetCards, shell, outDir: arg("--out") });
     console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
     return;
   }

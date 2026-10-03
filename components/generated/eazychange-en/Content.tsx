@@ -433,31 +433,41 @@ export default function Content() {
             <div style={{ alignSelf: "stretch", height: "1611.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
               <Link href="/autotor-en" style={{ width: "300px", height: "302px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -190.26px)", top: "calc(50% + -139px)", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
+                  <div style={{ position: "absolute", left: "calc(50% + -190.26px)", top: "calc(50% + -139px)", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)", overflow: "hidden" }}>
+                    <img src="/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3.57px", top: "-2.5px", width: "388px", height: "283px", maxWidth: "none" }} />
+                  </div>
                 </div>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`E-commerce platform`}</p>
               </Link>
               <Link href="/pot-en" style={{ width: "300px", height: "304px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -152.69px)", top: "-1.79px", bottom: "-2.82px", height: "284.62px", width: "305.74px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
+                  <div style={{ position: "absolute", left: "calc(50% + -152.69px)", top: "-1.79px", bottom: "-2.82px", height: "284.62px", width: "305.74px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)", overflow: "hidden" }}>
+                    <img src="/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0.87px", top: "0.81px", width: "304px", height: "283px", maxWidth: "none" }} />
+                  </div>
                 </div>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Mobile application`}</p>
               </Link>
               <Link href="/ostral-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "-88.61px", right: "-90.11px", width: "478.71px", top: "calc(50% + -139.5px)", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
+                  <div style={{ position: "absolute", left: "-88.61px", right: "-90.11px", width: "478.71px", top: "calc(50% + -139.5px)", height: "279px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)", overflow: "hidden" }}>
+                    <img src="/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3.64px", top: "-2px", width: "486px", height: "283px", maxWidth: "none" }} />
+                  </div>
                 </div>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Inspection platform`}</p>
               </Link>
               <Link href="/vv-en" style={{ width: "300px", height: "303px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -241.68px)", top: "calc(50% + -155.29px)", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
+                  <div style={{ position: "absolute", left: "calc(50% + -241.68px)", top: "calc(50% + -155.29px)", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)", overflow: "hidden" }}>
+                    <img src="/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3.71px", top: "-2.34px", width: "491px", height: "316px", maxWidth: "none" }} />
+                  </div>
                 </div>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Design system`}</p>
               </Link>
               <Link href="/mikulich-en" style={{ width: "300px", height: "303.28px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -191.45px)", top: "calc(50% + -139.64px)", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
+                  <div style={{ position: "absolute", left: "calc(50% + -191.45px)", top: "calc(50% + -139.64px)", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)", overflow: "hidden" }}>
+                    <img src="/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-2.7px", top: "-1.86px", width: "388px", height: "283px", maxWidth: "none" }} />
+                  </div>
                 </div>
                 <p style={{ alignSelf: "stretch", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textAlign: "center", textTransform: "uppercase", color: "#475569" }}>{`Brand identity & logo`}</p>
               </Link>

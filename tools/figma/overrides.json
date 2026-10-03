@@ -57,5 +57,58 @@
     "mikulich-en": {
       "View case study": "View in Context"
     }
+  },
+  "_related": "Блок «Смотрите также». В выгрузке он приходит из мастер-компонента, где исключён Eazychange, — поэтому на всех страницах, кроме неё, показывались не те проекты (на странице POT стоял сам POT). Правильный состав: все проекты, кроме текущего, в этом порядке.",
+  "relatedOrder": [
+    "eazychange",
+    "autotor",
+    "pot",
+    "ostral",
+    "vv",
+    "mikulich"
+  ],
+  "related": {
+    "eazychange": {
+      "ru": "Крипто-обменник",
+      "en": "Crypto exchange",
+      "image": "0abd75a1f3ca4a393b921b8d9e99e51d7b4d8023.png",
+      "w": 566,
+      "h": 283
+    },
+    "autotor": {
+      "ru": "E-commerce платформа",
+      "en": "E-commerce platform",
+      "image": "e98473730bd7ba636f2c90415354b864ed9e5f4d.png",
+      "w": 388,
+      "h": 283
+    },
+    "pot": {
+      "ru": "Приложение для растений",
+      "en": "Mobile application",
+      "image": "1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.png",
+      "w": 304,
+      "h": 283
+    },
+    "ostral": {
+      "ru": "Инспекционная платформа",
+      "en": "Inspection platform",
+      "image": "4baa3b25cdf0b7626f677ae4c993a74c012364f6.png",
+      "w": 486,
+      "h": 283
+    },
+    "vv": {
+      "ru": "Дизайн-Система",
+      "en": "Design system",
+      "image": "996483337ecf68f87010b9184eb74478e98ccbf8.png",
+      "w": 491,
+      "h": 316
+    },
+    "mikulich": {
+      "ru": "логотип и Айдентика",
+      "en": "Brand identity & logo",
+      "image": "0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.png",
+      "w": 388,
+      "h": 283
+    }
   }
 }
