@@ -3,7 +3,7 @@
 // используется inline-style: так видно, откуда взялось каждое число,
 // и ничего не теряется на округлениях Tailwind.
 
-import { absolutePosition, frameStyle, imageFill, nodeAsset, px, sizing, textStyle } from "./nodes.mjs";
+import { absolutePosition, assetBox, assetBoxCss, fontKey, frameStyle, hugs, imageFill, nodeAsset, px, rotation, sizing, spanStyle, textStyle } from "./nodes.mjs";
 
 /**
  * Клик по узлу в Figma задан интеракцией. Достаём из неё адрес:
@@ -21,8 +21,7 @@ function firstText(node, depth = 0) {
 }
 
 function linkOf(node, linkByName) {
-  const byName = linkByName[node.name];
-  if (byName) return { ...byName, internal: byName.href.startsWith("/") };
+  // своя интеракция узла точнее: в ней уже учтены переопределения инстанса
   for (const i of node.interactions || []) {
     if (i.event?.interactionType !== "ON_CLICK") continue;
     for (const a of i.actions || []) {
@@ -31,6 +30,8 @@ function linkOf(node, linkByName) {
       return { href, newTab: Boolean(a.openUrlInNewTab), internal: href.startsWith("/") };
     }
   }
+  const byName = linkByName[node.name];
+  if (byName) return { ...byName, internal: byName.href.startsWith("/") };
   return null;
 }
 
@@ -72,110 +73,342 @@ export function createEmitter({
   assets,
   assetMap = {},
   linkByName = {},
-  textOverrides = {},
   cardTargets = {},
   lang = "ru",
-  related = null,
+  nodeById = {},
+  fonts = {},
+  resolveVariant = () => null,
   indentUnit = "  ",
 }) {
-  // Счётчик карточек «Смотрите также»: сбрасывается на каждый брейкпоинт
-  let cardIndex = 0;
-  const resetCards = () => { cardIndex = 0; };
+  let usedVariants = false;
+
+  const nodeId = (ref) =>
+    ref && typeof ref === "object" ? `${ref.sessionID}:${ref.localID}` : ref;
+
+  /** Цель клика-переключения состояния у самого узла */
+  function swapTarget(node) {
+    for (const i of node.interactions || []) {
+      if (i.event?.interactionType !== "ON_CLICK") continue;
+      for (const a of i.actions || []) {
+        if (a.navigationType === "SWAP_STATE" && a.transitionNodeID) return nodeId(a.transitionNodeID);
+      }
+    }
+    return null;
+  }
+
+  /** Есть ли в поддереве клик, переключающий на один из вариантов набора */
+  function hasSwapInto(node, targets, depth = 0) {
+    if (!node || depth > 40) return false;
+    const t = swapTarget(node);
+    if (t && targets.has(t)) return true;
+    return (node.children || []).some((c) => hasSwapInto(c, targets, depth + 1));
+  }
+
+  /**
+   * Инстанс, у мастера которого есть варианты с переключением по клику, —
+   * это интерактивная секция: карусель или тумблер темы.
+   */
+  function variantGroup(node) {
+    if (node.type !== "INSTANCE" || !node.mainComponentId) return null;
+    const master = nodeById[node.mainComponentId];
+    const set = master?.componentSetId && nodeById[master.componentSetId];
+    const ids = set?.children || [];
+    if (ids.length < 2) return null;
+    const targets = new Set(ids);
+    // каждый вариант разворачиваем как этот же инстанс: так на него ложатся
+    // те же переопределения (перевод текста, размеры под брейкпоинт)
+    const variants = ids
+      .map((id) => {
+        const tree = id === node.mainComponentId ? node : resolveVariant(node, id);
+        return tree ? { id, tree } : null;
+      })
+      .filter(Boolean);
+    if (!variants.some((v) => hasSwapInto(v.tree, targets))) return null;
+    return { variants, initial: node.mainComponentId, targets };
+  }
   // В макете одна и та же подпись встречается в разном регистре
   // («Дизайн-Система» и «дизайн-система»), поэтому ищем без учёта регистра
-  const lower = (obj) =>
-    Object.fromEntries(Object.entries(obj).map(([k, v]) => [k.toLowerCase(), v]));
-  const textMap = lower(textOverrides);
-  const cardMap = lower(cardTargets);
+  const cardMap = Object.fromEntries(
+    Object.entries(cardTargets).map(([k, v]) => [k.toLowerCase(), v])
+  );
   /** Тяжёлые PNG переведены в WebP — подменяем имя файла по карте */
   const resolve = (url) => `/a/${assetMap[url] ?? url}`;
   const usedAssets = new Set();
   const usedLinks = new Set();
+  const usedFonts = new Set();
 
-  function emit(node, parent, depth, insideLink = false, card = null) {
+  /** Текст в JSX: перевод строки — отдельным выражением, иначе JSX его съест */
+  const literal = (text) =>
+    text
+      .split("\n")
+      .map((l, i) => (i === 0 ? "" : `{"\\n"}`) + (l ? `{\`${esc(l)}\`}` : ""))
+      .join("");
+
+  /**
+   * Содержимое текстового узла.
+   *
+   * В Figma `\n` — новый абзац, U+2028 — перенос строки внутри абзаца. Абзац
+   * может быть пунктом списка, а часть символов — иметь свой стиль.
+   * Возвращает JSX и признак «внутри есть список» — тогда узел должен быть <div>.
+   */
+  function textBody(node, pad) {
+    const chars = (node.characters || "").replace(/\u00a0/g, " ");
+    const ids = node.characterStyleOverrides || [];
+    const table = node.styleOverrideTable || {};
+    usedFonts.add(fontKey(node.style));
+
+    const paragraphs = [[]];
+    for (let i = 0; i < chars.length; i++) {
+      const ch = chars[i];
+      const runs = paragraphs[paragraphs.length - 1];
+      if (ch === "\n") { paragraphs.push([]); continue; }
+      const id = table[ids[i]] ? ids[i] : 0;
+      const last = runs[runs.length - 1];
+      const c = ch === "\u2028" ? "\n" : ch;
+      if (last && last.id === id) last.text += c;
+      else runs.push({ id, text: c });
+    }
+
+    const run = ({ id, text }) => {
+      if (!id) return literal(text);
+      usedFonts.add(fontKey({ ...(node.style || {}), ...table[id] }));
+      const st = styleLiteral(spanStyle(node, table[id], fonts));
+      return st ? `<span style=${st}>${literal(text)}</span>` : literal(text);
+    };
+    const line = (runs) => runs.map(run).join("");
+
+    const types = node.lineTypes || [];
+    const isList = (i) => types[i] === "UNORDERED" || types[i] === "ORDERED";
+    if (!paragraphs.some((_, i) => isList(i))) {
+      const body = paragraphs.map(line).join(`{"\\n"}`);
+      return { body, list: false, multiline: body.includes(`{"\\n"}`) };
+    }
+
+    // Список: маркер стоит в отступе пункта, как в оригинале
+    const size = node.style?.fontSize || 16;
+    const inner = pad + indentUnit;
+    let out = "";
+    let counter = 0;
+    for (let i = 0; i < paragraphs.length; i++) {
+      if (!isList(i)) {
+        counter = 0;
+        const body = line(paragraphs[i]);
+        out += body ? `${inner}<p style={{ whiteSpace: "pre-line" }}>${body}</p>\n` : `${inner}<br />\n`;
+        continue;
+      }
+      if (!isList(i - 1)) out += `${inner}<ul style={{ listStyle: "none", margin: "0", padding: "0" }}>\n`;
+      counter = types[i] === "ORDERED" ? counter + 1 : 0;
+      const indent = px(size * 1.5 * (node.lineIndentations?.[i] || 1));
+      const marker = types[i] === "ORDERED" ? `${counter}.` : "•";
+      out +=
+        `${inner}${indentUnit}<li style={{ marginInlineStart: "${indent}", whiteSpace: "pre-line" }}>` +
+        `<span aria-hidden="true" style={{ display: "inline-block", width: "${indent}", marginLeft: "-${indent}" }}>${marker}</span>` +
+        `${line(paragraphs[i])}</li>\n`;
+      if (!isList(i + 1)) out += `${inner}</ul>\n`;
+    }
+    return { body: `\n${out}${pad}`, list: true, multiline: false };
+  }
+
+  /** Положение и размер узла в родителе */
+  function place(node, parent) {
+    const isAbs = node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode;
+    const auto = { ...hugs(node) };
+
+    // Пропорции зафиксированы: если узел тянется по одной оси, вторая считается
+    // из соотношения сторон. Так фоновая картинка растёт вместе с шириной окна.
+    let aspect = null;
+    const ar = node.targetAspectRatio;
+    if (ar?.x && ar?.y && !rotation(node)) {
+      const c = node.constraints || {};
+      const row = parent?.layoutMode === "HORIZONTAL";
+      const col = parent?.layoutMode === "VERTICAL";
+      const fluidW = isAbs
+        ? c.horizontal === "LEFT_RIGHT" || c.horizontal === "SCALE"
+        : (col && node.layoutAlign === "STRETCH") || (row && node.layoutGrow === 1);
+      const fluidH = isAbs
+        ? c.vertical === "TOP_BOTTOM" || c.vertical === "SCALE"
+        : (row && node.layoutAlign === "STRETCH") || (col && node.layoutGrow === 1);
+      if (fluidW !== fluidH) {
+        aspect = `${round(ar.x)} / ${round(ar.y)}`;
+        if (fluidW) auto.h = true;
+        else auto.w = true;
+      }
+    }
+
+    const abs = isAbs ? absolutePosition(node, parent, auto) : {};
+    const size = sizing(node, parent, auto);
+    // растянутый между краями узел размера не имеет — его задают отступы
+    if (abs.left !== undefined && abs.right !== undefined) delete size.width;
+    if (abs.top !== undefined && abs.bottom !== undefined) delete size.height;
+    return aspect ? { ...abs, ...size, aspectRatio: aspect } : { ...abs, ...size };
+  }
+
+  function emit(node, parent, depth, insideLink = false, swapTargets = null) {
     const pad = indentUnit.repeat(depth);
 
     // Невидимые узлы в вёрстку не попадают
     if (node.visible === false) return "";
 
-    const style = {
-      ...(node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode ? absolutePosition(node, parent) : {}),
-      ...sizing(node, parent),
-      ...frameStyle(node, assets, assetMap),
-    };
+    // Повёрнутая группа — не блок, а общий поворот для детей. Как и оригинал,
+    // раскрываем её: каждый ребёнок встаёт в родителя группы со сложенной матрицей.
+    if (node.type === "GROUP" && rotation(node) && node.relativeTransform) {
+      const [[g00, g01, g02], [g10, g11, g12]] = node.relativeTransform;
+      return (node.children || [])
+        .map((c) => {
+          if (!c.relativeTransform) return "";
+          const [[c00, c01, c02], [c10, c11, c12]] = c.relativeTransform;
+          const flat = {
+            ...c,
+            layoutPositioning: "ABSOLUTE",
+            opacity: (c.opacity ?? 1) * (node.opacity ?? 1),
+            groupOpacity: (node.groupOpacity ?? 1) * (node.opacity ?? 1),
+            relativeTransform: [
+              [g00 * c00 + g01 * c10, g00 * c01 + g01 * c11, g00 * c02 + g01 * c12 + g02],
+              [g10 * c00 + g11 * c10, g10 * c01 + g11 * c11, g10 * c02 + g11 * c12 + g12],
+            ],
+          };
+          return emit(flat, parent, depth, insideLink, swapTargets);
+        })
+        .join("");
+    }
+
+    const style = { ...place(node, parent), ...frameStyle(node, assets, assetMap) };
+    if (node.pull) style[node.pull.axis === "VERTICAL" ? "marginTop" : "marginLeft"] = px(node.pull.value);
+
+    // Поворот: вокруг центра. У стрелки «назад» это та же стрелка «вперёд», повёрнутая на 180°.
+    const angle = rotation(node);
+    if (angle) style.transform = [style.transform, `rotate(${angle}deg)`].filter(Boolean).join(" ");
+
+    // Интерактивная секция: выводим все её состояния слоями
+    const group = swapTargets ? null : variantGroup(node);
+    if (group) {
+      usedVariants = true;
+      const box = place(node, parent);
+      if (!box.position) box.position = "relative";
+      const panels = group.variants
+        .map(({ id, tree: v }) => {
+          // панель занимает коробку секции; положение (в потоке или поверх) ставит VariantGroup
+          const fixed = sizing(v, parent);
+          const vs = { ...frameStyle(v, assets, assetMap), width: "100%", height: fixed.height ? "100%" : undefined };
+          const kids = (v.children || [])
+            .filter((c) => c.visible !== false)
+            .map((c) => emit(c, v, depth + 2, insideLink, group.targets))
+            .join("");
+          return (
+            `${pad}${indentUnit}<div data-variant=${JSON.stringify(id)} style=${styleLiteral(vs)}>\n` +
+            kids +
+            `${pad}${indentUnit}</div>\n`
+          );
+        })
+        .join("");
+      return (
+        `${pad}<VariantGroup initial=${JSON.stringify(group.initial)} style=${styleLiteral(box)}>\n` +
+        panels +
+        `${pad}</VariantGroup>\n`
+      );
+    }
+
+    // Узел, клик по которому переключает состояние секции
+    const swapTo = swapTargets ? swapTarget(node) : null;
+    const swapAttr = swapTo && swapTargets.has(swapTo) ? ` data-swap-to=${JSON.stringify(swapTo)}` : "";
+    if (swapAttr) style.cursor = "pointer";
 
     // Картинка или сгенерированный из Figma SVG — отдельный тег <img>
     const asset = nodeAsset(node, assets);
     if (asset) {
       asset.src = resolve(asset.src.replace("/a/", ""));
       usedAssets.add(asset.src);
+      // собственная прозрачность узла уже запечена в картинку; остаётся прозрачность группы
+      const assetOpacity = node.groupOpacity != null && node.groupOpacity !== 1 ? node.groupOpacity : null;
 
-      // У сгенерированных SVG свой размер: обводка и тень выходят за коробку узла.
-      // Рисуем ассет в его собственном размере и центрируем в коробке —
-      // иначе стрелки сплющиваются, а иконки тянутся не в свою пропорцию.
-      const box = node.size || {};
-      const own = asset.width && asset.height;
-      if (own && (Math.abs(asset.width - (box.x ?? 0)) > 0.5 || Math.abs(asset.height - (box.y ?? 0)) > 0.5)) {
-        const wrap = styleLiteral({ ...style, position: style.position ?? "relative" });
-        const inner = styleLiteral({
-          position: "absolute",
-          left: px((box.x ?? 0) / 2 - asset.width / 2),
-          top: px((box.y ?? 0) / 2 - asset.height / 2),
-          width: px(asset.width),
-          height: px(asset.height),
-          maxWidth: "none",
-        });
+      // Повёрнутая картинка, стоящая по координатам. Оригинал растягивает её вместе
+      // с родителем уже после поворота; то же самое даёт SVG с viewBox по габаритам
+      // повёрнутого прямоугольника и картинкой с матрицей внутри.
+      const isAbs = node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode;
+      if (angle && isAbs && node.size?.x >= 1 && node.size?.y >= 1) {
+        const [[a, b, tx], [c, d, ty]] = node.relativeTransform;
+        const W = node.size.x;
+        const H = node.size.y;
+        const xs = [0, a * W, b * H, a * W + b * H];
+        const ys = [0, c * W, d * H, c * W + d * H];
+        const minX = Math.min(...xs);
+        const minY = Math.min(...ys);
+        const bw = Math.max(...xs) - minX;
+        const bh = Math.max(...ys) - minY;
+        const frame = place(
+          { ...node, type: "SVG", layoutMode: undefined, size: { x: bw, y: bh }, relativeTransform: [[1, 0, tx + minX], [0, 1, ty + minY]] },
+          parent
+        );
+        if (assetOpacity != null) frame.opacity = assetOpacity;
+        const img = assetBox(node, asset);
+        const r = (v) => Math.round(v * 1e6) / 1e6;
         return (
-          `${pad}<span${wrap ? ` style=${wrap}` : ""}>\n` +
+          // сам <svg> отступами не растягивается, поэтому габариты держит обёртка
+          `${pad}<span${swapAttr} style=${styleLiteral(frame)}>\n` +
+          `${pad}${indentUnit}<svg viewBox="0 0 ${round(bw)} ${round(bh)}" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>\n` +
+          `${pad}${indentUnit}${indentUnit}<image href=${JSON.stringify(asset.src)} x="${round(img.left)}" y="${round(img.top)}" width="${round(img.width)}" height="${round(img.height)}" preserveAspectRatio="none" transform="matrix(${r(a)} ${r(c)} ${r(b)} ${r(d)} ${round(-minX)} ${round(-minY)})" />\n` +
+          `${pad}${indentUnit}</svg>\n` +
+          `${pad}</span>\n`
+        );
+      }
+
+      // В картинку уже запечены заливка, обводка, скругления и тень узла,
+      // поэтому от узла остаются только положение, размер и поворот.
+      const own = place(node, parent);
+      for (const k of ["marginTop", "marginLeft"]) if (style[k]) own[k] = style[k];
+      if (style.transform) own.transform = style.transform;
+      if (assetOpacity != null) own.opacity = assetOpacity;
+      if (style.cursor) own.cursor = style.cursor;
+
+      // Картинка шире коробки узла на тень и обводку — кладём её со смещением
+      const box = assetBox(node, asset);
+      const bw = node.size?.x ?? 0;
+      const bh = node.size?.y ?? 0;
+      const flush =
+        Math.abs(box.left) < 0.05 && Math.abs(box.top) < 0.05 &&
+        Math.abs(box.width - bw) < 0.05 && Math.abs(box.height - bh) < 0.05;
+      // картинке без явного размера (растянута между краями) нужна обёртка:
+      // сам <img> отступами не растягивается
+      if (!flush || own.width === undefined || own.height === undefined) {
+        const wrap = styleLiteral({ ...own, position: own.position ?? "relative" });
+        const inner = styleLiteral({ position: "absolute", ...assetBoxCss(node, asset), maxWidth: "none" });
+        return (
+          `${pad}<span${swapAttr}${wrap ? ` style=${wrap}` : ""}>\n` +
           `${pad}${indentUnit}<img src=${JSON.stringify(asset.src)} alt="" aria-hidden="true" loading="lazy" decoding="async" style=${inner} />\n` +
           `${pad}</span>\n`
         );
       }
 
-      const s = styleLiteral(style);
-      return `${pad}<img\n${pad}${indentUnit}src=${JSON.stringify(asset.src)}\n${pad}${indentUnit}alt=""\n${pad}${indentUnit}aria-hidden="true"\n${pad}${indentUnit}loading="lazy"\n${pad}${indentUnit}decoding="async"\n${s ? `${pad}${indentUnit}style=${s}\n` : ""}${pad}/>\n`;
+      const s = styleLiteral(own);
+      return `${pad}<img${swapAttr}\n${pad}${indentUnit}src=${JSON.stringify(asset.src)}\n${pad}${indentUnit}alt=""\n${pad}${indentUnit}aria-hidden="true"\n${pad}${indentUnit}loading="lazy"\n${pad}${indentUnit}decoding="async"\n${s ? `${pad}${indentUnit}style=${s}\n` : ""}${pad}/>\n`;
     }
 
     if (node.type === "TEXT") {
-      Object.assign(style, textStyle(node));
-      const tag = tagFor(node);
+      Object.assign(style, textStyle(node, fonts));
+      const { body, list, multiline } = textBody(node, pad);
+      // текст с авто-шириной в Figma не переносится
+      if (style.textOverflow) style.whiteSpace = "nowrap";
+      else if (node.textAutoResize === "WIDTH_AND_HEIGHT") style.whiteSpace = multiline ? "pre" : "nowrap";
+      else if (multiline) style.whiteSpace = "pre-line";
+      const tag = list ? "div" : tagFor(node);
       const s = styleLiteral(style);
-      const raw = (node.characters || "").replace(/\u00a0/g, " ");
-      const text = card?.label ?? textMap[raw.trim().toLowerCase()] ?? raw;
-      const lines = text.split("\n");
-      const content =
-        lines.length > 1
-          ? lines.map((l, i) => (i === 0 ? `{\`${esc(l)}\`}` : `{"\\n"}{\`${esc(l)}\`}`)).join("")
-          : `{\`${esc(text)}\`}`;
-      const whitespace = lines.length > 1 ? " whiteSpace: \"pre-line\"," : "";
-      const sFixed = whitespace && s ? s.replace("{{ ", `{{${whitespace} `) : s;
-      return `${pad}<${tag}${sFixed ? ` style=${sFixed}` : ""}>${content}</${tag}>\n`;
+      return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>${body}</${tag}>\n`;
     }
 
     // Кадрированная заливка: картинку кладём отдельным тегом внутрь обрезающего блока,
     // потому что фоном нужный кусок не выразить
-    let fill = imageFill(node, assets, assetMap);
-    if (card && fill) {
-      // картинка берётся из таблицы проектов и центрируется в окне карточки
-      const boxW = node.size?.x ?? card.w;
-      const boxH = node.size?.y ?? card.h;
-      fill = {
-        src: resolve(card.image),
-        crop: {
-          width: card.w,
-          height: card.h,
-          left: boxW / 2 - card.w / 2,
-          top: boxH / 2 - card.h / 2,
-        },
-      };
-    }
+    const fill = imageFill(node, assets, assetMap);
     let cropped = "";
     if (fill?.crop) {
       usedAssets.add(fill.src);
       style.position = style.position || "relative";
       style.overflow = "hidden";
       const c = fill.crop;
-      const inner = `{{ position: "absolute", left: "${round(c.left)}px", top: "${round(c.top)}px", width: "${round(c.width)}px", height: "${round(c.height)}px", maxWidth: "none" }}`;
+      // в процентах от блока: кадр сохраняется, когда блок растягивается
+      const bw = node.size?.x || 1;
+      const bh = node.size?.y || 1;
+      const pc = (v, base) => `${Math.round((v / base) * 1e4) / 100}%`;
+      const inner = `{{ position: "absolute", left: "${pc(c.left, bw)}", top: "${pc(c.top, bh)}", width: "${pc(c.width, bw)}", height: "${pc(c.height, bh)}", maxWidth: "none" }}`;
       cropped =
         `${indentUnit.repeat(depth + 1)}<img src=${JSON.stringify(fill.src)} alt="" aria-hidden="true" loading="lazy" decoding="async" style=${inner} />\n`;
     }
@@ -189,17 +422,26 @@ export function createEmitter({
 
     // вложенные ссылки недопустимы — если мы уже внутри <a>, детей не оборачиваем
     let link = insideLink ? null : linkOf(node, linkByName);
-    if (node.name === "Card-projects-small" && related) {
-      // состав блока зависит от страницы, а в выгрузке лежит набор мастер-компонента
-      card = related[cardIndex++] || null;
-    }
-    if (!link && !insideLink && node.name === "Card-projects-small") {
-      const slug = card?.slug ?? cardMap[(firstText(node) || "").toLowerCase()];
+    if (!insideLink && node.name === "Card-projects-small") {
+      // Карточка «Смотрите также» ведёт на проект из своей подписи. В оригинале
+      // на части страниц подпись заменена, а ссылка осталась от мастер-компонента
+      // и ведёт не туда — поэтому адрес берём по подписи.
+      const slug = cardMap[(firstText(node) || "").toLowerCase()];
       if (slug) link = { href: `/${slug}-${lang}`, internal: true, newTab: false };
     }
+    // Отрицательный зазор (элементы внахлёст) в CSS gap не выразить — сдвигаем
+    // каждого следующего ребёнка отрицательным отступом.
+    const overlap = node.layoutMode && node.itemSpacing < 0 && node.primaryAxisAlignItems !== "SPACE_BETWEEN" ? node.itemSpacing : 0;
+    let flowIndex = 0;
     const kids =
       cropped +
-      visibleKids.map((c) => emit(c, node, depth + 1, insideLink || Boolean(link), card)).join("");
+      visibleKids
+        .map((c) => {
+          const inFlow = c.layoutPositioning !== "ABSOLUTE";
+          const pull = overlap && inFlow && flowIndex++ > 0 ? overlap : 0;
+          return emit(pull ? { ...c, pull: { axis: node.layoutMode, value: pull } } : c, node, depth + 1, insideLink || Boolean(link), swapTargets);
+        })
+        .join("");
     const s = styleLiteral(style);
 
     if (link) {
@@ -213,9 +455,9 @@ export function createEmitter({
     }
 
     const tag = tagFor(node);
-    if (!kids) return `${pad}<${tag}${s ? ` style=${s}` : ""} />\n`;
-    return `${pad}<${tag}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
+    if (!kids) return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""} />\n`;
+    return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
   }
 
-  return { emit, usedAssets, usedLinks, resetCards };
+  return { emit, usedAssets, usedLinks, usedFonts, usesVariants: () => usedVariants };
 }

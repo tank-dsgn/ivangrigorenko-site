@@ -36,6 +36,11 @@ html {
   max-width: none;
 }
 
+/* длинное слово переносится, а не вылезает из блока — как в оригинале */
+.figma-page {
+  word-break: break-word;
+}
+
 body {
   background: #fff;
   -webkit-font-smoothing: antialiased;

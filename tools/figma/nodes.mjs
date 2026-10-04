@@ -93,7 +93,63 @@ export function nodeAsset(node, assets) {
   if (!node.hash) return null;
   const a = assets[node.hash];
   if (!a) return null;
-  return { src: `/a/${a.url}`, width: a.size?.x, height: a.size?.y, generated: a.type === "GENERATED_ASSET" };
+  return {
+    src: `/a/${a.url}`,
+    width: a.size?.x,
+    height: a.size?.y,
+    offsets: a.offsets,
+    generated: a.type === "GENERATED_ASSET",
+  };
+}
+
+/**
+ * Где картинка узла лежит относительно его коробки.
+ *
+ * Сгенерированная картинка шире узла: в неё попадают тень и обводка.
+ * На сколько она выступает с каждой стороны, записано в `offsets` —
+ * в процентах от размера узла. У вырожденных узлов (линия нулевой высоты)
+ * процент не от чего считать, там картинка центрируется.
+ */
+export function assetBox(node, asset) {
+  const bw = node.size?.x ?? 0;
+  const bh = node.size?.y ?? 0;
+  const o = asset.offsets;
+  const part = (side, base) => {
+    const v = o?.[side];
+    if (!v) return 0;
+    return v.unit === "PERCENT" ? (v.value * base) / 100 : v.value;
+  };
+  const axis = (box, own, a, b) => {
+    if (o) {
+      const start = part(a, box);
+      const length = box - start - part(b, box);
+      // у линии нулевой толщины выступ записан в пикселях
+      if (length >= 0.01) return { start, length };
+    }
+    const length = own ?? box;
+    return { start: box / 2 - length / 2, length };
+  };
+  const x = axis(bw, asset.width, "left", "right");
+  const y = axis(bh, asset.height, "top", "bottom");
+  return { left: x.start, top: y.start, width: x.length, height: y.length };
+}
+
+/**
+ * То же положение картинки, но в CSS: в процентах от коробки узла, чтобы
+ * картинка растягивалась вместе с узлом, когда тот привязан к обоим краям.
+ * У вырожденной коробки проценты считать не от чего — там пиксели.
+ */
+export function assetBoxCss(node, asset) {
+  const b = assetBox(node, asset);
+  const bw = node.size?.x ?? 0;
+  const bh = node.size?.y ?? 0;
+  const pct = (v, base) => `${Math.round((v / base) * 1e4) / 100}%`;
+  return {
+    left: bw >= 1 ? pct(b.left, bw) : px(b.left),
+    width: bw >= 1 ? pct(b.width, bw) : px(b.width),
+    top: bh >= 1 ? pct(b.top, bh) : px(b.top),
+    height: bh >= 1 ? pct(b.height, bh) : px(b.height),
+  };
 }
 
 /** Начертание из PostScript-имени шрифта */
@@ -117,16 +173,22 @@ export function frameStyle(node, assets, assetMap = {}) {
   if (node.layoutMode === "HORIZONTAL" || node.layoutMode === "VERTICAL") {
     s.display = "flex";
     s.flexDirection = node.layoutMode === "HORIZONTAL" ? "row" : "column";
+    // При выравнивании «по краям» Figma распределяет элементы сама, а itemSpacing
+    // остаётся в данных залежавшимся значением. Если отдать его как gap, он станет
+    // минимальным зазором и распирает ряд.
+    const spread = node.primaryAxisAlignItems === "SPACE_BETWEEN";
     if (node.layoutWrap === "WRAP") {
       // в Figma перенос строк задаётся отдельно, как и расстояние между рядами
       s.flexWrap = "wrap";
-      if (node.itemSpacing) s.columnGap = px(node.itemSpacing);
+      if (node.itemSpacing && !spread) s.columnGap = px(node.itemSpacing);
       if (node.counterAxisSpacing) s.rowGap = px(node.counterAxisSpacing);
-    } else if (node.itemSpacing) {
+    } else if (node.itemSpacing > 0 && !spread) {
       s.gap = px(node.itemSpacing);
     }
     if (node.primaryAxisAlignItems) s.justifyContent = ALIGN[node.primaryAxisAlignItems];
-    if (node.counterAxisAlignItems) s.alignItems = ALIGN[node.counterAxisAlignItems];
+    // В Figma по умолчанию дети прижаты к началу поперечной оси, в CSS — растянуты.
+    // Без явного значения колонка растянется на высоту ряда и уедет по центру.
+    s.alignItems = ALIGN[node.counterAxisAlignItems] ?? "flex-start";
   }
   const [pt, pr, pb, pl] = [node.paddingTop, node.paddingRight, node.paddingBottom, node.paddingLeft];
   if (pt || pr || pb || pl) s.padding = `${px(pt || 0)} ${px(pr || 0)} ${px(pb || 0)} ${px(pl || 0)}`;
@@ -154,50 +216,178 @@ export function frameStyle(node, assets, assetMap = {}) {
 
   if (node.clipsContent) s.overflow = "hidden";
 
+  // Обводка в Figma не занимает места: она рисуется поверх блока и не сдвигает
+  // содержимое. CSS-border сдвинул бы, поэтому рисуем её тенью без размытия.
+  const shadows = [];
   const stroke = (node.strokes || []).find((x) => x.visible !== false && x.type === "SOLID");
-  if (stroke && node.strokeWeight) s.border = `${px(node.strokeWeight)} solid ${cssColor(stroke)}`;
-
-  const shadows = (node.effects || []).filter((e) => e.visible !== false && (e.type === "DROP_SHADOW" || e.type === "INNER_SHADOW"));
-  if (shadows.length) {
-    s.boxShadow = shadows
-      .map((e) => `${e.type === "INNER_SHADOW" ? "inset " : ""}${px(e.offset?.x || 0)} ${px(e.offset?.y || 0)} ${px(e.radius || 0)} ${px(e.spread || 0)} ${cssColor(e)}`)
-      .join(", ");
+  const weight = node.strokeWeight ?? 1; // по умолчанию 1, в выгрузке значение по умолчанию опущено
+  const sides = node.individualStrokeWeights || (weight ? { top: weight, right: weight, bottom: weight, left: weight } : null);
+  if (stroke && sides) {
+    const c = cssColor(stroke);
+    const { top = 0, right = 0, bottom = 0, left = 0 } = sides;
+    const even = top === right && right === bottom && bottom === left;
+    if (node.strokeDashes?.length && even) {
+      s.outline = `${px(top)} dashed ${c}`;
+      s.outlineOffset = node.strokeAlign === "OUTSIDE" ? "0" : px(-top);
+    } else if (node.strokeAlign === "OUTSIDE" && even) {
+      shadows.push(`0 0 0 ${px(top)} ${c}`);
+    } else if (node.strokeAlign === "CENTER" && even) {
+      shadows.push(`0 0 0 ${px(top / 2)} ${c}`, `inset 0 0 0 ${px(top / 2)} ${c}`);
+    } else if (even) {
+      shadows.push(`inset 0 0 0 ${px(top)} ${c}`);
+    } else {
+      if (top) shadows.push(`inset 0 ${px(top)} 0 0 ${c}`);
+      if (bottom) shadows.push(`inset 0 ${px(-bottom)} 0 0 ${c}`);
+      if (left) shadows.push(`inset ${px(left)} 0 0 0 ${c}`);
+      if (right) shadows.push(`inset ${px(-right)} 0 0 0 ${c}`);
+    }
   }
+
+  for (const e of node.effects || []) {
+    if (e.visible === false || (e.type !== "DROP_SHADOW" && e.type !== "INNER_SHADOW")) continue;
+    shadows.push(`${e.type === "INNER_SHADOW" ? "inset " : ""}${px(e.offset?.x || 0)} ${px(e.offset?.y || 0)} ${px(e.radius || 0)} ${px(e.spread || 0)} ${cssColor(e)}`);
+  }
+  if (shadows.length) s.boxShadow = shadows.join(", ");
   if (node.opacity != null && node.opacity !== 1) s.opacity = node.opacity;
   return s;
 }
 
-/** Стили текстового узла */
-export function textStyle(node) {
-  const st = node.style || {};
+/** Ключ шрифта в таблице `fonts` выгрузки: «Семейство:Начертание» */
+export const fontKey = (st = {}) => `${st.fontFamily}:${st.fontStyle}`;
+
+/**
+ * Высота строки. «Авто» в Figma — высота из самого шрифта: оригинал отдаёт её
+ * браузеру (`normal`), а если задан процент от неё — множит кегль на этот процент.
+ */
+function lineHeightOf(st) {
+  if (st.lineHeightUnit === "INTRINSIC_%") {
+    const pct = st.lineHeightPercent;
+    return pct && Math.abs(pct - 100) > 0.01 ? `${Math.round(pct * 100) / 100}%` : "normal";
+  }
+  return st.lineHeightPx ? px(st.lineHeightPx) : undefined;
+}
+
+/**
+ * Типографика по стилю Figma.
+ *
+ * Вес и оси вариативного шрифта берём из таблицы `fonts` выгрузки — так же,
+ * как оригинал: у SF Pro Semibold вес 590 и оптический размер 28, из имени
+ * начертания этого не узнать.
+ */
+function fontStyleOf(st = {}, fonts = {}) {
+  const f = fonts[fontKey(st)];
   const s = {
     fontSize: px(st.fontSize),
-    lineHeight: st.lineHeightPx ? px(st.lineHeightPx) : undefined,
-    fontWeight: fontWeight(st),
+    // «Авто» в Figma — высота строки из самого шрифта; оригинал отдаёт её браузеру
+    lineHeight: lineHeightOf(st),
+    fontWeight: f?.weight ?? fontWeight(st),
   };
+  // основной шрифт сайта задан на странице; остальные — шрифты макетов в кейсах
+  if (st.fontFamily && st.fontFamily !== "Open Sans") {
+    s.fontFamily = `"${st.fontFamily}", var(--font-open-sans), sans-serif`;
+    const axes = (f?.variationAxes || []).filter((a) => a.tag !== "wght");
+    if (axes.length) s.fontVariationSettings = axes.map((a) => `"${a.tag}" ${a.value}`).join(", ");
+  }
+  if (st.italic) {
+    s.fontStyle = "italic";
+    // курсив Open Sans подключён отдельным семейством, чтобы не грузить его на всех страницах
+    if (st.fontFamily === "Open Sans") s.fontFamily = "var(--font-open-sans-italic), var(--font-open-sans), sans-serif";
+  }
   if (st.letterSpacing) s.letterSpacing = px(st.letterSpacing);
-  if (st.textAlignHorizontal && st.textAlignHorizontal !== "LEFT") s.textAlign = st.textAlignHorizontal.toLowerCase();
   if (st.textCase === "UPPER") s.textTransform = "uppercase";
+  if (st.textCase === "LOWER") s.textTransform = "lowercase";
+  if (st.textCase === "TITLE") s.textTransform = "capitalize";
   if (st.textDecoration === "UNDERLINE") s.textDecoration = "underline";
-  const color = solidFill(node);
-  if (color) s.color = color;
+  if (st.textDecoration === "STRIKETHROUGH") s.textDecoration = "line-through";
   return s;
 }
 
+/** Стили текстового узла */
+export function textStyle(node, fonts = {}) {
+  const st = node.style || {};
+  const s = fontStyleOf(st, fonts);
+  const align = st.textAlignHorizontal;
+  if (align && align !== "LEFT") s.textAlign = align === "JUSTIFIED" ? "justify" : align.toLowerCase();
+  const color = solidFill(node);
+  if (color) s.color = color;
+  // обрезка с многоточием
+  if (st.textTruncation === "ENDING") {
+    s.overflow = "hidden";
+    if ((st.maxLines ?? 1) <= 1) {
+      s.textOverflow = "ellipsis";
+      s.whiteSpace = "nowrap";
+    } else {
+      s.display = "-webkit-box";
+      s.WebkitBoxOrient = "vertical";
+      s.WebkitLineClamp = st.maxLines;
+    }
+  }
+  return s;
+}
+
+/**
+ * Стиль фрагмента внутри текста: то, чем он отличается от стиля всего узла.
+ * В Figma у части текста может быть свой цвет, вес или размер — в выгрузке
+ * это номер стиля на каждый символ и таблица стилей.
+ */
+export function spanStyle(node, override, fonts = {}) {
+  const base = textStyle(node, fonts);
+  const own = fontStyleOf({ ...(node.style || {}), ...override }, fonts);
+  if (override.fills) {
+    const color = solidFill({ fills: override.fills });
+    if (color) own.color = color;
+  }
+  // регистр задаётся на весь узел: оригинал не меняет его у отдельных фрагментов
+  delete own.textTransform;
+  const diff = {};
+  for (const [k, v] of Object.entries(own)) if (v !== undefined && v !== base[k]) diff[k] = v;
+  if (base.textDecoration && !own.textDecoration) diff.textDecoration = "none";
+  if (base.fontStyle && !own.fontStyle) diff.fontStyle = "normal";
+  return diff;
+}
+
+/** По каким осям узел обнимает содержимое, а не имеет заданный размер */
+export function hugs(node) {
+  const row = node.layoutMode === "HORIZONTAL";
+  const col = node.layoutMode === "VERTICAL";
+  const auto = node.type === "TEXT" ? node.textAutoResize : null;
+  return {
+    w: (row && node.primaryAxisSizingMode !== "FIXED") || (col && node.counterAxisSizingMode !== "FIXED") || auto === "WIDTH_AND_HEIGHT",
+    h: (col && node.primaryAxisSizingMode !== "FIXED") || (row && node.counterAxisSizingMode !== "FIXED") || auto === "HEIGHT" || auto === "WIDTH_AND_HEIGHT",
+  };
+}
+
 /** Размеры: что зафиксировано, что тянется, что растёт */
-export function sizing(node, parent) {
+export function sizing(node, parent, autoAxes = hugs(node)) {
   const s = {};
   const horizontal = parent?.layoutMode === "HORIZONTAL";
   const vertical = parent?.layoutMode === "VERTICAL";
   const auto = node.textAutoResize;
 
-  if (node.layoutGrow === 1) s.flex = "1 1 0%";
+  if (node.layoutGrow === 1) {
+    // растущий блок занимает остаток и не раздувается содержимым — как в оригинале
+    s.flex = "1 0 0px";
+    if (horizontal) s.minWidth = "1px";
+    if (vertical) s.minHeight = "1px";
+  }
   if (node.layoutAlign === "STRETCH") s.alignSelf = "stretch";
+  // Текст на всю ширину колонки не должен её распирать: колонка, которая обнимает
+  // содержимое, берёт ширину от картинки рядом, а не от самой длинной строки.
+  if (node.type === "TEXT" && vertical && node.layoutAlign === "STRETCH" && auto !== "WIDTH_AND_HEIGHT") {
+    s.width = "min-content";
+    s.minWidth = "100%";
+  }
 
-  const fixedW = node.layoutGrow !== 1 && !(vertical && node.layoutAlign === "STRETCH") && auto !== "WIDTH_AND_HEIGHT";
-  const fixedH = !(horizontal && node.layoutAlign === "STRETCH") && auto !== "HEIGHT" && auto !== "WIDTH_AND_HEIGHT";
+  // Auto-layout фрейм по умолчанию обнимает содержимое: размер по оси задан,
+  // только если режим FIXED. Оригинал так и верстает — без высоты, поэтому при
+  // другой разбивке текста на строки блок подстраивается, а не обрезает и не
+  // оставляет дыру.
+  const { w: hugW, h: hugH } = autoAxes;
 
-  if (fixedW && node.size?.x != null) s.width = px(node.size.x);
+  const fixedW = !hugW && node.layoutGrow !== 1 && !(vertical && node.layoutAlign === "STRETCH");
+  const fixedH = !hugH && !(horizontal && node.layoutAlign === "STRETCH");
+
+  if (fixedW && !s.width && node.size?.x != null) s.width = px(node.size.x);
   if (fixedH && node.size?.y != null) s.height = px(node.size.y);
   // внутри flex фиксированный размер не должен ужиматься соседями
   if ((horizontal && fixedW) || (vertical && fixedH)) s.flexShrink = 0;
@@ -213,25 +403,61 @@ export function sizing(node, parent) {
  * привязана к центру, часть растягивается по ширине, часть — к правому краю.
  * Без этого на ширине, отличной от 1280, всё разъезжается.
  */
-export function absolutePosition(node, parent) {
+/**
+ * Угол поворота узла в градусах. В матрице Figma [[a, b, tx], [c, d, ty]]
+ * поворот — это a = cos, c = sin.
+ */
+export function rotation(node) {
+  const t = node.relativeTransform;
+  if (!t) return 0;
+  const deg = (Math.atan2(t[1][0], t[0][0]) * 180) / Math.PI;
+  return Math.abs(deg) < 0.01 ? 0 : Math.round(deg * 100) / 100;
+}
+
+export function absolutePosition(node, parent, autoAxes = hugs(node)) {
   const t = node.relativeTransform;
   if (!t) return {};
 
-  const x = t[0][2];
-  const y = t[1][2];
   const w = node.size?.x;
   const h = node.size?.y;
-  const pw = parent?.size?.x;
-  const ph = parent?.size?.y;
+  // У повёрнутого узла смещение в матрице — это положение его исходного угла,
+  // а не левого верхнего края. Берём центр повёрнутого прямоугольника и
+  // отступаем на половину размера: поворот вокруг центра встанет точно.
+  let x = t[0][2];
+  let y = t[1][2];
+  if (rotation(node) && w != null && h != null) {
+    const cx = t[0][2] + (t[0][0] * w + t[0][1] * h) / 2;
+    const cy = t[1][2] + (t[1][0] * w + t[1][1] * h) / 2;
+    x = cx - w / 2;
+    y = cy - h / 2;
+  }
+  // Смещения детей посчитаны для размера родителя в мастер-компоненте. Если инстанс
+  // другой ширины, привязку нужно считать от исходного размера — иначе блок,
+  // стоявший по центру, уедет.
+  const pw = parent?.layoutSize?.x ?? parent?.size?.x;
+  const ph = parent?.layoutSize?.y ?? parent?.size?.y;
+  const pct = (v, base) => `${Math.round((v / base) * 1e4) / 100}%`;
   const c = node.constraints || {};
   const s = { position: "absolute" };
 
+  // Блок без заданного размера привязан к центру своей серединой: если текст
+  // внутри встанет в одну строку вместо двух, блок останется по центру.
+  const hug = rotation(node) ? { w: false, h: false } : autoAxes;
+  const shift = [];
+
   // по горизонтали
-  if (pw && w != null && c.horizontal === "CENTER") {
+  if (pw && w != null && c.horizontal === "CENTER" && hug.w) {
+    s.left = `calc(50% + ${Math.round((x + w / 2 - pw / 2) * 100) / 100}px)`;
+    shift.push("translateX(-50%)");
+  } else if (pw && w != null && c.horizontal === "CENTER") {
     s.left = `calc(50% + ${Math.round((x - pw / 2) * 100) / 100}px)`;
   } else if (pw && w != null && c.horizontal === "RIGHT") {
     s.right = px(pw - x - w);
-  } else if (pw && w != null && (c.horizontal === "LEFT_RIGHT" || c.horizontal === "SCALE")) {
+  } else if (pw && w != null && c.horizontal === "SCALE") {
+    s.left = pct(x, pw);
+    s.right = pct(pw - x - w, pw);
+    s.width = undefined;
+  } else if (pw && w != null && c.horizontal === "LEFT_RIGHT") {
     s.left = px(x);
     s.right = px(pw - x - w);
     s.width = undefined;
@@ -240,11 +466,18 @@ export function absolutePosition(node, parent) {
   }
 
   // по вертикали
-  if (ph && h != null && c.vertical === "CENTER") {
+  if (ph && h != null && c.vertical === "CENTER" && hug.h) {
+    s.top = `calc(50% + ${Math.round((y + h / 2 - ph / 2) * 100) / 100}px)`;
+    shift.push("translateY(-50%)");
+  } else if (ph && h != null && c.vertical === "CENTER") {
     s.top = `calc(50% + ${Math.round((y - ph / 2) * 100) / 100}px)`;
   } else if (ph && h != null && c.vertical === "BOTTOM") {
     s.bottom = px(ph - y - h);
-  } else if (ph && h != null && (c.vertical === "TOP_BOTTOM" || c.vertical === "SCALE")) {
+  } else if (ph && h != null && c.vertical === "SCALE") {
+    s.top = pct(y, ph);
+    s.bottom = pct(ph - y - h, ph);
+    s.height = undefined;
+  } else if (ph && h != null && c.vertical === "TOP_BOTTOM") {
     s.top = px(y);
     s.bottom = px(ph - y - h);
     s.height = undefined;
@@ -252,6 +485,7 @@ export function absolutePosition(node, parent) {
     s.top = px(y);
   }
 
+  if (shift.length) s.transform = shift.join(" ");
   return s;
 }
 

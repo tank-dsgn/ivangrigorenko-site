@@ -6,30 +6,30 @@ export default function Logo1() {
     <>
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
-      <div style={{ alignSelf: "stretch", height: "1572px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#f9fafc", overflow: "hidden" }}>
-        <div style={{ width: "960px", height: "1372px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-          <div style={{ alignSelf: "stretch", height: "112px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px" }}>
-            <p style={{ alignSelf: "stretch", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Разработка логотипа`}</p>
-            <p style={{ alignSelf: "stretch", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Разработан логотип для Bitblend — проекта, который должен был отражать технологичность и надёжность криптообменов`}</p>
+      <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#f9fafc", overflow: "hidden" }}>
+        <div style={{ width: "960px", display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Разработка логотипа`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Разработан логотип для Bitblend — проекта, который должен был отражать технологичность и надёжность криптообменов`}</p>
           </div>
-          <div style={{ width: "960px", height: "1228px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "32px" }}>
-            <div style={{ alignSelf: "stretch", height: "446px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
+          <div style={{ width: "960px", display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start" }}>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Выбор шрифта`}</p>
               <div style={{ alignSelf: "stretch", height: "414px", flexShrink: 0, background: "#f7f8fa", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "calc(50% + -480px)", top: "0", bottom: "0.21px", height: "413.79px", width: "960px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png)" }} />
+                <div style={{ position: "absolute", left: "calc(50% + 0px)", top: "0", bottom: "0.21px", transform: "translateX(-50%)", aspectRatio: "1160 / 500", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/6ed19047a6b4ca8eccc8455cf9cd2d35c8387bed.png)" }} />
               </div>
             </div>
-            <div style={{ alignSelf: "stretch", height: "450px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Разработка иконки`}</p>
               <div style={{ alignSelf: "stretch", height: "418px", flexShrink: 0, background: "#f7f8fa", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "0", right: "0", width: "960px", top: "-136px", height: "578.48px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
+                <div style={{ position: "absolute", left: "0", right: "0", top: "-136px", aspectRatio: "1160 / 699", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/974c538b8e8d25b0d02a70eea1f340e1363fb8cb.webp)" }} />
               </div>
             </div>
-            <div style={{ alignSelf: "stretch", height: "268px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
-              <p style={{ alignSelf: "stretch", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Финальный логотип`}</p>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Финальный логотип`}</p>
               <div style={{ alignSelf: "stretch", height: "236px", flexShrink: 0, background: "#ffffff", borderRadius: "24px", overflow: "hidden", position: "relative" }}>
-                <div style={{ position: "absolute", left: "0", top: "-0.36px", bottom: "0.36px", height: "236px", width: "960px" }}>
-                  <div style={{ position: "absolute", left: "0", top: "0", bottom: "0", height: "236px", width: "479px", background: "#ffffff", borderRadius: "24px", overflow: "hidden" }}>
+                <div style={{ position: "absolute", left: "0", top: "-0.36px", bottom: "0.36px", width: "960px" }}>
+                  <div style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "479px", background: "#ffffff", borderRadius: "24px", overflow: "hidden" }}>
                     <div style={{ position: "absolute", left: "111px", top: "83.36px", width: "256.28px", height: "70px" }}>
                       <img
                         src="/a/80f266a195ef3519d346ad4b66fe30fa7d6fde27.svg"
@@ -46,7 +46,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "150.02px", top: "0", width: "23.13px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "150.02px", top: "0", width: "23.13px", height: "26.66px" }}
                         />
                         <img
                           src="/a/ab61df5c6e038e2658e0ff95510da44041ac96e9.svg"
@@ -54,7 +54,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "118.12px", top: "0", width: "26.35px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "118.12px", top: "0", width: "26.35px", height: "26.66px" }}
                         />
                         <img
                           src="/a/18953b30e81d4b52b9da12d9229e87781b10c01d.svg"
@@ -62,7 +62,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "98.16px", top: "0", width: "15.01px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "98.16px", top: "0", width: "15.01px", height: "26.66px" }}
                         />
                         <img
                           src="/a/997be3b1170697e7ebc39b44e09475714be2925c.svg"
@@ -70,7 +70,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "79.54px", top: "0", width: "15.09px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "79.54px", top: "0", width: "15.09px", height: "26.66px" }}
                         />
                         <img
                           src="/a/2f36f411c6864d1c414b3ec9d27e4538f27a1096.svg"
@@ -78,7 +78,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "55.3px", top: "0", width: "20.13px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "55.3px", top: "0", width: "20.13px", height: "26.66px" }}
                         />
                         <img
                           src="/a/5174991b08400e890629c1466aab3843b650fe97.svg"
@@ -86,7 +86,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "34.12px", top: "0", width: "18.13px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "34.12px", top: "0", width: "18.13px", height: "26.66px" }}
                         />
                         <img
                           src="/a/03901b9c0ba9685f73a40a7713dc9d3406a5dfd0.svg"
@@ -94,7 +94,7 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "24.23px", top: "0", width: "6.86px", height: "26.66px", background: "#48aeff" }}
+                          style={{ position: "absolute", left: "24.23px", top: "0", width: "6.86px", height: "26.66px" }}
                         />
                         <img
                           src="/a/e91ac9a24238fa5142305973b6e5cfaca1f0b8f0.svg"
@@ -102,12 +102,12 @@ export default function Logo1() {
                           aria-hidden="true"
                           loading="lazy"
                           decoding="async"
-                          style={{ position: "absolute", left: "0", top: "0", width: "20.13px", height: "26.66px", background: "#0e1b37" }}
+                          style={{ position: "absolute", left: "0", top: "0", width: "20.13px", height: "26.66px" }}
                         />
                       </div>
                     </div>
                   </div>
-                  <div style={{ position: "absolute", right: "0", top: "0", bottom: "0", height: "236px", width: "480px", background: "#0e1b37", borderRadius: "24px", overflow: "hidden" }}>
+                  <div style={{ position: "absolute", right: "0", top: "0", bottom: "0", width: "480px", background: "#0e1b37", borderRadius: "24px", overflow: "hidden" }}>
                     <img
                       src="/a/37409e98c0b363edcd6c92c28eddba69c98fa016.svg"
                       alt=""

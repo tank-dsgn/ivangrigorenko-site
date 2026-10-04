@@ -7,3 +7,6 @@ out
 next-env.d.ts
 .vercel
 .env*
+
+# снимки сверки с оригиналом
+tools/verify/.snap

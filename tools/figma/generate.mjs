@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Генерация React-компонента страницы из выгрузки Figma Sites.
 //
-//   node tools/figma/generate.mjs <slug> [--json <путь>] [--out <путь>]
+//   node tools/figma/generate.mjs <slug> --sections [--fetch] [--json <путь>] [--out <путь>]
 //
 // Страница в Figma — это три фрейма под брейкпоинты (Desktop 1280,
 // Tablet 800, Mobile 375). Оригинал переключает их на клиенте; здесь
@@ -9,7 +9,9 @@
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { gunzipSync, gzipSync } from "node:zlib";
 import { createEmitter, componentName } from "./emit.mjs";
+import { createResolver } from "./resolve.mjs";
 import assetMap from "../../lib/asset-map.json" with { type: "json" };
 import overrides from "./overrides.json" with { type: "json" };
 
@@ -24,12 +26,26 @@ const BREAKPOINTS = [
   { width: 1280, label: "Desktop", className: "hidden xl:block" },
 ];
 
-async function loadPage(slug, jsonPath) {
+/**
+ * Выгрузка страницы. Копии лежат в tools/figma/export — после переключения
+ * домена на этот сайт оригинал на Figma Sites станет недоступен, и другого
+ * источника не будет. `--fetch` перекачивает выгрузку с оригинала.
+ */
+async function loadPage(slug, jsonPath, fetchFresh) {
   if (jsonPath) return JSON.parse(await readFile(jsonPath, "utf8"));
+  const saved = `tools/figma/export/${slug}.json.gz`;
+  if (!fetchFresh) {
+    try {
+      return JSON.parse(gunzipSync(await readFile(saved)).toString("utf8"));
+    } catch {}
+  }
   const name = slug === "index" ? "_index" : slug;
   const res = await fetch(`${ORIGIN}/_json/${BUNDLE}/${name}.json`);
   if (!res.ok) throw new Error(`Не удалось скачать выгрузку ${name}: ${res.status}`);
-  return res.json();
+  const text = await res.text();
+  await mkdir(dirname(resolve(saved)), { recursive: true });
+  await writeFile(saved, gzipSync(text, { level: 9 }));
+  return JSON.parse(text);
 }
 
 /**
@@ -62,26 +78,6 @@ function linkMapByName(nodeById) {
 }
 
 /**
- * Дети приходят списком id — собираем настоящее дерево.
- *
- * У инстансов компонентов дети получают синтетические id вида
- * `I<инстанс>;<узел компонента>`. Самого такого узла в выгрузке нет —
- * нужно взять последний сегмент, это id узла внутри мастер-компонента.
- */
-function resolveTree(nodeById, id, depth = 0) {
-  if (depth > 60) return null;
-  const raw = nodeById[id] || nodeById[String(id).split(";").pop()];
-  if (!raw) return null;
-  const node = { ...raw };
-  if (Array.isArray(raw.children)) {
-    node.children = raw.children
-      .map((c) => resolveTree(nodeById, c, depth + 1))
-      .filter(Boolean);
-  }
-  return node;
-}
-
-/**
  * Шапка и футер собраны вручную как переиспользуемые компоненты и не генерируются.
  *
  * Причина: у инстансов компонентов в выгрузке не применяются переопределения,
@@ -95,7 +91,7 @@ const SHELL_TAGS = new Set(["HEADER", "FOOTER"]);
  * Разрезает страницу на секции: по файлу на секцию макета.
  * Внутри каждого файла — три брейкпоинта, как и раньше.
  */
-async function emitSections({ slug, frames, nodeById, emit, resetCards, shell, outDir }) {
+async function emitSections({ slug, frames, resolveTree, emit, shell, outDir }) {
   const dir = outDir || `components/generated/${slug}`;
   await mkdir(resolve(dir), { recursive: true });
 
@@ -104,7 +100,7 @@ async function emitSections({ slug, frames, nodeById, emit, resetCards, shell, o
   for (const bp of BREAKPOINTS) {
     const frame = frames.find((f) => Math.round(f.size?.x) === bp.width);
     if (!frame) continue;
-    const tree = resolveTree(nodeById, frame.id);
+    const tree = resolveTree(frame.id);
     const visible = (tree.children || []).filter(
       (c) => c.visible !== false && !SHELL_TAGS.has(c.accessibleHTMLTag)
     );
@@ -124,7 +120,6 @@ async function emitSections({ slug, frames, nodeById, emit, resetCards, shell, o
 
     const body = sec.parts
       .map(({ bp, node, tree }) => {
-        resetCards();
         return (
           `      {/* ${bp.label} */}\n` +
           `      <div className=${JSON.stringify(("figma-page " + bp.className).trim())}>\n` +
@@ -135,10 +130,14 @@ async function emitSections({ slug, frames, nodeById, emit, resetCards, shell, o
       .join("");
 
     const hasLink = body.includes("<Link ");
+    const hasVariants = body.includes("<VariantGroup ");
+    const imports =
+      (hasLink ? `import Link from "next/link";\n` : "") +
+      (hasVariants ? `import VariantGroup from "@/components/VariantGroup";\n` : "");
     const src =
       `// Секция «${sec.name}» — сгенерировано из Figma.\n` +
       `// Перегенерировать: node tools/figma/generate.mjs ${slug} --sections\n\n` +
-      (hasLink ? `import Link from "next/link";\n\n` : "") +
+      (imports ? `${imports}\n` : "") +
       `export default function ${comp}() {\n  return (\n    <>\n${body}    </>\n  );\n}\n`;
 
     await writeFile(`${dir}/${comp}.tsx`, src, "utf8");
@@ -158,6 +157,23 @@ async function emitSections({ slug, frames, nodeById, emit, resetCards, shell, o
   for (const f of files) console.log(`    ${f.comp}.tsx  «${f.name}»`);
 }
 
+/**
+ * Шрифты макетов. Каждая страница дописывает в общий список те, что на ней
+ * реально встретились; по нему tools/figma/fonts.mjs скачивает файлы
+ * и собирает @font-face.
+ */
+const FONT_MANIFEST = "tools/figma/fonts.json";
+async function recordFonts(used, table) {
+  let manifest = {};
+  try {
+    manifest = JSON.parse(await readFile(FONT_MANIFEST, "utf8"));
+  } catch {}
+  for (const key of used) if (table[key]) manifest[key] = table[key];
+  const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));
+  await writeFile(FONT_MANIFEST, JSON.stringify(sorted, null, 2) + "\n", "utf8");
+  console.log(`  шрифты: ${[...used].sort().join(", ")}`);
+}
+
 async function main() {
   const [, , slug, ...rest] = process.argv;
   if (!slug) {
@@ -169,34 +185,25 @@ async function main() {
     return i === -1 ? null : rest[i + 1];
   };
 
-  const doc = await loadPage(slug, arg("--json"));
-  const { nodeById, assets, roots } = doc;
+  const doc = await loadPage(slug, arg("--json"), rest.includes("--fetch"));
+  const { nodeById, assets, roots, fonts } = doc;
   const page = nodeById[roots[0]];
+  const { resolve: resolveTree, resolveVariant } = createResolver(doc);
 
   const frames = (page.children || [])
     .map((id) => nodeById[id])
     .filter((n) => n?.isBreakpointFrame);
 
   const lang = slug.endsWith("-en") || slug === "index" ? "en" : "ru";
-  const project = slug.replace(/-(ru|en)$/, "");
-
-  // «Смотрите также»: все проекты, кроме текущего, в порядке из таблицы
-  const related = (overrides.relatedOrder || [])
-    .filter((p) => p !== project)
-    .map((p) => {
-      const r = overrides.related?.[p];
-      return r ? { slug: p, label: r[lang], image: r.image, w: r.w, h: r.h } : null;
-    })
-    .filter(Boolean);
-  const { emit, usedAssets, usedLinks, resetCards } = createEmitter({
+  const { emit, usedAssets, usedLinks, usedFonts } = createEmitter({
     assets,
+    fonts,
     assetMap,
     linkByName: linkMapByName(nodeById),
-    // правки страницы идут поверх языковых
-    textOverrides: { ...(overrides.text[lang] || {}), ...(overrides.pages?.[slug] || {}) },
     cardTargets: overrides.cards,
     lang,
-    related: related.length ? related : null,
+    nodeById,
+    resolveVariant,
   });
 
   const keepShell = rest.includes("--keep-shell");
@@ -206,7 +213,7 @@ async function main() {
   for (const bp of BREAKPOINTS) {
     const frame = frames.find((f) => Math.round(f.size?.x) === bp.width);
     if (!frame) continue;
-    const tree = resolveTree(nodeById, frame.id);
+    const tree = resolveTree(frame.id);
     const visible = (tree.children || []).filter((c) => c.visible !== false);
     shell.header[bp.label.toLowerCase()] = visible.some((c) => c.accessibleHTMLTag === "HEADER");
     shell.footer[bp.label.toLowerCase()] = visible.some((c) => c.accessibleHTMLTag === "FOOTER");
@@ -224,8 +231,9 @@ async function main() {
   // --sections: каждая секция макета уезжает в свой файл со своим именем.
   // Так страница читается как список секций, а не как одна простыня.
   if (rest.includes("--sections")) {
-    await emitSections({ slug, frames, nodeById, emit, resetCards, shell, outDir: arg("--out") });
+    await emitSections({ slug, frames, resolveTree, emit, shell, outDir: arg("--out") });
     console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
+    await recordFonts(usedFonts, fonts);
     return;
   }
 
