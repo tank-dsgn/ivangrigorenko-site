@@ -4,6 +4,7 @@
 //   node tools/verify/diff.mjs tools/verify/.snap/orig-pot-ru-1440.json tools/verify/.snap/copy-pot-ru-1440.json 60
 //
 // Копия должна быть запущена на localhost:3000. ONLY=copy — переснять только копию.
+// COPY_ORIGIN=https://ivangrigorenko-site.vercel.app — сверить выложенный сайт.
 // Нужен Google Chrome: запускается без окна, с отдельным временным профилем.
 import { spawn } from "child_process"; import fs from "fs"; import os from "os"; import path from "path";
 const dir = path.dirname(new URL(import.meta.url).pathname);
@@ -35,7 +36,7 @@ const code = fs.readFileSync(`${dir}/collect.js`, "utf8");
 try {
   await ready();
   for (const page of pages) {
-    for (const [side, origin, wait] of [["orig", "https://ivangrigorenko.com", 5000], ["copy", "http://localhost:3000", 1500]]) {
+    for (const [side, origin, wait] of [["orig", "https://ivangrigorenko.com", 5000], ["copy", process.env.COPY_ORIGIN || "http://localhost:3000", process.env.COPY_ORIGIN ? 4000 : 1500]]) {
       if (only && only !== side) continue;
       const name = `${side}-${page}-${width}`;
       const s = await session(`${origin}/${page === "index" ? "" : page}`);
