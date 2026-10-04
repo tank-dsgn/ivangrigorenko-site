@@ -2,8 +2,10 @@
 # Перегенерировать кейсы, собрать и поднять копию на localhost:3000.
 #   tools/verify/regen.sh            — все страницы
 #   PAGES="pot vv" tools/verify/regen.sh
+#   PAGES=none tools/verify/regen.sh — только пересобрать, без генерации
 export PATH="$HOME/.local/node/bin:$PATH"
 cd "$(dirname "$0")/../.." || exit 1
+[ "$PAGES" = none ] && PAGES=" "
 for p in ${PAGES:-eazychange autotor pot ostral vv mikulich about}; do
   for l in ru en; do
     node tools/figma/generate.mjs "$p-$l" --sections >/dev/null || echo "FAIL $p-$l"

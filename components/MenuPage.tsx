@@ -27,15 +27,18 @@ export default function MenuPage({
 }) {
   const s = t[lang];
 
+  // в английском меню подписи в оригинале не те, что в шапке: Projects и Contact
+  const labels = lang === "en" ? { ...s.nav, work: "Projects", contacts: "Contact" } : s.nav;
+
   const rows = [
-    { key: "work" as const, label: s.nav.work, href: homeHref(lang) },
-    { key: "about" as const, label: s.nav.about, href: aboutHref(lang) },
-    { key: "contacts" as const, label: s.nav.contacts, href: aboutHref(lang) },
+    { key: "work" as const, label: labels.work, href: homeHref(lang) },
+    { key: "about" as const, label: labels.about, href: aboutHref(lang) },
+    { key: "contacts" as const, label: labels.contacts, href: aboutHref(lang) },
   ];
 
   return (
     <div className="min-h-screen bg-[#fafaf9]">
-      <header className="flex h-14 items-center justify-between px-5">
+      <header className="flex h-14 items-center justify-between px-5 md:px-10">
         <Link href={homeHref(lang)} aria-label={s.toHome}>
           <Image src={LOGO_SMALL} alt="ivan.grigorenko.dsgn" width={32} height={22} priority />
         </Link>
@@ -51,7 +54,7 @@ export default function MenuPage({
         </Link>
       </header>
 
-      <nav className="mt-6 flex flex-col gap-3 px-5">
+      <nav className="mt-6 flex flex-col gap-3 px-5 md:px-10">
         {rows.map((row) => {
           const isActive = row.key === active;
           const text = "text-[16px] leading-6 font-semibold";
@@ -78,7 +81,7 @@ export default function MenuPage({
         })}
       </nav>
 
-      <div className="mt-6 flex items-center px-5 text-[16px] leading-6 font-semibold">
+      <div className="mt-6 flex items-center px-5 text-[16px] leading-6 font-semibold md:px-10">
         {lang === "ru" ? (
           <>
             <Link href={altMenu} className="text-muted hover:text-accent ease-figma px-1 py-2 transition-colors duration-200">
