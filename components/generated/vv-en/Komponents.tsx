@@ -49,7 +49,7 @@ export default function Komponents() {
             <p style={{ fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Components`}</p>
             <p style={{ width: "834px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Components are built on tokens and variables and are controlled parametrically. This allows maintaining interface consistency and scaling the design system without increasing structural complexity`}</p>
           </div>
-          <div style={{ width: "980px", height: "655px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px" }}>
+          <div data-lightbox="" role="button" tabIndex={0} style={{ width: "980px", height: "655px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", cursor: "zoom-in" }}>
             <div style={{ width: "932px", height: "611.38px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/be9668b16755b9667f690c105d641f4ce39161e8.webp)" }} />
           </div>
         </div>

@@ -1,18 +1,13 @@
 import { pageMetadata } from "@/lib/metadata";
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Footer from "@/components/Footer";
+import SitePage from "@/components/SitePage";
+import Body, { shell } from "@/components/generated/about-en";
 
 export const metadata = pageMetadata({ path: "/about-en", title: "About" });
 
-export default function AboutEn() {
+export default function Page() {
   return (
-    <>
-      <Header lang="en" active="about" />
-      <main className="pt-14 xl:pt-20">
-        <About lang="en" />
-      </main>
-      <Footer lang="en" />
-    </>
+    <SitePage lang="en" shell={shell} active="about">
+      <Body />
+    </SitePage>
   );
 }

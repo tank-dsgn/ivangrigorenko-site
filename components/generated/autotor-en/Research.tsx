@@ -54,7 +54,7 @@ export default function Research() {
           </div>
           <div style={{ alignSelf: "stretch", height: "477px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`competitors`}</p>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", borderRadius: "24px" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", borderRadius: "24px", cursor: "zoom-in" }}>
               <div style={{ width: "960px", height: "444px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
                 <img src="/a/558e209c749e114825e08802f2530447fa0125a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "0%", width: "100%", height: "99.77%", maxWidth: "none" }} />
               </div>

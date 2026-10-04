@@ -19,6 +19,18 @@ try {
   await send("Page.navigate", { url });
   for (let i = 0; i < 150 && !events.some((e) => e.method === "Page.loadEventFired"); i++) await sleep(100);
   await sleep(+(waitArg || 4000));
+  // STEPS='[{"scroll":1300},{"move":[300,340]},{"click":[300,340]},{"wait":500}]' — настоящая мышь до выполнения кода
+  for (const st of JSON.parse(process.env.STEPS || "[]")) {
+    if (st.scroll != null) await send("Runtime.evaluate", { expression: `document.documentElement.style.scrollBehavior="auto";scrollTo(0,${st.scroll})` });
+    if (st.move) await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.move[0], y: st.move[1], pointerType: "mouse" });
+    if (st.click) {
+      await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.click[0], y: st.click[1], pointerType: "mouse" });
+      await send("Input.dispatchMouseEvent", { type: "mousePressed", x: st.click[0], y: st.click[1], button: "left", clickCount: 1 });
+      await send("Input.dispatchMouseEvent", { type: "mouseReleased", x: st.click[0], y: st.click[1], button: "left", clickCount: 1 });
+    }
+    if (st.key) { await send("Input.dispatchKeyEvent", { type: "keyDown", key: st.key, code: st.key, windowsVirtualKeyCode: st.key === "Escape" ? 27 : 13 }); await send("Input.dispatchKeyEvent", { type: "keyUp", key: st.key, code: st.key }); }
+    await sleep(st.wait ?? 400);
+  }
   const r = await send("Runtime.evaluate", { expression: `(async()=>{${expr}})()`, awaitPromise: true, returnByValue: true });
   const v = r.result?.result?.value;
   console.log(typeof v === "string" ? v : JSON.stringify(v ?? r, null, 1));

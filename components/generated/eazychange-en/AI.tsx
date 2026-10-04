@@ -14,7 +14,7 @@ export default function AI() {
           </div>
           <div style={{ width: "960px", display: "flex", flexDirection: "column", alignItems: "center", borderRadius: "24px" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Site map`}</p>
-            <div style={{ width: "960px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px", overflow: "hidden" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ width: "960px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px", overflow: "hidden", cursor: "zoom-in" }}>
               <div style={{ width: "912px", height: "508.14px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4d5ef31b05ee82cfbd78b996581fac0316749b50.webp)" }} />
             </div>
           </div>

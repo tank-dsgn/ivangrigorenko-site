@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Lightbox from "@/components/Lightbox";
+import ScrollEffects from "@/components/ScrollEffects";
 import type { Lang } from "@/lib/site";
 
 /** На каких брейкпоинтах макет показывает элемент оболочки */
@@ -20,29 +22,34 @@ function visibility({ mobile, tablet, desktop }: ShellPresence) {
 }
 
 /**
- * Обёртка страницы кейса: шапка, тело из генератора, футер.
+ * Обёртка страницы: шапка, тело из генератора, футер.
  * Наличие футера берётся из макета — на одной из страниц его нет на телефоне.
  */
-export default function CasePage({
+export default function SitePage({
   lang,
   shell,
+  active,
   children,
 }: {
   lang: Lang;
   shell: { header: ShellPresence; footer: ShellPresence };
+  /** какой пункт навигации подсветить */
+  active?: "work" | "about";
   children: React.ReactNode;
 }) {
   const footerClass = visibility(shell.footer);
 
   return (
     <>
-      <Header lang={lang} />
+      <Header lang={lang} active={active} />
       <main className="pt-14 xl:pt-20">{children}</main>
       {footerClass !== "hidden" && (
         <div className={footerClass}>
           <Footer lang={lang} />
         </div>
       )}
+      <ScrollEffects />
+      <Lightbox />
     </>
   );
 }

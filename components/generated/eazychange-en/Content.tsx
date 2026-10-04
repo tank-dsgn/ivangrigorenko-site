@@ -2,6 +2,7 @@
 // Перегенерировать: node tools/figma/generate.mjs eazychange-en --sections
 
 import Link from "next/link";
+import VariantGroup from "@/components/VariantGroup";
 
 export default function Content() {
   return (
@@ -470,9 +471,14 @@ export default function Content() {
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Let’s connect`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "20px", fontWeight: 400, textAlign: "center", color: "#334155" }}>{`Open to new projects and collaborations`}</p>
             </div>
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-              <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Ivan.Grigorenko.dsgn@gmail.com`}</p>
-            </div>
+            <VariantGroup initial="941:619226" style={{ position: "relative" }}>
+              <div data-variant="941:619226" data-hover-to="941:619228" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Ivan.Grigorenko.dsgn@gmail.com`}</p>
+              </div>
+              <div data-variant="941:619228" data-lazy data-hover-to="941:619228" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, textDecoration: "underline", color: "#4f46e5", whiteSpace: "nowrap" }}>{`Ivan.Grigorenko.dsgn@gmail.com`}</p>
+              </div>
+            </VariantGroup>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "32px", justifyContent: "center", alignItems: "flex-start" }}>
             <a href="https://www.behance.net/ivangrigorenko" target="_blank" rel="noopener noreferrer" style={{ width: "24px", height: "24px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
@@ -957,13 +963,13 @@ export default function Content() {
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", overflow: "hidden", position: "relative" }}>
-        <img
+        <img data-parallax="0.5"
           src="/a/e5e0e3376811f426f5f056a3875d14d360ac8217.webp"
           alt=""
           aria-hidden="true"
           loading="lazy"
           decoding="async"
-          style={{ position: "absolute", left: "calc(50% + -1022px)", top: "calc(50% + -550px)", width: "2044px", height: "1022px", flexShrink: 0 }}
+          style={{ position: "absolute", left: "calc(50% + -1022px)", top: "calc(50% + -550px)", width: "2044px", height: "1022px", flexShrink: 0, transform: "translateY(var(--parallax, 0px))" }}
         />
         <div style={{ flex: "1 0 0px", minHeight: "1px", alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
         <div style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + 0.5px)", transform: "translateX(-50%) translateY(-50%)", display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>

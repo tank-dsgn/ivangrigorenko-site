@@ -52,7 +52,7 @@ export default function Flow() {
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма платных функций`}</p>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px", cursor: "zoom-in" }}>
               <div style={{ alignSelf: "stretch", aspectRatio: "2683 / 1693", position: "relative", overflow: "hidden" }}>
                 <img src="/a/f8a1d77d1824a92b00b2d1760275e18e4616e709.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-2.24%", top: "-3.43%", width: "104.36%", height: "106.62%", maxWidth: "none" }} />
               </div>

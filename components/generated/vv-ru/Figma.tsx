@@ -49,7 +49,7 @@ export default function Figma() {
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Структура дизайн-системы`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Это единое рабочее пространство: токены, стили, компоненты и документация структурированы по уровням и связаны между собой для удобной навигации и поддержки`}</p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#f1f0f9", borderRadius: "16px" }}>
+          <div data-lightbox="" role="button" tabIndex={0} style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#f1f0f9", borderRadius: "16px", cursor: "zoom-in" }}>
             <div style={{ width: "899.05px", height: "514.26px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4ce064518e1ee90c12e650cfbd11812b408dca08.webp)", borderRadius: "8px", boxShadow: "0 2px 8px 0 rgba(14, 12, 46, 0.2)" }} />
           </div>
         </div>

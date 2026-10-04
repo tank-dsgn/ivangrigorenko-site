@@ -38,7 +38,7 @@ try {
     for (const [side, origin, wait] of [["orig", "https://ivangrigorenko.com", 5000], ["copy", "http://localhost:3000", 1500]]) {
       if (only && only !== side) continue;
       const name = `${side}-${page}-${width}`;
-      const s = await session(`${origin}/${page}`);
+      const s = await session(`${origin}/${page === "index" ? "" : page}`);
       await sleep(wait);
       await s.send("Runtime.evaluate", { expression: code });
       const r = await s.send("Runtime.evaluate", { expression: `window.__snap(${JSON.stringify(name)})`, awaitPromise: true, returnByValue: true });

@@ -69,14 +69,14 @@ export default function InContext() {
           <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", height: "575px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Business Cards`}</p>
-              <div style={{ alignSelf: "stretch", height: "541px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", borderRadius: "24px", overflow: "hidden" }}>
+              <div data-lightbox="" role="button" tabIndex={0} style={{ alignSelf: "stretch", height: "541px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", borderRadius: "24px", overflow: "hidden", cursor: "zoom-in" }}>
                 <div style={{ width: "1035.89px", height: "546px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/147770bf9dde2b1358d8698976cf1c156e11ca30.webp)" }} />
                 <div style={{ flex: "1 0 0px", minHeight: "1px", alignSelf: "stretch", height: "1px", flexShrink: 0, background: "#7893a8", borderRadius: "24px" }} />
               </div>
             </div>
             <div style={{ alignSelf: "stretch", height: "575px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <p style={{ position: "absolute", left: "0", top: "0", width: "1024px", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Medical Uniform`}</p>
-              <div style={{ position: "absolute", left: "0", right: "0", top: "32px", bottom: "0", display: "flex", flexDirection: "column", alignItems: "flex-start", borderRadius: "24px", overflow: "hidden" }}>
+              <div data-lightbox="" role="button" tabIndex={0} style={{ position: "absolute", left: "0", right: "0", top: "32px", bottom: "0", display: "flex", flexDirection: "column", alignItems: "flex-start", borderRadius: "24px", overflow: "hidden", cursor: "zoom-in" }}>
                 <div style={{ alignSelf: "stretch", height: "640px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/ae9cde3cde0b240ebfef76aa376bac50e0a4e978.webp)" }} />
               </div>
             </div>

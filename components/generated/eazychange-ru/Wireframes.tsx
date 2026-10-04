@@ -14,7 +14,7 @@ export default function Wireframes() {
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Итерация 1.0`}</p>
-            <div style={{ alignSelf: "stretch", height: "552px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ alignSelf: "stretch", height: "552px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", cursor: "zoom-in", position: "relative" }}>
               <div style={{ position: "absolute", left: "-43px", right: "-21px", top: "calc(50% + -0.14px)", transform: "translateY(-50%)", aspectRatio: "4096 / 2286", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/67bd9892e132372e22b9b12f20ef9b4c97ff9aa8.webp)" }} />
             </div>
           </div>

@@ -107,7 +107,7 @@ export default function Audit() {
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <VariantGroup initial="491:3291" style={{ alignSelf: "stretch", position: "relative" }}>
-        <div data-variant="491:3291" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden", width: "100%" }}>
+        <div data-variant="491:3291" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden" }}>
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-105px", height: "1828.79px", flexShrink: 0 }}>
             <img src="/a/3efd2dd90f2e7cc226c2240e822836307a330ae0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-18.77%", height: "135.75%", maxWidth: "none" }} />
           </span>
@@ -121,7 +121,7 @@ export default function Audit() {
             <div style={{ position: "absolute", left: "0", right: "-3248px", bottom: "0", display: "flex", flexDirection: "row", gap: "600px", alignItems: "flex-start" }}>
               <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Repeated Solutions`}</p>
-                <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden" }}>
+                <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", cursor: "zoom-in" }}>
                   <div style={{ flex: "1 0 0px", minWidth: "1px", height: "335px", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
                     <img src="/a/fd3e6109c9bd319cf080803e744bdad314a50d7b.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "-0.58%", width: "100.08%", height: "101.13%", maxWidth: "none" }} />
                   </div>
@@ -162,11 +162,18 @@ export default function Audit() {
                 </svg>
               </span>
             </div>
-            <div data-swap-to="491:3290" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-              </span>
-            </div>
+            <VariantGroup initial="360:745917" data-swap-to="491:3290" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <div data-variant="360:745917" data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+              <div data-variant="360:745916" data-lazy data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/36919e57d5ba903d30b6f7baf182d5a7b723d46e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+            </VariantGroup>
           </div>
           <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
@@ -195,7 +202,7 @@ export default function Audit() {
             />
           </div>
         </div>
-        <div data-variant="491:3290" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden", width: "100%" }}>
+        <div data-variant="491:3290" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden" }}>
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-105px", height: "1828.79px", flexShrink: 0 }}>
             <img src="/a/3efd2dd90f2e7cc226c2240e822836307a330ae0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-18.77%", height: "135.75%", maxWidth: "none" }} />
           </span>
@@ -220,7 +227,7 @@ export default function Audit() {
               </div>
               <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Inconsistent Parameters`}</p>
-                <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden" }}>
+                <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", cursor: "zoom-in" }}>
                   <div style={{ width: "476px", height: "335px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
                     <img src="/a/99143e4d72515bc4aa0a9ce07972591834802ba7.png" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "0%", width: "108.27%", height: "173.34%", maxWidth: "none" }} />
                   </div>
@@ -243,18 +250,34 @@ export default function Audit() {
             </div>
           </div>
           <div style={{ position: "absolute", left: "calc(50% + -600px)", top: "calc(50% + 101.5px)", transform: "translateY(-50%)", width: "1200px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-            <div data-swap-to="491:3291" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                  <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                </svg>
-              </span>
-            </div>
-            <div data-swap-to="491:3289" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-              </span>
-            </div>
+            <VariantGroup initial="360:745914" data-swap-to="491:3291" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+              <div data-variant="360:745914" data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+              <div data-variant="360:745912" data-lazy data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/99dbe897739c069e2a5e56f14cd59e7f3cf44e07.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+            </VariantGroup>
+            <VariantGroup initial="360:745917" data-swap-to="491:3289" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <div data-variant="360:745917" data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+              <div data-variant="360:745916" data-lazy data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/36919e57d5ba903d30b6f7baf182d5a7b723d46e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+            </VariantGroup>
           </div>
           <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
@@ -283,7 +306,7 @@ export default function Audit() {
             />
           </div>
         </div>
-        <div data-variant="491:3289" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden", width: "100%" }}>
+        <div data-variant="491:3289" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden" }}>
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-105px", height: "1828.79px", flexShrink: 0 }}>
             <img src="/a/3efd2dd90f2e7cc226c2240e822836307a330ae0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-18.77%", height: "135.75%", maxWidth: "none" }} />
           </span>
@@ -319,7 +342,7 @@ export default function Audit() {
               </div>
               <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
                 <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b", whiteSpace: "nowrap" }}>{`Local Components`}</p>
-                <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden" }}>
+                <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", cursor: "zoom-in" }}>
                   <div style={{ width: "476px", height: "339px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
                     <img src="/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0.09%", top: "0.05%", width: "129.41%", height: "176.11%", maxWidth: "none" }} />
                   </div>
@@ -331,13 +354,22 @@ export default function Audit() {
             </div>
           </div>
           <div style={{ position: "absolute", left: "calc(50% + -600px)", top: "calc(50% + 101.5px)", transform: "translateY(-50%)", width: "1200px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-            <div data-swap-to="491:3290" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                  <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                </svg>
-              </span>
-            </div>
+            <VariantGroup initial="360:745914" data-swap-to="491:3290" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+              <div data-variant="360:745914" data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+              <div data-variant="360:745912" data-lazy data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/99dbe897739c069e2a5e56f14cd59e7f3cf44e07.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+            </VariantGroup>
             <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
                 <img src="/a/a88c73880f5f9a7c3bc773f74b99782abb37d69b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />

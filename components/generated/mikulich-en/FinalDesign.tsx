@@ -40,7 +40,7 @@ export default function FinalDesign() {
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#cdd1d2" }}>{`Final Concept`}</p>
             <p style={{ width: "1050px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#80898c" }}>{`The precisely refined silhouette contour integrated within the initials echoes the surgeon’s meticulous, almost jewelry-like approach to work, reflecting his attention to detail and ability to shape ideal lines of feminine beauty`}</p>
           </div>
-          <div style={{ width: "1024px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#06181e", borderRadius: "24px", overflow: "hidden" }}>
+          <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#06181e", borderRadius: "24px", overflow: "hidden", cursor: "zoom-in" }}>
             <div style={{ width: "976px", height: "403.25px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/c58881612f8b017f319e29743225c4c256aff9c5.webp)" }} />
           </div>
         </div>

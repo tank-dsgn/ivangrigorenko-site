@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "406px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", right: "-905px", top: "0", bottom: "-365px", overflow: "hidden" }}>
+        <div data-parallax="0.84" style={{ position: "absolute", left: "0", right: "-905px", top: "0", bottom: "-365px", overflow: "hidden", transform: "translateY(var(--parallax, 0px))", willChange: "transform" }}>
           <div style={{ position: "absolute", left: "-157px", right: "799.85px", top: "calc(50% + -184.95px)", transform: "translateY(-50%)", aspectRatio: "2693 / 4096", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.webp)" }} />
           <div style={{ position: "absolute", left: "0", right: "905px", top: "0", bottom: "365px", background: "rgba(24, 41, 52, 0.8)" }} />
         </div>
@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Tablet */}
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "453px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", right: "-905px", top: "0", bottom: "-322px", overflow: "hidden" }}>
+        <div data-parallax="0.84" style={{ position: "absolute", left: "0", right: "-905px", top: "0", bottom: "-322px", overflow: "hidden", transform: "translateY(var(--parallax, 0px))", willChange: "transform" }}>
           <div style={{ position: "absolute", left: "-157px", right: "799.85px", top: "calc(50% + -54.74px)", transform: "translateY(-50%)", aspectRatio: "2693 / 4096", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.webp)" }} />
           <div style={{ position: "absolute", left: "0", right: "905px", top: "0", bottom: "335px", background: "rgba(24, 41, 52, 0.8)" }} />
         </div>
@@ -45,7 +45,7 @@ export default function Hero() {
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", overflow: "hidden" }}>
+        <div data-parallax="0.84" style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", overflow: "hidden", transform: "translateY(var(--parallax, 0px))", willChange: "transform" }}>
           <div style={{ position: "absolute", left: "-165px", right: "-39px", top: "calc(50% + 103.25px)", transform: "translateY(-50%)", aspectRatio: "2693 / 4096", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/37c1e534ac6fc7faeccf8d80ac49543e307631e3.webp)" }} />
           <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", background: "rgba(24, 41, 52, 0.8)" }} />
         </div>

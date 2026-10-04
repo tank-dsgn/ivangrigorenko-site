@@ -52,7 +52,7 @@ export default function Flow() {
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Paid features flow diagram`}</p>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px", cursor: "zoom-in" }}>
               <div style={{ width: "910px", height: "575px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
                 <img src="/a/3738c2a4bab17035fe86467e8ea38b5458f88fba.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-0.11%", top: "-0.21%", width: "100.22%", height: "100.59%", maxWidth: "none" }} />
               </div>

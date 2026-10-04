@@ -37,7 +37,7 @@ export default function DesignSystem() {
             </span>
           </div>
         </div>
-        <div style={{ width: "1168px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "16px 16px 16px 16px", background: "#f7f8fa", borderRadius: "24px", overflow: "hidden" }}>
+        <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1168px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "16px 16px 16px 16px", background: "#f7f8fa", borderRadius: "24px", overflow: "hidden", cursor: "zoom-in" }}>
           <div style={{ alignSelf: "stretch", aspectRatio: "4096 / 1327", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e89e1fdfec8f5f169835bdcf4ab8b9861637f10c.webp)" }} />
         </div>
       </div>

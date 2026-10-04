@@ -18,14 +18,14 @@ export default function Design() {
           </div>
         </div>
         <VariantGroup initial="674:82595" style={{ alignSelf: "stretch", position: "relative" }}>
-          <div data-variant="674:82595" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="674:82595" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Тёплый старт`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Персонаж Pot мгновенно вызывает симпатию и снижает барьер перед первым действием`}</p>
               </div>
             </div>
-            <div data-swap-to="674:82594" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="674:82594" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -39,14 +39,14 @@ export default function Design() {
               <img src="/a/2026ad0836de07458436b55ef841cd1db5e6b8cd.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
             </span>
           </div>
-          <div data-variant="674:82594" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="674:82594" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Тёплый старт`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Персонаж Pot мгновенно вызывает симпатию и снижает барьер перед первым действием`}</p>
               </div>
             </div>
-            <div data-swap-to="674:82595" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="674:82595" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -57,12 +57,12 @@ export default function Design() {
           </div>
         </VariantGroup>
         <VariantGroup initial="673:1429182" style={{ alignSelf: "stretch", position: "relative" }}>
-          <div data-variant="673:1429182" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="673:1429182" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
             </div>
-            <div data-swap-to="673:1429181" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429181" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -137,7 +137,7 @@ export default function Design() {
                             </div>
                           </div>
                           <div style={{ width: "240.57px", height: "29.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.36px", justifyContent: "center", alignItems: "center", padding: "4.13px 8.25px 4.13px 8.25px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "9.43px" }}>
-                            <p style={{ fontSize: "10.61px", lineHeight: "11.79px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                            <p style={{ fontSize: "10.61px", lineHeight: "11.79px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                           </div>
                         </div>
                       </div>
@@ -177,12 +177,12 @@ export default function Design() {
               </div>
             </div>
           </div>
-          <div data-variant="673:1429181" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="673:1429181" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
             </div>
-            <div data-swap-to="673:1429182" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429182" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -243,12 +243,12 @@ export default function Design() {
           </div>
         </div>
         <VariantGroup initial="677:161332" style={{ alignSelf: "stretch", position: "relative" }}>
-          <div data-variant="677:161332" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="677:161332" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Личный цифровой сад`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
             </div>
-            <div data-swap-to="677:161331" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161331" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -270,12 +270,12 @@ export default function Design() {
               </span>
             </div>
           </div>
-          <div data-variant="677:161331" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="677:161331" style={{ display: "flex", flexDirection: "column", gap: "20px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Личный цифровой сад`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
             </div>
-            <div data-swap-to="677:161332" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161332" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -295,7 +295,7 @@ export default function Design() {
         </VariantGroup>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
+            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
@@ -388,12 +388,12 @@ export default function Design() {
           </div>
         </div>
         <VariantGroup initial="673:1429182" style={{ alignSelf: "stretch", position: "relative" }}>
-          <div data-variant="673:1429182" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="673:1429182" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
             </div>
-            <div data-swap-to="673:1429181" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429181" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -468,7 +468,7 @@ export default function Design() {
                             </div>
                           </div>
                           <div style={{ width: "240.57px", height: "29.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.36px", justifyContent: "center", alignItems: "center", padding: "4.13px 8.25px 4.13px 8.25px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "9.43px" }}>
-                            <p style={{ fontSize: "10.61px", lineHeight: "11.79px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                            <p style={{ fontSize: "10.61px", lineHeight: "11.79px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                           </div>
                         </div>
                       </div>
@@ -508,12 +508,12 @@ export default function Design() {
               </div>
             </div>
           </div>
-          <div data-variant="673:1429181" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="673:1429181" style={{ display: "flex", flexDirection: "column", gap: "20px", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
             </div>
-            <div data-swap-to="673:1429182" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429182" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -596,12 +596,12 @@ export default function Design() {
           </div>
         </div>
         <VariantGroup initial="677:161332" style={{ alignSelf: "stretch", position: "relative" }}>
-          <div data-variant="677:161332" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="677:161332" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Личный цифровой сад`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
             </div>
-            <div data-swap-to="677:161331" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161331" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -623,12 +623,12 @@ export default function Design() {
               </span>
             </div>
           </div>
-          <div data-variant="677:161331" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%" }}>
+          <div data-variant="677:161331" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 20px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Личный цифровой сад`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
             </div>
-            <div data-swap-to="677:161332" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161332" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -648,7 +648,7 @@ export default function Design() {
         </VariantGroup>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "32px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 0", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
+            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflow: "hidden" }}>
@@ -756,7 +756,7 @@ export default function Design() {
           </div>
         </div>
         <VariantGroup initial="366:857902" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, position: "relative" }}>
-          <div data-variant="366:857902" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="366:857902" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
               <div style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
                 <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
@@ -826,7 +826,7 @@ export default function Design() {
                                 </div>
                               </div>
                               <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign Up`}</p>
+                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign Up`}</a></p>
                               </div>
                             </div>
                           </div>
@@ -920,7 +920,7 @@ export default function Design() {
                                 <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
                               </div>
                               <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Send`}</p>
+                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Send`}</a></p>
                               </div>
                             </div>
                           </div>
@@ -1006,7 +1006,7 @@ export default function Design() {
                             </div>
                           </div>
                           <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "3.78px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                            <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                            <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                           </div>
                         </div>
                         <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
@@ -1103,7 +1103,7 @@ export default function Design() {
                                 </div>
                               </div>
                               <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                               </div>
                             </div>
                           </div>
@@ -1151,11 +1151,18 @@ export default function Design() {
                     </svg>
                   </span>
                 </div>
-                <div data-swap-to="366:860910" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                    <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                  </span>
-                </div>
+                <VariantGroup initial="394:67613" data-swap-to="366:860910" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                  <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                      <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                  <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                      <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                </VariantGroup>
               </div>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
@@ -1181,19 +1188,31 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <div data-swap-to="368:883595" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#cdf4dc", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                <img
-                  src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
-                />
-              </div>
+              <VariantGroup initial="366:858210" data-swap-to="368:883595" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                  <img
+                    src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
+                  />
+                </div>
+                <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
+                  <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
+                    <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
+                      <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                    <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
+                      <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                </div>
+              </VariantGroup>
             </div>
           </div>
-          <div data-variant="368:883595" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="368:883595" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
               <div style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
                 <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
@@ -1263,7 +1282,7 @@ export default function Design() {
                                 </div>
                               </div>
                               <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign up`}</p>
+                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign up`}</a></p>
                               </div>
                             </div>
                           </div>
@@ -1352,7 +1371,7 @@ export default function Design() {
                               <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.17px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
                             </div>
                             <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                              <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Send`}</p>
+                              <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Send`}</a></p>
                             </div>
                           </div>
                         </div>
@@ -1437,7 +1456,7 @@ export default function Design() {
                             </div>
                           </div>
                           <div style={{ width: "256.87px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "3.78px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                            <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                            <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                           </div>
                         </div>
                         <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277.02px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
@@ -1489,11 +1508,18 @@ export default function Design() {
                     </svg>
                   </span>
                 </div>
-                <div data-swap-to="368:883720" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                    <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                  </span>
-                </div>
+                <VariantGroup initial="394:67613" data-swap-to="368:883720" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                  <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                      <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                  <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                      <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                </VariantGroup>
               </div>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
@@ -1501,16 +1527,23 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <div data-swap-to="366:857902" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                <img
-                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                />
-              </div>
+              <VariantGroup initial="366:858211" data-swap-to="366:857902" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="366:858211" data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                  <img
+                    src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                  />
+                </div>
+                <div data-variant="366:858208" data-lazy data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", boxShadow: "0 0 0 1px #00ec67", width: "100%", height: "100%" }}>
+                  <span style={{ position: "absolute", left: "20px", right: "2px", top: "2px", bottom: "2px" }}>
+                    <img src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                  </span>
+                </div>
+              </VariantGroup>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
               <img
@@ -1531,7 +1564,7 @@ export default function Design() {
               />
             </div>
           </div>
-          <div data-variant="366:860910" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="366:860910" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ position: "absolute", left: "calc(50% + -592px)", bottom: "108px", width: "1184px", height: "634px" }}>
               <div style={{ position: "absolute", right: "-1522px", top: "1px", bottom: "4px", width: "2626px" }}>
                 <span style={{ position: "absolute", left: "-0.5px", top: "-1px", width: "1024px", height: "630px" }}>
@@ -1646,7 +1679,7 @@ export default function Design() {
                                 <img src="/a/b0215260526f405fa426679e574ba425bd27f7fa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
                               </span>
                             </div>
-                            <p style={{ fontSize: "6.75px", lineHeight: "8.73px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#1c1917", whiteSpace: "nowrap" }}>{`Continue with Apple`}</p>
+                            <p style={{ fontSize: "6.75px", lineHeight: "8.73px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#1c1917", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Apple`}</a></p>
                           </div>
                           <div style={{ width: "257.02px", height: "31.5px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", background: "#d6d3d1", borderRadius: "7.56px" }}>
                             <div style={{ width: "15.12px", height: "15.12px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
@@ -1654,7 +1687,7 @@ export default function Design() {
                                 <img src="/a/64dd1aae2d67cf459702a6331a2abef178b34839.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
                               </span>
                             </div>
-                            <p style={{ fontSize: "6.75px", lineHeight: "8.73px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#1c1917", whiteSpace: "nowrap" }}>{`Continue with Email`}</p>
+                            <p style={{ fontSize: "6.75px", lineHeight: "8.73px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#1c1917", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Email`}</a></p>
                           </div>
                         </div>
                         <p style={{ position: "absolute", left: "10.08px", top: "545.54px", width: "257.02px", fontSize: "10.71px", lineHeight: "13.86px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c", whiteSpace: "pre-line" }}>{`By continuing to use Pot, `}{"\n"}{`you agree to the `}<span style={{ fontWeight: 590, color: "#57534e" }}>{`Term of Use`}</span>{` and `}<span style={{ fontWeight: 590, color: "#57534e" }}>{`Privacy Policy`}</span></p>
@@ -1731,7 +1764,7 @@ export default function Design() {
                                 </div>
                               </div>
                               <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                               </div>
                             </div>
                           </div>
@@ -1772,13 +1805,22 @@ export default function Design() {
                 </div>
               </div>
               <div style={{ position: "absolute", left: "0", right: "0", top: "calc(50% + -2px)", transform: "translateY(-50%)", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <div data-swap-to="366:857902" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
+                <VariantGroup initial="394:67621" data-swap-to="366:857902" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+                  <div data-variant="394:67621" data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                        <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div data-variant="394:67623" data-lazy data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                        <image href="/a/f3f97e1ca49cbfc42858d32d0ff747922591be4a.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                      </svg>
+                    </span>
+                  </div>
+                </VariantGroup>
                 <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
                   <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                     <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
@@ -1811,19 +1853,31 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <div data-swap-to="368:883720" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#cdf4dc", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                <img
-                  src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
-                />
-              </div>
+              <VariantGroup initial="366:858210" data-swap-to="368:883720" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                  <img
+                    src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
+                  />
+                </div>
+                <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
+                  <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
+                    <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
+                      <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                    <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
+                      <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                </div>
+              </VariantGroup>
             </div>
           </div>
-          <div data-variant="368:883720" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="368:883720" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ position: "absolute", left: "calc(50% + -592px)", bottom: "108px", width: "1184px", height: "634px" }}>
               <div style={{ position: "absolute", right: "-1522px", top: "1px", bottom: "4px", width: "2626px" }}>
                 <span style={{ position: "absolute", left: "-0.5px", top: "-1px", width: "1024px", height: "630px" }}>
@@ -1938,7 +1992,7 @@ export default function Design() {
                                 <img src="/a/b0215260526f405fa426679e574ba425bd27f7fa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
                               </span>
                             </div>
-                            <p style={{ fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}>{`Continue with Apple`}</p>
+                            <p style={{ fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Apple`}</a></p>
                           </div>
                           <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", background: "#292524", borderRadius: "7.55px" }}>
                             <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
@@ -1946,7 +2000,7 @@ export default function Design() {
                                 <img src="/a/64dd1aae2d67cf459702a6331a2abef178b34839.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
                               </span>
                             </div>
-                            <p style={{ fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}>{`Continue with Email`}</p>
+                            <p style={{ fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Email`}</a></p>
                           </div>
                         </div>
                         <p style={{ position: "absolute", left: "10.07px", top: "545.19px", width: "256.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#d6d3d1", whiteSpace: "pre-line" }}>{`By continuing to use Pot, `}{"\n"}{`you agree to the `}<span style={{ fontWeight: 590, color: "#e7e5e4" }}>{`Term of Use`}</span>{` and `}<span style={{ fontWeight: 590, color: "#e7e5e4" }}>{`Privacy Policy`}</span></p>
@@ -2023,7 +2077,7 @@ export default function Design() {
                                 </div>
                               </div>
                               <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}>{`Sign In`}</p>
+                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
                               </div>
                             </div>
                           </div>
@@ -2064,13 +2118,22 @@ export default function Design() {
                 </div>
               </div>
               <div style={{ position: "absolute", left: "0", right: "0", top: "calc(50% + -2px)", transform: "translateY(-50%)", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <div data-swap-to="368:883595" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
+                <VariantGroup initial="394:67621" data-swap-to="368:883595" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+                  <div data-variant="394:67621" data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                        <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div data-variant="394:67623" data-lazy data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                        <image href="/a/f3f97e1ca49cbfc42858d32d0ff747922591be4a.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                      </svg>
+                    </span>
+                  </div>
+                </VariantGroup>
                 <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
                   <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                     <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
@@ -2085,16 +2148,23 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <div data-swap-to="366:860910" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                <img
-                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                />
-              </div>
+              <VariantGroup initial="366:858211" data-swap-to="366:860910" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="366:858211" data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                  <img
+                    src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                  />
+                </div>
+                <div data-variant="366:858208" data-lazy data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", boxShadow: "0 0 0 1px #00ec67", width: "100%", height: "100%" }}>
+                  <span style={{ position: "absolute", left: "20px", right: "2px", top: "2px", bottom: "2px" }}>
+                    <img src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                  </span>
+                </div>
+              </VariantGroup>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
               <img
@@ -2117,7 +2187,7 @@ export default function Design() {
           </div>
         </VariantGroup>
         <VariantGroup initial="378:70122" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, position: "relative" }}>
-          <div data-variant="378:70122" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="378:70122" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
               <div style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
                 <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
@@ -2143,11 +2213,18 @@ export default function Design() {
                     </svg>
                   </span>
                 </div>
-                <div data-swap-to="378:70121" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                    <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                  </span>
-                </div>
+                <VariantGroup initial="394:67613" data-swap-to="378:70121" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                  <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                      <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                  <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                      <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                </VariantGroup>
               </div>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
@@ -2175,7 +2252,7 @@ export default function Design() {
               </div>
             </div>
           </div>
-          <div data-variant="378:70121" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="378:70121" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
               <div style={{ position: "absolute", right: "-1529px", top: "1px", width: "2628px", height: "629px" }}>
                 <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
@@ -2194,13 +2271,22 @@ export default function Design() {
                 </div>
               </div>
               <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <div data-swap-to="378:70122" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
+                <VariantGroup initial="394:67621" data-swap-to="378:70122" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+                  <div data-variant="394:67621" data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                        <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div data-variant="394:67623" data-lazy data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                        <image href="/a/f3f97e1ca49cbfc42858d32d0ff747922591be4a.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                      </svg>
+                    </span>
+                  </div>
+                </VariantGroup>
                 <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
                   <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                     <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
@@ -2275,46 +2361,65 @@ export default function Design() {
           </div>
         </div>
         <VariantGroup initial="374:12637" style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, position: "relative" }}>
-          <div data-variant="374:12638" style={{ display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="374:12638" style={{ display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
               <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                   <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Личный цифровой сад`}</p>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
                 </div>
-                <div data-swap-to="374:12637" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                  <img
-                    src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                  />
-                </div>
+                <VariantGroup initial="366:858211" data-swap-to="374:12637" data-swap-ms="0" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                  <div data-variant="366:858211" data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                    <img
+                      src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                    />
+                  </div>
+                  <div data-variant="366:858208" data-lazy data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", boxShadow: "0 0 0 1px #00ec67", width: "100%", height: "100%" }}>
+                    <span style={{ position: "absolute", left: "20px", right: "2px", top: "2px", bottom: "2px" }}>
+                      <img src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                  </div>
+                </VariantGroup>
               </div>
               <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/bd19a7b244b58e216e793d6c627c7c0e41f7b875.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
               </span>
             </div>
           </div>
-          <div data-variant="374:12637" style={{ display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", width: "100%", height: "100%" }}>
+          <div data-variant="374:12637" style={{ display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
             <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
               <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                   <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Личный цифровой сад`}</p>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
                 </div>
-                <div data-swap-to="374:12638" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#cdf4dc", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                  <img
-                    src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
-                  />
-                </div>
+                <VariantGroup initial="366:858210" data-swap-to="374:12638" data-swap-ms="0" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                  <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                    <img
+                      src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                      decoding="async"
+                      style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
+                    />
+                  </div>
+                  <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
+                    <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
+                      <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
+                        <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                      </span>
+                      <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
+                        <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                      </span>
+                    </div>
+                  </div>
+                </VariantGroup>
               </div>
               <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/765b05f532cd90723731b0d9f80a748e92d61370.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
@@ -2325,7 +2430,7 @@ export default function Design() {
         <div style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
             <div style={{ width: "1024px", height: "68px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
+              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
             </div>
             <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>

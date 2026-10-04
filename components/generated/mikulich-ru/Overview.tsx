@@ -1,6 +1,8 @@
 // Секция «Overview» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs mikulich-ru --sections
 
+import VariantGroup from "@/components/VariantGroup";
+
 export default function Overview() {
   return (
     <>
@@ -36,10 +38,19 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-            <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "block", alignSelf: "stretch", position: "relative" }}>
+        <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
+          <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+              </div>
           </div>
+          <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+              </div>
+          </div>
+        </VariantGroup>
         </a>
       </div>
       </div>
@@ -75,10 +86,19 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-            <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "block", alignSelf: "stretch", position: "relative" }}>
+        <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
+          <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+              </div>
           </div>
+          <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+              </div>
+          </div>
+        </VariantGroup>
         </a>
       </div>
       </div>
@@ -111,10 +131,19 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+          <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "relative" }}>
+          <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
+            <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+                <div style={{ display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
+                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+                </div>
             </div>
+            <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+                <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Смотреть в контексте`}</p>
+                </div>
+            </div>
+          </VariantGroup>
           </a>
         </div>
       </div>

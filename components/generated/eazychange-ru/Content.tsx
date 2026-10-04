@@ -886,13 +886,13 @@ export default function Content() {
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", overflow: "hidden", position: "relative" }}>
-        <img
+        <img data-parallax="0.5"
           src="/a/4193c8d1926b98c05d1201591e32544c43950ea5.webp"
           alt=""
           aria-hidden="true"
           loading="lazy"
           decoding="async"
-          style={{ position: "absolute", left: "calc(50% + -1022px)", top: "calc(50% + -550px)", width: "2044px", height: "1022px", flexShrink: 0 }}
+          style={{ position: "absolute", left: "calc(50% + -1022px)", top: "calc(50% + -550px)", width: "2044px", height: "1022px", flexShrink: 0, transform: "translateY(var(--parallax, 0px))" }}
         />
         <div style={{ flex: "1 0 0px", minHeight: "1px", alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
         <div style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + 0.5px)", transform: "translateX(-50%) translateY(-50%)", display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>

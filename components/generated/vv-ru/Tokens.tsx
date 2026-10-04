@@ -107,7 +107,7 @@ export default function Tokens() {
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <VariantGroup initial="564:81269" style={{ alignSelf: "stretch", position: "relative" }}>
-        <div data-variant="564:81269" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden", width: "100%" }}>
+        <div data-variant="564:81269" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden" }}>
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-189px", height: "1237.79px", flexShrink: 0 }}>
             <img src="/a/da025241b9a731e65097a4ba61bad2470b6a0312.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-27.74%", height: "152.82%", maxWidth: "none" }} />
           </span>
@@ -119,7 +119,7 @@ export default function Tokens() {
               </div>
             </div>
             <div style={{ position: "absolute", left: "0", right: "-3248px", bottom: "-11.5px", height: "610px", display: "flex", flexDirection: "row", gap: "600px", alignItems: "flex-start" }}>
-              <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+              <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", cursor: "zoom-in" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`типографика`}</p>
                 <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                   <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
@@ -186,11 +186,18 @@ export default function Tokens() {
                 </svg>
               </span>
             </div>
-            <div data-swap-to="564:81267" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-              </span>
-            </div>
+            <VariantGroup initial="360:745917" data-swap-to="564:81267" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <div data-variant="360:745917" data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+              <div data-variant="360:745916" data-lazy data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/36919e57d5ba903d30b6f7baf182d5a7b723d46e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+            </VariantGroup>
           </div>
           <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
@@ -219,7 +226,7 @@ export default function Tokens() {
             />
           </div>
         </div>
-        <div data-variant="564:81267" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden", width: "100%" }}>
+        <div data-variant="564:81267" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden" }}>
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-189px", height: "1237.79px", flexShrink: 0 }}>
             <img src="/a/da025241b9a731e65097a4ba61bad2470b6a0312.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-27.74%", height: "152.82%", maxWidth: "none" }} />
           </span>
@@ -250,7 +257,7 @@ export default function Tokens() {
                   </div>
                 </div>
               </div>
-              <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+              <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", cursor: "zoom-in" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`Цвета`}</p>
                 <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                   <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
@@ -291,18 +298,34 @@ export default function Tokens() {
             </div>
           </div>
           <div style={{ position: "absolute", left: "calc(50% + -600px)", top: "calc(50% + 105.5px)", transform: "translateY(-50%)", width: "1200px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-            <div data-swap-to="564:81269" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                  <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                </svg>
-              </span>
-            </div>
-            <div data-swap-to="564:81268" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-              </span>
-            </div>
+            <VariantGroup initial="360:745914" data-swap-to="564:81269" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+              <div data-variant="360:745914" data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+              <div data-variant="360:745912" data-lazy data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/99dbe897739c069e2a5e56f14cd59e7f3cf44e07.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+            </VariantGroup>
+            <VariantGroup initial="360:745917" data-swap-to="564:81268" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <div data-variant="360:745917" data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+              <div data-variant="360:745916" data-lazy data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <img src="/a/36919e57d5ba903d30b6f7baf182d5a7b723d46e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                </span>
+              </div>
+            </VariantGroup>
           </div>
           <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
@@ -331,7 +354,7 @@ export default function Tokens() {
             />
           </div>
         </div>
-        <div data-variant="564:81268" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden", width: "100%" }}>
+        <div data-variant="564:81268" style={{ display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "120px 160px 120px 160px", background: "#ffffff", overflow: "hidden" }}>
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-189px", height: "1237.79px", flexShrink: 0 }}>
             <img src="/a/da025241b9a731e65097a4ba61bad2470b6a0312.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-27.74%", height: "152.82%", maxWidth: "none" }} />
           </span>
@@ -381,7 +404,7 @@ export default function Tokens() {
                   </div>
                 </div>
               </div>
-              <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+              <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", cursor: "zoom-in" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`размеры`}</p>
                 <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                   <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
@@ -403,13 +426,22 @@ export default function Tokens() {
             </div>
           </div>
           <div style={{ position: "absolute", left: "calc(50% + -600px)", top: "calc(50% + 105.5px)", transform: "translateY(-50%)", width: "1200px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-            <div data-swap-to="564:81267" style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-              <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                  <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                </svg>
-              </span>
-            </div>
+            <VariantGroup initial="360:745914" data-swap-to="564:81267" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
+              <div data-variant="360:745914" data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+              <div data-variant="360:745912" data-lazy data-hover-to="360:745912" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/99dbe897739c069e2a5e56f14cd59e7f3cf44e07.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+            </VariantGroup>
             <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
               <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
                 <img src="/a/a88c73880f5f9a7c3bc773f74b99782abb37d69b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />

@@ -186,7 +186,7 @@ async function main() {
   };
 
   const doc = await loadPage(slug, arg("--json"), rest.includes("--fetch"));
-  const { nodeById, assets, roots, fonts } = doc;
+  const { nodeById, assets, roots, fonts, guidToUrl } = doc;
   const page = nodeById[roots[0]];
   const { resolve: resolveTree, resolveVariant } = createResolver(doc);
 
@@ -198,6 +198,7 @@ async function main() {
   const { emit, usedAssets, usedLinks, usedFonts } = createEmitter({
     assets,
     fonts,
+    guidToUrl,
     assetMap,
     linkByName: linkMapByName(nodeById),
     cardTargets: overrides.cards,

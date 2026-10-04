@@ -20,12 +20,15 @@ function firstText(node, depth = 0) {
   return null;
 }
 
-function linkOf(node, linkByName) {
+function linkOf(node, linkByName, guidToUrl = {}) {
   // своя интеракция узла точнее: в ней уже учтены переопределения инстанса
   for (const i of node.interactions || []) {
     if (i.event?.interactionType !== "ON_CLICK") continue;
     for (const a of i.actions || []) {
-      const href = a.connectionURL;
+      const t = a.transitionNodeID;
+      const href =
+        a.connectionURL ||
+        (a.navigationType === "NAVIGATE" && t ? guidToUrl[`${t.sessionID}:${t.localID}`] : null);
       if (!href) continue;
       return { href, newTab: Boolean(a.openUrlInNewTab), internal: href.startsWith("/") };
     }
@@ -77,6 +80,7 @@ export function createEmitter({
   lang = "ru",
   nodeById = {},
   fonts = {},
+  guidToUrl = {},
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -85,28 +89,38 @@ export function createEmitter({
   const nodeId = (ref) =>
     ref && typeof ref === "object" ? `${ref.sessionID}:${ref.localID}` : ref;
 
-  /** Цель клика-переключения состояния у самого узла */
-  function swapTarget(node) {
+  /**
+   * Переключение состояния у самого узла: клик (карусель, тумблер темы)
+   * или наведение (кнопка, карточка). Возвращает цель и длительность перехода.
+   */
+  function swapOf(node, event) {
     for (const i of node.interactions || []) {
-      if (i.event?.interactionType !== "ON_CLICK") continue;
+      if (i.event?.interactionType !== event) continue;
       for (const a of i.actions || []) {
-        if (a.navigationType === "SWAP_STATE" && a.transitionNodeID) return nodeId(a.transitionNodeID);
+        if (a.navigationType !== "SWAP_STATE" || !a.transitionNodeID) continue;
+        // без типа перехода и с INSTANT_TRANSITION состояние меняется мгновенно
+        const animated = a.transitionType && a.transitionType !== "INSTANT_TRANSITION";
+        return { to: nodeId(a.transitionNodeID), ms: animated ? Math.round((a.transitionDuration || 0) * 1000) : 0 };
       }
     }
     return null;
   }
 
-  /** Есть ли в поддереве клик, переключающий на один из вариантов набора */
-  function hasSwapInto(node, targets, depth = 0) {
-    if (!node || depth > 40) return false;
-    const t = swapTarget(node);
-    if (t && targets.has(t)) return true;
-    return (node.children || []).some((c) => hasSwapInto(c, targets, depth + 1));
+  /** Все переключения в поддереве, ведущие в варианты набора */
+  function swapsInto(node, targets, out = [], depth = 0) {
+    if (!node || depth > 40 || node.visible === false) return out;
+    for (const event of ["ON_CLICK", "ON_HOVER"]) {
+      const sw = swapOf(node, event);
+      if (sw && targets.has(sw.to)) out.push({ ...sw, event });
+    }
+    for (const c of node.children || []) swapsInto(c, targets, out, depth + 1);
+    return out;
   }
 
   /**
-   * Инстанс, у мастера которого есть варианты с переключением по клику, —
-   * это интерактивная секция: карусель или тумблер темы.
+   * Инстанс, у которого есть варианты с переключением, — интерактивный блок:
+   * карусель, тумблер темы, кнопка с состоянием наведения.
+   * Берём только те варианты, до которых можно дойти из исходного.
    */
   function variantGroup(node) {
     if (node.type !== "INSTANCE" || !node.mainComponentId) return null;
@@ -115,15 +129,35 @@ export function createEmitter({
     const ids = set?.children || [];
     if (ids.length < 2) return null;
     const targets = new Set(ids);
+
     // каждый вариант разворачиваем как этот же инстанс: так на него ложатся
     // те же переопределения (перевод текста, размеры под брейкпоинт)
+    const trees = new Map();
+    const tree = (id) => {
+      if (!trees.has(id)) trees.set(id, id === node.mainComponentId ? node : resolveVariant(node, id));
+      return trees.get(id);
+    };
+    const reach = (events) => {
+      const seen = new Set([node.mainComponentId]);
+      const queue = [node.mainComponentId];
+      while (queue.length) {
+        const t = tree(queue.shift());
+        if (!t) continue;
+        for (const sw of swapsInto(t, targets)) {
+          if (!events.includes(sw.event) || seen.has(sw.to)) continue;
+          seen.add(sw.to);
+          queue.push(sw.to);
+        }
+      }
+      return seen;
+    };
+    // до варианта, куда ведёт только наведение, очередь доходит не сразу —
+    // его можно не рисовать, пока у пользователя нет мыши
+    const byClick = reach(["ON_CLICK"]);
     const variants = ids
-      .map((id) => {
-        const tree = id === node.mainComponentId ? node : resolveVariant(node, id);
-        return tree ? { id, tree } : null;
-      })
-      .filter(Boolean);
-    if (!variants.some((v) => hasSwapInto(v.tree, targets))) return null;
+      .filter((id) => reach(["ON_CLICK", "ON_HOVER"]).has(id) && tree(id))
+      .map((id) => ({ id, tree: tree(id), info: { hoverOnly: !byClick.has(id) } }));
+    if (variants.length < 2) return null;
     return { variants, initial: node.mainComponentId, targets };
   }
   // В макете одна и та же подпись встречается в разном регистре
@@ -152,7 +186,9 @@ export function createEmitter({
    * Возвращает JSX и признак «внутри есть список» — тогда узел должен быть <div>.
    */
   function textBody(node, pad) {
-    const chars = (node.characters || "").replace(/\u00a0/g, " ");
+    // Оригинал сохраняет двойные пробелы из макета, а HTML их схлопывает —
+    // второй и следующие пробелы делаем неразрывными.
+    const chars = (node.characters || "").replace(/ {2,}/g, (m) => " " + "\u00a0".repeat(m.length - 1));
     const ids = node.characterStyleOverrides || [];
     const table = node.styleOverrideTable || {};
     usedFonts.add(fontKey(node.style));
@@ -207,6 +243,16 @@ export function createEmitter({
       if (!isList(i + 1)) out += `${inner}</ul>\n`;
     }
     return { body: `\n${out}${pad}`, list: true, multiline: false };
+  }
+
+  /** Атрибуты узла-переключателя: куда ведёт клик и наведение */
+  function triggers(node, targets) {
+    let out = "";
+    const click = swapOf(node, "ON_CLICK");
+    if (click && targets.has(click.to)) out += ` data-swap-to=${JSON.stringify(click.to)} data-swap-ms="${click.ms}"`;
+    const hover = swapOf(node, "ON_HOVER");
+    if (hover && targets.has(hover.to)) out += ` data-hover-to=${JSON.stringify(hover.to)} data-hover-ms="${hover.ms}"`;
+    return out;
   }
 
   /** Положение и размер узла в родителе */
@@ -279,39 +325,86 @@ export function createEmitter({
     const angle = rotation(node);
     if (angle) style.transform = [style.transform, `rotate(${angle}deg)`].filter(Boolean).join(" ");
 
-    // Интерактивная секция: выводим все её состояния слоями
-    const group = swapTargets ? null : variantGroup(node);
-    if (group) {
+    // Ссылка узла. Карточка «Смотрите также» ведёт на проект из своей подписи:
+    // в оригинале на части страниц подпись заменена, а ссылка осталась от
+    // мастер-компонента и ведёт не туда — поэтому адрес берём по подписи.
+    // Вложенные ссылки недопустимы: внутри <a> детей не оборачиваем.
+    let link = insideLink ? null : linkOf(node, linkByName, guidToUrl);
+    if (!insideLink && node.name === "Card-projects-small") {
+      const slug = cardMap[(firstText(node) || "").toLowerCase()];
+      if (slug) link = { href: `/${slug}-${lang}`, internal: true, newTab: false };
+    }
+    const linkTag = link ? (link.internal ? "Link" : "a") : null;
+    const linkAttrs = link
+      ? `href=${JSON.stringify(link.href)}${!link.internal && link.newTab ? ' target="_blank" rel="noopener noreferrer"' : ""}`
+      : "";
+    if (link) usedLinks.add(link.href);
+
+    // Интерактивный блок: выводим его состояния слоями
+    const enclosing = swapTargets || new Set();
+    const group = variantGroup(node);
+    if (group && ![...group.targets].some((t) => enclosing.has(t))) {
       usedVariants = true;
       const box = place(node, parent);
       if (!box.position) box.position = "relative";
+      if (node.pull) box[node.pull.axis === "VERTICAL" ? "marginTop" : "marginLeft"] = px(node.pull.value);
+      if (style.transform) box.transform = style.transform; // поворот: стрелка «назад» — повёрнутая «вперёд»
+      if (style.opacity != null) box.opacity = style.opacity;
+      // сам блок может переключать состояние блока снаружи: стрелка карусели —
+      // это кнопка со своим состоянием наведения
+      const outer = triggers(node, enclosing);
+      if (outer.includes("data-swap-to")) box.cursor = "pointer";
+      const inner = new Set([...enclosing, ...group.targets]);
       const panels = group.variants
-        .map(({ id, tree: v }) => {
-          // панель занимает коробку секции; положение (в потоке или поверх) ставит VariantGroup
+        .map(({ id, tree: v, info }) => {
+          // панель занимает коробку блока; положение (в потоке или поверх) ставит VariantGroup
           const fixed = sizing(v, parent);
-          const vs = { ...frameStyle(v, assets, assetMap), width: "100%", height: fixed.height ? "100%" : undefined };
+          const vs = { ...frameStyle(v, assets, assetMap), width: fixed.width || box.left !== undefined ? "100%" : undefined, height: fixed.height ? "100%" : undefined };
           const kids = (v.children || [])
             .filter((c) => c.visible !== false)
-            .map((c) => emit(c, v, depth + 2, insideLink, group.targets))
+            .map((c) => emit(c, v, depth + 2 + (link ? 1 : 0), insideLink || Boolean(link), inner))
             .join("");
           return (
-            `${pad}${indentUnit}<div data-variant=${JSON.stringify(id)} style=${styleLiteral(vs)}>\n` +
+            `${pad}${indentUnit}<div data-variant=${JSON.stringify(id)}${info.hoverOnly ? " data-lazy" : ""}${triggers(v, group.targets)} style=${styleLiteral(vs)}>\n` +
             kids +
             `${pad}${indentUnit}</div>\n`
           );
         })
         .join("");
+      if (link) {
+        // блок-ссылка: коробку держит ссылка, состояния — внутри неё
+        const fill = { position: "relative", width: "100%", height: box.height ? "100%" : undefined };
+        return (
+          `${pad}<${linkTag} ${linkAttrs}${outer} style=${styleLiteral({ display: "block", ...box })}>\n` +
+          `${pad}<VariantGroup initial=${JSON.stringify(group.initial)} style=${styleLiteral(fill)}>\n` +
+          panels +
+          `${pad}</VariantGroup>\n` +
+          `${pad}</${linkTag}>\n`
+        );
+      }
       return (
-        `${pad}<VariantGroup initial=${JSON.stringify(group.initial)} style=${styleLiteral(box)}>\n` +
+        `${pad}<VariantGroup initial=${JSON.stringify(group.initial)}${outer} style=${styleLiteral(box)}>\n` +
         panels +
         `${pad}</VariantGroup>\n`
       );
     }
 
-    // Узел, клик по которому переключает состояние секции
-    const swapTo = swapTargets ? swapTarget(node) : null;
-    const swapAttr = swapTo && swapTargets.has(swapTo) ? ` data-swap-to=${JSON.stringify(swapTo)}` : "";
-    if (swapAttr) style.cursor = "pointer";
+    // Узел, который переключает состояние блока кликом или наведением
+    let attrs = swapTargets ? triggers(node, swapTargets) : "";
+    if (attrs.includes("data-swap-to")) style.cursor = "pointer";
+
+    // Поведение из макета: параллакс при прокрутке и увеличение по клику
+    const parallax = node.behaviors?.scrollParallax;
+    if (parallax && parallax.axis === "VERTICAL" && parallax.speed != null) {
+      attrs += ` data-parallax="${Math.round((1 - parallax.speed) * 1e4) / 1e4}"`;
+      style.transform = [style.transform, "translateY(var(--parallax, 0px))"].filter(Boolean).join(" ");
+      style.willChange = "transform";
+    }
+    if ((node.behaviors?.code || []).length && !insideLink && !link) {
+      attrs += ` data-lightbox="" role="button" tabIndex={0}`;
+      style.cursor = "zoom-in";
+    }
+    const swapAttr = attrs;
 
     // Картинка или сгенерированный из Figma SVG — отдельный тег <img>
     const asset = nodeAsset(node, assets);
@@ -391,6 +484,11 @@ export function createEmitter({
       else if (node.textAutoResize === "WIDTH_AND_HEIGHT") style.whiteSpace = multiline ? "pre" : "nowrap";
       else if (multiline) style.whiteSpace = "pre-line";
       const tag = list ? "div" : tagFor(node);
+      if (link) {
+        // текст-ссылка: ссылка внутри, чтобы тег текста (заголовок, абзац) сохранился
+        const s = styleLiteral(style);
+        return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}><${linkTag} ${linkAttrs}>${body}</${linkTag}></${tag}>\n`;
+      }
       const s = styleLiteral(style);
       return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>${body}</${tag}>\n`;
     }
@@ -420,15 +518,6 @@ export function createEmitter({
     );
     if (hasAbsoluteKid && !style.position) style.position = "relative";
 
-    // вложенные ссылки недопустимы — если мы уже внутри <a>, детей не оборачиваем
-    let link = insideLink ? null : linkOf(node, linkByName);
-    if (!insideLink && node.name === "Card-projects-small") {
-      // Карточка «Смотрите также» ведёт на проект из своей подписи. В оригинале
-      // на части страниц подпись заменена, а ссылка осталась от мастер-компонента
-      // и ведёт не туда — поэтому адрес берём по подписи.
-      const slug = cardMap[(firstText(node) || "").toLowerCase()];
-      if (slug) link = { href: `/${slug}-${lang}`, internal: true, newTab: false };
-    }
     // Отрицательный зазор (элементы внахлёст) в CSS gap не выразить — сдвигаем
     // каждого следующего ребёнка отрицательным отступом.
     const overlap = node.layoutMode && node.itemSpacing < 0 && node.primaryAxisAlignItems !== "SPACE_BETWEEN" ? node.itemSpacing : 0;
@@ -445,13 +534,8 @@ export function createEmitter({
     const s = styleLiteral(style);
 
     if (link) {
-      usedLinks.add(link.href);
-      const attrs = link.internal
-        ? `href=${JSON.stringify(link.href)}`
-        : `href=${JSON.stringify(link.href)}${link.newTab ? ' target="_blank" rel="noopener noreferrer"' : ""}`;
-      const tagName = link.internal ? "Link" : "a";
-      if (!kids) return `${pad}<${tagName} ${attrs}${s ? ` style=${s}` : ""} />\n`;
-      return `${pad}<${tagName} ${attrs}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tagName}>\n`;
+      if (!kids) return `${pad}<${linkTag} ${linkAttrs}${swapAttr}${s ? ` style=${s}` : ""} />\n`;
+      return `${pad}<${linkTag} ${linkAttrs}${swapAttr}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${linkTag}>\n`;
     }
 
     const tag = tagFor(node);

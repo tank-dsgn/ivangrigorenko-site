@@ -58,7 +58,7 @@ export default function Research() {
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Insights`}</p>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24.53px 24.53px 24.53px 24.53px", background: "#edf4fa", borderRadius: "24.53px", overflow: "hidden" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "24.53px 24.53px 24.53px 24.53px", background: "#edf4fa", borderRadius: "24.53px", overflow: "hidden", cursor: "zoom-in" }}>
               <div style={{ width: "974.95px", height: "634.6px", flexShrink: 0, borderRadius: "12.57px", position: "relative", overflow: "hidden" }}>
                 <img src="/a/2f8acd5bce24d6ac4f77c7db7404bd2300b65fec.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.33%", top: "-14.6%", width: "104.73%", height: "114.36%", maxWidth: "none" }} />
               </div>
