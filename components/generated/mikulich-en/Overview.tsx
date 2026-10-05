@@ -1,11 +1,26 @@
 // Секция «Overview» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs mikulich-en --sections
 
-import VariantGroup from "@/components/VariantGroup";
-
 export default function Overview() {
   return (
     <>
+      <style>{`
+        @media (hover: hover) {
+          .hg-7:hover .hn-7-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-7:hover .hn-7-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-8:hover .hn-8-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-8:hover .hn-8-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-8, .hg-8 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-9:hover .hn-9-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-9:hover .hn-9-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-9, .hg-9 * { transition: none !important; } }
+      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "32px 20px 32px 20px", background: "#ffffff", overflow: "hidden" }}>
@@ -38,19 +53,10 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "block", alignSelf: "stretch", position: "relative" }}>
-        <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
-          <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`View in Context`}</p>
-              </div>
+        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-7" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+          <div className="hn-7-1" style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+            <p className="hn-7-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
           </div>
-          <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
-              </div>
-          </div>
-        </VariantGroup>
         </a>
       </div>
       </div>
@@ -86,19 +92,10 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "block", alignSelf: "stretch", position: "relative" }}>
-        <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
-          <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`View in Context`}</p>
-              </div>
+        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-8" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+          <div className="hn-8-1" style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+            <p className="hn-8-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
           </div>
-          <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
-              </div>
-          </div>
-        </VariantGroup>
         </a>
       </div>
       </div>
@@ -131,19 +128,10 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "relative" }}>
-          <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
-            <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                <div style={{ display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
-                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`View in Context`}</p>
-                </div>
+          <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-9" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+            <div className="hn-9-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+              <p className="hn-9-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
             </div>
-            <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
-                </div>
-            </div>
-          </VariantGroup>
           </a>
         </div>
       </div>

@@ -91,7 +91,7 @@ const SHELL_TAGS = new Set(["HEADER", "FOOTER"]);
  * Разрезает страницу на секции: по файлу на секцию макета.
  * Внутри каждого файла — три брейкпоинта, как и раньше.
  */
-async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, additions, shell, outDir }) {
+async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, takeHoverCss, additions, shell, outDir }) {
   const dir = outDir || `components/generated/${slug}`;
   await mkdir(resolve(dir), { recursive: true });
 
@@ -130,6 +130,12 @@ async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, ad
       })
       .join("");
 
+    // состояния «по наведению» этой секции: правила :hover с переходом
+    const css = takeHoverCss();
+    const styleTag = css
+      ? `      <style>{\`\n${css.split("\n").map((l) => `        ${l}`).join("\n")}\n      \`}</style>\n`
+      : "";
+
     const hasLink = body.includes("<Link ");
     const hasVariants = body.includes("<VariantGroup ");
     const imports =
@@ -143,7 +149,7 @@ async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, ad
       `// Секция «${sec.name}» — сгенерировано из Figma.\n` +
       `// Перегенерировать: node tools/figma/generate.mjs ${slug} --sections\n\n` +
       (imports ? `${imports}\n` : "") +
-      `export default function ${comp}() {\n  return (\n    <>\n${body}    </>\n  );\n}\n`;
+      `export default function ${comp}() {\n  return (\n    <>\n${styleTag}${body}    </>\n  );\n}\n`;
 
     await writeFile(`${dir}/${comp}.tsx`, src, "utf8");
     files.push({ comp, name: sec.name });
@@ -202,7 +208,7 @@ async function main() {
   const lang = slug.endsWith("-en") || slug === "index" ? "en" : "ru";
   // свои компоненты поверх макета — только для этой страницы
   const additions = (overrides.additions || []).filter((a) => a.pages.includes(slug));
-  const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint } = createEmitter({
+  const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss } = createEmitter({
     additions,
     assets,
     fonts,
@@ -240,7 +246,7 @@ async function main() {
   // --sections: каждая секция макета уезжает в свой файл со своим именем.
   // Так страница читается как список секций, а не как одна простыня.
   if (rest.includes("--sections")) {
-    await emitSections({ slug, frames, resolveTree, emit, setBreakpoint, additions, shell, outDir: arg("--out") });
+    await emitSections({ slug, frames, resolveTree, emit, setBreakpoint, takeHoverCss, additions, shell, outDir: arg("--out") });
     console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
     await recordFonts(usedFonts, fonts);
     return;

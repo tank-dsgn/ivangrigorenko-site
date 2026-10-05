@@ -1,11 +1,21 @@
 // Секция «About» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs about-en --sections
 
-import VariantGroup from "@/components/VariantGroup";
-
 export default function About() {
   return (
     <>
+      <style>{`
+        @media (hover: hover) {
+          .hg-1:hover .hn-1-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-1:hover .hn-1-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-1, .hg-1 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-2:hover .hn-2-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-2:hover .hn-2-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-2, .hg-2 * { transition: none !important; } }
+      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", justifyContent: "center", alignItems: "center", padding: "24px 20px 40px 20px", background: "#fafaf9", overflow: "hidden" }}>
@@ -191,19 +201,10 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`I have an affinity for a systematic approach: tokens, components, consistency. I think about how easy an interface is to maintain and scale — and I design with that in mind`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`I've been in design since 2018 — alongside another career. Over that time I've done freelance and full-time work at a studio. It's been a non-linear path, but it's exactly what shaped my habit of working with precision, getting up to speed quickly, and not wasting time on the unnecessary`}</p>
               </div>
-              <a href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "relative" }}>
-              <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
-                <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                    <div style={{ display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
-                      <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Download my resume`}</p>
-                    </div>
+              <a href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hg-2" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+                <div className="hn-2-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+                  <p className="hn-2-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Download my resume`}</p>
                 </div>
-                <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                    <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                      <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Download my resume`}</p>
-                    </div>
-                </div>
-              </VariantGroup>
               </a>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start" }}>

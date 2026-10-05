@@ -7,6 +7,35 @@ import VariantGroup from "@/components/VariantGroup";
 export default function MoreProjects() {
   return (
     <>
+      <style>{`
+        .hn-10-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-10-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-10-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-10:hover .hn-10-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-10:hover .hn-10-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
+          .hg-10:hover .hn-10-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-10, .hg-10 * { transition: none !important; } }
+        .hn-11-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-11-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-11-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-11:hover .hn-11-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-11:hover .hn-11-2 { translate: 0.14px 0.21px !important; scale: 1.0461 1.0461 !important; }
+          .hg-11:hover .hn-11-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-11, .hg-11 * { transition: none !important; } }
+        .hn-12-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-12-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-12-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-12:hover .hn-12-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-12:hover .hn-12-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
+          .hg-12:hover .hn-12-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-12, .hg-12 * { transition: none !important; } }
+      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "flex-start", padding: "32px 20px 32px 20px", background: "#fafaf9", overflow: "hidden" }}>
@@ -115,37 +144,17 @@ export default function MoreProjects() {
               </div>
             </VariantGroup>
             </Link>
-            <Link href="/autotor-en" style={{ display: "block", width: "304px", height: "321px", flexShrink: 0, position: "relative" }}>
-            <VariantGroup initial="938:6431" style={{ position: "relative", width: "100%", height: "100%" }}>
-              <div data-variant="938:6431" data-hover-to="938:6455" data-hover-ms="300" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "6px 0 0 0", width: "100%", height: "100%" }}>
-                  <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -194px)", top: "calc(50% + -141.5px)", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
-                  </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`E-COMMERCE PLATFORM`}</p>
+            <Link href="/autotor-en" className="hg-10" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "6px 0 0 0" }}>
+              <div className="hn-10-1" style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
+                <div className="hn-10-2" style={{ position: "absolute", left: "calc(50% + -194px)", top: "calc(50% + -141.5px)", width: "387.71px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
               </div>
-              <div data-variant="938:6455" data-lazy data-hover-to="938:6455" data-hover-ms="300" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", width: "100%", height: "100%" }}>
-                  <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 8px 24px 0 rgba(64, 62, 92, 0.3)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -204px)", top: "calc(50% + -154.5px)", width: "405.52px", height: "296px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
-                  </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 600, textTransform: "uppercase", textAlign: "center", color: "#4f46e5" }}>{`E-COMMERCE PLATFORM`}</p>
-              </div>
-            </VariantGroup>
+              <p className="hn-10-3" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`E-COMMERCE PLATFORM`}</p>
             </Link>
-            <Link href="/pot-en" style={{ display: "block", width: "304px", height: "321px", flexShrink: 0, position: "relative" }}>
-            <VariantGroup initial="938:6427" style={{ position: "relative", width: "100%", height: "100%" }}>
-              <div data-variant="938:6427" data-hover-to="938:6451" data-hover-ms="300" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "6px 0 0 0", width: "100%", height: "100%" }}>
-                  <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -152.14px)", top: "calc(50% + -141.5px)", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
-                  </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Mobile application`}</p>
+            <Link href="/pot-en" className="hg-11" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "6px 0 0 0" }}>
+              <div className="hn-11-1" style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
+                <div className="hn-11-2" style={{ position: "absolute", left: "calc(50% + -152.14px)", top: "calc(50% + -141.5px)", width: "304px", height: "283px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
               </div>
-              <div data-variant="938:6451" data-lazy data-hover-to="938:6451" data-hover-ms="300" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", width: "100%", height: "100%" }}>
-                  <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 8px 24px 0 rgba(64, 62, 92, 0.3)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -159px)", top: "calc(50% + -147.81px)", width: "318px", height: "296.03px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
-                  </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 600, textTransform: "uppercase", textAlign: "center", color: "#4f46e5" }}>{`Mobile application`}</p>
-              </div>
-            </VariantGroup>
+              <p className="hn-11-3" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Mobile application`}</p>
             </Link>
             <Link href="/ostral-en" style={{ display: "block", width: "304px", height: "321px", flexShrink: 0, position: "relative" }}>
             <VariantGroup initial="938:6443" style={{ position: "relative", width: "100%", height: "100%" }}>
@@ -164,21 +173,11 @@ export default function MoreProjects() {
               </div>
             </VariantGroup>
             </Link>
-            <Link href="/vv-en" style={{ display: "block", width: "304px", height: "321px", flexShrink: 0, position: "relative" }}>
-            <VariantGroup initial="938:6435" style={{ position: "relative", width: "100%", height: "100%" }}>
-              <div data-variant="938:6435" data-hover-to="938:6459" data-hover-ms="300" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "6px 0 0 0", width: "100%", height: "100%" }}>
-                  <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -245.08px)", top: "calc(50% + -158.55px)", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
-                  </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Design system`}</p>
+            <Link href="/vv-en" className="hg-12" style={{ width: "304px", height: "321px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "6px 0 0 0" }}>
+              <div className="hn-12-1" style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
+                <div className="hn-12-2" style={{ position: "absolute", left: "calc(50% + -245.08px)", top: "calc(50% + -158.55px)", width: "491px", height: "316.11px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
               </div>
-              <div data-variant="938:6459" data-lazy data-hover-to="938:6459" data-hover-ms="300" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", width: "100%", height: "100%" }}>
-                  <div style={{ width: "304px", height: "283px", flexShrink: 0, background: "#0c1543", borderRadius: "24px", overflow: "hidden", boxShadow: "0 8px 24px 0 rgba(64, 62, 92, 0.3)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "-134px", right: "-143.36px", top: "calc(50% + 3.68px)", transform: "translateY(-50%)", aspectRatio: "4096 / 2637", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
-                  </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 600, textTransform: "uppercase", textAlign: "center", color: "#4f46e5" }}>{`Design system`}</p>
-              </div>
-            </VariantGroup>
+              <p className="hn-12-3" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Design system`}</p>
             </Link>
           </div>
         </div>

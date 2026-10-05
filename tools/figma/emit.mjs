@@ -101,7 +101,12 @@ export function createEmitter({
         if (a.navigationType !== "SWAP_STATE" || !a.transitionNodeID) continue;
         // без типа перехода и с INSTANT_TRANSITION состояние меняется мгновенно
         const animated = a.transitionType && a.transitionType !== "INSTANT_TRANSITION";
-        return { to: nodeId(a.transitionNodeID), ms: animated ? Math.round((a.transitionDuration || 0) * 1000) : 0 };
+        const e = a.easingFunction;
+        return {
+          to: nodeId(a.transitionNodeID),
+          ms: animated ? Math.round((a.transitionDuration || 0) * 1000) : 0,
+          ease: e?.length === 4 ? `cubic-bezier(${e.map((v) => Math.round(v * 1000) / 1000).join(", ")})` : "ease",
+        };
       }
     }
     return null;
@@ -171,6 +176,123 @@ export function createEmitter({
   const usedAssets = new Set();
   const usedLinks = new Set();
   const usedFonts = new Set();
+
+  // CSS состояний «по наведению»: правила копятся здесь, генератор кладёт их в <style> секции
+  const hoverCss = [];
+  let hoverSeq = 0;
+  const takeHoverCss = () => hoverCss.splice(0).join("\n");
+
+  const kebab = (k) => k.replace(/^Webkit/, "-webkit").replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`);
+  const near = (x, y, eps = 0.01) => Math.abs((x ?? 0) - (y ?? 0)) < eps;
+  /** Что при наведении меняется «краской», а не геометрией */
+  const PAINT = ["boxShadow", "background", "backgroundImage", "color", "opacity", "borderRadius", "outline"];
+
+  /**
+   * Чем узел в состоянии «наведение» отличается от обычного: сдвиг, масштаб, краска.
+   * Обходит оба состояния параллельно и записывает разницу в узлы обычного состояния.
+   * Возвращает false, если состояния устроены по-разному (другие слои, текст, картинка) —
+   * тогда плавно переехать из одного в другое нельзя.
+   */
+  function markHover(a, b, mark, isRoot = true) {
+    if (a.type !== b.type || a.name !== b.name) return false;
+    if ((a.visible === false) !== (b.visible === false)) return false;
+    if (a.visible === false) return true;
+    if ((a.characters || "") !== (b.characters || "") || (a.hash || "") !== (b.hash || "")) return false;
+    const ka = a.children || [];
+    const kb = b.children || [];
+    if (ka.length !== kb.length) return false;
+
+    const to = {};
+    const ta = a.relativeTransform;
+    const tb = b.relativeTransform;
+    // корень блока стоит на месте: двигаются его части
+    if (!isRoot && ta && tb && a.size && b.size) {
+      const sx = a.size.x > 0.5 ? b.size.x / a.size.x : 1;
+      const sy = a.size.y > 0.5 ? b.size.y / a.size.y : 1;
+      // картинку увеличиваем масштабом из центра; блок с детьми только сдвигаем
+      const leaf = !ka.length;
+      const scaled = leaf && (!near(sx, 1, 0.002) || !near(sy, 1, 0.002));
+      const dx = scaled ? tb[0][2] + b.size.x / 2 - (ta[0][2] + a.size.x / 2) : tb[0][2] - ta[0][2];
+      const dy = scaled ? tb[1][2] + b.size.y / 2 - (ta[1][2] + a.size.y / 2) : tb[1][2] - ta[1][2];
+      if (!near(dx, 0, 0.05) || !near(dy, 0, 0.05)) to.translate = `${px(dx)} ${px(dy)}`.replace(/(^| )0( |$)/g, "$10px$2");
+      if (scaled) to.scale = `${Math.round(sx * 1e4) / 1e4} ${Math.round(sy * 1e4) / 1e4}`;
+    }
+    const pa = { ...frameStyle(a, assets, assetMap), ...(a.type === "TEXT" ? textStyle(a, fonts) : {}) };
+    const pb = { ...frameStyle(b, assets, assetMap), ...(b.type === "TEXT" ? textStyle(b, fonts) : {}) };
+    for (const k of PAINT) if (pa[k] !== pb[k]) to[k] = pb[k] ?? (k === "boxShadow" ? "none" : "initial");
+    if (Object.keys(to).length) mark.set(a, to);
+
+    return ka.every((c, i) => markHover(c, kb[i], mark, false));
+  }
+
+  // узел → что с ним происходит при наведении; заполняется на время вывода блока
+  let hoverMarks = null;
+  let hoverGroup = null;
+
+  /**
+   * Наведение как в макете: Smart Animate.
+   *
+   * Если состояние «наведение» отличается от обычного только положением, размером
+   * и краской (карточка приподнялась, картинка выросла, подпись сменила цвет), два
+   * слоя не нужны: выводим обычное состояние, а разницу отдаём правилами `:hover`
+   * с переходом. Элементы плавно переезжают из одного состояния в другое.
+   * Возвращает JSX или null, если состояния устроены по-разному.
+   */
+  function hoverMorph(node, parent, depth, insideLink, enclosing, group) {
+    if (hoverMarks || group.variants.length !== 2) return null;
+    const base = group.variants.find((v) => v.id === group.initial);
+    const over = group.variants.find((v) => v.id !== group.initial);
+    if (!base || !over?.info.hoverOnly) return null;
+    const sw = swapOf(base.tree, "ON_HOVER");
+    if (!sw || sw.to !== over.id) return null;
+
+    const mark = new Map();
+    if (!markHover(base.tree, over.tree, mark) || !mark.size) return null;
+
+    const id = ++hoverSeq;
+    hoverMarks = mark;
+    hoverGroup = { id, root: base.tree, n: 0, ms: sw.ms, ease: sw.ease, moving: [], hover: [] };
+    const jsx = emit(base.tree, parent, depth, insideLink, new Set([...enclosing, ...group.targets]));
+    const g = hoverGroup;
+    hoverMarks = null;
+    hoverGroup = null;
+
+    hoverCss.push(
+      [
+        ...g.moving,
+        `@media (hover: hover) {`,
+        ...g.hover.map((r) => `  ${r}`),
+        `}`,
+        `@media (prefers-reduced-motion: reduce) { .hg-${id}, .hg-${id} * { transition: none !important; } }`,
+      ].join("\n")
+    );
+    // метки для VariantGroup здесь не нужны: состояние переключает CSS
+    return jsx.replace(/ data-hover-to="([^"]+)" data-hover-ms="\d+"/g, (m, to) => (group.targets.has(to) ? "" : m));
+  }
+
+  /** Класс узла внутри блока с наведением и его правила */
+  function hoverClass(node, baseTransform) {
+    if (!hoverGroup) return "";
+    const g = hoverGroup;
+    const root = node === g.root;
+    let to = hoverMarks.get(node);
+    if (!root && !to) return "";
+    // У узла уже есть transform (например, сдвиг на −50% для привязки по центру).
+    // Отдельное свойство scale применилось бы после него и увело бы картинку в сторону,
+    // поэтому масштаб дописываем в тот же transform — он сработает первым, из центра.
+    if (to?.scale && baseTransform) {
+      const { scale, ...rest } = to;
+      to = { ...rest, transform: `${baseTransform} scale(${scale.replace(" ", ", ")})` };
+    }
+    const cls = root ? `hg-${g.id}` : `hn-${g.id}-${++g.n}`;
+    if (to) {
+      const props = Object.keys(to);
+      const decl = props.map((k) => `${kebab(k)}: ${to[k]} !important`).join("; ");
+      g.hover.push(`${root ? `.${cls}:hover` : `.hg-${g.id}:hover .${cls}`} { ${decl}; }`);
+      if (g.ms) g.moving.push(`.${cls} { transition: ${props.map((k) => `${kebab(k)} ${g.ms}ms ${g.ease}`).join(", ")}; }`);
+    }
+    return ` className="${cls}"`;
+  }
 
   // ширина брейкпоинта, который сейчас выводится: от неё зависят отступы своих компонентов
   let breakpoint = 0;
@@ -376,6 +498,8 @@ export function createEmitter({
     const enclosing = swapTargets || new Set();
     const group = variantGroup(node);
     if (group && ![...group.targets].some((t) => enclosing.has(t))) {
+      const morph = hoverMorph(node, parent, depth, insideLink, enclosing, group);
+      if (morph) return morph;
       usedVariants = true;
       const box = place(node, parent);
       if (!box.position) box.position = "relative";
@@ -422,7 +546,7 @@ export function createEmitter({
     }
 
     // Узел, который переключает состояние блока кликом или наведением
-    let attrs = swapTargets ? triggers(node, swapTargets) : "";
+    let attrs = (swapTargets ? triggers(node, swapTargets) : "") + hoverClass(node, style.transform);
     if (attrs.includes("data-swap-to")) style.cursor = "pointer";
 
     // Поведение из макета: параллакс при прокрутке и увеличение по клику
@@ -598,5 +722,5 @@ export function createEmitter({
     return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
   }
 
-  return { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, usesVariants: () => usedVariants };
+  return { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss, usesVariants: () => usedVariants };
 }

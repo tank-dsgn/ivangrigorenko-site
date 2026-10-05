@@ -1,11 +1,16 @@
 // Секция «Overview» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs autotor-ru --sections
 
-import VariantGroup from "@/components/VariantGroup";
-
 export default function Overview() {
   return (
     <>
+      <style>{`
+        @media (hover: hover) {
+          .hg-6:hover .hn-6-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-6:hover .hn-6-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-6, .hg-6 * { transition: none !important; } }
+      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start", padding: "32px 20px 32px 20px", background: "#ffffff", overflow: "hidden" }}>
@@ -115,19 +120,10 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "relative" }}>
-          <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
-            <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                <div style={{ display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
-                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Посетить сайт`}</p>
-                </div>
+          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" className="hg-6" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+            <div className="hn-6-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+              <p className="hn-6-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Посетить сайт`}</p>
             </div>
-            <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Посетить сайт`}</p>
-                </div>
-            </div>
-          </VariantGroup>
           </a>
         </div>
       </div>

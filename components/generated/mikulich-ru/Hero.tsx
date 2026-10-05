@@ -4,6 +4,59 @@
 export default function Hero() {
   return (
     <>
+      <style>{`
+        @media (hover: hover) {
+          .hg-1:hover .hn-1-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-1:hover .hn-1-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-1, .hg-1 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-2:hover .hn-2-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-2:hover .hn-2-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-2, .hg-2 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-3:hover .hn-3-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-3:hover .hn-3-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-3, .hg-3 * { transition: none !important; } }
+        .hn-4-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-4-2 { transition: transform 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-4-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-4:hover .hn-4-1 { translate: 0px -6px !important; }
+          .hg-4:hover .hn-4-2 { transform: translateY(-50%) scale(1.0989, 1.0989) !important; }
+          .hg-4:hover .hn-4-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-4, .hg-4 * { transition: none !important; } }
+        .hn-5-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-5-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-5-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-5:hover .hn-5-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-5:hover .hn-5-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
+          .hg-5:hover .hn-5-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-5, .hg-5 * { transition: none !important; } }
+        .hn-6-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-6-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-6-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-6:hover .hn-6-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-6:hover .hn-6-2 { translate: 0.14px 0.21px !important; scale: 1.0461 1.0461 !important; }
+          .hg-6:hover .hn-6-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-6, .hg-6 * { transition: none !important; } }
+        .hn-7-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-7-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-7-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1); }
+        @media (hover: hover) {
+          .hg-7:hover .hn-7-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-7:hover .hn-7-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
+          .hg-7:hover .hn-7-3 { translate: 0px -6px !important; color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
+      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "406px", flexShrink: 0, overflow: "hidden", position: "relative" }}>

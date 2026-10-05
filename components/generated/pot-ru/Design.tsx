@@ -6,6 +6,20 @@ import VariantGroup from "@/components/VariantGroup";
 export default function Design() {
   return (
     <>
+      <style>{`
+        @media (hover: hover) {
+          .hg-8:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-8, .hg-8 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-9:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-9, .hg-9 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-10:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-10, .hg-10 * { transition: none !important; } }
+      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
@@ -1527,23 +1541,16 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <VariantGroup initial="366:858211" data-swap-to="366:857902" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                <div data-variant="366:858211" data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", width: "100%", height: "100%" }}>
-                  <img
-                    src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                  />
-                </div>
-                <div data-variant="366:858208" data-lazy data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", boxShadow: "0 0 0 1px #00ec67", width: "100%", height: "100%" }}>
-                  <span style={{ position: "absolute", left: "20px", right: "2px", top: "2px", bottom: "2px" }}>
-                    <img src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                  </span>
-                </div>
-              </VariantGroup>
+              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-8" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+                <img
+                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                />
+              </div>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
               <img
@@ -2148,23 +2155,16 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <VariantGroup initial="366:858211" data-swap-to="366:860910" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                <div data-variant="366:858211" data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", width: "100%", height: "100%" }}>
-                  <img
-                    src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                  />
-                </div>
-                <div data-variant="366:858208" data-lazy data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", boxShadow: "0 0 0 1px #00ec67", width: "100%", height: "100%" }}>
-                  <span style={{ position: "absolute", left: "20px", right: "2px", top: "2px", bottom: "2px" }}>
-                    <img src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                  </span>
-                </div>
-              </VariantGroup>
+              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-9" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+                <img
+                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                />
+              </div>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
               <img
@@ -2368,23 +2368,16 @@ export default function Design() {
                   <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Личный цифровой сад`}</p>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
                 </div>
-                <VariantGroup initial="366:858211" data-swap-to="374:12637" data-swap-ms="0" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                  <div data-variant="366:858211" data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", width: "100%", height: "100%" }}>
-                    <img
-                      src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                    />
-                  </div>
-                  <div data-variant="366:858208" data-lazy data-hover-to="366:858208" data-hover-ms="0" style={{ background: "#8eba9f", borderRadius: "11.29px", boxShadow: "0 0 0 1px #00ec67", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "20px", right: "2px", top: "2px", bottom: "2px" }}>
-                      <img src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                </VariantGroup>
+                <div data-swap-to="374:12637" data-swap-ms="0" className="hg-10" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+                  <img
+                    src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                  />
+                </div>
               </div>
               <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/bd19a7b244b58e216e793d6c627c7c0e41f7b875.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
