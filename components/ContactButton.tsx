@@ -10,7 +10,7 @@ const label = { ru: "Связаться со мной", en: "Contact me" } as co
  * Вид — контурная кнопка из макета (как «Скачать моё резюме»): при наведении
  * обводка и текст становятся индиго.
  */
-export default function ContactButton({ lang, full }: { lang: Lang; /** на всю ширину — в столбике на телефоне */ full?: boolean }) {
+export default function ContactButton({ lang, full }: { lang: Lang; /** на всю ширину блока */ full?: boolean }) {
   return (
     <a
       href="#contacts"

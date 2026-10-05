@@ -194,7 +194,7 @@ export function createEmitter({
         });
         return (
           `${pad}${indentUnit}<div style=${box}>\n` +
-          `${pad}${indentUnit}${indentUnit}<${a.component} lang="${lang}" />\n` +
+          `${pad}${indentUnit}${indentUnit}<${a.component} lang="${lang}"${a.full ? " full" : ""} />\n` +
           `${pad}${indentUnit}</div>\n`
         );
       })
