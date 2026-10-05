@@ -1,4 +1,4 @@
-import { EMAIL, mailtoHref, socials, t, type Lang } from "@/lib/site";
+import { mailtoHref, socials, t, type Lang } from "@/lib/site";
 
 export default function Footer({ lang }: { lang: Lang }) {
   const s = t[lang];
@@ -17,17 +17,10 @@ export default function Footer({ lang }: { lang: Lang }) {
         {s.footer.subtitle}
       </p>
 
-      <a
-        href={mailtoHref(lang)}
-        className="text-accent ease-figma mt-3 text-[16px] leading-6 transition-opacity duration-200 hover:opacity-70 xl:mt-4 xl:text-[20px] xl:leading-7"
-      >
-        {EMAIL}
-      </a>
-
       <ul className="mt-5 flex items-center gap-8 xl:mt-8 xl:gap-10">
         {[
           ...socials.map((x) => ({ ...x, external: true })),
-          // в оригинале нет: то же письмо, что по адресу выше, только иконкой
+          // письмо: адрес текстом над иконками убран 2026-10-05, осталась иконка
           { name: "Email", href: mailtoHref(lang), icon: "/icons/mail.svg", w: 32, h: 32, external: false },
         ].map((x) => (
           <li key={x.name}>

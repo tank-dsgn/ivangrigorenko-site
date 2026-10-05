@@ -578,7 +578,7 @@ export function createEmitter({
             return (
               `${pad}${indentUnit}<div style=${box}>\n` +
               emit(child, node, depth + 2, insideLink || Boolean(link), swapTargets) +
-              `${pad}${indentUnit}${indentUnit}<${side.component} lang="${lang}"${column ? " full" : ""} />\n` +
+              `${pad}${indentUnit}${indentUnit}<${side.component} lang="${lang}"${side.props ? ` ${side.props}` : ""}${column ? " full" : ""} />\n` +
               `${pad}${indentUnit}</div>\n`
             );
           }
