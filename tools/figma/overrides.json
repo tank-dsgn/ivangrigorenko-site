@@ -42,29 +42,6 @@
         "800": 24,
         "375": 20
       }
-    },
-    {
-      "pages": [
-        "about-ru",
-        "about-en"
-      ],
-      "beside": "Button",
-      "parents": [
-        "Text conteiner",
-        "Frame 1000005980"
-      ],
-      "component": "ContactButton",
-      "from": "@/components/ContactButton",
-      "gap": {
-        "1280": 12,
-        "800": 12,
-        "375": 12
-      },
-      "direction": {
-        "1280": "row",
-        "800": "row",
-        "375": "column"
-      }
     }
   ]
 }

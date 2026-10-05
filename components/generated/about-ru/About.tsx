@@ -2,7 +2,6 @@
 // Перегенерировать: node tools/figma/generate.mjs about-ru --sections
 
 import VariantGroup from "@/components/VariantGroup";
-import ContactButton from "@/components/ContactButton";
 
 export default function About() {
   return (
@@ -85,14 +84,11 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "stretch", gap: "12px", width: "335px", flexShrink: 0 }}>
-            <a href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ width: "335px", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
-              </div>
-            </a>
-            <ContactButton lang="ru" full />
-          </div>
+          <a href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ width: "335px", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+            <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+              <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
+            </div>
+          </a>
         </div>
       </div>
       </div>
@@ -109,14 +105,11 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`Мне близок системный подход: токены, компоненты, консистентность. Я думаю о том, насколько интерфейс легко поддерживать и масштабировать — и проектирую с расчётом на это.`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`В дизайне с 2018 года — параллельно с другой карьерой. За это время был и фриланс, и фулл-тайм опыт в студии. Нелинейный путь, но именно он сформировал привычку работать чётко, быстро входить в контекст и не размениваться на лишнее.`}</p>
               </div>
-              <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "12px", flexShrink: 0 }}>
-                <a href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                  <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                    <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
-                  </div>
-                </a>
-                <ContactButton lang="ru" />
-              </div>
+              <a href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+                <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
+                </div>
+              </a>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
               <div style={{ width: "263.99px", height: "291.97px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
@@ -198,23 +191,20 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Мне близок системный подход: токены, компоненты, консистентность. Я думаю о том, насколько интерфейс легко поддерживать и масштабировать — и проектирую с расчётом на это.`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`В дизайне с 2018 года — параллельно с другой карьерой. За это время был и фриланс, и фулл-тайм опыт в студии. Нелинейный путь, но именно он сформировал привычку работать чётко, быстро входить в контекст и не размениваться на лишнее.`}</p>
               </div>
-              <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "12px", flexShrink: 0 }}>
-                <a href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "relative" }}>
-                <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
-                  <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                      <div style={{ display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
-                        <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
-                      </div>
-                  </div>
-                  <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                      <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                        <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
-                      </div>
-                  </div>
-                </VariantGroup>
-                </a>
-                <ContactButton lang="ru" />
-              </div>
+              <a href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "block", position: "relative" }}>
+              <VariantGroup initial="37:957" style={{ position: "relative", width: "100%" }}>
+                <div data-variant="37:959" data-lazy data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+                    <div style={{ display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #4f46e5" }}>
+                      <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#4f46e5", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
+                    </div>
+                </div>
+                <div data-variant="37:957" data-hover-to="37:959" data-hover-ms="0" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+                    <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+                      <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Скачать моё резюме`}</p>
+                    </div>
+                </div>
+              </VariantGroup>
+              </a>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start" }}>
               <div style={{ width: "330.01px", height: "365px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>
