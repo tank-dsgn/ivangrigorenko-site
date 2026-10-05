@@ -34,31 +34,24 @@ export const socials = [
 /** Главная у русской версии — /home-ru, у английской — корень сайта */
 export const homeHref = (lang: Lang) => (lang === "ru" ? "/home-ru" : "/");
 export const aboutHref = (lang: Lang) => (lang === "ru" ? "/about-ru" : "/about-en");
-export const contactsHref = (lang: Lang) => (lang === "ru" ? "/contacts-ru" : "/contacts-en");
-
-export const TELEGRAM = { handle: "@ivan_grigorenko", href: "https://t.me/ivan_grigorenko" };
-/** то же резюме, что по кнопке на «Обо мне» */
-export const RESUME_URL = "https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing";
 
 export const t = {
   ru: {
-    nav: { work: "Проекты", about: "Обо мне", contacts: "Контакты" },
+    nav: { work: "Проекты", about: "Обо мне" },
     footer: {
       title: "Свяжитесь со мной",
       subtitle: "Открыт к новым проектам и сотрудничеству",
     },
-    contacts: { email: "Почта", resume: "Скачать моё резюме" },
     menuOpen: "Открыть меню",
     menuClose: "Закрыть меню",
     toHome: "На главную",
   },
   en: {
-    nav: { work: "Work", about: "About", contacts: "Contacts" },
+    nav: { work: "Work", about: "About" },
     footer: {
       title: "Let’s connect",
       subtitle: "Open to new projects and collaborations",
     },
-    contacts: { email: "Email", resume: "Download my resume" },
     menuOpen: "Open menu",
     menuClose: "Close menu",
     toHome: "Go to homepage",

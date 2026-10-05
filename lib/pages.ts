@@ -26,7 +26,6 @@ const pair = (ru: string, en: string, priority: number, indexable = true): SiteP
 export const sitePages: SitePage[] = [
   ...pair("/home-ru", "/", 1),
   ...pair("/about-ru", "/about-en", 0.8),
-  ...pair("/contacts-ru", "/contacts-en", 0.7),
   ...pair("/eazychange-ru", "/eazychange-en", 0.9),
   ...pair("/autotor-ru", "/autotor-en", 0.9),
   ...pair("/pot-ru", "/pot-en", 0.9),
@@ -38,7 +37,7 @@ export const sitePages: SitePage[] = [
 // экраны меню: в поиске не нужны, но маршруты существуют
 sitePages.push(
   ...[
-    ["home"], ["about"], ["contacts"], ["eazychange"], ["autotor"],
+    ["home"], ["about"], ["eazychange"], ["autotor"],
     ["pot"], ["ostral"], ["vv"], ["mikulich"],
   ].flatMap(([slug]) =>
     pair(`/${slug}-menu-ru`, `/${slug}-menu-en`, 0.1, false)
@@ -56,7 +55,6 @@ export const findPage = (path: string) => sitePages.find((p) => p.path === path)
 export const sections = [
   { slug: "home", ru: "/home-ru", en: "/", active: "work" as const },
   { slug: "about", ru: "/about-ru", en: "/about-en", active: "about" as const },
-  { slug: "contacts", ru: "/contacts-ru", en: "/contacts-en", active: "contacts" as const },
   { slug: "eazychange", ru: "/eazychange-ru", en: "/eazychange-en" },
   { slug: "autotor", ru: "/autotor-ru", en: "/autotor-en" },
   { slug: "pot", ru: "/pot-ru", en: "/pot-en" },

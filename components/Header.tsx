@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LOGO_SMALL, LOGO_WIDE, aboutHref, contactsHref, homeHref, t, type Lang } from "@/lib/site";
+import { LOGO_SMALL, LOGO_WIDE, aboutHref, homeHref, t, type Lang } from "@/lib/site";
 import { findPage, menuHref } from "@/lib/pages";
 
 const linkBase =
@@ -15,7 +15,7 @@ export default function Header({
 }: {
   lang: Lang;
   /** какой пункт подсвечен индиго */
-  active?: "work" | "about" | "contacts";
+  active?: "work" | "about";
 }) {
   const pathname = usePathname();
   const s = t[lang];
@@ -72,13 +72,6 @@ export default function Header({
           </Link>
         )}
 
-        {active === "contacts" ? (
-          <span className={`${linkBase} text-accent`}>{s.nav.contacts}</span>
-        ) : (
-          <Link href={contactsHref(lang)} className={`${linkBase} text-muted hover:text-accent`}>
-            {s.nav.contacts}
-          </Link>
-        )}
       </nav>
 
       <div className="hidden items-center xl:flex">{langSwitch}</div>
