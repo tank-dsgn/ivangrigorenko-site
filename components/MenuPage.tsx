@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LOGO_SMALL, aboutHref, asset, homeHref, t, type Lang } from "@/lib/site";
+import { LOGO_SMALL, aboutHref, asset, contactsHref, homeHref, t, type Lang } from "@/lib/site";
 
 const CHEVRON = asset("3da0fc8f089163f811ba928a9a57d20e869f8486.svg");
 
@@ -19,7 +19,7 @@ export default function MenuPage({
 }: {
   lang: Lang;
   /** подсвеченный пункт; у страниц кейсов активного нет */
-  active?: "work" | "about";
+  active?: "work" | "about" | "contacts";
   /** куда возвращает крестик — страница, с которой пришли */
   back: string;
   /** это же меню на другом языке */
@@ -33,7 +33,7 @@ export default function MenuPage({
   const rows = [
     { key: "work" as const, label: labels.work, href: homeHref(lang) },
     { key: "about" as const, label: labels.about, href: aboutHref(lang) },
-    { key: "contacts" as const, label: labels.contacts, href: aboutHref(lang) },
+    { key: "contacts" as const, label: labels.contacts, href: contactsHref(lang) },
   ];
 
   return (

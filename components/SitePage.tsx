@@ -34,7 +34,7 @@ export default function SitePage({
   lang: Lang;
   shell: { header: ShellPresence; footer: ShellPresence };
   /** какой пункт навигации подсветить */
-  active?: "work" | "about";
+  active?: "work" | "about" | "contacts";
   children: React.ReactNode;
 }) {
   const footerClass = visibility(shell.footer);

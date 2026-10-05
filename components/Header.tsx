@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LOGO_SMALL, LOGO_WIDE, aboutHref, homeHref, t, type Lang } from "@/lib/site";
-import { menuHref } from "@/lib/pages";
+import { LOGO_SMALL, LOGO_WIDE, aboutHref, contactsHref, homeHref, t, type Lang } from "@/lib/site";
+import { findPage, menuHref } from "@/lib/pages";
 
 const linkBase =
   "px-3 py-2 text-[16px] leading-6 font-semibold transition-colors duration-200 ease-figma";
@@ -15,14 +15,14 @@ export default function Header({
 }: {
   lang: Lang;
   /** какой пункт подсвечен индиго */
-  active?: "work" | "about";
+  active?: "work" | "about" | "contacts";
 }) {
   const pathname = usePathname();
   const s = t[lang];
   const other: Lang = lang === "ru" ? "en" : "ru";
 
   // ссылка на ту же страницу в другом языке
-  const altHref = active === "about" ? aboutHref(other) : homeHref(other);
+  const altHref = findPage(pathname)?.counterpart ?? homeHref(other);
 
   // на узких экранах бургер ведёт на отдельный экран меню, как в оригинале
   const menu = menuHref(pathname) ?? menuHref(homeHref(lang))!;
@@ -55,9 +55,9 @@ export default function Header({
 
       <nav className="hidden items-center gap-3 xl:flex">
         {active === "work" ? (
-          <a href="#projects" className={`${linkBase} text-accent`}>
+          <Link href={homeHref(lang)} className={`${linkBase} text-accent`}>
             {s.nav.work}
-          </a>
+          </Link>
         ) : (
           <Link href={homeHref(lang)} className={`${linkBase} text-muted hover:text-accent`}>
             {s.nav.work}
@@ -72,13 +72,10 @@ export default function Header({
           </Link>
         )}
 
-        {/* на главной «Контакты» прокручивают к футеру, на остальных ведут на «Обо мне» */}
-        {active === "work" ? (
-          <a href="#contacts" className={`${linkBase} text-muted hover:text-accent`}>
-            {s.nav.contacts}
-          </a>
+        {active === "contacts" ? (
+          <span className={`${linkBase} text-accent`}>{s.nav.contacts}</span>
         ) : (
-          <Link href={aboutHref(lang)} className={`${linkBase} text-muted hover:text-accent`}>
+          <Link href={contactsHref(lang)} className={`${linkBase} text-muted hover:text-accent`}>
             {s.nav.contacts}
           </Link>
         )}
