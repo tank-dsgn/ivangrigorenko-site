@@ -182,7 +182,7 @@ export function createEmitter({
    */
   function addition(node, flowKids, pad) {
     return additions
-      .filter((a) => a.into === node.name)
+      .filter((a) => a.into && a.into === node.name)
       .map((a) => {
         const above = flowKids[flowKids.length - 1];
         const like = above ? sizing(above, node) : {};
@@ -558,7 +558,29 @@ export function createEmitter({
         .map((c) => {
           const inFlow = c.layoutPositioning !== "ABSOLUTE";
           const pull = overlap && inFlow && flowIndex++ > 0 ? overlap : 0;
-          return emit(pull ? { ...c, pull: { axis: node.layoutMode, value: pull } } : c, node, depth + 1, insideLink || Boolean(link), swapTargets);
+          const child = pull ? { ...c, pull: { axis: node.layoutMode, value: pull } } : c;
+          // свой компонент рядом с узлом: оба уходят в общий ряд или столбик
+          const side = additions.find((a) => a.beside === c.name && (a.parents || []).includes(node.name));
+          if (side) {
+            const column = side.direction?.[breakpoint] === "column";
+            const like = sizing(c, node);
+            const box = styleLiteral({
+              display: "flex",
+              flexDirection: column ? "column" : "row",
+              alignItems: column ? "stretch" : "center",
+              gap: px(side.gap?.[breakpoint] ?? 0),
+              width: column ? like.width : undefined,
+              alignSelf: column ? like.alignSelf : undefined,
+              flexShrink: 0,
+            });
+            return (
+              `${pad}${indentUnit}<div style=${box}>\n` +
+              emit(child, node, depth + 2, insideLink || Boolean(link), swapTargets) +
+              `${pad}${indentUnit}${indentUnit}<${side.component} lang="${lang}"${column ? " full" : ""} />\n` +
+              `${pad}${indentUnit}</div>\n`
+            );
+          }
+          return emit(child, node, depth + 1, insideLink || Boolean(link), swapTargets);
         })
         .join("") +
       addition(node, visibleKids.filter((c) => c.layoutPositioning !== "ABSOLUTE"), pad);
