@@ -26,12 +26,15 @@ export default function Footer({ lang }: { lang: Lang }) {
       </a>
 
       <ul className="mt-5 flex items-center gap-8 xl:mt-8 xl:gap-10">
-        {socials.map((x) => (
+        {[
+          ...socials.map((x) => ({ ...x, external: true })),
+          // в оригинале нет: то же письмо, что по адресу выше, только иконкой
+          { name: "Email", href: mailtoHref(lang), icon: "/icons/mail.svg", w: 32, h: 32, external: false },
+        ].map((x) => (
           <li key={x.name}>
             <a
               href={x.href}
-              target="_blank"
-              rel="noopener noreferrer"
+              {...(x.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               aria-label={x.name}
               className="ease-figma flex h-6 w-6 items-center justify-center transition-opacity duration-200 hover:opacity-70 md:h-7 md:w-7 xl:h-8 xl:w-8"
             >
