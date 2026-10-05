@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { EMAIL, mailtoHref, socials, t, type Lang } from "@/lib/site";
 
 export default function Footer({ lang }: { lang: Lang }) {
@@ -36,15 +35,21 @@ export default function Footer({ lang }: { lang: Lang }) {
               href={x.href}
               {...(x.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               aria-label={x.name}
-              className="ease-figma flex h-6 w-6 items-center justify-center transition-opacity duration-200 hover:opacity-70 md:h-7 md:w-7 xl:h-8 xl:w-8"
+              // иконка — маска, цвет задаёт текст: серый, при наведении основной индиго
+              className="text-faint hover:text-accent focus-visible:text-accent ease-figma flex h-6 w-6 items-center justify-center transition-colors duration-200 md:h-7 md:w-7 xl:h-8 xl:w-8"
             >
-              <Image
-                src={x.icon}
-                alt=""
+              <span
                 aria-hidden="true"
-                width={x.w}
-                height={x.h}
-                className="h-auto w-full"
+                className="block w-full bg-current"
+                style={{
+                  aspectRatio: `${x.w} / ${x.h}`,
+                  maskImage: `url(${x.icon})`,
+                  WebkitMaskImage: `url(${x.icon})`,
+                  maskSize: "100% 100%",
+                  WebkitMaskSize: "100% 100%",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskRepeat: "no-repeat",
+                }}
               />
             </a>
           </li>
