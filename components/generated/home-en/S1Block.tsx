@@ -13,7 +13,7 @@ export default function S1Block() {
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "17px", lineHeight: "normal", fontWeight: 400, color: "#64748b" }}>{`I’m Ivan Grigorenko — UX/UI Designer`}</p>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "normal", fontWeight: 700, color: "#0f172a" }}>{`I craft clear, intuitive `}<span style={{ color: "#4f46e5" }}>{`digital`}</span>{` products`}</p>
         </div>
-        <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "20px", display: "flex", justifyContent: "center" }}>
+        <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px", display: "flex", justifyContent: "center" }}>
           <ContactButton lang="en" />
         </div>
       </div>
@@ -28,7 +28,7 @@ export default function S1Block() {
             <img src="/a/2a06b471d4de3127fbd46048360701923de8101d.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-60.15%", width: "235.82%", top: "-46.17%", height: "224.26%", maxWidth: "none" }} />
           </span>
         </div>
-        <div style={{ width: "720px", flexShrink: 0, marginTop: "24px", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "720px", flexShrink: 0, marginTop: "32px", display: "flex", justifyContent: "center" }}>
           <ContactButton lang="en" />
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function S1Block() {
             <img src="/a/3124b15427ab957b9ad6f72de3a4cb4968ec1ef0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-60.15%", width: "235.82%", top: "-46.17%", height: "224.26%", maxWidth: "none" }} />
           </span>
         </div>
-        <div style={{ width: "899px", flexShrink: 0, marginTop: "36px", display: "flex", justifyContent: "center" }}>
+        <div style={{ width: "899px", flexShrink: 0, marginTop: "44px", display: "flex", justifyContent: "center" }}>
           <ContactButton lang="en" />
         </div>
       </div>
