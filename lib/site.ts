@@ -22,14 +22,15 @@ export const mailtoHref = (lang: Lang) =>
   "%0AI'm%20interested%20in%20collaborating%20with%20you.%0A%0ARegards,%0A[Your%20Name]";
 
 /**
- * Иконки соцсетей рисуются в своих пропорциях и центрируются в квадрате 32×32:
- * у Behance знак шире и ниже остальных (32×20), квадратом его тянуть нельзя.
+ * Иконки блока контактов — в одном стиле: круг 32px, знак вырезан.
+ * В оригинале они были разными (надпись Behance, квадрат LinkedIn, контурный мяч
+ * Dribbble); 2026-10-05 приведены к одному виду по просьбе Ивана. Знаки взяты из
+ * исходных иконок, файлы — в public/icons.
  */
 export const socials = [
-  { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: asset("d218d31b95457388456f4f51da47d5014d56e74c.svg"), w: 32, h: 20 },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-grigorenko-1382b0156/", icon: asset("d788591286bc66c6bc1cf78678eb2ca467468a9d.svg"), w: 32, h: 32 },
-  { name: "Dribbble", href: "https://dribbble.com/ivangrigorenko", icon: asset("e02e8e9375f55e998afbec75fa12d3a26769b60d.svg"), w: 32, h: 32 },
-  // в оригинале Telegram нет; знак нарисован в том же цвете и размере, что остальные
+  { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: "/icons/behance.svg", w: 32, h: 32 },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-grigorenko-1382b0156/", icon: "/icons/linkedin.svg", w: 32, h: 32 },
+  { name: "Dribbble", href: "https://dribbble.com/ivangrigorenko", icon: "/icons/dribbble.svg", w: 32, h: 32 },
   { name: "Telegram", href: "https://t.me/ivan_grigorenko", icon: "/icons/telegram.svg", w: 32, h: 32 },
 ];
 

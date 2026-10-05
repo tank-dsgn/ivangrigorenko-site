@@ -2,10 +2,6 @@ import type { Lang } from "@/lib/site";
 
 const label = { ru: "Связаться со мной", en: "Contact me" } as const;
 
-// блик бежит по контуру, пока курсор на кнопке; появляется после того, как обводка дорисована
-const RUN =
-  "opacity-0 transition-opacity duration-200 group-hover:animate-[border-run_1.8s_linear_infinite] group-hover:opacity-100 group-hover:delay-500 group-focus-visible:animate-[border-run_1.8s_linear_infinite] group-focus-visible:opacity-100 motion-reduce:hidden";
-
 /**
  * Кнопка «Связаться со мной»: прокручивает к блоку контактов внизу страницы.
  * Стоит в первом экране главной, под заголовком, по левому краю текста.
@@ -14,42 +10,17 @@ const RUN =
  *
  * Вид — контурная кнопка из макета (как «Скачать моё резюме»), но крупнее:
  * 48px в высоту, текст 18px, поля 40px; на телефоне — 40px, 16px и 32px.
- * При наведении:
- *   - индиго-обводка 2px прорисовывается по контуру, текст становится индиго;
- *   - под кнопкой проступает мягкая индиго-тень;
- *   - по контуру бежит блик с размытым ореолом — он выходит за границы обводки.
- * При уходе курсора всё сворачивается обратно.
+ * При наведении кнопка выделяется целиком: обводка и текст становятся индиго,
+ * вокруг появляется мягкое индиго-свечение. Всё плавно, за 300 мс.
  */
 export default function ContactButton({ lang }: { lang: Lang }) {
   return (
     <a
       href="#contacts"
-      className="group text-muted ease-figma hover:text-accent focus-visible:text-accent relative isolate inline-flex h-10 items-center justify-center rounded-full px-8 text-[16px] leading-6 font-semibold md:h-12 md:px-10 md:text-[18px] md:leading-7 whitespace-nowrap transition-[color,box-shadow] duration-300 hover:shadow-[0_8px_24px_-8px_rgba(79,70,229,0.45)] focus-visible:shadow-[0_8px_24px_-8px_rgba(79,70,229,0.45)] motion-reduce:transition-none"
+      // тень из трёх слоёв: обводка, кольцо свечения, мягкая тень снизу; в покое два последних прозрачны
+      className="text-muted ease-figma hover:text-accent focus-visible:text-accent inline-flex h-10 items-center justify-center rounded-full bg-white px-8 text-[16px] leading-6 font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8,0_0_0_0_rgba(79,70,229,0),0_8px_24px_-8px_rgba(79,70,229,0)] transition-[color,box-shadow] duration-300 hover:shadow-[inset_0_0_0_2px_#4f46e5,0_0_0_4px_rgba(79,70,229,0.12),0_8px_24px_-8px_rgba(79,70,229,0.45)] focus-visible:shadow-[inset_0_0_0_2px_#4f46e5,0_0_0_4px_rgba(79,70,229,0.12),0_8px_24px_-8px_rgba(79,70,229,0.45)] motion-reduce:transition-none md:h-12 md:px-10 md:text-[18px] md:leading-7"
     >
-      {/* ореол блика: под кнопкой, размытый, виден только снаружи */}
-      <svg aria-hidden="true" className="pointer-events-none absolute inset-px -z-10 h-[calc(100%-2px)] w-[calc(100%-2px)] overflow-visible blur-[5px]" fill="none" strokeWidth="8" strokeLinecap="round">
-        <rect width="100%" height="100%" rx="19" stroke="#6366f1" pathLength={1} strokeDasharray="0.16 0.84" className={`md:[rx:23px] ${RUN}`} />
-      </svg>
-      {/* белый фон кнопки отдельным слоем: он закрывает ореол изнутри */}
-      <span aria-hidden="true" className="absolute inset-0 -z-[5] rounded-full bg-white" />
       {label[lang]}
-      {/* серая обводка — всегда */}
-      <svg aria-hidden="true" className="pointer-events-none absolute inset-[0.5px] h-[calc(100%-1px)] w-[calc(100%-1px)] overflow-visible" fill="none">
-        <rect width="100%" height="100%" rx="19.5" stroke="#94a3b8" className="md:[rx:23.5px]" />
-      </svg>
-      {/* индиго рисуется по контуру, по ней бежит блик */}
-      <svg aria-hidden="true" className="pointer-events-none absolute inset-px h-[calc(100%-2px)] w-[calc(100%-2px)] overflow-visible" fill="none" strokeWidth="2" strokeLinecap="round">
-        <rect
-          width="100%"
-          height="100%"
-          rx="19"
-          stroke="#4f46e5"
-          pathLength={1}
-          strokeDasharray={1}
-          className="ease-figma transition-[stroke-dashoffset] duration-700 md:[rx:23px] [stroke-dashoffset:1] group-hover:[stroke-dashoffset:0] group-focus-visible:[stroke-dashoffset:0] motion-reduce:transition-none"
-        />
-        <rect width="100%" height="100%" rx="19" stroke="#c7d2fe" pathLength={1} strokeDasharray="0.12 0.88" className={`md:[rx:23px] ${RUN}`} />
-      </svg>
     </a>
   );
 }
