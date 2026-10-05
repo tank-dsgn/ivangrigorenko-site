@@ -81,6 +81,7 @@ export function createEmitter({
   nodeById = {},
   fonts = {},
   guidToUrl = {},
+  additions = [],
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -170,6 +171,35 @@ export function createEmitter({
   const usedAssets = new Set();
   const usedLinks = new Set();
   const usedFonts = new Set();
+
+  // ширина брейкпоинта, который сейчас выводится: от неё зависят отступы своих компонентов
+  let breakpoint = 0;
+  const setBreakpoint = (w) => { breakpoint = w; };
+
+  /**
+   * Свой компонент, которого нет в макете (кнопка в первом экране главной).
+   * Встаёт последним ребёнком узла — на ширину и по выравниванию соседа сверху.
+   */
+  function addition(node, flowKids, pad) {
+    return additions
+      .filter((a) => a.into === node.name)
+      .map((a) => {
+        const above = flowKids[flowKids.length - 1];
+        const like = above ? sizing(above, node) : {};
+        const box = styleLiteral({
+          width: like.width,
+          alignSelf: like.alignSelf,
+          flexShrink: 0,
+          marginTop: px(a.gap?.[breakpoint] ?? 0),
+        });
+        return (
+          `${pad}${indentUnit}<div style=${box}>\n` +
+          `${pad}${indentUnit}${indentUnit}<${a.component} lang="${lang}" />\n` +
+          `${pad}${indentUnit}</div>\n`
+        );
+      })
+      .join("");
+  }
 
   /** Текст в JSX: перевод строки — отдельным выражением, иначе JSX его съест */
   const literal = (text) =>
@@ -530,7 +560,8 @@ export function createEmitter({
           const pull = overlap && inFlow && flowIndex++ > 0 ? overlap : 0;
           return emit(pull ? { ...c, pull: { axis: node.layoutMode, value: pull } } : c, node, depth + 1, insideLink || Boolean(link), swapTargets);
         })
-        .join("");
+        .join("") +
+      addition(node, visibleKids.filter((c) => c.layoutPositioning !== "ABSOLUTE"), pad);
     const s = styleLiteral(style);
 
     if (link) {
@@ -543,5 +574,5 @@ export function createEmitter({
     return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
   }
 
-  return { emit, usedAssets, usedLinks, usedFonts, usesVariants: () => usedVariants };
+  return { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, usesVariants: () => usedVariants };
 }

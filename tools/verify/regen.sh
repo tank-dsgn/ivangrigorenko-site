@@ -8,6 +8,7 @@ cd "$(dirname "$0")/../.." || exit 1
 [ "$PAGES" = none ] && PAGES=" "
 for p in ${PAGES:-eazychange autotor pot ostral vv mikulich about}; do
   for l in ru en; do
+    [ "$p" = home ] && continue
     node tools/figma/generate.mjs "$p-$l" --sections >/dev/null || echo "FAIL $p-$l"
   done
 done

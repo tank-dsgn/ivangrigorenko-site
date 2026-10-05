@@ -1,6 +1,8 @@
 // Секция «1 block» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs home-ru --sections
 
+import ContactButton from "@/components/ContactButton";
+
 export default function S1Block() {
   return (
     <>
@@ -10,6 +12,9 @@ export default function S1Block() {
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "17px", lineHeight: "normal", fontWeight: 400, color: "#64748b" }}>{`Я Иван Григоренко — UX/UI дизайнер`}</p>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "normal", fontWeight: 700, color: "#0f172a" }}>{`Создаю понятные, эстетичные и продуманные `}<span style={{ color: "#4f46e5" }}>{`цифровые`}</span>{` продукты`}</p>
+        </div>
+        <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "20px" }}>
+          <ContactButton lang="ru" />
         </div>
       </div>
       </div>
@@ -23,6 +28,9 @@ export default function S1Block() {
             <img src="/a/2a06b471d4de3127fbd46048360701923de8101d.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-60.15%", width: "235.82%", top: "-46.17%", height: "224.26%", maxWidth: "none" }} />
           </span>
         </div>
+        <div style={{ width: "720px", flexShrink: 0, marginTop: "24px" }}>
+          <ContactButton lang="ru" />
+        </div>
       </div>
       </div>
       {/* Desktop */}
@@ -34,6 +42,9 @@ export default function S1Block() {
           <span style={{ position: "absolute", left: "624px", bottom: "-3px", width: "20px", height: "24px" }}>
             <img src="/a/3124b15427ab957b9ad6f72de3a4cb4968ec1ef0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-60.15%", width: "235.82%", top: "-46.17%", height: "224.26%", maxWidth: "none" }} />
           </span>
+        </div>
+        <div style={{ width: "898px", flexShrink: 0, marginTop: "16px" }}>
+          <ContactButton lang="ru" />
         </div>
       </div>
       </div>

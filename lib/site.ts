@@ -29,6 +29,8 @@ export const socials = [
   { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: asset("d218d31b95457388456f4f51da47d5014d56e74c.svg"), w: 32, h: 20 },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-grigorenko-1382b0156/", icon: asset("d788591286bc66c6bc1cf78678eb2ca467468a9d.svg"), w: 32, h: 32 },
   { name: "Dribbble", href: "https://dribbble.com/ivangrigorenko", icon: asset("e02e8e9375f55e998afbec75fa12d3a26769b60d.svg"), w: 32, h: 32 },
+  // в оригинале Telegram нет; знак нарисован в том же цвете и размере, что остальные
+  { name: "Telegram", href: "https://t.me/ivan_grigorenko", icon: "/icons/telegram.svg", w: 32, h: 32 },
 ];
 
 /** Главная у русской версии — /home-ru, у английской — корень сайта */

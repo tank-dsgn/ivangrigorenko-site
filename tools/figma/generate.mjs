@@ -91,7 +91,7 @@ const SHELL_TAGS = new Set(["HEADER", "FOOTER"]);
  * Разрезает страницу на секции: по файлу на секцию макета.
  * Внутри каждого файла — три брейкпоинта, как и раньше.
  */
-async function emitSections({ slug, frames, resolveTree, emit, shell, outDir }) {
+async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, additions, shell, outDir }) {
   const dir = outDir || `components/generated/${slug}`;
   await mkdir(resolve(dir), { recursive: true });
 
@@ -120,6 +120,7 @@ async function emitSections({ slug, frames, resolveTree, emit, shell, outDir }) 
 
     const body = sec.parts
       .map(({ bp, node, tree }) => {
+        setBreakpoint(bp.width);
         return (
           `      {/* ${bp.label} */}\n` +
           `      <div className=${JSON.stringify(("figma-page " + bp.className).trim())}>\n` +
@@ -133,7 +134,11 @@ async function emitSections({ slug, frames, resolveTree, emit, shell, outDir }) 
     const hasVariants = body.includes("<VariantGroup ");
     const imports =
       (hasLink ? `import Link from "next/link";\n` : "") +
-      (hasVariants ? `import VariantGroup from "@/components/VariantGroup";\n` : "");
+      (hasVariants ? `import VariantGroup from "@/components/VariantGroup";\n` : "") +
+      additions
+        .filter((a) => body.includes(`<${a.component} `))
+        .map((a) => `import ${a.component} from ${JSON.stringify(a.from)};\n`)
+        .join("");
     const src =
       `// Секция «${sec.name}» — сгенерировано из Figma.\n` +
       `// Перегенерировать: node tools/figma/generate.mjs ${slug} --sections\n\n` +
@@ -195,7 +200,10 @@ async function main() {
     .filter((n) => n?.isBreakpointFrame);
 
   const lang = slug.endsWith("-en") || slug === "index" ? "en" : "ru";
-  const { emit, usedAssets, usedLinks, usedFonts } = createEmitter({
+  // свои компоненты поверх макета — только для этой страницы
+  const additions = (overrides.additions || []).filter((a) => a.pages.includes(slug));
+  const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint } = createEmitter({
+    additions,
     assets,
     fonts,
     guidToUrl,
@@ -232,7 +240,7 @@ async function main() {
   // --sections: каждая секция макета уезжает в свой файл со своим именем.
   // Так страница читается как список секций, а не как одна простыня.
   if (rest.includes("--sections")) {
-    await emitSections({ slug, frames, resolveTree, emit, shell, outDir: arg("--out") });
+    await emitSections({ slug, frames, resolveTree, emit, setBreakpoint, additions, shell, outDir: arg("--out") });
     console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
     await recordFonts(usedFonts, fonts);
     return;

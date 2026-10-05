@@ -14,5 +14,34 @@
     "Inspection platform": "ostral",
     "Design system": "vv",
     "Brand identity & logo": "mikulich"
-  }
+  },
+  "_additions": "Свои компоненты, которых нет в макете. Генератор дописывает компонент последним ребёнком узла `into` — на ширину и по выравниванию соседа сверху, с отступом `gap` под брейкпоинт. Так правка переживает перегенерацию. На десктопе отступ у русской и английской главной разный, потому что заголовок в макете прижат к низу своего блока по-разному; на экране в обоих случаях выходит 32px.",
+  "additions": [
+    {
+      "into": "1 block",
+      "component": "ContactButton",
+      "from": "@/components/ContactButton",
+      "pages": [
+        "home-ru"
+      ],
+      "gap": {
+        "1280": 16,
+        "800": 24,
+        "375": 20
+      }
+    },
+    {
+      "into": "1 block",
+      "component": "ContactButton",
+      "from": "@/components/ContactButton",
+      "pages": [
+        "index"
+      ],
+      "gap": {
+        "1280": 36,
+        "800": 24,
+        "375": 20
+      }
+    }
+  ]
 }
