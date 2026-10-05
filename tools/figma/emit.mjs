@@ -191,6 +191,8 @@ export function createEmitter({
           alignSelf: like.alignSelf,
           flexShrink: 0,
           marginTop: px(a.gap?.[breakpoint] ?? 0),
+          display: a.align ? "flex" : undefined,
+          justifyContent: a.align,
         });
         return (
           `${pad}${indentUnit}<div style=${box}>\n` +
