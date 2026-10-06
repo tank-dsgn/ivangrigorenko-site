@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "./figma-fonts.css";
 import Analytics from "@/components/Analytics";
+import { DEPLOY_URL } from "@/lib/pages";
 
 // Те же файлы Open Sans, что отдаёт оригинал на Figma Sites. У версии из Google Fonts
 // чуть другая ширина букв — заголовки выходили на 2% уже, а это риск другого переноса строк.
@@ -25,7 +26,7 @@ const openSansItalic = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ivangrigorenko.com"),
+  metadataBase: new URL(DEPLOY_URL),
   title: "ivan.grigorenko.dsgn",
   description:
     "Иван Григоренко — UX/UI дизайнер. Создаю понятные, эстетичные и продуманные цифровые продукты.",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     title: "ivan.grigorenko.dsgn",
     description:
       "Иван Григоренко — UX/UI дизайнер. Создаю понятные, эстетичные и продуманные цифровые продукты.",
-    images: ["/og.png"],
+    images: [{ url: `${DEPLOY_URL}/og.png`, width: 1200, height: 630 }],
     type: "website",
   },
 };

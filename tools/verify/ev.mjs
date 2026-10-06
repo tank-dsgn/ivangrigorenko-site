@@ -3,7 +3,7 @@
 import { spawn } from "child_process"; import fs from "fs"; import os from "os"; import path from "path";
 const dir = path.dirname(new URL(import.meta.url).pathname);
 const [,, url, widthArg, exprArg, waitArg] = process.argv;
-const width = +widthArg; const height = width < 700 ? 812 : 900; const PORT = 9334;
+const width = +widthArg; const height = +process.env.H || (width < 700 ? 812 : 900); const PORT = 9334; // H=1800 — высота окна для длинного скриншота
 const expr = fs.existsSync(exprArg) ? fs.readFileSync(exprArg, "utf8") : exprArg;
 const chrome = spawn("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", ["--headless=new", `--remote-debugging-port=${PORT}`, `--user-data-dir=${os.tmpdir()}/ig-verify-chrome2`, "--no-first-run", "--disable-extensions", "--hide-scrollbars", `--window-size=${width},${height}`, "about:blank"], { stdio: "ignore" });
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

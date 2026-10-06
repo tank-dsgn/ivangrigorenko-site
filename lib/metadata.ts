@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_URL, findPage } from "@/lib/pages";
+import { DEPLOY_URL, SITE_URL, findPage } from "@/lib/pages";
 
 /**
  * Описание и картинка для соцсетей — общие для всего сайта,
@@ -13,6 +13,9 @@ export const SITE_DESCRIPTION =
  * Метаданные страницы: канонический адрес и связка с версией на другом языке.
  * Заголовок — название проекта, остальное общее.
  */
+/** Картинка превью ссылки — та же, что на оригинале: 1200×630 */
+const OG_IMAGE = { url: `${DEPLOY_URL}/og.png`, width: 1200, height: 630, alt: SITE_NAME };
+
 export function pageMetadata({ path, title }: { path: string; title?: string }): Metadata {
   const page = findPage(path);
   const url = `${SITE_URL}${path}`;
@@ -35,7 +38,7 @@ export function pageMetadata({ path, title }: { path: string; title?: string }):
       description: SITE_DESCRIPTION,
       url,
       siteName: SITE_NAME,
-      images: ["/og.png"],
+      images: [OG_IMAGE],
       type: "website",
       locale: page?.lang === "en" ? "en_US" : "ru_RU",
     },
@@ -43,7 +46,7 @@ export function pageMetadata({ path, title }: { path: string; title?: string }):
       card: "summary_large_image",
       title: fullTitle,
       description: SITE_DESCRIPTION,
-      images: ["/og.png"],
+      images: [OG_IMAGE],
     },
   };
 }

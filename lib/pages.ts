@@ -71,3 +71,13 @@ export function menuHref(path: string) {
 }
 
 export const SITE_URL = "https://ivangrigorenko.com";
+
+/**
+ * Адрес, с которого сайт отдаётся на самом деле. Пока домен не переключён, это
+ * адрес на Vercel: картинку для превью ссылки мессенджер скачивает именно отсюда,
+ * а на ivangrigorenko.com её нет — там ещё версия на Figma Sites. Vercel сам
+ * подставит свой домен, как только он станет основным.
+ */
+export const DEPLOY_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  : SITE_URL;

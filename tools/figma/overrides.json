@@ -54,5 +54,40 @@
         "imageScale": 1.1
       }
     }
-  }
+  },
+  "_paragraphs": "Свой текст вместо текста из макета. У узла `into` дети заменяются абзацами из списка; оформление берётся у его первого текстового слоя на каждом брейкпоинте. «Обо мне»: русский текст — канон из Notion «Texts» → SITE → ABOUT (06.10.2026), английский — Notion «EN_TEXTS» → SITE — ABOUT; абзац про AI в английском обновлён под русский (там был вариант от 13.09).",
+  "paragraphs": [
+    {
+      "pages": [
+        "about-ru"
+      ],
+      "into": "Frame 427321384",
+      "text": [
+        "Я Иван — UX/UI дизайнер. Проектирую веб, десктоп и мобильные интерфейсы.",
+        "Работал в командах и самостоятельно. Отвечал за продукты, собранные с нуля, а также проектировал новые функции и разделы в действующих сервисах.",
+        "Принимаю решения на основе данных, задач бизнеса и пользовательских исследований. Глубоко прорабатываю информационную архитектуру, сценарии взаимодействия и логику состояний.",
+        "Проектирую и поддерживаю масштабируемые дизайн-системы. Прорабатываю архитектуру токенов, структуру компонентов и их состояний, веду документацию.",
+        "При передаче в разработку готовлю подробные спецификации и UX-документацию, собираю интерактивные прототипы. Согласовываю с разработчиками ограничения реализации и провожу Design QA перед релизом для устранения расхождений.",
+        "Особенно интересны продукты со сложной логикой и большими объёмами данных, где нужно навести порядок в ролях, сценариях и состояниях интерфейса. Мне близок системный подход: проектирую с расчётом на то, чтобы интерфейс было легко поддерживать и масштабировать.",
+        "Использую AI: собираю прототипы в коде по макетам (Claude Code, Figma MCP, Storybook, Github, Vercel), провожу исследования и анализ, работаю над структурой и документацией.",
+        "Проектировал интерфейсы в разных доменах: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech. А также занимался брендингом и айдентикой."
+      ]
+    },
+    {
+      "pages": [
+        "about-en"
+      ],
+      "into": "Frame 427321384",
+      "text": [
+        "I’m Ivan, a UX/UI designer. I design web, desktop and mobile interfaces.",
+        "I have worked in teams and on my own. I was responsible for products built from scratch. I also designed new features and sections for products that were already live.",
+        "I make decisions based on data, business goals and user research. I work in detail on information architecture, user flows and state logic.",
+        "I design and support scalable design systems. I work on token architecture, component structure and component states. I also write documentation.",
+        "For handoff, I prepare detailed specs and UX documentation and build interactive prototypes. I agree on technical limits with developers. Before release, I do Design QA and fix differences between the design and the build.",
+        "I am most interested in products with complex logic and a lot of data, where roles, flows and interface states need a clear structure. I like a systematic approach: I design interfaces that are easy to support and scale.",
+        "I use AI: I build prototypes in code from my designs (Claude Code, Figma MCP, Storybook, Github, Vercel). I also use it for research, analysis, structure and documentation.",
+        "I have designed interfaces in different domains: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech. I have also worked on branding and visual identity."
+      ]
+    }
+  ]
 }

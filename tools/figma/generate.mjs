@@ -199,7 +199,32 @@ async function main() {
   const doc = await loadPage(slug, arg("--json"), rest.includes("--fetch"));
   const { nodeById, assets, roots, fonts, guidToUrl } = doc;
   const page = nodeById[roots[0]];
-  const { resolve: resolveTree, resolveVariant } = createResolver(doc);
+  const { resolve: resolveRaw, resolveVariant } = createResolver(doc);
+
+  // Свой текст вместо текста из макета: у названного узла дети заменяются абзацами,
+  // оформление берётся у его первого текстового слоя.
+  const rewrites = (overrides.paragraphs || []).filter((r) => r.pages.includes(slug));
+  const rewrite = (node) => {
+    if (!node) return node;
+    const rule = rewrites.find((r) => r.into === node.name);
+    const like = rule && (node.children || []).find((c) => c.type === "TEXT" && c.visible !== false);
+    if (like) {
+      node.children = rule.text.map((characters, i) => ({
+        ...like,
+        id: `${like.id}:p${i}`,
+        name: characters.slice(0, 40),
+        characters,
+        characterStyleOverrides: [],
+        styleOverrideTable: {},
+        lineTypes: ["NONE"],
+        lineIndentations: [0],
+      }));
+    } else {
+      (node.children || []).forEach(rewrite);
+    }
+    return node;
+  };
+  const resolveTree = (id) => rewrite(resolveRaw(id));
 
   const frames = (page.children || [])
     .map((id) => nodeById[id])
