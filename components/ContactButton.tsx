@@ -1,6 +1,7 @@
 import { mailtoHref, type Lang } from "@/lib/site";
 
-const label = { ru: "Связаться со мной", en: "Contact me" } as const;
+// русская подпись сокращена 06.10 по просьбе Ивана: глагол остался, «со мной» убрано
+const label = { ru: "Связаться", en: "Contact me" } as const;
 
 /**
  * Кнопка «Связаться со мной». В оригинале её нет (добавлена 2026-10-05),
