@@ -12,13 +12,13 @@ export default function Audit() {
         <span style={{ position: "absolute", left: "-30.13%", right: "-104.53%", top: "-105px", height: "2075px", flexShrink: 0 }}>
           <img src="/a/c368e2fa63894d50ffd6f0729e9d20bf9dfeaa18.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-39.02%", width: "169.39%", top: "-16.55%", height: "141.5%", maxWidth: "none" }} />
         </span>
-        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "0 20px 0 20px" }}>
+        <div style={{ position: "relative", alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "0 20px 0 20px" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#06181e" }}>{`Internal Audit`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`An analysis of work across multiple studio projects revealed systemic issues: solutions were repeatedly recreated from scratch, components were built locally for each project, and interface parameters varied from one product to another. The lack of centralized tokens and variables slowed down development, made maintenance more complex, and required manual synchronization of changes`}</p>
           </div>
         </div>
-        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
+        <div style={{ position: "relative", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start", padding: "0 20px 0 20px" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Repeated Solutions`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
@@ -61,13 +61,13 @@ export default function Audit() {
         <span style={{ position: "absolute", left: "-20.05%", right: "-23.5%", top: "264px", height: "1363px", flexShrink: 0 }}>
           <img src="/a/6483e7163f19a70d1892c20020cd484a7366d4e1.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-24.82%", width: "144.91%", top: "-20.91%", height: "140.6%", maxWidth: "none" }} />
         </span>
-        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+        <div style={{ position: "relative", alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#06181e" }}>{`Internal Audit`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`An analysis of work across multiple studio projects revealed systemic issues: solutions were repeatedly recreated from scratch, components were built locally for each project, and interface parameters varied from one product to another. The lack of centralized tokens and variables slowed down development, made maintenance more complex, and required manual synchronization of changes`}</p>
           </div>
         </div>
-        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
+        <div style={{ position: "relative", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Repeated Solutions`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "12px", justifyContent: "center", alignItems: "flex-start", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
@@ -111,7 +111,7 @@ export default function Audit() {
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-105px", height: "1828.79px", flexShrink: 0 }}>
             <img src="/a/3efd2dd90f2e7cc226c2240e822836307a330ae0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-18.77%", height: "135.75%", maxWidth: "none" }} />
           </span>
-          <div style={{ width: "1024px", height: "627px", flexShrink: 0, position: "relative" }}>
+          <div style={{ position: "relative", width: "1024px", height: "627px", flexShrink: 0 }}>
             <div style={{ position: "absolute", left: "0", top: "0", width: "1024px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Internal Audit`}</p>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -175,7 +175,7 @@ export default function Audit() {
               </div>
             </VariantGroup>
           </div>
-          <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
+          <div style={{ position: "relative", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
               src="/a/711349a7261662e52e8a4a937c9423a5dd398bdd.svg"
               alt=""
@@ -206,7 +206,7 @@ export default function Audit() {
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-105px", height: "1828.79px", flexShrink: 0 }}>
             <img src="/a/3efd2dd90f2e7cc226c2240e822836307a330ae0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-18.77%", height: "135.75%", maxWidth: "none" }} />
           </span>
-          <div style={{ width: "1024px", height: "627px", flexShrink: 0, position: "relative" }}>
+          <div style={{ position: "relative", width: "1024px", height: "627px", flexShrink: 0 }}>
             <div style={{ position: "absolute", left: "0", top: "0", width: "1024px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Internal Audit`}</p>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -279,7 +279,7 @@ export default function Audit() {
               </div>
             </VariantGroup>
           </div>
-          <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
+          <div style={{ position: "relative", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
               src="/a/20d47913e19353ad859adf25e696c3247fe68d26.svg"
               alt=""
@@ -310,7 +310,7 @@ export default function Audit() {
           <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-105px", height: "1828.79px", flexShrink: 0 }}>
             <img src="/a/3efd2dd90f2e7cc226c2240e822836307a330ae0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-18.77%", height: "135.75%", maxWidth: "none" }} />
           </span>
-          <div style={{ width: "1024px", height: "627px", flexShrink: 0, position: "relative" }}>
+          <div style={{ position: "relative", width: "1024px", height: "627px", flexShrink: 0 }}>
             <div style={{ position: "absolute", left: "0", top: "0", width: "1024px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Internal Audit`}</p>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -376,7 +376,7 @@ export default function Audit() {
               </span>
             </div>
           </div>
-          <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
+          <div style={{ position: "relative", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
             <img
               src="/a/20d47913e19353ad859adf25e696c3247fe68d26.svg"
               alt=""

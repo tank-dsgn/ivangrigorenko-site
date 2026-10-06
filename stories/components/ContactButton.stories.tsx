@@ -15,7 +15,7 @@ const meta: Meta<typeof ContactButton> = {
     docs: {
       description: {
         component:
-          "Sits in the home hero under the heading. On hover the outline and label turn indigo and a soft blurred halo appears around the button, slowly shifting between indigo tints (one turn in 3.5 s). Nothing happens on touch screens.",
+          "Sits in the home hero under the heading. On hover the outline and label turn indigo and a translucent indigo ring draws itself once around the button (700 ms) and stays; it retracts when the cursor leaves. Nothing loops. Nothing happens on touch screens.",
       },
     },
   },

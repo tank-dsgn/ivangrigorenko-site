@@ -11,7 +11,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-1:hover .hn-1-1 { translate: 0px -6px !important; }
           .hg-1:hover .hn-1-2 { transform: translateY(-50%) scale(1.0989, 1.0989) !important; }
-          .hg-1:hover .hn-1-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-1:hover .hn-1-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-1, .hg-1 * { transition: none !important; } }
         .hn-2-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -20,7 +20,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-2:hover .hn-2-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-2:hover .hn-2-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
-          .hg-2:hover .hn-2-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-2:hover .hn-2-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-2, .hg-2 * { transition: none !important; } }
         .hn-3-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -29,7 +29,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-3:hover .hn-3-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-3:hover .hn-3-2 { translate: 0.14px 0.21px !important; scale: 1.0461 1.0461 !important; }
-          .hg-3:hover .hn-3-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-3:hover .hn-3-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-3, .hg-3 * { transition: none !important; } }
         .hn-4-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -38,7 +38,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-4:hover .hn-4-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-4:hover .hn-4-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
-          .hg-4:hover .hn-4-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-4:hover .hn-4-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-4, .hg-4 * { transition: none !important; } }
         .hn-5-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -47,7 +47,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-5:hover .hn-5-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-5:hover .hn-5-2 { translate: 0.15px -0.05px !important; scale: 1.0627 1.0626 !important; }
-          .hg-5:hover .hn-5-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-5:hover .hn-5-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-5, .hg-5 * { transition: none !important; } }
       `}</style>
@@ -75,7 +75,7 @@ export default function Hero() {
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "746px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", padding: "100px 128px 120px 128px", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "0", right: "0", top: "calc(50% + 0px)", transform: "translateY(-50%)", aspectRatio: "4096 / 2387", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7cfd38a54cce03ddd1c754f1d1ea2735eb8a2c66.webp)" }} />
-        <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "180px", justifyContent: "flex-end", alignItems: "center" }}>
+        <div style={{ position: "relative", width: "1024px", display: "flex", flexDirection: "column", gap: "180px", justifyContent: "flex-end", alignItems: "center" }}>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "115px", lineHeight: "118px", fontWeight: 400, fontFamily: "\"Anton\", var(--font-open-sans), sans-serif", letterSpacing: "1px", textTransform: "uppercase", textAlign: "center", color: "#ffffff" }}>{`Ostral`}</p>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 600, textAlign: "center", color: "#ffffff" }}>{`Веб-платформа — UX/UI, Визуализация Данных, Прототипирование`}</p>
         </div>

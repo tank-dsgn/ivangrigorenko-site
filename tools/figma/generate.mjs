@@ -255,6 +255,7 @@ async function main() {
   const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss, componentCalls } = createEmitter({
     additions,
     hoverRules: overrides.hover || {},
+    textStyles: (overrides.textStyles || []).filter((r) => r.pages.includes(slug)),
     assets,
     fonts,
     guidToUrl,

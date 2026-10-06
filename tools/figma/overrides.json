@@ -87,5 +87,25 @@
         "I have designed interfaces in different domains: Fintech, Crypto, E⁠-⁠commerce, B2B SaaS, B2C, EdTech. I have also worked on branding and visual identity."
       ]
     }
+  ],
+  "textStyles": [
+    {
+      "pages": [
+        "autotor-ru"
+      ],
+      "startsWith": "Разработка Платных Функции для Autotor.pl",
+      "style": {
+        "color": "#ffffff"
+      }
+    },
+    {
+      "pages": [
+        "autotor-en"
+      ],
+      "startsWith": "Paid features for Autotor.pl",
+      "style": {
+        "color": "#ffffff"
+      }
+    }
   ]
 }

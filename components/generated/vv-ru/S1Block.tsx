@@ -20,7 +20,7 @@ export default function S1Block() {
             decoding="async"
             style={{ position: "absolute", left: "-707px", top: "-1067px", width: "1710px", height: "2066px", flexShrink: 0 }}
           />
-          <div style={{ alignSelf: "stretch", aspectRatio: "335 / 176", position: "relative", overflow: "hidden" }}>
+          <div style={{ position: "relative", alignSelf: "stretch", aspectRatio: "335 / 176", overflow: "hidden" }}>
             <img src="/a/05754268326d87f16c51cddfec2a50337e6f97db.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "-4.27%", width: "100%", height: "104.4%", maxWidth: "none" }} />
           </div>
         </div>

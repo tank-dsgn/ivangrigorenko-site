@@ -134,7 +134,7 @@ export default function Tokens() {
         <span style={{ position: "absolute", left: "-8.83%", right: "-60%", top: "-189px", height: "1237.79px", flexShrink: 0 }}>
           <img src="/a/da025241b9a731e65097a4ba61bad2470b6a0312.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-15.89%", width: "130.26%", top: "-27.74%", height: "152.82%", maxWidth: "none" }} />
         </span>
-        <div style={{ width: "1024px", height: "807px", flexShrink: 0, position: "relative" }}>
+        <div style={{ position: "relative", width: "1024px", height: "807px", flexShrink: 0 }}>
           <div style={{ position: "absolute", left: "0", top: "0.5px", width: "1024px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Дизайн-токены`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -230,7 +230,7 @@ export default function Tokens() {
             </div>
           </VariantGroup>
         </div>
-        <div style={{ display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
+        <div style={{ position: "relative", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
           <img className="sn-7-9"
             src="/a/711349a7261662e52e8a4a937c9423a5dd398bdd.svg"
             alt=""

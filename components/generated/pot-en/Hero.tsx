@@ -69,7 +69,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-8:hover .hn-8-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-8:hover .hn-8-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
-          .hg-8:hover .hn-8-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-8:hover .hn-8-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-8, .hg-8 * { transition: none !important; } }
         .hn-9-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -78,7 +78,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-9:hover .hn-9-1 { translate: 0px -6px !important; }
           .hg-9:hover .hn-9-2 { transform: translateX(-50%) scale(1.1, 1.1) !important; }
-          .hg-9:hover .hn-9-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-9:hover .hn-9-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-9, .hg-9 * { transition: none !important; } }
         .hn-10-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -87,7 +87,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-10:hover .hn-10-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-10:hover .hn-10-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
-          .hg-10:hover .hn-10-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-10:hover .hn-10-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-10, .hg-10 * { transition: none !important; } }
         .hn-11-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -96,7 +96,7 @@ export default function Hero() {
         @media (hover: hover) {
           .hg-11:hover .hn-11-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-11:hover .hn-11-2 { translate: 0.15px -0.05px !important; scale: 1.0627 1.0626 !important; }
-          .hg-11:hover .hn-11-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-11:hover .hn-11-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-11, .hg-11 * { transition: none !important; } }
       `}</style>

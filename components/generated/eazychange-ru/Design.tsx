@@ -45,7 +45,7 @@ export default function Design() {
                 decoding="async"
                 style={{ position: "absolute", left: "calc(50% + -584px)", top: "calc(50% + -63px)", width: "1168.54px", height: "127.04px", flexShrink: 0 }}
               />
-              <span style={{ width: "960px", height: "579px", flexShrink: 0, position: "relative" }}>
+              <span style={{ position: "relative", width: "960px", height: "579px", flexShrink: 0 }}>
                 <img src="/a/cce69267a956744b41c1deebd9a147a3c08582a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "102.23%", maxWidth: "none" }} />
               </span>
             </div>

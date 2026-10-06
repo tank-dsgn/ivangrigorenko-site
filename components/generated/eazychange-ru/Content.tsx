@@ -32,7 +32,7 @@ export default function Content() {
         @media (hover: hover) {
           .hg-2:hover .hn-2-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-2:hover .hn-2-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
-          .hg-2:hover .hn-2-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-2:hover .hn-2-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-2, .hg-2 * { transition: none !important; } }
         .hn-3-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -41,7 +41,7 @@ export default function Content() {
         @media (hover: hover) {
           .hg-3:hover .hn-3-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-3:hover .hn-3-2 { translate: 0.14px 0.21px !important; scale: 1.0461 1.0461 !important; }
-          .hg-3:hover .hn-3-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-3:hover .hn-3-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-3, .hg-3 * { transition: none !important; } }
         .hn-4-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -50,7 +50,7 @@ export default function Content() {
         @media (hover: hover) {
           .hg-4:hover .hn-4-1 { translate: 0px -6px !important; }
           .hg-4:hover .hn-4-2 { transform: translateX(-50%) scale(1.1, 1.1) !important; }
-          .hg-4:hover .hn-4-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-4:hover .hn-4-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-4, .hg-4 * { transition: none !important; } }
         .hn-5-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -59,7 +59,7 @@ export default function Content() {
         @media (hover: hover) {
           .hg-5:hover .hn-5-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-5:hover .hn-5-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
-          .hg-5:hover .hn-5-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-5:hover .hn-5-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-5, .hg-5 * { transition: none !important; } }
         .hn-6-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
@@ -68,7 +68,7 @@ export default function Content() {
         @media (hover: hover) {
           .hg-6:hover .hn-6-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
           .hg-6:hover .hn-6-2 { translate: 0.15px -0.05px !important; scale: 1.0627 1.0626 !important; }
-          .hg-6:hover .hn-6-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
+          .hg-6:hover .hn-6-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 600 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-6, .hg-6 * { transition: none !important; } }
       `}</style>
@@ -277,25 +277,25 @@ export default function Content() {
                 <span style={{ position: "absolute", left: "calc(50% + -6px)", top: "496.5px", width: "13px", height: "0", flexShrink: 0, transform: "rotate(90deg)" }}>
                   <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "106.15%", top: "-5.89px", height: "11.78px", maxWidth: "none" }} />
                 </span>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Создание обмена`}</p>
                   <div style={{ width: "253px", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{` Вводит адрес и соглашается с условиями`}</p>
                   </div>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Ожидание депозита`}</p>
                   <div style={{ width: "253px", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Сканирует QR, отправляет монеты `}</p>
                   </div>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Обмен`}</p>
                   <div style={{ width: "253px", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Видит прогресс и комиссии`}</p>
                   </div>
                 </div>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Завершение`}</p>
                   <div style={{ width: "253px", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Получает подтверждение`}</p>
@@ -733,25 +733,25 @@ export default function Content() {
                 <span style={{ position: "absolute", left: "calc(50% + -6.5px)", top: "501.5px", width: "13px", height: "0", flexShrink: 0, transform: "rotate(90deg)" }}>
                   <img src="/a/8ea29d891b41d3f00e248560501e3bd7c69b9906.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "106.15%", top: "-5.89px", height: "11.78px", maxWidth: "none" }} />
                 </span>
-                <div style={{ width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Создание обмена`}</p>
                   <div style={{ alignSelf: "stretch", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{` Вводит адрес и соглашается с условиями`}</p>
                   </div>
                 </div>
-                <div style={{ width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Ожидание депозита`}</p>
                   <div style={{ alignSelf: "stretch", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Сканирует QR, отправляет монеты `}</p>
                   </div>
                 </div>
-                <div style={{ width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Обмен`}</p>
                   <div style={{ alignSelf: "stretch", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Видит прогресс и комиссии`}</p>
                   </div>
                 </div>
-                <div style={{ width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+                <div style={{ position: "relative", width: "362px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                   <p style={{ fontSize: "12px", lineHeight: "16px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`Завершение`}</p>
                   <div style={{ alignSelf: "stretch", height: "75px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", padding: "24px 12px 24px 12px", background: "rgba(72, 174, 255, 0.07)", borderRadius: "32px", overflow: "hidden", boxShadow: "0 0 0 0.5px #0052fe, inset 0 0 0 0.5px #0052fe" }}>
                     <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "12px", lineHeight: "16px", fontWeight: 600, textAlign: "center", color: "#0f172a" }}>{`Получает подтверждение`}</p>
@@ -954,7 +954,7 @@ export default function Content() {
           decoding="async"
           style={{ position: "absolute", left: "calc(50% + -1022px)", top: "calc(50% + -550px)", width: "2044px", height: "1022px", flexShrink: 0, transform: "translateY(var(--parallax, 0px))" }}
         />
-        <div style={{ flex: "1 0 0px", minHeight: "1px", alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
+        <div style={{ position: "relative", flex: "1 0 0px", minHeight: "1px", alignSelf: "stretch", height: "824px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.434) 100%)" }} />
         <div style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + 0.5px)", transform: "translateX(-50%) translateY(-50%)", display: "flex", flexDirection: "column", gap: "48px", alignItems: "center" }}>
           <div style={{ width: "329px", height: "329px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/7bee8320ba0026d396dc8b914449053405cea1f2.webp)" }} />
           <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 600, color: "#e2e8f0", whiteSpace: "nowrap" }}>{`Платформа Криптообмена — UX/UI, Дизайн-Система и Развитие Бренда`}</p>

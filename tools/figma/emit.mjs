@@ -83,6 +83,7 @@ export function createEmitter({
   guidToUrl = {},
   additions = [],
   hoverRules = {},
+  textStyles = [],
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -598,7 +599,17 @@ export function createEmitter({
     // растянутый между краями узел размера не имеет — его задают отступы
     if (abs.left !== undefined && abs.right !== undefined) delete size.width;
     if (abs.top !== undefined && abs.bottom !== undefined) delete size.height;
-    return aspect ? { ...abs, ...size, aspectRatio: aspect } : { ...abs, ...size };
+    // В Figma слои рисуются по порядку, а в CSS блок с position ложится поверх обычных
+    // соседей, даже если стоит раньше них. Поэтому обычному блоку, перед которым есть
+    // сосед «по координатам» (подложка, затемнение), тоже даём position — иначе он
+    // окажется под этим соседом, как заголовок обложки Autotor под градиентом.
+    const lift = {};
+    if (!isAbs) {
+      const siblings = (parent.children || []).filter((c) => c.visible !== false);
+      const at = node.id ? siblings.findIndex((c) => c.id === node.id) : -1;
+      if (at > 0 && siblings.slice(0, at).some((c) => c.layoutPositioning === "ABSOLUTE")) lift.position = "relative";
+    }
+    return aspect ? { ...lift, ...abs, ...size, aspectRatio: aspect } : { ...lift, ...abs, ...size };
   }
 
   // Свои компоненты вместо вёрстки из макета: что нашли и с какими данными вывели.
@@ -986,6 +997,9 @@ export function createEmitter({
 
     if (node.type === "TEXT") {
       Object.assign(style, textStyle(node, fonts));
+      // своя правка оформления текста поверх макета (overrides.json → textStyles)
+      const own = textStyles.find((r) => (node.characters || "").startsWith(r.startsWith));
+      if (own) Object.assign(style, own.style);
       const { body, list, multiline } = textBody(node, pad);
       // текст с авто-шириной в Figma не переносится
       if (style.textOverflow) style.whiteSpace = "nowrap";
