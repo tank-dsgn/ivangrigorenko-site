@@ -1,21 +1,11 @@
 // Секция «About» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs about-en --sections
 
+import Button from "@/components/Button";
+
 export default function About() {
   return (
     <>
-      <style>{`
-        @media (hover: hover) {
-          .hg-1:hover .hn-1-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-1:hover .hn-1-2 { color: #4f46e5 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-1, .hg-1 * { transition: none !important; } }
-        @media (hover: hover) {
-          .hg-2:hover .hn-2-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-2:hover .hn-2-2 { color: #4f46e5 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-2, .hg-2 * { transition: none !important; } }
-      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", justifyContent: "center", alignItems: "center", padding: "24px 20px 40px 20px", background: "#fafaf9", overflow: "hidden" }}>
@@ -97,11 +87,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <a href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ width: "335px", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Download my resume`}</p>
-            </div>
-          </a>
+          <Button href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" label="Download my resume" newTab width="335px" />
         </div>
       </div>
       </div>
@@ -121,11 +107,7 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`I use AI: I build prototypes in code from my designs (Claude Code, Figma MCP, Storybook, GitHub, Vercel). I also use it for research, analysis, structure and documentation.`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`I have designed interfaces in different domains: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech. I have also worked on branding and visual identity.`}</p>
               </div>
-              <a href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                <div style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                  <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Download my resume`}</p>
-                </div>
-              </a>
+              <Button href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" label="Download my resume" newTab />
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
               <div style={{ width: "263.99px", height: "291.97px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
@@ -210,11 +192,7 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`I use AI: I build prototypes in code from my designs (Claude Code, Figma MCP, Storybook, GitHub, Vercel). I also use it for research, analysis, structure and documentation.`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`I have designed interfaces in different domains: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech. I have also worked on branding and visual identity.`}</p>
               </div>
-              <a href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hg-2" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-                <div className="hn-2-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                  <p className="hn-2-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Download my resume`}</p>
-                </div>
-              </a>
+              <Button href="https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing" label="Download my resume" newTab />
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start" }}>
               <div style={{ width: "330.01px", height: "365px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>

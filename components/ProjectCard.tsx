@@ -1,17 +1,12 @@
 import type { CSSProperties } from "react";
 import Link from "next/link";
+import CardImage, { type CardImageData } from "@/components/CardImage";
 
 export type ProjectCardSize = "mobile" | "tablet" | "desktop";
 
-export type ProjectCardImage = {
-  /** файл картинки */
-  src: string;
-  /** положение картинки в окне карточки — из макета, у каждого проекта и размера своё */
-  style: CSSProperties;
+export type ProjectCardImage = CardImageData & {
   /** особенности окна под картинку: пропорция на телефоне, подложка, скругление */
   frame?: CSSProperties;
-  /** наведение (десктоп): на сколько картинка сдвигается и во сколько раз растёт */
-  hover?: { translate?: string; scale?: string };
 };
 
 /**
@@ -44,25 +39,7 @@ export default function ProjectCard({
   description: string;
   image: ProjectCardImage;
 }) {
-  // сдвиг на −50% для привязки по центру и увеличение при наведении делят один transform,
-  // иначе увеличение увело бы картинку в сторону
-  const { transform, ...position } = image.style;
-  const picture = (
-    <div
-      className="ease-figma [transform:var(--pc-base,none)] bg-cover bg-center bg-no-repeat transition-[translate,transform] duration-300 group-hover:[transform:var(--pc-zoom,var(--pc-base,none))] group-hover:[translate:var(--pc-shift,0px_0px)]"
-      style={
-        {
-          ...position,
-          backgroundImage: `url(${image.src})`,
-          "--pc-base": transform,
-          "--pc-zoom": image.hover?.scale
-            ? `${transform ?? ""} scale(${image.hover.scale})`.trim()
-            : undefined,
-          "--pc-shift": image.hover?.translate,
-        } as CSSProperties
-      }
-    />
-  );
+  const picture = <CardImage image={image} />;
 
   // pre-line: перенос строки, поставленный в тексте вручную, сохраняется
   const tagsText = "text-muted w-min min-w-full self-stretch font-normal whitespace-pre-line uppercase";

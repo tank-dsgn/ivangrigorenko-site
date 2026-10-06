@@ -1,16 +1,11 @@
 // Секция «Overview» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs autotor-ru --sections
 
+import Button from "@/components/Button";
+
 export default function Overview() {
   return (
     <>
-      <style>{`
-        @media (hover: hover) {
-          .hg-7:hover .hn-7-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-7:hover .hn-7-2 { color: #4f46e5 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
-      `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start", padding: "32px 20px 32px 20px", background: "#ffffff", overflow: "hidden" }}>
@@ -43,11 +38,7 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b" }}>{`Посетить сайт`}</p>
-            </div>
-          </a>
+          <Button href="https://autotor.pl" label="Посетить сайт" newTab width="fill" wideLabel />
         </div>
       </div>
       </div>
@@ -83,11 +74,7 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b" }}>{`Посетить сайт`}</p>
-            </div>
-          </a>
+          <Button href="https://autotor.pl" label="Посетить сайт" newTab width="fill" wideLabel />
         </div>
       </div>
       </div>
@@ -120,11 +107,7 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" className="hg-7" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div className="hn-7-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p className="hn-7-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Посетить сайт`}</p>
-            </div>
-          </a>
+          <Button href="https://autotor.pl" label="Посетить сайт" newTab />
         </div>
       </div>
       </div>

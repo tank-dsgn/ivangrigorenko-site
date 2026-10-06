@@ -142,7 +142,7 @@ async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, ta
       (hasLink ? `import Link from "next/link";\n` : "") +
       (hasVariants ? `import VariantGroup from "@/components/VariantGroup";\n` : "") +
       // свои компоненты, которыми генератор заменил блоки макета
-      ["ProjectCard"]
+      ["ProjectCard", "RelatedCard", "Button"]
         .filter((c) => body.includes(`<${c} `))
         .map((c) => `import ${c} from "@/components/${c}";\n`)
         .join("") +

@@ -1,16 +1,9 @@
-import type { ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import ProjectCard from "@/components/ProjectCard";
-// Те же данные, с которыми карточки выводит сайт. Файлы пишет генератор
-// (tools/figma/generate.mjs) при каждой сборке главной из макета.
-import ru from "../data/home-ru.json";
-import en from "../data/index.json";
+// те же данные, с которыми карточки выводит сайт
+import { projectCards, projects, type Lang, type Project, type ProjectCardProps as Card } from "../data";
 
-type Card = ComponentProps<typeof ProjectCard>;
-type Lang = "ru" | "en";
-const cards: Record<Lang, Card[]> = { ru: ru.ProjectCard as Card[], en: en.ProjectCard as Card[] };
-const projects = ["eazychange", "autotor", "pot", "ostral", "vv", "mikulich"] as const;
-type Project = (typeof projects)[number];
+const cards: Record<Lang, Card[]> = { ru: projectCards("ru"), en: projectCards("en") };
 
 const find = (lang: Lang, project: Project, size: Card["size"]) =>
   cards[lang].find((c) => c.size === size && c.href.startsWith(`/${project}-`))!;

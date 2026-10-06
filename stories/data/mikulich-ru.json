@@ -1,0 +1,319 @@
+{
+  "Button": [
+    {
+      "href": "https://www.instagram.com/dr_mikulich/",
+      "label": "Смотреть в контексте",
+      "newTab": true,
+      "width": "fill"
+    },
+    {
+      "href": "https://www.instagram.com/dr_mikulich/",
+      "label": "Смотреть в контексте",
+      "newTab": true,
+      "width": "fill"
+    },
+    {
+      "href": "https://www.instagram.com/dr_mikulich/",
+      "label": "Смотреть в контексте",
+      "newTab": true
+    },
+    {
+      "href": "https://www.instagram.com/dr_mikulich/",
+      "label": "Смотреть в контексте",
+      "newTab": true,
+      "width": "fill"
+    },
+    {
+      "href": "https://www.instagram.com/dr_mikulich/",
+      "label": "Смотреть в контексте",
+      "newTab": true,
+      "width": "fill"
+    },
+    {
+      "href": "https://www.instagram.com/dr_mikulich/",
+      "label": "Смотреть в контексте",
+      "newTab": true
+    }
+  ],
+  "RelatedCard": [
+    {
+      "size": "mobile",
+      "href": "/eazychange-ru",
+      "label": "крипто-обменник",
+      "image": {
+        "src": "/a/0abd75a1f3ca4a393b921b8d9e99e51d7b4d8023.webp",
+        "style": {
+          "position": "absolute",
+          "left": "-131px",
+          "right": "-135px",
+          "top": "calc(50% + 0px)",
+          "transform": "translateY(-50%)",
+          "aspectRatio": "1440 / 720"
+        }
+      },
+      "frame": {
+        "height": "283px"
+      }
+    },
+    {
+      "size": "mobile",
+      "href": "/autotor-ru",
+      "label": "E-commerce платформа",
+      "image": {
+        "src": "/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -190.26px)",
+          "top": "calc(50% + -139px)",
+          "width": "380.86px",
+          "height": "278px"
+        }
+      },
+      "frame": {
+        "height": "278px",
+        "boxShadow": "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "mobile",
+      "href": "/pot-ru",
+      "label": "Приложение для растений",
+      "image": {
+        "src": "/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + 0.17px)",
+          "top": "-1.79px",
+          "bottom": "-2.82px",
+          "transform": "translateX(-50%)",
+          "aspectRatio": "1216 / 1132"
+        }
+      },
+      "frame": {
+        "boxShadow": "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "mobile",
+      "href": "/ostral-ru",
+      "label": "Инспекционная платформа",
+      "image": {
+        "src": "/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp",
+        "style": {
+          "position": "absolute",
+          "left": "-88.61px",
+          "right": "-90.11px",
+          "top": "calc(50% + 0px)",
+          "transform": "translateY(-50%)",
+          "aspectRatio": "1280 / 746"
+        }
+      },
+      "frame": {
+        "height": "279px",
+        "boxShadow": "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "mobile",
+      "href": "/vv-ru",
+      "label": "дизайн-система",
+      "image": {
+        "src": "/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -241.68px)",
+          "top": "calc(50% + -155.29px)",
+          "width": "483.58px",
+          "height": "311.33px"
+        }
+      },
+      "frame": {
+        "height": "279px",
+        "boxShadow": "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "tablet",
+      "href": "/eazychange-ru",
+      "label": "крипто-обменник",
+      "image": {
+        "src": "/a/0abd75a1f3ca4a393b921b8d9e99e51d7b4d8023.webp",
+        "style": {
+          "position": "absolute",
+          "left": "-131px",
+          "right": "-135px",
+          "top": "calc(50% + -0.5px)",
+          "transform": "translateY(-50%)",
+          "aspectRatio": "1440 / 720"
+        }
+      }
+    },
+    {
+      "size": "tablet",
+      "href": "/autotor-ru",
+      "label": "E-commerce платформа",
+      "image": {
+        "src": "/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -190px)",
+          "top": "calc(50% + -139px)",
+          "width": "380.86px",
+          "height": "278px"
+        }
+      },
+      "frame": {
+        "height": "278px",
+        "boxShadow": "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "tablet",
+      "href": "/pot-ru",
+      "label": "Приложение для растений",
+      "image": {
+        "src": "/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -152px)",
+          "top": "calc(50% + -141.79px)",
+          "width": "304.83px",
+          "height": "283.77px"
+        }
+      },
+      "frame": {
+        "boxShadow": "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "tablet",
+      "href": "/ostral-ru",
+      "label": "Инспекционная платформа",
+      "image": {
+        "src": "/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp",
+        "style": {
+          "position": "absolute",
+          "left": "-114.81px",
+          "right": "-118.81px",
+          "top": "calc(50% + -0.5px)",
+          "transform": "translateY(-50%)",
+          "aspectRatio": "1280 / 746"
+        }
+      }
+    },
+    {
+      "size": "tablet",
+      "href": "/vv-ru",
+      "label": "дизайн-система",
+      "image": {
+        "src": "/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -243px)",
+          "top": "calc(50% + -156.02px)",
+          "width": "486px",
+          "height": "312.89px"
+        }
+      },
+      "frame": {
+        "height": "279px",
+        "boxShadow": "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)"
+      }
+    },
+    {
+      "size": "desktop",
+      "href": "/eazychange-ru",
+      "label": "крипто-обменник",
+      "image": {
+        "src": "/a/0abd75a1f3ca4a393b921b8d9e99e51d7b4d8023.webp",
+        "style": {
+          "position": "absolute",
+          "left": "-131px",
+          "right": "-131px",
+          "top": "calc(50% + 0px)",
+          "transform": "translateY(-50%)",
+          "aspectRatio": "1440 / 720"
+        },
+        "hover": {
+          "scale": "1.0989, 1.0989"
+        }
+      }
+    },
+    {
+      "size": "desktop",
+      "href": "/autotor-ru",
+      "label": "E-commerce платформа",
+      "image": {
+        "src": "/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -194px)",
+          "top": "calc(50% + -141.5px)",
+          "width": "387.71px",
+          "height": "283px"
+        },
+        "hover": {
+          "translate": "-1.1px -6.5px",
+          "scale": "1.0459, 1.0459"
+        }
+      }
+    },
+    {
+      "size": "desktop",
+      "href": "/pot-ru",
+      "label": "Приложение для растений",
+      "image": {
+        "src": "/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -152.14px)",
+          "top": "calc(50% + -141.5px)",
+          "width": "304px",
+          "height": "283px"
+        },
+        "hover": {
+          "translate": "0.14px 0.21px",
+          "scale": "1.0461, 1.0461"
+        }
+      }
+    },
+    {
+      "size": "desktop",
+      "href": "/ostral-ru",
+      "label": "Инспекционная платформа",
+      "image": {
+        "src": "/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + 0px)",
+          "top": "0",
+          "bottom": "0",
+          "transform": "translateX(-50%)",
+          "aspectRatio": "1280 / 746"
+        },
+        "hover": {
+          "scale": "1.1, 1.1"
+        }
+      }
+    },
+    {
+      "size": "desktop",
+      "href": "/vv-ru",
+      "label": "Дизайн-Система",
+      "image": {
+        "src": "/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp",
+        "style": {
+          "position": "absolute",
+          "left": "calc(50% + -245.08px)",
+          "top": "calc(50% + -158.55px)",
+          "width": "491px",
+          "height": "316.11px"
+        },
+        "hover": {
+          "translate": "4.26px 4.18px",
+          "scale": "1.184, 1.184"
+        }
+      }
+    }
+  ]
+}

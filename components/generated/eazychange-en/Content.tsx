@@ -1,61 +1,66 @@
 // Секция «content» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs eazychange-en --sections
 
-import Link from "next/link";
 import VariantGroup from "@/components/VariantGroup";
+import RelatedCard from "@/components/RelatedCard";
+import Button from "@/components/Button";
 
 export default function Content() {
   return (
     <>
       <style>{`
+        .sn-1-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
+        .sg-1[data-state="372:44361"] .sn-1-1 { translate: -1453px 0px !important; }
+        .sg-1[data-state="372:44358"] .sn-1-1 { translate: -2906px 0px !important; }
+        .sg-1[data-state="372:44361"] .sn-1-3 { display: none !important; }
+        .sg-1[data-state="372:44358"] .sn-1-3 { display: none !important; }
+        .sg-1[data-state="372:44364"] .sn-1-4 { display: none !important; }
+        .sg-1[data-state="372:44358"] .sn-1-6 { display: none !important; }
+        .sg-1[data-state="372:44364"] .sn-1-7 { display: none !important; }
+        .sg-1[data-state="372:44361"] .sn-1-7 { display: none !important; }
+        .sg-1[data-state="372:44361"] .sn-1-8 { display: none !important; }
+        .sg-1[data-state="372:44358"] .sn-1-8 { display: none !important; }
+        .sg-1[data-state="372:44364"] .sn-1-9 { display: none !important; }
+        .sg-1[data-state="372:44361"] .sn-1-10 { display: none !important; }
+        .sg-1[data-state="372:44364"] .sn-1-11 { display: none !important; }
+        .sg-1[data-state="372:44358"] .sn-1-11 { display: none !important; }
+        .sg-1[data-state="372:44358"] .sn-1-12 { display: none !important; }
+        .sg-1[data-state="372:44364"] .sn-1-13 { display: none !important; }
+        .sg-1[data-state="372:44361"] .sn-1-13 { display: none !important; }
+        @media (prefers-reduced-motion: reduce) { .sg-1, .sg-1 * { transition: none !important; } }
+        .hn-2-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-2-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-2-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1), font-weight 300ms cubic-bezier(0, 0, 0.58, 1); }
         @media (hover: hover) {
-          .hg-1:hover .hn-1-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-1:hover .hn-1-2 { color: #4f46e5 !important; }
+          .hg-2:hover .hn-2-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-2:hover .hn-2-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
+          .hg-2:hover .hn-2-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
         }
-        @media (prefers-reduced-motion: reduce) { .hg-1, .hg-1 * { transition: none !important; } }
-        .sn-2-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
-        .sg-2[data-state="372:44361"] .sn-2-1 { translate: -1453px 0px !important; }
-        .sg-2[data-state="372:44358"] .sn-2-1 { translate: -2906px 0px !important; }
-        .sg-2[data-state="372:44361"] .sn-2-3 { display: none !important; }
-        .sg-2[data-state="372:44358"] .sn-2-3 { display: none !important; }
-        .sg-2[data-state="372:44364"] .sn-2-4 { display: none !important; }
-        .sg-2[data-state="372:44358"] .sn-2-6 { display: none !important; }
-        .sg-2[data-state="372:44364"] .sn-2-7 { display: none !important; }
-        .sg-2[data-state="372:44361"] .sn-2-7 { display: none !important; }
-        .sg-2[data-state="372:44361"] .sn-2-8 { display: none !important; }
-        .sg-2[data-state="372:44358"] .sn-2-8 { display: none !important; }
-        .sg-2[data-state="372:44364"] .sn-2-9 { display: none !important; }
-        .sg-2[data-state="372:44361"] .sn-2-10 { display: none !important; }
-        .sg-2[data-state="372:44364"] .sn-2-11 { display: none !important; }
-        .sg-2[data-state="372:44358"] .sn-2-11 { display: none !important; }
-        .sg-2[data-state="372:44358"] .sn-2-12 { display: none !important; }
-        .sg-2[data-state="372:44364"] .sn-2-13 { display: none !important; }
-        .sg-2[data-state="372:44361"] .sn-2-13 { display: none !important; }
-        @media (prefers-reduced-motion: reduce) { .sg-2, .sg-2 * { transition: none !important; } }
+        @media (prefers-reduced-motion: reduce) { .hg-2, .hg-2 * { transition: none !important; } }
         .hn-3-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
         .hn-3-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
         .hn-3-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1), font-weight 300ms cubic-bezier(0, 0, 0.58, 1); }
         @media (hover: hover) {
           .hg-3:hover .hn-3-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
-          .hg-3:hover .hn-3-2 { translate: -1.1px -6.5px !important; scale: 1.0459 1.0459 !important; }
+          .hg-3:hover .hn-3-2 { translate: 0.14px 0.21px !important; scale: 1.0461 1.0461 !important; }
           .hg-3:hover .hn-3-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-3, .hg-3 * { transition: none !important; } }
-        .hn-4-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
-        .hn-4-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-4-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-4-2 { transition: transform 300ms cubic-bezier(0, 0, 0.58, 1); }
         .hn-4-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1), font-weight 300ms cubic-bezier(0, 0, 0.58, 1); }
         @media (hover: hover) {
-          .hg-4:hover .hn-4-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
-          .hg-4:hover .hn-4-2 { translate: 0.14px 0.21px !important; scale: 1.0461 1.0461 !important; }
+          .hg-4:hover .hn-4-1 { translate: 0px -6px !important; }
+          .hg-4:hover .hn-4-2 { transform: translateX(-50%) scale(1.1, 1.1) !important; }
           .hg-4:hover .hn-4-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-4, .hg-4 * { transition: none !important; } }
-        .hn-5-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1); }
-        .hn-5-2 { transition: transform 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-5-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
+        .hn-5-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
         .hn-5-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1), font-weight 300ms cubic-bezier(0, 0, 0.58, 1); }
         @media (hover: hover) {
-          .hg-5:hover .hn-5-1 { translate: 0px -6px !important; }
-          .hg-5:hover .hn-5-2 { transform: translateX(-50%) scale(1.1, 1.1) !important; }
+          .hg-5:hover .hn-5-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
+          .hg-5:hover .hn-5-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
           .hg-5:hover .hn-5-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-5, .hg-5 * { transition: none !important; } }
@@ -64,19 +69,10 @@ export default function Content() {
         .hn-6-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1), font-weight 300ms cubic-bezier(0, 0, 0.58, 1); }
         @media (hover: hover) {
           .hg-6:hover .hn-6-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
-          .hg-6:hover .hn-6-2 { translate: 4.26px 4.18px !important; scale: 1.184 1.184 !important; }
+          .hg-6:hover .hn-6-2 { translate: 0.15px -0.05px !important; scale: 1.0627 1.0626 !important; }
           .hg-6:hover .hn-6-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-6, .hg-6 * { transition: none !important; } }
-        .hn-7-1 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), box-shadow 300ms cubic-bezier(0, 0, 0.58, 1); }
-        .hn-7-2 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), scale 300ms cubic-bezier(0, 0, 0.58, 1); }
-        .hn-7-3 { transition: translate 300ms cubic-bezier(0, 0, 0.58, 1), color 300ms cubic-bezier(0, 0, 0.58, 1), font-weight 300ms cubic-bezier(0, 0, 0.58, 1); }
-        @media (hover: hover) {
-          .hg-7:hover .hn-7-1 { translate: 0px -6px !important; box-shadow: 0 8px 24px 0 rgba(64, 62, 92, 0.3) !important; }
-          .hg-7:hover .hn-7-2 { translate: 0.15px -0.05px !important; scale: 1.0627 1.0626 !important; }
-          .hg-7:hover .hn-7-3 { translate: 0px -6px !important; color: #4f46e5 !important; font-weight: 700 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
@@ -116,11 +112,7 @@ export default function Content() {
                 </div>
               </div>
             </div>
-            <a href="https://eazychange.com" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b" }}>{`Visit website`}</p>
-              </div>
-            </a>
+            <Button href="https://eazychange.com" label="Visit website" newTab width="fill" wideLabel />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "center", padding: "32px 20px 32px 20px", backgroundImage: "linear-gradient(326.71deg, #070727 0.52%, #19198d 100%)", overflow: "hidden" }}>
@@ -503,36 +495,11 @@ export default function Content() {
               </div>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
-              <Link href="/autotor-en" style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-                <div style={{ width: "300px", height: "278px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -190.26px)", top: "calc(50% + -139px)", width: "380.86px", height: "278px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp)" }} />
-                </div>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`E-COMMERCE PLATFORM`}</p>
-              </Link>
-              <Link href="/pot-en" style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-                <div style={{ width: "300px", height: "280px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + 0.17px)", top: "-1.79px", bottom: "-2.82px", transform: "translateX(-50%)", aspectRatio: "1216 / 1132", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp)" }} />
-                </div>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Mobile application`}</p>
-              </Link>
-              <Link href="/ostral-en" style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-                <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "-88.61px", right: "-90.11px", top: "calc(50% + 0px)", transform: "translateY(-50%)", aspectRatio: "1280 / 746", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp)" }} />
-                </div>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Inspection Platform`}</p>
-              </Link>
-              <Link href="/vv-en" style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-                <div style={{ width: "300px", height: "279px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -241.68px)", top: "calc(50% + -155.29px)", width: "483.58px", height: "311.33px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp)" }} />
-                </div>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Design system`}</p>
-              </Link>
-              <Link href="/mikulich-en" style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-                <div style={{ width: "300px", height: "279.28px", flexShrink: 0, background: "#0c1543", borderRadius: "12px", overflow: "hidden", boxShadow: "0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "calc(50% + -191.45px)", top: "calc(50% + -139.64px)", width: "382.61px", height: "279.28px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp)" }} />
-                </div>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#475569" }}>{`Brand identity & logo`}</p>
-              </Link>
+              <RelatedCard size="mobile" href="/autotor-en" label="E-COMMERCE PLATFORM" image={{"src":"/a/e98473730bd7ba636f2c90415354b864ed9e5f4d.webp","style":{"position":"absolute","left":"calc(50% + -190.26px)","top":"calc(50% + -139px)","width":"380.86px","height":"278px"}}} frame={{"height":"278px","boxShadow":"0 1.96px 5.89px 0 rgba(13, 18, 46, 0.3)"}} />
+              <RelatedCard size="mobile" href="/pot-en" label="Mobile application" image={{"src":"/a/1d621dde2d3ee6c492ec78611e84ee8bfa38a74f.webp","style":{"position":"absolute","left":"calc(50% + 0.17px)","top":"-1.79px","bottom":"-2.82px","transform":"translateX(-50%)","aspectRatio":"1216 / 1132"}}} frame={{"boxShadow":"0 1.98px 5.94px 0 rgba(13, 18, 46, 0.3)"}} />
+              <RelatedCard size="mobile" href="/ostral-en" label="Inspection Platform" image={{"src":"/a/4baa3b25cdf0b7626f677ae4c993a74c012364f6.webp","style":{"position":"absolute","left":"-88.61px","right":"-90.11px","top":"calc(50% + 0px)","transform":"translateY(-50%)","aspectRatio":"1280 / 746"}}} frame={{"height":"279px","boxShadow":"0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)"}} />
+              <RelatedCard size="mobile" href="/vv-en" label="Design system" image={{"src":"/a/996483337ecf68f87010b9184eb74478e98ccbf8.webp","style":{"position":"absolute","left":"calc(50% + -241.68px)","top":"calc(50% + -155.29px)","width":"483.58px","height":"311.33px"}}} frame={{"height":"279px","boxShadow":"0 1.97px 5.91px 0 rgba(13, 18, 46, 0.3)"}} />
+              <RelatedCard size="mobile" href="/mikulich-en" label="Brand identity & logo" image={{"src":"/a/0d1a450fec69d52e6ec1b4ae9b9da7dd2c9961c2.webp","style":{"position":"absolute","left":"calc(50% + -191.45px)","top":"calc(50% + -139.64px)","width":"382.61px","height":"279.28px"}}} frame={{"height":"279.28px","boxShadow":"0 1.97px 5.92px 0 rgba(13, 18, 46, 0.3)"}} />
             </div>
           </div>
         </div>
@@ -609,11 +576,7 @@ export default function Content() {
                 </div>
               </div>
             </div>
-            <a href="https://eazychange.com" target="_blank" rel="noopener noreferrer" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-                <p style={{ flex: "1 0 0px", minWidth: "1px", fontSize: "16px", lineHeight: "24px", fontWeight: 600, textAlign: "center", color: "#64748b" }}>{`Visit website`}</p>
-              </div>
-            </a>
+            <Button href="https://eazychange.com" label="Visit website" newTab width="fill" wideLabel />
           </div>
         </div>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "center", padding: "40px 40px 40px 40px", backgroundImage: "linear-gradient(326.71deg, #070727 0.52%, #19198d 100%)", overflow: "hidden" }}>

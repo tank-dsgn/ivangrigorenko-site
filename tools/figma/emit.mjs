@@ -616,7 +616,7 @@ export function createEmitter({
   const propsLiteral = (props) =>
     Object.entries(props)
       .filter(([, v]) => v !== undefined)
-      .map(([k, v]) => (typeof v === "string" && !/["\n\\{}]/.test(v) ? `${k}="${v}"` : `${k}={${JSON.stringify(v)}}`))
+      .map(([k, v]) => (v === true ? k : typeof v === "string" && !/["\n\\{}]/.test(v) ? `${k}="${v}"` : `${k}={${JSON.stringify(v)}}`))
       .join(" ");
 
   /**
@@ -685,15 +685,107 @@ export function createEmitter({
     return `${pad}<ProjectCard ${propsLiteral(props)} />\n`;
   }
 
+  /**
+   * Маленькая карточка «Смотрите также» — компонент components/RelatedCard.tsx.
+   *
+   * В макете это «Card-projects-small»: окно с картинкой и подпись. Оформление и наведение
+   * живут в компоненте; отсюда уходят ссылка, подпись, картинка с её положением и
+   * увеличением при наведении, а на планшете и телефоне — ещё высота и тень окна, если
+   * они в макете не такие, как у остальных.
+   */
+  const RELATED_FRAME = { height: "280px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)" };
+  function relatedCard(node, pad) {
+    const size = SIZES[breakpoint];
+    if (!size) return null;
+    const kids = visibleKids(node);
+    const window_ = kids.find((c) => c.type !== "TEXT");
+    const label = kids.find((c) => c.type === "TEXT");
+    const leaves = window_ ? visibleKids(window_) : [];
+    if (kids.length !== 2 || !window_ || !label || leaves.length !== 1 || visibleKids(leaves[0]).length) return null;
+    // На одной странице макета три карточки отвязаны от компонента и зовутся иначе,
+    // поэтому узнаём карточку ещё и по устройству: окно с тёмной подложкой и подпись.
+    const named = node.name === "Card-projects-small";
+    if (!named && frameStyle(window_, assets, assetMap).background !== "#0c1543") return null;
+
+    // ведёт на проект из своей подписи (см. пояснение у ссылок в emit)
+    const [text] = texts(label);
+    const slug = cardMap[text.toLowerCase()];
+    const link = named && slug ? { href: `/${slug}-${lang}`, internal: true } : linkOf(node, linkByName, guidToUrl);
+    if (!link?.internal) return null;
+
+    const leaf = leaves[0];
+    const { backgroundImage, backgroundSize, backgroundPosition, backgroundRepeat, ...position } = {
+      ...place(leaf, window_),
+      ...frameStyle(leaf, assets, assetMap),
+    };
+    const src = /^url\((.+)\)$/.exec(backgroundImage || "")?.[1];
+    if (!src || backgroundSize !== "cover") return null;
+
+    let frame;
+    if (size !== "desktop") {
+      const own = frameStyle(window_, assets, assetMap);
+      const height = place(window_, node).height;
+      frame = {};
+      if (height && height !== RELATED_FRAME.height) frame.height = height;
+      if (own.boxShadow && own.boxShadow !== RELATED_FRAME.boxShadow) frame.boxShadow = own.boxShadow;
+      if (!Object.keys(frame).length) frame = undefined;
+    }
+
+    let hover;
+    const group = variantGroup(node);
+    const over = group?.variants.find((v) => v.id !== group.initial);
+    if (over) {
+      const mark = new Map();
+      if (markHover(node, over.tree, mark, hoverRules[node.name] || null)) {
+        const to = mark.get(leaf);
+        if (to) hover = { translate: to.translate, scale: to.scale?.replace(" ", ", ") };
+      }
+    }
+
+    usedAssets.add(src);
+    usedLinks.add(link.href);
+    const props = { size, href: link.href, label: text, image: { src, style: position, ...(hover ? { hover } : {}) }, frame };
+    componentCalls.push({ component: "RelatedCard", props });
+    return `${pad}<RelatedCard ${propsLiteral(props)} />\n`;
+  }
+
+  /**
+   * Контурная кнопка сайта — компонент components/Button.tsx.
+   * В макете: «Button» со ссылкой, внутри плашка 40px с обводкой и одна подпись.
+   */
+  function siteButton(node, parent, pad) {
+    if (node.name !== "Button") return null;
+    const kids = visibleKids(node);
+    const body = kids[0];
+    const inner = body ? visibleKids(body) : [];
+    if (kids.length !== 1 || inner.length !== 1 || inner[0].type !== "TEXT") return null;
+    const link = linkOf(node, linkByName, guidToUrl);
+    const look = { ...place(body, node), ...frameStyle(body, assets, assetMap) };
+    if (!link || look.height !== "40px" || look.borderRadius !== "999px" || look.boxShadow !== "inset 0 0 0 1px #94a3b8") return null;
+
+    const box = place(node, parent);
+    const [label] = texts(inner[0]);
+    usedLinks.add(link.href);
+    const props = {
+      href: link.href,
+      label,
+      newTab: !link.internal && link.newTab ? true : undefined,
+      width: box.alignSelf === "stretch" ? "fill" : box.width,
+      wideLabel: place(inner[0], body).flex ? true : undefined,
+    };
+    componentCalls.push({ component: "Button", props });
+    return `${pad}<Button ${propsLiteral(props)} />\n`;
+  }
+
   function emit(node, parent, depth, insideLink = false, swapTargets = null) {
     const pad = indentUnit.repeat(depth);
 
     // Невидимые узлы в вёрстку не попадают
     if (node.visible === false) return "";
 
-    // Карточка проекта — свой компонент, а не вёрстка из макета
+    // Карточки проектов — свои компоненты, а не вёрстка из макета
     if (!insideLink && !hoverGroup && !stateCtx) {
-      const card = projectCard(node, pad);
+      const card = projectCard(node, pad) || relatedCard(node, pad) || siteButton(node, parent, pad);
       if (card) return card;
     }
 

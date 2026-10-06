@@ -11,6 +11,7 @@ const tokens = [
   { name: "muted", cls: "bg-muted", role: "Теги, неактивная навигация, текст кнопки" },
   { name: "faint", cls: "bg-faint", role: "Иконки соцсетей, обводка кнопки" },
   { name: "surface", cls: "bg-surface", role: "Подложка под картинкой карточки" },
+  { name: "thumb", cls: "bg-thumb", role: "Подложка маленькой карточки «Смотрите также», пока грузится картинка" },
 ];
 
 function Swatch({ name, cls, role }: { name: string; cls: string; role: string }) {
