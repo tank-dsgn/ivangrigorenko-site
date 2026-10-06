@@ -8,17 +8,34 @@ export default function Design() {
     <>
       <style>{`
         @media (hover: hover) {
-          .hg-9:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+          .hg-12:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
         }
-        @media (prefers-reduced-motion: reduce) { .hg-9, .hg-9 * { transition: none !important; } }
+        @media (prefers-reduced-motion: reduce) { .hg-12, .hg-12 * { transition: none !important; } }
         @media (hover: hover) {
-          .hg-10:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+          .hg-13:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
         }
-        @media (prefers-reduced-motion: reduce) { .hg-10, .hg-10 * { transition: none !important; } }
-        @media (hover: hover) {
-          .hg-11:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-11, .hg-11 * { transition: none !important; } }
+        @media (prefers-reduced-motion: reduce) { .hg-13, .hg-13 * { transition: none !important; } }
+        .sn-14-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
+        .sg-14[data-state="378:70121"] .sn-14-1 { translate: 1603px 0px !important; }
+        .sg-14[data-state="378:70121"] .sn-14-2 { display: none !important; }
+        .sg-14[data-state="378:70122"] .sn-14-3 { display: none !important; }
+        .sg-14[data-state="378:70121"] .sn-14-4 { display: none !important; }
+        .sg-14[data-state="378:70122"] .sn-14-5 { display: none !important; }
+        .sg-14[data-state="378:70121"] .sn-14-7 { display: none !important; }
+        .sg-14[data-state="378:70122"] .sn-14-8 { display: none !important; }
+        .sg-14[data-state="378:70121"] .sn-14-10 { display: none !important; }
+        .sg-14[data-state="378:70122"] .sn-14-11 { display: none !important; }
+        .sg-14[data-state="378:70121"] .sn-14-12 { display: none !important; }
+        .sg-14[data-state="378:70122"] .sn-14-13 { display: none !important; }
+        .sg-14[data-state="378:70121"] .sn-14-14 { display: none !important; }
+        .sg-14[data-state="378:70122"] .sn-14-15 { display: none !important; }
+        @media (prefers-reduced-motion: reduce) { .sg-14, .sg-14 * { transition: none !important; } }
+        .sg-15[data-state="374:12638"] .sn-15-1 { background: #8eba9f !important; }
+        .sg-15[data-state="374:12638"] .sn-15-2 { display: none !important; }
+        .sg-15[data-state="374:12637"] .sn-15-3 { display: none !important; }
+        .sg-15[data-state="374:12638"] .sn-15-4 { display: none !important; }
+        .sg-15[data-state="374:12637"] .sn-15-5 { display: none !important; }
+        @media (prefers-reduced-motion: reduce) { .sg-15, .sg-15 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
@@ -1541,7 +1558,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-9" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-12" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                 <img
                   src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                   alt=""
@@ -2155,7 +2172,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Вход в приложение`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь может начать с Apple ID или email в один клик`}</p>
               </div>
-              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-10" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-13" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                 <img
                   src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                   alt=""
@@ -2186,142 +2203,103 @@ export default function Design() {
             </div>
           </div>
         </VariantGroup>
-        <VariantGroup initial="378:70122" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, position: "relative" }}>
-          <div data-variant="378:70122" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
-              <div style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
-                <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
-                  <img src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+        <div className="sg-14" data-state="378:70122" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", position: "relative" }}>
+          <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
+            <div className="sn-14-1" style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
+              <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
+                <img src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+              </span>
+              <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
                 </span>
-                <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/0051fb6812319fde09dab8da5dc252eb8b964825.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/3b25164b07ea5c7a83c8ed130d8b54e38d7e2a7a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                </div>
+                <span className="sn-14-2" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/0051fb6812319fde09dab8da5dc252eb8b964825.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-14-3" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/c45f37f978f29322b7880fe4ff41fd2e99ac2a0a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-14-4" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/3b25164b07ea5c7a83c8ed130d8b54e38d7e2a7a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-14-5" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/a7294e05808193a43ee40060ae9295d3ec9426c9.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
               </div>
-              <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+            </div>
+            <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+              <div className="sn-14-6" data-swap-map='{"378:70121":"378:70122"}' style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
+                <span className="sn-14-7" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+                <span className="sn-14-8" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+              <VariantGroup initial="394:67613" className="sn-14-9" data-swap-map='{"378:70122":"378:70121"}' style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                  <span className="sn-14-10" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                    <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                  </span>
+                  <span className="sn-14-11" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                     <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
                       <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
                     </svg>
                   </span>
                 </div>
-                <VariantGroup initial="394:67613" data-swap-to="378:70121" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                  <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                      <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                  <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                      <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                </VariantGroup>
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-              <img
-                src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-              <img
-                src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Онбординг`}</p>
-                <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Короткие вопросы помогают настроить приложение под опыт, условия дома и цели пользователя`}</p>
-              </div>
-            </div>
-          </div>
-          <div data-variant="378:70121" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
-              <div style={{ position: "absolute", right: "-1529px", top: "1px", width: "2628px", height: "629px" }}>
-                <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
-                  <img src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
-                </span>
-                <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/c45f37f978f29322b7880fe4ff41fd2e99ac2a0a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/a7294e05808193a43ee40060ae9295d3ec9426c9.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                  <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                    <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
                   </span>
                 </div>
-              </div>
-              <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <VariantGroup initial="394:67621" data-swap-to="378:70122" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
-                  <div data-variant="394:67621" data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                        <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div data-variant="394:67623" data-lazy data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                        <image href="/a/f3f97e1ca49cbfc42858d32d0ff747922591be4a.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                      </svg>
-                    </span>
-                  </div>
-                </VariantGroup>
-                <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-              <img
-                src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-              <img
-                src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Онбординг`}</p>
-                <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Короткие вопросы помогают настроить приложение под опыт, условия дома и цели пользователя`}</p>
-              </div>
+              </VariantGroup>
             </div>
           </div>
-        </VariantGroup>
+          <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
+            <img className="sn-14-12"
+              src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+            <img className="sn-14-13"
+              src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+            <img className="sn-14-14"
+              src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+            <img className="sn-14-15"
+              src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+          </div>
+          <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
+            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
+              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Онбординг`}</p>
+              <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Короткие вопросы помогают настроить приложение под опыт, условия дома и цели пользователя`}</p>
+            </div>
+          </div>
+        </div>
         <div style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "100px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ width: "323px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "16px", alignItems: "center" }}>
@@ -2360,16 +2338,24 @@ export default function Design() {
             </div>
           </div>
         </div>
-        <VariantGroup initial="374:12637" style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, position: "relative" }}>
-          <div data-variant="374:12638" style={{ display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
-              <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-                <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                  <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Личный цифровой сад`}</p>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
-                </div>
-                <div data-swap-to="374:12637" data-swap-ms="0" className="hg-11" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                  <img
+        <div className="sg-15" data-state="374:12637" style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
+          <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
+            <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
+              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
+                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Личный цифровой сад`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
+              </div>
+              <VariantGroup initial="366:858210" className="sn-15-1" data-swap-map='{"374:12637":"374:12638","374:12638":"374:12637"}' style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                  <img className="sn-15-2"
+                    src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
+                  />
+                  <img className="sn-15-3"
                     src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                     alt=""
                     aria-hidden="true"
@@ -2378,48 +2364,26 @@ export default function Design() {
                     style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
                   />
                 </div>
-              </div>
-              <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
-                <img src="/a/bd19a7b244b58e216e793d6c627c7c0e41f7b875.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
-              </span>
-            </div>
-          </div>
-          <div data-variant="374:12637" style={{ display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
-              <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-                <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                  <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Личный цифровой сад`}</p>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь собирает растения, следит за ними и ухаживает`}</p>
+                <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
+                  <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
+                    <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
+                      <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                    <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
+                      <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                    </span>
+                  </div>
                 </div>
-                <VariantGroup initial="366:858210" data-swap-to="374:12638" data-swap-ms="0" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                  <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
-                    <img
-                      src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
-                    />
-                  </div>
-                  <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
-                    <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
-                      <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
-                        <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                      </span>
-                      <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
-                        <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                      </span>
-                    </div>
-                  </div>
-                </VariantGroup>
-              </div>
-              <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
-                <img src="/a/765b05f532cd90723731b0d9f80a748e92d61370.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
-              </span>
+              </VariantGroup>
             </div>
+            <span className="sn-15-4" style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
+              <img src="/a/765b05f532cd90723731b0d9f80a748e92d61370.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+            </span>
+            <span className="sn-15-5" style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
+              <img src="/a/bd19a7b244b58e216e793d6c627c7c0e41f7b875.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+            </span>
           </div>
-        </VariantGroup>
+        </div>
         <div style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
             <div style={{ width: "1024px", height: "68px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>

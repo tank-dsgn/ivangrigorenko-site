@@ -66,6 +66,9 @@ export default function VariantGroup({
   "data-swap-ms"?: string;
   "data-hover-to"?: string;
   "data-hover-ms"?: string;
+  /** или частью карусели, которая переключается атрибутом data-state */
+  "data-swap-map"?: string;
+  className?: string;
 }) {
   const [active, setActive] = useState(initial);
   const [hover, setHover] = useState<string | null>(null);

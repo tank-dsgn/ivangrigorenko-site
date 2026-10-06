@@ -194,6 +194,29 @@ export function createEmitter({
    * Возвращает false, если состояния устроены по-разному (другие слои, текст, картинка) —
    * тогда плавно переехать из одного в другое нельзя.
    */
+  /** Сдвиг, масштаб и краска, которые переводят узел `a` в состояние `b` */
+  function moveAndPaint(a, b, isRoot) {
+    const to = {};
+    const ta = a.relativeTransform;
+    const tb = b.relativeTransform;
+    // корень блока стоит на месте: двигаются его части
+    if (!isRoot && ta && tb && a.size && b.size) {
+      const sx = a.size.x > 0.5 ? b.size.x / a.size.x : 1;
+      const sy = a.size.y > 0.5 ? b.size.y / a.size.y : 1;
+      // картинку увеличиваем масштабом из центра; блок с детьми только сдвигаем
+      const leaf = !(a.children || []).length;
+      const scaled = leaf && (!near(sx, 1, 0.002) || !near(sy, 1, 0.002));
+      const dx = scaled ? tb[0][2] + b.size.x / 2 - (ta[0][2] + a.size.x / 2) : tb[0][2] - ta[0][2];
+      const dy = scaled ? tb[1][2] + b.size.y / 2 - (ta[1][2] + a.size.y / 2) : tb[1][2] - ta[1][2];
+      if (!near(dx, 0, 0.05) || !near(dy, 0, 0.05)) to.translate = `${px(dx)} ${px(dy)}`.replace(/(^| )0( |$)/g, "$10px$2");
+      if (scaled) to.scale = `${Math.round(sx * 1e4) / 1e4} ${Math.round(sy * 1e4) / 1e4}`;
+    }
+    const pa = { ...frameStyle(a, assets, assetMap), ...(a.type === "TEXT" ? textStyle(a, fonts) : {}) };
+    const pb = { ...frameStyle(b, assets, assetMap), ...(b.type === "TEXT" ? textStyle(b, fonts) : {}) };
+    for (const k of PAINT) if (pa[k] !== pb[k]) to[k] = pb[k] ?? (k === "boxShadow" ? "none" : "initial");
+    return to;
+  }
+
   function markHover(a, b, mark, rule = null, isRoot = true) {
     if (a.type !== b.type || a.name !== b.name) return false;
     if ((a.visible === false) !== (b.visible === false)) return false;
@@ -204,24 +227,7 @@ export function createEmitter({
     const sameKids = ka.length === kb.length;
     if (!sameKids && !rule?.repair) return false;
 
-    const to = {};
-    const ta = a.relativeTransform;
-    const tb = b.relativeTransform;
-    // корень блока стоит на месте: двигаются его части
-    if (!isRoot && ta && tb && a.size && b.size) {
-      const sx = a.size.x > 0.5 ? b.size.x / a.size.x : 1;
-      const sy = a.size.y > 0.5 ? b.size.y / a.size.y : 1;
-      // картинку увеличиваем масштабом из центра; блок с детьми только сдвигаем
-      const leaf = !ka.length;
-      const scaled = leaf && (!near(sx, 1, 0.002) || !near(sy, 1, 0.002));
-      const dx = scaled ? tb[0][2] + b.size.x / 2 - (ta[0][2] + a.size.x / 2) : tb[0][2] - ta[0][2];
-      const dy = scaled ? tb[1][2] + b.size.y / 2 - (ta[1][2] + a.size.y / 2) : tb[1][2] - ta[1][2];
-      if (!near(dx, 0, 0.05) || !near(dy, 0, 0.05)) to.translate = `${px(dx)} ${px(dy)}`.replace(/(^| )0( |$)/g, "$10px$2");
-      if (scaled) to.scale = `${Math.round(sx * 1e4) / 1e4} ${Math.round(sy * 1e4) / 1e4}`;
-    }
-    const pa = { ...frameStyle(a, assets, assetMap), ...(a.type === "TEXT" ? textStyle(a, fonts) : {}) };
-    const pb = { ...frameStyle(b, assets, assetMap), ...(b.type === "TEXT" ? textStyle(b, fonts) : {}) };
-    for (const k of PAINT) if (pa[k] !== pb[k]) to[k] = pb[k] ?? (k === "boxShadow" ? "none" : "initial");
+    const to = moveAndPaint(a, b, isRoot);
     // своя правка подписи: в макете она при наведении только меняет цвет
     if (a.type === "TEXT" && rule?.text) Object.assign(to, rule.text);
     if (Object.keys(to).length) mark.set(a, to);
@@ -288,6 +294,131 @@ export function createEmitter({
     return jsx.replace(/ data-hover-to="([^"]+)" data-hover-ms="\d+"/g, (m, to) => (group.targets.has(to) ? "" : m));
   }
 
+  // блок с состояниями по клику, который сейчас выводится
+  let stateCtx = null;
+  // узел → его «двойники» из других состояний (другая картинка или текст)
+  const expanding = new Set();
+
+  /** Что у узла своё в каждом состоянии: картинка, текст */
+  const contentOf = (n) =>
+    [n.hash || "", n.characters || "", (n.fills || []).filter((f) => f.visible !== false && f.type === "IMAGE").map((f) => f.imageRef).join()].join("|");
+
+  /**
+   * Обходит все состояния блока параллельно и записывает, чем каждый узел
+   * отличается от исходного состояния. false — состояния устроены по-разному.
+   */
+  function markStates(nodes, ids, ctx, isRoot = true) {
+    const a = nodes[0];
+    if (nodes.some((n) => n.type !== a.type || n.name !== a.name)) return false;
+    const vis = nodes.map((n) => n.visible !== false);
+    if (!vis.some(Boolean)) return true;
+    if (!vis[0]) return false; // слой, которого нет в исходном состоянии, плавно не показать
+    const ka = a.children || [];
+    if (nodes.some((n) => (n.children || []).length !== ka.length)) return false;
+
+    const m = { css: {}, hide: ids.filter((_, i) => !vis[i]), swap: {} };
+
+    // кто переключает состояние — зависит от состояния: на первом слайде «назад» не работает
+    nodes.forEach((n, i) => {
+      const sw = vis[i] && swapOf(n, "ON_CLICK");
+      if (sw && ctx.targets.has(sw.to)) {
+        m.swap[ids[i]] = sw.to;
+        if (ctx.ms == null) { ctx.ms = sw.ms; ctx.ease = sw.ease; }
+      }
+    });
+
+    const leaf = !ka.length;
+    const own = contentOf(a);
+    if (leaf && nodes.some((n, i) => vis[i] && contentOf(n) !== own)) {
+      // у листа в другом состоянии другая картинка или текст: выводим оба, показываем нужный
+      const bySig = new Map();
+      nodes.forEach((n, i) => {
+        if (!vis[i]) return;
+        const k = contentOf(n);
+        if (!bySig.has(k)) bySig.set(k, { node: n, ids: [] });
+        bySig.get(k).ids.push(ids[i]);
+      });
+      m.only = bySig.get(own).ids;
+      m.alts = [];
+      for (const [k, v] of bySig) {
+        if (k === own) continue;
+        m.alts.push(v.node);
+        ctx.marks.set(v.node, { css: {}, swap: {}, hide: [], only: v.ids });
+      }
+    } else {
+      nodes.forEach((n, i) => {
+        if (!i || !vis[i]) return;
+        const to = moveAndPaint(a, n, isRoot);
+        if (Object.keys(to).length) m.css[ids[i]] = to;
+      });
+    }
+    if (Object.keys(m.css).length || m.hide.length || m.only || Object.keys(m.swap).length) ctx.marks.set(a, m);
+
+    return ka.every((c, i) => markStates(nodes.map((n) => n.children[i]), ids, ctx, false));
+  }
+
+  /**
+   * Карусель как в макете: Smart Animate по клику.
+   *
+   * Если состояния блока отличаются только положением частей, краской и содержимым
+   * отдельных листьев (стрелка стала активной, точка сменила цвет), выводится одно
+   * дерево, а разницу между состояниями задают правила CSS по атрибуту `data-state`
+   * на корне. Лента слайдов плавно едет, а не подменяется. Атрибут переключает
+   * `components/StateGroups.tsx`.
+   */
+  function stateMorph(node, parent, depth, insideLink, enclosing, group) {
+    if (stateCtx || group.variants.length < 2 || group.variants.some((v) => v.info.hoverOnly)) return null;
+    const base = group.variants.find((v) => v.id === group.initial);
+    if (!base) return null;
+    const ordered = [base, ...group.variants.filter((v) => v !== base)];
+    const ctx = { id: 0, root: base.tree, initial: base.id, n: 0, marks: new Map(), targets: group.targets, ms: null, ease: "linear", moving: [], rules: [] };
+    if (!markStates(ordered.map((v) => v.tree), ordered.map((v) => v.id), ctx) || !ctx.marks.size) return null;
+
+    ctx.id = ++hoverSeq;
+    stateCtx = ctx;
+    const jsx = emit(base.tree, parent, depth, insideLink, new Set([...enclosing, ...group.targets]));
+    stateCtx = null;
+
+    hoverCss.push(
+      [...ctx.moving, ...ctx.rules, `@media (prefers-reduced-motion: reduce) { .sg-${ctx.id}, .sg-${ctx.id} * { transition: none !important; } }`].join("\n")
+    );
+    // метки для VariantGroup здесь не нужны: состояние переключает атрибут data-state
+    return jsx.replace(/ data-swap-to="([^"]+)" data-swap-ms="\d+"/g, (m, to) => (group.targets.has(to) ? "" : m));
+  }
+
+  /** Класс и атрибуты узла внутри блока с состояниями по клику */
+  function stateAttrs(node, baseTransform, classes) {
+    if (!stateCtx) return "";
+    const g = stateCtx;
+    let extra = "";
+    if (node === g.root) {
+      classes.push(`sg-${g.id}`);
+      extra += ` data-state=${JSON.stringify(g.initial)}`;
+    }
+    const m = g.marks.get(node);
+    if (!m) return extra;
+    const cls = `sn-${g.id}-${++g.n}`;
+    classes.push(cls);
+    const at = (id) => `.sg-${g.id}[data-state="${id}"] .${cls}`;
+    const props = new Set();
+    for (const [id, css] of Object.entries(m.css)) {
+      let to = css;
+      if (to.scale && baseTransform) {
+        const { scale, ...rest } = to;
+        to = { ...rest, transform: `${baseTransform} scale(${scale.replace(" ", ", ")})` };
+      }
+      Object.keys(to).forEach((k) => props.add(k));
+      g.rules.push(`${at(id)} { ${Object.entries(to).map(([k, v]) => `${kebab(k)}: ${v} !important`).join("; ")}; }`);
+    }
+    if (props.size && g.ms) g.moving.push(`.${cls} { transition: ${[...props].map((k) => `${kebab(k)} ${g.ms}ms ${g.ease}`).join(", ")}; }`);
+    // лист показан не во всех состояниях
+    const all = [...g.targets];
+    const hidden = m.only ? all.filter((id) => !m.only.includes(id)) : m.hide;
+    for (const id of hidden) g.rules.push(`${at(id)} { display: none !important; }`);
+    if (Object.keys(m.swap).length) extra += ` data-swap-map='${JSON.stringify(m.swap)}'`;
+    return extra;
+  }
+
   /** Класс узла внутри блока с наведением и его правила */
   function hoverClass(node, baseTransform) {
     if (!hoverGroup) return "";
@@ -309,7 +440,16 @@ export function createEmitter({
       g.hover.push(`${root ? `.${cls}:hover` : `.hg-${g.id}:hover .${cls}`} { ${decl}; }`);
       if (g.ms) g.moving.push(`.${cls} { transition: ${props.map((k) => `${kebab(k)} ${g.ms}ms ${g.ease}`).join(", ")}; }`);
     }
-    return ` className="${cls}"`;
+    return cls;
+  }
+
+  /** Классы и атрибуты узла от блоков с наведением и с состояниями */
+  function motionAttrs(node, baseTransform) {
+    const classes = [];
+    const hover = hoverClass(node, baseTransform);
+    if (hover) classes.push(hover);
+    const extra = stateAttrs(node, baseTransform, classes);
+    return (classes.length ? ` className="${classes.join(" ")}"` : "") + extra;
   }
 
   // ширина брейкпоинта, который сейчас выводится: от неё зависят отступы своих компонентов
@@ -467,6 +607,16 @@ export function createEmitter({
     // Невидимые узлы в вёрстку не попадают
     if (node.visible === false) return "";
 
+    // Лист, у которого в другом состоянии блока другая картинка или текст:
+    // следом за ним выводим его «двойников», CSS покажет нужного.
+    const twins = stateCtx?.marks.get(node)?.alts;
+    if (twins && !expanding.has(node)) {
+      expanding.add(node);
+      const out = emit(node, parent, depth, insideLink, swapTargets) + twins.map((t) => emit(t, parent, depth, insideLink, swapTargets)).join("");
+      expanding.delete(node);
+      return out;
+    }
+
     // Повёрнутая группа — не блок, а общий поворот для детей. Как и оригинал,
     // раскрываем её: каждый ребёнок встаёт в родителя группы со сложенной матрицей.
     if (node.type === "GROUP" && rotation(node) && node.relativeTransform) {
@@ -516,7 +666,9 @@ export function createEmitter({
     const enclosing = swapTargets || new Set();
     const group = variantGroup(node);
     if (group && ![...group.targets].some((t) => enclosing.has(t))) {
-      const morph = hoverMorph(node, parent, depth, insideLink, enclosing, group);
+      const morph =
+        hoverMorph(node, parent, depth, insideLink, enclosing, group) ||
+        stateMorph(node, parent, depth, insideLink, enclosing, group);
       if (morph) return morph;
       usedVariants = true;
       const box = place(node, parent);
@@ -526,8 +678,8 @@ export function createEmitter({
       if (style.opacity != null) box.opacity = style.opacity;
       // сам блок может переключать состояние блока снаружи: стрелка карусели —
       // это кнопка со своим состоянием наведения
-      const outer = triggers(node, enclosing);
-      if (outer.includes("data-swap-to")) box.cursor = "pointer";
+      const outer = triggers(node, enclosing) + motionAttrs(node, style.transform);
+      if (outer.includes("data-swap-to") || outer.includes("data-swap-map")) box.cursor = "pointer";
       const inner = new Set([...enclosing, ...group.targets]);
       const panels = group.variants
         .map(({ id, tree: v, info }) => {
@@ -564,8 +716,8 @@ export function createEmitter({
     }
 
     // Узел, который переключает состояние блока кликом или наведением
-    let attrs = (swapTargets ? triggers(node, swapTargets) : "") + hoverClass(node, style.transform);
-    if (attrs.includes("data-swap-to")) style.cursor = "pointer";
+    let attrs = (swapTargets ? triggers(node, swapTargets) : "") + motionAttrs(node, style.transform);
+    if (attrs.includes("data-swap-to") || attrs.includes("data-swap-map")) style.cursor = "pointer";
 
     // Поведение из макета: параллакс при прокрутке и увеличение по клику
     const parallax = node.behaviors?.scrollParallax;

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
 import ScrollEffects from "@/components/ScrollEffects";
+import StateGroups from "@/components/StateGroups";
 import type { Lang } from "@/lib/site";
 
 /** На каких брейкпоинтах макет показывает элемент оболочки */
@@ -49,6 +50,7 @@ export default function SitePage({
         </div>
       )}
       <ScrollEffects />
+      <StateGroups />
       <Lightbox />
     </>
   );

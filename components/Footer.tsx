@@ -17,7 +17,7 @@ export default function Footer({ lang }: { lang: Lang }) {
         {s.footer.subtitle}
       </p>
 
-      <ul className="mt-5 flex items-center gap-8 xl:mt-8 xl:gap-10">
+      <ul className="mt-5 flex items-center gap-6 xl:mt-8 xl:gap-8">
         {[
           ...socials.map((x) => ({ ...x, external: true })),
           // письмо: адрес текстом над иконками убран 2026-10-05, осталась иконка
