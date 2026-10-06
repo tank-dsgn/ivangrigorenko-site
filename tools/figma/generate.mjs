@@ -210,6 +210,7 @@ async function main() {
   const additions = (overrides.additions || []).filter((a) => a.pages.includes(slug));
   const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss } = createEmitter({
     additions,
+    hoverRules: overrides.hover || {},
     assets,
     fonts,
     guidToUrl,

@@ -8,17 +8,17 @@ export default function Design() {
     <>
       <style>{`
         @media (hover: hover) {
-          .hg-7:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
-        @media (hover: hover) {
-          .hg-8:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-8, .hg-8 * { transition: none !important; } }
-        @media (hover: hover) {
           .hg-9:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-9, .hg-9 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-10:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-10, .hg-10 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-11:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-11, .hg-11 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
@@ -1541,7 +1541,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
-              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-7" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-9" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                 <img
                   src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                   alt=""
@@ -2155,7 +2155,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
-              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-8" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-10" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                 <img
                   src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                   alt=""
@@ -2368,7 +2368,7 @@ export default function Design() {
                   <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Personal Digital Garden`}</p>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
                 </div>
-                <div data-swap-to="374:12637" data-swap-ms="0" className="hg-9" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+                <div data-swap-to="374:12637" data-swap-ms="0" className="hg-11" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                   <img
                     src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                     alt=""

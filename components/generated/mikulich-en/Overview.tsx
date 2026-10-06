@@ -6,20 +6,20 @@ export default function Overview() {
     <>
       <style>{`
         @media (hover: hover) {
-          .hg-7:hover .hn-7-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-7:hover .hn-7-2 { color: #4f46e5 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
-        @media (hover: hover) {
-          .hg-8:hover .hn-8-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-8:hover .hn-8-2 { color: #4f46e5 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-8, .hg-8 * { transition: none !important; } }
-        @media (hover: hover) {
           .hg-9:hover .hn-9-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
           .hg-9:hover .hn-9-2 { color: #4f46e5 !important; }
         }
         @media (prefers-reduced-motion: reduce) { .hg-9, .hg-9 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-10:hover .hn-10-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-10:hover .hn-10-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-10, .hg-10 * { transition: none !important; } }
+        @media (hover: hover) {
+          .hg-11:hover .hn-11-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-11:hover .hn-11-2 { color: #4f46e5 !important; }
+        }
+        @media (prefers-reduced-motion: reduce) { .hg-11, .hg-11 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
@@ -53,9 +53,9 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-7" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-          <div className="hn-7-1" style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-            <p className="hn-7-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
+        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-9" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+          <div className="hn-9-1" style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+            <p className="hn-9-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
           </div>
         </a>
       </div>
@@ -92,9 +92,9 @@ export default function Overview() {
             </div>
           </div>
         </div>
-        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-8" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-          <div className="hn-8-1" style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-            <p className="hn-8-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
+        <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-10" style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+          <div className="hn-10-1" style={{ flex: "1 0 0px", minWidth: "1px", height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+            <p className="hn-10-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
           </div>
         </a>
       </div>
@@ -128,9 +128,9 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-9" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div className="hn-9-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p className="hn-9-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
+          <a href="https://www.instagram.com/dr_mikulich/" target="_blank" rel="noopener noreferrer" className="hg-11" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+            <div className="hn-11-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+              <p className="hn-11-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`View in Context`}</p>
             </div>
           </a>
         </div>

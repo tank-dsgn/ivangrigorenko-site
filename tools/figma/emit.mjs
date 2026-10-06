@@ -82,6 +82,7 @@ export function createEmitter({
   fonts = {},
   guidToUrl = {},
   additions = [],
+  hoverRules = {},
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -193,14 +194,15 @@ export function createEmitter({
    * Возвращает false, если состояния устроены по-разному (другие слои, текст, картинка) —
    * тогда плавно переехать из одного в другое нельзя.
    */
-  function markHover(a, b, mark, isRoot = true) {
+  function markHover(a, b, mark, rule = null, isRoot = true) {
     if (a.type !== b.type || a.name !== b.name) return false;
     if ((a.visible === false) !== (b.visible === false)) return false;
     if (a.visible === false) return true;
     if ((a.characters || "") !== (b.characters || "") || (a.hash || "") !== (b.hash || "")) return false;
     const ka = a.children || [];
     const kb = b.children || [];
-    if (ka.length !== kb.length) return false;
+    const sameKids = ka.length === kb.length;
+    if (!sameKids && !rule?.repair) return false;
 
     const to = {};
     const ta = a.relativeTransform;
@@ -220,9 +222,25 @@ export function createEmitter({
     const pa = { ...frameStyle(a, assets, assetMap), ...(a.type === "TEXT" ? textStyle(a, fonts) : {}) };
     const pb = { ...frameStyle(b, assets, assetMap), ...(b.type === "TEXT" ? textStyle(b, fonts) : {}) };
     for (const k of PAINT) if (pa[k] !== pb[k]) to[k] = pb[k] ?? (k === "boxShadow" ? "none" : "initial");
+    // своя правка подписи: в макете она при наведении только меняет цвет
+    if (a.type === "TEXT" && rule?.text) Object.assign(to, rule.text);
     if (Object.keys(to).length) mark.set(a, to);
 
-    return ka.every((c, i) => markHover(c, kb[i], mark, false));
+    if (!sameKids) {
+      // Наведение в макете собрано иначе (другая картинка, лишний слой). Чинить нечем,
+      // поэтому картинку обычного состояния просто увеличиваем из центра.
+      const leaves = ka.filter((c) => c.visible !== false && !(c.children || []).length);
+      if (leaves.length === 1 && rule.repair.imageScale) {
+        const k = rule.repair.imageScale;
+        mark.set(leaves[0], { scale: `${k} ${k}` });
+      }
+      return true;
+    }
+    return ka.every((c, i) => {
+      const ok = markHover(c, kb[i], mark, rule, false);
+      // несовпавшую ветку при починке пропускаем, остальное двигается как в макете
+      return ok || Boolean(rule?.repair);
+    });
   }
 
   // узел → что с ним происходит при наведении; заполняется на время вывода блока
@@ -247,7 +265,7 @@ export function createEmitter({
     if (!sw || sw.to !== over.id) return null;
 
     const mark = new Map();
-    if (!markHover(base.tree, over.tree, mark) || !mark.size) return null;
+    if (!markHover(base.tree, over.tree, mark, hoverRules[node.name] || null) || !mark.size) return null;
 
     const id = ++hoverSeq;
     hoverMarks = mark;

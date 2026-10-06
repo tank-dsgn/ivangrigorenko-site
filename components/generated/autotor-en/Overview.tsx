@@ -6,10 +6,10 @@ export default function Overview() {
     <>
       <style>{`
         @media (hover: hover) {
-          .hg-5:hover .hn-5-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
-          .hg-5:hover .hn-5-2 { color: #4f46e5 !important; }
+          .hg-7:hover .hn-7-1 { box-shadow: inset 0 0 0 1px #4f46e5 !important; }
+          .hg-7:hover .hn-7-2 { color: #4f46e5 !important; }
         }
-        @media (prefers-reduced-motion: reduce) { .hg-5, .hg-5 * { transition: none !important; } }
+        @media (prefers-reduced-motion: reduce) { .hg-7, .hg-7 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
@@ -120,9 +120,9 @@ export default function Overview() {
               </div>
             </div>
           </div>
-          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" className="hg-5" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
-            <div className="hn-5-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
-              <p className="hn-5-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Visit website`}</p>
+          <a href="https://autotor.pl" target="_blank" rel="noopener noreferrer" className="hg-7" style={{ display: "flex", flexDirection: "row", alignItems: "flex-start" }}>
+            <div className="hn-7-1" style={{ height: "40px", display: "flex", flexDirection: "row", gap: "8px", justifyContent: "center", alignItems: "center", padding: "8px 16px 8px 16px", background: "#ffffff", borderRadius: "999px", boxShadow: "inset 0 0 0 1px #94a3b8" }}>
+              <p className="hn-7-2" style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 600, color: "#64748b", whiteSpace: "nowrap" }}>{`Visit website`}</p>
             </div>
           </a>
         </div>
