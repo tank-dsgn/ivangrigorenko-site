@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata = { title: "ivangrigorenko — 404" };
+export const metadata = { title: "IvanGrigorenko — 404" };
 
 export default function NotFound() {
   return (

@@ -5,7 +5,7 @@ import { DEPLOY_URL, SITE_URL, findPage } from "@/lib/pages";
  * Описание и картинка для соцсетей — общие для всего сайта,
  * ровно как на оригинале: там они заданы один раз в настройках.
  */
-export const SITE_NAME = "ivangrigorenko";
+export const SITE_NAME = "IvanGrigorenko";
 export const SITE_DESCRIPTION =
   "Ivan Grigorenko, UX/UI designer. I design web, desktop and mobile interfaces. Design systems, tokens, Design QA, clickable prototypes in code.";
 
