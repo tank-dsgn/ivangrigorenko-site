@@ -15,7 +15,7 @@ const meta: Meta<typeof ContactButton> = {
     docs: {
       description: {
         component:
-          "Sits in the home hero under the heading. On hover the outline and label turn indigo, a soft glow appears and a lighter segment runs along the outline.",
+          "Sits in the home hero under the heading. On hover the outline and label turn indigo, a soft glow ring appears around the button and a denser indigo segment runs along that ring. The outline itself is not animated.",
       },
     },
   },
