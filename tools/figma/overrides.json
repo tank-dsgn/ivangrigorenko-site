@@ -69,7 +69,7 @@
         "Проектирую и поддерживаю масштабируемые дизайн-системы. Прорабатываю архитектуру токенов, структуру компонентов и их состояний, веду документацию.",
         "При передаче в разработку готовлю подробные спецификации и UX-документацию, собираю интерактивные прототипы. Согласовываю с разработчиками ограничения реализации и провожу Design QA перед релизом для устранения расхождений.",
         "Особенно интересны продукты со сложной логикой и большими объёмами данных, где нужно навести порядок в ролях, сценариях и состояниях интерфейса. Мне близок системный подход: проектирую с расчётом на то, чтобы интерфейс было легко поддерживать и масштабировать.",
-        "Использую AI: собираю прототипы в коде по макетам (Claude Code, Figma MCP, Storybook, Github, Vercel), провожу исследования и анализ, работаю над структурой и документацией.",
+        "Использую AI: собираю прототипы в коде по макетам (Claude Code, Figma MCP, Storybook, GitHub, Vercel), провожу исследования и анализ, работаю над структурой и документацией.",
         "Проектировал интерфейсы в разных доменах: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech. А также занимался брендингом и айдентикой."
       ]
     },
@@ -85,7 +85,7 @@
         "I design and support scalable design systems. I work on token architecture, component structure and component states. I also write documentation.",
         "For handoff, I prepare detailed specs and UX documentation and build interactive prototypes. I agree on technical limits with developers. Before release, I do Design QA and fix differences between the design and the build.",
         "I am most interested in products with complex logic and a lot of data, where roles, flows and interface states need a clear structure. I like a systematic approach: I design interfaces that are easy to support and scale.",
-        "I use AI: I build prototypes in code from my designs (Claude Code, Figma MCP, Storybook, Github, Vercel). I also use it for research, analysis, structure and documentation.",
+        "I use AI: I build prototypes in code from my designs (Claude Code, Figma MCP, Storybook, GitHub, Vercel). I also use it for research, analysis, structure and documentation.",
         "I have designed interfaces in different domains: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech. I have also worked on branding and visual identity."
       ]
     }
