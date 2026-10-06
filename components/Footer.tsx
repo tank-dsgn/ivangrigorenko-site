@@ -19,14 +19,17 @@ export default function Footer({ lang }: { lang: Lang }) {
 
       <ul className="mt-5 flex items-center gap-6 xl:mt-8 xl:gap-8">
         {[
-          ...socials.map((x) => ({ ...x, external: true })),
-          // письмо: адрес текстом над иконками убран 2026-10-05, осталась иконка
-          { name: "Email", href: mailtoHref(lang), icon: "/icons/mail.svg", w: 32, h: 32, external: false },
+          ...socials,
+          // Письмо: адрес текстом над иконками убран 2026-10-05, осталась иконка.
+          // Открывается в новой вкладке, как и соцсети: если почта у посетителя
+          // в браузере (Gmail), письмо не должно заменять собой сайт.
+          { name: "Email", href: mailtoHref(lang), icon: "/icons/mail.svg", w: 32, h: 32 },
         ].map((x) => (
           <li key={x.name}>
             <a
               href={x.href}
-              {...(x.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={x.name}
               // иконка — маска, цвет задаёт текст: серый, при наведении основной индиго
               className="text-faint hover:text-accent focus-visible:text-accent ease-figma flex h-6 w-6 items-center justify-center transition-colors duration-200 md:h-7 md:w-7 xl:h-8 xl:w-8"
