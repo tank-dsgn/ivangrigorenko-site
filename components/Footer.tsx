@@ -9,7 +9,7 @@ export default function Footer({ lang }: { lang: Lang }) {
       // якорь не должен уезжать под фиксированную шапку
       className="scroll-mt-14 xl:scroll-mt-20 flex flex-col items-center px-5 py-12 text-center md:py-16 xl:py-24"
     >
-      <h2 className="text-ink text-[20px] leading-7 font-semibold md:text-[24px] md:leading-8 xl:text-[30px] xl:leading-9">
+      <h2 className="text-accent text-[20px] leading-7 font-semibold md:text-[24px] md:leading-8 xl:text-[30px] xl:leading-9">
         {s.footer.title}
       </h2>
 
