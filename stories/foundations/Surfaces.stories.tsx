@@ -14,7 +14,6 @@ const shadows = [
   { name: "Card, hover", value: "0 8px 24px 0 rgba(64, 62, 92, 0.3)", use: "Project card under the cursor, together with a 6px lift. Token --shadow-card-hover" },
   { name: "Related card", value: "0 2px 6px 0 rgba(13, 18, 46, 0.3)", use: "Related card at rest; under the cursor it takes the card hover shadow. Token --shadow-thumb" },
   { name: "Screen", value: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", use: "Screenshots in case studies" },
-  { name: "Button glow", value: "inset 0 0 0 2px #4f46e5, 0 0 0 4px rgba(79, 70, 229, 0.12), 0 8px 24px -8px rgba(79, 70, 229, 0.45)", use: "Contact button under the cursor" },
 ];
 
 const meta: Meta = {

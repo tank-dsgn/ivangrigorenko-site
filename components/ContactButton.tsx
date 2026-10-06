@@ -12,10 +12,10 @@ const label = { ru: "Связаться", en: "Contact me" } as const;
  * Свойства `mail`, `compact`, `full` остались от варианта для «Обо мне» (кнопка
  * размером с «Скачать моё резюме», открывает письмо) — сейчас он не используется.
  *
- * Вид — контурная кнопка из макета. При наведении выделяется целиком: обводка
- * и текст становятся индиго, вокруг мягкое индиго-свечение, всё за 300 мс.
- * Пока курсор на кнопке, по кольцу свечения вокруг неё (4px снаружи обводки) по кругу бежит
- * участок того же индиго, только плотнее. Сама обводка не анимируется — просто индиго.
+ * Вид — контурная кнопка из макета. При наведении обводка и текст становятся индиго,
+ * а вокруг кнопки появляется ореол: размытое свечение, которое медленно переливается
+ * оттенками индиго (круг за 3,5 с). Стили ореола — `.contact-aura` в app/globals.css.
+ * Вариант выбран Иваном 2026-10-06 из нескольких; до него были бегунок по обводке и по кольцу.
  */
 export default function ContactButton({
   lang,
@@ -37,23 +37,16 @@ export default function ContactButton({
   return (
     <a
       href={mail ? mailtoHref(lang) : "#contacts"}
-      // тень из трёх слоёв: обводка, кольцо свечения, мягкая тень снизу; в покое два последних прозрачны
-      className={`group relative text-muted ease-figma hover:text-accent focus-visible:text-accent items-center justify-center rounded-full bg-white font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8,0_0_0_0_rgba(79,70,229,0),0_8px_24px_-8px_rgba(79,70,229,0)] transition-[color,box-shadow] duration-300 hover:shadow-[inset_0_0_0_2px_#4f46e5,0_0_0_4px_rgba(79,70,229,0.12),0_8px_24px_-8px_rgba(79,70,229,0.45)] focus-visible:shadow-[inset_0_0_0_2px_#4f46e5,0_0_0_4px_rgba(79,70,229,0.12),0_8px_24px_-8px_rgba(79,70,229,0.45)] motion-reduce:transition-none ${size} ${full ? "flex w-full" : "inline-flex"}`}
+      className={`group text-muted ease-figma hover:text-accent focus-visible:text-accent relative items-center justify-center rounded-full font-semibold whitespace-nowrap transition-colors duration-300 ${size} ${full ? "flex w-full" : "inline-flex"}`}
     >
-      {label[lang]}
-      {/* бегунок в кольце свечения: рамка стоит по середине кольца, штрих шириной во всё кольцо */}
-      <svg aria-hidden="true" className="pointer-events-none absolute -inset-0.5 h-[calc(100%+4px)] w-[calc(100%+4px)] overflow-visible" fill="none" strokeWidth="4" strokeLinecap="round">
-        <rect
-          width="100%"
-          height="100%"
-          rx="22"
-          stroke="#4f46e5"
-          strokeOpacity="0.32"
-          pathLength={1}
-          strokeDasharray="0.2 0.8"
-          className={`opacity-0 transition-opacity duration-300 group-hover:animate-[border-run_3.2s_linear_infinite] group-hover:opacity-100 group-focus-visible:animate-[border-run_3.2s_linear_infinite] group-focus-visible:opacity-100 motion-reduce:hidden ${compact ? "" : "md:[rx:26px]"}`}
-        />
-      </svg>
+      {/* ореол: лежит под лицом кнопки и выступает из-под него на 4px */}
+      <span aria-hidden="true" className="contact-aura absolute -inset-1 rounded-full blur-[6px]" />
+      {/* лицо кнопки: белая заливка и обводка — серая 1px, под курсором индиго 2px */}
+      <span
+        aria-hidden="true"
+        className="ease-figma absolute inset-0 rounded-full bg-white shadow-[inset_0_0_0_1px_#94a3b8] transition-shadow duration-300 group-hover:shadow-[inset_0_0_0_2px_#4f46e5] group-focus-visible:shadow-[inset_0_0_0_2px_#4f46e5]"
+      />
+      <span className="relative">{label[lang]}</span>
     </a>
   );
 }

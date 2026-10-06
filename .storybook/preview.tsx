@@ -25,7 +25,7 @@ const preview: Preview = {
     nextjs: { appDirectory: true },
     controls: { expanded: true },
     options: {
-      storySort: { order: ["Foundations", ["Colors", "Typography", "Spacing", "Radii & shadows", "Motion"], "Components", "Explorations"] },
+      storySort: { order: ["Foundations", ["Colors", "Typography", "Spacing", "Radii & shadows", "Motion"], "Components"] },
     },
   },
   initialGlobals: { backgrounds: { value: "white" } },
