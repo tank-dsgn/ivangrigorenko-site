@@ -3,15 +3,15 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 // Палитра сайта. Значения живут в app/globals.css (@theme) — здесь читаются оттуда же,
 // поэтому поменяв токен в CSS, увидите новое значение и тут, и на сайте.
 const tokens = [
-  { name: "accent", cls: "bg-accent", role: "Основной: ссылки, активный пункт, заголовок блока контактов, наведение" },
-  { name: "accent-soft", cls: "bg-accent-soft", role: "Бургер и крестик меню" },
-  { name: "ink", cls: "bg-ink", role: "Заголовки" },
-  { name: "body-strong", cls: "bg-body-strong", role: "Подзаголовки, текст кейсов" },
-  { name: "body", cls: "bg-body", role: "Описания, основной текст" },
-  { name: "muted", cls: "bg-muted", role: "Теги, неактивная навигация, текст кнопки" },
-  { name: "faint", cls: "bg-faint", role: "Иконки соцсетей, обводка кнопки" },
-  { name: "surface", cls: "bg-surface", role: "Подложка под картинкой карточки" },
-  { name: "thumb", cls: "bg-thumb", role: "Подложка маленькой карточки «Смотрите также», пока грузится картинка" },
+  { name: "accent", cls: "bg-accent", role: "Primary: links, active nav item, contact block title, hover" },
+  { name: "accent-soft", cls: "bg-accent-soft", role: "Burger and close icons of the menu" },
+  { name: "ink", cls: "bg-ink", role: "Headings" },
+  { name: "body-strong", cls: "bg-body-strong", role: "Subheadings, case study text" },
+  { name: "body", cls: "bg-body", role: "Descriptions, body text" },
+  { name: "muted", cls: "bg-muted", role: "Tags, inactive navigation, button label" },
+  { name: "faint", cls: "bg-faint", role: "Social icons, button outline" },
+  { name: "surface", cls: "bg-surface", role: "Backdrop under a project card image" },
+  { name: "thumb", cls: "bg-thumb", role: "Backdrop of a related card while its image loads" },
 ];
 
 function Swatch({ name, cls, role }: { name: string; cls: string; role: string }) {
@@ -39,12 +39,12 @@ function Swatch({ name, cls, role }: { name: string; cls: string; role: string }
 }
 
 const meta: Meta = {
-  title: "Основы/Цвета",
+  title: "Foundations/Colors",
   parameters: { layout: "padded", controls: { disable: true } },
 };
 export default meta;
 
-export const Палитра: StoryObj = {
+export const Palette: StoryObj = {
   render: () => (
     <div className="flex flex-col gap-6">
       {tokens.map((t) => (
@@ -54,10 +54,10 @@ export const Палитра: StoryObj = {
         <div className="h-14 w-14 shrink-0 rounded-xl bg-[#fafaf9] shadow-[inset_0_0_0_1px_rgba(15,23,42,0.08)]" />
         <div>
           <div className="text-ink text-[16px] leading-6 font-semibold">
-            фон страницы <span className="text-muted font-normal">#fafaf9</span>
+            page background <span className="text-muted font-normal">#fafaf9</span>
           </div>
           <div className="text-body text-[14px] leading-5">
-            Фон секций с карточками и экрана меню. Токена нет — значение приходит из макета.
+            Background of card sections and the menu screen. No token: the value comes from the mockup.
           </div>
         </div>
       </div>

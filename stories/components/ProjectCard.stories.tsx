@@ -20,24 +20,24 @@ function Frame({ size, children }: { size: Card["size"]; children: React.ReactNo
 }
 
 const meta: Meta<Args> = {
-  title: "Компоненты/Карточка проекта",
+  title: "Components/Project card",
   parameters: {
     backgrounds: { value: "page" },
     docs: {
       description: {
         component:
-          "Карточка проекта на главной. Три размера — по одному на брейкпоинт. Тексты справа внизу можно менять; картинка и её положение у каждого проекта свои и приходят из макета. Наведение работает у десктопной: подъём на 6px, плотнее тень, картинка слегка растёт.",
+          "Project card on the home page. Three sizes, one per breakpoint. Texts can be edited in the controls; the image and its position are specific to each project and come from the mockup. Hover works on the desktop size: a 6px lift, a denser shadow and a slight image zoom.",
       },
     },
   },
   argTypes: {
-    size: { name: "Размер", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
-    project: { name: "Картинка проекта", control: "select", options: projects },
+    size: { name: "Size", description: "One per breakpoint", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
+    project: { name: "Project image", description: "Image and its position in the card window", control: "select", options: projects },
     lang: { table: { disable: true } },
-    tags: { name: "Теги" },
-    title: { name: "Название" },
-    description: { name: "Описание", control: "text" },
-    href: { name: "Ссылка" },
+    tags: { name: "Tags", description: "Line above the title: domain, type of work" },
+    title: { name: "Title" },
+    description: { name: "Description", control: "text" },
+    href: { name: "Link" },
   },
   render: ({ project, lang, ...props }) => (
     <Frame size={props.size}>
@@ -48,7 +48,7 @@ const meta: Meta<Args> = {
 export default meta;
 type Story = StoryObj<Args>;
 
-const story = (project: Project, lang: Lang = "ru", size: Card["size"] = "desktop"): Story => {
+const story = (project: Project, lang: Lang = "en", size: Card["size"] = "desktop"): Story => {
   const { image: _image, ...text } = find(lang, project, size);
   return { args: { ...text, project, lang } };
 };
@@ -59,19 +59,19 @@ export const Pot: Story = story("pot");
 export const Ostral: Story = story("ostral");
 export const VV: Story = story("vv");
 export const Mikulich: Story = story("mikulich");
-export const Планшет: Story = story("eazychange", "ru", "tablet");
-export const Телефон: Story = story("eazychange", "ru", "mobile");
-export const Английская: Story = story("eazychange", "en");
+export const Tablet: Story = story("eazychange", "en", "tablet");
+export const Mobile: Story = story("eazychange", "en", "mobile");
+export const Russian: Story = story("eazychange", "ru");
 
 /** Все шесть карточек подряд, как на главной */
-export const ВсеПроекты: StoryObj<{ size: Card["size"]; lang: Lang }> = {
-  name: "Все проекты",
-  args: { size: "desktop", lang: "ru" },
+export const AllProjects: StoryObj<{ size: Card["size"]; lang: Lang }> = {
+  name: "All projects",
+  args: { size: "desktop", lang: "en" },
   argTypes: {
-    size: { name: "Размер", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
-    lang: { name: "Язык", control: "inline-radio", options: ["ru", "en"], table: { disable: false } },
+    size: { name: "Size", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
+    lang: { name: "Language", control: "inline-radio", options: ["en", "ru"], table: { disable: false } },
   },
-  parameters: { layout: "padded", controls: { include: ["Размер", "Язык"] } },
+  parameters: { layout: "padded", controls: { include: ["Size", "Language"] } },
   render: ({ size, lang }) => (
     <div className="flex justify-center">
       <Frame size={size}>

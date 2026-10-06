@@ -2,20 +2,20 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import ContactButton from "@/components/ContactButton";
 
 const meta: Meta<typeof ContactButton> = {
-  title: "Компоненты/Кнопка «Связаться со мной»",
+  title: "Components/Contact button",
   component: ContactButton,
-  args: { lang: "ru", mail: false, compact: false, full: false },
+  args: { lang: "en", mail: false, compact: false, full: false },
   argTypes: {
-    lang: { name: "Язык", control: "inline-radio", options: ["ru", "en"] },
-    mail: { name: "Открывает письмо", description: "Иначе прокручивает к блоку контактов" },
-    compact: { name: "Обычный размер", description: "40px, текст 16px — как у остальных кнопок сайта" },
-    full: { name: "На всю ширину" },
+    lang: { name: "Language", description: "Label language", control: "inline-radio", options: ["en", "ru"] },
+    mail: { name: "Opens an email", description: "Otherwise scrolls to the contact block" },
+    compact: { name: "Regular size", description: "40px high, 16px text — same as the other site buttons" },
+    full: { name: "Full width", description: "Stretches to the width of its container" },
   },
   parameters: {
     docs: {
       description: {
         component:
-          "Стоит в первом экране главной под заголовком. Наведите курсор: обводка и текст становятся индиго, вокруг мягкое свечение, по обводке бежит светлый участок.",
+          "Sits in the home hero under the heading. On hover the outline and label turn indigo, a soft glow appears and a lighter segment runs along the outline.",
       },
     },
   },
@@ -23,11 +23,11 @@ const meta: Meta<typeof ContactButton> = {
 export default meta;
 type Story = StoryObj<typeof ContactButton>;
 
-export const НаГлавной: Story = { name: "На главной" };
-export const Английская: Story = { args: { lang: "en" } };
-export const ОбычныйРазмер: Story = { name: "Обычный размер", args: { compact: true } };
-export const НаВсюШирину: Story = {
-  name: "На всю ширину",
+export const OnHome: Story = { name: "On home" };
+export const Russian: Story = { args: { lang: "ru" } };
+export const RegularSize: Story = { name: "Regular size", args: { compact: true } };
+export const FullWidth: Story = {
+  name: "Full width",
   args: { full: true },
   decorators: [(Story) => <div className="w-[335px]"><Story /></div>],
 };

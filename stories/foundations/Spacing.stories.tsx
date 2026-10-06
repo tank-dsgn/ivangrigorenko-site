@@ -4,18 +4,18 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 const scale = [0, 2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96];
 
 const breakpoints = [
-  { name: "Телефон", range: "до 799px", frame: 375, prefix: "без префикса", side: 20 },
-  { name: "Планшет", range: "800–1279px", frame: 800, prefix: "md:", side: 40 },
-  { name: "Десктоп", range: "от 1280px", frame: 1280, prefix: "xl:", side: 56 },
+  { name: "Mobile", range: "up to 799px", frame: 375, prefix: "no prefix", side: 20 },
+  { name: "Tablet", range: "800–1279px", frame: 800, prefix: "md:", side: 40 },
+  { name: "Desktop", range: "1280px and up", frame: 1280, prefix: "xl:", side: 56 },
 ];
 
 const meta: Meta = {
-  title: "Основы/Отступы",
+  title: "Foundations/Spacing",
   parameters: { layout: "padded", controls: { disable: true } },
 };
 export default meta;
 
-export const Шкала: StoryObj = {
+export const Scale: StoryObj = {
   render: () => (
     <div className="flex flex-col gap-3">
       {scale.map((v) => (
@@ -31,16 +31,16 @@ export const Шкала: StoryObj = {
   ),
 };
 
-export const Брейкпоинты: StoryObj = {
+export const Breakpoints: StoryObj = {
   render: () => (
     <table className="text-body border-separate border-spacing-x-6 border-spacing-y-2 text-left text-[14px] leading-5">
       <thead className="text-muted text-[12px] leading-4 uppercase">
         <tr>
-          <th className="font-normal">Экран</th>
-          <th className="font-normal">Ширина окна</th>
-          <th className="font-normal">Фрейм в макете</th>
-          <th className="font-normal">Префикс Tailwind</th>
-          <th className="font-normal">Поля шапки</th>
+          <th className="font-normal">Screen</th>
+          <th className="font-normal">Window width</th>
+          <th className="font-normal">Mockup frame</th>
+          <th className="font-normal">Tailwind prefix</th>
+          <th className="font-normal">Header side padding</th>
         </tr>
       </thead>
       <tbody>

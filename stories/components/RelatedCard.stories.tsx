@@ -10,22 +10,22 @@ const find = (lang: Lang, project: Project, size: Card["size"]) =>
 type Args = Pick<Card, "size" | "label" | "href"> & { project: Project; lang: Lang };
 
 const meta: Meta<Args> = {
-  title: "Компоненты/Карточка «Смотрите также»",
+  title: "Components/Related card",
   parameters: {
     backgrounds: { value: "page" },
     docs: {
       description: {
         component:
-          "Маленькая карточка проекта в конце каждого кейса. Наведение работает у десктопной: окно и подпись поднимаются на 6px, тень плотнее, картинка слегка растёт, подпись становится индиго и жирной.",
+          "Small project card in the “See also” block at the end of each case study. Hover works on the desktop size: the window and label lift by 6px, the shadow gets denser, the image zooms slightly, the label turns indigo and bold.",
       },
     },
   },
   argTypes: {
-    size: { name: "Размер", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
-    project: { name: "Картинка проекта", control: "select", options: projects },
+    size: { name: "Size", description: "One per breakpoint", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
+    project: { name: "Project image", description: "Image and its position in the card window", control: "select", options: projects },
     lang: { table: { disable: true } },
-    label: { name: "Подпись" },
-    href: { name: "Ссылка" },
+    label: { name: "Label", description: "Caption under the image" },
+    href: { name: "Link" },
   },
   render: ({ project, lang, ...props }) => {
     const { image, frame } = find(lang, project, props.size);
@@ -35,7 +35,7 @@ const meta: Meta<Args> = {
 export default meta;
 type Story = StoryObj<Args>;
 
-const story = (project: Project, lang: Lang = "ru", size: Card["size"] = "desktop"): Story => {
+const story = (project: Project, lang: Lang = "en", size: Card["size"] = "desktop"): Story => {
   const { label, href } = find(lang, project, size);
   return { args: { size, label, href, project, lang } };
 };
@@ -46,18 +46,19 @@ export const Pot: Story = story("pot");
 export const Ostral: Story = story("ostral");
 export const VV: Story = story("vv");
 export const Mikulich: Story = story("mikulich");
-export const Планшет: Story = story("eazychange", "ru", "tablet");
-export const Телефон: Story = story("eazychange", "ru", "mobile");
+export const Tablet: Story = story("eazychange", "en", "tablet");
+export const Mobile: Story = story("eazychange", "en", "mobile");
+export const Russian: Story = story("eazychange", "ru");
 
 /** Все шесть карточек сеткой, как в блоке «Смотрите также» */
-export const ВсеКарточки: StoryObj<{ size: Card["size"]; lang: Lang }> = {
-  name: "Все карточки",
-  args: { size: "desktop", lang: "ru" },
+export const AllCards: StoryObj<{ size: Card["size"]; lang: Lang }> = {
+  name: "All cards",
+  args: { size: "desktop", lang: "en" },
   argTypes: {
-    size: { name: "Размер", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
-    lang: { name: "Язык", control: "inline-radio", options: ["ru", "en"], table: { disable: false } },
+    size: { name: "Size", control: "inline-radio", options: ["desktop", "tablet", "mobile"] },
+    lang: { name: "Language", control: "inline-radio", options: ["en", "ru"], table: { disable: false } },
   },
-  parameters: { layout: "padded", controls: { include: ["Размер", "Язык"] } },
+  parameters: { layout: "padded", controls: { include: ["Size", "Language"] } },
   render: ({ size, lang }) => (
     <div className="mx-auto flex w-full max-w-[960px] flex-row flex-wrap items-start justify-center gap-6">
       {projects.map((project) => {

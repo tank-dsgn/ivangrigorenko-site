@@ -2,20 +2,25 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Header from "@/components/Header";
 
 const meta: Meta<typeof Header> = {
-  title: "Компоненты/Шапка",
+  title: "Components/Header",
   component: Header,
-  args: { lang: "ru", active: "work" },
+  args: { lang: "en", active: "work" },
   argTypes: {
-    lang: { name: "Язык", control: "inline-radio", options: ["ru", "en"] },
-    active: { name: "Активный пункт", control: "inline-radio", options: ["work", "about", undefined] },
+    lang: { name: "Language", description: "Site language version", control: "inline-radio", options: ["en", "ru"] },
+    active: {
+      name: "Active item",
+      description: "Navigation item highlighted in indigo",
+      control: "inline-radio",
+      options: ["work", "about", undefined],
+    },
   },
   parameters: {
     layout: "fullscreen",
-    nextjs: { appDirectory: true, navigation: { pathname: "/home-ru" } },
+    nextjs: { appDirectory: true, navigation: { pathname: "/" } },
     docs: {
       description: {
         component:
-          "Шапка прибита к верху окна. От 1280px — навигация и переключатель языка, уже — логотип и бургер, который ведёт на экран меню. Ширину переключайте кнопкой размера окна в панели сверху.",
+          "Fixed to the top of the window. From 1280px it shows navigation and the language switch; below that, the logo and a burger that leads to the menu screen. Switch the width with the viewport button in the toolbar.",
       },
     },
   },
@@ -25,18 +30,18 @@ const meta: Meta<typeof Header> = {
 export default meta;
 type Story = StoryObj<typeof Header>;
 
-export const Главная: Story = {};
-export const ОбоМне: Story = {
-  name: "Обо мне",
+export const Home: Story = {};
+export const About: Story = {
   args: { active: "about" },
-  parameters: { nextjs: { appDirectory: true, navigation: { pathname: "/about-ru" } } },
+  parameters: { nextjs: { appDirectory: true, navigation: { pathname: "/about-en" } } },
 };
-export const Кейс: Story = {
+export const CaseStudy: Story = {
+  name: "Case study",
   args: { active: undefined },
-  parameters: { nextjs: { appDirectory: true, navigation: { pathname: "/pot-ru" } } },
+  parameters: { nextjs: { appDirectory: true, navigation: { pathname: "/pot-en" } } },
 };
-export const Английская: Story = {
-  args: { lang: "en" },
-  parameters: { nextjs: { appDirectory: true, navigation: { pathname: "/" } } },
+export const Russian: Story = {
+  args: { lang: "ru" },
+  parameters: { nextjs: { appDirectory: true, navigation: { pathname: "/home-ru" } } },
 };
-export const Телефон: Story = { globals: { viewport: { value: "mobile" } } };
+export const Mobile: Story = { globals: { viewport: { value: "mobile" } } };

@@ -3,32 +3,32 @@ import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 // Стили текста, которые реально встречаются на страницах (подсчитано по вёрстке из макета).
 // Шрифт один — Open Sans, начертания 400 / 600 / 700.
 const styles = [
-  { size: 48, line: 48, weight: 700, use: "Крупные цифры в кейсах" },
-  { size: 36, line: 40, weight: 700, use: "Заголовок страницы и секции кейса (десктоп)" },
-  { size: 30, line: 36, weight: 700, use: "Заголовок секции (планшет)" },
-  { size: 30, line: 36, weight: 600, use: "Название проекта в карточке, заголовок блока контактов (десктоп)" },
-  { size: 24, line: 32, weight: 700, use: "Подзаголовки в кейсах" },
-  { size: 24, line: 32, weight: 600, use: "Название проекта в карточке (планшет)" },
-  { size: 20, line: 28, weight: 600, use: "Название проекта в карточке (телефон)" },
-  { size: 20, line: 28, weight: 400, use: "Основной текст кейса и «Обо мне» (десктоп)" },
-  { size: 18, line: 28, weight: 600, use: "Кнопка «Связаться со мной» (десктоп)" },
-  { size: 18, line: 28, weight: 400, use: "Описание проекта в карточке (десктоп)" },
-  { size: 16, line: 24, weight: 600, use: "Навигация, кнопки" },
-  { size: 16, line: 24, weight: 400, use: "Основной текст (планшет и телефон)" },
-  { size: 14, line: 20, weight: 400, use: "Теги карточки (десктоп), подписи" },
-  { size: 12, line: 16, weight: 600, use: "Мелкие заголовки таблиц и схем" },
-  { size: 12, line: 16, weight: 400, use: "Теги карточки (планшет, телефон), подписи к схемам" },
+  { size: 48, line: 48, weight: 700, use: "Large figures in case studies" },
+  { size: 36, line: 40, weight: 700, use: "Page title and case section heading (desktop)" },
+  { size: 30, line: 36, weight: 700, use: "Section heading (tablet)" },
+  { size: 30, line: 36, weight: 600, use: "Project card title, contact block title (desktop)" },
+  { size: 24, line: 32, weight: 700, use: "Subheadings in case studies" },
+  { size: 24, line: 32, weight: 600, use: "Project card title (tablet)" },
+  { size: 20, line: 28, weight: 600, use: "Project card title (mobile)" },
+  { size: 20, line: 28, weight: 400, use: "Body text of case studies and About (desktop)" },
+  { size: 18, line: 28, weight: 600, use: "Contact button (desktop)" },
+  { size: 18, line: 28, weight: 400, use: "Project card description (desktop)" },
+  { size: 16, line: 24, weight: 600, use: "Navigation, buttons" },
+  { size: 16, line: 24, weight: 400, use: "Body text (tablet and mobile)" },
+  { size: 14, line: 20, weight: 400, use: "Project card tags (desktop), captions" },
+  { size: 12, line: 16, weight: 600, use: "Small headings in tables and diagrams" },
+  { size: 12, line: 16, weight: 400, use: "Project card tags (tablet, mobile), diagram captions" },
 ];
 
 const meta: Meta<{ sample: string }> = {
-  title: "Основы/Типографика",
+  title: "Foundations/Typography",
   parameters: { layout: "padded" },
-  args: { sample: "Быстрый и интуитивный криптообменник" },
-  argTypes: { sample: { name: "Текст-пример", control: "text" } },
+  args: { sample: "Fast and intuitive crypto exchange" },
+  argTypes: { sample: { name: "Sample text", control: "text" } },
 };
 export default meta;
 
-export const Шкала: StoryObj<{ sample: string }> = {
+export const Scale: StoryObj<{ sample: string }> = {
   render: ({ sample }) => (
     <div className="flex flex-col gap-6">
       {styles.map((s) => (

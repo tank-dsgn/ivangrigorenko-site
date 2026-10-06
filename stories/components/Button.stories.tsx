@@ -4,26 +4,29 @@ import Button from "@/components/Button";
 import { buttons, type Lang } from "../data";
 
 const meta: Meta<typeof Button> = {
-  title: "Компоненты/Кнопка",
+  title: "Components/Button",
   component: Button,
-  args: { href: "https://example.com", label: "Скачать моё резюме", newTab: true, width: undefined, wideLabel: false },
+  args: { href: "https://example.com", label: "Download my resume", newTab: true, width: undefined, wideLabel: false },
   argTypes: {
-    label: { name: "Подпись" },
-    href: { name: "Ссылка" },
-    newTab: { name: "В новой вкладке" },
+    label: { name: "Label" },
+    href: { name: "Link" },
+    newTab: { name: "New tab", description: "Open in a new tab — for external links" },
     width: {
-      name: "Ширина",
-      description: "Пусто — по тексту; fill — на всю ширину блока; либо точное значение, например 335px",
+      name: "Width",
+      description: "Empty — fits the label; fill — full width of the container; or an exact value such as 335px",
       control: "select",
       options: [undefined, "fill", "335px"],
     },
-    wideLabel: { name: "Подпись на всю кнопку, слева" },
+    wideLabel: {
+      name: "Wide label",
+      description: "The label takes the whole button and sits on the left — as “Visit website” does on narrow screens in the mockup",
+    },
   },
   parameters: {
     docs: {
       description: {
         component:
-          "Контурная кнопка сайта, высота 40px. При наведении обводка и текст становятся индиго. Крупная кнопка первого экрана — отдельный компонент «Кнопка „Связаться со мной“».",
+          "Outlined site button, 40px high. On hover the outline and label turn indigo. The large hero button is a separate component, “Contact button”.",
       },
     },
   },
@@ -33,16 +36,16 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const ПоТексту: Story = { name: "По тексту" };
-export const НаВсюШирину: Story = { name: "На всю ширину", args: { width: "fill" } };
-export const ПодписьСлева: Story = { name: "Подпись слева", args: { label: "Посетить сайт", width: "fill", wideLabel: true } };
+export const FitLabel: Story = { name: "Fit label" };
+export const FullWidth: Story = { name: "Full width", args: { width: "fill" } };
+export const WideLabel: Story = { name: "Wide label", args: { label: "Visit website", width: "fill", wideLabel: true } };
 
 /** Все кнопки, которые сейчас стоят на страницах сайта */
-export const НаСайте: StoryObj<{ lang: Lang }> = {
-  name: "Все кнопки сайта",
-  args: { lang: "ru" },
-  argTypes: { lang: { name: "Язык", control: "inline-radio", options: ["ru", "en"] } },
-  parameters: { controls: { include: ["Язык"] } },
+export const OnSite: StoryObj<{ lang: Lang }> = {
+  name: "All site buttons",
+  args: { lang: "en" },
+  argTypes: { lang: { name: "Language", control: "inline-radio", options: ["en", "ru"] } },
+  parameters: { controls: { include: ["Language"] } },
   render: ({ lang }) => (
     <div className="flex w-[335px] flex-col items-start gap-4">
       {buttons(lang).map((b, i) => (
