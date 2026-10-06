@@ -6,9 +6,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
  * Увеличение схем и экранов по клику — как на оригинале.
  *
  * Блок с `data-lightbox` открывается поверх страницы: тёмная подложка,
- * копия блока по центру, вписанная в 80% окна. Закрывается кликом по
+ * копия блока по центру, вписанная в 94% окна (в оригинале 80%; увеличено по просьбе Ивана 2026-10-06). Закрывается кликом по
  * подложке, крестиком или Esc.
  */
+/** Какую долю окна занимает увеличенный блок по той стороне, в которую он упирается */
+const FILL = 0.94;
+
 export default function Lightbox() {
   const [open, setOpen] = useState<{ html: string; width: number; height: number } | null>(null);
   const [shown, setShown] = useState(false);
@@ -59,7 +62,8 @@ export default function Lightbox() {
   useEffect(() => {
     if (!open) return;
     const fit = () =>
-      setScale(Math.min((window.innerWidth * 0.8) / open.width, (window.innerHeight * 0.8) / open.height));
+      // почти во весь экран: по 3% полей с каждой стороны (в оригинале было 80% окна)
+      setScale(Math.min((window.innerWidth * FILL) / open.width, (window.innerHeight * FILL) / open.height));
     fit();
     const raf = requestAnimationFrame(() => setShown(true));
     const onKey = (e: KeyboardEvent) => {
@@ -86,7 +90,7 @@ export default function Lightbox() {
         onClick={close}
         style={{ position: "absolute", inset: 0, background: "rgba(0, 0, 0, 0.75)", cursor: "pointer", opacity: shown ? 1 : 0, transition: "opacity 200ms ease-out" }}
       />
-      <div style={{ position: "absolute", top: 0, right: 0, boxSizing: "content-box", width: "max(10vh, 10vw)", maxWidth: 56, padding: "min(2vw, 16px)", opacity: shown ? 1 : 0, transition: "opacity 200ms ease-out" }}>
+      <div style={{ position: "absolute", top: 0, right: 0, zIndex: 1, boxSizing: "content-box", width: "max(10vh, 10vw)", maxWidth: 56, padding: "min(2vw, 16px)", opacity: shown ? 1 : 0, transition: "opacity 200ms ease-out" }}>
         <button
           type="button"
           aria-label="Close"
