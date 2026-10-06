@@ -54,3 +54,9 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* участок светлого индиго, бегущий по обводке кнопки «Связаться со мной» */
+@keyframes border-run {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
