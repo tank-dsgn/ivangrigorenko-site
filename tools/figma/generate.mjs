@@ -146,9 +146,9 @@ async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, ta
         .filter((c) => body.includes(`<${c} `))
         .map((c) => `import ${c} from "@/components/${c}";\n`)
         .join("") +
-      additions
-        .filter((a) => body.includes(`<${a.component} `))
-        .map((a) => `import ${a.component} from ${JSON.stringify(a.from)};\n`)
+      // без повторов: один компонент может прийти и из макета, и из своих вставок
+      [...new Set(additions.filter((a) => body.includes(`<${a.component} `)).map((a) => `import ${a.component} from ${JSON.stringify(a.from)};\n`))]
+        .filter((line) => !["ProjectCard", "RelatedCard", "Button"].some((c) => line.startsWith(`import ${c} `)))
         .join("");
     const src =
       `// Секция «${sec.name}» — сгенерировано из Figma.\n` +

@@ -1,6 +1,8 @@
 // Секция «Overview» — сгенерировано из Figma.
 // Перегенерировать: node tools/figma/generate.mjs pot-en --sections
 
+import Button from "@/components/Button";
+
 export default function Overview() {
   return (
     <>
@@ -34,6 +36,9 @@ export default function Overview() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Timeline`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`5 – 6 months`}</p>
               </div>
+            </div>
+            <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
+              <Button href="https://pot-prototype.vercel.app" label="Open prototype" newTab width="fill" />
             </div>
           </div>
         </div>
@@ -70,6 +75,9 @@ export default function Overview() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`5 – 6 months`}</p>
               </div>
             </div>
+            <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
+              <Button href="https://pot-prototype.vercel.app" label="Open prototype" newTab />
+            </div>
           </div>
         </div>
       </div>
@@ -102,6 +110,9 @@ export default function Overview() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`5 – 6 months`}</p>
               </div>
             </div>
+          </div>
+          <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "0" }}>
+            <Button href="https://pot-prototype.vercel.app" label="Open prototype" newTab />
           </div>
         </div>
       </div>

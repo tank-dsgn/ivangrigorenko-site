@@ -2,6 +2,7 @@
 // Перегенерировать: node tools/figma/generate.mjs about-en --sections
 
 import Button from "@/components/Button";
+import ExtraTools from "@/components/ExtraTools";
 
 export default function About() {
   return (
@@ -84,6 +85,9 @@ export default function About() {
                   decoding="async"
                   style={{ width: "196px", height: "34px", flexShrink: 0 }}
                 />
+                <div style={{ width: "196px", flexShrink: 0, marginTop: "0" }}>
+                  <ExtraTools />
+                </div>
               </div>
             </div>
           </div>
@@ -169,6 +173,9 @@ export default function About() {
                     decoding="async"
                     style={{ width: "196px", height: "34px", flexShrink: 0 }}
                   />
+                  <div style={{ width: "196px", flexShrink: 0, marginTop: "0" }}>
+                    <ExtraTools />
+                  </div>
                 </div>
               </div>
             </div>
@@ -254,6 +261,9 @@ export default function About() {
                     decoding="async"
                     style={{ width: "196px", height: "34px", flexShrink: 0 }}
                   />
+                  <div style={{ width: "196px", flexShrink: 0, marginTop: "0" }}>
+                    <ExtraTools />
+                  </div>
                 </div>
               </div>
             </div>

@@ -42,6 +42,58 @@
         "800": 32,
         "375": 24
       }
+    },
+    {
+      "into": "Frame 427321387",
+      "component": "ExtraTools",
+      "from": "@/components/ExtraTools",
+      "pages": [
+        "about-ru",
+        "about-en"
+      ],
+      "lang": false
+    },
+    {
+      "into": [
+        "content",
+        "Frame 1000005973"
+      ],
+      "hasText": "Pot App",
+      "component": "Button",
+      "from": "@/components/Button",
+      "pages": [
+        "pot-ru"
+      ],
+      "lang": false,
+      "props": "href=\"https://pot-prototype.vercel.app\" label=\"Открыть прототип\" newTab",
+      "propsAt": {
+        "375": "width=\"fill\""
+      },
+      "gap": {
+        "800": 24,
+        "375": 24
+      }
+    },
+    {
+      "into": [
+        "content",
+        "Frame 1000005973"
+      ],
+      "hasText": "Pot App",
+      "component": "Button",
+      "from": "@/components/Button",
+      "pages": [
+        "pot-en"
+      ],
+      "lang": false,
+      "props": "href=\"https://pot-prototype.vercel.app\" label=\"Open prototype\" newTab",
+      "propsAt": {
+        "375": "width=\"fill\""
+      },
+      "gap": {
+        "800": 24,
+        "375": 24
+      }
     }
   ],
   "_hover": "Правки состояния «наведение» у блоков по имени компонента. `text` — что добавить подписи при наведении (в макете подпись только меняет цвет). `repair` — что делать, если состояние «наведение» в макете устроено иначе, чем обычное, и плавно переехать в него нельзя: у карточки Ostral в «Смотрите также» в наведении осталась картинка от Eazychange. Тогда совпавшие части двигаются как в макете, а картинка увеличивается из центра на `imageScale`.",

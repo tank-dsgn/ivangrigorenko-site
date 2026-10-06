@@ -20,6 +20,8 @@ fi
 (lsof -ti:3000 | xargs kill -9 2>/dev/null; true)
 rm -rf .next
 npm run build 2>&1 | grep -E "rror|✓ Compiled|Failed" | head -10
+# сборка упала — сервер не поднимется, ждать его бесполезно
+[ -f .next/BUILD_ID ] || { npm run build 2>&1 | grep -E "error TS|rror:" | head -10; echo "СБОРКА НЕ ПРОШЛА"; exit 1; }
 (node node_modules/next/dist/bin/next start --port 3000 >/tmp/next.log 2>&1 &)
 until curl -s -o /dev/null http://localhost:3000/pot-ru; do :; done
 echo up

@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef, type MouseEvent } from "react";
 import { mailtoHref, type Lang } from "@/lib/site";
 
 // русская подпись сокращена 06.10 по просьбе Ивана: глагол остался, «со мной» убрано
@@ -12,11 +15,12 @@ const label = { ru: "Связаться", en: "Contact me" } as const;
  * Свойства `mail`, `compact`, `full` остались от варианта для «Обо мне» (кнопка
  * размером с «Скачать моё резюме», открывает письмо) — сейчас он не используется.
  *
- * Вид — контурная кнопка из макета. При наведении обводка и текст становятся индиго,
- * а вокруг кнопки один раз рисуется кольцо: полупрозрачный индиго, 4px снаружи обводки,
- * за 700 мс обходит кнопку и остаётся. Когда курсор уходит, кольцо так же убирается.
- * Ничего не крутится по кругу. Вариант «E — Draw once», выбран Иваном 2026-10-06
- * после бегунка по обводке, бегунка по кольцу и переливающегося ореола.
+ * Вид — контурная кнопка из макета. При наведении она заливается индиго из той точки,
+ * где курсор зашёл на кнопку, текст становится белым; когда курсор уходит, заливка
+ * стягивается туда, где он вышел. С клавиатуры заливка идёт из центра.
+ * Вариант «A — Fill from cursor», выбран Иваном 2026-10-06 (до него были бегунок по обводке,
+ * бегунок по кольцу, переливающийся ореол и кольцо, которое рисуется один раз).
+ * Положение курсора нужно знать в браузере, поэтому компонент клиентский.
  */
 export default function ContactButton({
   lang,
@@ -32,31 +36,33 @@ export default function ContactButton({
   /** на всю ширину блока — в столбике на телефоне */
   full?: boolean;
 }) {
+  // точка, где курсор вошёл в кнопку или вышел из неё, — в переменные --x и --y
+  const ref = useRef<HTMLAnchorElement>(null);
+  const track = (e: MouseEvent) => {
+    const el = ref.current;
+    if (!el) return;
+    const box = el.getBoundingClientRect();
+    el.style.setProperty("--x", `${e.clientX - box.left}px`);
+    el.style.setProperty("--y", `${e.clientY - box.top}px`);
+  };
+
   const size = compact
     ? "h-10 px-4 text-[16px] leading-6"
     : "h-10 px-8 text-[16px] leading-6 md:h-12 md:px-10 md:text-[18px] md:leading-7";
   return (
     <a
+      ref={ref}
       href={mail ? mailtoHref(lang) : "#contacts"}
-      className={`group text-muted ease-figma hover:text-accent focus-visible:text-accent relative items-center justify-center rounded-full font-semibold whitespace-nowrap transition-colors duration-300 ${size} ${full ? "flex w-full" : "inline-flex"}`}
+      onMouseEnter={track}
+      onMouseLeave={track}
+      className={`group text-muted ease-figma relative items-center justify-center overflow-hidden rounded-full bg-white font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8] transition-colors duration-300 hover:text-white focus-visible:text-white ${size} ${full ? "flex w-full" : "inline-flex"}`}
     >
-      {/* лицо кнопки: белая заливка и обводка — серая 1px, под курсором индиго 2px */}
+      {/* заливка: круг с центром в точке курсора, вырастает от нуля и накрывает всю кнопку */}
       <span
         aria-hidden="true"
-        className="ease-figma absolute inset-0 rounded-full bg-white shadow-[inset_0_0_0_1px_#94a3b8] transition-shadow duration-300 group-hover:shadow-[inset_0_0_0_2px_#4f46e5] group-focus-visible:shadow-[inset_0_0_0_2px_#4f46e5]"
+        className="bg-accent ease-figma pointer-events-none absolute aspect-square w-[250%] -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full transition-transform duration-500 group-hover:scale-100 group-focus-visible:scale-100"
+        style={{ left: "var(--x, 50%)", top: "var(--y, 50%)" }}
       />
-      {/* кольцо: рамка стоит по середине полосы в 4px снаружи кнопки и рисуется штрихом от нуля до полной длины */}
-      <svg aria-hidden="true" className="pointer-events-none absolute -inset-0.5 h-[calc(100%+4px)] w-[calc(100%+4px)] overflow-visible" fill="none" strokeWidth="4" strokeLinecap="round">
-        <rect
-          width="100%"
-          height="100%"
-          rx="22"
-          stroke="#4f46e5"
-          strokeOpacity="0.22"
-          pathLength={1}
-          className={`[stroke-dasharray:1_1] [stroke-dashoffset:1] transition-[stroke-dashoffset] duration-700 ease-[cubic-bezier(0.3,0,0.2,1)] group-hover:[stroke-dashoffset:0] group-focus-visible:[stroke-dashoffset:0] ${compact ? "" : "md:[rx:26px]"}`}
-        />
-      </svg>
       <span className="relative">{label[lang]}</span>
     </a>
   );

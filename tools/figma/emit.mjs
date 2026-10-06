@@ -463,7 +463,9 @@ export function createEmitter({
    */
   function addition(node, flowKids, pad) {
     return additions
-      .filter((a) => a.into && a.into === node.name)
+      // hasText — уточнение, когда имя блока не уникально: среди его детей должен быть такой текст
+      .filter((a) => a.into && [].concat(a.into).includes(node.name)) // имя блока; несколько — если на брейкпоинтах он назван по-разному
+      .filter((a) => !a.hasText || (node.children || []).some((c) => c.type === "TEXT" && c.visible !== false && c.characters === a.hasText))
       .map((a) => {
         const above = flowKids[flowKids.length - 1];
         const like = above ? sizing(above, node) : {};
@@ -477,7 +479,9 @@ export function createEmitter({
         });
         return (
           `${pad}${indentUnit}<div style=${box}>\n` +
-          `${pad}${indentUnit}${indentUnit}<${a.component} lang="${lang}"${a.full ? " full" : ""} />\n` +
+          // lang: false — компоненту язык не нужен; props — готовая строка свойств,
+          // propsAt — добавка к ним на конкретной ширине макета
+          `${pad}${indentUnit}${indentUnit}<${a.component}${a.lang === false ? "" : ` lang="${lang}"`}${a.props ? ` ${a.props}` : ""}${a.propsAt?.[breakpoint] ? ` ${a.propsAt[breakpoint]}` : ""}${a.full ? " full" : ""} />\n` +
           `${pad}${indentUnit}</div>\n`
         );
       })
