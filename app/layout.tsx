@@ -27,12 +27,12 @@ const openSansItalic = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(DEPLOY_URL),
-  title: "ivan.grigorenko.dsgn",
+  title: "ivangrigorenko",
   description:
     "Иван Григоренко — UX/UI дизайнер. Создаю понятные, эстетичные и продуманные цифровые продукты.",
   icons: { icon: "/favicon.png" },
   openGraph: {
-    title: "ivan.grigorenko.dsgn",
+    title: "ivangrigorenko",
     description:
       "Иван Григоренко — UX/UI дизайнер. Создаю понятные, эстетичные и продуманные цифровые продукты.",
     images: [{ url: `${DEPLOY_URL}/og.png`, width: 1200, height: 630 }],

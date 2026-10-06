@@ -37,7 +37,7 @@ export default function MenuPage({
     <div className="min-h-screen bg-[#fafaf9]">
       <header className="flex h-14 items-center justify-between px-5 md:px-10">
         <Link href={homeHref(lang)} aria-label={s.toHome}>
-          <Image src={LOGO_SMALL} alt="ivan.grigorenko.dsgn" width={32} height={22} priority />
+          <Image src={LOGO_SMALL} alt="ivangrigorenko" width={32} height={22} priority />
         </Link>
 
         <Link
