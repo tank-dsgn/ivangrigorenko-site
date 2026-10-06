@@ -141,6 +141,11 @@ async function emitSections({ slug, frames, resolveTree, emit, setBreakpoint, ta
     const imports =
       (hasLink ? `import Link from "next/link";\n` : "") +
       (hasVariants ? `import VariantGroup from "@/components/VariantGroup";\n` : "") +
+      // свои компоненты, которыми генератор заменил блоки макета
+      ["ProjectCard"]
+        .filter((c) => body.includes(`<${c} `))
+        .map((c) => `import ${c} from "@/components/${c}";\n`)
+        .join("") +
       additions
         .filter((a) => body.includes(`<${a.component} `))
         .map((a) => `import ${a.component} from ${JSON.stringify(a.from)};\n`)
@@ -183,6 +188,20 @@ async function recordFonts(used, table) {
   const sorted = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => a.localeCompare(b)));
   await writeFile(FONT_MANIFEST, JSON.stringify(sorted, null, 2) + "\n", "utf8");
   console.log(`  шрифты: ${[...used].sort().join(", ")}`);
+}
+
+/**
+ * Данные для Storybook: с какими свойствами генератор вывел свои компоненты
+ * (карточки проектов). Истории берут их отсюда — показывают то же, что сайт.
+ */
+async function recordComponents(slug, calls) {
+  if (!calls.length) return;
+  const byComponent = {};
+  for (const c of calls) (byComponent[c.component] ||= []).push(c.props);
+  const target = `stories/data/${slug}.json`;
+  await mkdir(dirname(resolve(target)), { recursive: true });
+  await writeFile(target, JSON.stringify(byComponent, null, 2) + "\n", "utf8");
+  console.log(`  свои компоненты: ${Object.entries(byComponent).map(([k, v]) => `${k} ×${v.length}`).join(", ")} → ${target}`);
 }
 
 async function main() {
@@ -233,7 +252,7 @@ async function main() {
   const lang = slug.endsWith("-en") || slug === "index" ? "en" : "ru";
   // свои компоненты поверх макета — только для этой страницы
   const additions = (overrides.additions || []).filter((a) => a.pages.includes(slug));
-  const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss } = createEmitter({
+  const { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss, componentCalls } = createEmitter({
     additions,
     hoverRules: overrides.hover || {},
     assets,
@@ -275,6 +294,7 @@ async function main() {
     await emitSections({ slug, frames, resolveTree, emit, setBreakpoint, takeHoverCss, additions, shell, outDir: arg("--out") });
     console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
     await recordFonts(usedFonts, fonts);
+    await recordComponents(slug, componentCalls);
     return;
   }
 

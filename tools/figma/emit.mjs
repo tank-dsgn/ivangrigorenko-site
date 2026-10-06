@@ -601,11 +601,101 @@ export function createEmitter({
     return aspect ? { ...abs, ...size, aspectRatio: aspect } : { ...abs, ...size };
   }
 
+  // Свои компоненты вместо вёрстки из макета: что нашли и с какими данными вывели.
+  // По этому списку генератор пишет данные для Storybook.
+  const componentCalls = [];
+  const SIZES = { 375: "mobile", 800: "tablet", 1280: "desktop" };
+  const visibleKids = (n) => (n.children || []).filter((c) => c.visible !== false);
+  const texts = (n, out = []) => {
+    if (n.visible === false) return out;
+    // перенос строки внутри абзаца в Figma — U+2028; компонент держит его как обычный перевод строки
+    if (n.type === "TEXT") out.push((n.characters || "").replace(/\u2028/g, "\n"));
+    for (const c of n.children || []) texts(c, out);
+    return out;
+  };
+  const propsLiteral = (props) =>
+    Object.entries(props)
+      .filter(([, v]) => v !== undefined)
+      .map(([k, v]) => (typeof v === "string" && !/["\n\\{}]/.test(v) ? `${k}="${v}"` : `${k}={${JSON.stringify(v)}}`))
+      .join(" ");
+
+  /**
+   * Карточка проекта на главной — настоящий компонент components/ProjectCard.tsx.
+   *
+   * В макете это блок из двух частей: «Image conteiner» и «Text conteiner». Общее
+   * оформление (размеры, скругление, тень, типографика, подъём при наведении) живёт
+   * в компоненте. Отсюда в него уходит только то, что у каждого проекта своё: ссылка,
+   * тексты, картинка и её положение в окне, включая увеличение при наведении.
+   * Возвращает null, если блок устроен не как карточка, — тогда он выводится как есть.
+   */
+  function projectCard(node, pad) {
+    const size = SIZES[breakpoint];
+    if (!size) return null;
+    const parts = (n) => {
+      const kids = visibleKids(n);
+      const image = kids.find((c) => c.name === "Image conteiner");
+      const text = kids.find((c) => c.name === "Text conteiner");
+      return kids.length === 2 && image && text ? { card: n, image, text } : null;
+    };
+    const unwrap = (n) => parts(n) || (visibleKids(n).length === 1 ? parts(visibleKids(n)[0]) : null);
+    const found = unwrap(node);
+    if (!found) return null;
+    const link = linkOf(node, linkByName, guidToUrl);
+    const [tags, title, description, ...rest] = texts(found.text);
+    const leaves = visibleKids(found.image);
+    if (!link?.internal || !description || rest.length || leaves.length !== 1 || visibleKids(leaves[0]).length) return null;
+
+    // окно под картинку: у части карточек своя пропорция, скругление или подложка
+    const window_ = { ...place(found.image, found.card), ...frameStyle(found.image, assets, assetMap) };
+    const frame = {};
+    for (const k of ["aspectRatio", "borderRadius", "background", "backgroundImage"]) if (window_[k] !== undefined) frame[k] = window_[k];
+
+    // сама картинка: положение в окне — из макета
+    const leaf = leaves[0];
+    const { backgroundImage, backgroundSize, backgroundPosition, backgroundRepeat, ...position } = {
+      ...place(leaf, found.image),
+      ...frameStyle(leaf, assets, assetMap),
+    };
+    const src = /^url\((.+)\)$/.exec(backgroundImage || "")?.[1];
+    if (!src || backgroundSize !== "cover") return null;
+
+    // наведение: куда и насколько вырастает картинка
+    let hover;
+    const group = variantGroup(node);
+    if (group) {
+      const over = group.variants.find((v) => v.id !== group.initial);
+      const mark = new Map();
+      if (over && markHover(node, over.tree, mark, hoverRules[node.name] || null)) {
+        const to = mark.get(leaf);
+        if (to) hover = { translate: to.translate, scale: to.scale?.replace(" ", ", ") };
+      }
+    }
+
+    usedAssets.add(src);
+    usedLinks.add(link.href);
+    const props = {
+      size,
+      href: link.href,
+      tags,
+      title,
+      description,
+      image: { src, style: position, ...(Object.keys(frame).length ? { frame } : {}), ...(hover ? { hover } : {}) },
+    };
+    componentCalls.push({ component: "ProjectCard", props });
+    return `${pad}<ProjectCard ${propsLiteral(props)} />\n`;
+  }
+
   function emit(node, parent, depth, insideLink = false, swapTargets = null) {
     const pad = indentUnit.repeat(depth);
 
     // Невидимые узлы в вёрстку не попадают
     if (node.visible === false) return "";
+
+    // Карточка проекта — свой компонент, а не вёрстка из макета
+    if (!insideLink && !hoverGroup && !stateCtx) {
+      const card = projectCard(node, pad);
+      if (card) return card;
+    }
 
     // Лист, у которого в другом состоянии блока другая картинка или текст:
     // следом за ним выводим его «двойников», CSS покажет нужного.
@@ -892,5 +982,5 @@ export function createEmitter({
     return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>\n${kids}${pad}</${tag}>\n`;
   }
 
-  return { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss, usesVariants: () => usedVariants };
+  return { emit, usedAssets, usedLinks, usedFonts, setBreakpoint, takeHoverCss, usesVariants: () => usedVariants, componentCalls };
 }

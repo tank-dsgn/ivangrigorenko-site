@@ -19,7 +19,7 @@
   --color-accent-soft: #6366f1;/* indigo-500 — бургер */
 
   --shadow-card: 0 8px 20px 0 rgb(0 0 0 / 0.1);
-  --shadow-card-hover: 0 16px 32px 0 rgb(0 0 0 / 0.14);
+  --shadow-card-hover: 0 8px 24px 0 rgb(64 62 92 / 0.3); /* карточка под курсором — значение из макета */
 
   --ease-figma: cubic-bezier(0, 0, 0.58, 1);
 }
