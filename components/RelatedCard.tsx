@@ -12,7 +12,7 @@ export type RelatedCardSize = "mobile" | "tablet" | "desktop";
  * Страницы вызывают компонент из сгенерированной вёрстки (tools/figma/emit.mjs, relatedCard).
  *
  * Наведение есть только у десктопной: окно и подпись поднимаются на 6px, у окна
- * плотнее тень, картинка слегка растёт, подпись становится индиго и жирной. Всё за 300 мс.
+ * плотнее тень, картинка слегка растёт, подпись становится индиго и полужирной (600). Всё за 300 мс.
  */
 export default function RelatedCard({
   size,
@@ -43,7 +43,7 @@ export default function RelatedCard({
           <CardImage image={image} />
         </div>
         <p
-          className={`${text} ease-figma group-hover:text-accent text-[14px] leading-5 transition-[translate,color,font-weight] duration-300 group-hover:-translate-y-1.5 group-hover:font-bold`}
+          className={`${text} ease-figma group-hover:text-accent text-[14px] leading-5 transition-[translate,color,font-weight] duration-300 group-hover:-translate-y-1.5 group-hover:font-semibold`}
         >
           {label}
         </p>

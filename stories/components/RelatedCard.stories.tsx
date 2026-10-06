@@ -16,7 +16,7 @@ const meta: Meta<Args> = {
     docs: {
       description: {
         component:
-          "Small project card in the “See also” block at the end of each case study. Hover works on the desktop size: the window and label lift by 6px, the shadow gets denser, the image zooms slightly, the label turns indigo and bold.",
+          "Small project card in the “See also” block at the end of each case study. Hover works on the desktop size: the window and label lift by 6px, the shadow gets denser, the image zooms slightly, the label turns indigo and semibold.",
       },
     },
   },

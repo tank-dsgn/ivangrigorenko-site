@@ -48,7 +48,7 @@
   "hover": {
     "Card-projects-small": {
       "text": {
-        "fontWeight": 700
+        "fontWeight": 600
       },
       "repair": {
         "imageScale": 1.1
