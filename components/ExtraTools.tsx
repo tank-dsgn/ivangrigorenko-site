@@ -1,5 +1,5 @@
 /**
- * Четвёртый ряд сетки «Мои инструменты» на странице «Обо мне»: Storybook, GitHub, Vercel.
+ * Четвёртый ряд сетки «Мои инструменты» на странице «Обо мне»: Storybook, GitHub, Vercel, Tailwind CSS.
  *
  * В макете этих иконок нет — Иван попросил добавить их 2026-10-06, остальные не трогать.
  * Ряд вставляет генератор (`additions` в tools/figma/overrides.json) после трёх рядов
@@ -9,6 +9,7 @@ const tools = [
   { name: "Storybook", src: "/icons/tools/storybook.svg" },
   { name: "GitHub", src: "/icons/tools/github.svg" },
   { name: "Vercel", src: "/icons/tools/vercel.svg" },
+  { name: "Tailwind CSS", src: "/icons/tools/tailwind.svg" },
 ];
 
 export default function ExtraTools() {
