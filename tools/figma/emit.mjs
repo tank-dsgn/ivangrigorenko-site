@@ -84,6 +84,7 @@ export function createEmitter({
   additions = [],
   hoverRules = {},
   textStyles = [],
+  frameStyles = [],
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -838,6 +839,9 @@ export function createEmitter({
     }
 
     const style = { ...place(node, parent), ...frameStyle(node, assets, assetMap) };
+    // своя правка оформления блока поверх макета (overrides.json → frameStyles): по имени слоя и ширине макета
+    const ownFrame = frameStyles.find((r) => r.name === node.name)?.at?.[breakpoint];
+    if (ownFrame) Object.assign(style, ownFrame);
     if (node.pull) style[node.pull.axis === "VERTICAL" ? "marginTop" : "marginLeft"] = px(node.pull.value);
 
     // Поворот: вокруг центра. У стрелки «назад» это та же стрелка «вперёд», повёрнутая на 180°.

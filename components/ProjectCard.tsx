@@ -87,8 +87,10 @@ export default function ProjectCard({
   }
 
   return (
-    // ссылка на 6px выше карточки: это место, куда карточка поднимается при наведении
-    <Link href={href} className="group flex h-[406px] w-[920px] shrink-0 flex-col items-start justify-end">
+    // Ссылка ровно по карточке. В макете она была на 6px выше — запас под подъём при наведении;
+    // запас убран 2026-10-09, чтобы отступы между карточками были ровно те, что заданы:
+    // карточка поднимается сдвигом и места в раскладке под это не требует.
+    <Link href={href} className="group flex h-[400px] w-[920px] shrink-0 flex-col items-start">
       <div className="shadow-card ease-figma group-hover:shadow-card-hover flex h-[400px] shrink-0 flex-row items-center justify-between self-stretch overflow-hidden rounded-3xl bg-white transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5">
         <div className="relative h-[400px] w-[548px] shrink-0 overflow-hidden" style={image.frame}>
           {picture}

@@ -159,5 +159,28 @@
         "color": "#ffffff"
       }
     }
+  ],
+  "frameStyles": [
+    {
+      "pages": [
+        "home-ru",
+        "index"
+      ],
+      "name": "2 block",
+      "at": {
+        "1280": {
+          "padding": "100px 171px 100px 171px",
+          "gap": "80px"
+        },
+        "800": {
+          "padding": "72px 40px 72px 40px",
+          "gap": "56px"
+        },
+        "375": {
+          "padding": "48px 20px 48px 20px",
+          "gap": "32px"
+        }
+      }
+    }
   ]
 }
