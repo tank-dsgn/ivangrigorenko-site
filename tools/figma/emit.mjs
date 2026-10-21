@@ -86,6 +86,7 @@ export function createEmitter({
   textStyles = [],
   frameStyles = [],
   imageSwaps = [],
+  videos = {},
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -1156,6 +1157,20 @@ export function createEmitter({
     // потому что фоном нужный кусок не выразить
     const fill = imageFill(node, assets, assetMap);
     let cropped = "";
+    // Видео-заливка (прототип в экране телефона на POT). Файлы видео в выгрузке нет —
+    // он скачан с оригинала и пережат; соответствие хеша и файла — overrides.json → videos.
+    // Кадр задан как у картинки: imageTransform — какая часть видео видна в слое.
+    const videoFill = (node.fills || []).find((f) => f.visible !== false && f.type === "VIDEO");
+    const videoFile = videoFill && videos[videoFill.videoRef];
+    let videoTag = "";
+    if (videoFile) {
+      style.position = style.position || "relative";
+      style.overflow = "hidden";
+      const [[a, , tx], [, d, ty]] = videoFill.imageTransform || [[1, 0, 0], [0, 1, 0]];
+      const pc = (v) => `${Math.round(v * 1e4) / 100}%`;
+      videoTag =
+        `${indentUnit.repeat(depth + 1)}<video src=${JSON.stringify(videoFile.src)}${videoFile.poster ? ` poster=${JSON.stringify(videoFile.poster)}` : ""} autoPlay loop muted playsInline preload="metadata" aria-hidden="true" style={{ position: "absolute", left: "${pc(-tx / a)}", top: "${pc(-ty / d)}", width: "${pc(1 / a)}", height: "${pc(1 / d)}", maxWidth: "none", objectFit: "fill" }} />\n`;
+    }
     // своя картинка вместо картинки из макета (overrides.json → imageSwaps): окно получает
     // пропорции новой картинки, картинка заполняет его целиком
     const swap = fill && imageSwaps.find((r) => fill.src.includes(r.from));
@@ -1192,6 +1207,7 @@ export function createEmitter({
     const overlap = node.layoutMode && node.itemSpacing < 0 && node.primaryAxisAlignItems !== "SPACE_BETWEEN" ? node.itemSpacing : 0;
     let flowIndex = 0;
     const kids =
+      videoTag +
       cropped +
       visibleKids
         .map((c) => {

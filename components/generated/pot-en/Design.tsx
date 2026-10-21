@@ -447,6 +447,7 @@ export default function Design() {
                 />
               </div>
               <div style={{ position: "absolute", left: "14px", top: "13.61px", width: "259.68px", height: "563.89px", borderRadius: "31.76px", overflow: "hidden" }}>
+                <video src="/video/pot-plant-card.mp4" poster="/video/pot-plant-card-poster.webp" autoPlay loop muted playsInline preload="metadata" aria-hidden="true" style={{ position: "absolute", left: "-0.13%", top: "-3.36%", width: "100.13%", height: "103.34%", maxWidth: "none", objectFit: "fill" }} />
                 <div style={{ position: "absolute", left: "87.78px", top: "10.4px", width: "84.12px", height: "21.36px", background: "#000000", borderRadius: "31.45px" }} />
               </div>
               <span style={{ position: "absolute", left: "14px", right: "14px", top: "13.12px", height: "31.33px" }}>
@@ -805,7 +806,9 @@ export default function Design() {
               </div>
               <div style={{ position: "absolute", right: "0", top: "-0.21px", bottom: "26.91px", width: "292.33px", background: "#000000", borderRadius: "45.98px", boxShadow: "0 3.39px 13.56px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "12.35px", top: "12.35px", width: "267.62px", height: "579.17px", borderRadius: "34.74px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.36px", right: "0.36px", top: "-0.2px", bottom: "-0.2px", overflow: "hidden" }} />
+                  <div style={{ position: "absolute", left: "0.36px", right: "0.36px", top: "-0.2px", bottom: "-0.2px", overflow: "hidden" }}>
+                    <video src="/video/pot-plant-card.mp4" poster="/video/pot-plant-card-poster.webp" autoPlay loop muted playsInline preload="metadata" aria-hidden="true" style={{ position: "absolute", left: "-0.13%", top: "-3.36%", width: "100.13%", height: "103.34%", maxWidth: "none", objectFit: "fill" }} />
+                  </div>
                   <div style={{ position: "absolute", left: "calc(50% + -43.23px)", top: "calc(50% + -285.47px)", width: "86.46px", height: "21.96px", background: "#000000", borderRadius: "32.32px" }} />
                 </div>
                 <img
@@ -1345,7 +1348,9 @@ export default function Design() {
               </div>
               <div style={{ position: "absolute", right: "0", top: "-0.25px", bottom: "31.75px", width: "345px", background: "#000000", borderRadius: "54.26px", boxShadow: "0 4px 16px 0 rgba(13, 18, 46, 0.2)" }}>
                 <div style={{ position: "absolute", left: "14.58px", top: "14.58px", width: "315.85px", height: "683.52px", borderRadius: "41px", overflow: "hidden" }}>
-                  <div style={{ position: "absolute", left: "0.42px", right: "0.42px", top: "-0.24px", bottom: "-0.24px", overflow: "hidden" }} />
+                  <div style={{ position: "absolute", left: "0.42px", right: "0.42px", top: "-0.24px", bottom: "-0.24px", overflow: "hidden" }}>
+                    <video src="/video/pot-plant-card.mp4" poster="/video/pot-plant-card-poster.webp" autoPlay loop muted playsInline preload="metadata" aria-hidden="true" style={{ position: "absolute", left: "-0.13%", top: "-3.36%", width: "100.13%", height: "103.34%", maxWidth: "none", objectFit: "fill" }} />
+                  </div>
                   <div style={{ position: "absolute", left: "calc(50% + -51.02px)", top: "calc(50% + -336.9px)", width: "102.04px", height: "25.92px", background: "#000000", borderRadius: "38.15px" }} />
                 </div>
                 <img

@@ -202,5 +202,12 @@
       "aspect": "3572 / 2850",
       "alt": "Pot app flow diagram"
     }
-  ]
+  ],
+  "videos": {
+    "f465874a6d68f54ffe25463ae1dd3d5b7a805a05": {
+      "src": "/video/pot-plant-card.mp4",
+      "poster": "/video/pot-plant-card-poster.webp",
+      "note": "POT, «Informative Plant Card»: запись прототипа. Оригинал https://ivangrigorenko.com/_videos/v1/<хеш> (880×1972, 60 к/с, 82 МБ) пережат в 600×1344, 30 к/с"
+    }
+  }
 }
