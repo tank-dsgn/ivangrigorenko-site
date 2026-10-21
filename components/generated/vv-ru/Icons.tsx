@@ -51,7 +51,7 @@ export default function Icons() {
           </div>
           <div style={{ width: "882px", height: "566.37px", flexShrink: 0, borderRadius: "8766.52px 8766.52px 8766.52px 8766.52px", overflow: "hidden", position: "relative" }}>
             <div style={{ position: "absolute", left: "calc(50% + 0.07px)", top: "-13.15px", bottom: "-35.07px", transform: "translateX(-50%)", aspectRatio: "1788 / 1212", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/4af12855fff0583a56be390f055299fbfefbccd5.webp)" }} />
-            <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0" }} />
+            <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", backgroundImage: "radial-gradient(61.59% 61.59% at 50% 50%, rgba(255, 255, 255, 0) 0%, #ffffff 100%)" }} />
           </div>
         </div>
       </div>

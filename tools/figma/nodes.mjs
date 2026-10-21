@@ -73,6 +73,41 @@ export function linearGradient(fill) {
 }
 
 /**
+ * Радиальный градиент Figma → CSS. Матрица `transform` переводит слой (0..1 по каждой
+ * оси) в пространство градиента, где центр — (0.5, 0.5), а радиус — 0.5. Обратная
+ * матрица даёт центр и полуоси эллипса в долях слоя; CSS умеет только эллипс по осям,
+ * поэтому поворот (если он не кратен 90°) теряется. Появился 2026-10-21: на VV
+ * «Icon Library» края картинки с иконками растворяются в белом именно им.
+ */
+export function radialGradient(fill) {
+  const stops = fill.gradientStops || [];
+  if (!stops.length) return null;
+  let cx = 50, cy = 50, rx = 50, ry = 50;
+  const t = fill.transform;
+  if (t) {
+    const [[a, b, tx], [c, d, ty]] = t;
+    const det = a * d - b * c;
+    if (det) {
+      const ia = d / det, ib = -b / det, ic = -c / det, id = a / det;
+      const itx = -(ia * tx + ib * ty), ity = -(ic * tx + id * ty);
+      const at = (x, y) => [ia * x + ib * y + itx, ic * x + id * y + ity];
+      const [x0, y0] = at(0.5, 0.5);
+      const [x1, y1] = at(1, 0.5);
+      const [x2, y2] = at(0.5, 1);
+      cx = x0 * 100; cy = y0 * 100;
+      rx = Math.max(Math.abs(x1 - x0), Math.abs(x2 - x0)) * 100;
+      ry = Math.max(Math.abs(y1 - y0), Math.abs(y2 - y0)) * 100;
+    }
+  }
+  const n = (v) => Number(v.toFixed(2));
+  const op = fill.opacity ?? 1;
+  const list = stops
+    .map((st) => `${cssColor({ color: st.color, opacity: op })} ${n(st.position * 100)}%`)
+    .join(", ");
+  return `radial-gradient(${n(rx)}% ${n(ry)}% at ${n(cx)}% ${n(cy)}%, ${list})`;
+}
+
+/**
  * Заливка картинкой.
  *
  * FILL — обычное вписывание с обрезкой по краям, его достаточно отдать фоном.
@@ -228,8 +263,8 @@ export function frameStyle(node, assets, assetMap = {}) {
   const layers = [];
   if (img && !img.crop) { s.backgroundSize = img.fit; s.backgroundPosition = "center"; s.backgroundRepeat = "no-repeat"; }
   for (const f of visible) {
-    if (f.type === "GRADIENT_LINEAR") {
-      const g = linearGradient(f);
+    if (f.type === "GRADIENT_LINEAR" || f.type === "GRADIENT_RADIAL") {
+      const g = f.type === "GRADIENT_LINEAR" ? linearGradient(f) : radialGradient(f);
       if (g) layers.unshift(g);
     } else if (overImage.includes(f)) {
       const c = cssColor(f);
