@@ -95,3 +95,18 @@ body {
 [data-instant] * {
   transition: none !important;
 }
+
+/* Стрелки каруселей и переключатели темы: при быстрых кликах браузер выделял их
+   картинку синей плашкой, как текст. Выделение и перетаскивание у них выключены. */
+[data-swap-map],
+[data-swap-to],
+[data-toggle] {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+[data-swap-map] img,
+[data-swap-to] img,
+[data-toggle] img {
+  -webkit-user-drag: none;
+}
