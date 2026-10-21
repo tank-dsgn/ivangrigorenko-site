@@ -294,6 +294,9 @@ async function main() {
   // --sections: каждая секция макета уезжает в свой файл со своим именем.
   // Так страница читается как список секций, а не как одна простыня.
   if (rest.includes("--sections")) {
+    // стили наведения и каруселей от сборки страницы целиком выше не нужны: иначе они
+    // оседали в первой секции, хотя её элементы их не используют
+    takeHoverCss();
     await emitSections({ slug, frames, resolveTree, emit, setBreakpoint, takeHoverCss, additions, shell, outDir: arg("--out") });
     console.log(`  ассетов: ${usedAssets.size}, ссылок: ${usedLinks.size}`);
     await recordFonts(usedFonts, fonts);

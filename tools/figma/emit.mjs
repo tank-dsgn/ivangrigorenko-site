@@ -310,14 +310,49 @@ export function createEmitter({
    * Обходит все состояния блока параллельно и записывает, чем каждый узел
    * отличается от исходного состояния. false — состояния устроены по-разному.
    */
+  /** Устройство поддерева без мелочей: по нему видно, одинаково ли собраны два слоя */
+  const shapeOf = (n) =>
+    n.visible === false ? "-" : `${n.type}:${n.name}:${n.hash || ""}:${n.characters || ""}(${(n.children || []).map(shapeOf).join(",")})`;
+
+  /**
+   * Слой, собранный в разных состояниях по-разному (экран телефона в светлой и тёмной
+   * теме — разные макеты), но стоящий на одном месте. Плавно перевести одно устройство
+   * в другое нельзя, поэтому выводим все варианты слоя целиком и показываем нужный
+   * по состоянию — как листья с разной картинкой. Двигаются при этом их предки.
+   */
+  function markAltTrees(nodes, ids, ctx) {
+    const a = nodes[0];
+    const t = (n) => n.relativeTransform || [[1, 0, 0], [0, 1, 0]];
+    const same = (n) =>
+      Math.abs((n.size?.x ?? 0) - (a.size?.x ?? 0)) < 1 && Math.abs((n.size?.y ?? 0) - (a.size?.y ?? 0)) < 1 &&
+      Math.abs(t(n)[0][2] - t(a)[0][2]) < 1 && Math.abs(t(n)[1][2] - t(a)[1][2]) < 1;
+    if (!nodes.every(same)) return false;
+    const bySig = new Map();
+    nodes.forEach((n, i) => {
+      const k = shapeOf(n);
+      if (!bySig.has(k)) bySig.set(k, { node: n, ids: [] });
+      bySig.get(k).ids.push(ids[i]);
+    });
+    const own = bySig.get(shapeOf(a));
+    const m = { css: {}, swap: {}, hide: [], only: own.ids, alts: [] };
+    for (const v of bySig.values()) {
+      if (v === own) continue;
+      m.alts.push(v.node);
+      ctx.marks.set(v.node, { css: {}, swap: {}, hide: [], only: v.ids });
+    }
+    ctx.marks.set(a, m);
+    return true;
+  }
+
   function markStates(nodes, ids, ctx, isRoot = true) {
     const a = nodes[0];
-    if (nodes.some((n) => n.type !== a.type || n.name !== a.name)) return false;
     const vis = nodes.map((n) => n.visible !== false);
+    const ka = a.children || [];
+    const differs = nodes.some((n) => n.type !== a.type || n.name !== a.name || (n.children || []).length !== ka.length);
+    // разное устройство у видимого во всех состояниях слоя — показываем варианты целиком
+    if (differs) return !isRoot && vis.every(Boolean) && ctx.altTrees !== false && markAltTrees(nodes, ids, ctx);
     if (!vis.some(Boolean)) return true;
     if (!vis[0]) return false; // слой, которого нет в исходном состоянии, плавно не показать
-    const ka = a.children || [];
-    if (nodes.some((n) => (n.children || []).length !== ka.length)) return false;
 
     const m = { css: {}, hide: ids.filter((_, i) => !vis[i]), swap: {} };
 
@@ -369,17 +404,103 @@ export function createEmitter({
    * на корне. Лента слайдов плавно едет, а не подменяется. Атрибут переключает
    * `components/StateGroups.tsx`.
    */
+  /** Свойства варианта из его имени: «mode=light, step=1» → { mode: "light", step: "1" } */
+  const variantProps = (id) =>
+    Object.fromEntries(
+      (nodeById[id]?.name || "").split(",").map((p) => p.split("=").map((x) => x.trim())).filter((p) => p.length === 2)
+    );
+
+  /** Свойства варианта, меняющие содержимое (тема): их значение есть в именах слоёв варианта */
+  function contentProps(trees, props) {
+    const names = trees.map((t) => {
+      const out = [];
+      (function walk(n, d) { out.push(n.name || ""); if (d < 3) (n.children || []).forEach((c) => walk(c, d + 1)); })(t, 0);
+      return out.join(" ").toLowerCase();
+    });
+    return Object.keys(props[0] || {}).filter((key) =>
+      props.every((p, k) => /[a-zа-я]/i.test(p[key] || "") && new RegExp(`\\b${p[key].toLowerCase()}\\b`).test(names[k]))
+    );
+  }
+
+  /**
+   * Привести состояния к одному устройству, чтобы между ними можно было плавно переехать.
+   *
+   * Figma Sites растрирует то, чего в состоянии не видно: в карусели «App Login» на POT
+   * невидимый слайд в одном состоянии — картинка, в другом — настоящий фрейм с телефонами.
+   * Ещё у тёмной темы слои названы иначе («Content Dark» вместо «Content Light») и лежат
+   * в другом порядке. Здесь: растрированный слой заменяется настоящим из соседнего
+   * состояния (того, что отличается меньше всего, — той же темы), имена и порядок слоёв
+   * выравниваются по исходному состоянию. Работает на копиях деревьев.
+   */
+  function harmonize(nodes, props, content = contentProps(nodes, props)) {
+    const base = nodes[0];
+    const kids = (n) => (n.children || []).filter((c) => c.visible !== false);
+    // один и тот же слой с другим именем (тема в имени)
+    if (nodes.some((n) => n.name !== base.name) && nodes.every((n) => n.type === base.type)) {
+      const same = (n) => kids(n).map((c) => c.name).sort().join("|") === kids(base).map((c) => c.name).sort().join("|");
+      if (nodes.every(same)) nodes.forEach((n) => (n.name = base.name));
+    }
+    // порядок детей — как в исходном состоянии
+    const order = kids(base).map((c) => c.name);
+    for (const n of nodes.slice(1)) {
+      const k = kids(n);
+      if (k.length !== order.length || k.map((c) => c.name).join("|") === order.join("|")) continue;
+      const pool = [...k];
+      const sorted = order.map((name) => {
+        const i = pool.findIndex((c) => c.name === name);
+        return i === -1 ? null : pool.splice(i, 1)[0];
+      });
+      if (sorted.every(Boolean)) n.children = [...sorted, ...(n.children || []).filter((c) => c.visible === false)];
+    }
+    // Растрированные слои. В строке (один и тот же слой во всех состояниях) где-то картинка,
+    // где-то фрейм. Берём один вид на всю строку: картинку, если она есть у каждой темы
+    // (это то, что Figma Sites и показывает), иначе фрейм. Донор — состояние той же темы:
+    // тема — свойство варианта, чьё значение встречается в именах слоёв («Content Light»).
+    const lists = nodes.map(kids);
+    if (lists.some((l) => l.length !== lists[0].length)) return;
+    lists[0].forEach((_, i) => {
+      const row = lists.map((l) => l[i]);
+      // растр в выгрузке — узел типа IMAGE; разные значки (SVG) — это разное содержимое, их не трогаем
+      if (row.every((c) => c.type === row[0].type) || row.some((c) => c.name !== row[0].name)) return;
+      if (!row.some((c) => c.type === "IMAGE") || row.some((c) => !(c.children || []).length && c.type !== "IMAGE")) return;
+      const flat = (c) => !(c.children || []).length;
+      const kin = (k, j) => content.every((key) => props[k][key] === props[j][key]);
+      const pick = (k, wantFlat) => row.findIndex((d, j) => kin(k, j) && flat(d) === wantFlat && d.type === (wantFlat ? row.find(flat)?.type : row.find((x) => !flat(x))?.type));
+      const wantFlat = row.every((_, k) => pick(k, true) !== -1);
+      if (!wantFlat && !row.every((_, k) => pick(k, false) !== -1)) return;
+      row.forEach((c, k) => {
+        if (flat(c) === wantFlat) return;
+        const donor = row[pick(k, wantFlat)];
+        const copy = structuredClone(donor);
+        copy.relativeTransform = c.relativeTransform;
+        const all = nodes[k].children;
+        all[all.indexOf(c)] = copy;
+        lists[k][i] = copy;
+      });
+    });
+    lists[0].forEach((_, i) => harmonize(lists.map((l) => l[i]), props, content));
+  }
+
   function stateMorph(node, parent, depth, insideLink, enclosing, group) {
     if (stateCtx || group.variants.length < 2 || group.variants.some((v) => v.info.hoverOnly)) return null;
     const base = group.variants.find((v) => v.id === group.initial);
     if (!base) return null;
     const ordered = [base, ...group.variants.filter((v) => v !== base)];
-    const ctx = { id: 0, root: base.tree, initial: base.id, n: 0, marks: new Map(), targets: group.targets, ms: null, ease: "linear", moving: [], rules: [] };
-    if (!markStates(ordered.map((v) => v.tree), ordered.map((v) => v.id), ctx) || !ctx.marks.size) return null;
+    const ids = ordered.map((v) => v.id);
+    const fresh = () => ({ id: 0, root: null, initial: base.id, n: 0, marks: new Map(), targets: group.targets, ms: null, ease: "linear", moving: [], rules: [] });
+    let trees = ordered.map((v) => v.tree);
+    let ctx = { ...fresh(), root: trees[0] };
+    if (!markStates(trees, ids, ctx) || !ctx.marks.size) {
+      // вторая попытка: состояния, приведённые к одному устройству
+      trees = trees.map((t) => structuredClone(t));
+      harmonize(trees, ids.map(variantProps));
+      ctx = { ...fresh(), root: trees[0] };
+      if (!markStates(trees, ids, ctx) || !ctx.marks.size) return null;
+    }
 
     ctx.id = ++hoverSeq;
     stateCtx = ctx;
-    const jsx = emit(base.tree, parent, depth, insideLink, new Set([...enclosing, ...group.targets]));
+    const jsx = emit(trees[0], parent, depth, insideLink, new Set([...enclosing, ...group.targets]));
     stateCtx = null;
 
     hoverCss.push(

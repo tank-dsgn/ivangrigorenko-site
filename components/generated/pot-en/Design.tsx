@@ -7,35 +7,123 @@ export default function Design() {
   return (
     <>
       <style>{`
-        @media (hover: hover) {
-          .hg-12:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-12, .hg-12 * { transition: none !important; } }
-        @media (hover: hover) {
-          .hg-13:hover { box-shadow: 0 0 0 1px #00ec67 !important; }
-        }
-        @media (prefers-reduced-motion: reduce) { .hg-13, .hg-13 * { transition: none !important; } }
-        .sn-14-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
-        .sg-14[data-state="378:70121"] .sn-14-1 { translate: 1603px 0px !important; }
-        .sg-14[data-state="378:70121"] .sn-14-2 { display: none !important; }
-        .sg-14[data-state="378:70122"] .sn-14-3 { display: none !important; }
-        .sg-14[data-state="378:70121"] .sn-14-4 { display: none !important; }
-        .sg-14[data-state="378:70122"] .sn-14-5 { display: none !important; }
-        .sg-14[data-state="378:70121"] .sn-14-7 { display: none !important; }
-        .sg-14[data-state="378:70122"] .sn-14-8 { display: none !important; }
-        .sg-14[data-state="378:70121"] .sn-14-10 { display: none !important; }
-        .sg-14[data-state="378:70122"] .sn-14-11 { display: none !important; }
-        .sg-14[data-state="378:70121"] .sn-14-12 { display: none !important; }
-        .sg-14[data-state="378:70122"] .sn-14-13 { display: none !important; }
-        .sg-14[data-state="378:70121"] .sn-14-14 { display: none !important; }
-        .sg-14[data-state="378:70122"] .sn-14-15 { display: none !important; }
-        @media (prefers-reduced-motion: reduce) { .sg-14, .sg-14 * { transition: none !important; } }
-        .sg-15[data-state="374:12638"] .sn-15-1 { background: #8eba9f !important; }
-        .sg-15[data-state="374:12638"] .sn-15-2 { display: none !important; }
-        .sg-15[data-state="374:12637"] .sn-15-3 { display: none !important; }
-        .sg-15[data-state="374:12638"] .sn-15-4 { display: none !important; }
-        .sg-15[data-state="374:12637"] .sn-15-5 { display: none !important; }
-        @media (prefers-reduced-motion: reduce) { .sg-15, .sg-15 * { transition: none !important; } }
+        .sn-11-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-2 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-5 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-10 { transition: background 300ms cubic-bezier(0, 0, 1, 1), border-radius 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-11 { transition: color 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-18 { transition: color 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-19 { transition: background 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-20 { transition: background 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-23 { transition: color 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-24 { transition: color 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-25 { transition: color 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-30 { transition: background 300ms cubic-bezier(0, 0, 1, 1); }
+        .sn-11-41 { transition: background 300ms cubic-bezier(0, 0, 1, 1); }
+        .sg-11[data-state="366:860910"] .sn-11-1 { translate: 6px 0px !important; }
+        .sg-11[data-state="368:883720"] .sn-11-1 { translate: 6px 0px !important; }
+        .sg-11[data-state="366:860910"] .sn-11-2 { translate: 1598px 0px !important; }
+        .sg-11[data-state="368:883720"] .sn-11-2 { translate: 1598px 0px !important; }
+        .sg-11[data-state="368:883595"] .sn-11-3 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-3 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-4 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-4 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-5 { translate: -2px 0px !important; }
+        .sg-11[data-state="368:883720"] .sn-11-5 { translate: -2px 0px !important; }
+        .sg-11[data-state="368:883595"] .sn-11-6 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-6 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-7 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-7 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-8 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-8 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-9 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-9 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-10 { background: #0c0a09 !important; border-radius: 35px !important; }
+        .sg-11[data-state="368:883720"] .sn-11-10 { background: #0c0a09 !important; border-radius: 35px !important; }
+        .sg-11[data-state="368:883595"] .sn-11-11 { color: #ffffff !important; }
+        .sg-11[data-state="368:883720"] .sn-11-11 { color: #ffffff !important; }
+        .sg-11[data-state="368:883595"] .sn-11-12 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-12 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-12 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-13 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-14 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-14 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-14 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-15 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-16 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-16 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-16 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-17 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-18 { color: #ffffff !important; }
+        .sg-11[data-state="368:883720"] .sn-11-18 { color: #ffffff !important; }
+        .sg-11[data-state="368:883595"] .sn-11-19 { background: #292524 !important; }
+        .sg-11[data-state="368:883720"] .sn-11-19 { background: #292524 !important; }
+        .sg-11[data-state="368:883595"] .sn-11-20 { background: #292524 !important; }
+        .sg-11[data-state="368:883720"] .sn-11-20 { background: #292524 !important; }
+        .sg-11[data-state="368:883595"] .sn-11-21 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-21 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-21 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-22 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-23 { color: #d6d3d1 !important; }
+        .sg-11[data-state="368:883720"] .sn-11-23 { color: #d6d3d1 !important; }
+        .sg-11[data-state="368:883595"] .sn-11-24 { color: #22c55e !important; }
+        .sg-11[data-state="368:883720"] .sn-11-24 { color: #22c55e !important; }
+        .sg-11[data-state="368:883595"] .sn-11-25 { color: #22c55e !important; }
+        .sg-11[data-state="368:883720"] .sn-11-25 { color: #22c55e !important; }
+        .sg-11[data-state="368:883595"] .sn-11-26 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-26 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-26 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-27 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-28 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-28 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-28 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-29 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-30 { background: #ffffff !important; }
+        .sg-11[data-state="368:883720"] .sn-11-30 { background: #ffffff !important; }
+        .sg-11[data-state="366:860910"] .sn-11-32 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-32 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-33 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-33 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-35 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-35 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-36 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-36 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-37 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-37 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-38 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-38 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-39 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-39 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-40 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-40 { display: none !important; }
+        .sg-11[data-state="368:883595"] .sn-11-41 { background: #8eba9f !important; }
+        .sg-11[data-state="368:883720"] .sn-11-41 { background: #8eba9f !important; }
+        .sg-11[data-state="368:883595"] .sn-11-42 { display: none !important; }
+        .sg-11[data-state="368:883720"] .sn-11-42 { display: none !important; }
+        .sg-11[data-state="366:857902"] .sn-11-43 { display: none !important; }
+        .sg-11[data-state="366:860910"] .sn-11-43 { display: none !important; }
+        @media (prefers-reduced-motion: reduce) { .sg-11, .sg-11 * { transition: none !important; } }
+        .sn-12-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
+        .sg-12[data-state="378:70121"] .sn-12-1 { translate: 1603px 0px !important; }
+        .sg-12[data-state="378:70121"] .sn-12-2 { display: none !important; }
+        .sg-12[data-state="378:70122"] .sn-12-3 { display: none !important; }
+        .sg-12[data-state="378:70121"] .sn-12-4 { display: none !important; }
+        .sg-12[data-state="378:70122"] .sn-12-5 { display: none !important; }
+        .sg-12[data-state="378:70121"] .sn-12-7 { display: none !important; }
+        .sg-12[data-state="378:70122"] .sn-12-8 { display: none !important; }
+        .sg-12[data-state="378:70121"] .sn-12-10 { display: none !important; }
+        .sg-12[data-state="378:70122"] .sn-12-11 { display: none !important; }
+        .sg-12[data-state="378:70121"] .sn-12-12 { display: none !important; }
+        .sg-12[data-state="378:70122"] .sn-12-13 { display: none !important; }
+        .sg-12[data-state="378:70121"] .sn-12-14 { display: none !important; }
+        .sg-12[data-state="378:70122"] .sn-12-15 { display: none !important; }
+        @media (prefers-reduced-motion: reduce) { .sg-12, .sg-12 * { transition: none !important; } }
+        .sg-13[data-state="374:12638"] .sn-13-1 { background: #8eba9f !important; }
+        .sg-13[data-state="374:12638"] .sn-13-2 { display: none !important; }
+        .sg-13[data-state="374:12637"] .sn-13-3 { display: none !important; }
+        .sg-13[data-state="374:12638"] .sn-13-4 { display: none !important; }
+        .sg-13[data-state="374:12637"] .sn-13-5 { display: none !important; }
+        @media (prefers-reduced-motion: reduce) { .sg-13, .sg-13 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
       <div className="figma-page md:hidden">
@@ -786,1466 +874,178 @@ export default function Design() {
             </div>
           </div>
         </div>
-        <VariantGroup initial="366:857902" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, position: "relative" }}>
-          <div data-variant="366:857902" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
-              <div style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
-                <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.5px", right: "0.81px", top: "0.22px", bottom: "0.22px", background: "#f1efec", borderRadius: "35.34px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.06px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/ac288890d1cb960b5ef6985b4260ffae61f49c60.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/52077588216d109e525e04b8f63e74885643f27b.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/d0fb800ec5e9ab6892f5b40c177fe499944600eb.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.2px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
+        <div className="sg-11" data-state="366:857902" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", position: "relative" }}>
+          <div className="sn-11-1" style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
+            <div className="sn-11-2" style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
+              <span className="sn-11-3" style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
+                <img src="/a/617411b7252ec6782215ea1ba9ba9ac07a98e121.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+              </span>
+              <span className="sn-11-4" style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
+                <img src="/a/f5d3835a2d85772c19bb18c8fa0bfd9887ad80e1.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+              </span>
+              <div className="sn-11-5" style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                <span className="sn-11-6" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/a5fbeea2b271058f3724c422a2dbae311831fb4f.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-11-7" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/edca6b9b3705a488bc656beb677e3206ae4ee07a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-11-8" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/527198e66837807af3135d0704c16dc33106b4a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-11-9" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/d9ffef6424111fc5d7901634ce4d9d4b110d664b.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
+                  <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
+                    <div className="sn-11-10" style={{ position: "absolute", left: "0.47px", right: "0.76px", top: "0.14px", bottom: "0.12px", background: "#f1efec", borderRadius: "35.35px", overflow: "hidden" }}>
+                      <div style={{ position: "absolute", left: "0", top: "0", width: "277.07px", height: "31.49px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
+                        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                          <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
+                            <p className="sn-11-11" style={{ fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
                           </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.07px", top: "calc(50% + -19.83px)", transform: "translateY(-50%)", width: "256.85px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                            <div style={{ width: "211.53px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                                <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
-                              </div>
-                            </div>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "flex-start" }}>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#ffffff", borderRadius: "7.55px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                              </div>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#ffffff", borderRadius: "7.55px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.63%" }}>
-                                    <img src="/a/3aec0f74805385a7d7bd57db504726a78182e446.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#ffffff", borderRadius: "7.55px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Repeat password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.63%" }}>
-                                    <img src="/a/3aec0f74805385a7d7bd57db504726a78182e446.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign Up`}</a></p>
-                              </div>
-                            </div>
+                          <div style={{ width: "78.08px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
+                          <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
+                            <img className="sn-11-12"
+                              src="/a/c3ce08687d81849fe8b13a8f1b6211bc9479229a.svg"
+                              alt=""
+                              aria-hidden="true"
+                              loading="lazy"
+                              decoding="async"
+                              style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
+                            />
+                            <img className="sn-11-13"
+                              src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
+                              alt=""
+                              aria-hidden="true"
+                              loading="lazy"
+                              decoding="async"
+                              style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
+                            />
+                            <img className="sn-11-14"
+                              src="/a/a832764d7b9b9019706626ade134f1936c416ace.svg"
+                              alt=""
+                              aria-hidden="true"
+                              loading="lazy"
+                              decoding="async"
+                              style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
+                            />
+                            <img className="sn-11-15"
+                              src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
+                              alt=""
+                              aria-hidden="true"
+                              loading="lazy"
+                              decoding="async"
+                              style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
+                            />
+                            <img className="sn-11-16"
+                              src="/a/6cb07e5beaf7fa376707c158b07eb80f9196e95e.svg"
+                              alt=""
+                              aria-hidden="true"
+                              loading="lazy"
+                              decoding="async"
+                              style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
+                            />
+                            <img className="sn-11-17"
+                              src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
+                              alt=""
+                              aria-hidden="true"
+                              loading="lazy"
+                              decoding="async"
+                              style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
+                            />
                           </div>
-                          <div style={{ width: "211.53px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Already have an account?`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign In`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/6886083e8aad1699c41192b9763363be8f5324f0.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/7d28291918d5a5c36e7d4eadb5359c6cdd030767.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.44px", width: "277px", height: "21.4px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.65px", height: "3.15px", background: "#000000", borderRadius: "62.95px", transform: "rotate(180deg)" }} />
                         </div>
                       </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.44px", right: "0.8px", top: "0.15px", bottom: "0.13px", background: "#f1efec", borderRadius: "35.35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.07px", height: "31.49px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.08px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
-                              <img
-                                src="/a/19c18b8c7c582870d73c8c14b2fbb4192a72b514.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/0bd0ad4169432ef741bdea8b35dd432685cac880.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/97d2f4f1241269dd33a24942f70cceeca645e32e.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.08px", top: "calc(50% + -31.8px)", transform: "translateY(-50%)", width: "256.92px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                                <div style={{ width: "211.58px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                                  <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                                    <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                                  </div>
-                                </div>
-                                <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5.04px", alignItems: "flex-start" }}>
-                                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Forgot Password`}</p>
-                                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Please enter the email address associated with your account`}</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Send`}</a></p>
-                              </div>
+                      <div style={{ position: "absolute", left: "10.08px", top: "71.79px", width: "256.93px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
+                        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
+                          <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
+                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
+                              <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
+                              <p className="sn-11-18" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
                             </div>
                           </div>
                           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Already have an account?`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign in`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
+                            <div className="sn-11-19" style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
+                              <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
+                            </div>
+                            <div className="sn-11-20" style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
+                              <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Password`}</p>
+                              <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
+                                <span className="sn-11-21" style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.63%" }}>
+                                  <img src="/a/4b4d6b10c9cee2d265236d29dd268e34d1b3dda8.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                                </span>
+                                <span className="sn-11-22" style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.62%" }}>
+                                  <img src="/a/f01f04cccfa1f6a11e3bb4d53ec8e856dd593d9b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                                </span>
+                              </div>
+                            </div>
+                            <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
+                              <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
+                            </div>
                           </div>
                         </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/bc6ae65a5e2aebbba73ff2b917f4f0c0797ac174.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/fbc4009f9edeb6195abbcb7c394e2a04ade6f574.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.59px", width: "277.07px", height: "21.41px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.34px)", bottom: "5.04px", width: "90.68px", height: "3.15px", background: "#000000", borderRadius: "62.97px", transform: "rotate(180deg)" }} />
+                        <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
+                          <p className="sn-11-23" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
+                          <p className="sn-11-24" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
+                          <p className="sn-11-25" style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
                         </div>
                       </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.51px", right: "0.8px", top: "0.23px", bottom: "0.21px", background: "#f1efec", borderRadius: "35.34px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.06px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/951bacb0ac0599c8d0aad3fa221ea9f8e0acabdb.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/38ed74a3ff86a661aa127f827f03318686f414a9.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/65e9056f4c43fc269ef077f2fe427d0725b5d7de.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.2px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
+                      <div style={{ position: "absolute", left: "0", top: "31.49px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
+                        <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
+                          <span className="sn-11-26" style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
+                            <img src="/a/b618b63152696f21ad5bb0cd56de23c1d4acf388.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
+                          </span>
+                          <span className="sn-11-27" style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
+                            <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
+                          </span>
                         </div>
-                        <div style={{ position: "absolute", left: "calc(50% + -128.43px)", top: "calc(50% + -90.34px)", transform: "translateY(-50%)", width: "256.85px", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                              <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5.04px", alignItems: "flex-start" }}>
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Check your email`}</p>
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`We have sent you password resend instrucstions`}</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "3.78px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                            <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/2c8b1f931417200f570046e911a4768806c51269.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/e419bf1cafd422af0f9762910354b4dd7be40031.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.44px", width: "277px", height: "21.4px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.65px", height: "3.15px", background: "#000000", borderRadius: "62.95px", transform: "rotate(180deg)" }} />
+                        <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
+                        <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
+                          <span className="sn-11-28" style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
+                            <img src="/a/9800eef3d9ac66ef21f797242835c3ea8ce51c08.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                          </span>
+                          <span className="sn-11-29" style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
+                            <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
+                          </span>
                         </div>
                       </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                </div>
-                <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/a5fbeea2b271058f3724c422a2dbae311831fb4f.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/527198e66837807af3135d0704c16dc33106b4a2.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.47px", right: "0.76px", top: "0.14px", bottom: "0.12px", background: "#f1efec", borderRadius: "35.35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.07px", height: "31.49px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
-                              <p style={{ fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.08px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
-                              <img
-                                src="/a/c3ce08687d81849fe8b13a8f1b6211bc9479229a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/a832764d7b9b9019706626ade134f1936c416ace.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/6cb07e5beaf7fa376707c158b07eb80f9196e95e.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.08px", top: "71.79px", width: "256.93px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                            <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                                <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
-                              </div>
-                            </div>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.63%" }}>
-                                    <img src="/a/4b4d6b10c9cee2d265236d29dd268e34d1b3dda8.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.49px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/b618b63152696f21ad5bb0cd56de23c1d4acf388.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/9800eef3d9ac66ef21f797242835c3ea8ce51c08.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.61px", width: "277.07px", height: "21.41px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.34px)", bottom: "5.04px", width: "90.68px", height: "3.15px", background: "#000000", borderRadius: "62.97px", transform: "rotate(180deg)" }} />
-                        </div>
+                      <div style={{ position: "absolute", left: "0", top: "580.61px", width: "277.07px", height: "21.41px" }}>
+                        <div className="sn-11-30" style={{ position: "absolute", left: "calc(50% + -45.34px)", bottom: "5.04px", width: "90.68px", height: "3.15px", background: "#000000", borderRadius: "62.97px", transform: "rotate(180deg)" }} />
                       </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
                     </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
+                    <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
                   </div>
-                </div>
-              </div>
-              <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
-                <VariantGroup initial="394:67613" data-swap-to="366:860910" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                  <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                      <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                  <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                      <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                </VariantGroup>
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-              <img
-                src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-              <img
-                src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
-                <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
-              </div>
-              <VariantGroup initial="366:858210" data-swap-to="368:883595" data-swap-ms="300" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
                   <img
-                    src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
+                    src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
                     decoding="async"
-                    style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
+                    style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
                   />
                 </div>
-                <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
-                  <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
-                    <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
-                      <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                    </span>
-                    <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
-                      <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                </div>
-              </VariantGroup>
-            </div>
-          </div>
-          <div data-variant="368:883595" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
-              <div style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
-                <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.5px", right: "0.81px", top: "0.22px", bottom: "0.22px", background: "#0c0a09", borderRadius: "35.29px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.06px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.2px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.07px", top: "71.77px", width: "256.85px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                            <div style={{ width: "211.53px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                                <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff" }}>{`Sign up with your email`}</p>
-                              </div>
-                            </div>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "flex-start" }}>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#292524", borderRadius: "7.55px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.17px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                              </div>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#292524", borderRadius: "7.55px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.17px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.62%", bottom: "15.63%" }}>
-                                    <img src="/a/f01f04cccfa1f6a11e3bb4d53ec8e856dd593d9b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#292524", borderRadius: "7.55px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.17px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Repeat password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.62%", bottom: "15.63%" }}>
-                                    <img src="/a/f01f04cccfa1f6a11e3bb4d53ec8e856dd593d9b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign up`}</a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ width: "211.53px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#d6d3d1" }}>{`Already have an account?`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#22c55e" }}>{`Sign in`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.44px", width: "277px", height: "21.4px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.65px", height: "3.15px", background: "#ffffff", borderRadius: "62.95px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.47px", right: "0.84px", top: "0.23px", bottom: "0.21px", background: "#0c0a09", borderRadius: "35.57px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.06px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.2px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.07px", top: "71.77px", width: "256.85px", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                              <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5.04px", alignItems: "flex-start" }}>
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff" }}>{`Forgot Password`}</p>
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#e7e5e4" }}>{`Please enter the email address associated with your account`}</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "flex-start" }}>
-                            <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.07px 4.41px 10.07px", background: "#292524", borderRadius: "7.55px" }}>
-                              <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.17px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                            </div>
-                            <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                              <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Send`}</a></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "32.74px", top: "413.61px", width: "211.53px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "flex-start" }}>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff" }}>{`Already have an account?`}</p>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#22c55e" }}>{`Sign in`}</p>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#22c55e" }}>{`Forgot you password?`}</p>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.44px", width: "277px", height: "21.4px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.65px", height: "3.15px", background: "#ffffff", borderRadius: "62.95px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.51px", right: "0.8px", top: "0.24px", bottom: "0.22px", background: "#0c0a09", borderRadius: "35.57px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.02px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.07px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.21px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.07px", top: "71.77px", width: "256.85px", display: "flex", flexDirection: "column", gap: "20.14px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                              <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5.04px", alignItems: "flex-start" }}>
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff" }}>{`Check your email`}</p>
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#d6d3d1" }}>{`We have sent you password resend instrucstions`}</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ width: "256.87px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "3.78px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.07px" }}>
-                            <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.48px", width: "277.02px", height: "27.7px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.07px 0 10.07px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.42px", width: "277.02px", height: "21.41px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.66px", height: "3.15px", background: "#ffffff", borderRadius: "62.96px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                </div>
-                <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/edca6b9b3705a488bc656beb677e3206ae4ee07a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/d9ffef6424111fc5d7901634ce4d9d4b110d664b.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                  <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                    <img src="/a/1ef5b2ba83d405756b147191572343fcaea24f7d.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                  </span>
-                </div>
-              </div>
-              <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
-                <VariantGroup initial="394:67613" data-swap-to="368:883720" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                  <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                      <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                  <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
-                      <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                </VariantGroup>
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
-                <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
-              </div>
-              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-12" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                <img
-                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                />
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-              <img
-                src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-              <img
-                src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-            </div>
-          </div>
-          <div data-variant="366:860910" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ position: "absolute", left: "calc(50% + -592px)", bottom: "108px", width: "1184px", height: "634px" }}>
-              <div style={{ position: "absolute", right: "-1522px", top: "1px", bottom: "4px", width: "2626px" }}>
-                <span style={{ position: "absolute", left: "-0.5px", top: "-1px", width: "1024px", height: "630px" }}>
-                  <img src="/a/617411b7252ec6782215ea1ba9ba9ac07a98e121.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
-                </span>
-                <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.46px", right: "0.77px", top: "0.14px", bottom: "0.14px", background: "#f1efec", borderRadius: "35.35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "calc(50% + -107.68px)", top: "calc(50% + -107.68px)", width: "215.36px", height: "215.36px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                        <div style={{ position: "absolute", left: "calc(50% + -116.49px)", top: "56.67px", width: "232.99px", display: "flex", flexDirection: "column", gap: "10.08px", alignItems: "center" }}>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 700, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Pot`}</p>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5.04px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "17.63px", lineHeight: "21.41px", fontWeight: 700, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#57534e" }}>{`Identify & Grow Plants`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "13.85px", lineHeight: "17.63px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Care Tips & Home Collection`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.07px", height: "31.49px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
-                              <p style={{ fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.08px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.59px", width: "277.07px", height: "21.41px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.34px)", bottom: "5.04px", width: "90.68px", height: "3.15px", background: "#000000", borderRadius: "62.97px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.38px", right: "0.75px", top: "0.04px", bottom: "0.01px", background: "#f1efec", borderRadius: "35.36px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.18px", height: "31.5px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.23px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
-                              <p style={{ fontSize: "10.71px", lineHeight: "13.86px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.12px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.1px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.8px", height: "7.77px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.22px", height: "8.19px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "32.76px", top: "71.81px", width: "211.67px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                          <div style={{ width: "173.87px", height: "173.87px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.42px", lineHeight: "25.83px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Get started`}</p>
-                        </div>
-                        <div style={{ position: "absolute", left: "calc(50% + -128.51px)", top: "303.01px", width: "257.02px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                          <div style={{ width: "257.02px", height: "31.5px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", background: "#ffffff", borderRadius: "7.56px" }}>
-                            <div style={{ width: "15.12px", height: "15.12px", flexShrink: 0, position: "relative" }}>
-                              <span style={{ position: "absolute", left: "9.33%", right: "8.25%", top: "-12.5%", bottom: "12.54%" }}>
-                                <img src="/a/b0215260526f405fa426679e574ba425bd27f7fa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                              </span>
-                            </div>
-                            <p style={{ fontSize: "6.75px", lineHeight: "8.73px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#1c1917", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Apple`}</a></p>
-                          </div>
-                          <div style={{ width: "257.02px", height: "31.5px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", background: "#d6d3d1", borderRadius: "7.56px" }}>
-                            <div style={{ width: "15.12px", height: "15.12px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                              <span style={{ position: "absolute", left: "4.17%", right: "4.17%", top: "12.5%", bottom: "12.5%" }}>
-                                <img src="/a/64dd1aae2d67cf459702a6331a2abef178b34839.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                              </span>
-                            </div>
-                            <p style={{ fontSize: "6.75px", lineHeight: "8.73px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#1c1917", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Email`}</a></p>
-                          </div>
-                        </div>
-                        <p style={{ position: "absolute", left: "10.08px", top: "545.54px", width: "257.02px", fontSize: "10.71px", lineHeight: "13.86px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c", whiteSpace: "pre-line" }}>{`By continuing to use Pot, `}{"\n"}{`you agree to the `}<span style={{ fontWeight: 590, color: "#57534e" }}>{`Term of Use`}</span>{` and `}<span style={{ fontWeight: 590, color: "#57534e" }}>{`Privacy Policy`}</span></p>
-                        <div style={{ position: "absolute", left: "0", top: "580.82px", width: "277.18px", height: "21.42px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.36px)", bottom: "5.04px", width: "90.71px", height: "3.15px", background: "#000000", borderRadius: "63px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.47px", right: "0.76px", top: "0.14px", bottom: "0.12px", background: "#f1efec", borderRadius: "35.35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.07px", height: "31.49px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
-                              <p style={{ fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.08px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.08px", top: "71.79px", width: "256.93px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                            <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                                <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#1c1917" }}>{`Sign in with your email`}</p>
-                              </div>
-                            </div>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#ffffff", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.63%" }}>
-                                    <img src="/a/f01f04cccfa1f6a11e3bb4d53ec8e856dd593d9b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.49px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.61px", width: "277.07px", height: "21.41px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.34px)", bottom: "5.04px", width: "90.68px", height: "3.15px", background: "#000000", borderRadius: "62.97px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div style={{ position: "absolute", left: "0", right: "0", top: "calc(50% + -2px)", transform: "translateY(-50%)", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <VariantGroup initial="394:67621" data-swap-to="366:857902" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
-                  <div data-variant="394:67621" data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                        <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div data-variant="394:67623" data-lazy data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                        <image href="/a/f3f97e1ca49cbfc42858d32d0ff747922591be4a.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                      </svg>
-                    </span>
-                  </div>
-                </VariantGroup>
-                <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-              <img
-                src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-              <img
-                src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
-                <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
-              </div>
-              <VariantGroup initial="366:858210" data-swap-to="368:883720" data-swap-ms="300" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
-                <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
-                  <img
-                    src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
-                  />
-                </div>
-                <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
-                  <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
-                    <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
-                      <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                    </span>
-                    <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
-                      <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                    </span>
-                  </div>
-                </div>
-              </VariantGroup>
-            </div>
-          </div>
-          <div data-variant="368:883720" style={{ backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", height: "100%" }}>
-            <div style={{ position: "absolute", left: "calc(50% + -592px)", bottom: "108px", width: "1184px", height: "634px" }}>
-              <div style={{ position: "absolute", right: "-1522px", top: "1px", bottom: "4px", width: "2626px" }}>
-                <span style={{ position: "absolute", left: "-0.5px", top: "-1px", width: "1024px", height: "630px" }}>
-                  <img src="/a/f5d3835a2d85772c19bb18c8fa0bfd9887ad80e1.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
-                </span>
-                <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.5px", right: "0.81px", top: "0.22px", bottom: "0.22px", background: "#0c0a09", borderRadius: "35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "calc(50% + -107.65px)", top: "195.79px", width: "215.3px", height: "215.3px", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                        <div style={{ position: "absolute", left: "calc(50% + -116.46px)", top: "56.66px", width: "232.93px", display: "flex", flexDirection: "column", gap: "10.07px", alignItems: "center" }}>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 700, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#22c55e" }}>{`Pot`}</p>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5.04px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "17.63px", lineHeight: "21.4px", fontWeight: 700, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#e7e5e4" }}>{`Identify & Grow Plants`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "13.85px", lineHeight: "17.63px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#d6d3d1" }}>{`Care Tips & Home Collection`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.06px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.2px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.44px", width: "277px", height: "21.4px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.65px", height: "3.15px", background: "#ffffff", borderRadius: "62.95px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.47px", right: "0.84px", top: "0.23px", bottom: "0.21px", background: "#0c0a09", borderRadius: "35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277px", height: "31.48px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.07px" }}>
-                              <p style={{ fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#000000", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.06px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.07px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.2px", height: "8.18px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "32.74px", top: "71.77px", width: "211.53px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                          <div style={{ width: "173.75px", height: "173.75px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.4px", lineHeight: "25.81px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff" }}>{`Get Started`}</p>
-                        </div>
-                        <div style={{ position: "absolute", left: "calc(50% + -128.43px)", top: "302.81px", width: "256.85px", display: "flex", flexDirection: "column", gap: "7.55px", alignItems: "center" }}>
-                          <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", background: "#78716c", borderRadius: "7.55px" }}>
-                            <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                              <span style={{ position: "absolute", left: "9.33%", right: "8.25%", top: "-12.5%", bottom: "12.54%" }}>
-                                <img src="/a/b0215260526f405fa426679e574ba425bd27f7fa.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                              </span>
-                            </div>
-                            <p style={{ fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Apple`}</a></p>
-                          </div>
-                          <div style={{ width: "256.85px", height: "31.48px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.81px 4.41px 8.81px", background: "#292524", borderRadius: "7.55px" }}>
-                            <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                              <span style={{ position: "absolute", left: "4.17%", right: "4.17%", top: "12.5%", bottom: "12.5%" }}>
-                                <img src="/a/64dd1aae2d67cf459702a6331a2abef178b34839.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                              </span>
-                            </div>
-                            <p style={{ fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Continue with Email`}</a></p>
-                          </div>
-                        </div>
-                        <p style={{ position: "absolute", left: "10.07px", top: "545.19px", width: "256.85px", fontSize: "10.7px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#d6d3d1", whiteSpace: "pre-line" }}>{`By continuing to use Pot, `}{"\n"}{`you agree to the `}<span style={{ fontWeight: 590, color: "#e7e5e4" }}>{`Term of Use`}</span>{` and `}<span style={{ fontWeight: 590, color: "#e7e5e4" }}>{`Privacy Policy`}</span></p>
-                        <div style={{ position: "absolute", left: "0", top: "580.44px", width: "277px", height: "21.4px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.33px)", bottom: "5.04px", width: "90.65px", height: "3.15px", background: "#ffffff", borderRadius: "62.95px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                  <div style={{ width: "304px", height: "627.98px", flexShrink: 0, background: "#000000", borderRadius: "47.81px", boxShadow: "0 3.52px 14.1px 0 rgba(13, 18, 46, 0.2)", position: "relative" }}>
-                    <div style={{ position: "absolute", left: "calc(50% + -139.15px)", top: "12.84px", width: "278.31px", height: "602.29px", borderRadius: "14.27px", overflow: "hidden" }}>
-                      <div style={{ position: "absolute", left: "0.47px", right: "0.76px", top: "0.15px", bottom: "0.13px", background: "#0c0a09", borderRadius: "35px", overflow: "hidden" }}>
-                        <div style={{ position: "absolute", left: "0", top: "0", width: "277.07px", height: "31.49px", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "13.22px 0 0 0" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center", padding: "0 3.78px 0 10.08px" }}>
-                              <p style={{ fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`9:41`}</p>
-                            </div>
-                            <div style={{ width: "78.08px", height: "6.3px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }} />
-                            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "row", gap: "4.41px", justifyContent: "center", alignItems: "center", padding: "0 10.08px 0 3.78px" }}>
-                              <img
-                                src="/a/66bfa4687490e7917668b0e991398d0832c3a253.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "12.09px", height: "7.7px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/9712f7dbb3a523554eb606d6fd7dc1630085084a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "10.79px", height: "7.76px", flexShrink: 0 }}
-                              />
-                              <img
-                                src="/a/af0c5fde574dbd3d50589f4e5f771a48646ad42a.svg"
-                                alt=""
-                                aria-hidden="true"
-                                loading="lazy"
-                                decoding="async"
-                                style={{ width: "17.21px", height: "8.19px", flexShrink: 0 }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "10.08px", top: "71.79px", width: "256.92px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20.15px", alignItems: "center" }}>
-                            <div style={{ width: "211.58px", display: "flex", flexDirection: "column", gap: "4.41px", alignItems: "center" }}>
-                              <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "center" }}>
-                                <div style={{ width: "173.8px", height: "173.8px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a007d234ae94adf960030c5ebd6d07313ea00ef2.webp)" }} />
-                                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "21.41px", lineHeight: "25.82px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#ffffff" }}>{`Sign in with your email`}</p>
-                              </div>
-                            </div>
-                            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#292524", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "6.74px", lineHeight: "8.72px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.17px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Email`}</p>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", alignItems: "center", padding: "4.41px 10.08px 4.41px 10.08px", background: "#292524", borderRadius: "7.56px" }}>
-                                <p style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.27px", color: "#78716c", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{`Password`}</p>
-                                <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                                  <span style={{ position: "absolute", left: "2.88%", right: "2.88%", top: "15.63%", bottom: "15.62%" }}>
-                                    <img src="/a/f01f04cccfa1f6a11e3bb4d53ec8e856dd593d9b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
-                                  </span>
-                                </div>
-                              </div>
-                              <div style={{ width: "256.92px", height: "31.49px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "2.52px", justifyContent: "center", alignItems: "center", padding: "4.41px 8.82px 4.41px 8.82px", backgroundImage: "linear-gradient(90deg, #07813c 0%, #029c45 100%)", borderRadius: "10.08px" }}>
-                                <p style={{ fontSize: "11.33px", lineHeight: "12.59px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", letterSpacing: "-0.14px", color: "#ffffff", whiteSpace: "nowrap" }}><a href="https://eazychange.com" target="_blank" rel="noopener noreferrer">{`Sign In`}</a></p>
-                              </div>
-                            </div>
-                          </div>
-                          <div style={{ width: "211.58px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#d6d3d1" }}>{`Don’t have an account yet?`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#22c55e" }}>{`Sign up`}</p>
-                            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#22c55e" }}>{`Forgot you password?`}</p>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "31.49px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                          <div style={{ flex: "1 0 0px", minWidth: "1px", height: "13.85px", display: "flex", flexDirection: "row", gap: "6.3px", justifyContent: "center", alignItems: "center" }} />
-                          <div style={{ width: "15.11px", height: "15.11px", flexShrink: 0, opacity: 0, position: "relative" }}>
-                            <span style={{ position: "absolute", left: "12.5%", right: "12.5%", top: "20.83%", bottom: "20.83%" }}>
-                              <img src="/a/c39c0ebf63ea9b7ee43e659537b1a44d3bc86891.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.56%", width: "111.11%", top: "-7.14%", height: "114.29%", maxWidth: "none" }} />
-                            </span>
-                          </div>
-                        </div>
-                        <div style={{ position: "absolute", left: "0", top: "580.59px", width: "277.07px", height: "21.41px" }}>
-                          <div style={{ position: "absolute", left: "calc(50% + -45.34px)", bottom: "5.04px", width: "90.68px", height: "3.15px", background: "#ffffff", borderRadius: "62.97px", transform: "rotate(180deg)" }} />
-                        </div>
-                      </div>
-                      <div style={{ position: "absolute", left: "calc(50% + -44.96px)", top: "calc(50% + -296.86px)", width: "89.92px", height: "22.84px", background: "#000000", borderRadius: "33.61px" }} />
-                    </div>
-                    <img
-                      src="/a/192d1c68bce88e05ef3ee4a7d4a866b6d13b5e52.svg"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                      decoding="async"
-                      style={{ position: "absolute", left: "-2.14px", top: "0", width: "308.28px", height: "627.98px" }}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div style={{ position: "absolute", left: "0", right: "0", top: "calc(50% + -2px)", transform: "translateY(-50%)", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <VariantGroup initial="394:67621" data-swap-to="368:883595" data-swap-ms="300" style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", transform: "rotate(-180deg)", cursor: "pointer" }}>
-                  <div data-variant="394:67621" data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                        <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div data-variant="394:67623" data-lazy data-hover-to="394:67623" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                    <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                      <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                        <image href="/a/f3f97e1ca49cbfc42858d32d0ff747922591be4a.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                      </svg>
-                    </span>
-                  </div>
-                </VariantGroup>
-                <div style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-                  <span style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
-                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
-                      <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
-              <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-                <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
-                <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
-              </div>
-              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-13" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
-                <img
-                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  decoding="async"
-                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
-                />
-              </div>
-            </div>
-            <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-              <img
-                src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-              <img
-                src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                style={{ width: "8px", height: "8px", flexShrink: 0 }}
-              />
-            </div>
-          </div>
-        </VariantGroup>
-        <div className="sg-14" data-state="378:70122" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", position: "relative" }}>
-          <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
-            <div className="sn-14-1" style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
-              <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
-                <img src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
-              </span>
-              <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                  <img src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                </span>
-                <span className="sn-14-2" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                  <img src="/a/0051fb6812319fde09dab8da5dc252eb8b964825.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                </span>
-                <span className="sn-14-3" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                  <img src="/a/c45f37f978f29322b7880fe4ff41fd2e99ac2a0a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                </span>
-                <span className="sn-14-4" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                  <img src="/a/3b25164b07ea5c7a83c8ed130d8b54e38d7e2a7a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                </span>
-                <span className="sn-14-5" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
-                  <img src="/a/a7294e05808193a43ee40060ae9295d3ec9426c9.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
-                </span>
               </div>
             </div>
             <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-              <div className="sn-14-6" data-swap-map='{"378:70121":"378:70122"}' style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-                <span className="sn-14-7" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+              <div className="sn-11-31" data-swap-map='{"366:860910":"366:857902","368:883720":"368:883595"}' style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
+                <span className="sn-11-32" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                   <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
                     <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
                   </svg>
                 </span>
-                <span className="sn-14-8" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                <span className="sn-11-33" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                   <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
                     <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
                   </svg>
                 </span>
               </div>
-              <VariantGroup initial="394:67613" className="sn-14-9" data-swap-map='{"378:70122":"378:70121"}' style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <VariantGroup initial="394:67613" className="sn-11-34" data-swap-map='{"366:857902":"366:860910","368:883595":"368:883720"}' style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
                 <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-                  <span className="sn-14-10" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                  <span className="sn-11-35" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
                     <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
                   </span>
-                  <span className="sn-14-11" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <span className="sn-11-36" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
                     <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
                       <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
                     </svg>
@@ -2260,7 +1060,7 @@ export default function Design() {
             </div>
           </div>
           <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-            <img className="sn-14-12"
+            <img className="sn-11-37"
               src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
               alt=""
               aria-hidden="true"
@@ -2268,7 +1068,7 @@ export default function Design() {
               decoding="async"
               style={{ width: "8px", height: "8px", flexShrink: 0 }}
             />
-            <img className="sn-14-13"
+            <img className="sn-11-38"
               src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
               alt=""
               aria-hidden="true"
@@ -2276,7 +1076,7 @@ export default function Design() {
               decoding="async"
               style={{ width: "8px", height: "8px", flexShrink: 0 }}
             />
-            <img className="sn-14-14"
+            <img className="sn-11-39"
               src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
               alt=""
               aria-hidden="true"
@@ -2284,7 +1084,134 @@ export default function Design() {
               decoding="async"
               style={{ width: "8px", height: "8px", flexShrink: 0 }}
             />
-            <img className="sn-14-15"
+            <img className="sn-11-40"
+              src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+          </div>
+          <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
+            <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
+              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
+              <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
+            </div>
+            <VariantGroup initial="366:858210" className="sn-11-41" data-swap-map='{"366:857902":"368:883595","368:883595":"366:857902","366:860910":"368:883720","368:883720":"366:860910"}' data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
+                <img className="sn-11-42"
+                  src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
+                />
+                <img className="sn-11-43"
+                  src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  decoding="async"
+                  style={{ position: "absolute", left: "20px", top: "2px", width: "18px", height: "18px" }}
+                />
+              </div>
+              <div data-variant="366:858209" data-lazy data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", boxShadow: "0 0 0 1px #039844", width: "100%", height: "100%" }}>
+                <div style={{ position: "absolute", left: "2px", top: "2px", bottom: "2px", width: "18px", overflow: "hidden" }}>
+                  <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "18px" }}>
+                    <img src="/a/3d92191bc70d7096cb4cd0e17e76fd47c8453848.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                  </span>
+                  <span style={{ position: "absolute", left: "2px", right: "2px", top: "2px", bottom: "2px" }}>
+                    <img src="/a/407b81c28e4f671fbdbb5d711c9ebfd39a6c62fb.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
+                  </span>
+                </div>
+              </div>
+            </VariantGroup>
+          </div>
+        </div>
+        <div className="sg-12" data-state="378:70122" style={{ alignSelf: "stretch", height: "950px", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden", position: "relative" }}>
+          <div style={{ position: "absolute", left: "calc(50% + -598px)", bottom: "108px", width: "1184px", height: "634px" }}>
+            <div className="sn-12-1" style={{ position: "absolute", left: "-1518px", top: "1px", bottom: "4px", width: "2628px" }}>
+              <span style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "630px" }}>
+                <img src="/a/09b3feef2a56ad21cf8722d54b0f3946d5b39631.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
+              </span>
+              <div style={{ position: "absolute", right: "0", top: "-1px", bottom: "0", width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/2dd9b9065313dbae2d4fb8b9411db245a37f22c5.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-12-2" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/0051fb6812319fde09dab8da5dc252eb8b964825.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-12-3" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/c45f37f978f29322b7880fe4ff41fd2e99ac2a0a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-12-4" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/3b25164b07ea5c7a83c8ed130d8b54e38d7e2a7a.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+                <span className="sn-12-5" style={{ width: "304px", height: "627.98px", flexShrink: 0, position: "relative" }}>
+                  <img src="/a/a7294e05808193a43ee40060ae9295d3ec9426c9.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
+                </span>
+              </div>
+            </div>
+            <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "calc(50% + -2px)", transform: "translateY(-50%)", width: "1184px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+              <div className="sn-12-6" data-swap-map='{"378:70121":"378:70122"}' style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
+                <span className="sn-12-7" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+                <span className="sn-12-8" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                  <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                    <image href="/a/fc218651a883b128070731d0f8783d1ec72e926e.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                  </svg>
+                </span>
+              </div>
+              <VariantGroup initial="394:67613" className="sn-12-9" data-swap-map='{"378:70122":"378:70121"}' style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+                <div data-variant="394:67613" data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                  <span className="sn-12-10" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                    <img src="/a/988546920d4637fd4f1c9e423676bb1884f58ffc.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                  </span>
+                  <span className="sn-12-11" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+                    <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
+                      <image href="/a/85d8d950e2823c3e252d227a031259d0a987e4a5.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
+                    </svg>
+                  </span>
+                </div>
+                <div data-variant="394:67615" data-lazy data-hover-to="394:67615" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
+                  <span style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+                    <img src="/a/fe6e5f8b92da9aa3c52a7711056c329bda1de19e.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
+                  </span>
+                </div>
+              </VariantGroup>
+            </div>
+          </div>
+          <div style={{ position: "absolute", left: "calc(50% + 0px)", bottom: "80px", transform: "translateX(-50%)", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
+            <img className="sn-12-12"
+              src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+            <img className="sn-12-13"
+              src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+            <img className="sn-12-14"
+              src="/a/1a297121f1dd982ad666660d988cc730081b546f.svg"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              style={{ width: "8px", height: "8px", flexShrink: 0 }}
+            />
+            <img className="sn-12-15"
               src="/a/de3b51e7708416b0443d354c9beea4ff24f8a150.svg"
               alt=""
               aria-hidden="true"
@@ -2338,16 +1265,16 @@ export default function Design() {
             </div>
           </div>
         </div>
-        <div className="sg-15" data-state="374:12637" style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
+        <div className="sg-13" data-state="374:12637" style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", backgroundImage: "linear-gradient(180deg, rgba(2, 153, 68, 0.04) 0%, rgba(252, 252, 252, 0.04) 100%)", overflow: "hidden" }}>
           <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
             <div style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "43px", justifyContent: "flex-end", alignItems: "flex-end" }}>
               <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Personal Digital Garden`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
               </div>
-              <VariantGroup initial="366:858210" className="sn-15-1" data-swap-map='{"374:12637":"374:12638","374:12638":"374:12637"}' data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <VariantGroup initial="366:858210" className="sn-13-1" data-swap-map='{"374:12637":"374:12638","374:12638":"374:12637"}' data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
                 <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
-                  <img className="sn-15-2"
+                  <img className="sn-13-2"
                     src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
                     alt=""
                     aria-hidden="true"
@@ -2355,7 +1282,7 @@ export default function Design() {
                     decoding="async"
                     style={{ position: "absolute", left: "2px", top: "2px", width: "18px", height: "18px" }}
                   />
-                  <img className="sn-15-3"
+                  <img className="sn-13-3"
                     src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                     alt=""
                     aria-hidden="true"
@@ -2376,10 +1303,10 @@ export default function Design() {
                 </div>
               </VariantGroup>
             </div>
-            <span className="sn-15-4" style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
+            <span className="sn-13-4" style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
               <img src="/a/765b05f532cd90723731b0d9f80a748e92d61370.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
             </span>
-            <span className="sn-15-5" style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
+            <span className="sn-13-5" style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
               <img src="/a/bd19a7b244b58e216e793d6c627c7c0e41f7b875.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.59%", width: "103.17%", top: "-1.52%", height: "104.15%", maxWidth: "none" }} />
             </span>
           </div>
