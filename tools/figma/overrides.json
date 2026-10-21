@@ -182,5 +182,25 @@
         }
       }
     }
+  ],
+  "imageSwaps": [
+    {
+      "pages": [
+        "pot-ru"
+      ],
+      "from": "503bfd92bd993609cc9ec983a993b694283294ce",
+      "src": "/images/pot-flow-ru.webp",
+      "aspect": "3572 / 2850",
+      "alt": "Диаграмма флоу приложения Pot"
+    },
+    {
+      "pages": [
+        "pot-en"
+      ],
+      "from": "503bfd92bd993609cc9ec983a993b694283294ce",
+      "src": "/images/pot-flow-en.webp",
+      "aspect": "3572 / 2850",
+      "alt": "Pot app flow diagram"
+    }
   ]
 }

@@ -257,6 +257,7 @@ async function main() {
     hoverRules: overrides.hover || {},
     textStyles: (overrides.textStyles || []).filter((r) => r.pages.includes(slug)),
     frameStyles: (overrides.frameStyles || []).filter((r) => r.pages.includes(slug)),
+    imageSwaps: (overrides.imageSwaps || []).filter((r) => r.pages.includes(slug)),
     assets,
     fonts,
     guidToUrl,

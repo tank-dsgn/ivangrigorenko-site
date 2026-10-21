@@ -15,8 +15,8 @@ export default function Flow() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма флоу`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start", padding: "16px 16px 16px 16px", background: "#ffffff", borderRadius: "12px" }}>
-              <div style={{ alignSelf: "stretch", aspectRatio: "982 / 639", position: "relative", overflow: "hidden" }}>
-                <img src="/a/503bfd92bd993609cc9ec983a993b694283294ce.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-4.21%", top: "-4.79%", width: "108.39%", height: "109.81%", maxWidth: "none" }} />
+              <div style={{ alignSelf: "stretch", aspectRatio: "3572 / 2850", position: "relative", overflow: "hidden" }}>
+                <img src="/images/pot-flow-ru.webp" alt="Диаграмма флоу приложения Pot" loading="lazy" decoding="async" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", maxWidth: "none" }} />
               </div>
             </div>
           </div>
@@ -34,8 +34,8 @@ export default function Flow() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма флоу`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px" }}>
-              <div style={{ alignSelf: "stretch", aspectRatio: "982 / 639", position: "relative", overflow: "hidden" }}>
-                <img src="/a/503bfd92bd993609cc9ec983a993b694283294ce.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-4.21%", top: "-4.79%", width: "108.39%", height: "109.81%", maxWidth: "none" }} />
+              <div style={{ alignSelf: "stretch", aspectRatio: "3572 / 2850", position: "relative", overflow: "hidden" }}>
+                <img src="/images/pot-flow-ru.webp" alt="Диаграмма флоу приложения Pot" loading="lazy" decoding="async" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", maxWidth: "none" }} />
               </div>
             </div>
           </div>
@@ -53,8 +53,8 @@ export default function Flow() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Диаграмма флоу`}</p>
             <div data-lightbox="" role="button" tabIndex={0} style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start", padding: "24px 24px 24px 24px", background: "#ffffff", borderRadius: "24px", cursor: "zoom-in" }}>
-              <div style={{ alignSelf: "stretch", aspectRatio: "982 / 639", position: "relative", overflow: "hidden" }}>
-                <img src="/a/503bfd92bd993609cc9ec983a993b694283294ce.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-4.21%", top: "-4.79%", width: "108.39%", height: "109.81%", maxWidth: "none" }} />
+              <div style={{ alignSelf: "stretch", aspectRatio: "3572 / 2850", position: "relative", overflow: "hidden" }}>
+                <img src="/images/pot-flow-ru.webp" alt="Диаграмма флоу приложения Pot" loading="lazy" decoding="async" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", maxWidth: "none" }} />
               </div>
             </div>
           </div>

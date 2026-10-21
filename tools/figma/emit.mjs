@@ -85,6 +85,7 @@ export function createEmitter({
   hoverRules = {},
   textStyles = [],
   frameStyles = [],
+  imageSwaps = [],
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -1027,7 +1028,17 @@ export function createEmitter({
     // потому что фоном нужный кусок не выразить
     const fill = imageFill(node, assets, assetMap);
     let cropped = "";
-    if (fill?.crop) {
+    // своя картинка вместо картинки из макета (overrides.json → imageSwaps): окно получает
+    // пропорции новой картинки, картинка заполняет его целиком
+    const swap = fill && imageSwaps.find((r) => fill.src.includes(r.from));
+    if (swap) {
+      style.position = style.position || "relative";
+      style.overflow = "hidden";
+      style.aspectRatio = swap.aspect;
+      const alt = swap.alt ? `alt=${JSON.stringify(swap.alt)}` : `alt="" aria-hidden="true"`;
+      cropped =
+        `${indentUnit.repeat(depth + 1)}<img src=${JSON.stringify(swap.src)} ${alt} loading="lazy" decoding="async" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", maxWidth: "none" }} />\n`;
+    } else if (fill?.crop) {
       usedAssets.add(fill.src);
       style.position = style.position || "relative";
       style.overflow = "hidden";
