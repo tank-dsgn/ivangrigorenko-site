@@ -276,6 +276,12 @@ export function frameStyle(node, assets, assetMap = {}) {
     shadows.push(`${e.type === "INNER_SHADOW" ? "inset " : ""}${px(e.offset?.x || 0)} ${px(e.offset?.y || 0)} ${px(e.radius || 0)} ${px(e.spread || 0)} ${cssColor(e)}`);
   }
   if (shadows.length) s.boxShadow = shadows.join(", ");
+  // Размытие слоя (свечение на обложке VV). Радиус Figma — это примерно два «сигмы»
+  // CSS-размытия, поэтому делим пополам; без размытия свечение выходило резкой фигурой.
+  const blur = (node.effects || []).find((e) => e.visible !== false && e.type === "LAYER_BLUR" && e.radius);
+  if (blur) s.filter = `blur(${px(blur.radius / 2)})`;
+  const backdrop = (node.effects || []).find((e) => e.visible !== false && e.type === "BACKGROUND_BLUR" && e.radius);
+  if (backdrop) s.backdropFilter = `blur(${px(backdrop.radius / 2)})`;
   if (node.opacity != null && node.opacity !== 1) s.opacity = node.opacity;
   return s;
 }

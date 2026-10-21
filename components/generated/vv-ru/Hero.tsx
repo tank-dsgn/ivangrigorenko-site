@@ -15,7 +15,7 @@ export default function Hero() {
             <span style={{ position: "absolute", left: "2.04px", bottom: "247.57px", width: "74.99px", height: "110.15px" }}>
               <img src="/a/02d7de2b615c660f6250e3dd6fe94093e3a67536.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-223.41%", width: "546.82%", top: "-152.09%", height: "404.18%", maxWidth: "none" }} />
             </span>
-            <div style={{ position: "absolute", left: "calc(50% + -170.33px)", top: "calc(50% + -153.68px)", width: "520.38px", height: "378.36px", background: "#5dccef", borderRadius: "8.38px", opacity: 0.300000011920929, transform: "rotate(-40.3deg)" }} />
+            <div style={{ position: "absolute", left: "calc(50% + -170.33px)", top: "calc(50% + -153.68px)", width: "520.38px", height: "378.36px", background: "#5dccef", borderRadius: "8.38px", filter: "blur(76.85px)", opacity: 0.300000011920929, transform: "rotate(-40.3deg)" }} />
           </div>
           <span style={{ position: "absolute", left: "-238.13%", right: "-102.64%", top: "-279.06%", bottom: "-134.13%" }}>
             <svg viewBox="0 0 1652.89 2083.58" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
@@ -44,7 +44,7 @@ export default function Hero() {
             <span style={{ position: "absolute", left: "1.82px", bottom: "289.7px", width: "66.73px", height: "128.89px" }}>
               <img src="/a/a86b800fc22a067ded10f91437174e3ab55923ba.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-251.07%", width: "602.13%", top: "-129.97%", height: "359.95%", maxWidth: "none" }} />
             </span>
-            <div style={{ position: "absolute", left: "calc(50% + -19.66px)", top: "calc(50% + -173.49px)", width: "529.01px", height: "430.07px", background: "#5dccef", borderRadius: "8.38px", opacity: 0.300000011920929, transform: "rotate(-48.12deg)" }} />
+            <div style={{ position: "absolute", left: "calc(50% + -19.66px)", top: "calc(50% + -173.49px)", width: "529.01px", height: "430.07px", background: "#5dccef", borderRadius: "8.38px", filter: "blur(76.85px)", opacity: 0.300000011920929, transform: "rotate(-48.12deg)" }} />
           </div>
           <span style={{ position: "absolute", left: "-106.13%", right: "-25.31%", top: "-179.47%", bottom: "-117%" }}>
             <svg viewBox="0 0 1851.46 1796" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
@@ -73,7 +73,7 @@ export default function Hero() {
             <span style={{ position: "absolute", left: "45.49px", top: "875.5px", width: "225.74px", height: "225.74px" }}>
               <img src="/a/b055b80997c81446ddfe7d2657d9d273e64e5d16.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-152.09%", width: "404.18%", top: "-152.09%", height: "404.18%", maxWidth: "none" }} />
             </span>
-            <div style={{ position: "absolute", left: "861.8px", top: "376.63px", width: "1379.6px", height: "833.31px", background: "#5dccef", borderRadius: "17.17px", opacity: 0.300000011920929, transform: "rotate(-30deg)" }} />
+            <div style={{ position: "absolute", left: "861.8px", top: "376.63px", width: "1379.6px", height: "833.31px", background: "#5dccef", borderRadius: "17.17px", filter: "blur(157.5px)", opacity: 0.300000011920929, transform: "rotate(-30deg)" }} />
           </div>
           <span style={{ position: "absolute", left: "-77.3%", right: "-4.26%", top: "-158.98%", bottom: "-103.43%" }}>
             <svg viewBox="0 0 2493.53 2986.28" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
