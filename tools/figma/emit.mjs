@@ -794,6 +794,13 @@ export function createEmitter({
     return `${pad}<Button ${propsLiteral(props)} />\n`;
   }
 
+  /**
+   * Переключатель светлой и тёмной темы в кейсах (компоненты «toggle», «toggle-mobile»).
+   * Метка нужна для общего наведения: обводка цвета круга на ползунке — см. StateGroups.tsx
+   * и `[data-toggle]` в app/globals.css.
+   */
+  const toggleAttr = (node) => (/^toggle(-mobile)?$/.test(node.name || "") ? ' data-toggle=""' : "");
+
   function emit(node, parent, depth, insideLink = false, swapTargets = null) {
     const pad = indentUnit.repeat(depth);
 
@@ -880,7 +887,7 @@ export function createEmitter({
       if (style.opacity != null) box.opacity = style.opacity;
       // сам блок может переключать состояние блока снаружи: стрелка карусели —
       // это кнопка со своим состоянием наведения
-      const outer = triggers(node, enclosing) + motionAttrs(node, style.transform);
+      const outer = triggers(node, enclosing) + motionAttrs(node, style.transform) + toggleAttr(node);
       if (outer.includes("data-swap-to") || outer.includes("data-swap-map")) box.cursor = "pointer";
       const inner = new Set([...enclosing, ...group.targets]);
       const panels = group.variants
@@ -918,7 +925,7 @@ export function createEmitter({
     }
 
     // Узел, который переключает состояние блока кликом или наведением
-    let attrs = (swapTargets ? triggers(node, swapTargets) : "") + motionAttrs(node, style.transform);
+    let attrs = (swapTargets ? triggers(node, swapTargets) : "") + motionAttrs(node, style.transform) + toggleAttr(node);
     if (attrs.includes("data-swap-to") || attrs.includes("data-swap-map")) style.cursor = "pointer";
 
     // Поведение из макета: параллакс при прокрутке и увеличение по клику

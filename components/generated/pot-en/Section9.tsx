@@ -55,7 +55,7 @@ export default function Section9() {
       </div>
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
-      <div className="sg-17" data-state="399:8331" style={{ alignSelf: "stretch", height: "1048px", flexShrink: 0, background: "#000000", overflow: "hidden", position: "relative" }}>
+      <div className="sg-17" data-state="399:8331" style={{ alignSelf: "stretch", height: "1048px", flexShrink: 0, background: "#ffffff", overflow: "hidden", position: "relative" }}>
         <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "100px", width: "1024px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000" }}>{`App Store Screenshots`}</p>
           <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`A selection of screens that convey a clear, natural, and harmonious Pot experience`}</p>

@@ -74,7 +74,7 @@ export default function Hero() {
       {/* Mobile */}
       <div className="figma-page md:hidden">
       <div style={{ alignSelf: "stretch", height: "406px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", background: "#2e155a", overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", background: "#251048", overflow: "hidden" }}>
           <div style={{ position: "absolute", left: "-69px", right: "-271px", top: "-91px", bottom: "-262.72px" }}>
             <span style={{ position: "absolute", left: "0", top: "0", width: "112.62px", height: "165.43px" }}>
               <img src="/a/56134c3fa0cb822396eaf5916ecf4702907dea13.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-148.75%", width: "397.51%", top: "-101.27%", height: "302.53%", maxWidth: "none" }} />
@@ -103,7 +103,7 @@ export default function Hero() {
       {/* Tablet */}
       <div className="figma-page hidden md:block xl:hidden">
       <div style={{ alignSelf: "stretch", height: "453px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", background: "#2e155a", overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: "0", right: "0", top: "0", bottom: "0", background: "#251048", overflow: "hidden" }}>
           <div style={{ position: "absolute", left: "-36px", right: "-130px", top: "-61px", bottom: "-375px" }}>
             <span style={{ position: "absolute", left: "0", top: "0", width: "100.22px", height: "193.59px" }}>
               <img src="/a/9b35d880489e29a5b460acdf8818d36e21708662.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-167.17%", width: "434.33%", top: "-86.54%", height: "273.08%", maxWidth: "none" }} />
@@ -132,7 +132,7 @@ export default function Hero() {
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
       <div style={{ alignSelf: "stretch", height: "824px", flexShrink: 0, overflow: "hidden", position: "relative" }}>
-        <div style={{ position: "absolute", left: "0%", right: "-7.29%", top: "0%", bottom: "0%", background: "#2e155a", overflow: "hidden" }}>
+        <div style={{ position: "absolute", left: "0%", right: "-7.29%", top: "0%", bottom: "0%", background: "#251048", overflow: "hidden" }}>
           <div style={{ position: "absolute", left: "-142.48px", top: "-215.44px", width: "2357.32px", height: "1499.02px" }}>
             <span style={{ position: "absolute", left: "0", top: "0", width: "339.04px", height: "339.04px" }}>
               <img src="/a/dfdeb49d99475525f73d3e8e27b499fe07a330ab.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-101.27%", width: "302.53%", top: "-101.27%", height: "302.53%", maxWidth: "none" }} />

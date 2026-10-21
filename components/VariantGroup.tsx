@@ -98,7 +98,9 @@ export default function VariantGroup({
 
   const onMouseOver = (e: MouseEvent<HTMLDivElement>) => {
     // стрелка карусели, которая сейчас никуда не ведёт, не подсвечивается (см. StateGroups)
-    if (!mouse || e.currentTarget.hasAttribute("data-swap-off")) return;
+    // у переключателя темы своё наведение (обводка в app/globals.css): вариант «наведение»
+    // из макета нарисован для светлой темы и в тёмной показывал не тот ползунок
+    if (!mouse || e.currentTarget.hasAttribute("data-swap-off") || e.currentTarget.hasAttribute("data-toggle")) return;
     const el = trigger(e, "hoverTo");
     if (!el) return;
     setMs(Number(el.dataset.hoverMs) || 0);

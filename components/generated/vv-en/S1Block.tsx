@@ -6,7 +6,7 @@ export default function S1Block() {
     <>
       {/* Mobile */}
       <div className="figma-page md:hidden">
-      <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "center", padding: "32px 20px 32px 20px", background: "#2e155a", overflow: "hidden" }}>
+      <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "center", padding: "32px 20px 32px 20px", background: "#251048", overflow: "hidden" }}>
         <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start", position: "relative" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`VV Foundation Token Architecture`}</p>
@@ -28,7 +28,7 @@ export default function S1Block() {
       </div>
       {/* Tablet */}
       <div className="figma-page hidden md:block xl:hidden">
-      <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "40px 40px 40px 40px", background: "#2e155a", overflow: "hidden", position: "relative" }}>
+      <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "40px 40px 40px 40px", background: "#251048", overflow: "hidden", position: "relative" }}>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "40px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`VV Foundation Token Architecture`}</p>
@@ -52,7 +52,7 @@ export default function S1Block() {
       </div>
       {/* Desktop */}
       <div className="figma-page hidden xl:block">
-      <div style={{ alignSelf: "stretch", height: "818px", flexShrink: 0, background: "#2e155a", overflow: "hidden", position: "relative" }}>
+      <div style={{ alignSelf: "stretch", height: "818px", flexShrink: 0, background: "#251048", overflow: "hidden", position: "relative" }}>
         <span style={{ position: "absolute", left: "-54.29%", right: "-32.63%", top: "-210.47%", bottom: "-48.08%", opacity: 0.140000000596046 }}>
           <svg viewBox="0 0 2392.66 2932.94" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
             <image href="/a/20d0f9366ed50d74a09e889e9c5ecbd2bdf3737a.svg" x="-0.98" y="-0.98" width="2044.89" height="1866.21" preserveAspectRatio="none" transform="matrix(-0.425714 0.906505 -0.816932 -0.579866 2392.66 1081.01)" />

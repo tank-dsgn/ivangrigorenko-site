@@ -70,3 +70,22 @@ body {
 [data-swap-off] {
   cursor: default !important;
 }
+
+/* Переключатель темы в кейсах (data-toggle ставит генератор). Фон держит сам переключатель:
+   светлый по умолчанию, тёмный задают правила состояния карусели или его собственный стиль.
+   Варианты внутри прозрачные, иначе светлый фон варианта закрывал тёмный. */
+[data-toggle] {
+  background: #cdf4dc;
+  border-radius: 999px;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.58, 1);
+}
+[data-toggle] > [data-variant] {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+@media (hover: hover) {
+  /* двойной селектор — сильнее правил наведения из макета */
+  [data-toggle][data-toggle]:hover {
+    box-shadow: 0 0 0 1px var(--toggle-ring, #039844) !important;
+  }
+}

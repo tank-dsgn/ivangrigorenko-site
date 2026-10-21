@@ -10,6 +10,8 @@ import { useEffect } from "react";
  * У стрелки в `data-swap-map` записано, куда она ведёт из каждого состояния:
  * на первом слайде «назад» не ведёт никуда. Здесь по клику меняется атрибут.
  *
+ * Переключатель темы (`data-toggle`): при наведении обводка цвета круга на ползунке.
+ *
  * Ещё здесь две доделки стрелок (2026-10-21, просьба Ивана):
  * — стрелке, которая в текущем состоянии никуда не ведёт, ставится `data-swap-off`:
  *   она не подсвечивается и курсор над ней обычный;
@@ -32,6 +34,24 @@ const targetGroup = (trigger: HTMLElement, map: Record<string, string>) => {
     if (map[g.dataset.state || ""]) return g;
   }
   return null;
+};
+
+/**
+ * Цвет обводки переключателя темы под курсором — цвет круга на ползунке:
+ * светлая тема — зелёный солнца, тёмная — тёмно-зелёный луны. Тёмная тема у всех
+ * переключателей — ползунок справа, по этому и определяем.
+ */
+const paintToggle = (toggle: HTMLElement) => {
+  const box = toggle.getBoundingClientRect();
+  const knob = [...toggle.querySelectorAll<HTMLElement>("img, svg")].find((el) => {
+    const r = el.getBoundingClientRect();
+    const panel = el.closest<HTMLElement>("[data-variant]");
+    return r.width > 0 && r.width < box.width && getComputedStyle(el).display !== "none" && (!panel || getComputedStyle(panel).opacity !== "0");
+  });
+  if (!knob) return;
+  const r = knob.getBoundingClientRect();
+  const dark = r.left + r.width / 2 > box.left + box.width / 2;
+  toggle.style.setProperty("--toggle-ring", dark ? "#047033" : "#039844");
 };
 
 /** Отметить стрелки, которые сейчас никуда не ведут */
@@ -67,13 +87,28 @@ export default function StateGroups() {
     const onOver = (e: MouseEvent) => {
       const trigger = (e.target as HTMLElement | null)?.closest<HTMLElement>("[data-swap-map]");
       if (trigger) lendHover(trigger);
+      const toggle = (e.target as HTMLElement | null)?.closest<HTMLElement>("[data-toggle]");
+      if (toggle) paintToggle(toggle);
     };
+    // После клика ползунок переехал или на его место встал переключатель из другого
+    // состояния (смена слоёв идёт до 300 мс) — перекрашиваем все, когда всё встало.
+    const paintAll = () => document.querySelectorAll<HTMLElement>("[data-toggle]").forEach(paintToggle);
+    const onClickAfter = (e: MouseEvent) => {
+      if (!(e.target as HTMLElement | null)?.closest("[data-toggle], [data-swap-to], [data-swap-map]")) return;
+      requestAnimationFrame(paintAll);
+      window.setTimeout(paintAll, 400);
+    };
+    paintAll();
+    window.addEventListener("resize", paintAll);
     markIdle();
     document.addEventListener("click", onClick);
+    document.addEventListener("click", onClickAfter);
     document.addEventListener("mouseover", onOver);
     return () => {
       document.removeEventListener("click", onClick);
+      document.removeEventListener("click", onClickAfter);
       document.removeEventListener("mouseover", onOver);
+      window.removeEventListener("resize", paintAll);
     };
   }, []);
 

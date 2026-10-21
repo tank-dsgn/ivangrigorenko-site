@@ -15,10 +15,29 @@ export function cssColor({ color, opacity = 1 }) {
   return `rgba(${r}, ${g}, ${b}, ${Number(a.toFixed(3))})`;
 }
 
-/** Первая видимая сплошная заливка */
+/**
+ * Итоговый цвет сплошных заливок. В Figma заливки лежат снизу вверх, верхняя
+ * перекрывает нижние, полупрозрачная смешивается с ними. Раньше здесь бралась
+ * первая заливка: блок «App Store» на POT (чёрная снизу, белая поверх) выходил
+ * чёрным. С 2026-10-21 заливки складываются, как в Figma: у обложки VV фиолетовая
+ * снизу и чёрная 20% поверх дают тёмно-фиолетовый.
+ */
 export function solidFill(node) {
-  const f = (node.fills || []).find((x) => x.visible !== false && x.type === "SOLID");
-  return f ? cssColor(f) : null;
+  const fills = (node.fills || []).filter((x) => x.visible !== false && x.type === "SOLID" && x.color);
+  if (!fills.length) return null;
+  if (fills.length === 1) return cssColor(fills[0]);
+  // наложение «поверх» снизу вверх, каналы 0..1
+  let r = 0, g = 0, b = 0, a = 0;
+  for (const f of fills) {
+    const fa = (f.color.a ?? 1) * (f.opacity ?? 1);
+    const na = fa + a * (1 - fa);
+    if (na <= 0) continue;
+    r = (f.color.r * fa + r * a * (1 - fa)) / na;
+    g = (f.color.g * fa + g * a * (1 - fa)) / na;
+    b = (f.color.b * fa + b * a * (1 - fa)) / na;
+    a = na;
+  }
+  return cssColor({ color: { r, g, b, a } });
 }
 
 /**

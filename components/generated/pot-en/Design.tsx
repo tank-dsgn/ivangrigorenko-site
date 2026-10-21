@@ -56,7 +56,7 @@ export default function Design() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The Pot character instantly evokes sympathy and lowers the barrier before the first action`}</p>
               </div>
             </div>
-            <div data-swap-to="674:82594" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="674:82594" data-swap-ms="0" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -77,7 +77,7 @@ export default function Design() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The Pot character instantly evokes sympathy and lowers the barrier before the first action`}</p>
               </div>
             </div>
-            <div data-swap-to="674:82595" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="674:82595" data-swap-ms="0" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -93,7 +93,7 @@ export default function Design() {
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`App Login`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
             </div>
-            <div data-swap-to="673:1429181" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429181" data-swap-ms="300" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -213,7 +213,7 @@ export default function Design() {
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`App Login`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
             </div>
-            <div data-swap-to="673:1429182" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429182" data-swap-ms="300" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -279,7 +279,7 @@ export default function Design() {
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Personal Digital Garden`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
             </div>
-            <div data-swap-to="677:161331" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161331" data-swap-ms="0" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -306,7 +306,7 @@ export default function Design() {
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Personal Digital Garden`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
             </div>
-            <div data-swap-to="677:161332" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161332" data-swap-ms="0" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -424,7 +424,7 @@ export default function Design() {
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`App Login`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
             </div>
-            <div data-swap-to="673:1429181" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429181" data-swap-ms="300" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -544,7 +544,7 @@ export default function Design() {
               <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`App Login`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
             </div>
-            <div data-swap-to="673:1429182" data-swap-ms="300" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="673:1429182" data-swap-ms="300" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -632,7 +632,7 @@ export default function Design() {
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Personal Digital Garden`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
             </div>
-            <div data-swap-to="677:161331" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161331" data-swap-ms="0" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#cdf4dc", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <div style={{ position: "absolute", left: "4px", right: "20px", top: "4px", bottom: "4px", overflow: "hidden" }}>
                 <span style={{ position: "absolute", left: "0", top: "0", bottom: "0", width: "24px" }}>
                   <img src="/a/08d3dbb8ef1cdb6fdb60f5dd6ab4a1131404aa04.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
@@ -659,7 +659,7 @@ export default function Design() {
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Personal Digital Garden`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
             </div>
-            <div data-swap-to="677:161332" data-swap-ms="0" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
+            <div data-swap-to="677:161332" data-swap-ms="0" data-toggle="" style={{ width: "48px", height: "32px", flexShrink: 0, background: "#8eba9f", borderRadius: "999px", cursor: "pointer", position: "relative" }}>
               <span style={{ position: "absolute", left: "20px", right: "4px", top: "4px", bottom: "4px" }}>
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
@@ -1219,7 +1219,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
-              <VariantGroup initial="366:858210" data-swap-to="368:883595" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <VariantGroup initial="366:858210" data-swap-to="368:883595" data-swap-ms="300" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
                 <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
                   <img
                     src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
@@ -1558,7 +1558,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
-              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-12" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+              <div data-swap-to="366:857902" data-swap-ms="300" className="hg-12" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                 <img
                   src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                   alt=""
@@ -1877,7 +1877,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
-              <VariantGroup initial="366:858210" data-swap-to="368:883720" data-swap-ms="300" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <VariantGroup initial="366:858210" data-swap-to="368:883720" data-swap-ms="300" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
                 <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
                   <img
                     src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
@@ -2172,7 +2172,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`App Login`}</p>
                 <p style={{ width: "1031px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user can get started with Apple ID or email in one click`}</p>
               </div>
-              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-13" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
+              <div data-swap-to="366:860910" data-swap-ms="300" className="hg-13" data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, background: "#8eba9f", borderRadius: "11.29px", cursor: "pointer", position: "relative" }}>
                 <img
                   src="/a/907a2f7e8c0e2800f41c751294ae82635f72a649.svg"
                   alt=""
@@ -2345,7 +2345,7 @@ export default function Design() {
                 <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Personal Digital Garden`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`The user collects plants, keeps track of them, and takes care of them`}</p>
               </div>
-              <VariantGroup initial="366:858210" className="sn-15-1" data-swap-map='{"374:12637":"374:12638","374:12638":"374:12637"}' style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+              <VariantGroup initial="366:858210" className="sn-15-1" data-swap-map='{"374:12637":"374:12638","374:12638":"374:12637"}' data-toggle="" style={{ width: "40px", height: "22px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
                 <div data-variant="366:858210" data-hover-to="366:858209" data-hover-ms="0" style={{ background: "#cdf4dc", borderRadius: "11.29px", width: "100%", height: "100%" }}>
                   <img className="sn-15-2"
                     src="/a/51a2c2503f9b37eb7c3f3a785c7ff87f2379b249.svg"
