@@ -207,12 +207,19 @@ export function createEmitter({
     if (!isRoot && ta && tb && a.size && b.size) {
       const sx = a.size.x > 0.5 ? b.size.x / a.size.x : 1;
       const sy = a.size.y > 0.5 ? b.size.y / a.size.y : 1;
-      // картинку увеличиваем масштабом из центра; блок с детьми только сдвигаем
-      const leaf = !(a.children || []).length;
-      const scaled = leaf && (!near(sx, 1, 0.002) || !near(sy, 1, 0.002));
-      const dx = scaled ? tb[0][2] + b.size.x / 2 - (ta[0][2] + a.size.x / 2) : tb[0][2] - ta[0][2];
-      const dy = scaled ? tb[1][2] + b.size.y / 2 - (ta[1][2] + a.size.y / 2) : tb[1][2] - ta[1][2];
-      if (!near(dx, 0, 0.05) || !near(dy, 0, 0.05)) to.translate = `${px(dx)} ${px(dy)}`.replace(/(^| )0( |$)/g, "$10px$2");
+      // картинку увеличиваем масштабом из центра; блок с детьми только сдвигаем.
+      // Текст не масштабируем никогда: у подписи «Sizes» на VV блок в другом слайде
+      // в 15 раз шире, и буквы растягивались вслед за ним
+      // и не двигаем по левому краю: блок стал шире, а текст в нём по центру остался на месте
+      const leaf = !(a.children || []).length && a.type !== "TEXT";
+      const resized = !(a.children || []).length && (!near(sx, 1, 0.002) || !near(sy, 1, 0.002));
+      const scaled = leaf && resized;
+      const dx = resized ? tb[0][2] + b.size.x / 2 - (ta[0][2] + a.size.x / 2) : tb[0][2] - ta[0][2];
+      const dy = resized ? tb[1][2] + b.size.y / 2 - (ta[1][2] + a.size.y / 2) : tb[1][2] - ta[1][2];
+      // текст сменил размер блока (подпись то по ширине текста, то во всю ширину) — это
+      // перестройка раскладки, а не движение: по центру он стоит на месте, не сдвигаем
+      const textReflow = a.type === "TEXT" && resized;
+      if (!textReflow && (!near(dx, 0, 0.05) || !near(dy, 0, 0.05))) to.translate = `${px(dx)} ${px(dy)}`.replace(/(^| )0( |$)/g, "$10px$2");
       if (scaled) to.scale = `${Math.round(sx * 1e4) / 1e4} ${Math.round(sy * 1e4) / 1e4}`;
     }
     const pa = { ...frameStyle(a, assets, assetMap), ...(a.type === "TEXT" ? textStyle(a, fonts) : {}) };
@@ -1143,7 +1150,7 @@ export function createEmitter({
       else if (node.textAutoResize === "WIDTH_AND_HEIGHT") style.whiteSpace = multiline ? "pre" : "nowrap";
       else if (multiline) style.whiteSpace = "pre-line";
       // своя правка оформления текста поверх макета (overrides.json → textStyles) — последней
-      const own = textStyles.find((r) => (node.characters || "").startsWith(r.startsWith));
+      const own = textStyles.find((r) => (r.exact != null ? node.characters === r.exact : (node.characters || "").startsWith(r.startsWith)));
       if (own) Object.assign(style, own.style);
       const tag = list ? "div" : tagFor(node);
       if (link) {

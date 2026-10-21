@@ -216,6 +216,18 @@
         "whiteSpace": "pre"
       },
       "note": "шире блока на 1px — переносилась «N»; перевод строки из макета сохраняется"
+    },
+    {
+      "pages": [
+        "vv-ru",
+        "vv-en"
+      ],
+      "exact": "Sizes",
+      "style": {
+        "alignSelf": "stretch",
+        "whiteSpace": "normal"
+      },
+      "note": "в первом слайде макета подпись по ширине текста и слева, в остальных — по центру; везде по центру, как «Colors» и «Typography»"
     }
   ],
   "frameStyles": [

@@ -8,26 +8,23 @@ export default function Tokens() {
     <>
       <style>{`
         .sn-9-1 { transition: translate 300ms cubic-bezier(0, 0, 1, 1); }
-        .sn-9-2 { transition: translate 300ms cubic-bezier(0, 0, 1, 1), scale 300ms cubic-bezier(0, 0, 1, 1); }
         .sg-9[data-state="564:81267"] .sn-9-1 { translate: -1624px 0px !important; }
         .sg-9[data-state="564:81268"] .sn-9-1 { translate: -3248px 0px !important; }
-        .sg-9[data-state="564:81267"] .sn-9-2 { translate: 478.5px 0px !important; scale: 15.2836 1 !important; }
-        .sg-9[data-state="564:81268"] .sn-9-2 { translate: 478.5px 0px !important; scale: 15.2836 1 !important; }
-        .sg-9[data-state="564:81267"] .sn-9-4 { display: none !important; }
-        .sg-9[data-state="564:81268"] .sn-9-4 { display: none !important; }
-        .sg-9[data-state="564:81269"] .sn-9-5 { display: none !important; }
-        .sg-9[data-state="564:81268"] .sn-9-7 { display: none !important; }
-        .sg-9[data-state="564:81269"] .sn-9-8 { display: none !important; }
+        .sg-9[data-state="564:81267"] .sn-9-3 { display: none !important; }
+        .sg-9[data-state="564:81268"] .sn-9-3 { display: none !important; }
+        .sg-9[data-state="564:81269"] .sn-9-4 { display: none !important; }
+        .sg-9[data-state="564:81268"] .sn-9-6 { display: none !important; }
+        .sg-9[data-state="564:81269"] .sn-9-7 { display: none !important; }
+        .sg-9[data-state="564:81267"] .sn-9-7 { display: none !important; }
         .sg-9[data-state="564:81267"] .sn-9-8 { display: none !important; }
-        .sg-9[data-state="564:81267"] .sn-9-9 { display: none !important; }
-        .sg-9[data-state="564:81268"] .sn-9-9 { display: none !important; }
-        .sg-9[data-state="564:81269"] .sn-9-10 { display: none !important; }
-        .sg-9[data-state="564:81267"] .sn-9-11 { display: none !important; }
-        .sg-9[data-state="564:81269"] .sn-9-12 { display: none !important; }
+        .sg-9[data-state="564:81268"] .sn-9-8 { display: none !important; }
+        .sg-9[data-state="564:81269"] .sn-9-9 { display: none !important; }
+        .sg-9[data-state="564:81267"] .sn-9-10 { display: none !important; }
+        .sg-9[data-state="564:81269"] .sn-9-11 { display: none !important; }
+        .sg-9[data-state="564:81268"] .sn-9-11 { display: none !important; }
         .sg-9[data-state="564:81268"] .sn-9-12 { display: none !important; }
-        .sg-9[data-state="564:81268"] .sn-9-13 { display: none !important; }
-        .sg-9[data-state="564:81269"] .sn-9-14 { display: none !important; }
-        .sg-9[data-state="564:81267"] .sn-9-14 { display: none !important; }
+        .sg-9[data-state="564:81269"] .sn-9-13 { display: none !important; }
+        .sg-9[data-state="564:81267"] .sn-9-13 { display: none !important; }
         @media (prefers-reduced-motion: reduce) { .sg-9, .sg-9 * { transition: none !important; } }
       `}</style>
       {/* Mobile */}
@@ -181,7 +178,7 @@ export default function Tokens() {
               </div>
             </div>
             <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
-              <p className="sn-9-2" style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "nowrap" }}>{`размеры`}</p>
+              <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "nowrap" }}>{`размеры`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                 <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
                   <div style={{ display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
@@ -202,24 +199,24 @@ export default function Tokens() {
           </div>
         </div>
         <div style={{ position: "absolute", left: "calc(50% + -600px)", top: "calc(50% + 105.5px)", transform: "translateY(-50%)", width: "1200px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-          <div className="sn-9-3" data-swap-map='{"564:81267":"564:81269","564:81268":"564:81267"}' style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
-            <span className="sn-9-4" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+          <div className="sn-9-2" data-swap-map='{"564:81267":"564:81269","564:81268":"564:81267"}' style={{ width: "40px", height: "40px", flexShrink: 0, overflow: "hidden", transform: "rotate(-180deg)", cursor: "pointer", position: "relative" }}>
+            <span className="sn-9-3" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
               <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
                 <image href="/a/3c7201a4d5d6f702fa190821eceaeeb842cd2e47.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
               </svg>
             </span>
-            <span className="sn-9-5" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
+            <span className="sn-9-4" style={{ position: "absolute", left: "8.34%", right: "8.33%", top: "8.33%", bottom: "8.33%" }}>
               <svg viewBox="0 0 33.33 33.33" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>
                 <image href="/a/b594af368bbe93b4aee7e263b5d5769bec927ddf.svg" x="-1" y="-1" width="35.33" height="35.33" preserveAspectRatio="none" transform="matrix(-1 0 0 -1 33.33 33.33)" />
               </svg>
             </span>
           </div>
-          <VariantGroup initial="360:745917" className="sn-9-6" data-swap-map='{"564:81269":"564:81267","564:81267":"564:81268"}' style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
+          <VariantGroup initial="360:745917" className="sn-9-5" data-swap-map='{"564:81269":"564:81267","564:81267":"564:81268"}' style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative", cursor: "pointer" }}>
             <div data-variant="360:745917" data-hover-to="360:745916" data-hover-ms="0" style={{ overflow: "hidden", width: "100%", height: "100%" }}>
-              <span className="sn-9-7" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+              <span className="sn-9-6" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
                 <img src="/a/753dab9fb2c6b659a8fbc56c1e8edb881dbfd60a.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
               </span>
-              <span className="sn-9-8" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
+              <span className="sn-9-7" style={{ position: "absolute", left: "8.33%", right: "8.34%", top: "8.33%", bottom: "8.33%" }}>
                 <img src="/a/a88c73880f5f9a7c3bc773f74b99782abb37d69b.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-3%", width: "106%", top: "-3%", height: "106%", maxWidth: "none" }} />
               </span>
             </div>
@@ -231,7 +228,7 @@ export default function Tokens() {
           </VariantGroup>
         </div>
         <div style={{ position: "relative", display: "flex", flexDirection: "row", gap: "4px", alignItems: "center" }}>
-          <img className="sn-9-9"
+          <img className="sn-9-8"
             src="/a/711349a7261662e52e8a4a937c9423a5dd398bdd.svg"
             alt=""
             aria-hidden="true"
@@ -239,7 +236,7 @@ export default function Tokens() {
             decoding="async"
             style={{ width: "8px", height: "8px", flexShrink: 0 }}
           />
-          <img className="sn-9-10"
+          <img className="sn-9-9"
             src="/a/20d47913e19353ad859adf25e696c3247fe68d26.svg"
             alt=""
             aria-hidden="true"
@@ -247,7 +244,7 @@ export default function Tokens() {
             decoding="async"
             style={{ width: "8px", height: "8px", flexShrink: 0 }}
           />
-          <img className="sn-9-11"
+          <img className="sn-9-10"
             src="/a/b2d9d1e3af1dea7763e0f5ea3f7329520232153c.svg"
             alt=""
             aria-hidden="true"
@@ -255,7 +252,7 @@ export default function Tokens() {
             decoding="async"
             style={{ width: "8px", height: "8px", flexShrink: 0 }}
           />
-          <img className="sn-9-12"
+          <img className="sn-9-11"
             src="/a/711349a7261662e52e8a4a937c9423a5dd398bdd.svg"
             alt=""
             aria-hidden="true"
@@ -263,7 +260,7 @@ export default function Tokens() {
             decoding="async"
             style={{ width: "8px", height: "8px", flexShrink: 0 }}
           />
-          <img className="sn-9-13"
+          <img className="sn-9-12"
             src="/a/b2d9d1e3af1dea7763e0f5ea3f7329520232153c.svg"
             alt=""
             aria-hidden="true"
@@ -271,7 +268,7 @@ export default function Tokens() {
             decoding="async"
             style={{ width: "8px", height: "8px", flexShrink: 0 }}
           />
-          <img className="sn-9-14"
+          <img className="sn-9-13"
             src="/a/711349a7261662e52e8a4a937c9423a5dd398bdd.svg"
             alt=""
             aria-hidden="true"
