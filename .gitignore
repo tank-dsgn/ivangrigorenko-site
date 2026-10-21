@@ -14,6 +14,8 @@ tools/verify/.snap
 # записи экрана с правками — в репозиторий не идут
 *.mov
 *.mp4
+# а видео самого сайта — нужно
+!public/video/*.mp4
 
 # сборка Storybook
 storybook-static
