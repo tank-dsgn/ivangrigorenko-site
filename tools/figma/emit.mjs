@@ -1137,14 +1137,14 @@ export function createEmitter({
 
     if (node.type === "TEXT") {
       Object.assign(style, textStyle(node, fonts));
-      // своя правка оформления текста поверх макета (overrides.json → textStyles)
-      const own = textStyles.find((r) => (node.characters || "").startsWith(r.startsWith));
-      if (own) Object.assign(style, own.style);
       const { body, list, multiline } = textBody(node, pad);
       // текст с авто-шириной в Figma не переносится
       if (style.textOverflow) style.whiteSpace = "nowrap";
       else if (node.textAutoResize === "WIDTH_AND_HEIGHT") style.whiteSpace = multiline ? "pre" : "nowrap";
       else if (multiline) style.whiteSpace = "pre-line";
+      // своя правка оформления текста поверх макета (overrides.json → textStyles) — последней
+      const own = textStyles.find((r) => (node.characters || "").startsWith(r.startsWith));
+      if (own) Object.assign(style, own.style);
       const tag = list ? "div" : tagFor(node);
       if (link) {
         // текст-ссылка: ссылка внутри, чтобы тег текста (заголовок, абзац) сохранился

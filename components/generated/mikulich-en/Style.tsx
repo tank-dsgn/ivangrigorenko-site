@@ -41,10 +41,10 @@ export default function Style() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Typography`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "49px", lineHeight: "40.62px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.98px", color: "#0f172a" }}>{`Cinzel`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "49px", lineHeight: "40.62px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.98px", color: "#0f172a", whiteSpace: "pre" }}>{`Cinzel`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start", overflow: "hidden" }}>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "21.9px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.45px", textTransform: "uppercase", color: "#334155" }}>{`abcdefghiJklmnopqrstuvwxyz`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "21.9px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.45px", textTransform: "uppercase", color: "#334155", whiteSpace: "pre" }}>{`abcdefghiJklmnopqrstuvwxyz`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "76.25%", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.45px", textTransform: "uppercase", color: "#334155" }}>{`0123456789`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center", alignItems: "flex-start" }}>
@@ -92,10 +92,10 @@ export default function Style() {
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
               <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start", overflow: "hidden" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Typography`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "44px", lineHeight: "36.48px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.88px", color: "#0f172a" }}>{`Cinzel`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "44px", lineHeight: "36.48px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.88px", color: "#0f172a", whiteSpace: "pre" }}>{`Cinzel`}</p>
               </div>
               <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start", overflow: "hidden" }}>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "21.9px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.45px", textTransform: "uppercase", color: "#334155" }}>{`abcdefghiJklmnopqrstuvwxyz`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "21.9px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.45px", textTransform: "uppercase", color: "#334155", whiteSpace: "pre" }}>{`abcdefghiJklmnopqrstuvwxyz`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "15px", lineHeight: "76.25%", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.45px", textTransform: "uppercase", color: "#334155" }}>{`0123456789`}</p>
               </div>
             </div>
@@ -139,10 +139,10 @@ export default function Style() {
           <div style={{ width: "1024px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ width: "230px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start", overflow: "hidden" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Typography`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "62.65px", lineHeight: "51.94px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "1.25px", color: "#06181e" }}>{`Cinzel`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "62.65px", lineHeight: "51.94px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "1.25px", color: "#06181e", whiteSpace: "pre" }}>{`Cinzel`}</p>
             </div>
             <div style={{ width: "187px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start", overflow: "hidden" }}>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "19.44px", lineHeight: "28.39px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.58px", textTransform: "uppercase", color: "#06181e", whiteSpace: "pre-line" }}>{`abcdefghiJklmn`}{"\n"}{`opqrstuvwxyz`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "19.44px", lineHeight: "28.39px", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.58px", textTransform: "uppercase", color: "#06181e", whiteSpace: "pre" }}>{`abcdefghiJklmn`}{"\n"}{`opqrstuvwxyz`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "19.44px", lineHeight: "76.25%", fontWeight: 400, fontFamily: "\"Cinzel\", var(--font-open-sans), sans-serif", letterSpacing: "0.58px", textTransform: "uppercase", color: "#06181e" }}>{`0123456789`}</p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", justifyContent: "center", alignItems: "flex-start" }}>

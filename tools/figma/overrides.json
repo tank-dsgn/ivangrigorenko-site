@@ -194,6 +194,28 @@
       "style": {
         "color": "#ffffff"
       }
+    },
+    {
+      "pages": [
+        "mikulich-ru",
+        "mikulich-en"
+      ],
+      "startsWith": "Cinzel",
+      "style": {
+        "whiteSpace": "pre"
+      },
+      "note": "шире блока на 1px — переносилась «L»"
+    },
+    {
+      "pages": [
+        "mikulich-ru",
+        "mikulich-en"
+      ],
+      "startsWith": "abcdefghi",
+      "style": {
+        "whiteSpace": "pre"
+      },
+      "note": "шире блока на 1px — переносилась «N»; перевод строки из макета сохраняется"
     }
   ],
   "frameStyles": [
