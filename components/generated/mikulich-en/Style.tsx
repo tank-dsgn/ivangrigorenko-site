@@ -17,21 +17,21 @@ export default function Style() {
               <div style={{ alignSelf: "stretch", height: "189px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", overflow: "hidden" }}>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#F0F5FA`}</p>
-                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, background: "#f5f6f7", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
+                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#f5f6f7, #f5f6f7), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
                 </div>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#F0F5FA`}</p>
-                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, background: "#f0f5fa", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
+                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#f0f5fa, #f0f5fa), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "189px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", overflow: "hidden" }}>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#7893A8`}</p>
-                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, background: "#7893a8", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
+                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#7893a8, #7893a8), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
                 </div>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#06181E`}</p>
-                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, background: "#06181e", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
+                  <div style={{ alignSelf: "stretch", height: "159px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#06181e, #06181e), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "12px" }} />
                 </div>
               </div>
             </div>
@@ -67,21 +67,21 @@ export default function Style() {
               <div style={{ alignSelf: "stretch", height: "230px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start", overflow: "hidden" }}>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#F0F5FA`}</p>
-                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, background: "#f5f6f7", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
+                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#f5f6f7, #f5f6f7), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
                 </div>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#F0F5FA`}</p>
-                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, background: "#f0f5fa", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
+                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#f0f5fa, #f0f5fa), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", height: "230px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start", overflow: "hidden" }}>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#7893A8`}</p>
-                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, background: "#7893a8", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
+                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#7893a8, #7893a8), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
                 </div>
                 <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#06181E`}</p>
-                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, background: "#06181e", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
+                  <div style={{ alignSelf: "stretch", height: "200px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#06181e, #06181e), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "16px" }} />
                 </div>
               </div>
             </div>
@@ -118,11 +118,11 @@ export default function Style() {
             <div style={{ width: "1024px", height: "272px", flexShrink: 0, display: "flex", flexDirection: "row", gap: "40px", alignItems: "center" }}>
               <div style={{ flex: "1 0 0px", minWidth: "1px", height: "271.06px", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#F0F5FA`}</p>
-                <div style={{ alignSelf: "stretch", height: "237.06px", flexShrink: 0, background: "#f5f6f7", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "24px" }} />
+                <div style={{ alignSelf: "stretch", height: "237.06px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#f5f6f7, #f5f6f7), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "24px" }} />
               </div>
               <div style={{ flex: "1 0 0px", minWidth: "1px", height: "271.06px", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#F0F5FA`}</p>
-                <div style={{ alignSelf: "stretch", height: "237.06px", flexShrink: 0, background: "#f0f5fa", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "24px" }} />
+                <div style={{ alignSelf: "stretch", height: "237.06px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "linear-gradient(#f0f5fa, #f0f5fa), url(/a/2f0de3736cd1306d2c2ffc75fd808843b4fc5cb6.png)", borderRadius: "24px" }} />
               </div>
               <div style={{ flex: "1 0 0px", minWidth: "1px", height: "271.06px", display: "flex", flexDirection: "column", gap: "14px", alignItems: "center" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`#7893A8`}</p>

@@ -212,19 +212,28 @@ export function frameStyle(node, assets, assetMap = {}) {
   const [pt, pr, pb, pl] = [node.paddingTop, node.paddingRight, node.paddingBottom, node.paddingLeft];
   if (pt || pr || pb || pl) s.padding = `${px(pt || 0)} ${px(pr || 0)} ${px(pb || 0)} ${px(pl || 0)}`;
 
+  // Заливки в Figma лежат снизу вверх. Сплошные под картинкой — цвет фона; сплошные
+  // поверх картинки (затемнение чертежа на Ostral) в CSS ушли бы под неё, поэтому они
+  // становятся отдельным слоем над картинкой.
+  const visible = (node.fills || []).filter((f) => f.visible !== false);
+  const imgAt = visible.findIndex((f) => f.type === "IMAGE");
+  const img = imageFill(node, assets, assetMap);
+  const overImage = img && !img.crop && imgAt !== -1 ? visible.slice(imgAt + 1).filter((f) => f.type === "SOLID") : [];
+
   // У TEXT заливка описывает цвет букв — её ставит textStyle, не фон
-  const bg = node.type === "TEXT" ? null : solidFill(node);
+  const bg = node.type === "TEXT" ? null : solidFill({ fills: imgAt !== -1 && img && !img.crop ? visible.slice(0, imgAt) : visible });
   if (bg) s.background = bg;
 
-  // Слои фона: картинка снизу, градиенты поверх — как в Figma
+  // Слои фона: картинка снизу, градиенты и заливки поверх неё — как в Figma
   const layers = [];
-  const img = imageFill(node, assets, assetMap);
   if (img && !img.crop) { s.backgroundSize = img.fit; s.backgroundPosition = "center"; s.backgroundRepeat = "no-repeat"; }
-  for (const f of node.fills || []) {
-    if (f.visible === false) continue;
+  for (const f of visible) {
     if (f.type === "GRADIENT_LINEAR") {
       const g = linearGradient(f);
       if (g) layers.unshift(g);
+    } else if (overImage.includes(f)) {
+      const c = cssColor(f);
+      layers.unshift(`linear-gradient(${c}, ${c})`);
     }
   }
   if (img && !img.crop) layers.push(`url(${img.src})`);
