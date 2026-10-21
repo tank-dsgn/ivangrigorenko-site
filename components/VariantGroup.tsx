@@ -97,7 +97,8 @@ export default function VariantGroup({
   };
 
   const onMouseOver = (e: MouseEvent<HTMLDivElement>) => {
-    if (!mouse) return;
+    // стрелка карусели, которая сейчас никуда не ведёт, не подсвечивается (см. StateGroups)
+    if (!mouse || e.currentTarget.hasAttribute("data-swap-off")) return;
     const el = trigger(e, "hoverTo");
     if (!el) return;
     setMs(Number(el.dataset.hoverMs) || 0);

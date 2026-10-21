@@ -57,3 +57,16 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Стрелки каруселей (components/StateGroups.tsx): слой «наведение» у левой стрелки
+   и стрелка, которая в текущем состоянии никуда не ведёт */
+.swap-hover-layer {
+  opacity: 0;
+  pointer-events: none;
+}
+[data-swap-map]:not([data-swap-off]):hover > .swap-hover-layer {
+  opacity: 1;
+}
+[data-swap-off] {
+  cursor: default !important;
+}
