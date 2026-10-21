@@ -91,7 +91,8 @@ export default function VariantGroup({
   const onClick = (e: MouseEvent<HTMLDivElement>) => {
     const el = trigger(e, "swapTo");
     if (!el) return;
-    setMs(Number(el.dataset.swapMs) || 0);
+    // переключатель темы меняет экраны мгновенно, без наплыва
+    setMs(el.hasAttribute("data-toggle") ? 0 : Number(el.dataset.swapMs) || 0);
     setActive(el.dataset.swapTo!);
     setHover(null);
   };

@@ -89,3 +89,9 @@ body {
     box-shadow: 0 0 0 1px var(--toggle-ring, #039844) !important;
   }
 }
+
+/* смена темы в карусели — без анимации (components/StateGroups.tsx ставит data-instant на кадр) */
+[data-instant],
+[data-instant] * {
+  transition: none !important;
+}

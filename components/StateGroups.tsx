@@ -81,6 +81,12 @@ export default function StateGroups() {
       const map = parse(trigger);
       const g = targetGroup(trigger, map);
       if (!g) return;
+      // Смена темы — мгновенно (просьба Ивана): движение остаётся только у листания.
+      // На время переключения у блока снимаются переходы.
+      if (trigger.hasAttribute("data-toggle")) {
+        g.setAttribute("data-instant", "");
+        requestAnimationFrame(() => requestAnimationFrame(() => g.removeAttribute("data-instant")));
+      }
       g.dataset.state = map[g.dataset.state || ""];
       markIdle();
     };
