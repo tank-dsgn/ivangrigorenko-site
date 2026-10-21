@@ -324,10 +324,12 @@ export function createEmitter({
   function markAltTrees(nodes, ids, ctx) {
     const a = nodes[0];
     const t = (n) => n.relativeTransform || [[1, 0, 0], [0, 1, 0]];
-    const same = (n) =>
-      Math.abs((n.size?.x ?? 0) - (a.size?.x ?? 0)) < 1 && Math.abs((n.size?.y ?? 0) - (a.size?.y ?? 0)) < 1 &&
-      Math.abs(t(n)[0][2] - t(a)[0][2]) < 1 && Math.abs(t(n)[1][2] - t(a)[1][2]) < 1;
-    if (!nodes.every(same)) return false;
+    const near = (n) =>
+      Math.abs((n.size?.x ?? 0) - (a.size?.x ?? 0)) < 64 && Math.abs((n.size?.y ?? 0) - (a.size?.y ?? 0)) < 64 &&
+      Math.abs(t(n)[0][2] - t(a)[0][2]) < 32 && Math.abs(t(n)[1][2] - t(a)[1][2]) < 32;
+    // растр и фрейм одного слоя разного размера (у растра поля под тень) — это нормально:
+    // каждый вариант выводится со своей геометрией, место должно совпадать лишь примерно
+    if (!nodes.every(near)) return false;
     const bySig = new Map();
     nodes.forEach((n, i) => {
       const k = shapeOf(n);
@@ -454,9 +456,8 @@ export function createEmitter({
       if (sorted.every(Boolean)) n.children = [...sorted, ...(n.children || []).filter((c) => c.visible === false)];
     }
     // Растрированные слои. В строке (один и тот же слой во всех состояниях) где-то картинка,
-    // где-то фрейм. Берём один вид на всю строку: картинку, если она есть у каждой темы
-    // (это то, что Figma Sites и показывает), иначе фрейм. Донор — состояние той же темы:
-    // тема — свойство варианта, чьё значение встречается в именах слоёв («Content Light»).
+    // где-то фрейм. Тема — свойство варианта, чьё значение встречается в именах слоёв
+    // («Content Light»): донор растра берётся только из состояния той же темы.
     const lists = nodes.map(kids);
     if (lists.some((l) => l.length !== lists[0].length)) return;
     lists[0].forEach((_, i) => {
@@ -464,15 +465,16 @@ export function createEmitter({
       // растр в выгрузке — узел типа IMAGE; разные значки (SVG) — это разное содержимое, их не трогаем
       if (row.every((c) => c.type === row[0].type) || row.some((c) => c.name !== row[0].name)) return;
       if (!row.some((c) => c.type === "IMAGE") || row.some((c) => !(c.children || []).length && c.type !== "IMAGE")) return;
-      const flat = (c) => !(c.children || []).length;
+      // Внутри каждой темы — один вид: растр, если он есть хоть у одного состояния этой темы
+      // (так Figma Sites эту тему и показывает: в тёмной теме значки на растре белые, а во
+      // фрейме из выгрузки — чёрные), иначе фрейм. Между темами вид может различаться —
+      // такие слои дальше выводятся вариантами (markAltTrees).
       const kin = (k, j) => content.every((key) => props[k][key] === props[j][key]);
-      const pick = (k, wantFlat) => row.findIndex((d, j) => kin(k, j) && flat(d) === wantFlat && d.type === (wantFlat ? row.find(flat)?.type : row.find((x) => !flat(x))?.type));
-      const wantFlat = row.every((_, k) => pick(k, true) !== -1);
-      if (!wantFlat && !row.every((_, k) => pick(k, false) !== -1)) return;
       row.forEach((c, k) => {
-        if (flat(c) === wantFlat) return;
-        const donor = row[pick(k, wantFlat)];
-        const copy = structuredClone(donor);
+        if (c.type === "IMAGE") return;
+        const j = row.findIndex((d, jj) => jj !== k && kin(k, jj) && d.type === "IMAGE");
+        if (j === -1) return;
+        const copy = structuredClone(row[j]);
         copy.relativeTransform = c.relativeTransform;
         const all = nodes[k].children;
         all[all.indexOf(c)] = copy;
