@@ -22,7 +22,7 @@ export default function Button({
   newTab?: boolean;
   /** ширина: по тексту (по умолчанию), "fill" — на всю ширину блока, либо точное значение ("335px") */
   width?: string;
-  /** подпись занимает всю кнопку и стоит слева — так в макете у «Посетить сайт» на узких экранах */
+  /** подпись занимает всю кнопку — так в макете у «Посетить сайт» на узких экранах; стоит по центру (в макете слева, поправлено по просьбе Ивана 2026-10-22) */
   wideLabel?: boolean;
 }) {
   const wide = Boolean(width);
@@ -33,7 +33,7 @@ export default function Button({
       className={`ease-figma flex h-10 flex-row items-center justify-center gap-2 rounded-full bg-white px-4 py-2 shadow-[inset_0_0_0_1px_#94a3b8] transition-shadow duration-300 group-hover:shadow-[inset_0_0_0_1px_#4f46e5] group-focus-visible:shadow-[inset_0_0_0_1px_#4f46e5] ${wide ? "min-w-px flex-[1_0_0px]" : ""}`}
     >
       <p
-        className={`text-muted ease-figma group-hover:text-accent group-focus-visible:text-accent text-[16px] leading-6 font-semibold transition-colors duration-300 ${wideLabel ? "min-w-px flex-[1_0_0px]" : "whitespace-nowrap"}`}
+        className={`text-muted ease-figma group-hover:text-accent group-focus-visible:text-accent text-[16px] leading-6 font-semibold transition-colors duration-300 ${wideLabel ? "min-w-px flex-[1_0_0px] text-center" : "whitespace-nowrap"}`}
       >
         {label}
       </p>
