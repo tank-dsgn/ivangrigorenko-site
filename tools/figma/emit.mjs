@@ -1167,14 +1167,17 @@ export function createEmitter({
       // своя правка оформления текста поверх макета (overrides.json → textStyles) — последней
       const own = textStyles.find((r) => (r.exact != null ? node.characters === r.exact : (node.characters || "").startsWith(r.startsWith)));
       if (own) Object.assign(style, own.style);
+      // перенос строки из макета только на телефоне: с 480px мобильная вёрстка шире
+      // макета (до 800px — планшет), и заголовок помещается в одну строку
+      const shown = own?.phoneBreaks ? body.replaceAll('{"\\n"}', '<br className="sm:hidden" />') : body;
       const tag = list ? "div" : tagFor(node);
       if (link) {
         // текст-ссылка: ссылка внутри, чтобы тег текста (заголовок, абзац) сохранился
         const s = styleLiteral(style);
-        return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}><${linkTag} ${linkAttrs}>${body}</${linkTag}></${tag}>\n`;
+        return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}><${linkTag} ${linkAttrs}>${shown}</${linkTag}></${tag}>\n`;
       }
       const s = styleLiteral(style);
-      return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>${body}</${tag}>\n`;
+      return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>${shown}</${tag}>\n`;
     }
 
     // Кадрированная заливка: картинку кладём отдельным тегом внутрь обрезающего блока,

@@ -9,7 +9,7 @@ export default function Figma() {
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", alignItems: "center", padding: "32px 20px 32px 20px", background: "#ffffff", overflow: "hidden", position: "relative" }}>
         <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#06181e", whiteSpace: "pre-line" }}>{`Структура `}{"\n"}{`дизайн-системы`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#06181e", whiteSpace: "pre-line" }}>{`Структура `}<br className="sm:hidden" />{`дизайн-системы`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#475569" }}>{`Это единое рабочее пространство: токены, стили, компоненты и документация структурированы по уровням и связаны между собой для удобной навигации и поддержки`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "12px 12px 12px 12px", background: "#f1f0f9", borderRadius: "12px" }}>
