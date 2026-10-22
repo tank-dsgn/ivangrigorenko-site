@@ -20,6 +20,8 @@ const label = { ru: "Связаться", en: "Contact me" } as const;
  * стягивается туда, где он вышел. С клавиатуры заливка идёт из центра.
  * Вариант «A — Fill from cursor», выбран Иваном 2026-10-06 (до него были бегунок по обводке,
  * бегунок по кольцу, переливающийся ореол и кольцо, которое рисуется один раз).
+ * На телефоне и планшете (уже 1280px) наведения нет — кнопка сразу залита, как на десктопе
+ * под курсором: так она заметнее (просьба Ивана 2026-10-22).
  * Положение курсора нужно знать в браузере, поэтому компонент клиентский.
  */
 export default function ContactButton({
@@ -55,12 +57,12 @@ export default function ContactButton({
       href={mail ? mailtoHref(lang) : "#contacts"}
       onMouseEnter={track}
       onMouseLeave={track}
-      className={`group text-muted ease-figma relative items-center justify-center overflow-hidden rounded-full bg-white font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8] transition-colors duration-300 hover:text-white focus-visible:text-white ${size} ${full ? "flex w-full" : "inline-flex"}`}
+      className={`group text-muted ease-figma relative items-center justify-center overflow-hidden rounded-full bg-white font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8] transition-colors duration-300 hover:text-white focus-visible:text-white max-xl:text-white ${size} ${full ? "flex w-full" : "inline-flex"}`}
     >
       {/* заливка: круг с центром в точке курсора, вырастает от нуля и накрывает всю кнопку */}
       <span
         aria-hidden="true"
-        className="bg-accent ease-figma pointer-events-none absolute aspect-square w-[250%] -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full transition-transform duration-500 group-hover:scale-100 group-focus-visible:scale-100"
+        className="bg-accent ease-figma pointer-events-none absolute aspect-square w-[250%] -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full transition-transform duration-500 group-hover:scale-100 group-focus-visible:scale-100 max-xl:scale-100"
         style={{ left: "var(--x, 50%)", top: "var(--y, 50%)" }}
       />
       <span className="relative">{label[lang]}</span>
