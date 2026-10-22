@@ -23,6 +23,8 @@ try {
   for (const st of JSON.parse(process.env.STEPS || "[]")) {
     if (st.scroll != null) await send("Runtime.evaluate", { expression: `document.documentElement.style.scrollBehavior="auto";scrollTo(0,${st.scroll})` });
     if (st.move) await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.move[0], y: st.move[1], pointerType: "mouse" });
+    // down — нажать и не отпускать (проверить :active)
+    if (st.down) { await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.down[0], y: st.down[1] }); await send("Input.dispatchMouseEvent", { type: "mousePressed", x: st.down[0], y: st.down[1], button: "left", clickCount: 1 }); }
     if (st.click) {
       await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.click[0], y: st.click[1], pointerType: "mouse" });
       await send("Input.dispatchMouseEvent", { type: "mousePressed", x: st.click[0], y: st.click[1], button: "left", clickCount: 1 });

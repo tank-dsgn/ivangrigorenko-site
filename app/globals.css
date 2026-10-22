@@ -122,3 +122,22 @@ body {
 .lightbox-arrow:focus-visible {
   opacity: 1;
 }
+
+/*
+ * Нажатие на телефоне и планшете (уже 1280px, как у «Связаться»): кнопка, ссылка, стрелка
+ * карусели, переключатель темы чуть проседают, пока на них держат палец (просьба Ивана 2026-10-22).
+ * Свойство scale складывается с transform, поэтому повёрнутые стрелки и сдвинутые блоки не ломаются.
+ * Переходы перечислены вместе с цветом, тенью и прозрачностью — их у ссылок и кнопок уже анимируют.
+ * Карточки проектов большие — проседают меньше (.press-soft). Блоки с увеличением по клику не проседают.
+ */
+@media (max-width: 1279.98px) and (prefers-reduced-motion: no-preference) {
+  :is(a, button, [data-swap-map], [data-swap-to], [data-toggle]) {
+    transition: color 200ms var(--ease-figma), opacity 150ms ease-out, box-shadow 300ms var(--ease-figma), scale 150ms ease-out;
+  }
+  :is(a, button, [data-swap-map], [data-swap-to], [data-toggle]):active {
+    scale: 0.96;
+  }
+  .press-soft:active {
+    scale: 0.985;
+  }
+}

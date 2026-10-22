@@ -35,7 +35,7 @@ export default function RelatedCard({
   if (size === "desktop") {
     return (
       // сверху 6px запаса: туда окно поднимается при наведении
-      <Link href={href} className="group flex h-[321px] w-[304px] shrink-0 flex-col items-start gap-3 pt-1.5">
+      <Link href={href} className="press-soft group flex h-[321px] w-[304px] shrink-0 flex-col items-start gap-3 pt-1.5">
         <div
           className={`${window_} ease-figma group-hover:shadow-card-hover h-[283px] w-[304px] rounded-3xl transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5`}
           style={frame}
@@ -52,7 +52,7 @@ export default function RelatedCard({
   }
 
   return (
-    <Link href={href} className="flex w-[300px] shrink-0 flex-col items-start gap-2">
+    <Link href={href} className="press-soft flex w-[300px] shrink-0 flex-col items-start gap-2">
       <div
         className={`${window_} h-[280px] self-stretch ${size === "tablet" ? "rounded-2xl" : "rounded-xl"}`}
         style={frame}

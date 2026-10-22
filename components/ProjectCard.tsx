@@ -50,7 +50,7 @@ export default function ProjectCard({
     return (
       <Link
         href={href}
-        className="shadow-card flex flex-col items-start gap-4 self-stretch overflow-hidden rounded-xl bg-white pb-10"
+        className="press-soft shadow-card flex flex-col items-start gap-4 self-stretch overflow-hidden rounded-xl bg-white pb-10"
       >
         <div className="relative self-stretch overflow-hidden" style={image.frame}>
           {picture}
@@ -70,7 +70,7 @@ export default function ProjectCard({
     return (
       <Link
         href={href}
-        className="shadow-card flex h-[320px] w-[720px] shrink-0 flex-row items-start gap-6 overflow-hidden rounded-2xl bg-white pr-6"
+        className="press-soft shadow-card flex h-[320px] w-[720px] shrink-0 flex-row items-start gap-6 overflow-hidden rounded-2xl bg-white pr-6"
       >
         <div className="relative h-[320px] w-[384px] shrink-0 overflow-hidden" style={image.frame}>
           {picture}
@@ -90,7 +90,7 @@ export default function ProjectCard({
     // Ссылка ровно по карточке. В макете она была на 6px выше — запас под подъём при наведении;
     // запас убран 2026-10-09, чтобы отступы между карточками были ровно те, что заданы:
     // карточка поднимается сдвигом и места в раскладке под это не требует.
-    <Link href={href} className="group flex h-[400px] w-[920px] shrink-0 flex-col items-start">
+    <Link href={href} className="press-soft group flex h-[400px] w-[920px] shrink-0 flex-col items-start">
       <div className="shadow-card ease-figma group-hover:shadow-card-hover flex h-[400px] shrink-0 flex-row items-center justify-between self-stretch overflow-hidden rounded-3xl bg-white transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5">
         <div className="relative h-[400px] w-[548px] shrink-0 overflow-hidden" style={image.frame}>
           {picture}
