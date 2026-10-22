@@ -71,7 +71,8 @@ export default function MenuPage({
         })}
       </nav>
 
-      <div className="mt-6 flex items-center px-5 text-[16px] leading-6 font-semibold md:px-10">
+      {/* у «EN» свои поля 4px для нажатия — слева блок на столько же меньше, текст по краю пунктов меню */}
+      <div className="mt-6 flex items-center pr-5 pl-4 text-[16px] leading-6 font-semibold md:pr-10 md:pl-9">
         {lang === "ru" ? (
           <>
             <Link href={altMenu} className="text-muted hover:text-accent ease-figma px-1 py-2 transition-colors duration-200">
