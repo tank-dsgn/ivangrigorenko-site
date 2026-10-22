@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MenuToggle from "@/components/MenuToggle";
 import { LOGO_SMALL, aboutHref, asset, homeHref, t, type Lang } from "@/lib/site";
 
 const CHEVRON = asset("3da0fc8f089163f811ba928a9a57d20e869f8486.svg");
@@ -40,15 +41,7 @@ export default function MenuPage({
           <Image src={LOGO_SMALL} alt="IvanGrigorenko" width={32} height={22} priority />
         </Link>
 
-        <Link
-          href={back}
-          aria-label={s.menuClose}
-          className="flex h-6 w-6 items-center justify-center"
-        >
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-            <path d="M13 1L1 13M1 1L13 13" stroke="#6366F1" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-        </Link>
+        <MenuToggle href={back} label={s.menuClose} open />
       </header>
 
       <nav className="mt-6 flex flex-col gap-3 px-5 md:px-10">

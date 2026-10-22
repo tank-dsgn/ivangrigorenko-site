@@ -21,6 +21,9 @@
       "into": "1 block",
       "component": "ContactButton",
       "from": "@/components/ContactButton",
+      "propsAt": {
+        "375": "full"
+      },
       "pages": [
         "home-ru"
       ],
@@ -34,6 +37,9 @@
       "into": "1 block",
       "component": "ContactButton",
       "from": "@/components/ContactButton",
+      "propsAt": {
+        "375": "full"
+      },
       "pages": [
         "index"
       ],

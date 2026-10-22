@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LOGO_SMALL, LOGO_WIDE, aboutHref, homeHref, t, type Lang } from "@/lib/site";
 import { findPage, menuHref } from "@/lib/pages";
+import MenuToggle from "@/components/MenuToggle";
 
 const linkBase =
   "px-3 py-2 text-[16px] leading-6 font-semibold transition-colors duration-200 ease-figma";
@@ -85,15 +86,7 @@ export default function Header({
 
       <div className="hidden items-center xl:flex">{langSwitch}</div>
 
-      <Link
-        href={menu}
-        aria-label={s.menuOpen}
-        className="flex h-6 w-6 items-center justify-center xl:hidden"
-      >
-        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" aria-hidden="true">
-          <path d="M1 1H19M1 8H19M1 15H19" stroke="#6366F1" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      </Link>
+      <MenuToggle href={menu} label={s.menuOpen} open={false} className="xl:hidden" />
     </header>
   );
 }

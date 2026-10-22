@@ -14,7 +14,7 @@ export default function S1Block() {
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "normal", fontWeight: 700, color: "#0f172a" }}>{`Создаю понятные, эстетичные и продуманные `}<span style={{ color: "#4f46e5" }}>{`цифровые`}</span>{` продукты`}</p>
         </div>
         <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
-          <ContactButton lang="ru" />
+          <ContactButton lang="ru" full />
         </div>
       </div>
       </div>

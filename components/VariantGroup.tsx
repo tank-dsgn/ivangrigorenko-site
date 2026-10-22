@@ -124,7 +124,9 @@ export default function VariantGroup({
             // показанное состояние стоит в потоке и задаёт размер блока,
             // остальные лежат поверх него невидимыми
             position: on ? "relative" : "absolute",
-            ...(on ? {} : { top: 0, left: 0, height: "100%" }),
+            // ширина — как у показанного: иначе вне потока панель сжимается по своему
+            // содержимому и ряд телефонов растягивает её шире экрана (POT «Вход в приложение», 375)
+            ...(on ? {} : { top: 0, left: 0, height: "100%", width: panel.props.style?.width ?? "100%" }),
             opacity: on ? 1 : 0,
             pointerEvents: on ? "auto" : "none",
             transition: ms ? `opacity ${ms}ms cubic-bezier(0, 0, 0.58, 1)` : "none",
