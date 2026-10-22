@@ -12,19 +12,11 @@ export type ShellPresence = {
   readonly desktop: boolean;
 };
 
-/** Классы видимости под присутствие в макете (брейкпоинты: <800 / 800–1279 / ≥1280) */
-function visibility({ mobile, tablet, desktop }: ShellPresence) {
-  if (mobile && tablet && desktop) return "";
-  if (!mobile && !tablet && !desktop) return "hidden";
-  const parts = [mobile ? "block" : "hidden"];
-  if (tablet !== mobile) parts.push(tablet ? "md:block" : "md:hidden");
-  if (desktop !== tablet) parts.push(desktop ? "xl:block" : "xl:hidden");
-  return parts.join(" ");
-}
-
 /**
  * Обёртка страницы: шапка, тело из генератора, футер.
- * Наличие футера берётся из макета — на одной из страниц его нет на телефоне.
+ * Футер с контактами — на всех ширинах, если он есть в макете хоть на одной.
+ * В макете его не было на главной EN на планшете и на EazyChange EN на телефоне — в русских
+ * версиях он есть, это пропуск; без футера кнопке «Связаться» некуда прокручивать (2026-10-22).
  */
 export default function SitePage({
   lang,
@@ -38,17 +30,14 @@ export default function SitePage({
   active?: "work" | "about";
   children: React.ReactNode;
 }) {
-  const footerClass = visibility(shell.footer);
+  const { mobile, tablet, desktop } = shell.footer;
+  const hasFooter = mobile || tablet || desktop;
 
   return (
     <>
       <Header lang={lang} active={active} />
       <main className="pt-14 xl:pt-20">{children}</main>
-      {footerClass !== "hidden" && (
-        <div className={footerClass}>
-          <Footer lang={lang} />
-        </div>
-      )}
+      {hasFooter && <Footer lang={lang} />}
       <ScrollEffects />
       <StateGroups />
       <Lightbox />
