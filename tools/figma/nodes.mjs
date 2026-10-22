@@ -278,6 +278,16 @@ export function frameStyle(node, assets, assetMap = {}) {
   else if (node.rectangleCornerRadii?.some(Boolean)) s.borderRadius = node.rectangleCornerRadii.map(px).join(" ");
 
   if (node.clipsContent) s.overflow = "hidden";
+  // «Прокрутка по горизонтали» в макете (POT: ряды телефонов на телефоне) — ряд листается
+  // пальцем, полосы прокрутки не видно. Вертикальную не переносим: она стоит на корневых
+  // фреймах брейкпоинтов, это прокрутка самой страницы.
+  if (node.clipsContent && node.overflowDirection === "HORIZONTAL_SCROLLING") {
+    delete s.overflow;
+    s.overflowX = "auto";
+    s.overflowY = "hidden";
+    s.scrollbarWidth = "none";
+    s.overscrollBehaviorX = "contain";
+  }
 
   // Обводка в Figma не занимает места: она рисуется поверх блока и не сдвигает
   // содержимое. CSS-border сдвинул бы, поэтому рисуем её тенью без размытия.

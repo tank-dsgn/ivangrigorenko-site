@@ -26,7 +26,7 @@ export default function Section9() {
           <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`App Store Screenshots`}</p>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`A selection of screens that convey a clear, natural, and harmonious Pot experience`}</p>
         </div>
-        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
+        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
           <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.webp)" }} />
           <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.webp)" }} />
           <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.webp)" }} />
@@ -43,7 +43,7 @@ export default function Section9() {
           <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`App Store Screenshots`}</p>
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`A selection of screens that convey a clear, natural, and harmonious Pot experience`}</p>
         </div>
-        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflow: "hidden" }}>
+        <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
           <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.webp)" }} />
           <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.webp)" }} />
           <div style={{ width: "271.78px", height: "589px", flexShrink: 0, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.webp)" }} />

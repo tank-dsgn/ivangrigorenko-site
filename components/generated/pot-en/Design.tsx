@@ -162,7 +162,7 @@ export default function Design() {
                 </span>
               </div>
             </div>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 20px 0 20px", overflow: "hidden" }}>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
               <span style={{ width: "284.65px", height: "588px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/38b7df3976944339d73684dde72db224be9f8182.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
               </span>
@@ -277,7 +277,7 @@ export default function Design() {
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
             </div>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 20px 0 20px", overflow: "hidden" }}>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
               <span style={{ width: "284.65px", height: "588px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/ff583546da8ee0addf6b01f81093a3c3c1925caa.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
               </span>
@@ -297,7 +297,7 @@ export default function Design() {
               <p style={{ width: "305px", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Short questions help customize the app based on the user’s experience, home conditions, and goals`}</p>
             </div>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/43da59c133fe0aa597f951c42e1c4fe4e905ca1e.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
             </span>
@@ -323,7 +323,7 @@ export default function Design() {
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a" }}>{`Pot AI Assistance`}</p>
             <p style={{ width: "339px", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The AI assistant asks clarifying questions about symptoms and provides recommendations, helping the user diagnose plant issues`}</p>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/1bba4bbbaddbaf5b85985c554686b229b4ed8ac3.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "109.98%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
             </span>
@@ -350,7 +350,7 @@ export default function Design() {
               <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
             </span>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span className="sn-15-4" style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/b7bd5e9d15c94ec30918663523783b0539075e4d.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
             </span>
@@ -376,7 +376,7 @@ export default function Design() {
             <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Plant Recognition`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user takes a photo of a plant, and the app accurately identifies it`}</p>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/07cf55609220f48a3d35eaaaa74e8d50169226ca.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.97%", width: "111.23%", top: "-1.91%", height: "105.1%", maxWidth: "none" }} />
             </span>
@@ -482,7 +482,7 @@ export default function Design() {
                 </span>
               </div>
             </div>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 20px", overflow: "hidden" }}>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
               <span style={{ width: "284.65px", height: "588px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/38b7df3976944339d73684dde72db224be9f8182.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
               </span>
@@ -597,7 +597,7 @@ export default function Design() {
                 <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
               </span>
             </div>
-            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 20px", overflow: "hidden" }}>
+            <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
               <span style={{ width: "284.65px", height: "588px", flexShrink: 0, position: "relative" }}>
                 <img src="/a/ff583546da8ee0addf6b01f81093a3c3c1925caa.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
               </span>
@@ -617,7 +617,7 @@ export default function Design() {
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Short questions help customize the app based on the user’s experience, home conditions, and goals`}</p>
             </div>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/c73eb5cd6473dda2808ede4405d68bddbd896abe.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "109.98%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
             </span>
@@ -692,7 +692,7 @@ export default function Design() {
               <img src="/a/fab48d8b9162c148d3c0714ef1b96fec099b6690.svg" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "100%", maxWidth: "none" }} />
             </span>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 20px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span className="sn-16-4" style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/b7bd5e9d15c94ec30918663523783b0539075e4d.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.34%", width: "110.68%", top: "-1.68%", height: "104.49%", maxWidth: "none" }} />
             </span>
@@ -718,7 +718,7 @@ export default function Design() {
             <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Plant Recognition`}</p>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`The user takes a photo of a plant, and the app accurately identifies it`}</p>
           </div>
-          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflow: "hidden" }}>
+          <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
               <img src="/a/07cf55609220f48a3d35eaaaa74e8d50169226ca.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-5.97%", width: "111.23%", top: "-1.91%", height: "105.1%", maxWidth: "none" }} />
             </span>
