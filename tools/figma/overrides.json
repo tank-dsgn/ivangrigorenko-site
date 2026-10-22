@@ -289,5 +289,10 @@
       "poster": "/video/pot-plant-card-poster.webp",
       "note": "POT, «Informative Plant Card»: запись прототипа. Оригинал https://ivangrigorenko.com/_videos/v1/<хеш> (880×1972, 60 к/с, 82 МБ) пережат в 600×1344, 30 к/с"
     }
+  },
+  "hrefs": {
+    "note": "Ссылки кнопок, заменённые на свои: резюме лежат на сайте (public/cv), а не на Google Drive",
+    "https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing": "/cv/Ivan_Grigorenko_CV_RU.pdf",
+    "https://drive.google.com/file/d/17Mh3cn1-FX5Q3GEmsO7T0gzVTVxZP5tQ/view?usp=sharing": "/cv/Ivan_Grigorenko_CV_EN.pdf"
   }
 }

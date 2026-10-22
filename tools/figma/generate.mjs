@@ -259,6 +259,7 @@ async function main() {
     frameStyles: (overrides.frameStyles || []).filter((r) => r.pages.includes(slug)),
     imageSwaps: (overrides.imageSwaps || []).filter((r) => r.pages.includes(slug)),
     videos: overrides.videos || {},
+    hrefs: overrides.hrefs || {},
     assets,
     fonts,
     guidToUrl,

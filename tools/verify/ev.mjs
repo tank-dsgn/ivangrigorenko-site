@@ -1,5 +1,5 @@
 // node tools/verify/ev.mjs <url> <ширина> <файл.js|выражение> — выполнить код на странице и напечатать результат.
-// SHOT=путь.png — заодно сохранить скриншот окна.
+// SHOT=путь.png — заодно сохранить скриншот окна. PDF=путь.pdf — напечатать страницу в PDF (размер из @page).
 import { spawn } from "child_process"; import fs from "fs"; import os from "os"; import path from "path";
 const dir = path.dirname(new URL(import.meta.url).pathname);
 const [,, url, widthArg, exprArg, waitArg] = process.argv;
@@ -35,4 +35,5 @@ try {
   const v = r.result?.result?.value;
   console.log(typeof v === "string" ? v : JSON.stringify(v ?? r, null, 1));
   if (process.env.SHOT) { const s = await send("Page.captureScreenshot", { format: "png" }); fs.writeFileSync(process.env.SHOT, Buffer.from(s.result.data, "base64")); }
+  if (process.env.PDF) { const p = await send("Page.printToPDF", { preferCSSPageSize: true, printBackground: true }); fs.writeFileSync(process.env.PDF, Buffer.from(p.result.data, "base64")); }
 } finally { chrome.kill(); }

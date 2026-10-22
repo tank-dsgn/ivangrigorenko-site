@@ -91,7 +91,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <Button href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" label="Скачать моё резюме" newTab width="335px" />
+          <Button href="/cv/Ivan_Grigorenko_CV_RU.pdf" label="Скачать моё резюме" newTab width="335px" />
         </div>
       </div>
       </div>
@@ -111,7 +111,7 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`Использую AI: собираю прототипы в коде по макетам (Claude Code, Figma MCP, Storybook, GitHub, Vercel), провожу исследования и анализ, работаю над структурой и документацией.`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`Проектировал интерфейсы в разных доменах: Fintech, Crypto, E⁠-⁠commerce, B2B SaaS, B2C, EdTech. А также занимался брендингом и айдентикой.`}</p>
               </div>
-              <Button href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" label="Скачать моё резюме" newTab />
+              <Button href="/cv/Ivan_Grigorenko_CV_RU.pdf" label="Скачать моё резюме" newTab />
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
               <div style={{ width: "263.99px", height: "291.97px", flexShrink: 0, borderRadius: "16px", overflow: "hidden", position: "relative" }}>
@@ -199,7 +199,7 @@ export default function About() {
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Использую AI: собираю прототипы в коде по макетам (Claude Code, Figma MCP, Storybook, GitHub, Vercel), провожу исследования и анализ, работаю над структурой и документацией.`}</p>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Проектировал интерфейсы в разных доменах: Fintech, Crypto, E⁠-⁠commerce, B2B SaaS, B2C, EdTech. А также занимался брендингом и айдентикой.`}</p>
               </div>
-              <Button href="https://drive.google.com/file/d/1J8gGYmYW7dR_ehtD8nIM2CvrGjKt9Ihm/view?usp=sharing" label="Скачать моё резюме" newTab />
+              <Button href="/cv/Ivan_Grigorenko_CV_RU.pdf" label="Скачать моё резюме" newTab />
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start" }}>
               <div style={{ width: "330.01px", height: "365px", flexShrink: 0, borderRadius: "24px", overflow: "hidden", position: "relative" }}>

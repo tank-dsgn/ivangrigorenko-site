@@ -40,7 +40,8 @@ export default function Button({
     </div>
   );
 
-  if (href.startsWith("/")) {
+  // свои страницы — через Link; файлы с сайта (резюме в PDF) — обычной ссылкой
+  if (href.startsWith("/") && !/\.\w+$/.test(href)) {
     return (
       <Link href={href} className={className} style={style}>
         {body}

@@ -87,6 +87,7 @@ export function createEmitter({
   frameStyles = [],
   imageSwaps = [],
   videos = {},
+  hrefs = {},
   resolveVariant = () => null,
   indentUnit = "  ",
 }) {
@@ -926,9 +927,10 @@ export function createEmitter({
 
     const box = place(node, parent);
     const [label] = texts(inner[0]);
-    usedLinks.add(link.href);
+    const href = hrefs[link.href] ?? link.href;
+    usedLinks.add(href);
     const props = {
-      href: link.href,
+      href,
       label,
       newTab: !link.internal && link.newTab ? true : undefined,
       width: box.alignSelf === "stretch" ? "fill" : box.width,
