@@ -60,7 +60,7 @@ export default function Tokens() {
             </div>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start", padding: "0 20px 0 20px" }}>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`размеры`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "normal" }}>{`размеры`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", padding: "12px 12px 12px 12px", background: "#f8f7fe", borderRadius: "12px" }}>
               <div style={{ alignSelf: "stretch", aspectRatio: "482 / 501", borderRadius: "8px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
                 <img src="/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "0%", width: "122.98%", height: "100%", maxWidth: "none" }} />
@@ -109,7 +109,7 @@ export default function Tokens() {
             </div>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`размеры`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "normal" }}>{`размеры`}</p>
             <div style={{ width: "720px", display: "flex", flexDirection: "row", gap: "12px", alignItems: "flex-start", padding: "16px 16px 16px 16px", background: "#f8f7fe", borderRadius: "16px" }}>
               <div style={{ flex: "1 0 0px", minWidth: "1px", aspectRatio: "482 / 501", borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
                 <img src="/a/615559aad8e80b1a6683eddd43b9a621c8988408.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "0%", width: "122.98%", height: "100%", maxWidth: "none" }} />
@@ -178,7 +178,7 @@ export default function Tokens() {
               </div>
             </div>
             <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
-              <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "nowrap" }}>{`размеры`}</p>
+              <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "normal", alignSelf: "stretch" }}>{`размеры`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                 <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
                   <div style={{ display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
