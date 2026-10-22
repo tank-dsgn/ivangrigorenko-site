@@ -158,7 +158,7 @@ export default function Tokens() {
                 </div>
               </div>
             </div>
-            <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", cursor: "zoom-in" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b" }}>{`Colors`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                 <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
@@ -177,7 +177,7 @@ export default function Tokens() {
                 </div>
               </div>
             </div>
-            <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start", cursor: "zoom-in" }}>
               <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", textAlign: "center", color: "#64748b", whiteSpace: "normal", alignSelf: "stretch" }}>{`Sizes`}</p>
               <div style={{ width: "1024px", height: "566px", flexShrink: 0, background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                 <div style={{ position: "absolute", left: "calc(50% + -492px)", top: "calc(50% + 0px)", transform: "translateY(-50%)", width: "984px", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>

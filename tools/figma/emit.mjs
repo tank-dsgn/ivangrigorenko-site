@@ -491,6 +491,18 @@ export function createEmitter({
     lists[0].forEach((_, i) => harmonize(lists.map((l) => l[i]), props, content));
   }
 
+  /**
+   * Увеличение по клику в макете стоит только на слайде, который виден в своём
+   * состоянии карусели. Выводится же одно дерево — исходного состояния, поэтому
+   * отмечаем в нём все слои, которые увеличиваются хоть в одном состоянии.
+   */
+  function lendZoom(nodes) {
+    const a = nodes[0];
+    if (nodes.some((n) => n.type !== a.type || n.name !== a.name)) return;
+    if (nodes.some((n) => (n.behaviors?.code || []).length)) a.zoomable = true;
+    (a.children || []).forEach((c, k) => lendZoom(nodes.map((n) => n.children?.[k]).filter(Boolean).length === nodes.length ? nodes.map((n) => n.children[k]) : [c]));
+  }
+
   function stateMorph(node, parent, depth, insideLink, enclosing, group) {
     if (stateCtx || group.variants.length < 2 || group.variants.some((v) => v.info.hoverOnly)) return null;
     const base = group.variants.find((v) => v.id === group.initial);
@@ -508,6 +520,7 @@ export function createEmitter({
       if (!markStates(trees, ids, ctx) || !ctx.marks.size) return null;
     }
 
+    lendZoom(trees);
     ctx.id = ++hoverSeq;
     stateCtx = ctx;
     const jsx = emit(trees[0], parent, depth, insideLink, new Set([...enclosing, ...group.targets]));
@@ -1066,7 +1079,7 @@ export function createEmitter({
       style.transform = [style.transform, "translateY(var(--parallax, 0px))"].filter(Boolean).join(" ");
       style.willChange = "transform";
     }
-    if ((node.behaviors?.code || []).length && !insideLink && !link) {
+    if (((node.behaviors?.code || []).length || node.zoomable) && !insideLink && !link) {
       attrs += ` data-lightbox="" role="button" tabIndex={0}`;
       style.cursor = "zoom-in";
     }

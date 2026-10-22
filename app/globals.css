@@ -110,3 +110,13 @@ body {
 [data-toggle] img {
   -webkit-user-drag: none;
 }
+
+/* Стрелки листания в увеличенном виде (components/Lightbox.tsx) — как крестик, ярче под курсором */
+.lightbox-arrow {
+  opacity: 0.75;
+  transition: opacity 150ms ease-out;
+}
+.lightbox-arrow:hover,
+.lightbox-arrow:focus-visible {
+  opacity: 1;
+}

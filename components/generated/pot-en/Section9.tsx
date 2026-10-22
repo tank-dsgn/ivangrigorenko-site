@@ -62,7 +62,7 @@ export default function Section9() {
         </div>
         <div style={{ position: "absolute", left: "calc(50% + -592px)", top: "212px", width: "1184px", height: "704px" }}>
           <div className="sn-21-1" style={{ position: "absolute", right: "-1522px", top: "1px", bottom: "0", width: "2628px" }}>
-            <div style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "704px", background: "#e4ebe3", borderRadius: "24px", overflow: "hidden" }}>
+            <div data-lightbox="" role="button" tabIndex={0} style={{ position: "absolute", left: "1.5px", top: "-1px", width: "1024px", height: "704px", background: "#e4ebe3", borderRadius: "24px", overflow: "hidden", cursor: "zoom-in" }}>
               <div style={{ position: "absolute", left: "31px", top: "31.51px", bottom: "26.49px", aspectRatio: "1890 / 4096", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/05d19956fe45e0f3488f8d18e184a975c4b1f270.webp)" }} />
               <div style={{ position: "absolute", right: "363.2px", top: "31.51px", bottom: "26.49px", aspectRatio: "1890 / 4096", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/a475e54b36be7cb5185b12c395175d75f0e49c72.webp)" }} />
               <div style={{ position: "absolute", right: "31px", top: "31.51px", bottom: "26.49px", aspectRatio: "1890 / 4096", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/071822b7192203978fc449cfd1da9051f724079c.webp)" }} />
