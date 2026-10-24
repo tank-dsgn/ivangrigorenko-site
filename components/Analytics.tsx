@@ -14,7 +14,18 @@ declare global {
   interface Window {
     dataLayer?: unknown[];
     ym?: (id: number, action: string, ...args: unknown[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
+}
+
+/**
+ * Своё событие — для действий, которые счётчики сами не видят (прокрутка к контактам
+ * по «Связаться»). В Метрике под него цель типа «Целевое событие» с тем же
+ * идентификатором, в GA4 — событие с этим именем. Вне боевого домена счётчиков нет — ничего не уходит.
+ */
+export function reachGoal(name: string) {
+  window.ym?.(METRIKA_ID, "reachGoal", name);
+  window.gtag?.("event", name);
 }
 
 /**

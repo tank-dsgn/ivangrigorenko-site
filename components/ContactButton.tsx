@@ -2,6 +2,7 @@
 
 import { useRef, type MouseEvent } from "react";
 import { mailtoHref, type Lang } from "@/lib/site";
+import { reachGoal } from "@/components/Analytics";
 
 // русская подпись сокращена 06.10 по просьбе Ивана: глагол остался, «со мной» убрано
 const label = { ru: "Связаться", en: "Contact me" } as const;
@@ -55,6 +56,8 @@ export default function ContactButton({
     <a
       ref={ref}
       href={mail ? mailtoHref(lang) : "#contacts"}
+      // цель «Нажал Связаться» в Метрике (Целевое событие contact_button) и событие в GA4
+      onClick={() => reachGoal("contact_button")}
       onMouseEnter={track}
       onMouseLeave={track}
       className={`group text-muted ease-figma relative items-center justify-center overflow-hidden rounded-full bg-white font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8] transition-colors duration-300 hover:text-white focus-visible:text-white max-xl:text-accent max-xl:shadow-[inset_0_0_0_1px_#4f46e5] ${size} ${full ? "flex w-full" : "inline-flex"}`}
