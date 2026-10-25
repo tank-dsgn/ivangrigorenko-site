@@ -9,6 +9,7 @@ import type { NextConfig } from "next";
 const short: Record<string, string> = {
   "/hh": "/home-ru?utm_source=hh&utm_medium=profile",
   "/rabota": "/home-ru?utm_source=rabotaby&utm_medium=profile",
+  "/getmatch": "/home-ru?utm_source=getmatch&utm_medium=profile",
   "/tg": "/home-ru?utm_source=telegram&utm_medium=profile",
   "/letter": "/home-ru?utm_source=cover&utm_medium=letter",
   "/letter-en": "/?utm_source=cover&utm_medium=letter",
