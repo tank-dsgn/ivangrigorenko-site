@@ -223,8 +223,28 @@ async function main() {
   // Свой текст вместо текста из макета: у названного узла дети заменяются абзацами,
   // оформление берётся у его первого текстового слоя.
   const rewrites = (overrides.paragraphs || []).filter((r) => r.pages.includes(slug));
+  // Правка фразы в тексте из макета (overrides.json → textFixes): Figma не трогаем.
+  // Посимвольные стили растягиваются на новую фразу — она берёт стиль первой буквы старой.
+  const fixes = (overrides.textFixes || []).filter((r) => r.pages.includes(slug));
+  const fixText = (node) => {
+    for (const { find, replace, exact } of fixes) {
+      // exact — весь текст слоя целиком (короткие подписи вроде «2 month»)
+      if (exact) {
+        if (node.characters === find) node.characters = replace;
+        continue;
+      }
+      let at = node.characters.indexOf(find);
+      while (at !== -1) {
+        node.characters = node.characters.slice(0, at) + replace + node.characters.slice(at + find.length);
+        const o = node.characterStyleOverrides;
+        if (o?.length > at) o.splice(at, Math.min(find.length, o.length - at), ...Array(replace.length).fill(o[at]));
+        at = node.characters.indexOf(find, at + replace.length);
+      }
+    }
+  };
   const rewrite = (node) => {
     if (!node) return node;
+    if (node.type === "TEXT" && typeof node.characters === "string" && fixes.length) fixText(node);
     const rule = rewrites.find((r) => r.into === node.name);
     const like = rule && (node.children || []).find((c) => c.type === "TEXT" && c.visible !== false);
     if (like) {
