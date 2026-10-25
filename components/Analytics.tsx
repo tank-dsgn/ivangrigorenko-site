@@ -58,6 +58,23 @@ function RouteHits() {
   return null;
 }
 
+/**
+ * Нажатие на почту (mailto:) GA4 сам не считает: «исходящие клики» — только ссылки на другие сайты.
+ * Отправляем его как contact_click — то же ключевое событие, что Telegram и соцсети
+ * (их contact_click собирает GA из click). Метрика почту видит сама — цель «Клик Gmail».
+ */
+function MailClicks() {
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as Element | null)?.closest?.<HTMLAnchorElement>('a[href^="mailto:"]');
+      if (a) window.gtag?.("event", "contact_click", { link_url: a.href.split("?")[0] });
+    };
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, []);
+  return null;
+}
+
 export default function Analytics() {
   return (
     <>
@@ -92,6 +109,7 @@ export default function Analytics() {
       <Suspense fallback={null}>
         <RouteHits />
       </Suspense>
+      <MailClicks />
     </>
   );
 }
