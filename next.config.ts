@@ -12,6 +12,9 @@ const short: Record<string, string> = {
   "/tg": "/home-ru?utm_source=telegram&utm_medium=profile",
   "/letter": "/home-ru?utm_source=cover&utm_medium=letter",
   "/letter-en": "/?utm_source=cover&utm_medium=letter",
+  "/behance": "/?utm_source=behance&utm_medium=profile",
+  "/dribbble": "/?utm_source=dribbble&utm_medium=profile",
+  "/linkedin": "/?utm_source=linkedin&utm_medium=profile",
 };
 
 const nextConfig: NextConfig = {
