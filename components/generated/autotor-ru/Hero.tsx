@@ -12,7 +12,7 @@ export default function Hero() {
           <div style={{ alignSelf: "stretch", aspectRatio: "347 / 197", position: "relative", overflow: "hidden" }}>
             <img src="/a/23fba15410e9396f49b111b8154ae779b090e4da.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0.14%", top: "-3.55%", width: "99.71%", height: "101.27%", maxWidth: "none" }} />
           </div>
-          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 600, textAlign: "center", color: "#ffffff" }}>{`Разработка Платных Функции для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
+          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 600, textAlign: "center", color: "#ffffff" }}>{`Разработка Платных Функций для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
         </div>
       </div>
       </div>
@@ -24,7 +24,7 @@ export default function Hero() {
           <div style={{ alignSelf: "stretch", aspectRatio: "760 / 409", position: "relative", overflow: "hidden" }}>
             <img src="/a/23fba15410e9396f49b111b8154ae779b090e4da.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0.14%", top: "-3.75%", width: "99.71%", height: "106.83%", maxWidth: "none" }} />
           </div>
-          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 600, textAlign: "center", color: "#ffffff" }}>{`Разработка Платных Функции для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
+          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "18px", lineHeight: "28px", fontWeight: 600, textAlign: "center", color: "#ffffff" }}>{`Разработка Платных Функций для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
         </div>
       </div>
       </div>
@@ -39,7 +39,7 @@ export default function Hero() {
               <img src="/a/3e25172e72a63a6ff97ef62382ea02d6462aeade.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "102.6%", maxWidth: "none" }} />
             </span>
           </div>
-          <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 600, textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`Разработка Платных Функции для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
+          <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 600, textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`Разработка Платных Функций для Autotor.pl — UX/UI Дизайн, Монетизация`}</p>
         </div>
       </div>
       </div>

@@ -174,7 +174,7 @@ export default function Audit() {
               </div>
             </div>
             <div style={{ width: "1024px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
-              <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b", whiteSpace: "nowrap" }}>{`Фрагментация локальных  компонентов`}</p>
+              <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b", whiteSpace: "nowrap" }}>{`Фрагментация локальных компонентов`}</p>
               <div data-lightbox="" role="button" tabIndex={0} style={{ width: "1024px", display: "flex", flexDirection: "row", gap: "24px", alignItems: "center", padding: "24px 24px 24px 24px", background: "#f8f7fe", borderRadius: "16px", overflow: "hidden", cursor: "zoom-in" }}>
                 <div style={{ width: "476px", height: "339px", flexShrink: 0, borderRadius: "12px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.15)", position: "relative", overflow: "hidden" }}>
                   <img src="/a/ced2e983616d4b07cbfce47c59c67b2901c69fbd.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0.09%", top: "0.05%", width: "129.41%", height: "176.11%", maxWidth: "none" }} />

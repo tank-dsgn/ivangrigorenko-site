@@ -12,7 +12,7 @@ export default function ProblemStatement() {
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#ffffff" }}>{`Описание задачи`}</p>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#cbd5e1" }}>{`Инженерная команда Hillsec работала в разрозненных инструментах — дефекты в таблицах, карты объектов в отдельных системах, отчёты по электронной почте. При тысячах привязанных к карте дефектов и многоуровневой аналитике рисков это делало невозможным быстрое принятие решений`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#cbd5e1" }}>{`Цель проекта — спроектировать продвинутый MVP платформы, достаточный чтобы показать клиенту реальную ценность инструмента. В рамках проекта был разработан интерактивный прототип со всеми ключевыми экранами и взаимодействиями`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#cbd5e1" }}>{`Цель проекта — спроектировать продвинутый MVP платформы, достаточный, чтобы показать клиенту реальную ценность инструмента. В рамках проекта был разработан интерактивный прототип со всеми ключевыми экранами и взаимодействиями`}</p>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default function ProblemStatement() {
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#ffffff" }}>{`Описание задачи`}</p>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#cbd5e1" }}>{`Инженерная команда Hillsec работала в разрозненных инструментах — дефекты в таблицах, карты объектов в отдельных системах, отчёты по электронной почте. При тысячах привязанных к карте дефектов и многоуровневой аналитике рисков это делало невозможным быстрое принятие решений`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#cbd5e1" }}>{`Цель проекта — спроектировать продвинутый MVP платформы, достаточный чтобы показать клиенту реальную ценность инструмента. В рамках проекта был разработан интерактивный прототип со всеми ключевыми экранами и взаимодействиями`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#cbd5e1" }}>{`Цель проекта — спроектировать продвинутый MVP платформы, достаточный, чтобы показать клиенту реальную ценность инструмента. В рамках проекта был разработан интерактивный прототип со всеми ключевыми экранами и взаимодействиями`}</p>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function ProblemStatement() {
           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#ffffff" }}>{`Описание задачи`}</p>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#cbd5e1" }}>{`Инженерная команда Hillsec работала в разрозненных инструментах — дефекты в таблицах, карты объектов в отдельных системах, отчёты по электронной почте. При тысячах привязанных к карте дефектов и многоуровневой аналитике рисков это делало невозможным быстрое принятие решений`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#cbd5e1" }}>{`Цель проекта — спроектировать продвинутый MVP платформы, достаточный чтобы показать клиенту реальную ценность инструмента. В рамках проекта был разработан интерактивный прототип со всеми ключевыми экранами и взаимодействиями`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#cbd5e1" }}>{`Цель проекта — спроектировать продвинутый MVP платформы, достаточный, чтобы показать клиенту реальную ценность инструмента. В рамках проекта был разработан интерактивный прототип со всеми ключевыми экранами и взаимодействиями`}</p>
           </div>
         </div>
       </div>

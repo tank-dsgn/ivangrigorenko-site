@@ -34,7 +34,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Timeline`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`5 – 6 months`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`5–6 months`}</p>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
@@ -72,7 +72,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Timeline`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`5 – 6 months`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`5–6 months`}</p>
               </div>
             </div>
             <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
@@ -107,7 +107,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Timeline`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`5 – 6 months`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`5–6 months`}</p>
               </div>
             </div>
           </div>

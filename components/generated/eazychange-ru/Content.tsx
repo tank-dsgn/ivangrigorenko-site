@@ -40,7 +40,7 @@ export default function Content() {
                 </div>
                 <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Сроки`}</p>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`2 - 3 месяцев`}</p>
+                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`2–3 месяца`}</p>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Content() {
                 />
               </div>
             </div>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`На основе исследований были сформулированы три ключевых принципа будущего Eazychange: простота, прозрачность и доверие — именно они легли в основу всех UX-и визуальных решений проекта`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`На основе исследований были сформулированы три ключевых принципа будущего Eazychange: простота, прозрачность и доверие — именно они легли в основу UX и визуальных решений проекта`}</p>
           </div>
         </div>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "32px 20px 32px 20px", background: "#f9fafc", overflow: "hidden" }}>
@@ -177,11 +177,11 @@ export default function Content() {
                   </div>
                   <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                     <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`МотивациЯ`}</p>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`обменять небольшую сумму без сложных форм и страха “потерять деньги”`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`обменять небольшую сумму без сложных форм и страха «потерять деньги»`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                     <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`Цели`}</p>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`cовершить безопасный обмен без регистрации`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`совершить безопасный обмен без регистрации`}</p>
                   </div>
                   <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                     <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`Боли`}</p>
@@ -455,7 +455,7 @@ export default function Content() {
                 </div>
                 <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                   <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Сроки`}</p>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`2 - 3 месяцев`}</p>
+                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`2–3 месяца`}</p>
                 </div>
               </div>
             </div>
@@ -529,7 +529,7 @@ export default function Content() {
                 </div>
               </div>
             </div>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`На основе исследований были сформулированы три ключевых принципа будущего Eazychange: простота, прозрачность и доверие — именно они легли в основу всех UX-и визуальных решений проекта`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`На основе исследований были сформулированы три ключевых принципа будущего Eazychange: простота, прозрачность и доверие — именно они легли в основу UX и визуальных решений проекта`}</p>
           </div>
         </div>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "40px 40px 40px 40px", background: "#f9fafc", overflow: "hidden" }}>
@@ -631,11 +631,11 @@ export default function Content() {
                     <div style={{ flex: "1 0 0px", minWidth: "1px", alignSelf: "stretch", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "flex-start" }}>
                       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`МотивациЯ`}</p>
-                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`обменять небольшую сумму без сложных форм и страха “потерять деньги”`}</p>
+                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`обменять небольшую сумму без сложных форм и страха «потерять деньги»`}</p>
                       </div>
                       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`Цели`}</p>
-                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`cовершить безопасный обмен без регистрации`}</p>
+                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`совершить безопасный обмен без регистрации`}</p>
                       </div>
                       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`Боли`}</p>

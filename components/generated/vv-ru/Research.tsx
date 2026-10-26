@@ -13,7 +13,7 @@ export default function Research() {
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`В процессе формирования VV Foundations было изучено устройство зрелых дизайн-систем и UI-библиотек с фокусом на токены, компоненты и масштабирование интерфейсов. В качестве референсов рассматривались: Tailwind CSS, Polaris, Shadcn UI, Atlassian Design System, Untitled UI, Adobe Spectrum, Lightning Design System и Ant Design`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн системы`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн-системы`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
               <div style={{ alignSelf: "stretch", height: "36px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                 <div style={{ width: "150.92px", height: "37.46px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
@@ -73,7 +73,7 @@ export default function Research() {
               </div>
             </div>
           </div>
-          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Зрелые дизайн-системы строятся на иерархии от примитивов и семантики к компонентам и паттернам — этот подход лег в основу VV Foundations`}</p>
+          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Зрелые дизайн-системы строятся на иерархии от примитивов и семантики к компонентам и паттернам — этот подход лёг в основу VV Foundations`}</p>
         </div>
       </div>
       </div>
@@ -87,7 +87,7 @@ export default function Research() {
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн системы`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн-системы`}</p>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start" }}>
                 <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ width: "150.92px", height: "37.46px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
@@ -144,7 +144,7 @@ export default function Research() {
               </div>
             </div>
           </div>
-          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Зрелые дизайн-системы строятся на иерархии от примитивов и семантики к компонентам и паттернам — этот подход лег в основу VV Foundations`}</p>
+          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Зрелые дизайн-системы строятся на иерархии от примитивов и семантики к компонентам и паттернам — этот подход лёг в основу VV Foundations`}</p>
         </div>
       </div>
       </div>
@@ -157,7 +157,7 @@ export default function Research() {
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`В процессе формирования VV Foundations было изучено устройство зрелых дизайн-систем и UI-библиотек с фокусом на токены, компоненты и масштабирование интерфейсов. В качестве референсов рассматривались: Tailwind CSS, Polaris, Shadcn UI, Atlassian Design System, Untitled UI, Adobe Spectrum, Lightning Design System и Ant Design`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start" }}>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн системы`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`исследованные дизайн-системы`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
               <div style={{ alignSelf: "stretch", height: "56px", flexShrink: 0, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                 <div style={{ width: "175px", height: "44px", flexShrink: 0, position: "relative", overflow: "hidden" }}>
@@ -211,7 +211,7 @@ export default function Research() {
               </div>
             </div>
           </div>
-          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Зрелые дизайн-системы строятся на иерархии от примитивов и семантики к компонентам и паттернам — этот подход лег в основу VV Foundations`}</p>
+          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Зрелые дизайн-системы строятся на иерархии от примитивов и семантики к компонентам и паттернам — этот подход лёг в основу VV Foundations`}</p>
         </div>
       </div>
       </div>

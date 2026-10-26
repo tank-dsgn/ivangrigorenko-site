@@ -226,18 +226,37 @@ async function main() {
   // Правка фразы в тексте из макета (overrides.json → textFixes): Figma не трогаем.
   // Посимвольные стили растягиваются на новую фразу — она берёт стиль первой буквы старой.
   const fixes = (overrides.textFixes || []).filter((r) => r.pages.includes(slug));
+  // заливки в родителе текстового слоя — для nearFill
+  const parentOf = new Map();
+  const hex = (c) => "#" + [c.r, c.g, c.b].map((v) => Math.round(v * 255).toString(16).padStart(2, "0")).join("").toUpperCase();
+  const fillsNear = (node) => {
+    const out = new Set();
+    const walk = (n) => {
+      for (const f of n.fills || []) if (f.type === "SOLID" && f.visible !== false && f.color) out.add(hex(f.color));
+      (n.children || []).forEach((c) => c !== node && walk(c));
+    };
+    const p = parentOf.get(node);
+    if (p) walk(p);
+    return out;
+  };
   const fixText = (node) => {
-    for (const { find, replace, exact } of fixes) {
-      // exact — весь текст слоя целиком (короткие подписи вроде «2 month»)
+    for (const { find, replace, exact, nearFill } of fixes) {
+      // exact — весь текст слоя целиком (короткие подписи вроде «2 month»);
+      // nearFill — только если рядом со слоем (в его родителе) есть заливка этого цвета:
+      // так подпись образца палитры правится только у нужного образца
       if (exact) {
-        if (node.characters === find) node.characters = replace;
+        if (node.characters === find && (!nearFill || fillsNear(node).has(nearFill.toUpperCase()))) node.characters = replace;
         continue;
       }
       let at = node.characters.indexOf(find);
       while (at !== -1) {
         node.characters = node.characters.slice(0, at) + replace + node.characters.slice(at + find.length);
-        const o = node.characterStyleOverrides;
-        if (o?.length > at) o.splice(at, Math.min(find.length, o.length - at), ...Array(replace.length).fill(o[at]));
+        // копия: массив стилей общий у копий слоя на разных брейкпоинтах
+        const o = node.characterStyleOverrides?.slice();
+        if (o?.length > at) {
+          o.splice(at, Math.min(find.length, o.length - at), ...Array(replace.length).fill(o[at]));
+          node.characterStyleOverrides = o;
+        }
         at = node.characters.indexOf(find, at + replace.length);
       }
     }
@@ -263,7 +282,18 @@ async function main() {
     }
     return node;
   };
-  const resolveTree = (id) => rewrite(resolveRaw(id));
+  const link = (n) => (n.children || []).forEach((c) => { parentOf.set(c, n); link(c); });
+  const resolveTree = (id) => {
+    const tree = resolveRaw(id);
+    link(tree);
+    return rewrite(tree);
+  };
+  // другие состояния компонентов (тема, слайды карусели) — с теми же правками текста
+  const resolveVariantFixed = (node, id) => {
+    const tree = resolveVariant(node, id);
+    if (tree) { link(tree); rewrite(tree); }
+    return tree;
+  };
 
   const frames = (page.children || [])
     .map((id) => nodeById[id])
@@ -288,7 +318,7 @@ async function main() {
     cardTargets: overrides.cards,
     lang,
     nodeById,
-    resolveVariant,
+    resolveVariant: resolveVariantFixed,
   });
 
   const keepShell = rest.includes("--keep-shell");

@@ -21,7 +21,7 @@ export default function UsersFlows() {
                     <div style={{ width: "181px", height: "223.42px", flexShrink: 0, background: "#fafaf9", borderRadius: "16px", overflow: "hidden", position: "relative" }}>
                       <div style={{ position: "absolute", left: "-42.42px", top: "0.42px", bottom: "-38.13px", aspectRatio: "1024 / 1024", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundImage: "url(/a/3cadd980f593b53c4c8fdfab958c51bb63972073.webp)" }} />
                     </div>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 300, fontStyle: "italic", fontFamily: "var(--font-open-sans-italic), var(--font-open-sans), sans-serif", color: "#64748b" }}>{`«Мне не нужен гламур — дайте мне инструмент, который работает стабильно и не мешает работать.»`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 300, fontStyle: "italic", fontFamily: "var(--font-open-sans-italic), var(--font-open-sans), sans-serif", color: "#64748b" }}>{`«Мне не нужен гламур — дайте мне инструмент, который работает стабильно и не мешает работать»`}</p>
                   </div>
                   <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "32px", justifyContent: "center", alignItems: "flex-start" }}>
                     <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
@@ -102,11 +102,11 @@ export default function UsersFlows() {
                     <div style={{ flex: "1 0 0px", minWidth: "1px", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start" }}>
                       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`МотивациЯ`}</p>
-                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`обменять небольшую сумму без сложных форм и страха “потерять деньги”`}</p>
+                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`обменять небольшую сумму без сложных форм и страха «потерять деньги»`}</p>
                       </div>
                       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`Цели`}</p>
-                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`cовершить безопасный обмен без регистрации`}</p>
+                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`совершить безопасный обмен без регистрации`}</p>
                       </div>
                       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "2px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`Боли`}</p>

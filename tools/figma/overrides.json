@@ -187,7 +187,7 @@
       "pages": [
         "autotor-ru"
       ],
-      "startsWith": "Разработка Платных Функции для Autotor.pl",
+      "startsWith": "Разработка Платных Функций для Autotor.pl",
       "style": {
         "color": "#ffffff"
       }
@@ -311,6 +311,46 @@
   "textFixes": [
     { "pages": ["ostral-ru"], "find": "За месяц,", "replace": "За два месяца,", "note": "срок проекта — 2 месяца, как в «Сроках» (Иван, 25.10)" },
     { "pages": ["ostral-en"], "find": "Over one month,", "replace": "Over two months,", "note": "то же в английской версии" },
-    { "pages": ["ostral-en"], "find": "2 month", "replace": "2 months", "exact": true, "note": "опечатка в «Timeline»" }
+    { "pages": ["ostral-en"], "find": "2 month", "replace": "2 months", "exact": true, "note": "опечатка в «Timeline»" },
+    { "pages": ["mikulich-en"], "find": "Dmitry", "replace": "Dzmitry", "note": "имя как на логотипе и в карточке (Иван, 26.10)" },
+    { "pages": ["mikulich-ru", "mikulich-en"], "find": "#F0F5FA", "replace": "#F5F6F7", "exact": true, "nearFill": "#F5F6F7", "note": "у первого образца палитры цвет #F5F6F7, подпись была от второго (Иван, 26.10)" },
+    {"pages": ["autotor-ru"], "find": "Платных Функции", "replace": "Платных Функций", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["autotor-ru"], "find": "протестированны", "replace": "протестированы", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["autotor-ru"], "find": "провёли", "replace": "провели", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["autotor-ru"], "find": "фронтенд разработчики", "replace": "фронтенд-разработчики", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["autotor-ru"], "find": "3 - 4 месяца", "replace": "3–4 месяца", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["eazychange-ru"], "find": "2 - 3 месяцев", "replace": "2–3 месяца", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["eazychange-ru"], "find": "основу всех UX-и визуальных", "replace": "основу UX и визуальных", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["eazychange-ru"], "find": "работать.»", "replace": "работать»", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["eazychange-ru"], "find": "“потерять деньги”", "replace": "«потерять деньги»", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["eazychange-ru"], "find": "cовершить", "replace": "совершить", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-ru"], "find": "5 - 6 месяцев", "replace": "5–6 месяцев", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-ru"], "find": "фотографирует растение и приложение", "replace": "фотографирует растение, и приложение", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-ru"], "find": "Распознавание  растений", "replace": "Распознавание растений", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-ru"], "find": "“навредить”", "replace": "«навредить»", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-ru"], "find": "“вело за руку”", "replace": "«вело за руку»", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-ru", "pot-en"], "find": "Forgot you password?", "replace": "Forgot your password?", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-ru"], "find": "достаточный чтобы", "replace": "достаточный, чтобы", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-ru"], "find": "всё что не помогает", "replace": "всё, что не помогает", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-ru"], "find": "B2B продукта", "replace": "B2B-продукта", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-ru"], "find": "UX/UI дизайн веб-платформы", "replace": "UX/UI-дизайн веб-платформы", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["mikulich-ru"], "find": "Микулич – эксперт", "replace": "Микулич — эксперт", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-ru"], "find": "Архитектура токена VV Foundation", "replace": "Архитектура токенов VV Foundations", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-ru"], "find": "исследованные дизайн системы", "replace": "исследованные дизайн-системы", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-ru"], "find": "этот подход лег", "replace": "этот подход лёг", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-ru"], "find": "локальных  компонентов", "replace": "локальных компонентов", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["home-ru"], "find": "Дизайн cистема", "replace": "Дизайн-система", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["home-ru"], "find": "дизайн система", "replace": "дизайн-система", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["autotor-en"], "find": "Autotor.pl— UX/UI", "replace": "Autotor.pl — UX/UI", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-en"], "find": "competencies in system design", "replace": "competencies in design systems", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["pot-en"], "find": "5 – 6 months", "replace": "5–6 months", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-en"], "find": "VV Foundation Token Architecture", "replace": "VV Foundations Token Architecture", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-en"], "find": "experience in designing design systems", "replace": "experience in building design systems", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-en"], "find": "specialising", "replace": "specializing", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-en"], "find": "visualisation", "replace": "visualization", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-en"], "find": "prioritisation", "replace": "prioritization", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["ostral-en"], "find": "analyses risks", "replace": "analyzes risks", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["mikulich-en"], "find": "сlient", "replace": "client", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["autotor-ru", "autotor-en"], "find": " PLZ", "replace": " PLN", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"}
   ]
 }

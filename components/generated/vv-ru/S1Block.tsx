@@ -31,7 +31,7 @@ export default function S1Block() {
       <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", alignItems: "flex-start", padding: "40px 40px 40px 40px", background: "#251048", overflow: "hidden", position: "relative" }}>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "40px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Архитектура токена VV Foundation`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#ffffff" }}>{`Архитектура токенов VV Foundations`}</p>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "5px", alignItems: "center" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#94a3b8" }}>{`В системе сознательно выбрана двухуровневая архитектура токенов — без избыточной сложности. Примитивы содержат сырые значения, а семантика определяет их роль в интерфейсе. Этого подхода достаточно для гибкости, масштабирования и комфортной работы`}</p>
             </div>
@@ -369,7 +369,7 @@ export default function S1Block() {
         <div style={{ position: "absolute", left: "calc(50% + -512px)", top: "120px", width: "1024px", display: "flex", flexDirection: "column", gap: "72px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "48px", alignItems: "flex-start" }}>
             <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#f8fafc" }}>{`Архитектура токена VV Foundation`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, textAlign: "center", color: "#f8fafc" }}>{`Архитектура токенов VV Foundations`}</p>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
                 <p style={{ width: "940px", fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#94a3b8" }}>{`В системе сознательно выбрана двухуровневая архитектура токенов — без избыточной сложности. Примитивы содержат сырые значения, а семантика определяет их роль в интерфейсе. Этого подхода достаточно для гибкости, масштабирования и комфортной работы`}</p>
               </div>

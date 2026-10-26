@@ -234,7 +234,7 @@ export default function Design() {
                       <div style={{ width: "198.12px", display: "flex", flexDirection: "column", gap: "7.08px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
-                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
+                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot your password?`}</p>
                       </div>
                     </div>
                     <div style={{ position: "absolute", left: "0", top: "29.48px", width: "259.43px", height: "25.94px", display: "flex", flexDirection: "row", gap: "4.72px", alignItems: "center", padding: "0 9.43px 0 9.43px" }}>
@@ -373,8 +373,8 @@ export default function Design() {
         </div>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center", padding: "32px 0 32px 0", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
+            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание растений`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь фотографирует растение, и приложение точно определяет его`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "center", padding: "0 20px 0 20px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
@@ -554,7 +554,7 @@ export default function Design() {
                       <div style={{ width: "198.12px", display: "flex", flexDirection: "column", gap: "7.08px", alignItems: "flex-start" }}>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
                         <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
-                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
+                        <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.02px", lineHeight: "12.97px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot your password?`}</p>
                       </div>
                     </div>
                     <div style={{ position: "absolute", left: "0", top: "29.48px", width: "259.43px", height: "25.94px", display: "flex", flexDirection: "row", gap: "4.72px", alignItems: "center", padding: "0 9.43px 0 9.43px" }}>
@@ -715,8 +715,8 @@ export default function Design() {
         </div>
         <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "32px", justifyContent: "center", alignItems: "center", padding: "40px 0 40px 0", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "center", padding: "0 20px 0 20px" }}>
-            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
+            <p style={{ fontSize: "24px", lineHeight: "32px", fontWeight: 700, textAlign: "center", color: "#0f172a", whiteSpace: "nowrap" }}>{`Распознавание растений`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, textAlign: "center", color: "#64748b" }}>{`Пользователь фотографирует растение, и приложение точно определяет его`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "16px", alignItems: "flex-start", padding: "0 40px 0 40px", overflowX: "auto", overflowY: "hidden", scrollbarWidth: "none", overscrollBehaviorX: "contain" }}>
             <span style={{ width: "285.13px", height: "589px", flexShrink: 0, position: "relative" }}>
@@ -911,7 +911,7 @@ export default function Design() {
                         <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
                           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
                           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
+                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot your password?`}</p>
                         </div>
                       </div>
                       <div style={{ position: "absolute", left: "0", top: "31.49px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
@@ -1010,7 +1010,7 @@ export default function Design() {
                         <div style={{ width: "211.59px", display: "flex", flexDirection: "column", gap: "7.56px", alignItems: "flex-start" }}>
                           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 400, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#78716c" }}>{`Don’t have an account yet?`}</p>
                           <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Sign up`}</p>
-                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot you password?`}</p>
+                          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "10.71px", lineHeight: "13.85px", fontWeight: 590, fontFamily: "\"SF Pro\", var(--font-open-sans), sans-serif", fontVariationSettings: "\"wdth\" 100, \"opsz\" 28", textAlign: "center", color: "#15803d" }}>{`Forgot your password?`}</p>
                         </div>
                       </div>
                       <div style={{ position: "absolute", left: "0", top: "31.49px", width: "277.07px", height: "27.71px", display: "flex", flexDirection: "row", gap: "5.04px", alignItems: "center", padding: "0 10.08px 0 10.08px" }}>
@@ -1330,8 +1330,8 @@ export default function Design() {
         <div style={{ alignSelf: "stretch", height: "944px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "40px", justifyContent: "center", alignItems: "center", padding: "100px 160px 100px 160px", background: "#ffffff", overflow: "hidden" }}>
           <div style={{ width: "1024px", display: "flex", flexDirection: "column", gap: "40px", alignItems: "flex-start" }}>
             <div style={{ width: "1024px", height: "68px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
-              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Распознавание  растений`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь фотографирует растение и приложение точно определяет его`}</p>
+              <p style={{ fontSize: "30px", lineHeight: "36px", fontWeight: 700, color: "#000000", whiteSpace: "nowrap" }}>{`Распознавание растений`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#64748b" }}>{`Пользователь фотографирует растение, и приложение точно определяет его`}</p>
             </div>
             <span style={{ width: "1024px", height: "630px", flexShrink: 0, position: "relative" }}>
               <img src="/a/2b554031b9d428c69c347505b8414bac07e09b1d.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "-1.77%", width: "103.54%", top: "-1.74%", height: "104.76%", maxWidth: "none" }} />

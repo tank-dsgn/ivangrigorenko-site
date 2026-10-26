@@ -64,7 +64,7 @@ export default function Research() {
               </div>
             </div>
           </div>
-          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`На основе исследований были сформулированы три ключевых принципа будущего `}{`Eazychange`}{`: простота, прозрачность и доверие — именно они легли в основу всех UX-и визуальных решений проекта`}</p>
+          <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`На основе исследований были сформулированы три ключевых принципа будущего `}{`Eazychange`}{`: простота, прозрачность и доверие — именно они легли в основу UX и визуальных решений проекта`}</p>
         </div>
       </div>
       </div>

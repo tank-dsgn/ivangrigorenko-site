@@ -26,7 +26,7 @@ export default function UserResearch() {
                       <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#64748b" }}>{`начинающий любитель растений`}</p>
                     </div>
                   </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`Покупает комнатные растения для уюта. Боится “навредить” им и ищет простые пошаговые советы. Использует приложение вечером дома, чаще на iPhone. Ей важно видеть визуальные подсказки и быстро понимать, что делать с растением`}</p>
+                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`Покупает комнатные растения для уюта. Боится «навредить» им и ищет простые пошаговые советы. Использует приложение вечером дома, чаще на iPhone. Ей важно видеть визуальные подсказки и быстро понимать, что делать с растением`}</p>
                 </div>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "32px", alignItems: "flex-start", padding: "12px 16px 12px 16px", background: "#ffffff", borderRadius: "12px" }}>
@@ -54,7 +54,7 @@ export default function UserResearch() {
                       <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#64748b" }}>{`занятая мама`}</p>
                     </div>
                   </div>
-                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`Хочет, чтобы приложение “вело за руку” и напоминало о поливе. Редко открывает приложение специально — ей удобно получать короткие уведомления и советы в нужный момент. Любит дружелюбный и понятный интерфейс без лишнего текста`}</p>
+                  <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#334155" }}>{`Хочет, чтобы приложение «вело за руку» и напоминало о поливе. Редко открывает приложение специально — ей удобно получать короткие уведомления и советы в нужный момент. Любит дружелюбный и понятный интерфейс без лишнего текста`}</p>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function UserResearch() {
                       <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 600, color: "#0f172a" }}>{`Анна, 28 лет`}</p>
                       <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`начинающий любитель растений`}</p>
                     </div>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#0f172a" }}>{`Покупает комнатные растения для уюта. Боится “навредить” им и ищет простые пошаговые советы. Использует приложение вечером дома, чаще на iPhone. Ей важно видеть визуальные подсказки и быстро понимать, что делать с растением`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#0f172a" }}>{`Покупает комнатные растения для уюта. Боится «навредить» им и ищет простые пошаговые советы. Использует приложение вечером дома, чаще на iPhone. Ей важно видеть визуальные подсказки и быстро понимать, что делать с растением`}</p>
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export default function UserResearch() {
                       <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 600, color: "#0f172a" }}>{`Ольга, 45 лет`}</p>
                       <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`занятая мама`}</p>
                     </div>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#0f172a" }}>{`Хочет, чтобы приложение “вело за руку” и напоминало о поливе. Редко открывает приложение специально — ей удобно получать короткие уведомления и советы в нужный момент. Любит дружелюбный и понятный интерфейс без лишнего текста`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, color: "#0f172a" }}>{`Хочет, чтобы приложение «вело за руку» и напоминало о поливе. Редко открывает приложение специально — ей удобно получать короткие уведомления и советы в нужный момент. Любит дружелюбный и понятный интерфейс без лишнего текста`}</p>
                   </div>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export default function UserResearch() {
                       <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 600, color: "#0f172a" }}>{`Анна, 28 лет`}</p>
                       <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`начинающий любитель растений`}</p>
                     </div>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`Покупает комнатные растения для уюта. Боится “навредить” им и ищет простые пошаговые советы. Использует приложение вечером дома, чаще на iPhone. Ей важно видеть визуальные подсказки и быстро понимать, что делать с растением`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`Покупает комнатные растения для уюта. Боится «навредить» им и ищет простые пошаговые советы. Использует приложение вечером дома, чаще на iPhone. Ей важно видеть визуальные подсказки и быстро понимать, что делать с растением`}</p>
                   </div>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export default function UserResearch() {
                       <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 600, color: "#0f172a" }}>{`Ольга, 45 лет`}</p>
                       <p style={{ fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#64748b", whiteSpace: "nowrap" }}>{`занятая мама`}</p>
                     </div>
-                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`Хочет, чтобы приложение “вело за руку” и напоминало о поливе. Редко открывает приложение специально — ей удобно получать короткие уведомления и советы в нужный момент. Любит дружелюбный и понятный интерфейс без лишнего текста`}</p>
+                    <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#0f172a" }}>{`Хочет, чтобы приложение «вело за руку» и напоминало о поливе. Редко открывает приложение специально — ей удобно получать короткие уведомления и советы в нужный момент. Любит дружелюбный и понятный интерфейс без лишнего текста`}</p>
                   </div>
                 </div>
               </div>

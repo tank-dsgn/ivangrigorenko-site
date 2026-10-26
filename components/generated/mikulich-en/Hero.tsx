@@ -20,7 +20,7 @@ export default function Hero() {
           decoding="async"
           style={{ position: "absolute", left: "calc(50% + -113.5px)", top: "calc(50% + -76px)", width: "227.7px", height: "103px" }}
         />
-        <p style={{ position: "absolute", left: "20px", right: "20px", top: "calc(50% + 83px)", transform: "translateY(-50%)", fontSize: "16px", lineHeight: "24px", fontWeight: 600, textAlign: "center", color: "#e2e8f0" }}>{`Logo Development for Surgeon Dmitry Mikulich — Identity, Branding`}</p>
+        <p style={{ position: "absolute", left: "20px", right: "20px", top: "calc(50% + 83px)", transform: "translateY(-50%)", fontSize: "16px", lineHeight: "24px", fontWeight: 600, textAlign: "center", color: "#e2e8f0" }}>{`Logo Development for Surgeon Dzmitry Mikulich — Identity, Branding`}</p>
       </div>
       </div>
       {/* Tablet */}
@@ -39,7 +39,7 @@ export default function Hero() {
           decoding="async"
           style={{ position: "absolute", left: "calc(50% + -151px)", top: "calc(50% + -86.5px)", width: "302.87px", height: "137px" }}
         />
-        <p style={{ position: "absolute", left: "40px", right: "40px", bottom: "108px", fontSize: "18px", lineHeight: "28px", fontWeight: 600, textAlign: "center", color: "#e2e8f0" }}>{`Logo Development for Surgeon Dmitry Mikulich — Identity, Branding`}</p>
+        <p style={{ position: "absolute", left: "40px", right: "40px", bottom: "108px", fontSize: "18px", lineHeight: "28px", fontWeight: 600, textAlign: "center", color: "#e2e8f0" }}>{`Logo Development for Surgeon Dzmitry Mikulich — Identity, Branding`}</p>
       </div>
       </div>
       {/* Desktop */}
@@ -58,7 +58,7 @@ export default function Hero() {
           decoding="async"
           style={{ position: "absolute", left: "calc(50% + -239px)", top: "calc(50% + -132px)", width: "478.39px", height: "229px" }}
         />
-        <p style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + 296px)", transform: "translateX(-50%) translateY(-50%)", fontSize: "24px", lineHeight: "32px", fontWeight: 600, textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`Logo Development for Surgeon Dmitry Mikulich — Identity, Branding`}</p>
+        <p style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + 296px)", transform: "translateX(-50%) translateY(-50%)", fontSize: "24px", lineHeight: "32px", fontWeight: 600, textAlign: "center", color: "#ffffff", whiteSpace: "nowrap" }}>{`Logo Development for Surgeon Dzmitry Mikulich — Identity, Branding`}</p>
       </div>
       </div>
     </>

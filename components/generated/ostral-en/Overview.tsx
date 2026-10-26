@@ -14,7 +14,7 @@ export default function Overview() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`OVERVIEW`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Ostral is a web platform for managing inspection programs and risk monitoring across industrial facilities in the oil refining sector. Built for Hillsec — an engineering company specialising in technical maintenance of petrochemical and fat-processing plants`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Ostral is a web platform for managing inspection programs and risk monitoring across industrial facilities in the oil refining sector. Built for Hillsec — an engineering company specializing in technical maintenance of petrochemical and fat-processing plants`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`The core challenge was data density. Thousands of geolocated findings, multi-level risk analytics, complex filterable tables. The design goal was not just to display data — but to help users navigate it fast`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
@@ -24,7 +24,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`RESPONSIBILITIES`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`UX/UI design, data visualisation, prototyping`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`UX/UI design, data visualization, prototyping`}</p>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`TEAM`}</p>
@@ -50,7 +50,7 @@ export default function Overview() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`OVERVIEW`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Ostral is a web platform for managing inspection programs and risk monitoring across industrial facilities in the oil refining sector. Built for Hillsec — an engineering company specialising in technical maintenance of petrochemical and fat-processing plants`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Ostral is a web platform for managing inspection programs and risk monitoring across industrial facilities in the oil refining sector. Built for Hillsec — an engineering company specializing in technical maintenance of petrochemical and fat-processing plants`}</p>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`The core challenge was data density. Thousands of geolocated findings, multi-level risk analytics, complex filterable tables. The design goal was not just to display data — but to help users navigate it fast`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
@@ -60,7 +60,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`RESPONSIBILITIES`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`UX/UI design, data visualisation, prototyping`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`UX/UI design, data visualization, prototyping`}</p>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`TEAM`}</p>
@@ -86,7 +86,7 @@ export default function Overview() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "row", gap: "128px", alignItems: "flex-start" }}>
             <div style={{ width: "501px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`OVERVIEW`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155", whiteSpace: "pre-line" }}>{`Ostral is a web platform for managing inspection programs and risk monitoring across industrial facilities in the oil refining sector. Built for Hillsec — an engineering company specialising in technical maintenance of petrochemical and fat-processing plants`}{"\n"}{"\n"}{`The core challenge was data density. Thousands of geolocated findings, multi-level risk analytics, complex filterable tables. The design goal was not just to display data — but to help users navigate it fast`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155", whiteSpace: "pre-line" }}>{`Ostral is a web platform for managing inspection programs and risk monitoring across industrial facilities in the oil refining sector. Built for Hillsec — an engineering company specializing in technical maintenance of petrochemical and fat-processing plants`}{"\n"}{"\n"}{`The core challenge was data density. Thousands of geolocated findings, multi-level risk analytics, complex filterable tables. The design goal was not just to display data — but to help users navigate it fast`}</p>
             </div>
             <div style={{ alignSelf: "stretch", width: "331px", flexShrink: 0, display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "flex-start" }}>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -95,7 +95,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`RESPONSIBILITIES`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`UX/UI design, data visualisation, prototyping`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`UX/UI design, data visualization, prototyping`}</p>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#94a3b8" }}>{`TEAM`}</p>

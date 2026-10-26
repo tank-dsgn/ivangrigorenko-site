@@ -11,7 +11,7 @@ export default function Users() {
         <div style={{ position: "relative", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Users`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`The platform serves three distinct roles — from a field engineer to an executive making budget decisions. Understanding their goals and working context shaped the navigation structure and data prioritisation`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`The platform serves three distinct roles — from a field engineer to an executive making budget decisions. Understanding their goals and working context shaped the navigation structure and data prioritization`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -138,7 +138,7 @@ export default function Users() {
         <div style={{ position: "relative", alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Users`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`The platform serves three distinct roles — from a field engineer to an executive making budget decisions. Understanding their goals and working context shaped the navigation structure and data prioritisation`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`The platform serves three distinct roles — from a field engineer to an executive making budget decisions. Understanding their goals and working context shaped the navigation structure and data prioritization`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
@@ -265,7 +265,7 @@ export default function Users() {
         <div style={{ position: "relative", width: "1024px", display: "flex", flexDirection: "column", gap: "48px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Users`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`The platform serves three distinct roles — from a field engineer to an executive making budget decisions. Understanding their goals and working context shaped the navigation structure and data prioritisation`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#334155" }}>{`The platform serves three distinct roles — from a field engineer to an executive making budget decisions. Understanding their goals and working context shaped the navigation structure and data prioritization`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
