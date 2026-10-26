@@ -27,7 +27,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Команда`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`UX/UI дизайнер, старший UX-дизайнер, фронтенд-разработчик`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`UX/UI дизайнер, ведущий UX-дизайнер, фронтенд-разработчик`}</p>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Сроки`}</p>
@@ -61,7 +61,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Команда`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`UX/UI дизайнер, старший UX-дизайнер, фронтенд-разработчик`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#475569" }}>{`UX/UI дизайнер, ведущий UX-дизайнер, фронтенд-разработчик`}</p>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Сроки`}</p>
@@ -93,7 +93,7 @@ export default function Overview() {
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Команда`}</p>
-                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`UX/UI дизайнер, старший UX-дизайнер, фронтенд-разработчик`}</p>
+                <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`UX/UI дизайнер, ведущий UX-дизайнер, фронтенд-разработчик`}</p>
               </div>
               <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
                 <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Сроки`}</p>

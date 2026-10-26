@@ -351,6 +351,7 @@
     {"pages": ["ostral-en"], "find": "prioritisation", "replace": "prioritization", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
     {"pages": ["ostral-en"], "find": "analyses risks", "replace": "analyzes risks", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
     {"pages": ["mikulich-en"], "find": "сlient", "replace": "client", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
-    {"pages": ["autotor-ru", "autotor-en"], "find": " PLZ", "replace": " PLN", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"}
+    {"pages": ["autotor-ru", "autotor-en"], "find": " PLZ", "replace": " PLN", "note": "ошибки из проверки текстов 26.10 (Иван одобрил)"},
+    {"pages": ["vv-ru"], "find": "старший UX-дизайнер", "replace": "ведущий UX-дизайнер", "note": "в команде VV был лид — как Lead UX Designer в английской версии (Иван, 26.10)"}
   ]
 }
