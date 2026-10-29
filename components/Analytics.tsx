@@ -10,6 +10,9 @@ const METRIKA_ID = 113221499;
 /** Считаем только на боевом домене — превью-деплои не должны попадать в статистику */
 const PRODUCTION_HOST = "ivangrigorenko.com";
 
+/** Флаг в localStorage: на устройствах владельца счётчики не грузятся (ставится ссылкой ?notrack=1) */
+const NOTRACK_KEY = "ig:notrack";
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -85,6 +88,27 @@ export default function Analytics() {
       <Script id="analytics" strategy="afterInteractive">
         {`(function () {
   if (location.hostname !== ${JSON.stringify(PRODUCTION_HOST)}) return;
+
+  // Свои устройства: ?notrack=1 выключает оба счётчика в этом браузере, ?notrack=0 включает обратно
+  var flag = new URLSearchParams(location.search).get('notrack');
+  var off = false;
+  try {
+    if (flag === '1') localStorage.setItem('${NOTRACK_KEY}', '1');
+    if (flag === '0') localStorage.removeItem('${NOTRACK_KEY}');
+    off = localStorage.getItem('${NOTRACK_KEY}') === '1';
+  } catch (e) {}
+  if (flag === '1' || flag === '0') {
+    var ru = /-ru$/.test(location.pathname);
+    var note = document.createElement('div');
+    note.textContent = off
+      ? (ru ? 'Статистика на этом устройстве выключена' : 'Analytics is off on this device')
+      : (ru ? 'Статистика на этом устройстве снова включена' : 'Analytics is on again on this device');
+    note.setAttribute('role', 'status');
+    note.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:2147483647;width:max-content;max-width:calc(100% - 32px);padding:12px 16px;border-radius:12px;background:#1c1917;color:#fff;font:15px/20px system-ui,-apple-system,sans-serif;box-shadow:0 4px 16px rgba(0,0,0,.2)';
+    document.body.appendChild(note);
+    setTimeout(function () { note.remove(); }, 4000);
+  }
+  if (off) return;
 
   var s = document.createElement('script');
   s.async = 1;
