@@ -78,6 +78,23 @@ function MailClicks() {
   return null;
 }
 
+/**
+ * Ключевое событие prototype_open GA4 собирает из click по link_url, содержащему
+ * prototype.vercel.app. Витрина VV Foundations живёт на vv-foundations.vercel.app — под
+ * правило не попадает, поэтому её клик сайт отправляет сам.
+ */
+function PrototypeClicks() {
+  useEffect(() => {
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as Element | null)?.closest?.<HTMLAnchorElement>('a[href*="vv-foundations.vercel.app"]');
+      if (a) window.gtag?.("event", "prototype_open", { link_url: a.href });
+    };
+    document.addEventListener("click", onClick, true);
+    return () => document.removeEventListener("click", onClick, true);
+  }, []);
+  return null;
+}
+
 export default function Analytics() {
   return (
     <>
@@ -134,6 +151,7 @@ export default function Analytics() {
         <RouteHits />
       </Suspense>
       <MailClicks />
+      <PrototypeClicks />
     </>
   );
 }
