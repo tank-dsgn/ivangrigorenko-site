@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MenuToggle from "@/components/MenuToggle";
+import SpinLogo from "@/components/SpinLogo";
 import { LOGO_SMALL, aboutHref, asset, homeHref, t, type Lang } from "@/lib/site";
 
 const CHEVRON = asset("3da0fc8f089163f811ba928a9a57d20e869f8486.svg");
@@ -38,7 +39,9 @@ export default function MenuPage({
     <div className="min-h-screen bg-[#fafaf9]">
       <header className="shadow-header flex h-14 items-center justify-between px-5 md:px-10">
         <Link href={homeHref(lang)} aria-label={s.toHome}>
-          <Image src={LOGO_SMALL} alt="IvanGrigorenko" width={32} height={22} priority />
+          <SpinLogo>
+            <Image src={LOGO_SMALL} alt="IvanGrigorenko" width={32} height={22} priority />
+          </SpinLogo>
         </Link>
 
         <MenuToggle href={back} label={s.menuClose} open />
