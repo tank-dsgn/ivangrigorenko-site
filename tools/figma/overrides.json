@@ -146,7 +146,7 @@
         "vv-ru"
       ],
       "lang": false,
-      "props": "href=\"https://vv-foundations.vercel.app\" label=\"Открыть прототип\" newTab",
+      "props": "href=\"https://vv-foundations.vercel.app\" label=\"Открыть дизайн-систему\" newTab",
       "propsAt": {
         "375": "width=\"fill\""
       },
@@ -164,7 +164,7 @@
         "vv-en"
       ],
       "lang": false,
-      "props": "href=\"https://vv-foundations.vercel.app\" label=\"Open prototype\" newTab",
+      "props": "href=\"https://vv-foundations.vercel.app\" label=\"Open design system\" newTab",
       "propsAt": {
         "375": "width=\"fill\""
       },

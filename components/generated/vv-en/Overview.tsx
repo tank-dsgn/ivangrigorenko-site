@@ -38,7 +38,7 @@ export default function Overview() {
             </div>
           </div>
           <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
-            <Button href="https://vv-foundations.vercel.app" label="Open prototype" newTab width="fill" />
+            <Button href="https://vv-foundations.vercel.app" label="Open design system" newTab width="fill" />
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@ export default function Overview() {
             </div>
           </div>
           <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "24px" }}>
-            <Button href="https://vv-foundations.vercel.app" label="Open prototype" newTab />
+            <Button href="https://vv-foundations.vercel.app" label="Open design system" newTab />
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default function Overview() {
             </div>
           </div>
           <div style={{ alignSelf: "stretch", flexShrink: 0, marginTop: "0" }}>
-            <Button href="https://vv-foundations.vercel.app" label="Open prototype" newTab />
+            <Button href="https://vv-foundations.vercel.app" label="Open design system" newTab />
           </div>
         </div>
       </div>
