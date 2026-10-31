@@ -1,13 +1,12 @@
 "use client";
 
 import type { MouseEvent } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LOGO_SMALL, LOGO_WIDE, aboutHref, homeHref, t, type Lang } from "@/lib/site";
+import { aboutHref, homeHref, t, type Lang } from "@/lib/site";
 import { findPage, menuHref } from "@/lib/pages";
 import MenuToggle from "@/components/MenuToggle";
-import SpinLogo from "@/components/SpinLogo";
+import Logo from "@/components/Logo";
 
 const linkBase =
   "px-3 py-2 text-[16px] leading-6 font-semibold transition-colors duration-200 ease-figma";
@@ -61,10 +60,7 @@ export default function Header({
     // мягкая тень снизу (shadow-header) — по образцу Ивана 2026-10-22, на всех страницах
     <header className="shadow-header fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between bg-white px-5 md:px-10 xl:h-20 xl:px-14">
       <Link href={homeHref(lang)} onClick={toTop(homeHref(lang))} aria-label={s.toHome} className="flex items-center">
-        <SpinLogo>
-          <Image src={LOGO_SMALL} alt="IvanGrigorenko" width={32} height={22} priority className="block xl:hidden" />
-          <Image src={LOGO_WIDE} alt="IvanGrigorenko" width={40} height={27} priority className="hidden xl:block" />
-        </SpinLogo>
+        <Logo className="w-8 xl:w-10" />
       </Link>
 
       <nav className="hidden items-center gap-3 xl:flex">
