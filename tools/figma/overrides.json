@@ -225,6 +225,12 @@
   ],
   "textStyles": [
     {
+      "pages": ["autotor-ru", "autotor-en"],
+      "exact": "AUTOTOR",
+      "style": { "color": "rgba(57, 129, 117, 0.28)" },
+      "note": "надпись за ноутбуком в первом экране, в макете 0.17 — просьба Ивана сделать чуть насыщеннее"
+    },
+    {
       "pages": [
         "autotor-ru"
       ],
