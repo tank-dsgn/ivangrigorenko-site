@@ -141,3 +141,40 @@ body {
     scale: 0.985;
   }
 }
+
+/* Заголовок главной (overrides.json → hoverWords): выделенное слово из макета */
+.hover-words-accent {
+  color: var(--color-accent);
+}
+
+/* Только там, где есть мышь. Свой курсор — та же стрелка, что в заголовке главной, на всю страницу;
+   над ссылками и картинками остаются системные рука и лупа: они показывают, что можно нажать */
+@media (hover: hover) and (pointer: fine) {
+  html,
+  button {
+    cursor: url("/cursor/arrow.png") 4 4, auto;
+    cursor: image-set(url("/cursor/arrow.png") 1x, url("/cursor/arrow@2x.png") 2x) 4 4, auto;
+  }
+  [data-swap-off] {
+    cursor: url("/cursor/arrow.png") 4 4, auto !important;
+    cursor: image-set(url("/cursor/arrow.png") 1x, url("/cursor/arrow@2x.png") 2x) 4 4, auto !important;
+  }
+
+  /* Подсветка переходит на слово под курсором, нарисованная в заголовке стрелка на это время гаснет */
+  .hover-words > span {
+    transition: color 150ms ease-out;
+  }
+  .hover-words:hover > span {
+    color: inherit;
+  }
+  .hover-words > span:hover {
+    color: var(--color-accent);
+  }
+  div:has(> p > .hover-words) > span {
+    pointer-events: none;
+    transition: opacity 150ms ease-out;
+  }
+  div:has(> p > .hover-words:hover) > span {
+    opacity: 0;
+  }
+}

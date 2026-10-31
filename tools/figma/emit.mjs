@@ -84,6 +84,7 @@ export function createEmitter({
   additions = [],
   hoverRules = {},
   textStyles = [],
+  hoverWords = [],
   frameStyles = [],
   imageSwaps = [],
   videos = {},
@@ -656,6 +657,16 @@ export function createEmitter({
     const ids = node.characterStyleOverrides || [];
     const table = node.styleOverrideTable || {};
     usedFonts.add(fontKey(node.style));
+
+    // Заголовок, где под курсором подсвечивается слово (overrides.json → hoverWords): пробел
+    // входит в слово, иначе между словами подсветка мигала бы. Выделение из макета — классом.
+    if (hoverWords.some((r) => chars.startsWith(r.startsWith))) {
+      const words = [...chars.matchAll(/\S+\s*/g)].map((m) => {
+        const accent = [...m[0]].some((_, i) => table[ids[m.index + i]] && styleLiteral(spanStyle(node, table[ids[m.index + i]], fonts)));
+        return `<span${accent ? ` className="hover-words-accent"` : ""}>${literal(m[0])}</span>`;
+      });
+      return { body: `<span className="hover-words">${words.join("")}</span>`, list: false, multiline: false };
+    }
 
     const paragraphs = [[]];
     for (let i = 0; i < chars.length; i++) {

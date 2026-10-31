@@ -46,7 +46,7 @@ const capture = (opener: HTMLElement): Shot => {
   copy.removeAttribute("tabindex");
   Object.assign(copy.style, {
     position: "relative", left: "0", top: "0", right: "auto", bottom: "auto",
-    margin: "0", transform: "none", cursor: "auto", flex: "none",
+    margin: "0", transform: "none", cursor: "inherit", flex: "none",
     width: `${el.offsetWidth}px`, height: `${el.offsetHeight}px`,
   });
   copy.querySelectorAll("img").forEach((img) => img.setAttribute("loading", "eager"));

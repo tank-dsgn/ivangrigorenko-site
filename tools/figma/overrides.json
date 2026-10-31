@@ -218,6 +218,11 @@
       ]
     }
   ],
+  "_hoverWords": "Заголовки главной: под курсором подсвечивается слово, на котором он стоит. Оформление в app/globals.css (.hover-words), только при мыши.",
+  "hoverWords": [
+    { "pages": ["index"], "startsWith": "I craft clear" },
+    { "pages": ["home-ru"], "startsWith": "Создаю понятные" }
+  ],
   "textStyles": [
     {
       "pages": [
