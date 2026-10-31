@@ -29,7 +29,8 @@ export default function Button({
 }) {
   const wide = Boolean(width);
   const fill = width === "fill";
-  const className = `group flex flex-row items-start ${fill ? "self-stretch lg:self-start" : ""}`;
+  // ссылка по размеру кнопки: иначе в блочном родителе она растягивается и ховер срабатывает на всю строку
+  const className = `group flex flex-row items-start ${fill ? "self-stretch lg:self-start lg:w-fit" : wide ? "" : "w-fit"}`;
   const style = width && width !== "fill" ? { width } : undefined;
   const body = (
     <div
