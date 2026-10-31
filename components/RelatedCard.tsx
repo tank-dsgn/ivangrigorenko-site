@@ -12,8 +12,7 @@ export type RelatedCardSize = "mobile" | "tablet" | "desktop";
  * Страницы вызывают компонент из сгенерированной вёрстки (tools/figma/emit.mjs, relatedCard).
  *
  * Наведение есть только у десктопной: окно и подпись поднимаются на 6px, у окна
- * плотнее тень, картинка слегка растёт, подпись становится индиго и полужирной (600),
- * вокруг проявляется подложка с лёгким оттенком индиго. Всё за 300 мс.
+ * плотнее тень с оттенком индиго, картинка слегка растёт, подпись становится индиго и полужирной (600). Всё за 300 мс.
  */
 export default function RelatedCard({
   size,
@@ -35,10 +34,8 @@ export default function RelatedCard({
 
   if (size === "desktop") {
     return (
-      // сверху 6px запаса: туда окно поднимается при наведении.
-      // before — подложка оттенка индиго под курсором, как фон карточки на главной: шире ссылки
-      // на 12px, в раскладке места не занимает, наведение не ловит (pointer-events-none)
-      <Link href={href} className="press-soft group ease-figma relative isolate flex h-[321px] w-[304px] shrink-0 flex-col items-start gap-3 pt-1.5 before:pointer-events-none before:absolute before:-inset-x-3 before:-top-3 before:-bottom-1.5 before:-z-10 before:rounded-[36px] before:bg-accent-tint before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100">
+      // сверху 6px запаса: туда окно поднимается при наведении
+      <Link href={href} className="press-soft group flex h-[321px] w-[304px] shrink-0 flex-col items-start gap-3 pt-1.5">
         <div
           className={`${window_} ease-figma group-hover:shadow-card-hover h-[283px] w-[304px] rounded-3xl transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5`}
           style={frame}

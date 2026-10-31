@@ -21,7 +21,7 @@ export type ProjectCardImage = CardImageData & {
  * генератор берёт из макета (tools/figma/emit.mjs, projectCard).
  *
  * Наведение есть только у десктопной карточки: она поднимается на 6px, тень
- * становится плотнее, фон получает лёгкий оттенок индиго, картинка слегка увеличивается. Всё за 300 мс.
+ * становится плотнее и с оттенком индиго, картинка слегка увеличивается. Фон остаётся белым. Всё за 300 мс.
  */
 export default function ProjectCard({
   size,
@@ -91,13 +91,13 @@ export default function ProjectCard({
     // запас убран 2026-10-09, чтобы отступы между карточками были ровно те, что заданы:
     // карточка поднимается сдвигом и места в раскладке под это не требует.
     <Link href={href} className="press-soft group flex h-[400px] w-[920px] shrink-0 flex-col items-start">
-      <div className="shadow-card ease-figma group-hover:shadow-card-hover group-hover:bg-accent-tint flex h-[400px] shrink-0 flex-row items-center justify-between self-stretch overflow-hidden rounded-3xl bg-white transition-[translate,box-shadow,background-color] duration-300 group-hover:-translate-y-1.5">
+      <div className="shadow-card ease-figma group-hover:shadow-card-hover flex h-[400px] shrink-0 flex-row items-center justify-between self-stretch overflow-hidden rounded-3xl bg-white transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5">
         <div className="relative h-[400px] w-[548px] shrink-0 overflow-hidden" style={image.frame}>
           {picture}
         </div>
         <div className="flex h-[400px] w-[372px] shrink-0 flex-col items-start justify-between overflow-hidden p-6">
           <div className="flex flex-col items-start gap-3 self-stretch">
-            <p className={`${tagsText} ease-figma group-hover:text-body text-[14px] leading-5 transition-colors duration-300`}>{tags}</p>
+            <p className={`${tagsText} text-[14px] leading-5`}>{tags}</p>
             <div className="flex flex-col items-start gap-4 self-stretch">
               <p className={`${titleText} text-[30px] leading-9`}>{title}</p>
               <p className={`${descriptionText} text-[18px] leading-7`}>{description}</p>
