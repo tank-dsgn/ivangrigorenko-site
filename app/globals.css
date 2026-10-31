@@ -148,8 +148,8 @@ body {
 }
 
 /* Только там, где есть мышь. Свой курсор — та же стрелка, что в заголовке главной, на всю страницу,
-   над всем, что нажимается, — рука в том же стиле (исходник tools/cursor/hand.svg). У части элементов
-   cursor: pointer задан в style, поэтому !important. Над картинками остаётся системная лупа */
+   над всем, что нажимается, — рука, над картинками с увеличением — лупа, в том же стиле (исходники
+   tools/cursor/*.svg). У части элементов cursor задан в style, поэтому !important */
 @media (hover: hover) and (pointer: fine) {
   html,
   button {
@@ -163,6 +163,10 @@ body {
   [style*="cursor: pointer"] {
     cursor: url("/cursor/hand.png") 11 5, pointer !important;
     cursor: image-set(url("/cursor/hand.png") 1x, url("/cursor/hand@2x.png") 2x) 11 5, pointer !important;
+  }
+  [style*="zoom-in"] {
+    cursor: url("/cursor/zoom.png") 13 12, zoom-in !important;
+    cursor: image-set(url("/cursor/zoom.png") 1x, url("/cursor/zoom@2x.png") 2x) 13 12, zoom-in !important;
   }
   [data-swap-off] {
     cursor: url("/cursor/arrow.png") 4 4, auto !important;

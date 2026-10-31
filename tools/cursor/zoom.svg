@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+  <!-- Лупа для курсора: обводка и тень как у стрелки из макета, кончик курсора в центре линзы -->
+  <defs>
+    <filter id="f" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" x="0" y="0" width="30" height="31">
+      <feFlood flood-opacity="0" result="B"/>
+      <feColorMatrix in="SourceAlpha" result="h" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="1.92"/>
+      <feGaussianBlur stdDeviation="2.88"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.309804 0 0 0 0 0.27451 0 0 0 0 0.898039 0 0 0 0.4 0"/>
+      <feBlend in2="B" mode="normal" result="e"/>
+      <feBlend in="SourceGraphic" in2="e" mode="normal" result="shape"/>
+    </filter>
+  </defs>
+  <g filter="url(#f)">
+    <path d="M18 17l4.5 4.5" stroke="white" stroke-width="6.8" stroke-linecap="round"/>
+    <circle cx="13" cy="12" r="6.5" fill="white" stroke="white" stroke-width="3.8"/>
+    <path d="M18 17l4.5 4.5" stroke="#4F46E5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="13" cy="12" r="6.5" fill="#4F46E5"/>
+    <path d="M13 9v6M10 12h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>
