@@ -37,7 +37,7 @@ export default function RelatedCard({
       // сверху 6px запаса: туда окно поднимается при наведении
       <Link href={href} className="press-soft group flex h-[321px] w-[304px] shrink-0 flex-col items-start gap-3 pt-1.5">
         <div
-          className={`${window_} ease-figma group-hover:shadow-card-hover h-[283px] w-[304px] rounded-3xl transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5`}
+          className={`${window_} ease-figma group-hover:shadow-thumb-hover h-[283px] w-[304px] rounded-3xl transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5`}
           style={frame}
         >
           <CardImage image={image} />
