@@ -227,8 +227,16 @@
     {
       "pages": ["autotor-ru", "autotor-en"],
       "exact": "AUTOTOR",
-      "style": { "color": "rgba(16, 72, 64, 0.16)", "filter": "blur(4px)" },
-      "note": "надпись за ноутбуком в первом экране: в макете rgba(57, 129, 117, 0.17), внизу справа цвет совпадал с градиентом и R читалась как P. Цвет темнее фона по всей высоте; размытие, чтобы не бросалась в глаза"
+      "style": {
+        "color": "transparent",
+        "backgroundImage": "linear-gradient(to bottom, rgba(44, 115, 102, 0.28) 26%, rgba(37, 93, 83, 0.28) 78%), linear-gradient(rgba(57, 129, 117, 0.28), rgba(57, 129, 117, 0.28))",
+        "backgroundSize": "163px 100%, calc(100% - 163px) 100%",
+        "backgroundPosition": "right top, left top",
+        "backgroundRepeat": "no-repeat",
+        "WebkitBackgroundClip": "text",
+        "backgroundClip": "text"
+      },
+      "note": "надпись за ноутбуком в первом экране, всё слово rgba(57, 129, 117, 0.28). Внизу справа этот цвет совпадает с градиентом, нога R пропадала и буква читалась как P, поэтому у R (последние 163px) цвет темнеет вместе с фоном"
     },
     {
       "pages": [
