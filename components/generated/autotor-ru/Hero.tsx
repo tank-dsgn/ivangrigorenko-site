@@ -34,7 +34,7 @@ export default function Hero() {
         <div style={{ position: "absolute", left: "0%", right: "0%", top: "0%", bottom: "0%", flexShrink: 0, backgroundImage: "linear-gradient(180deg, rgba(78, 193, 173, 0) 0%, rgba(44, 47, 48, 0.408) 62.5%, rgba(0, 0, 0, 0.6) 100%)" }} />
         <div style={{ position: "relative", width: "880px", display: "flex", flexDirection: "column", gap: "24px", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", height: "528px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "14.67px", justifyContent: "center", alignItems: "center", position: "relative" }}>
-            <p style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + -0.5px)", transform: "translateX(-50%) translateY(-50%)", fontSize: "255px", lineHeight: "normal", fontWeight: 600, textAlign: "center", color: "rgba(57, 129, 117, 0.28)", whiteSpace: "nowrap" }}>{`AUTOTOR`}</p>
+            <p style={{ position: "absolute", left: "calc(50% + 0px)", top: "calc(50% + -0.5px)", transform: "translateX(-50%) translateY(-50%)", fontSize: "255px", lineHeight: "normal", fontWeight: 600, textAlign: "center", color: "rgba(16, 72, 64, 0.18)", whiteSpace: "nowrap" }}>{`AUTOTOR`}</p>
             <span style={{ position: "relative", width: "880px", height: "530.75px", flexShrink: 0 }}>
               <img src="/a/3e25172e72a63a6ff97ef62382ea02d6462aeade.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", width: "100%", top: "0%", height: "102.6%", maxWidth: "none" }} />
             </span>
