@@ -169,21 +169,17 @@ body {
     cursor: image-set(url("/cursor/arrow.png") 1x, url("/cursor/arrow@2x.png") 2x) 4 4, auto !important;
   }
 
-  /* Подсветка переходит на слово под курсором, нарисованная в заголовке стрелка на это время гаснет */
+  /* В покое заголовок без выделения и без нарисованной стрелки, слово подсвечивается только под курсором */
   .hover-words > span {
     transition: color 150ms ease-out;
   }
-  .hover-words:hover > span {
+  .hover-words-accent {
     color: inherit;
   }
   .hover-words > span:hover {
     color: var(--color-accent);
   }
   div:has(> p > .hover-words) > span {
-    pointer-events: none;
-    transition: opacity 150ms ease-out;
-  }
-  div:has(> p > .hover-words:hover) > span {
-    opacity: 0;
+    display: none;
   }
 }
