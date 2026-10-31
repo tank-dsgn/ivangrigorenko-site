@@ -4,6 +4,8 @@ import {
   Children,
   cloneElement,
   isValidElement,
+  useEffect,
+  useRef,
   useState,
   useSyncExternalStore,
   type CSSProperties,
@@ -108,10 +110,26 @@ export default function VariantGroup({
     setHover(el.dataset.hoverTo!);
   };
 
+  // Стрелка карусели под курсором дошла до последнего слайда: data-swap-off ставит StateGroups уже
+  // после клика, курсор никуда не уходил, поэтому подсветку снимаем сами и сразу, как у левой стрелки
+  const box = useRef<HTMLDivElement>(null);
+  const isArrow = Boolean(rest["data-swap-map"]);
+  useEffect(() => {
+    const el = box.current;
+    if (!isArrow || !el) return;
+    const watch = new MutationObserver(() => {
+      if (!el.hasAttribute("data-swap-off")) return;
+      setMs(0);
+      setHover(null);
+    });
+    watch.observe(el, { attributes: true, attributeFilter: ["data-swap-off"] });
+    return () => watch.disconnect();
+  }, [isArrow]);
+
   const shown = hover ?? active;
 
   return (
-    <div {...rest} style={style} onClick={onClick} onMouseOver={onMouseOver} onMouseLeave={() => setHover(null)}>
+    <div {...rest} ref={box} style={style} onClick={onClick} onMouseOver={onMouseOver} onMouseLeave={() => setHover(null)}>
       {panels.map((panel) => {
         const id = panel.props["data-variant"];
         const on = id === shown;
