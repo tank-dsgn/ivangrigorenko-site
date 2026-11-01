@@ -21,7 +21,7 @@ export default function S1Block() {
             style={{ position: "absolute", left: "-707px", top: "-1067px", width: "1710px", height: "2066px", flexShrink: 0 }}
           />
           <div style={{ position: "relative", alignSelf: "stretch", aspectRatio: "335 / 176", overflow: "hidden" }}>
-            <img src="/a/05754268326d87f16c51cddfec2a50337e6f97db.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "-4.27%", width: "100%", height: "104.4%", maxWidth: "none" }} />
+            <img src="/a/vv-token-pyramid-mobile.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" style={{ position: "absolute", left: "0%", top: "-4.27%", width: "100%", height: "104.4%", maxWidth: "none" }} />
           </div>
         </div>
       </div>
@@ -382,7 +382,7 @@ export default function S1Block() {
             <div style={{ position: "absolute", right: "0.5px", top: "36px", width: "442px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-end" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", justifyContent: "center", alignItems: "flex-end" }}>
                 <div style={{ display: "flex", flexDirection: "row", gap: "6px", alignItems: "center", padding: "4px 8px 4px 8px", background: "rgba(100, 111, 163, 0.27)", borderRadius: "8px" }}>
-                  <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, fontFamily: "\"Courier Prime\", var(--font-open-sans), sans-serif", letterSpacing: "0.14px", color: "#e2e8f0", whiteSpace: "nowrap" }}>{`#F8FAFC`}</p>
+                  <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, fontFamily: "\"Courier Prime\", var(--font-open-sans), sans-serif", letterSpacing: "0.14px", color: "#e2e8f0", whiteSpace: "nowrap" }}>{`#F5F5F5`}</p>
                 </div>
                 <p style={{ fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#f1f5f9", whiteSpace: "nowrap" }}>{`Raw value`}</p>
               </div>
@@ -393,7 +393,7 @@ export default function S1Block() {
             <div style={{ position: "absolute", right: "1px", top: "158px", width: "375px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-end" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", alignItems: "flex-end" }}>
                 <div style={{ display: "flex", flexDirection: "row", gap: "6px", alignItems: "center", padding: "4px 8px 4px 8px", background: "rgba(100, 111, 163, 0.27)", borderRadius: "8px" }}>
-                  <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, fontFamily: "\"Courier Prime\", var(--font-open-sans), sans-serif", letterSpacing: "0.14px", color: "#e2e8f0", whiteSpace: "nowrap" }}>{`primitive.color.slate-50`}</p>
+                  <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, fontFamily: "\"Courier Prime\", var(--font-open-sans), sans-serif", letterSpacing: "0.14px", color: "#e2e8f0", whiteSpace: "nowrap" }}>{`--neutral-100`}</p>
                 </div>
                 <p style={{ fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#f1f5f9", whiteSpace: "nowrap" }}>{`Primitive token`}</p>
               </div>
@@ -404,7 +404,7 @@ export default function S1Block() {
             <div style={{ position: "absolute", right: "0.5px", bottom: "0", width: "302px", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-end" }}>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px", justifyContent: "center", alignItems: "flex-end" }}>
                 <div style={{ display: "flex", flexDirection: "row", gap: "6px", alignItems: "center", padding: "4px 8px 4px 8px", background: "rgba(100, 111, 163, 0.27)", borderRadius: "8px" }}>
-                  <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, fontFamily: "\"Courier Prime\", var(--font-open-sans), sans-serif", letterSpacing: "0.14px", color: "#e2e8f0", whiteSpace: "nowrap" }}>{`semantic.color.surface.primary`}</p>
+                  <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, fontFamily: "\"Courier Prime\", var(--font-open-sans), sans-serif", letterSpacing: "0.14px", color: "#e2e8f0", whiteSpace: "nowrap" }}>{`--color-background-secondary`}</p>
                 </div>
                 <p style={{ fontSize: "20px", lineHeight: "28px", fontWeight: 400, textAlign: "center", color: "#f1f5f9", whiteSpace: "nowrap" }}>{`Semantic token`}</p>
               </div>
