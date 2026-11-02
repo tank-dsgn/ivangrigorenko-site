@@ -17,6 +17,7 @@
   --color-surface: #f1f5f9;    /* slate-100 — подложка карточки */
   --color-accent: #4f46e5;     /* indigo-600 — акцент */
   --color-accent-soft: #6366f1;/* indigo-500 — бургер */
+  --color-accent-light: #818cf8;/* indigo-400 — крестик увеличенного вида под курсором, на тёмном фоне */
   --color-thumb: #0c1543;      /* подложка маленькой карточки, пока грузится картинка */
 
   --shadow-card: 0 8px 20px 0 rgb(0 0 0 / 0.1);
@@ -126,7 +127,8 @@ body {
   opacity: 1;
 }
 
-/* Крестик в увеличенном виде: при мыши под курсором индиго (просьба Ивана 2026-11-02) */
+/* Крестик в увеличенном виде: при мыши под курсором индиго (просьба Ивана 2026-11-02). Светлее акцента:
+   на тёмном фоне акцент #4f46e5 выглядел так, будто крестик гаснет */
 .lightbox-close {
   color: #fff;
   opacity: 0.75;
@@ -135,7 +137,7 @@ body {
 @media (hover: hover) and (pointer: fine) {
   .lightbox-close:hover,
   .lightbox-close:focus-visible {
-    color: var(--color-accent);
+    color: var(--color-accent-light);
     opacity: 1;
   }
 }
