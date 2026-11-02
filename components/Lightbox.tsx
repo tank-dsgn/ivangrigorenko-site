@@ -365,7 +365,8 @@ export default function Lightbox() {
           aria-label="Close"
           autoFocus
           onClick={close}
-          style={{ position: "relative", display: "block", width: "100%", aspectRatio: "1 / 1", borderRadius: "9999px", color: "#fff", opacity: 0.75, cursor: "pointer" }}
+          className="lightbox-close"
+          style={{ position: "relative", display: "block", width: "100%", aspectRatio: "1 / 1", borderRadius: "9999px", cursor: "pointer" }}
         >
           <svg viewBox="0 0 15 15" fill="none" aria-hidden="true" style={{ position: "absolute", inset: "28%" }}>
             <path d="M2 2L13 13M13 2L2 13" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />

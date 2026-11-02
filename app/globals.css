@@ -126,6 +126,20 @@ body {
   opacity: 1;
 }
 
+/* Крестик в увеличенном виде: при мыши под курсором индиго (просьба Ивана 2026-11-02) */
+.lightbox-close {
+  color: #fff;
+  opacity: 0.75;
+  transition: opacity 150ms ease-out, color 150ms ease-out;
+}
+@media (hover: hover) and (pointer: fine) {
+  .lightbox-close:hover,
+  .lightbox-close:focus-visible {
+    color: var(--color-accent);
+    opacity: 1;
+  }
+}
+
 /*
  * Нажатие на телефоне и планшете (уже 1280px, как у «Связаться»): кнопка, ссылка, стрелка
  * карусели, переключатель темы чуть проседают, пока на них держат палец (просьба Ивана 2026-10-22).
