@@ -1,0 +1,140 @@
+<!doctype html>
+<!--
+  Русская версия CV. До 04.11.2026 была выгрузкой из Figma; перенесена в код, чтобы править здесь.
+  Тексты — дословно из того PDF (исправлены только пробел в «(родной )» и дефисы в датах сертификатов).
+  Вёрстка общая с cv-en.html: A4, поля 40pt, основная колонка 40–372pt, правая — с 403pt.
+  Печать в PDF:
+    PDF=public/cv/Ivan_Grigorenko_CV_RU.pdf node tools/verify/ev.mjs "file://$PWD/tools/cv/cv-ru.html" 800 'return 1' 1500
+-->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Иван Григоренко — UX/UI дизайнер — резюме</title>
+<style>
+  @font-face { font-family: "Inter"; font-weight: 1 1000; src: url("../../public/fonts/Inter_1-english.woff2") format("woff2"); }
+  @font-face { font-family: "Inter"; font-weight: 1 1000; src: url("../../public/fonts/Inter_1-rest-latin.woff2") format("woff2"); unicode-range: U+00A1-024F, U+2010-2027; }
+  @font-face { font-family: "Inter"; font-weight: 1 1000; src: url("../../public/fonts/Inter_1-rest.woff2") format("woff2"); unicode-range: U+0400-04FF; }
+  @page { size: A4; margin: 40pt 40pt 40pt 40pt; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Inter", sans-serif; color: #000; font-size: 11pt; line-height: 13pt; }
+  a { color: inherit; text-decoration: none; }
+  .muted { color: #808080; }
+
+  header { position: relative; height: 92pt; }
+  h1 { font-size: 22pt; line-height: 27pt; font-weight: 700; }
+  .role { font-size: 18pt; line-height: 22pt; margin-top: 12pt; }
+  .place { font-size: 11pt; margin-top: 13pt; }
+  .contacts { position: absolute; right: 0; top: 0; list-style: none; }
+  .contacts li { display: flex; align-items: center; height: 16pt; margin-bottom: 8pt; font-size: 10pt; }
+  .contacts img { width: 16pt; margin-right: 6pt; }
+
+  .summary { margin-top: 18pt; font-size: 12pt; line-height: 15pt; }
+  .summary p + p { margin-top: 8pt; }
+
+  .cols { display: grid; grid-template-columns: 332pt 152pt; column-gap: 31pt; margin-top: 30pt; }
+  h2 { font-size: 14pt; line-height: 17pt; font-weight: 700; text-transform: uppercase; margin-bottom: 8pt; }
+  h3 { font-size: 12pt; line-height: 15pt; font-weight: 600; margin-top: 6pt; }
+  .job + .job { margin-top: 20pt; }
+  .meta { margin-top: 4pt; }
+  ul, ol { margin-top: 8pt; padding-left: 16pt; }
+  li + li { margin-top: 6pt; }
+  ol li + li { margin-top: 10pt; }
+  ol li::marker { font-weight: 600; }
+  li { break-inside: avoid; }
+  li b { font-weight: 600; }
+  .tail { margin-top: 4pt; }
+
+  aside section { break-inside: avoid; }
+  aside section + section { margin-top: 26pt; }
+  .cert p + p { margin-top: 4pt; }
+  aside p + p { margin-top: 8pt; }
+  .tools p + p { margin-top: 5pt; }
+  .cert + .cert, .lang + .lang { margin-top: 8pt; }
+  .cert b, .edu b { font-weight: 600; }
+  .cert a { text-decoration: underline; text-decoration-color: #b3b3b3; text-decoration-thickness: 0.5pt; text-underline-offset: 2pt; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Иван Григоренко</h1>
+  <p class="role muted">UX/UI Дизайнер</p>
+  <p class="place muted">Минск, Беларусь</p>
+  <ul class="contacts">
+    <li><img src="ig.png" alt=""><a href="https://ivangrigorenko.com/home-ru?utm_source=cv&amp;utm_medium=pdf">ivangrigorenko.com</a></li>
+    <li><img src="in.png" alt=""><a href="https://www.linkedin.com/in/ivan-grigorenko/">linkedin.com/in/ivan-grigorenko</a></li>
+    <li><img src="tg.png" alt=""><a href="https://t.me/Ivan_Grigorenko">t.me/ivan_grigorenko</a></li>
+    <li><img src="gm.png" alt=""><a href="mailto:ivan.grigorenko.dsgn@gmail.com">ivan.grigorenko.dsgn@gmail.com</a></li>
+  </ul>
+</header>
+
+<div class="summary">
+  <p>UX/UI дизайнер. Проектирую веб, десктоп и мобильные интерфейсы. Принимаю решения на основе задач бизнеса, пользовательских исследований и данных.</p>
+  <p>Разрабатываю и поддерживаю масштабируемые дизайн-системы: прорабатываю архитектуру токенов, структуру компонентов и документацию. Готовлю подробные UX-спецификации, согласовываю ограничения с разработкой и провожу Design QA перед релизом.</p>
+  <p>Использую AI: собираю прототипы в коде по макетам (Claude Code, Figma MCP, Storybook), провожу исследования и анализ, работаю над структурой и документацией.</p>
+  <p>Домены: Fintech, Crypto, E-commerce, B2B SaaS, B2C, EdTech, брендинг и айдентика.</p>
+</div>
+
+<div class="cols">
+  <main>
+    <h2>Опыт работы</h2>
+    <div class="job">
+      <h3>VV DSGN</h3>
+      <p class="meta muted">UX/UI Дизайнер, Июнь 2024 – Настоящее время</p>
+      <ul>
+        <li>Проектировал продукты с нуля и новые функции в запущенных продуктах: B2B SaaS, B2C, iOS.</li>
+        <li>Разрабатывал и поддерживал дизайн-систему студии: архитектура токенов, структура компонентов, состояния, документация.</li>
+        <li>Генерировал живые прототипы в коде (Storybook) с помощью AI-инструментов.</li>
+        <li>Согласовывал с разработчиками ограничения реализации, вёл Handoff и Design QA: спецификации, прототипы, контроль точности реализации.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>ФРИЛАНС</h3>
+      <p class="meta muted">UX/UI Дизайнер, Январь 2023 – Май 2024</p>
+      <ol>
+        <li><b>EazyChange</b> — криптообменник. Исследовал 20+ платформ, спроектировал сценарий обмена, IA и адаптивный интерфейс, собрал дизайн-систему, адаптировал айдентику после ребрендинга.</li>
+        <li><b>Autotor.pl</b> — автомаркетплейс. Спроектировал раздел платного продвижения объявлений (оплата, статусы, история транзакций) для десктопа и мобайла, в светлой и тёмной темах.</li>
+        <li><b>Ostral</b> — B2B-платформа контроля рисков на нефтеперерабатывающих объектах. Спроектировал интерфейс для трёх ролей пользователей: карту с тысячами дефектов, аналитику рисков и прогресс кампаний; собрал интерактивный прототип.</li>
+        <li><b>Dr. Mikulich</b> — айдентика пластического хирурга. Провёл опрос пациентов, разработал фирменный знак, цветовую систему, типографику и носители.</li>
+        <li><b>Учебные проекты (2018 – 2022)</b><p class="tail">Tecorio.com, KinoBox, GameShare</p></li>
+      </ol>
+    </div>
+  </main>
+
+  <aside>
+    <section>
+      <h2>Навыки</h2>
+      <p>UX/UI дизайн, Веб-дизайн, Мобильный дизайн, Адаптивный дизайн, Информационная архитектура, Микро-интеракции, Дизайн-системы, Дизайн иконок, Прототипирование, Доступность (WCAG)</p>
+      <p>Пользовательские исследования, Конкурентный анализ, Персоны, User Journey Maps, User Flows</p>
+      <p>HTML/CSS (базовое понимание), Dev Handoff, Design QA, Agile, Scrum, Kanban</p>
+    </section>
+    <section class="tools">
+      <h2>Инструменты</h2>
+      <p>Figma, Figjam</p>
+      <p>Photoshop</p>
+      <p>Notion</p>
+      <p>Affine</p>
+      <p>AI-ассистенты</p>
+    </section>
+    <section>
+      <h2>Языки</h2>
+      <p class="lang">Русский (родной)</p>
+      <p class="lang">Английский (A2–B1)</p>
+    </section>
+    <section>
+      <h2>Сертификаты</h2>
+      <div class="cert"><p><b><a href="https://academy.claude.com/badges/165c306f-ab3b-4726-9a47-b629cab5dd5b">Anthropic — Claude Code&nbsp;101</a></b></p><p class="muted">Ноябрь 2026</p></div>
+      <div class="cert"><p><b><a href="https://coursera.org/verify/AEAC74ARAXVE">Coursera — Google UX Design Professional</a></b></p><p class="muted">Июнь 2024 – Октябрь 2024</p></div>
+      <div class="cert"><p><b><a href="https://coursera.org/verify/RLG975QZUPH2">Mail.ru — Дизайнер интерфейсов</a></b></p><p class="muted">Июнь 2018 – Октябрь 2018</p></div>
+      <div class="cert"><p><b>red_mad_robot — Дизайн мобильных приложений</b></p><p class="muted">Май 2018 – Июнь 2018</p></div>
+    </section>
+    <section class="edu">
+      <h2>Образование</h2>
+      <p><b>БГУ культуры и искусств</b></p>
+      <p class="muted">2009 – 2012</p>
+      <p>Менеджмент международных культурных связей</p>
+    </section>
+  </aside>
+</div>
+</body>
+</html>

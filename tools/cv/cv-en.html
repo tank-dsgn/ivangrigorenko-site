@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Английская версия CV. Вёрстка повторяет русскую (CV_Ivan_Grigorenko_RU.pdf из Figma):
+  Английская версия CV, пара к cv-ru.html (русская, раньше была выгрузкой из Figma):
   A4, поля 40pt, основная колонка 40–372pt, правая — с 403pt.
   Печать в PDF:
     PDF=public/cv/Ivan_Grigorenko_CV_EN.pdf node tools/verify/ev.mjs "file://$PWD/tools/cv/cv-en.html" 800 'return 1' 1500
@@ -39,6 +39,7 @@
   li + li { margin-top: 6pt; }
   ol li + li { margin-top: 10pt; }
   ol li::marker { font-weight: 600; }
+  li { break-inside: avoid; }
   li b { font-weight: 600; }
   .tail { margin-top: 4pt; }
 
@@ -49,6 +50,7 @@
   .tools p + p { margin-top: 5pt; }
   .cert + .cert, .lang + .lang { margin-top: 8pt; }
   .cert b, .edu b { font-weight: 600; }
+  .cert a { text-decoration: underline; text-decoration-color: #b3b3b3; text-decoration-thickness: 0.5pt; text-underline-offset: 2pt; }
 </style>
 </head>
 <body>
@@ -119,8 +121,9 @@
     </section>
     <section>
       <h2>Certificates</h2>
-      <div class="cert"><p><b>Coursera — Google UX Design Professional</b></p><p class="muted">June 2024 – October 2024</p></div>
-      <div class="cert"><p><b>Mail.ru — Interface Designer</b></p><p class="muted">June 2018 – October 2018</p></div>
+      <div class="cert"><p><b><a href="https://academy.claude.com/badges/165c306f-ab3b-4726-9a47-b629cab5dd5b">Anthropic — Claude Code&nbsp;101</a></b></p><p class="muted">November 2026</p></div>
+      <div class="cert"><p><b><a href="https://coursera.org/verify/AEAC74ARAXVE">Coursera — Google UX Design Professional</a></b></p><p class="muted">June 2024 – October 2024</p></div>
+      <div class="cert"><p><b><a href="https://coursera.org/verify/RLG975QZUPH2">Mail.ru — Interface Designer</a></b></p><p class="muted">June 2018 – October 2018</p></div>
       <div class="cert"><p><b>red_mad_robot — Mobile App Design</b></p><p class="muted">May 2018 – June 2018</p></div>
     </section>
     <section class="edu">
