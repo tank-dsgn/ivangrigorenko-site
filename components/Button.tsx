@@ -4,7 +4,7 @@ import { useRef, type MouseEvent } from "react";
 import Link from "next/link";
 
 /**
- * Кнопка сайта — контурная, 40px: «Скачать моё резюме», «Посетить сайт», «Открыть прототип».
+ * Кнопка сайта — контурная, 40px (на десктопе 48px, как «Связаться», просьба Ивана 2026-11-05): «Скачать моё резюме», «Посетить сайт», «Открыть прототип».
  *
  * В макете это компонент «Button» (Type=outlined). Страницы вызывают её из
  * сгенерированной вёрстки (tools/figma/emit.mjs, siteButton).
@@ -51,7 +51,7 @@ export default function Button({
       ref={box}
       onMouseEnter={track}
       onMouseLeave={track}
-      className={`relative flex h-10 flex-row items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-4 py-2 shadow-[inset_0_0_0_1px_#94a3b8] max-xl:shadow-[inset_0_0_0_1px_#4f46e5] ${wide ? `min-w-px flex-[1_0_0px] ${fill ? "lg:flex-none" : ""}` : ""}`}
+      className={`relative flex h-10 flex-row items-center justify-center gap-2 overflow-hidden rounded-full bg-white px-4 py-2 xl:h-12 xl:px-6 shadow-[inset_0_0_0_1px_#94a3b8] max-xl:shadow-[inset_0_0_0_1px_#4f46e5] ${wide ? `min-w-px flex-[1_0_0px] ${fill ? "lg:flex-none" : ""}` : ""}`}
     >
       {/* заливка: круг с центром в точке курсора, вырастает от нуля и накрывает всю кнопку */}
       <span
