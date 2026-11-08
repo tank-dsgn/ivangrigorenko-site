@@ -28,6 +28,7 @@ export const socials = [
   { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: "/icons/behance.svg", w: 32, h: 32 },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/ivan-grigorenko-1382b0156/", icon: "/icons/linkedin.svg", w: 32, h: 32 },
   { name: "Dribbble", href: "https://dribbble.com/ivangrigorenko", icon: "/icons/dribbble.svg", w: 32, h: 32 },
+  { name: "GitHub", href: "https://github.com/tank-dsgn", icon: "/icons/github.svg", w: 32, h: 32 },
   { name: "Telegram", href: "https://t.me/ivan_grigorenko", icon: "/icons/telegram.svg", w: 32, h: 32 },
 ];
 
