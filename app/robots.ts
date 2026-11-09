@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      // страницы меню дублируют навигацию и в поиске не нужны
+      // the menu pages repeat the navigation and do not belong in search
       disallow: ["/home-menu-ru", "/home-menu-en"],
     },
     sitemap: `${SITE_URL}/sitemap.xml`,

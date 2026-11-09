@@ -1,9 +1,10 @@
 /**
- * Четвёртый ряд сетки «Мои инструменты» на странице «Обо мне»: Storybook, GitHub, Vercel, Tailwind CSS.
+ * The fourth row of the "My tools" grid on the About page: Storybook, GitHub, Vercel, Tailwind CSS.
  *
- * В макете этих иконок нет — Иван попросил добавить их 2026-10-06, остальные не трогать.
- * Ряд вставляет генератор (`additions` в tools/figma/overrides.json) после трёх рядов
- * из макета; размер и шаг те же: иконка 34px, между иконками 20px.
+ * The design file has none of these icons; Ivan asked for them on 2026-10-06
+ * and for the rest to be left alone. The generator inserts the row
+ * (`additions` in tools/figma/overrides.json) after the three rows that come
+ * from the design file, at the same size and pitch: 34px icons, 20px apart.
  */
 const tools = [
   { name: "Storybook", src: "/icons/tools/storybook.svg" },

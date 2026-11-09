@@ -3,10 +3,12 @@
 import { useRef, type PointerEvent } from "react";
 
 /**
- * Логотип под курсором: G делает оборот в плоскости, точка невысоко подпрыгивает, при касании
- * сплющивается и пружинит обратно, I стоит (выбор Ивана 2026-10-31). Логотип встроен как SVG,
- * а не картинкой, иначе буквы и точку не сдвинуть по отдельности. Анимация запускается из кода,
- * а не через :hover, чтобы доигрывала, когда курсор ушёл. На сенсорных экранах наведения нет.
+ * The logo on hover: the G turns once in plane, the dot hops a little, squashes
+ * as it lands and springs back, and the I stays put (Ivan's choice,
+ * 2026-10-31). The logo is inlined as SVG rather than an image, otherwise the
+ * letters and the dot could not move separately. The animation is started from
+ * code rather than :hover so that it plays out after the cursor has left.
+ * Touch screens have no hover.
  */
 export default function Logo({ className = "" }: { className?: string }) {
   const letter = useRef<SVGPathElement>(null);

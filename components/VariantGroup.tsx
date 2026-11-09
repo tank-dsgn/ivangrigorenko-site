@@ -22,8 +22,8 @@ type PanelProps = {
 };
 
 /**
- * Есть ли у посетителя мышь. Состояния «по наведению» нужны только с ней,
- * поэтому до первого движения мыши они в страницу не попадают.
+ * Whether the visitor has a mouse. Hover states are only of use with one, so
+ * they stay out of the page until the mouse first moves.
  */
 let hasMouse = false;
 const listeners = new Set<() => void>();
@@ -44,15 +44,16 @@ function subscribe(notify: () => void) {
 }
 
 /**
- * Переключатель состояний блока.
+ * The state switch for a block.
  *
- * В макете карусели, тумблер темы и состояния кнопок сделаны вариантами
- * компонента: клик по стрелке меняет `step=1` на `step=2`, наведение на кнопку —
- * `default` на `hover`. Генератор выводит варианты слоями, а этот компонент
- * показывает нужный. Длительность перехода берётся из макета.
+ * In the design file the carousels, the theme toggle and the button states are
+ * all component variants: a click on an arrow turns `step=1` into `step=2`,
+ * hovering a button turns `default` into `hover`. The generator emits the
+ * variants as layers and this component shows the right one. The transition
+ * duration comes from the design file.
  *
- * Элемент-переключатель помечен `data-swap-to` (клик) или `data-hover-to`
- * (наведение; при уходе курсора состояние возвращается).
+ * A switching element is marked `data-swap-to` for a click or `data-hover-to`
+ * for a hover, where the state returns once the cursor leaves.
  */
 export default function VariantGroup({
   initial,
@@ -63,12 +64,12 @@ export default function VariantGroup({
   initial: string;
   style?: CSSProperties;
   children: ReactNode;
-  /** блок сам может быть переключателем для блока снаружи */
+  /** a block can itself switch the block around it */
   "data-swap-to"?: string;
   "data-swap-ms"?: string;
   "data-hover-to"?: string;
   "data-hover-ms"?: string;
-  /** или частью карусели, которая переключается атрибутом data-state */
+  /** or be part of a carousel switched through the data-state attribute */
   "data-swap-map"?: string;
   className?: string;
 }) {
@@ -80,7 +81,7 @@ export default function VariantGroup({
   const panels = Children.toArray(children).filter(isValidElement) as ReactElement<PanelProps>[];
   const ids = panels.map((p) => p.props["data-variant"]);
 
-  /** Ближайший переключатель, который ведёт в состояние именно этого блока */
+  /** The nearest switch that leads into a state of this very block */
   const trigger = (e: MouseEvent<HTMLDivElement>, key: "swapTo" | "hoverTo") => {
     for (let el = e.target as HTMLElement | null; el; el = el.parentElement) {
       const to = el.dataset?.[key];
@@ -93,16 +94,17 @@ export default function VariantGroup({
   const onClick = (e: MouseEvent<HTMLDivElement>) => {
     const el = trigger(e, "swapTo");
     if (!el) return;
-    // переключатель темы меняет экраны мгновенно, без наплыва
+    // the theme switch changes the screens at once, with no cross-fade
     setMs(el.hasAttribute("data-toggle") ? 0 : Number(el.dataset.swapMs) || 0);
     setActive(el.dataset.swapTo!);
     setHover(null);
   };
 
   const onMouseOver = (e: MouseEvent<HTMLDivElement>) => {
-    // стрелка карусели, которая сейчас никуда не ведёт, не подсвечивается (см. StateGroups)
-    // у переключателя темы своё наведение (обводка в app/globals.css): вариант «наведение»
-    // из макета нарисован для светлой темы и в тёмной показывал не тот ползунок
+    // a carousel arrow that currently leads nowhere does not light up (see
+    // StateGroups); the theme switch has a hover of its own, the outline in
+    // app/globals.css, because the design file's hover variant was drawn for
+    // the light theme and showed the wrong knob in the dark one
     if (!mouse || e.currentTarget.hasAttribute("data-swap-off") || e.currentTarget.hasAttribute("data-toggle")) return;
     const el = trigger(e, "hoverTo");
     if (!el) return;
@@ -110,8 +112,9 @@ export default function VariantGroup({
     setHover(el.dataset.hoverTo!);
   };
 
-  // Стрелка карусели под курсором дошла до последнего слайда: data-swap-off ставит StateGroups уже
-  // после клика, курсор никуда не уходил, поэтому подсветку снимаем сами и сразу, как у левой стрелки
+  // A carousel arrow under the cursor has reached the last slide: StateGroups
+  // sets data-swap-off only after the click, and the cursor never left, so the
+  // highlight is cleared here and at once, as it is for the left arrow
   const box = useRef<HTMLDivElement>(null);
   const isArrow = Boolean(rest["data-swap-map"]);
   useEffect(() => {
@@ -139,11 +142,12 @@ export default function VariantGroup({
           "aria-hidden": !on,
           style: {
             ...panel.props.style,
-            // показанное состояние стоит в потоке и задаёт размер блока,
-            // остальные лежат поверх него невидимыми
+            // the shown state sits in the flow and sets the block's size; the
+            // rest lie over it, out of sight
             position: on ? "relative" : "absolute",
-            // ширина — как у показанного: иначе вне потока панель сжимается по своему
-            // содержимому и ряд телефонов растягивает её шире экрана (POT «Вход в приложение», 375)
+            // width follows the shown state: out of the flow a panel would
+            // otherwise contract to its own content, and a row of phones would
+            // stretch it wider than the screen (POT, the sign-in screen, 375)
             ...(on ? {} : { top: 0, left: 0, height: "100%", width: panel.props.style?.width ?? "100%" }),
             opacity: on ? 1 : 0,
             pointerEvents: on ? "auto" : "none",

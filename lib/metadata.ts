@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import { DEPLOY_URL, SITE_URL, findPage } from "@/lib/pages";
 
 /**
- * Описание и картинка для соцсетей — общие для всего сайта,
- * ровно как на оригинале: там они заданы один раз в настройках.
+ * The description and the social image are shared across the site, exactly as
+ * in the original, where they are set once in the settings.
  */
 export const SITE_NAME = "IvanGrigorenko";
 export const SITE_DESCRIPTION =
   "Ivan Grigorenko, UX/UI designer. I design web, desktop and mobile interfaces. Design systems, tokens, Design QA, clickable prototypes in code.";
 
 /**
- * Метаданные страницы: канонический адрес и связка с версией на другом языке.
- * Заголовок — название проекта, остальное общее.
+ * Page metadata: the canonical URL and the link to the other language.
+ * The title is the project name; everything else is shared.
  */
-/** Картинка превью ссылки — та же, что на оригинале: 1200×630 */
+/** Link-preview image, the same as the original: 1200×630 */
 const OG_IMAGE = { url: `${DEPLOY_URL}/og.png`, width: 1200, height: 630, alt: SITE_NAME };
 
 export function pageMetadata({ path, title }: { path: string; title?: string }): Metadata {

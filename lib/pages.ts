@@ -1,20 +1,21 @@
 import type { Lang } from "@/lib/site";
 
 /**
- * Реестр страниц сайта.
+ * The site's page registry.
  *
- * Отсюда строятся sitemap, канонические адреса и связки hreflang между
- * русской и английской версиями — чтобы не держать три одинаковых списка.
+ * The sitemap, the canonical URLs and the hreflang pairs between the Russian
+ * and English versions are all built from here, so there are not three copies
+ * of the same list.
  */
 export type SitePage = {
-  /** путь на сайте */
+  /** path on the site */
   path: string;
   lang: Lang;
-  /** та же страница на другом языке */
+  /** the same page in the other language */
   counterpart: string;
-  /** страницы меню нужны только узким экранам и в поиске не нужны */
+  /** menu pages serve narrow screens only and do not belong in search */
   indexable: boolean;
-  /** приоритет для sitemap */
+  /** sitemap priority */
   priority: number;
 };
 
@@ -34,7 +35,7 @@ export const sitePages: SitePage[] = [
   ...pair("/mikulich-ru", "/mikulich-en", 0.9),
 ];
 
-// экраны меню: в поиске не нужны, но маршруты существуют
+// menu screens: no place in search, but the routes exist
 sitePages.push(
   ...[
     ["home"], ["about"], ["eazychange"], ["autotor"],
@@ -47,10 +48,10 @@ sitePages.push(
 export const findPage = (path: string) => sitePages.find((p) => p.path === path);
 
 /**
- * Разделы сайта и их экраны меню.
+ * The sections of the site and their menu screens.
  *
- * В оригинале у каждого раздела своё меню: `/<раздел>-menu-<язык>`.
- * Отсюда строятся и маршруты меню, и ссылка в бургере.
+ * In the original every section has its own menu: `/<section>-menu-<language>`.
+ * Both the menu routes and the link behind the burger are built from here.
  */
 export const sections = [
   { slug: "home", ru: "/home-ru", en: "/", active: "work" as const },
@@ -63,7 +64,7 @@ export const sections = [
   { slug: "mikulich", ru: "/mikulich-ru", en: "/mikulich-en" },
 ];
 
-/** Адрес меню для страницы: /eazychange-ru → /eazychange-menu-ru */
+/** The menu URL for a page: /eazychange-ru → /eazychange-menu-ru */
 export function menuHref(path: string) {
   const s = sections.find((x) => x.ru === path || x.en === path);
   if (!s) return null;
@@ -73,10 +74,11 @@ export function menuHref(path: string) {
 export const SITE_URL = "https://ivangrigorenko.com";
 
 /**
- * Адрес, с которого сайт отдаётся на самом деле. Пока домен не переключён, это
- * адрес на Vercel: картинку для превью ссылки мессенджер скачивает именно отсюда,
- * а на ivangrigorenko.com её нет — там ещё версия на Figma Sites. Vercel сам
- * подставит свой домен, как только он станет основным.
+ * Where the site is actually served from. Until the domain is switched this is
+ * the Vercel address: a messenger fetches the link-preview image from here, and
+ * ivangrigorenko.com does not have it yet — that is still the Figma Sites
+ * version. Vercel fills in its own domain as soon as it becomes the primary
+ * one.
  */
 export const DEPLOY_URL = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`

@@ -5,7 +5,7 @@ import ScrollEffects from "@/components/ScrollEffects";
 import StateGroups from "@/components/StateGroups";
 import type { Lang } from "@/lib/site";
 
-/** На каких брейкпоинтах макет показывает элемент оболочки */
+/** The breakpoints at which the design file shows a piece of the shell */
 export type ShellPresence = {
   readonly mobile: boolean;
   readonly tablet: boolean;
@@ -13,10 +13,12 @@ export type ShellPresence = {
 };
 
 /**
- * Обёртка страницы: шапка, тело из генератора, футер.
- * Футер с контактами — на всех ширинах, если он есть в макете хоть на одной.
- * В макете его не было на главной EN на планшете и на EazyChange EN на телефоне — в русских
- * версиях он есть, это пропуск; без футера кнопке «Связаться» некуда прокручивать (2026-10-22).
+ * The page wrapper: header, the body from the generator, footer.
+ * The contact footer shows at every width as soon as the design file has it at
+ * any one of them. It was missing from the English home page on tablet and from
+ * the English EazyChange page on phone, while the Russian versions had it —
+ * an oversight, and without the footer the contact button has nowhere to scroll
+ * (2026-10-22).
  */
 export default function SitePage({
   lang,
@@ -26,7 +28,7 @@ export default function SitePage({
 }: {
   lang: Lang;
   shell: { header: ShellPresence; footer: ShellPresence };
-  /** какой пункт навигации подсветить */
+  /** which navigation item to light */
   active?: "work" | "about";
   children: React.ReactNode;
 }) {

@@ -3,9 +3,9 @@ export type Lang = "ru" | "en";
 import assetMap from "@/lib/asset-map.json";
 
 /**
- * Ассеты с оригинального сайта лежат в /public/a под своим хешем из Figma Sites.
- * Тяжёлые PNG переведены в WebP — подмену держит карта, поэтому в коде
- * везде остаётся исходное имя из выгрузки.
+ * Assets from the original site live in /public/a under their Figma Sites hash.
+ * Heavy PNGs were converted to WebP; a map holds the substitution, so the code
+ * keeps the original name from the export everywhere.
  */
 export const asset = (hash: string) =>
   `/a/${(assetMap as Record<string, string>)[hash] ?? hash}`;
@@ -19,10 +19,11 @@ export const mailtoHref = (lang: Lang) =>
   "%0AI'm%20interested%20in%20collaborating%20with%20you.%0A%0ARegards,%0A[Your%20Name]";
 
 /**
- * Иконки блока контактов — в одном стиле: залитый круг 32px, знак вырезан.
- * В оригинале они были разными (надпись Behance, квадрат LinkedIn, контурный мяч
- * Dribbble); 2026-10-05 приведены к одному виду по просьбе Ивана. Знаки взяты из
- * исходных иконок, файлы — в public/icons.
+ * The contact icons share one style: a filled 32px circle with the mark knocked
+ * out. The original mixed them up — the Behance wordmark, LinkedIn's square,
+ * Dribbble's outlined ball — and they were brought into line on 2026-10-05 at
+ * Ivan's request. The marks come from the original icons; files are in
+ * public/icons.
  */
 export const socials = [
   { name: "Behance", href: "https://www.behance.net/ivangrigorenko", icon: "/icons/behance.svg", w: 32, h: 32 },
@@ -32,7 +33,7 @@ export const socials = [
   { name: "Telegram", href: "https://t.me/ivan_grigorenko", icon: "/icons/telegram.svg", w: 32, h: 32 },
 ];
 
-/** Главная у русской версии — /home-ru, у английской — корень сайта */
+/** Home is /home-ru in Russian and the site root in English */
 export const homeHref = (lang: Lang) => (lang === "ru" ? "/home-ru" : "/");
 export const aboutHref = (lang: Lang) => (lang === "ru" ? "/about-ru" : "/about-en");
 

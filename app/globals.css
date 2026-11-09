@@ -1,34 +1,35 @@
 @import "tailwindcss";
 
 @theme {
-  /* Брейкпоинты сайта: mobile < 800, tablet 800–1279, desktop >= 1280 */
+  /* Breakpoints: mobile < 800, tablet 800–1279, desktop >= 1280 */
   --breakpoint-sm: 480px;
   --breakpoint-md: 800px;
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 
-  /* Палитра (slate + indigo из оригинала) */
-  --color-ink: #0f172a;        /* slate-900 — заголовки */
-  --color-body: #475569;       /* slate-600 — описания */
-  --color-body-strong: #334155;/* slate-700 — подзаголовок в футере */
-  --color-muted: #64748b;      /* slate-500 — теги, неактивная навигация */
-  --color-faint: #94a3b8;      /* slate-400 — иконки соцсетей */
-  --color-surface: #f1f5f9;    /* slate-100 — подложка карточки */
-  --color-accent: #4f46e5;     /* indigo-600 — акцент */
-  --color-accent-soft: #6366f1;/* indigo-500 — бургер */
-  --color-accent-light: #818cf8;/* indigo-400 — крестик увеличенного вида под курсором, на тёмном фоне */
-  --color-thumb: #0c1543;      /* подложка маленькой карточки, пока грузится картинка */
+  /* Palette: slate + indigo, from the original */
+  --color-ink: #0f172a;        /* slate-900 — headings */
+  --color-body: #475569;       /* slate-600 — body copy */
+  --color-body-strong: #334155;/* slate-700 — footer subheading */
+  --color-muted: #64748b;      /* slate-500 — tags, inactive navigation */
+  --color-faint: #94a3b8;      /* slate-400 — social icons */
+  --color-surface: #f1f5f9;    /* slate-100 — card ground */
+  --color-accent: #4f46e5;     /* indigo-600 — accent */
+  --color-accent-soft: #6366f1;/* indigo-500 — burger */
+  --color-accent-light: #818cf8;/* indigo-400 — the lightbox close mark on hover, against the dark ground */
+  --color-thumb: #0c1543;      /* small card ground while its image loads */
 
   --shadow-card: 0 8px 20px 0 rgb(0 0 0 / 0.1);
-  /* тень под шапкой: на краю ~#e3e3e3, сходит на нет за 3px — по образцу Ивана */
+  /* header shadow: ~#e3e3e3 at the edge, gone within 3px, matched to Ivan's sample */
   --shadow-header: 0 1px 3px 0 rgb(0 0 0 / 0.12);
-  /* карточка под курсором: в макете 0 8px 24px rgb(64 62 92 / 0.3), с едва заметным акцентом — просьба Ивана.
-     У большой белой карточки на главной та же тень читается сильнее, поэтому она слабее */
+  /* card on hover: the design file says 0 8px 24px rgb(64 62 92 / 0.3) with a
+     trace of accent, at Ivan's request. On the large white card on the home
+     page the same shadow reads stronger, so there it is softened */
   --shadow-card-hover: 0 10px 28px 0 rgb(67 63 126 / 0.24);
   --shadow-thumb-hover: 0 10px 28px 0 rgb(67 63 126 / 0.36);
 
-  --shadow-thumb: 0 2px 6px 0 rgb(13 18 46 / 0.3); /* маленькая карточка «Смотрите также» */
+  --shadow-thumb: 0 2px 6px 0 rgb(13 18 46 / 0.3); /* small "See also" card */
 
   --ease-figma: cubic-bezier(0, 0, 0.58, 1);
 }
@@ -38,14 +39,15 @@ html {
 }
 
 /*
- * Сгенерированная из Figma вёрстка задаёт картинкам точные размеры из макета.
- * Сброс Tailwind (img { max-width: 100% }) их обрезает, поэтому здесь он снят.
+ * The markup generated from Figma gives images the exact sizes from the design
+ * file. Tailwind's reset (img { max-width: 100% }) clips them, so it is undone
+ * here.
  */
 .figma-page img {
   max-width: none;
 }
 
-/* длинное слово переносится, а не вылезает из блока — как в оригинале */
+/* a long word wraps instead of escaping its block, as in the original */
 .figma-page {
   word-break: break-word;
 }
@@ -64,8 +66,8 @@ body {
   }
 }
 
-/* Стрелки каруселей (components/StateGroups.tsx): слой «наведение» у левой стрелки
-   и стрелка, которая в текущем состоянии никуда не ведёт */
+/* Carousel arrows (components/StateGroups.tsx): the hover layer on the left
+   arrow, and the arrow that leads nowhere in the current state */
 .swap-hover-layer {
   opacity: 0;
   pointer-events: none;
@@ -77,9 +79,10 @@ body {
   cursor: default !important;
 }
 
-/* Переключатель темы в кейсах (data-toggle ставит генератор). Фон держит сам переключатель:
-   светлый по умолчанию, тёмный задают правила состояния карусели или его собственный стиль.
-   Варианты внутри прозрачные, иначе светлый фон варианта закрывал тёмный. */
+/* Theme switch inside the cases; the generator sets data-toggle. The switch
+   itself owns the background: light by default, dark when the carousel state
+   rules or its own style say so. The options inside are transparent, otherwise
+   a light option would cover the dark ground. */
 [data-toggle] {
   background: #cdf4dc;
   border-radius: 999px;
@@ -90,20 +93,21 @@ body {
   box-shadow: none !important;
 }
 @media (hover: hover) {
-  /* двойной селектор — сильнее правил наведения из макета */
+  /* doubled selector, to outweigh the hover rules coming from the design file */
   [data-toggle][data-toggle]:hover {
     box-shadow: 0 0 0 1px var(--toggle-ring, #039844) !important;
   }
 }
 
-/* смена темы в карусели — без анимации (components/StateGroups.tsx ставит data-instant на кадр) */
+/* switching theme inside a carousel is instant; StateGroups.tsx sets data-instant on the frame */
 [data-instant],
 [data-instant] * {
   transition: none !important;
 }
 
-/* Стрелки каруселей и переключатели темы: при быстрых кликах браузер выделял их
-   картинку синей плашкой, как текст. Выделение и перетаскивание у них выключены. */
+/* Carousel arrows and theme switches: on fast clicks the browser highlighted
+   their image with a blue block, the way it highlights text. Selection and
+   dragging are off for them. */
 [data-swap-map],
 [data-swap-to],
 [data-toggle] {
@@ -117,7 +121,7 @@ body {
   -webkit-user-drag: none;
 }
 
-/* Стрелки листания в увеличенном виде (components/Lightbox.tsx) — как крестик, ярче под курсором */
+/* Paging arrows in the lightbox (components/Lightbox.tsx): like the close mark, brighter on hover */
 .lightbox-arrow {
   opacity: 0.75;
   transition: opacity 150ms ease-out;
@@ -127,8 +131,9 @@ body {
   opacity: 1;
 }
 
-/* Крестик в увеличенном виде: при мыши под курсором индиго (просьба Ивана 2026-11-02). Светлее акцента:
-   на тёмном фоне акцент #4f46e5 выглядел так, будто крестик гаснет */
+/* The lightbox close mark turns indigo on hover with a mouse (Ivan's request,
+   2026-11-02). Lighter than the accent: on the dark ground #4f46e5 made the
+   mark look like it was going out */
 .lightbox-close {
   color: #fff;
   opacity: 0.75;
@@ -143,11 +148,15 @@ body {
 }
 
 /*
- * Нажатие на телефоне и планшете (уже 1280px, как у «Связаться»): кнопка, ссылка, стрелка
- * карусели, переключатель темы чуть проседают, пока на них держат палец (просьба Ивана 2026-10-22).
- * Свойство scale складывается с transform, поэтому повёрнутые стрелки и сдвинутые блоки не ломаются.
- * Переходы перечислены вместе с цветом, тенью и прозрачностью — их у ссылок и кнопок уже анимируют.
- * Карточки проектов большие — проседают меньше (.press-soft). Блоки с увеличением по клику не проседают.
+ * Press on phone and tablet (under 1280px, as with the contact button): a
+ * button, a link, a carousel arrow or a theme switch sinks slightly while the
+ * finger is on it (Ivan's request, 2026-10-22).
+ * The scale property composes with transform, so rotated arrows and shifted
+ * blocks do not break.
+ * The transitions are listed alongside colour, shadow and opacity, which links
+ * and buttons already animate.
+ * Project cards are large, so they sink less (.press-soft). Blocks that open a
+ * lightbox on click do not sink at all.
  */
 @media (max-width: 1279.98px) and (prefers-reduced-motion: no-preference) {
   :is(a, button, [data-swap-map], [data-swap-to], [data-toggle]) {
@@ -161,14 +170,15 @@ body {
   }
 }
 
-/* Заголовок главной (overrides.json → hoverWords): выделенное слово из макета */
+/* Home page heading (overrides.json → hoverWords): the highlighted word from the design file */
 .hover-words-accent {
   color: var(--color-accent);
 }
 
-/* Только там, где есть мышь. Свой курсор — та же стрелка, что в заголовке главной, на всю страницу,
-   над всем, что нажимается, — рука, над картинками с увеличением — лупа, в том же стиле (исходники
-   tools/cursor/*.svg). У части элементов cursor задан в style, поэтому !important */
+/* Only where there is a mouse. A custom cursor — the same arrow as in the home
+   page heading — across the whole page; a hand over anything clickable; a
+   magnifier over images that open a lightbox, drawn in the same style (sources
+   in tools/cursor/*.svg). Some elements set cursor inline, hence !important */
 @media (hover: hover) and (pointer: fine) {
   html,
   button {
@@ -192,7 +202,7 @@ body {
     cursor: image-set(url("/cursor/arrow.png") 1x, url("/cursor/arrow@2x.png") 2x) 4 4, auto !important;
   }
 
-  /* В покое заголовок без выделения и без нарисованной стрелки, слово подсвечивается только под курсором */
+  /* At rest the heading carries no highlight and no drawn arrow; the word lights up on hover only */
   .hover-words > span {
     transition: color 150ms ease-out;
   }

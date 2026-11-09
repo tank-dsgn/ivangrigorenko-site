@@ -5,14 +5,16 @@ import CardImage, { type CardImageData } from "@/components/CardImage";
 export type RelatedCardSize = "mobile" | "tablet" | "desktop";
 
 /**
- * Маленькая карточка проекта из блока «Смотрите также» в конце кейса.
+ * The small project card from the "See also" block at the end of a case.
  *
- * В макете это компонент «Card-projects-small»: окно с картинкой и подпись под ним.
- * Размер задаёт `size` — страница выводит все три и показывает нужный по ширине окна.
- * Страницы вызывают компонент из сгенерированной вёрстки (tools/figma/emit.mjs, relatedCard).
+ * In the design file this is "Card-projects-small": a window with an image and
+ * a caption under it. `size` picks the size; the page renders all three and
+ * shows the one that fits the window. Pages call the component from the
+ * generated markup (tools/figma/emit.mjs, relatedCard).
  *
- * Наведение есть только у десктопной: окно и подпись поднимаются на 6px, у окна
- * плотнее тень с оттенком индиго, картинка слегка растёт, подпись становится индиго и полужирной (600). Всё за 300 мс.
+ * Only the desktop card has a hover: window and caption lift 6px, the window's
+ * shadow thickens and takes an indigo cast, the image grows a little, and the
+ * caption turns indigo and semibold (600). All of it over 300 ms.
  */
 export default function RelatedCard({
   size,
@@ -23,10 +25,10 @@ export default function RelatedCard({
 }: {
   size: RelatedCardSize;
   href: string;
-  /** подпись под картинкой */
+  /** the caption under the image */
   label: string;
   image: CardImageData;
-  /** отличия окна от обычного: в макете у части карточек оно на 1–3px ниже */
+  /** how the window differs from the usual one: in the design file some cards have it 1–3px shorter */
   frame?: CSSProperties;
 }) {
   const window_ = "bg-thumb shadow-thumb relative shrink-0 overflow-hidden";
@@ -34,7 +36,7 @@ export default function RelatedCard({
 
   if (size === "desktop") {
     return (
-      // сверху 6px запаса: туда окно поднимается при наведении
+      // 6px of room above: that is where the window lifts to on hover
       <Link href={href} className="press-soft group flex h-[321px] w-[304px] shrink-0 flex-col items-start gap-3 pt-1.5">
         <div
           className={`${window_} ease-figma group-hover:shadow-thumb-hover h-[283px] w-[304px] rounded-3xl transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5`}

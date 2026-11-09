@@ -7,10 +7,10 @@ import { Suspense, useEffect, useRef } from "react";
 const GA_ID = "G-LDDGV5J7M3";
 const METRIKA_ID = 113221499;
 
-/** Считаем только на боевом домене — превью-деплои не должны попадать в статистику */
+/** Count on the production domain only: preview deploys must not reach the stats */
 const PRODUCTION_HOST = "ivangrigorenko.com";
 
-/** Флаг в localStorage: на устройствах владельца счётчики не грузятся (ставится ссылкой ?notrack=1) */
+/** A localStorage flag: on the owner's devices the counters are not loaded; set it with ?notrack=1 */
 const NOTRACK_KEY = "ig:notrack";
 
 declare global {
@@ -22,9 +22,10 @@ declare global {
 }
 
 /**
- * Своё событие — для действий, которые счётчики сами не видят (прокрутка к контактам
- * по «Связаться»). В Метрике под него цель типа «Целевое событие» с тем же
- * идентификатором, в GA4 — событие с этим именем. Вне боевого домена счётчиков нет — ничего не уходит.
+ * A custom event, for the actions the counters cannot see by themselves, such
+ * as scrolling to the contacts from the contact button. In Metrica it is backed
+ * by a target event with the same identifier, in GA4 by an event with this
+ * name. Off the production domain there are no counters, so nothing is sent.
  */
 export function reachGoal(name: string) {
   window.ym?.(METRIKA_ID, "reachGoal", name);
@@ -32,11 +33,11 @@ export function reachGoal(name: string) {
 }
 
 /**
- * Next.js переключает страницы без перезагрузки.
+ * Next.js moves between pages without a reload.
  *
- * GA4 ловит такие переходы сам (enhanced measurement по history-событиям),
- * а Метрика — нет, поэтому на каждый переход шлём хит вручную. Так же
- * сделано на оригинале сайта.
+ * GA4 catches those itself, through enhanced measurement on history events;
+ * Metrica does not, so every move sends a hit by hand. The original site does
+ * the same.
  */
 function RouteHits() {
   const pathname = usePathname();
@@ -47,7 +48,7 @@ function RouteHits() {
     const query = searchParams.toString();
     const url = pathname + (query ? `?${query}` : "");
 
-    // первый просмотр Метрика засчитывает сама при инициализации
+    // Metrica counts the first view itself, at initialisation
     if (previous.current === null) {
       previous.current = url;
       return;
@@ -62,9 +63,10 @@ function RouteHits() {
 }
 
 /**
- * Нажатие на почту (mailto:) GA4 сам не считает: «исходящие клики» — только ссылки на другие сайты.
- * Отправляем его как contact_click — то же ключевое событие, что Telegram и соцсети
- * (их contact_click собирает GA из click). Метрика почту видит сама — цель «Клик Gmail».
+ * GA4 does not count a mailto: click by itself — outbound clicks cover links to
+ * other sites only. It is sent as contact_click, the same key event as Telegram
+ * and the social links, whose contact_click GA builds from click. Metrica sees
+ * the email on its own, through the Gmail click goal.
  */
 function MailClicks() {
   useEffect(() => {
@@ -79,9 +81,10 @@ function MailClicks() {
 }
 
 /**
- * Ключевое событие prototype_open GA4 собирает из click по link_url, содержащему
- * prototype.vercel.app. Витрина VV Foundations живёт на vv-foundations.vercel.app — под
- * правило не попадает, поэтому её клик сайт отправляет сам.
+ * GA4 builds the prototype_open key event from clicks whose link_url contains
+ * prototype.vercel.app. The VV Foundations showcase lives at
+ * vv-foundations.vercel.app and falls outside that rule, so the site sends that
+ * click itself.
  */
 function PrototypeClicks() {
   useEffect(() => {
@@ -99,14 +102,15 @@ export default function Analytics() {
   return (
     <>
       {/*
-        Оба счётчика подключаются из одного скрипта и только на боевом домене.
-        Поэтому на превью-деплоях и локально не грузится даже gtag.js.
+        Both counters load from one script and only on the production domain,
+        which is why preview deploys and local runs do not even fetch
+        gtag.js.
       */}
       <Script id="analytics" strategy="afterInteractive">
         {`(function () {
   if (location.hostname !== ${JSON.stringify(PRODUCTION_HOST)}) return;
 
-  // Свои устройства: ?notrack=1 выключает оба счётчика в этом браузере, ?notrack=0 включает обратно
+  // Own devices: ?notrack=1 turns both counters off in this browser, ?notrack=0 turns them back on
   var flag = new URLSearchParams(location.search).get('notrack');
   var off = false;
   try {

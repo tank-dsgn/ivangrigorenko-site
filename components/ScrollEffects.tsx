@@ -3,9 +3,10 @@
 import { useEffect } from "react";
 
 /**
- * Параллакс обложек кейсов. В макете у блока задана скорость (0.75 — блок
- * едет на четверть медленнее страницы); генератор кладёт в `data-parallax`
- * долю отставания, а сдвиг приходит в переменную `--parallax`.
+ * Parallax on the case covers. The design file gives a block a speed — 0.75
+ * means it travels a quarter slower than the page; the generator writes how far
+ * it lags into `data-parallax`, and the offset arrives in the `--parallax`
+ * variable.
  */
 export default function ScrollEffects() {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function ScrollEffects() {
     const update = () => {
       frame = 0;
       const y = window.scrollY;
-      // невидимые копии под другие брейкпоинты пропускаем
+      // skip the hidden copies that belong to the other breakpoints
       document.querySelectorAll<HTMLElement>("[data-parallax]").forEach((el) => {
         if (!el.offsetParent) return;
         el.style.setProperty("--parallax", `${Math.round(y * Number(el.dataset.parallax) * 100) / 100}px`);

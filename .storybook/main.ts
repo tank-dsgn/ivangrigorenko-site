@@ -4,7 +4,7 @@ const config: StorybookConfig = {
   stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(ts|tsx)"],
   addons: ["@storybook/addon-docs"],
   framework: { name: "@storybook/nextjs-vite", options: {} },
-  // картинки, иконки и шрифты макетов — те же файлы, что отдаёт сайт
+  // images, icons and fonts for the stories: the same files the site serves
   staticDirs: ["../public"],
 };
 

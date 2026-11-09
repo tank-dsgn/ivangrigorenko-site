@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 /**
- * Короткие адреса для мест, где ссылка видна текстом (hh «О себе», описание Telegram,
- * сопроводительное письмо): ivangrigorenko.com/hh выглядит аккуратно, а метку UTM
- * Метрика и GA получают после перенаправления. Список всех ссылок — job-search/UTM_LINKS.md.
- * Перенаправление временное (307): поисковики не подменяют им адрес главной.
+ * Short URLs for the places where a link is read as text — the hh "About" field,
+ * a Telegram bio, a cover letter. ivangrigorenko.com/hh reads cleanly, and
+ * Metrica and GA pick the UTM tag up after the redirect. The full list of links
+ * is kept outside this repository.
+ * The redirect is temporary (307), so search engines do not substitute it for
+ * the home page.
  */
 const short: Record<string, string> = {
   "/hh": "/home-ru?utm_source=hh&utm_medium=profile",

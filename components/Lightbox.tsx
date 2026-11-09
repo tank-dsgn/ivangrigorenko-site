@@ -3,36 +3,41 @@
 import { useCallback, useEffect, useRef, useState, type MouseEvent as ReactMouseEvent, type PointerEvent as ReactPointerEvent } from "react";
 
 /**
- * Увеличение схем и экранов по клику — как на оригинале.
+ * Click to enlarge a diagram or a screen, as on the original site.
  *
- * Блок с `data-lightbox` открывается поверх страницы: тёмная подложка,
- * копия блока по центру, вписанная в 94% окна (в оригинале 80%; увеличено по просьбе Ивана 2026-10-06). Закрывается кликом по
- * подложке, крестиком или Esc.
+ * A block carrying `data-lightbox` opens over the page: a dark backdrop and a
+ * copy of the block in the middle, fitted into 94% of the window (the original
+ * used 80%; raised at Ivan's request on 2026-10-06). It closes on a click on
+ * the backdrop, on the close mark, or on Esc.
  *
- * Если блок — слайд карусели (внутри `data-state`), по бокам стоят стрелки
- * (и ←/→ на клавиатуре). Они листают и саму карусель на странице: нажимают её
- * стрелку, так что после закрытия карусель стоит на том же слайде.
+ * If the block is a carousel slide (inside `data-state`), arrows sit on either
+ * side, with ← and → on the keyboard. They page the carousel on the page as
+ * well, by pressing its own arrow, so the carousel is left on the same slide
+ * once the lightbox closes.
  *
- * Телефон и планшет (2026-10-22). В макете увеличение задано только на десктопе;
- * узким ширинам те же блоки находим по картинкам (`mirrorZoom`). На телефоне блок и так
- * почти во всю ширину, поэтому в увеличенном виде работают жесты: два пальца или
- * двойной тап — приблизить, одним пальцем — двигать приближенное, свайп — соседний
- * слайд карусели. Стрелки на узком экране — внизу, чтобы не отнимать ширину у картинки.
+ * Phone and tablet (2026-10-22). The design file defines the zoom on desktop
+ * only; for narrow widths the matching blocks are found by their images
+ * (`mirrorZoom`). On a phone the block already fills almost the full width, so
+ * the enlarged view takes gestures instead: two fingers or a double tap to zoom
+ * in, one finger to pan a zoomed block, a swipe for the neighbouring slide. On
+ * a narrow screen the arrows sit at the bottom so they do not eat the image's
+ * width.
  */
-/** Какую долю окна занимает увеличенный блок по той стороне, в которую он упирается */
+/** How much of the window the enlarged block takes along whichever side it meets first */
 const FILL = 0.94;
 
 type Shot = { html: string; width: number; height: number };
 
-/** Копия блока для показа: без положения на странице и без слоёв, скрытых в текущем состоянии */
+/** The copy that gets shown: no page position, and none of the layers hidden in the current state */
 const capture = (opener: HTMLElement): Shot => {
-  // подпись над картинкой («Типографика») в увеличенном виде не нужна — только сама картинка
+  // the caption above the image is not wanted in the enlarged view, only the image itself
   const kids = [...opener.children].filter((c) => getComputedStyle(c).display !== "none");
   const art = kids.filter((c) => c.tagName !== "P");
   const el = kids.length > 1 && art.length === 1 ? (art[0] as HTMLElement) : opener;
   const copy = el.cloneNode(true) as HTMLElement;
-  // слои других состояний карусели скрывают правила вида `.sg-N[data-state] .sn-N-k`,
-  // а копия стоит вне карусели — убираем то, что сейчас не видно
+  // layers belonging to other carousel states are hidden by rules shaped like
+  // `.sg-N[data-state] .sn-N-k`, and the copy lives outside the carousel, so
+  // whatever is not visible right now is dropped here
   const prune = (src: Element, dst: Element) => {
     const kids = [...dst.children];
     [...src.children].forEach((c, i) => {
@@ -54,10 +59,10 @@ const capture = (opener: HTMLElement): Shot => {
 };
 
 /**
- * Увеличение на узких ширинах: блоки с теми же картинками, что у увеличиваемого
- * блока десктопа. Берём самый внешний такой блок. Набор может быть и частью
- * десктопного (не меньше двух картинок): в слайде карусели на десктопе лежат
- * картинки всех её состояний, а на телефоне — только свои.
+ * Zoom on narrow widths: the blocks holding the same images as the desktop
+ * block that zooms. The outermost such block wins. The set may also be a subset
+ * of the desktop one, down to two images: a desktop carousel slide carries the
+ * images of every state, while a phone slide carries only its own.
  */
 const mirrorZoom = () => {
   const desk = [...document.querySelectorAll<HTMLElement>(".figma-page.xl\\:block")];
@@ -66,7 +71,7 @@ const mirrorZoom = () => {
   const sig = (el: Element) => {
     let v = memo.get(el);
     if (v == null) {
-      // картинки, видео и фоновые картинки из макета
+      // images, video and background images from the design file
       const srcs = [...el.querySelectorAll("img, video")].map((m) => m.getAttribute("src") || m.getAttribute("poster") || "");
       for (const b of [el, ...el.querySelectorAll<HTMLElement>("[style*='url(']")]) {
         for (const m of (b as HTMLElement).style.backgroundImage.matchAll(/url\(["']?([^"')]+)/g)) srcs.push(m[1]);
@@ -76,13 +81,13 @@ const mirrorZoom = () => {
     }
     return v;
   };
-  // у каждого блока десктопа — его картинки и сколько в нём абзацев
+  // for each desktop block: its images and how many paragraphs it holds
   const wanted = desk
     .flatMap((d) => [...d.querySelectorAll("[data-lightbox]")])
     .map((el) => ({ media: new Set(sig(el).split("|").filter(Boolean)), texts: el.querySelectorAll("p").length }))
     .filter((w) => w.media.size);
   if (!wanted.length) return;
-  // текста — не больше, чем в блоке десктопа, и ещё одна подпись сверху: иначе это уже раздел с заголовком
+  // no more text than the desktop block plus one caption above it; beyond that it is a section with a heading, not a block
   const fits = (el: Element) => {
     const items = sig(el).split("|").filter(Boolean);
     if (!items.length) return false;
@@ -91,7 +96,7 @@ const mirrorZoom = () => {
   };
   for (const page of narrow) {
     for (const media of page.querySelectorAll("img, video, [style*='url(']")) {
-      // поднимаемся от картинки к самому внешнему блоку с нужным набором
+      // walk up from the image to the outermost block carrying the right set
       let hit: HTMLElement | null = null;
       for (let a = /^(IMG|VIDEO)$/.test(media.tagName) ? media.parentElement : (media as HTMLElement); a && a !== page; a = a.parentElement) {
         if (fits(a)) hit = a;
@@ -106,20 +111,20 @@ const mirrorZoom = () => {
   }
 };
 
-/** Узкий экран: стрелки листания внизу, а не по бокам */
+/** Narrow screen: paging arrows at the bottom rather than at the sides */
 const isNarrow = () => window.innerWidth < 768;
 
-/** Наибольшее приближение жестом */
+/** The furthest a gesture can zoom in */
 const MAX_ZOOM = 4;
 
-/** Увеличиваемые слайды той же карусели, по порядку */
+/** The zoomable slides of the same carousel, in order */
 const slidesOf = (el: HTMLElement) => {
   const root = el.closest<HTMLElement>("[data-state]");
   if (!root) return [];
   return [...root.querySelectorAll<HTMLElement>("[data-lightbox]")].filter((n) => getComputedStyle(n).display !== "none");
 };
 
-/** Стрелка карусели, которая сейчас листает в нужную сторону: −1 — назад, 1 — вперёд */
+/** The carousel arrow that currently pages the wanted way: −1 back, 1 forward */
 const arrowOf = (el: HTMLElement, dir: number) => {
   const root = el.closest<HTMLElement>("[data-state]");
   if (!root) return null;
@@ -140,7 +145,7 @@ const navOf = (el: HTMLElement) => {
   return { prev: at > 0, next: at >= 0 && at < slides.length - 1 };
 };
 
-/** Стрелка «назад/вперёд» в увеличенном виде — того же вида, что крестик */
+/** The back/forward arrow in the enlarged view, drawn like the close mark */
 function NavArrow({ dir, shown, narrow, onClick }: { dir: -1 | 1; shown: boolean; narrow: boolean; onClick: () => void }) {
   const place = narrow ? { bottom: 0 } : { top: "50%", transform: "translateY(-50%)" };
   return (
@@ -162,13 +167,13 @@ function NavArrow({ dir, shown, narrow, onClick }: { dir: -1 | 1; shown: boolean
 
 export default function Lightbox() {
   const [open, setOpen] = useState<Shot | null>(null);
-  // соседние слайды карусели: есть ли куда листать
+  // neighbouring carousel slides: is there anywhere to page to
   const [nav, setNav] = useState({ prev: false, next: false });
   const [fading, setFading] = useState(false);
   const [shown, setShown] = useState(false);
   const [scale, setScale] = useState(1);
   const [narrow, setNarrow] = useState(false);
-  // приближение жестом поверх вписанного размера и сдвиг приближенного
+  // gesture zoom on top of the fitted size, and the pan of a zoomed block
   const [zoom, setZoom] = useState({ z: 1, x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const opener = useRef<HTMLElement | null>(null);
@@ -217,7 +222,7 @@ export default function Lightbox() {
     const slides = slidesOf(el);
     const at = slides.indexOf(el);
     if (at < 0 || !slides[at + dir]) return;
-    // листаем карусель на странице: состояние меняется сразу, слои встают по нему
+    // page the carousel on the page: the state changes at once and the layers follow it
     arrowOf(el, dir)?.click();
     const to = slidesOf(el)[at + dir] ?? slides[at + dir];
     opener.current = to;
@@ -235,12 +240,12 @@ export default function Lightbox() {
     const fit = () => {
       const thin = isNarrow();
       const arrows = nav.prev || nav.next;
-      // место под стрелки листания, чтобы они не ложились на картинку: по бокам, а на узком экране — снизу
+      // room for the paging arrows so they do not sit on the image: at the sides, or below on a narrow screen
       const arrow = Math.min(Math.max(window.innerWidth, window.innerHeight) * 0.1, 56) + 2 * Math.min(window.innerWidth * 0.02, 16);
       const room = window.innerWidth - (arrows && !thin ? 2 * arrow : 0);
       const tall = window.innerHeight - (arrows && thin ? 2 * 72 : 0);
       setNarrow(thin);
-      // почти во весь экран: по 3% полей с каждой стороны (в оригинале было 80% окна)
+      // almost the whole screen: 3% margin on each side (the original used 80% of the window)
       setScale(Math.min((room * FILL) / open.width, (tall * FILL) / open.height));
     };
     fit();
@@ -259,7 +264,7 @@ export default function Lightbox() {
     };
   }, [open, nav, close, go]);
 
-  /** Сдвиг приближенного блока — не дальше его краёв */
+  /** Pan of a zoomed block, never past its own edges */
   const clampPan = (z: number, x: number, y: number) => {
     if (!open) return { z, x, y };
     const w = open.width * scale * z, h = open.height * scale * z;
@@ -268,7 +273,7 @@ export default function Lightbox() {
   };
 
   const insideArt = (x: number, y: number) => {
-    // внутренний блок: у него и вписывание, и приближение
+    // the inner block: it carries both the fit and the zoom
     const r = art.current?.firstElementChild?.getBoundingClientRect();
     return Boolean(r && x >= r.left && x <= r.right && y >= r.top && y <= r.bottom);
   };
@@ -299,7 +304,7 @@ export default function Lightbox() {
       const [a, b] = pts;
       const p = g.pinch;
       const z = Math.max(1, Math.min(MAX_ZOOM, (p.z0 * Math.hypot(a.x - b.x, a.y - b.y)) / p.d0));
-      // точка между пальцами остаётся под пальцами
+      // the point between the fingers stays under the fingers
       const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
       const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
       const k = z / p.z0;
@@ -314,7 +319,7 @@ export default function Lightbox() {
     touches.current.delete(e.pointerId);
     const g = gesture.current;
     if (touches.current.size) {
-      // один палец остался после щипка — дальше он двигает
+      // one finger left after a pinch: from here it pans
       if (g) g.pinch = undefined;
       return;
     }
@@ -327,17 +332,17 @@ export default function Lightbox() {
       const double = Date.now() - tap.t < 300 && Math.hypot(e.clientX - tap.x, e.clientY - tap.y) < 30;
       lastTap.current = { t: double ? 0 : Date.now(), x: e.clientX, y: e.clientY };
       if (double && insideArt(e.clientX, e.clientY)) {
-        // двойной тап: приблизить в 2,5 раза к точке тапа или вернуть как было
+        // double tap: zoom 2.5× towards the tapped point, or go back
         const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
         setZoom(zoom.z > 1 ? { z: 1, x: 0, y: 0 } : clampPan(2.5, -(e.clientX - cx) * 1.5, -(e.clientY - cy) * 1.5));
       }
       return;
     }
-    // свайп по неприближенному блоку — соседний слайд карусели
+    // a swipe on an unzoomed block moves to the neighbouring slide
     if (zoom.z === 1 && !g.pinch && Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
   };
 
-  // на телефоне тап по самой картинке не закрывает — он может быть началом двойного тапа
+  // on a phone a tap on the image itself does not close: it may be the start of a double tap
   const onBackdrop = (e: ReactMouseEvent) => {
     if (wasTouch.current && insideArt(e.clientX, e.clientY)) return;
     close();

@@ -4,16 +4,17 @@ import { useState, type MouseEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-/** Сколько длится превращение бургера в крестик и обратно, мс */
+/** How long the burger takes to turn into a cross and back, in ms */
 const MS = 200;
 
 /**
- * Кнопка меню на узких экранах: бургер в шапке и крестик на экране меню.
+ * The menu button on narrow screens: a burger in the header, a cross on the menu screen.
  *
- * Меню — отдельная страница, поэтому сначала иконка перестраивается на месте
- * (верхняя и нижняя полоски поворачиваются в крестик, средняя гаснет — и обратно),
- * а потом открывается ссылка. Просьба Ивана 2026-10-22.
- * Полоски 20×2 с шагом 7px — как в бургере из макета; крестик из них — около 14×14, как в макете.
+ * The menu is a separate page, so the icon first rebuilds in place — the top
+ * and bottom bars rotate into a cross and the middle one fades, then back —
+ * and only then does the link open. Ivan's request, 2026-10-22.
+ * The bars are 20×2 at a 7px pitch, as in the design file's burger; the cross
+ * they form is about 14×14, also as in the design file.
  */
 export default function MenuToggle({ href, label, open, className = "" }: { href: string; label: string; open: boolean; className?: string }) {
   const router = useRouter();

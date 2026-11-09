@@ -4,26 +4,33 @@ import { useRef, type MouseEvent } from "react";
 import { mailtoHref, type Lang } from "@/lib/site";
 import { reachGoal } from "@/components/Analytics";
 
-// русская подпись сокращена 06.10 по просьбе Ивана: глагол остался, «со мной» убрано
+// the Russian label was shortened on 2026-10-06 at Ivan's request: the verb stayed, "with me" went
 const label = { ru: "Связаться", en: "Contact me" } as const;
 
 /**
- * Кнопка «Связаться со мной». В оригинале её нет (добавлена 2026-10-05),
- * в страницы её вставляет генератор — см. `additions` в tools/figma/overrides.json.
+ * The "Contact me" button. The original site has none; it was added on
+ * 2026-10-05 and the generator inserts it into the pages — see `additions` in
+ * tools/figma/overrides.json.
  *
- * Стоит в первом экране главной, под заголовком, по левому краю текста: крупная (48px, текст
- * 18px; на телефоне 40px и 16px), прокручивает к блоку контактов внизу.
- * Свойства `mail`, `compact`, `full` остались от варианта для «Обо мне» (кнопка
- * размером с «Скачать моё резюме», открывает письмо) — сейчас он не используется.
+ * It sits in the first screen of the home page, under the heading, flush with
+ * the text: large (48px, 18px text; 40px and 16px on a phone), and it scrolls
+ * to the contact block at the bottom.
+ * The `mail`, `compact` and `full` props are left over from the About variant —
+ * a button the size of "Download my CV" that opens an email — which is not in
+ * use at the moment.
  *
- * Вид — контурная кнопка из макета. При наведении она заливается индиго из той точки,
- * где курсор зашёл на кнопку, текст становится белым; когда курсор уходит, заливка
- * стягивается туда, где он вышел. С клавиатуры заливка идёт из центра.
- * Вариант «A — Fill from cursor», выбран Иваном 2026-10-06 (до него были бегунок по обводке,
- * бегунок по кольцу, переливающийся ореол и кольцо, которое рисуется один раз).
- * На телефоне и планшете (уже 1280px) наведения нет, поэтому кнопка сразу выделена — как
- * кнопка сайта «Посетить сайт» под курсором: обводка и текст индиго (просьба Ивана 2026-10-22).
- * Положение курсора нужно знать в браузере, поэтому компонент клиентский.
+ * It looks like the outlined button in the design file. On hover indigo floods
+ * in from the point where the cursor entered and the text turns white; when the
+ * cursor leaves, the flood shrinks back towards where it left. From the
+ * keyboard the flood starts at the centre.
+ * This is variant "A — Fill from cursor", chosen by Ivan on 2026-10-06; before
+ * it there were a dot running along the outline, a dot circling the button, a
+ * shifting halo, and an outline drawn once.
+ * On phone and tablet (under 1280px) there is no hover, so the button is
+ * highlighted from the start, like the site button on hover: indigo outline and
+ * indigo text (Ivan's request, 2026-10-22).
+ * The cursor position is only known in the browser, so this is a client
+ * component.
  */
 export default function ContactButton({
   lang,
@@ -32,14 +39,14 @@ export default function ContactButton({
   full,
 }: {
   lang: Lang;
-  /** открыть письмо, а не прокручивать к блоку контактов */
+  /** open an email instead of scrolling to the contact block */
   mail?: boolean;
-  /** размер обычной кнопки сайта: 40px, текст 16px, поля 16px */
+  /** the size of an ordinary site button: 40px, 16px text, 16px padding */
   compact?: boolean;
-  /** на всю ширину блока — в столбике на телефоне */
+  /** full width of its block, for the single column on a phone */
   full?: boolean;
 }) {
-  // точка, где курсор вошёл в кнопку или вышел из неё, — в переменные --x и --y
+  // the point where the cursor entered or left the button goes into --x and --y
   const ref = useRef<HTMLAnchorElement>(null);
   const track = (e: MouseEvent) => {
     const el = ref.current;
@@ -56,13 +63,13 @@ export default function ContactButton({
     <a
       ref={ref}
       href={mail ? mailtoHref(lang) : "#contacts"}
-      // цель «Нажал Связаться» в Метрике (Целевое событие contact_button) и событие в GA4
+      // the "contact button pressed" goal in Metrica (target event contact_button) and the GA4 event
       onClick={() => reachGoal("contact_button")}
       onMouseEnter={track}
       onMouseLeave={track}
       className={`group text-muted ease-figma relative items-center justify-center overflow-hidden rounded-full bg-white font-semibold whitespace-nowrap shadow-[inset_0_0_0_1px_#94a3b8] transition-colors duration-300 hover:text-white focus-visible:text-white max-xl:text-accent max-xl:shadow-[inset_0_0_0_1px_#4f46e5] ${size} ${full ? "flex w-full" : "inline-flex"}`}
     >
-      {/* заливка: круг с центром в точке курсора, вырастает от нуля и накрывает всю кнопку */}
+      {/* the flood: a circle centred on the cursor, growing from nothing until it covers the button */}
       <span
         aria-hidden="true"
         className="bg-accent ease-figma pointer-events-none absolute aspect-square w-[250%] -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full transition-transform duration-500 group-hover:scale-100 group-focus-visible:scale-100"

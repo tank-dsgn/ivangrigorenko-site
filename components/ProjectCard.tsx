@@ -5,23 +5,26 @@ import CardImage, { type CardImageData } from "@/components/CardImage";
 export type ProjectCardSize = "mobile" | "tablet" | "desktop";
 
 export type ProjectCardImage = CardImageData & {
-  /** особенности окна под картинку: пропорция на телефоне, подложка, скругление */
+  /** quirks of the image window: the aspect ratio on a phone, the ground, the corner radius */
   frame?: CSSProperties;
 };
 
 /**
- * Карточка проекта на главной.
+ * A project card on the home page.
  *
- * В макете это компонент «Card - Project Preview» в трёх размерах — по одному на
- * брейкпоинт. Здесь то же самое: размер задаёт `size`, страница выводит все три
- * и показывает нужный по ширине окна. Оформление карточки — в классах ниже; меняете
- * здесь — меняется и на сайте, и в Storybook.
+ * In the design file this is "Card - Project Preview" in three sizes, one per
+ * breakpoint. It works the same way here: `size` picks the size, the page
+ * renders all three and shows the one that fits the window. The card's styling
+ * lives in the classes below, so a change here lands both on the site and in
+ * Storybook.
  *
- * Страницы вызывают компонент из сгенерированной вёрстки: ссылку, тексты и картинку
- * генератор берёт из макета (tools/figma/emit.mjs, projectCard).
+ * Pages call the component from the generated markup; the generator takes the
+ * link, the text and the image from the design file (tools/figma/emit.mjs,
+ * projectCard).
  *
- * Наведение есть только у десктопной карточки: она поднимается на 6px, тень
- * становится плотнее и с оттенком индиго, картинка слегка увеличивается. Фон остаётся белым. Всё за 300 мс.
+ * Only the desktop card has a hover: it lifts 6px, the shadow thickens and
+ * takes an indigo cast, and the image grows a little. The background stays
+ * white. All of it over 300 ms.
  */
 export default function ProjectCard({
   size,
@@ -33,7 +36,7 @@ export default function ProjectCard({
 }: {
   size: ProjectCardSize;
   href: string;
-  /** строка над названием: область, тип работы */
+  /** the line above the title: field, kind of work */
   tags: string;
   title: string;
   description: string;
@@ -41,7 +44,7 @@ export default function ProjectCard({
 }) {
   const picture = <CardImage image={image} />;
 
-  // pre-line: перенос строки, поставленный в тексте вручную, сохраняется
+  // pre-line: a line break typed into the text by hand is kept
   const tagsText = "text-muted w-min min-w-full self-stretch font-normal whitespace-pre-line uppercase";
   const titleText = "text-ink w-min min-w-full self-stretch font-semibold whitespace-pre-line";
   const descriptionText = "text-body w-min min-w-full self-stretch font-normal whitespace-pre-line";
@@ -87,9 +90,10 @@ export default function ProjectCard({
   }
 
   return (
-    // Ссылка ровно по карточке. В макете она была на 6px выше — запас под подъём при наведении;
-    // запас убран 2026-10-09, чтобы отступы между карточками были ровно те, что заданы:
-    // карточка поднимается сдвигом и места в раскладке под это не требует.
+    // The link matches the card exactly. In the design file it sat 6px higher,
+    // leaving room for the hover lift; that room was removed on 2026-10-09 so
+    // the gaps between cards are exactly the ones specified — the card lifts by
+    // a transform and needs no space in the layout for it.
     <Link href={href} className="press-soft group flex h-[400px] w-[920px] shrink-0 flex-col items-start">
       <div className="shadow-card ease-figma group-hover:shadow-card-hover flex h-[400px] shrink-0 flex-row items-center justify-between self-stretch overflow-hidden rounded-3xl bg-white transition-[translate,box-shadow] duration-300 group-hover:-translate-y-1.5">
         <div className="relative h-[400px] w-[548px] shrink-0 overflow-hidden" style={image.frame}>

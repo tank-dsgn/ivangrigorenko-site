@@ -16,25 +16,25 @@ export default function Header({
   active,
 }: {
   lang: Lang;
-  /** какой пункт подсвечен индиго */
+  /** which item is lit in indigo */
   active?: "work" | "about";
 }) {
   const pathname = usePathname();
   const s = t[lang];
   const other: Lang = lang === "ru" ? "en" : "ru";
 
-  // ссылка на ту же страницу в другом языке
+  // link to the same page in the other language
   const altHref = findPage(pathname)?.counterpart ?? homeHref(other);
 
-  // Ссылка на страницу, на которой мы уже стоим, никуда не ведёт — прокручиваем к началу.
-  // Так логотип и «Проекты» на главной возвращают наверх.
+  // A link to the page we are already on leads nowhere, so it scrolls to the
+  // top instead. That is how the logo and Work behave on the home page.
   const toTop = (href: string) => (e: MouseEvent<HTMLAnchorElement>) => {
     if (href !== pathname || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // на узких экранах бургер ведёт на отдельный экран меню, как в оригинале
+  // on narrow screens the burger opens a separate menu screen, as in the original
   const menu = menuHref(pathname) ?? menuHref(homeHref(lang))!;
 
   const langSwitch =
@@ -57,7 +57,7 @@ export default function Header({
     );
 
   return (
-    // мягкая тень снизу (shadow-header) — по образцу Ивана 2026-10-22, на всех страницах
+    // a soft shadow below (shadow-header), matched to Ivan's sample on 2026-10-22, on every page
     <header className="shadow-header fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between bg-white px-5 md:px-10 xl:h-20 xl:px-14">
       <Link href={homeHref(lang)} onClick={toTop(homeHref(lang))} aria-label={s.toHome} className="flex items-center">
         <Logo className="w-8 xl:w-10" />

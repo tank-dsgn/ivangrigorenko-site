@@ -7,11 +7,11 @@ import { aboutHref, asset, homeHref, t, type Lang } from "@/lib/site";
 const CHEVRON = asset("3da0fc8f089163f811ba928a9a57d20e869f8486.svg");
 
 /**
- * Экран меню для узких экранов.
+ * The menu screen for narrow widths.
  *
- * В оригинале это отдельная страница у каждого раздела: `/<раздел>-menu-<язык>`.
- * Отличаются они только тем, какой пункт подсвечен и куда возвращает крестик,
- * поэтому здесь один компонент на все шестнадцать.
+ * In the original each section has its own page: `/<section>-menu-<language>`.
+ * They differ only in which item is lit and where the cross goes back to, so
+ * one component covers all sixteen.
  */
 export default function MenuPage({
   lang,
@@ -20,16 +20,16 @@ export default function MenuPage({
   altMenu,
 }: {
   lang: Lang;
-  /** подсвеченный пункт; у страниц кейсов активного нет */
+  /** the lit item; case pages have none */
   active?: "work" | "about";
-  /** куда возвращает крестик — страница, с которой пришли */
+  /** where the cross goes back to: the page we came from */
   back: string;
-  /** это же меню на другом языке */
+  /** the same menu in the other language */
   altMenu: string;
 }) {
   const s = t[lang];
 
-  // в английском меню первый пункт в оригинале называется Projects, а не Work, как в шапке
+  // in the English menu the original calls the first item Projects, not Work as in the header
   const rows = [
     { key: "work" as const, label: lang === "en" ? "Projects" : s.nav.work, href: homeHref(lang) },
     { key: "about" as const, label: s.nav.about, href: aboutHref(lang) },
@@ -50,7 +50,7 @@ export default function MenuPage({
           const isActive = row.key === active;
           const text = "text-[16px] leading-6 font-semibold";
 
-          // активный пункт в оригинале не ссылка и без стрелки
+          // in the original the active item is neither a link nor carries an arrow
           if (isActive) {
             return (
               <span key={row.key} className={`text-accent flex h-10 items-center ${text}`}>
@@ -72,7 +72,7 @@ export default function MenuPage({
         })}
       </nav>
 
-      {/* у «EN» свои поля 4px для нажатия — слева блок на столько же меньше, текст по краю пунктов меню */}
+      {/* "EN" carries its own 4px padding for the tap target; the block to its left is narrower by the same amount, so the text lines up with the menu items */}
       <div className="mt-6 flex items-center pr-5 pl-4 text-[16px] leading-6 font-semibold md:pr-10 md:pl-9">
         {lang === "ru" ? (
           <>

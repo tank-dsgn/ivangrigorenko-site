@@ -1,30 +1,21 @@
 # ivangrigorenko.com
 
-Портфолио Ивана Григоренко. Копия страницы `/home-ru` с оригинального сайта
-(он собран в Figma Sites), перенесённая на редактируемый стек.
+Ivan Grigorenko's portfolio. The original site was built in Figma Sites; this
+is the same site rebuilt on a stack that can actually be edited. Layout is
+generated from the Figma export rather than written by hand, so the pages stay
+true to the design file down to the pixel.
 
-## Стек
+## Stack
 
 - Next.js 16 (App Router) + React 19
 - TypeScript
-- Tailwind CSS 4 (CSS-first, без `tailwind.config`)
-- Деплой на Vercel
+- Tailwind CSS 4 (CSS-first, no `tailwind.config`)
+- Storybook for the components
+- Deployed on Vercel
 
-## Деплой
+## Running it
 
-Репозиторий подключён к Vercel-проекту `ivangrigorenko-site` (команда Tank-dsgn).
-Push в `main` автоматически выкатывает прод на https://ivangrigorenko-site.vercel.app,
-push в любую другую ветку создаёт preview-деплой.
-
-Ручной деплой, если он зачем-то понадобится:
-
-```bash
-npx vercel@latest deploy --prod
-```
-
-## Запуск
-
-Node лежит в `~/.local/node/bin` и не входит в PATH по умолчанию:
+Node lives in `~/.local/node/bin` and is not on the default PATH:
 
 ```bash
 export PATH="$HOME/.local/node/bin:$PATH"
@@ -32,48 +23,57 @@ npm install
 npm run dev
 ```
 
-Открыть http://localhost:3000 — корень редиректит на `/home-ru`.
+Open http://localhost:3000 — the root redirects to `/home-ru`.
 
-## Структура
+## Layout
 
 ```
-app/
-  layout.tsx        шрифт Open Sans, метаданные, og-картинка
-  page.tsx          / → редирект на /home-ru
-  home-ru/page.tsx  главная
-  globals.css       токены цветов, теней и брейкпоинтов
-components/
-  Header.tsx        шапка; на узких экранах — бургер с оверлеем
-  Hero.tsx          первый экран
-  ProjectCard.tsx   карточка проекта
-  Footer.tsx        контакты и соцсети
-lib/projects.ts     контент: проекты, почта, соцсети
-public/img/         картинки и иконки с оригинального сайта
+app/                  one route per page, Russian and English
+  layout.tsx          fonts, metadata, og image
+  page.tsx            / → /home-ru
+  globals.css         colour, shadow and breakpoint tokens
+components/           hand-written components the generated pages call
+components/generated/ the pages themselves, emitted from the Figma export
+lib/                  page registry, metadata, asset map
+tools/figma/          the generator: fetch, resolve, emit
+tools/verify/         compares the build against the original site
+public/a/             assets from the original export, by their Figma hash
 ```
 
-## Как устроена вёрстка
+Pages exist in both languages: six cases (`eazychange`, `autotor`, `pot`,
+`ostral`, `vv`, `mikulich`), `about`, and `home`, each with a `-ru` and an
+`-en` route, plus a `-menu-` route for the narrow-screen menu.
 
-Брейкпоинты повторяют оригинал — три фрейма из Figma:
+## How the pages are built
 
-| | ширина | префикс Tailwind |
+`tools/figma/` walks the Figma tree and emits JSX. Layout values are carried
+over one to one as inline styles rather than Tailwind classes: that way every
+number is traceable to the design file and nothing is lost to rounding.
+
+Breakpoints match the original — three frames in Figma:
+
+| | width | Tailwind prefix |
 |---|---|---|
-| Mobile | < 800 | без префикса |
+| Mobile | < 800 | no prefix |
 | Tablet | 800–1279 | `md:` |
 | Desktop | ≥ 1280 | `xl:` |
 
-Геометрия сверена с оригиналом по вычисленным стилям: высота страницы,
-координаты карточек и футера совпадают на всех трёх брейкпоинтах.
+Geometry is checked against the original by computed style: page height and the
+coordinates of cards and footer match at all three breakpoints. `tools/verify/`
+holds that comparison.
 
-Кадрирование картинок в карточках задано как `object-fit: cover` плюс
-небольшой зум (`zoom` в `lib/projects.ts`) — так воспроизводится кроп,
-который в оригинале приходит из Figma. Наведение увеличивает картинку
-до 1.07 за 300ms, как в оригинале.
+Text corrections are applied on top of the export through
+`tools/figma/overrides.json` (`textFixes`), so the Figma file is never edited
+to fix a typo.
 
-## Что ещё не перенесено
+## Deploying
 
-- Страницы кейсов: `/eazychange-ru`, `/autotor-ru`, `/pot-ru`, `/ostral-ru`,
-  `/vv-ru`, `/mikulich-ru`. Ссылки на них уже стоят.
-- Страница «Обо мне» `/about-ru`.
-- Английская версия. Сейчас `/` редиректит на `/home-ru`.
-- Меню на узких экранах в оригинале — отдельная страница `/home-menu-ru`;
-  здесь сделан оверлей поверх страницы.
+The repository is connected to the Vercel project `ivangrigorenko-site`
+(Tank-dsgn team). A push to `main` ships production at
+https://ivangrigorenko.com; a push to any other branch makes a preview.
+
+Manual deploy, if it is ever needed:
+
+```bash
+npx vercel@latest deploy --prod
+```

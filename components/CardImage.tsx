@@ -1,23 +1,24 @@
 import type { CSSProperties } from "react";
 
 export type CardImageData = {
-  /** файл картинки */
+  /** the image file */
   src: string;
-  /** положение картинки в окне карточки — из макета, у каждого проекта и размера своё */
+  /** where the image sits inside the card window; taken from the design file, different per project and size */
   style: CSSProperties;
-  /** наведение (десктоп): на сколько картинка сдвигается и во сколько раз растёт */
+  /** hover, desktop only: how far the image shifts and how much it grows */
   hover?: { translate?: string; scale?: string };
 };
 
 /**
- * Картинка в окне карточки — общая для карточки проекта и карточки «Смотрите также».
+ * The image inside a card window, shared by the project card and the "See also" card.
  *
- * Стоит в окне по координатам из макета. Когда курсор на карточке (у предка класс
- * `group`), плавно сдвигается и увеличивается на величину из `hover`.
+ * It is placed by the coordinates from the design file. While the cursor is on
+ * the card — an ancestor carries the `group` class — it eases into the shift
+ * and the growth given by `hover`.
  */
 export default function CardImage({ image }: { image: CardImageData }) {
-  // сдвиг на −50% для привязки по центру и увеличение при наведении делят один transform,
-  // иначе увеличение увело бы картинку в сторону
+  // the −50% shift that centres the image and the hover scale share one
+  // transform; otherwise the scale would drag the image sideways
   const { transform, ...position } = image.style;
   return (
     <div
