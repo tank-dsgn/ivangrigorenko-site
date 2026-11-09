@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-// Шкала отступов: только эти значения. Не кратное 4 (кроме 2 и 6) — ошибка.
+// The spacing scale: these values and no others. Anything not a multiple of 4, apart from 2 and 6, is a mistake.
 const scale = [0, 2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 56, 64, 80, 96];
 
 const breakpoints = [

@@ -8,17 +8,17 @@ next-env.d.ts
 .vercel
 .env*
 
-# снимки сверки с оригиналом
+# snapshots from the comparison against the original
 tools/verify/.snap
 
-# записи экрана с правками — в репозиторий не идут
+# screen recordings of edits: not for the repository
 *.mov
 *.mp4
-# а видео самого сайта — нужно
+# but the site's own video is
 !public/video/*.mp4
 
-# сборка Storybook
+# Storybook build
 storybook-static
 
-# личные заметки по текстам — не в репозиторий
+# private notes on the texts: not for the repository
 Тексты сайта — замечания.md

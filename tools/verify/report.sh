@@ -1,5 +1,5 @@
 #!/bin/bash
-# Расхождения по уже снятым страницам, без шапки (она собрана вручную и отличается разметкой):
+# Differences across the pages already snapshotted, excluding the header, which is hand-built and differs in markup:
 #   tools/verify/report.sh 1440 pot-ru vv-ru
 export PATH="$HOME/.local/node/bin:$PATH"
 cd "$(dirname "$0")/../.." || exit 1

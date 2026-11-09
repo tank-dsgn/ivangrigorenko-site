@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-// Стили текста, которые реально встречаются на страницах (подсчитано по вёрстке из макета).
-// Шрифт один — Open Sans, начертания 400 / 600 / 700.
+// The text styles that actually occur on the pages, counted from the markup
+// generated out of the design file. One typeface, Open Sans, in 400 / 600 / 700.
 const styles = [
   { size: 48, line: 48, weight: 700, use: "Large figures in case studies" },
   { size: 36, line: 40, weight: 700, use: "Page title and case section heading (desktop)" },

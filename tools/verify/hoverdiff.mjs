@@ -1,4 +1,4 @@
-// node tools/verify/hoverdiff.mjs <страница> <ширина> <regexp имени инстанса> — чем состояние «наведение» отличается от обычного
+// node tools/verify/hoverdiff.mjs <page> <width> <regexp on the instance name> — how the hover state differs from the default one
 import fs from "fs"; import zlib from "zlib";
 import { createResolver } from "../figma/resolve.mjs";
 const [,, slug, width, re] = process.argv;
@@ -16,9 +16,9 @@ const brief = (k, v) => k === "size" ? `${f(v?.x)}x${f(v?.y)}` : k === "relative
 function diff(a, b, path, out) {
   for (const k of KEYS) { const x = brief(k, a[k]), y = brief(k, b[k]); if (x !== y) out.push(`${path} :: ${k}: ${x}  →  ${y}`); }
   const ka = a.children || [], kb = b.children || [];
-  if (ka.length !== kb.length) out.push(`${path} :: детей ${ka.length} → ${kb.length}`);
+  if (ka.length !== kb.length) out.push(`${path} :: children ${ka.length} → ${kb.length}`);
   for (let i = 0; i < Math.min(ka.length, kb.length); i++) {
-    if (ka[i].name !== kb[i].name || ka[i].type !== kb[i].type) out.push(`${path} :: ребёнок ${i}: ${ka[i].type} "${ka[i].name}" → ${kb[i].type} "${kb[i].name}"`);
+    if (ka[i].name !== kb[i].name || ka[i].type !== kb[i].type) out.push(`${path} :: child ${i}: ${ka[i].type} "${ka[i].name}" → ${kb[i].type} "${kb[i].name}"`);
     diff(ka[i], kb[i], `${path}/${(ka[i].name || "").slice(0, 16)}`, out);
   }
 }
@@ -32,7 +32,7 @@ let shown = 0;
       const hv = resolveVariant(n, h.to);
       const { transitionNodeID, ...act } = h.a;
       console.log(`== ${n.name} ${n.id} main=${n.mainComponentId} (${nb[n.mainComponentId]?.name}) → hover ${h.to} (${nb[h.to]?.name})`);
-      console.log("   переход:", JSON.stringify(act));
+      console.log("   transition:", JSON.stringify(act));
       const out = []; diff(n, hv, n.name.slice(0, 14), out); console.log(out.join("\n"));
       return;
     }

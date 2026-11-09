@@ -20,8 +20,9 @@ const meta: Meta<Args> = {
 export default meta;
 
 /**
- * На сайте одно движение на всё: 300 мс, кривая ease-out из Figma (`ease-figma`).
- * Так поднимаются карточки, едут карусели, меняется цвет кнопок. Цвет ссылок — 200 мс.
+ * One motion covers the whole site: 300 ms on the ease-out curve from Figma
+ * (`ease-figma`). Cards lift, carousels travel and buttons change colour that
+ * way. Link colour takes 200 ms.
  */
 export const Transition: StoryObj<Args> = {
   render: ({ duration, easing, lift }) => {

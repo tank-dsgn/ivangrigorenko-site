@@ -1,8 +1,8 @@
-// Разбор выгрузки Figma Sites: цвета, типографика, геометрия, ассеты.
-// Выгрузка — это дерево узлов Figma: у каждого есть auto-layout,
-// отступы, заливки и стиль текста. Здесь всё это переводится в CSS.
+// Reading the Figma Sites export: colour, typography, geometry, assets.
+// The export is a tree of Figma nodes, each with its auto-layout, padding,
+// fills and text style. This is where all of that is turned into CSS.
 
-/** Цвет Figma (0..1 по каналам) → строка CSS */
+/** A Figma colour, 0..1 per channel, as a CSS string */
 export function cssColor({ color, opacity = 1 }) {
   if (!color) return null;
   const to255 = (v) => Math.round(v * 255);
@@ -16,17 +16,18 @@ export function cssColor({ color, opacity = 1 }) {
 }
 
 /**
- * Итоговый цвет сплошных заливок. В Figma заливки лежат снизу вверх, верхняя
- * перекрывает нижние, полупрозрачная смешивается с ними. Раньше здесь бралась
- * первая заливка: блок «App Store» на POT (чёрная снизу, белая поверх) выходил
- * чёрным. С 2026-10-21 заливки складываются, как в Figma: у обложки VV фиолетовая
- * снизу и чёрная 20% поверх дают тёмно-фиолетовый.
+ * The resulting colour of the solid fills. In Figma fills stack bottom to top:
+ * the top one covers those below, and a translucent one blends with them. This
+ * used to take the first fill, which made the App Store block on POT — black
+ * underneath, white over it — come out black. Since 2026-10-21 the fills are
+ * composited as Figma does it: on the VV cover a purple below and 20% black
+ * above give a dark purple.
  */
 export function solidFill(node) {
   const fills = (node.fills || []).filter((x) => x.visible !== false && x.type === "SOLID" && x.color);
   if (!fills.length) return null;
   if (fills.length === 1) return cssColor(fills[0]);
-  // наложение «поверх» снизу вверх, каналы 0..1
+  // source-over compositing from the bottom up, channels 0..1
   let r = 0, g = 0, b = 0, a = 0;
   for (const f of fills) {
     const fa = (f.color.a ?? 1) * (f.opacity ?? 1);
@@ -41,11 +42,11 @@ export function solidFill(node) {
 }
 
 /**
- * Линейный градиент Figma → CSS.
+ * A Figma linear gradient as CSS.
  *
- * В Figma направление задано матрицей, которая переводит координаты
- * объекта в пространство градиента. Чтобы получить угол для CSS,
- * матрицу нужно обратить и посмотреть, куда идёт ось градиента.
+ * In Figma the direction is a matrix that maps the object's coordinates into
+ * the gradient's space. To get an angle for CSS the matrix has to be inverted
+ * and the gradient's axis followed.
  */
 export function linearGradient(fill) {
   const stops = fill.gradientStops || [];
@@ -61,7 +62,7 @@ export function linearGradient(fill) {
       const at = (x, y) => [ia * x + ib * y + itx, ic * x + id * y + ity];
       const [x0, y0] = at(0, 0.5);
       const [x1, y1] = at(1, 0.5);
-      // в CSS 0deg — вверх, угол растёт по часовой стрелке; ось Y экрана направлена вниз
+      // in CSS 0deg points up and the angle grows clockwise, while the screen's Y axis points down
       angle = ((Math.atan2(x1 - x0, -(y1 - y0)) * 180) / Math.PI + 360) % 360;
     }
   }
@@ -73,11 +74,12 @@ export function linearGradient(fill) {
 }
 
 /**
- * Радиальный градиент Figma → CSS. Матрица `transform` переводит слой (0..1 по каждой
- * оси) в пространство градиента, где центр — (0.5, 0.5), а радиус — 0.5. Обратная
- * матрица даёт центр и полуоси эллипса в долях слоя; CSS умеет только эллипс по осям,
- * поэтому поворот (если он не кратен 90°) теряется. Появился 2026-10-21: на VV
- * «Icon Library» края картинки с иконками растворяются в белом именно им.
+ * A Figma radial gradient as CSS. The `transform` matrix maps the layer, 0..1
+ * on each axis, into the gradient's space, where the centre is (0.5, 0.5) and
+ * the radius 0.5. Inverting it gives the centre and the semi-axes of the
+ * ellipse as fractions of the layer. CSS only knows axis-aligned ellipses, so
+ * any rotation that is not a multiple of 90° is lost. Added 2026-10-21: on VV
+ * it is what dissolves the edges of the Icon Library image into white.
  */
 export function radialGradient(fill) {
   const stops = fill.gradientStops || [];
@@ -108,12 +110,13 @@ export function radialGradient(fill) {
 }
 
 /**
- * Заливка картинкой.
+ * An image fill.
  *
- * FILL — обычное вписывание с обрезкой по краям, его достаточно отдать фоном.
- * STRETCH — это режим «кадрирование» в Figma: какой кусок картинки показывать,
- * описывает матрица `imageTransform`. Фоном такое не выразить, поэтому для них
- * считаем положение и размер отдельной картинки внутри обрезающего блока.
+ * FILL is ordinary cover-and-clip and a background is enough for it.
+ * STRETCH is Figma's crop mode: which part of the image to show is described by
+ * the `imageTransform` matrix. A background cannot express that, so for those
+ * the position and size of a separate image inside a clipping block are worked
+ * out here.
  */
 export function imageFill(node, assets, assetMap = {}) {
   const f = (node.fills || []).find((x) => x.visible !== false && x.type === "IMAGE");
@@ -142,7 +145,7 @@ export function imageFill(node, assets, assetMap = {}) {
   return { src, fit: f.scaleMode === "FIT" ? "contain" : "cover" };
 }
 
-/** Ассет самого узла (IMAGE и SVG ссылаются на файл по хешу) */
+/** The node's own asset; IMAGE and SVG reference a file by hash */
 export function nodeAsset(node, assets) {
   if (!node.hash) return null;
   const a = assets[node.hash];
@@ -157,12 +160,13 @@ export function nodeAsset(node, assets) {
 }
 
 /**
- * Где картинка узла лежит относительно его коробки.
+ * Where the node's image sits relative to its box.
  *
- * Сгенерированная картинка шире узла: в неё попадают тень и обводка.
- * На сколько она выступает с каждой стороны, записано в `offsets` —
- * в процентах от размера узла. У вырожденных узлов (линия нулевой высоты)
- * процент не от чего считать, там картинка центрируется.
+ * The generated image is wider than the node, because the shadow and the
+ * stroke are baked into it. How far it reaches out on each side is recorded in
+ * `offsets`, as a percentage of the node's size. On a degenerate node — a line
+ * of zero height — there is nothing to take a percentage of, so the image is
+ * centred instead.
  */
 export function assetBox(node, asset) {
   const bw = node.size?.x ?? 0;
@@ -177,7 +181,7 @@ export function assetBox(node, asset) {
     if (o) {
       const start = part(a, box);
       const length = box - start - part(b, box);
-      // у линии нулевой толщины выступ записан в пикселях
+      // on a line of zero thickness the overhang is recorded in pixels
       if (length >= 0.01) return { start, length };
     }
     const length = own ?? box;
@@ -189,9 +193,9 @@ export function assetBox(node, asset) {
 }
 
 /**
- * То же положение картинки, но в CSS: в процентах от коробки узла, чтобы
- * картинка растягивалась вместе с узлом, когда тот привязан к обоим краям.
- * У вырожденной коробки проценты считать не от чего — там пиксели.
+ * The same image position, in CSS: as a percentage of the node's box, so the
+ * image stretches with the node when it is pinned to both edges. A degenerate
+ * box has nothing to take a percentage of, so there it is pixels.
  */
 export function assetBoxCss(node, asset) {
   const b = assetBox(node, asset);
@@ -206,7 +210,7 @@ export function assetBoxCss(node, asset) {
   };
 }
 
-/** Начертание из PostScript-имени шрифта */
+/** The weight and style from a font's PostScript name */
 export function fontWeight(style = {}) {
   const name = (style.fontPostScriptName || style.fontStyle || "").toLowerCase();
   if (name.includes("black") || name.includes("heavy")) return 900;
@@ -221,18 +225,18 @@ export function fontWeight(style = {}) {
 
 const ALIGN = { MIN: "flex-start", CENTER: "center", MAX: "flex-end", SPACE_BETWEEN: "space-between", STRETCH: "stretch", BASELINE: "baseline" };
 
-/** Стили самого фрейма: направление, отступы, выравнивание, фон, скругления, тени */
+/** The frame's own styles: direction, padding, alignment, background, corners, shadows */
 export function frameStyle(node, assets, assetMap = {}) {
   const s = {};
   if (node.layoutMode === "HORIZONTAL" || node.layoutMode === "VERTICAL") {
     s.display = "flex";
     s.flexDirection = node.layoutMode === "HORIZONTAL" ? "row" : "column";
-    // При выравнивании «по краям» Figma распределяет элементы сама, а itemSpacing
-    // остаётся в данных залежавшимся значением. Если отдать его как gap, он станет
-    // минимальным зазором и распирает ряд.
+    // With space-between alignment Figma distributes the items itself, and
+    // itemSpacing is left in the data as a stale value. Passed on as gap it
+    // would become a minimum and push the row apart.
     const spread = node.primaryAxisAlignItems === "SPACE_BETWEEN";
     if (node.layoutWrap === "WRAP") {
-      // в Figma перенос строк задаётся отдельно, как и расстояние между рядами
+      // in Figma wrapping is set separately, as is the distance between rows
       s.flexWrap = "wrap";
       if (node.itemSpacing && !spread) s.columnGap = px(node.itemSpacing);
       if (node.counterAxisSpacing) s.rowGap = px(node.counterAxisSpacing);
@@ -240,26 +244,28 @@ export function frameStyle(node, assets, assetMap = {}) {
       s.gap = px(node.itemSpacing);
     }
     if (node.primaryAxisAlignItems) s.justifyContent = ALIGN[node.primaryAxisAlignItems];
-    // В Figma по умолчанию дети прижаты к началу поперечной оси, в CSS — растянуты.
-    // Без явного значения колонка растянется на высоту ряда и уедет по центру.
+    // Figma packs children to the start of the cross axis by default, CSS
+    // stretches them. Without an explicit value a column would stretch to the
+    // row's height and drift to the middle.
     s.alignItems = ALIGN[node.counterAxisAlignItems] ?? "flex-start";
   }
   const [pt, pr, pb, pl] = [node.paddingTop, node.paddingRight, node.paddingBottom, node.paddingLeft];
   if (pt || pr || pb || pl) s.padding = `${px(pt || 0)} ${px(pr || 0)} ${px(pb || 0)} ${px(pl || 0)}`;
 
-  // Заливки в Figma лежат снизу вверх. Сплошные под картинкой — цвет фона; сплошные
-  // поверх картинки (затемнение чертежа на Ostral) в CSS ушли бы под неё, поэтому они
-  // становятся отдельным слоем над картинкой.
+  // Figma stacks fills bottom to top. Solid fills under the image are the
+  // background colour; solid fills over it — the darkening of the drawing on
+  // Ostral — would end up behind it in CSS, so they become a separate layer
+  // above the image.
   const visible = (node.fills || []).filter((f) => f.visible !== false);
   const imgAt = visible.findIndex((f) => f.type === "IMAGE");
   const img = imageFill(node, assets, assetMap);
   const overImage = img && !img.crop && imgAt !== -1 ? visible.slice(imgAt + 1).filter((f) => f.type === "SOLID") : [];
 
-  // У TEXT заливка описывает цвет букв — её ставит textStyle, не фон
+  // On TEXT the fill is the colour of the letters, set by textStyle rather than the background
   const bg = node.type === "TEXT" ? null : solidFill({ fills: imgAt !== -1 && img && !img.crop ? visible.slice(0, imgAt) : visible });
   if (bg) s.background = bg;
 
-  // Слои фона: картинка снизу, градиенты и заливки поверх неё — как в Figma
+  // Background layers: the image at the bottom, gradients and fills over it, as in Figma
   const layers = [];
   if (img && !img.crop) { s.backgroundSize = img.fit; s.backgroundPosition = "center"; s.backgroundRepeat = "no-repeat"; }
   for (const f of visible) {
@@ -278,9 +284,10 @@ export function frameStyle(node, assets, assetMap = {}) {
   else if (node.rectangleCornerRadii?.some(Boolean)) s.borderRadius = node.rectangleCornerRadii.map(px).join(" ");
 
   if (node.clipsContent) s.overflow = "hidden";
-  // «Прокрутка по горизонтали» в макете (POT: ряды телефонов на телефоне) — ряд листается
-  // пальцем, полосы прокрутки не видно. Вертикальную не переносим: она стоит на корневых
-  // фреймах брейкпоинтов, это прокрутка самой страницы.
+  // Horizontal scrolling set in the design file — on POT, the rows of phones on
+  // a phone — means the row is paged with a finger and no scrollbar shows. The
+  // vertical kind is not carried over: it sits on the breakpoints' root frames
+  // and is the page's own scrolling.
   if (node.clipsContent && node.overflowDirection === "HORIZONTAL_SCROLLING") {
     delete s.overflow;
     s.overflowX = "auto";
@@ -289,11 +296,12 @@ export function frameStyle(node, assets, assetMap = {}) {
     s.overscrollBehaviorX = "contain";
   }
 
-  // Обводка в Figma не занимает места: она рисуется поверх блока и не сдвигает
-  // содержимое. CSS-border сдвинул бы, поэтому рисуем её тенью без размытия.
+  // A stroke in Figma takes no space: it is drawn over the block and does not
+  // move the content. A CSS border would, so it is drawn as a shadow with no
+  // blur instead.
   const shadows = [];
   const stroke = (node.strokes || []).find((x) => x.visible !== false && x.type === "SOLID");
-  const weight = node.strokeWeight ?? 1; // по умолчанию 1, в выгрузке значение по умолчанию опущено
+  const weight = node.strokeWeight ?? 1; // 1 by default; the export omits default values
   const sides = node.individualStrokeWeights || (weight ? { top: weight, right: weight, bottom: weight, left: weight } : null);
   if (stroke && sides) {
     const c = cssColor(stroke);
@@ -321,8 +329,9 @@ export function frameStyle(node, assets, assetMap = {}) {
     shadows.push(`${e.type === "INNER_SHADOW" ? "inset " : ""}${px(e.offset?.x || 0)} ${px(e.offset?.y || 0)} ${px(e.radius || 0)} ${px(e.spread || 0)} ${cssColor(e)}`);
   }
   if (shadows.length) s.boxShadow = shadows.join(", ");
-  // Размытие слоя (свечение на обложке VV). Радиус Figma — это примерно два «сигмы»
-  // CSS-размытия, поэтому делим пополам; без размытия свечение выходило резкой фигурой.
+  // Layer blur, the glow on the VV cover. Figma's radius is roughly two sigma
+  // of a CSS blur, so it is halved; without the blur the glow came out as a
+  // hard shape.
   const blur = (node.effects || []).find((e) => e.visible !== false && e.type === "LAYER_BLUR" && e.radius);
   if (blur) s.filter = `blur(${px(blur.radius / 2)})`;
   const backdrop = (node.effects || []).find((e) => e.visible !== false && e.type === "BACKGROUND_BLUR" && e.radius);
@@ -331,12 +340,13 @@ export function frameStyle(node, assets, assetMap = {}) {
   return s;
 }
 
-/** Ключ шрифта в таблице `fonts` выгрузки: «Семейство:Начертание» */
+/** A font's key in the export's `fonts` table: "Family:Style" */
 export const fontKey = (st = {}) => `${st.fontFamily}:${st.fontStyle}`;
 
 /**
- * Высота строки. «Авто» в Figma — высота из самого шрифта: оригинал отдаёт её
- * браузеру (`normal`), а если задан процент от неё — множит кегль на этот процент.
+ * Line height. "Auto" in Figma means the height that comes with the font: the
+ * original hands that to the browser as `normal`, and when a percentage of it
+ * is set, multiplies the font size by that percentage.
  */
 function lineHeightOf(st) {
   if (st.lineHeightUnit === "INTRINSIC_%") {
@@ -347,21 +357,21 @@ function lineHeightOf(st) {
 }
 
 /**
- * Типографика по стилю Figma.
+ * Typography from a Figma text style.
  *
- * Вес и оси вариативного шрифта берём из таблицы `fonts` выгрузки — так же,
- * как оригинал: у SF Pro Semibold вес 590 и оптический размер 28, из имени
- * начертания этого не узнать.
+ * The weight and the variable axes come from the export's `fonts` table, as
+ * they do in the original: SF Pro Semibold has weight 590 and optical size 28,
+ * neither of which the style name reveals.
  */
 function fontStyleOf(st = {}, fonts = {}) {
   const f = fonts[fontKey(st)];
   const s = {
     fontSize: px(st.fontSize),
-    // «Авто» в Figma — высота строки из самого шрифта; оригинал отдаёт её браузеру
+    // "Auto" in Figma is the line height the font itself carries; the original hands it to the browser
     lineHeight: lineHeightOf(st),
     fontWeight: f?.weight ?? fontWeight(st),
   };
-  // основной шрифт сайта задан на странице; остальные — шрифты макетов в кейсах
+  // the site's own typeface is set on the page; the rest are design-file fonts inside the cases
   if (st.fontFamily && st.fontFamily !== "Open Sans") {
     s.fontFamily = `"${st.fontFamily}", var(--font-open-sans), sans-serif`;
     const axes = (f?.variationAxes || []).filter((a) => a.tag !== "wght");
@@ -369,7 +379,7 @@ function fontStyleOf(st = {}, fonts = {}) {
   }
   if (st.italic) {
     s.fontStyle = "italic";
-    // курсив Open Sans подключён отдельным семейством, чтобы не грузить его на всех страницах
+    // the Open Sans italic is loaded as its own family, so it is not fetched on every page
     if (st.fontFamily === "Open Sans") s.fontFamily = "var(--font-open-sans-italic), var(--font-open-sans), sans-serif";
   }
   if (st.letterSpacing) s.letterSpacing = px(st.letterSpacing);
@@ -381,7 +391,7 @@ function fontStyleOf(st = {}, fonts = {}) {
   return s;
 }
 
-/** Стили текстового узла */
+/** The styles of a text node */
 export function textStyle(node, fonts = {}) {
   const st = node.style || {};
   const s = fontStyleOf(st, fonts);
@@ -389,7 +399,7 @@ export function textStyle(node, fonts = {}) {
   if (align && align !== "LEFT") s.textAlign = align === "JUSTIFIED" ? "justify" : align.toLowerCase();
   const color = solidFill(node);
   if (color) s.color = color;
-  // обрезка с многоточием
+  // truncation with an ellipsis
   if (st.textTruncation === "ENDING") {
     s.overflow = "hidden";
     if ((st.maxLines ?? 1) <= 1) {
@@ -405,9 +415,9 @@ export function textStyle(node, fonts = {}) {
 }
 
 /**
- * Стиль фрагмента внутри текста: то, чем он отличается от стиля всего узла.
- * В Figma у части текста может быть свой цвет, вес или размер — в выгрузке
- * это номер стиля на каждый символ и таблица стилей.
+ * The style of a run inside a text: whatever differs from the node's own
+ * style. In Figma a stretch of text can carry its own colour, weight or size;
+ * in the export that is a style index per character plus a table of styles.
  */
 export function spanStyle(node, override, fonts = {}) {
   const base = textStyle(node, fonts);
@@ -416,7 +426,7 @@ export function spanStyle(node, override, fonts = {}) {
     const color = solidFill({ fills: override.fills });
     if (color) own.color = color;
   }
-  // регистр задаётся на весь узел: оригинал не меняет его у отдельных фрагментов
+  // letter case is set on the whole node: the original never changes it per run
   delete own.textTransform;
   const diff = {};
   for (const [k, v] of Object.entries(own)) if (v !== undefined && v !== base[k]) diff[k] = v;
@@ -425,7 +435,7 @@ export function spanStyle(node, override, fonts = {}) {
   return diff;
 }
 
-/** По каким осям узел обнимает содержимое, а не имеет заданный размер */
+/** The axes along which a node hugs its content rather than having a set size */
 export function hugs(node) {
   const row = node.layoutMode === "HORIZONTAL";
   const col = node.layoutMode === "VERTICAL";
@@ -436,7 +446,7 @@ export function hugs(node) {
   };
 }
 
-/** Размеры: что зафиксировано, что тянется, что растёт */
+/** Sizing: what is fixed, what stretches, what grows */
 export function sizing(node, parent, autoAxes = hugs(node)) {
   const s = {};
   const horizontal = parent?.layoutMode === "HORIZONTAL";
@@ -444,23 +454,23 @@ export function sizing(node, parent, autoAxes = hugs(node)) {
   const auto = node.textAutoResize;
 
   if (node.layoutGrow === 1) {
-    // растущий блок занимает остаток и не раздувается содержимым — как в оригинале
+    // a growing block takes the remainder and is not inflated by its content, as in the original
     s.flex = "1 0 0px";
     if (horizontal) s.minWidth = "1px";
     if (vertical) s.minHeight = "1px";
   }
   if (node.layoutAlign === "STRETCH") s.alignSelf = "stretch";
-  // Текст на всю ширину колонки не должен её распирать: колонка, которая обнимает
-  // содержимое, берёт ширину от картинки рядом, а не от самой длинной строки.
+  // Text filling a column must not widen it: a column that hugs its content
+  // takes its width from the image beside it, not from the longest line.
   if (node.type === "TEXT" && vertical && node.layoutAlign === "STRETCH" && auto !== "WIDTH_AND_HEIGHT") {
     s.width = "min-content";
     s.minWidth = "100%";
   }
 
-  // Auto-layout фрейм по умолчанию обнимает содержимое: размер по оси задан,
-  // только если режим FIXED. Оригинал так и верстает — без высоты, поэтому при
-  // другой разбивке текста на строки блок подстраивается, а не обрезает и не
-  // оставляет дыру.
+  // An auto-layout frame hugs its content by default: a size along an axis is
+  // only set in FIXED mode. The original is built the same way, without a
+  // height, so when the text breaks into a different number of lines the block
+  // adjusts instead of clipping or leaving a gap.
   const { w: hugW, h: hugH } = autoAxes;
 
   const fixedW = !hugW && node.layoutGrow !== 1 && !(vertical && node.layoutAlign === "STRETCH");
@@ -468,23 +478,23 @@ export function sizing(node, parent, autoAxes = hugs(node)) {
 
   if (fixedW && !s.width && node.size?.x != null) s.width = px(node.size.x);
   if (fixedH && node.size?.y != null) s.height = px(node.size.y);
-  // внутри flex фиксированный размер не должен ужиматься соседями
+  // inside flex a fixed size must not be squeezed by its neighbours
   if ((horizontal && fixedW) || (vertical && fixedH)) s.flexShrink = 0;
   if (node.maxWidth != null) s.maxWidth = px(node.maxWidth);
   return s;
 }
 
 /**
- * Абсолютно позиционированный ребёнок.
+ * An absolutely positioned child.
  *
- * Смещение лежит в матрице трансформации, но привязываться к левому верхнему
- * углу нельзя: в Figma у каждого узла есть constraints. Большая часть блоков
- * привязана к центру, часть растягивается по ширине, часть — к правому краю.
- * Без этого на ширине, отличной от 1280, всё разъезжается.
+ * The offset lives in the transform matrix, but pinning to the top left will
+ * not do: every Figma node has constraints. Most blocks are pinned to the
+ * centre, some stretch across the width, some hold to the right edge. Without
+ * that, anything other than 1280 wide falls apart.
  */
 /**
- * Угол поворота узла в градусах. В матрице Figma [[a, b, tx], [c, d, ty]]
- * поворот — это a = cos, c = sin.
+ * The node's rotation in degrees. In Figma's matrix [[a, b, tx], [c, d, ty]]
+ * the rotation is a = cos, c = sin.
  */
 export function rotation(node) {
   const t = node.relativeTransform;
@@ -499,9 +509,9 @@ export function absolutePosition(node, parent, autoAxes = hugs(node)) {
 
   const w = node.size?.x;
   const h = node.size?.y;
-  // У повёрнутого узла смещение в матрице — это положение его исходного угла,
-  // а не левого верхнего края. Берём центр повёрнутого прямоугольника и
-  // отступаем на половину размера: поворот вокруг центра встанет точно.
+  // On a rotated node the offset in the matrix is where its original corner
+  // ends up, not its top left edge. Taking the centre of the rotated rectangle
+  // and stepping back half the size puts a centre rotation exactly right.
   let x = t[0][2];
   let y = t[1][2];
   if (rotation(node) && w != null && h != null) {
@@ -510,21 +520,21 @@ export function absolutePosition(node, parent, autoAxes = hugs(node)) {
     x = cx - w / 2;
     y = cy - h / 2;
   }
-  // Смещения детей посчитаны для размера родителя в мастер-компоненте. Если инстанс
-  // другой ширины, привязку нужно считать от исходного размера — иначе блок,
-  // стоявший по центру, уедет.
+  // Children's offsets are computed against the parent's size in the main
+  // component. When the instance is a different width, the constraint has to be
+  // measured from the original size, or a block that sat in the middle drifts.
   const pw = parent?.layoutSize?.x ?? parent?.size?.x;
   const ph = parent?.layoutSize?.y ?? parent?.size?.y;
   const pct = (v, base) => `${Math.round((v / base) * 1e4) / 100}%`;
   const c = node.constraints || {};
   const s = { position: "absolute" };
 
-  // Блок без заданного размера привязан к центру своей серединой: если текст
-  // внутри встанет в одну строку вместо двух, блок останется по центру.
+  // A block with no set size is pinned to the centre by its own middle, so if
+  // the text inside takes one line instead of two the block stays centred.
   const hug = rotation(node) ? { w: false, h: false } : autoAxes;
   const shift = [];
 
-  // по горизонтали
+  // horizontally
   if (pw && w != null && c.horizontal === "CENTER" && hug.w) {
     s.left = `calc(50% + ${Math.round((x + w / 2 - pw / 2) * 100) / 100}px)`;
     shift.push("translateX(-50%)");
@@ -544,7 +554,7 @@ export function absolutePosition(node, parent, autoAxes = hugs(node)) {
     s.left = px(x);
   }
 
-  // по вертикали
+  // vertically
   if (ph && h != null && c.vertical === "CENTER" && hug.h) {
     s.top = `calc(50% + ${Math.round((y + h / 2 - ph / 2) * 100) / 100}px)`;
     shift.push("translateY(-50%)");

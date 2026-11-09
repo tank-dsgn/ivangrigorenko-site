@@ -1,4 +1,4 @@
-// Снимок страницы: картинки и тексты с координатами
+// A snapshot of the page: images and text with coordinates
 window.__snap = async function (name) {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   document.documentElement.style.scrollBehavior = "auto";
@@ -41,7 +41,7 @@ window.__snap = async function (name) {
     let el = n.parentElement; if (!el || hidden(el)) continue;
     const leaf = el;
     if (["SCRIPT", "STYLE", "NOSCRIPT"].includes(el.tagName)) continue;
-    // поднимаемся до блока, который целиком состоит из текста
+    // walk up to the block that consists entirely of text
     while (el.parentElement && getComputedStyle(el).display.startsWith("inline") ) el = el.parentElement;
     if (el.getAttribute("aria-hidden") === "true" && el.tagName === "SPAN") continue;
     const tc = el.closest(".textContents"); if (tc) el = tc;

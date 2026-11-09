@@ -1,4 +1,4 @@
-// node tools/verify/near.mjs <страница> <ширина> <y0> <y1> — что стоит в полосе страницы у оригинала и у копии
+// node tools/verify/near.mjs <page> <width> <y0> <y1> — what sits in a horizontal band of the page, in the original and in the copy
 import fs from "fs";
 const [,, page, w, y0, y1] = process.argv;
 for (const side of ["orig", "copy"]) {

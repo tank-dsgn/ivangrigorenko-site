@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import ProjectCard from "@/components/ProjectCard";
-// те же данные, с которыми карточки выводит сайт
+// the same data the site renders the cards with
 import { projectCards, projects, type Lang, type Project, type ProjectCardProps as Card } from "../data";
 
 const cards: Record<Lang, Card[]> = { ru: projectCards("ru"), en: projectCards("en") };
@@ -10,7 +10,7 @@ const find = (lang: Lang, project: Project, size: Card["size"]) =>
 
 type Args = Pick<Card, "size" | "tags" | "title" | "description" | "href"> & { project: Project; lang: Lang };
 
-// телефонная карточка тянется на ширину колонки — даём ей колонку 335px, как на экране 375px
+// the phone card stretches to its column, so it gets a 335px column, as on a 375px screen
 function Frame({ size, children }: { size: Card["size"]; children: React.ReactNode }) {
   return size === "mobile" ? (
     <div className="flex w-[335px] flex-col gap-6">{children}</div>
@@ -63,7 +63,7 @@ export const Tablet: Story = story("eazychange", "en", "tablet");
 export const Mobile: Story = story("eazychange", "en", "mobile");
 export const Russian: Story = story("eazychange", "ru");
 
-/** Все шесть карточек подряд, как на главной */
+/** All six cards in a row, as on the home page */
 export const AllProjects: StoryObj<{ size: Card["size"]; lang: Lang }> = {
   name: "All projects",
   args: { size: "desktop", lang: "en" },

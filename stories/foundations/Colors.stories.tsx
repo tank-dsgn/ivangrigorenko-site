@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-// Палитра сайта. Значения живут в app/globals.css (@theme) — здесь читаются оттуда же,
-// поэтому поменяв токен в CSS, увидите новое значение и тут, и на сайте.
+// The site palette. The values live in app/globals.css (@theme) and are read
+// from there, so changing a token in CSS shows up both here and on the site.
 const tokens = [
   { name: "accent", cls: "bg-accent", role: "Primary: links, active nav item, contact block title, hover" },
   { name: "accent-soft", cls: "bg-accent-soft", role: "Burger and close icons of the menu" },
@@ -22,7 +22,7 @@ function Swatch({ name, cls, role }: { name: string; cls: string; role: string }
   return (
     <div className="flex items-center gap-4">
       <div
-        // класс записан целиком: Tailwind кладёт в CSS только те токены, которые встретил в коде
+        // the class is written out in full: Tailwind only emits the tokens it has seen in the source
         className={`h-14 w-14 shrink-0 rounded-xl shadow-[inset_0_0_0_1px_rgba(15,23,42,0.08)] ${cls}`}
       />
       <div className="min-w-0">

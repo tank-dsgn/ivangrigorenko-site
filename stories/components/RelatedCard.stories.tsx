@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import RelatedCard from "@/components/RelatedCard";
-// те же данные, с которыми карточки выводит сайт
+// the same data the site renders the cards with
 import { projectOf, projects, relatedCards, type Lang, type Project, type RelatedCardProps as Card } from "../data";
 
 const cards: Record<Lang, Card[]> = { ru: relatedCards("ru"), en: relatedCards("en") };
@@ -50,7 +50,7 @@ export const Tablet: Story = story("eazychange", "en", "tablet");
 export const Mobile: Story = story("eazychange", "en", "mobile");
 export const Russian: Story = story("eazychange", "ru");
 
-/** Все шесть карточек сеткой, как в блоке «Смотрите также» */
+/** All six cards in a grid, as in the "See also" block */
 export const AllCards: StoryObj<{ size: Card["size"]; lang: Lang }> = {
   name: "All cards",
   args: { size: "desktop", lang: "en" },

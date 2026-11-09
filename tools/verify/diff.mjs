@@ -15,17 +15,17 @@ function cmp(kind, la, lb, keyOf, extra) {
       if (x && !y) { restA.push(x); continue; }
       if (!x && y) { restB.push(y); continue; }
       const d = x.b.map((v, j) => y.b[j] - v);
-      if (kind === "TXT") d[2] = 0; // ширина инлайнового текста зависит от тега, не от вёрстки
+      if (kind === "TXT") d[2] = 0; // the width of inline text depends on the tag, not on the layout
       const ex = extra ? extra(x, y) : "";
-      // у огромных декоративных фигур допуск шире: обводка выходит за коробку на пару пикселей
+      // large decorative shapes get a wider tolerance: the stroke runs a couple of pixels outside the box
       const tol = Math.max(1, 0.0015 * Math.max(x.b[2], x.b[3]));
-      if (d.some((v) => Math.abs(v) > tol) || ex) { moved++; out.push(`~ ${kind} ${k} ориг @${x.b} копия @${y.b} Δ${d}${ex}`); } else same++;
+      if (d.some((v) => Math.abs(v) > tol) || ex) { moved++; out.push(`~ ${kind} ${k} orig @${x.b} copy @${y.b} Δ${d}${ex}`); } else same++;
     }
   }
   for (const [k, ys] of gb) if (!ga.has(k)) for (const y of ys) restB.push(y);
-  // остаток сводим по геометрии: в оригинале одноцветные иконки — встроенный svg без имени файла
+  // what is left is matched by geometry: in the original the single-colour icons are inline svg with no file name
   for (const x of restA) {
-    // у встроенного svg обводка выходит за коробку, у картинки она внутри — сводим по центру
+    // an inline svg puts its stroke outside the box and an image keeps it inside, so they are matched by centre
     const cx = (r) => [r.b[0] + r.b[2] / 2, r.b[1] + r.b[3] / 2];
     const i = restB.findIndex((y) => {
       const [ax, ay] = cx(x), [bx, by] = cx(y);
@@ -33,8 +33,8 @@ function cmp(kind, la, lb, keyOf, extra) {
     });
     if (i >= 0) { restB.splice(i, 1); same++; x.done = 1; }
   }
-  for (const x of restA) if (!x.done) { miss++; out.push(`- ${kind} НЕТ в копии: ${keyOf(x)} @${x.b}`); }
-  for (const y of restB) { ext++; out.push(`+ ${kind} лишний в копии: ${keyOf(y)} @${y.b}`); }
+  for (const x of restA) if (!x.done) { miss++; out.push(`- ${kind} MISSING from the copy: ${keyOf(x)} @${x.b}`); }
+  for (const y of restB) { ext++; out.push(`+ ${kind} extra in the copy: ${keyOf(y)} @${y.b}`); }
   return { same, moved, miss, ext };
 }
 const im = cmp("IMG", A.imgs, B.imgs, (x) => x.k);
@@ -50,5 +50,5 @@ const tx = cmp("TXT", A.texts, B.texts, (x) => x.t, (x, y) => {
   if (fa !== fb && !(fa === "Open Sans" && /open.?sans/i.test(y.ff))) e.push(`font ${x.ff}→${y.ff}`);
   return e.length ? " [" + e.join("; ") + "]" : "";
 });
-console.log(`${A.name} vs ${B.name}: высота ${A.h}/${B.h}${A.h === B.h ? "" : " ✗"} | картинки: совп ${im.same}, сдвиг ${im.moved}, нет ${im.miss}, лишн ${im.ext} | тексты: совп ${tx.same}, отлич ${tx.moved}, нет ${tx.miss}, лишн ${tx.ext}`);
+console.log(`${A.name} vs ${B.name}: height ${A.h}/${B.h}${A.h === B.h ? "" : " ✗"} | images: same ${im.same}, moved ${im.moved}, missing ${im.miss}, extra ${im.ext} | text: same ${tx.same}, differing ${tx.moved}, missing ${tx.miss}, extra ${tx.ext}`);
 if (mode !== "summary") console.log(out.slice(0, +mode || 60).join("\n"));

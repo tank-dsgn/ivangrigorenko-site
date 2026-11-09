@@ -1,15 +1,15 @@
-// Обход дерева Figma и генерация JSX.
-// Значения раскладки переносятся один в один, поэтому вместо классов
-// используется inline-style: так видно, откуда взялось каждое число,
-// и ничего не теряется на округлениях Tailwind.
+// Walks the Figma tree and emits JSX.
+// Layout values are carried over one to one, so inline styles are used instead
+// of classes: that way every number is traceable to the design file and
+// nothing is lost to Tailwind's rounding.
 
 import { absolutePosition, assetBox, assetBoxCss, fontKey, frameStyle, hugs, imageFill, nodeAsset, px, rotation, sizing, spanStyle, textStyle } from "./nodes.mjs";
 
 /**
- * Клик по узлу в Figma задан интеракцией. Достаём из неё адрес:
- * URL — внешняя ссылка, INTERNAL_NODE — переход на другую страницу сайта.
+ * A click on a node is an interaction in Figma. The URL is read out of it:
+ * URL is an external link, INTERNAL_NODE a move to another page of the site.
  */
-/** Первый текст внутри узла — по нему опознаём карточку проекта */
+/** The first text inside a node; a project card is recognised by it */
 function firstText(node, depth = 0) {
   if (depth > 6 || !node) return null;
   if (node.characters) return node.characters.trim();
@@ -21,7 +21,7 @@ function firstText(node, depth = 0) {
 }
 
 function linkOf(node, linkByName, guidToUrl = {}) {
-  // своя интеракция узла точнее: в ней уже учтены переопределения инстанса
+  // the node's own interaction is the more accurate one: it already accounts for the instance's overrides
   for (const i of node.interactions || []) {
     if (i.event?.interactionType !== "ON_CLICK") continue;
     for (const a of i.actions || []) {
@@ -38,7 +38,7 @@ function linkOf(node, linkByName, guidToUrl = {}) {
   return null;
 }
 
-/** Имя компонента из имени слоя в Figma */
+/** The component name taken from the Figma layer name */
 export function componentName(name, fallback) {
   const cleaned = (name || fallback || "Section")
     .replace(/[^\p{L}\p{N}]+/gu, " ")
@@ -55,7 +55,7 @@ const round = (v) => Math.round(v * 100) / 100;
 const esc = (s) =>
   s.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$\{/g, "\\${");
 
-/** JS-объект стилей → строка для JSX */
+/** A JS style object as a string for JSX */
 function styleLiteral(style) {
   const entries = Object.entries(style).filter(([, v]) => v !== undefined && v !== null);
   if (!entries.length) return null;
@@ -98,15 +98,16 @@ export function createEmitter({
     ref && typeof ref === "object" ? `${ref.sessionID}:${ref.localID}` : ref;
 
   /**
-   * Переключение состояния у самого узла: клик (карусель, тумблер темы)
-   * или наведение (кнопка, карточка). Возвращает цель и длительность перехода.
+   * A state switch on the node itself: a click, for a carousel or a theme
+   * toggle, or a hover, for a button or a card. Returns the target and the
+   * transition duration.
    */
   function swapOf(node, event) {
     for (const i of node.interactions || []) {
       if (i.event?.interactionType !== event) continue;
       for (const a of i.actions || []) {
         if (a.navigationType !== "SWAP_STATE" || !a.transitionNodeID) continue;
-        // без типа перехода и с INSTANT_TRANSITION состояние меняется мгновенно
+        // with no transition type, and with INSTANT_TRANSITION, the state changes at once
         const animated = a.transitionType && a.transitionType !== "INSTANT_TRANSITION";
         const e = a.easingFunction;
         return {
@@ -119,7 +120,7 @@ export function createEmitter({
     return null;
   }
 
-  /** Все переключения в поддереве, ведущие в варианты набора */
+  /** Every switch in the subtree that leads into a variant of the set */
   function swapsInto(node, targets, out = [], depth = 0) {
     if (!node || depth > 40 || node.visible === false) return out;
     for (const event of ["ON_CLICK", "ON_HOVER"]) {
@@ -131,9 +132,9 @@ export function createEmitter({
   }
 
   /**
-   * Инстанс, у которого есть варианты с переключением, — интерактивный блок:
-   * карусель, тумблер темы, кнопка с состоянием наведения.
-   * Берём только те варианты, до которых можно дойти из исходного.
+   * An instance whose variants can be switched is an interactive block: a
+   * carousel, a theme toggle, a button with a hover state.
+   * Only the variants reachable from the starting one are taken.
    */
   function variantGroup(node) {
     if (node.type !== "INSTANCE" || !node.mainComponentId) return null;
@@ -143,8 +144,8 @@ export function createEmitter({
     if (ids.length < 2) return null;
     const targets = new Set(ids);
 
-    // каждый вариант разворачиваем как этот же инстанс: так на него ложатся
-    // те же переопределения (перевод текста, размеры под брейкпоинт)
+    // each variant is expanded as this same instance, so the same overrides
+    // land on it: the translated text, the sizes for the breakpoint
     const trees = new Map();
     const tree = (id) => {
       if (!trees.has(id)) trees.set(id, id === node.mainComponentId ? node : resolveVariant(node, id));
@@ -164,8 +165,8 @@ export function createEmitter({
       }
       return seen;
     };
-    // до варианта, куда ведёт только наведение, очередь доходит не сразу —
-    // его можно не рисовать, пока у пользователя нет мыши
+    // a variant reachable only by hover is not needed straight away: it can go
+    // undrawn until the visitor turns out to have a mouse
     const byClick = reach(["ON_CLICK"]);
     const variants = ids
       .filter((id) => reach(["ON_CLICK", "ON_HOVER"]).has(id) && tree(id))
@@ -173,53 +174,56 @@ export function createEmitter({
     if (variants.length < 2) return null;
     return { variants, initial: node.mainComponentId, targets };
   }
-  // В макете одна и та же подпись встречается в разном регистре
-  // («Дизайн-Система» и «дизайн-система»), поэтому ищем без учёта регистра
+  // The same caption appears in the design file in different cases, so the
+  // lookup ignores case
   const cardMap = Object.fromEntries(
     Object.entries(cardTargets).map(([k, v]) => [k.toLowerCase(), v])
   );
-  /** Тяжёлые PNG переведены в WebP — подменяем имя файла по карте */
+  /** Heavy PNGs were converted to WebP; the file name is swapped through the map */
   const resolve = (url) => `/a/${assetMap[url] ?? url}`;
   const usedAssets = new Set();
   const usedLinks = new Set();
   const usedFonts = new Set();
 
-  // CSS состояний «по наведению»: правила копятся здесь, генератор кладёт их в <style> секции
+  // CSS for the hover states: the rules collect here and the generator puts them in the section's <style>
   const hoverCss = [];
   let hoverSeq = 0;
   const takeHoverCss = () => hoverCss.splice(0).join("\n");
 
   const kebab = (k) => k.replace(/^Webkit/, "-webkit").replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`);
   const near = (x, y, eps = 0.01) => Math.abs((x ?? 0) - (y ?? 0)) < eps;
-  /** Что при наведении меняется «краской», а не геометрией */
+  /** What hover changes by paint rather than by geometry */
   const PAINT = ["boxShadow", "background", "backgroundImage", "color", "opacity", "borderRadius", "outline"];
 
   /**
-   * Чем узел в состоянии «наведение» отличается от обычного: сдвиг, масштаб, краска.
-   * Обходит оба состояния параллельно и записывает разницу в узлы обычного состояния.
-   * Возвращает false, если состояния устроены по-разному (другие слои, текст, картинка) —
-   * тогда плавно переехать из одного в другое нельзя.
+   * How a node in the hover state differs from the default one: offset, scale,
+   * paint. Walks both states side by side and records the difference on the
+   * default state's nodes. Returns false when the states are built differently
+   * — different layers, text or image — because then one cannot ease into the
+   * other.
    */
-  /** Сдвиг, масштаб и краска, которые переводят узел `a` в состояние `b` */
+  /** The offset, scale and paint that take node `a` into state `b` */
   function moveAndPaint(a, b, isRoot) {
     const to = {};
     const ta = a.relativeTransform;
     const tb = b.relativeTransform;
-    // корень блока стоит на месте: двигаются его части
+    // the block's root stays put; its parts are what move
     if (!isRoot && ta && tb && a.size && b.size) {
       const sx = a.size.x > 0.5 ? b.size.x / a.size.x : 1;
       const sy = a.size.y > 0.5 ? b.size.y / a.size.y : 1;
-      // картинку увеличиваем масштабом из центра; блок с детьми только сдвигаем.
-      // Текст не масштабируем никогда: у подписи «Sizes» на VV блок в другом слайде
-      // в 15 раз шире, и буквы растягивались вслед за ним
-      // и не двигаем по левому краю: блок стал шире, а текст в нём по центру остался на месте
+      // an image grows by a scale about its centre; a block with children is
+      // only moved. Text is never scaled: the Sizes caption on VV has a block
+      // fifteen times wider in another slide, and the letters stretched with
+      // it. Nor is text moved by its left edge: the block grew wider while the
+      // text inside stayed centred where it was
       const leaf = !(a.children || []).length && a.type !== "TEXT";
       const resized = !(a.children || []).length && (!near(sx, 1, 0.002) || !near(sy, 1, 0.002));
       const scaled = leaf && resized;
       const dx = resized ? tb[0][2] + b.size.x / 2 - (ta[0][2] + a.size.x / 2) : tb[0][2] - ta[0][2];
       const dy = resized ? tb[1][2] + b.size.y / 2 - (ta[1][2] + a.size.y / 2) : tb[1][2] - ta[1][2];
-      // текст сменил размер блока (подпись то по ширине текста, то во всю ширину) — это
-      // перестройка раскладки, а не движение: по центру он стоит на месте, не сдвигаем
+      // the text changed the block's size — a caption sized to its text in one
+      // state and to the full width in another — which is a relayout, not a
+      // movement: centred, it stays where it is, so it is not shifted
       const textReflow = a.type === "TEXT" && resized;
       if (!textReflow && (!near(dx, 0, 0.05) || !near(dy, 0, 0.05))) to.translate = `${px(dx)} ${px(dy)}`.replace(/(^| )0( |$)/g, "$10px$2");
       if (scaled) to.scale = `${Math.round(sx * 1e4) / 1e4} ${Math.round(sy * 1e4) / 1e4}`;
@@ -241,13 +245,14 @@ export function createEmitter({
     if (!sameKids && !rule?.repair) return false;
 
     const to = moveAndPaint(a, b, isRoot);
-    // своя правка подписи: в макете она при наведении только меняет цвет
+    // a hand-made correction to the caption: in the design file hover only changes its colour
     if (a.type === "TEXT" && rule?.text) Object.assign(to, rule.text);
     if (Object.keys(to).length) mark.set(a, to);
 
     if (!sameKids) {
-      // Наведение в макете собрано иначе (другая картинка, лишний слой). Чинить нечем,
-      // поэтому картинку обычного состояния просто увеличиваем из центра.
+      // The hover state is built differently in the design file: another image,
+      // an extra layer. There is nothing to repair it with, so the default
+      // state's image is simply scaled about its centre.
       const leaves = ka.filter((c) => c.visible !== false && !(c.children || []).length);
       if (leaves.length === 1 && rule.repair.imageScale) {
         const k = rule.repair.imageScale;
@@ -257,23 +262,24 @@ export function createEmitter({
     }
     return ka.every((c, i) => {
       const ok = markHover(c, kb[i], mark, rule, false);
-      // несовпавшую ветку при починке пропускаем, остальное двигается как в макете
+      // the branch that did not match is skipped during the repair; the rest moves as in the design file
       return ok || Boolean(rule?.repair);
     });
   }
 
-  // узел → что с ним происходит при наведении; заполняется на время вывода блока
+  // node → what happens to it on hover; filled in while the block is being emitted
   let hoverMarks = null;
   let hoverGroup = null;
 
   /**
-   * Наведение как в макете: Smart Animate.
+   * Hover as the design file has it: Smart Animate.
    *
-   * Если состояние «наведение» отличается от обычного только положением, размером
-   * и краской (карточка приподнялась, картинка выросла, подпись сменила цвет), два
-   * слоя не нужны: выводим обычное состояние, а разницу отдаём правилами `:hover`
-   * с переходом. Элементы плавно переезжают из одного состояния в другое.
-   * Возвращает JSX или null, если состояния устроены по-разному.
+   * When the hover state differs from the default one only in position, size
+   * and paint — the card lifted, the image grew, the caption changed colour —
+   * two layers are unnecessary: the default state is emitted and the difference
+   * handed to `:hover` rules with a transition, so the elements ease from one
+   * state into the other.
+   * Returns JSX, or null when the states are built differently.
    */
   function hoverMorph(node, parent, depth, insideLink, enclosing, group) {
     if (hoverMarks || group.variants.length !== 2) return null;
@@ -303,32 +309,34 @@ export function createEmitter({
         `@media (prefers-reduced-motion: reduce) { .hg-${id}, .hg-${id} * { transition: none !important; } }`,
       ].join("\n")
     );
-    // метки для VariantGroup здесь не нужны: состояние переключает CSS
+    // no markers for VariantGroup are needed here: CSS does the switching
     return jsx.replace(/ data-hover-to="([^"]+)" data-hover-ms="\d+"/g, (m, to) => (group.targets.has(to) ? "" : m));
   }
 
-  // блок с состояниями по клику, который сейчас выводится
+  // the click-switched block currently being emitted
   let stateCtx = null;
-  // узел → его «двойники» из других состояний (другая картинка или текст)
+  // node → its counterparts from the other states, with a different image or text
   const expanding = new Set();
 
-  /** Что у узла своё в каждом состоянии: картинка, текст */
+  /** What a node has of its own in each state: image, text */
   const contentOf = (n) =>
     [n.hash || "", n.characters || "", (n.fills || []).filter((f) => f.visible !== false && f.type === "IMAGE").map((f) => f.imageRef).join()].join("|");
 
   /**
-   * Обходит все состояния блока параллельно и записывает, чем каждый узел
-   * отличается от исходного состояния. false — состояния устроены по-разному.
+   * Walks every state of the block side by side and records how each node
+   * differs from the starting state. false means the states are built
+   * differently.
    */
-  /** Устройство поддерева без мелочей: по нему видно, одинаково ли собраны два слоя */
+  /** The shape of a subtree, without the detail: enough to tell whether two layers are built alike */
   const shapeOf = (n) =>
     n.visible === false ? "-" : `${n.type}:${n.name}:${n.hash || ""}:${n.characters || ""}(${(n.children || []).map(shapeOf).join(",")})`;
 
   /**
-   * Слой, собранный в разных состояниях по-разному (экран телефона в светлой и тёмной
-   * теме — разные макеты), но стоящий на одном месте. Плавно перевести одно устройство
-   * в другое нельзя, поэтому выводим все варианты слоя целиком и показываем нужный
-   * по состоянию — как листья с разной картинкой. Двигаются при этом их предки.
+   * A layer built differently in different states — a phone screen in the
+   * light and the dark theme are two different designs — but standing in the
+   * same place. One shape cannot ease into another, so every variant of the
+   * layer is emitted whole and the right one shown per state, the way leaves
+   * with different images are. Their ancestors are what move.
    */
   function markAltTrees(nodes, ids, ctx) {
     const a = nodes[0];
@@ -336,8 +344,9 @@ export function createEmitter({
     const near = (n) =>
       Math.abs((n.size?.x ?? 0) - (a.size?.x ?? 0)) < 64 && Math.abs((n.size?.y ?? 0) - (a.size?.y ?? 0)) < 64 &&
       Math.abs(t(n)[0][2] - t(a)[0][2]) < 32 && Math.abs(t(n)[1][2] - t(a)[1][2]) < 32;
-    // растр и фрейм одного слоя разного размера (у растра поля под тень) — это нормально:
-    // каждый вариант выводится со своей геометрией, место должно совпадать лишь примерно
+    // a raster and a frame of the same layer differing in size — the raster
+    // carries margins for the shadow — is fine: each variant is emitted with
+    // its own geometry and the positions need only roughly agree
     if (!nodes.every(near)) return false;
     const bySig = new Map();
     nodes.forEach((n, i) => {
@@ -361,14 +370,14 @@ export function createEmitter({
     const vis = nodes.map((n) => n.visible !== false);
     const ka = a.children || [];
     const differs = nodes.some((n) => n.type !== a.type || n.name !== a.name || (n.children || []).length !== ka.length);
-    // разное устройство у видимого во всех состояниях слоя — показываем варианты целиком
+    // a layer visible in every state but built differently: show the variants whole
     if (differs) return !isRoot && vis.every(Boolean) && ctx.altTrees !== false && markAltTrees(nodes, ids, ctx);
     if (!vis.some(Boolean)) return true;
-    if (!vis[0]) return false; // слой, которого нет в исходном состоянии, плавно не показать
+    if (!vis[0]) return false; // a layer absent from the starting state cannot be eased in
 
     const m = { css: {}, hide: ids.filter((_, i) => !vis[i]), swap: {} };
 
-    // кто переключает состояние — зависит от состояния: на первом слайде «назад» не работает
+    // which element switches the state depends on the state: on the first slide, back does nothing
     nodes.forEach((n, i) => {
       const sw = vis[i] && swapOf(n, "ON_CLICK");
       if (sw && ctx.targets.has(sw.to)) {
@@ -380,7 +389,7 @@ export function createEmitter({
     const leaf = !ka.length;
     const own = contentOf(a);
     if (leaf && nodes.some((n, i) => vis[i] && contentOf(n) !== own)) {
-      // у листа в другом состоянии другая картинка или текст: выводим оба, показываем нужный
+      // a leaf with a different image or text in another state: both are emitted and the right one shown
       const bySig = new Map();
       nodes.forEach((n, i) => {
         if (!vis[i]) return;
@@ -408,21 +417,23 @@ export function createEmitter({
   }
 
   /**
-   * Карусель как в макете: Smart Animate по клику.
+   * A carousel as the design file has it: Smart Animate on click.
    *
-   * Если состояния блока отличаются только положением частей, краской и содержимым
-   * отдельных листьев (стрелка стала активной, точка сменила цвет), выводится одно
-   * дерево, а разницу между состояниями задают правила CSS по атрибуту `data-state`
-   * на корне. Лента слайдов плавно едет, а не подменяется. Атрибут переключает
+   * When the block's states differ only in where the parts sit, in paint, and
+   * in the content of individual leaves — an arrow became active, a dot changed
+   * colour — one tree is emitted and CSS rules keyed on the `data-state`
+   * attribute
+   * at the root carry the difference between states. The strip of slides
+   * glides rather than being swapped out. The attribute is switched by
    * `components/StateGroups.tsx`.
    */
-  /** Свойства варианта из его имени: «mode=light, step=1» → { mode: "light", step: "1" } */
+  /** A variant's properties from its name: "mode=light, step=1" → { mode: "light", step: "1" } */
   const variantProps = (id) =>
     Object.fromEntries(
       (nodeById[id]?.name || "").split(",").map((p) => p.split("=").map((x) => x.trim())).filter((p) => p.length === 2)
     );
 
-  /** Свойства варианта, меняющие содержимое (тема): их значение есть в именах слоёв варианта */
+  /** Variant properties that change the content, such as the theme: their value appears in the variant's layer names */
   function contentProps(trees, props) {
     const names = trees.map((t) => {
       const out = [];
@@ -435,24 +446,26 @@ export function createEmitter({
   }
 
   /**
-   * Привести состояния к одному устройству, чтобы между ними можно было плавно переехать.
+   * Bring the states to a common shape, so one can ease into another.
    *
-   * Figma Sites растрирует то, чего в состоянии не видно: в карусели «App Login» на POT
-   * невидимый слайд в одном состоянии — картинка, в другом — настоящий фрейм с телефонами.
-   * Ещё у тёмной темы слои названы иначе («Content Dark» вместо «Content Light») и лежат
-   * в другом порядке. Здесь: растрированный слой заменяется настоящим из соседнего
-   * состояния (того, что отличается меньше всего, — той же темы), имена и порядок слоёв
-   * выравниваются по исходному состоянию. Работает на копиях деревьев.
+   * Figma Sites rasterises whatever a state does not show: in the App Login
+   * carousel on POT the hidden slide is an image in one state and a real frame
+   * of phones in another. The dark theme also names its layers differently —
+   * "Content Dark" rather than "Content Light" — and puts them in another
+   * order. Here a rasterised layer is replaced with the real one from the
+   * nearest state, meaning the one that differs least, of the same theme, and
+   * layer names and order are aligned to the starting state. Works on copies
+   * of the trees.
    */
   function harmonize(nodes, props, content = contentProps(nodes, props)) {
     const base = nodes[0];
     const kids = (n) => (n.children || []).filter((c) => c.visible !== false);
-    // один и тот же слой с другим именем (тема в имени)
+    // the same layer under another name, with the theme in it
     if (nodes.some((n) => n.name !== base.name) && nodes.every((n) => n.type === base.type)) {
       const same = (n) => kids(n).map((c) => c.name).sort().join("|") === kids(base).map((c) => c.name).sort().join("|");
       if (nodes.every(same)) nodes.forEach((n) => (n.name = base.name));
     }
-    // порядок детей — как в исходном состоянии
+    // children keep the order of the starting state
     const order = kids(base).map((c) => c.name);
     for (const n of nodes.slice(1)) {
       const k = kids(n);
@@ -464,20 +477,23 @@ export function createEmitter({
       });
       if (sorted.every(Boolean)) n.children = [...sorted, ...(n.children || []).filter((c) => c.visible === false)];
     }
-    // Растрированные слои. В строке (один и тот же слой во всех состояниях) где-то картинка,
-    // где-то фрейм. Тема — свойство варианта, чьё значение встречается в именах слоёв
-    // («Content Light»): донор растра берётся только из состояния той же темы.
+    // Rasterised layers. Across a row — the same layer in every state — some
+    // are images and some are frames. The theme is the variant property whose
+    // value shows up in the layer names, as in "Content Light", and the donor
+    // for a raster is only taken from a state of the same theme.
     const lists = nodes.map(kids);
     if (lists.some((l) => l.length !== lists[0].length)) return;
     lists[0].forEach((_, i) => {
       const row = lists.map((l) => l[i]);
-      // растр в выгрузке — узел типа IMAGE; разные значки (SVG) — это разное содержимое, их не трогаем
+      // a raster in the export is an IMAGE node; differing icons, which are SVG, are different content and are left alone
       if (row.every((c) => c.type === row[0].type) || row.some((c) => c.name !== row[0].name)) return;
       if (!row.some((c) => c.type === "IMAGE") || row.some((c) => !(c.children || []).length && c.type !== "IMAGE")) return;
-      // Внутри каждой темы — один вид: растр, если он есть хоть у одного состояния этой темы
-      // (так Figma Sites эту тему и показывает: в тёмной теме значки на растре белые, а во
-      // фрейме из выгрузки — чёрные), иначе фрейм. Между темами вид может различаться —
-      // такие слои дальше выводятся вариантами (markAltTrees).
+      // Within one theme there is a single form: a raster if any state of that
+      // theme has one, because that is how Figma Sites shows the theme — in the
+      // dark theme the icons on the raster are white while the frame from the
+      // export has them black — and otherwise a frame. Across themes the form
+      // may differ, and such layers are emitted as variants further on
+      // (markAltTrees).
       const kin = (k, j) => content.every((key) => props[k][key] === props[j][key]);
       row.forEach((c, k) => {
         if (c.type === "IMAGE") return;
@@ -494,9 +510,9 @@ export function createEmitter({
   }
 
   /**
-   * Увеличение по клику в макете стоит только на слайде, который виден в своём
-   * состоянии карусели. Выводится же одно дерево — исходного состояния, поэтому
-   * отмечаем в нём все слои, которые увеличиваются хоть в одном состоянии.
+   * In the design file click-to-zoom is set only on the slide visible in its
+   * own carousel state. One tree is emitted, that of the starting state, so
+   * every layer that zooms in any state is marked in it.
    */
   function lendZoom(nodes) {
     const a = nodes[0];
@@ -515,7 +531,7 @@ export function createEmitter({
     let trees = ordered.map((v) => v.tree);
     let ctx = { ...fresh(), root: trees[0] };
     if (!markStates(trees, ids, ctx) || !ctx.marks.size) {
-      // вторая попытка: состояния, приведённые к одному устройству
+      // second attempt: the states brought to a common shape
       trees = trees.map((t) => structuredClone(t));
       harmonize(trees, ids.map(variantProps));
       ctx = { ...fresh(), root: trees[0] };
@@ -531,11 +547,11 @@ export function createEmitter({
     hoverCss.push(
       [...ctx.moving, ...ctx.rules, `@media (prefers-reduced-motion: reduce) { .sg-${ctx.id}, .sg-${ctx.id} * { transition: none !important; } }`].join("\n")
     );
-    // метки для VariantGroup здесь не нужны: состояние переключает атрибут data-state
+    // no markers for VariantGroup are needed here: the data-state attribute does the switching
     return jsx.replace(/ data-swap-to="([^"]+)" data-swap-ms="\d+"/g, (m, to) => (group.targets.has(to) ? "" : m));
   }
 
-  /** Класс и атрибуты узла внутри блока с состояниями по клику */
+  /** The class and attributes of a node inside a click-switched block */
   function stateAttrs(node, baseTransform, classes) {
     if (!stateCtx) return "";
     const g = stateCtx;
@@ -560,7 +576,7 @@ export function createEmitter({
       g.rules.push(`${at(id)} { ${Object.entries(to).map(([k, v]) => `${kebab(k)}: ${v} !important`).join("; ")}; }`);
     }
     if (props.size && g.ms) g.moving.push(`.${cls} { transition: ${[...props].map((k) => `${kebab(k)} ${g.ms}ms ${g.ease}`).join(", ")}; }`);
-    // лист показан не во всех состояниях
+    // the leaf is shown in some states but not all
     const all = [...g.targets];
     const hidden = m.only ? all.filter((id) => !m.only.includes(id)) : m.hide;
     for (const id of hidden) g.rules.push(`${at(id)} { display: none !important; }`);
@@ -568,16 +584,17 @@ export function createEmitter({
     return extra;
   }
 
-  /** Класс узла внутри блока с наведением и его правила */
+  /** The class of a node inside a hover block, and its rules */
   function hoverClass(node, baseTransform) {
     if (!hoverGroup) return "";
     const g = hoverGroup;
     const root = node === g.root;
     let to = hoverMarks.get(node);
     if (!root && !to) return "";
-    // У узла уже есть transform (например, сдвиг на −50% для привязки по центру).
-    // Отдельное свойство scale применилось бы после него и увело бы картинку в сторону,
-    // поэтому масштаб дописываем в тот же transform — он сработает первым, из центра.
+    // The node already has a transform, a −50% shift to centre it for example.
+    // A separate scale property would apply after it and drag the image
+    // sideways, so the scale is appended to the same transform, where it acts
+    // first, about the centre.
     if (to?.scale && baseTransform) {
       const { scale, ...rest } = to;
       to = { ...rest, transform: `${baseTransform} scale(${scale.replace(" ", ", ")})` };
@@ -592,7 +609,7 @@ export function createEmitter({
     return cls;
   }
 
-  /** Классы и атрибуты узла от блоков с наведением и с состояниями */
+  /** The classes and attributes a node gets from hover blocks and from state blocks */
   function motionAttrs(node, baseTransform) {
     const classes = [];
     const hover = hoverClass(node, baseTransform);
@@ -601,18 +618,19 @@ export function createEmitter({
     return (classes.length ? ` className="${classes.join(" ")}"` : "") + extra;
   }
 
-  // ширина брейкпоинта, который сейчас выводится: от неё зависят отступы своих компонентов
+  // the width of the breakpoint being emitted: the hand-written components' spacing depends on it
   let breakpoint = 0;
   const setBreakpoint = (w) => { breakpoint = w; };
 
   /**
-   * Свой компонент, которого нет в макете (кнопка в первом экране главной).
-   * Встаёт последним ребёнком узла — на ширину и по выравниванию соседа сверху.
+   * A hand-written component with no counterpart in the design file, such as
+   * the button in the first screen of the home page. It becomes the node's last
+   * child, taking the width and the alignment of the sibling above it.
    */
   function addition(node, flowKids, pad) {
     return additions
-      // hasText — уточнение, когда имя блока не уникально: среди его детей должен быть такой текст
-      .filter((a) => a.into && [].concat(a.into).includes(node.name)) // имя блока; несколько — если на брейкпоинтах он назван по-разному
+      // hasText narrows it down when the block name is not unique: one of its children must carry that text
+      .filter((a) => a.into && [].concat(a.into).includes(node.name)) // the block name; several of them when the breakpoints name it differently
       .filter((a) => !a.hasText || (node.children || []).some((c) => c.type === "TEXT" && c.visible !== false && c.characters === a.hasText))
       .map((a) => {
         const above = flowKids[flowKids.length - 1];
@@ -627,8 +645,9 @@ export function createEmitter({
         });
         return (
           `${pad}${indentUnit}<div style=${box}>\n` +
-          // lang: false — компоненту язык не нужен; props — готовая строка свойств,
-          // propsAt — добавка к ним на конкретной ширине макета
+          // lang: false means the component does not need the language; props
+          // is a ready-made string of properties and propsAt adds to it at one
+          // particular design width
           `${pad}${indentUnit}${indentUnit}<${a.component}${a.lang === false ? "" : ` lang="${lang}"`}${a.props ? ` ${a.props}` : ""}${a.propsAt?.[breakpoint] ? ` ${a.propsAt[breakpoint]}` : ""}${a.full ? " full" : ""} />\n` +
           `${pad}${indentUnit}</div>\n`
         );
@@ -636,7 +655,7 @@ export function createEmitter({
       .join("");
   }
 
-  /** Текст в JSX: перевод строки — отдельным выражением, иначе JSX его съест */
+  /** Text in JSX: a line break goes in as its own expression, or JSX swallows it */
   const literal = (text) =>
     text
       .split("\n")
@@ -644,22 +663,26 @@ export function createEmitter({
       .join("");
 
   /**
-   * Содержимое текстового узла.
+   * What a text node holds.
    *
-   * В Figma `\n` — новый абзац, U+2028 — перенос строки внутри абзаца. Абзац
-   * может быть пунктом списка, а часть символов — иметь свой стиль.
-   * Возвращает JSX и признак «внутри есть список» — тогда узел должен быть <div>.
+   * In Figma `\n` is a new paragraph and U+2028 a line break inside one. A
+   * paragraph can be a list item, and a stretch of characters can carry its own
+   * style.
+   * Returns the JSX and a flag saying a list is inside, in which case the node
+   * has to be a <div>.
    */
   function textBody(node, pad) {
-    // Оригинал сохраняет двойные пробелы из макета, а HTML их схлопывает —
-    // второй и следующие пробелы делаем неразрывными.
+    // The original keeps the double spaces from the design file while HTML
+    // collapses them, so the second space and any after it are made
+    // non-breaking.
     const chars = (node.characters || "").replace(/ {2,}/g, (m) => " " + "\u00a0".repeat(m.length - 1));
     const ids = node.characterStyleOverrides || [];
     const table = node.styleOverrideTable || {};
     usedFonts.add(fontKey(node.style));
 
-    // Заголовок, где под курсором подсвечивается слово (overrides.json → hoverWords): пробел
-    // входит в слово, иначе между словами подсветка мигала бы. Выделение из макета — классом.
+    // A heading where one word lights up on hover (overrides.json →
+    // hoverWords): the space belongs to the word, otherwise the highlight would
+    // flicker between words. The highlight from the design file is a class.
     if (hoverWords.some((r) => chars.startsWith(r.startsWith))) {
       const words = [...chars.matchAll(/\S+\s*/g)].map((m) => {
         const accent = [...m[0]].some((_, i) => table[ids[m.index + i]] && styleLiteral(spanStyle(node, table[ids[m.index + i]], fonts)));
@@ -695,7 +718,7 @@ export function createEmitter({
       return { body, list: false, multiline: body.includes(`{"\\n"}`) };
     }
 
-    // Список: маркер стоит в отступе пункта, как в оригинале
+    // List: the marker sits in the item's indent, as in the original
     const size = node.style?.fontSize || 16;
     const inner = pad + indentUnit;
     let out = "";
@@ -720,7 +743,7 @@ export function createEmitter({
     return { body: `\n${out}${pad}`, list: true, multiline: false };
   }
 
-  /** Атрибуты узла-переключателя: куда ведёт клик и наведение */
+  /** The attributes of a switching node: where a click and a hover lead */
   function triggers(node, targets) {
     let out = "";
     const click = swapOf(node, "ON_CLICK");
@@ -730,13 +753,14 @@ export function createEmitter({
     return out;
   }
 
-  /** Положение и размер узла в родителе */
+  /** A node's position and size within its parent */
   function place(node, parent) {
     const isAbs = node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode;
     const auto = { ...hugs(node) };
 
-    // Пропорции зафиксированы: если узел тянется по одной оси, вторая считается
-    // из соотношения сторон. Так фоновая картинка растёт вместе с шириной окна.
+    // The aspect ratio is locked: when the node stretches along one axis the
+    // other is derived from it. That is how a background image grows with the
+    // width of the window.
     let aspect = null;
     const ar = node.targetAspectRatio;
     if (ar?.x && ar?.y && !rotation(node)) {
@@ -758,13 +782,14 @@ export function createEmitter({
 
     const abs = isAbs ? absolutePosition(node, parent, auto) : {};
     const size = sizing(node, parent, auto);
-    // растянутый между краями узел размера не имеет — его задают отступы
+    // a node stretched between two edges has no size of its own; the insets give it one
     if (abs.left !== undefined && abs.right !== undefined) delete size.width;
     if (abs.top !== undefined && abs.bottom !== undefined) delete size.height;
-    // В Figma слои рисуются по порядку, а в CSS блок с position ложится поверх обычных
-    // соседей, даже если стоит раньше них. Поэтому обычному блоку, перед которым есть
-    // сосед «по координатам» (подложка, затемнение), тоже даём position — иначе он
-    // окажется под этим соседом, как заголовок обложки Autotor под градиентом.
+    // Figma draws layers in order, while in CSS a positioned block lands on top
+    // of its ordinary siblings even when it comes before them. So an ordinary
+    // block preceded by a positioned sibling — a ground, a darkening layer —
+    // is given a position too, or it ends up underneath it, as the heading of
+    // the Autotor cover did under its gradient.
     const lift = {};
     if (!isAbs) {
       const siblings = (parent.children || []).filter((c) => c.visible !== false);
@@ -774,14 +799,15 @@ export function createEmitter({
     return aspect ? { ...lift, ...abs, ...size, aspectRatio: aspect } : { ...lift, ...abs, ...size };
   }
 
-  // Свои компоненты вместо вёрстки из макета: что нашли и с какими данными вывели.
-  // По этому списку генератор пишет данные для Storybook.
+  // Hand-written components in place of markup from the design file: what was
+  // found and with what data it was emitted. The generator writes Storybook's
+  // data from this list.
   const componentCalls = [];
   const SIZES = { 375: "mobile", 800: "tablet", 1280: "desktop" };
   const visibleKids = (n) => (n.children || []).filter((c) => c.visible !== false);
   const texts = (n, out = []) => {
     if (n.visible === false) return out;
-    // перенос строки внутри абзаца в Figma — U+2028; компонент держит его как обычный перевод строки
+    // a line break inside a paragraph is U+2028 in Figma; the component keeps it as an ordinary newline
     if (n.type === "TEXT") out.push((n.characters || "").replace(/\u2028/g, "\n"));
     for (const c of n.children || []) texts(c, out);
     return out;
@@ -793,13 +819,15 @@ export function createEmitter({
       .join(" ");
 
   /**
-   * Карточка проекта на главной — настоящий компонент components/ProjectCard.tsx.
+   * A project card on the home page: the real components/ProjectCard.tsx.
    *
-   * В макете это блок из двух частей: «Image conteiner» и «Text conteiner». Общее
-   * оформление (размеры, скругление, тень, типографика, подъём при наведении) живёт
-   * в компоненте. Отсюда в него уходит только то, что у каждого проекта своё: ссылка,
-   * тексты, картинка и её положение в окне, включая увеличение при наведении.
-   * Возвращает null, если блок устроен не как карточка, — тогда он выводится как есть.
+   * In the design file this is a block of two parts, "Image conteiner" and
+   * "Text conteiner". The shared styling — sizes, corner radius, shadow,
+   * typography, the hover lift — lives in the component. Only what each
+   * project has of its own goes into it from here: the link, the text, the
+   * image and where it sits in its window, including how it grows on hover.
+   * Returns null when the block is not built like a card, in which case it is
+   * emitted as it stands.
    */
   function projectCard(node, pad) {
     const size = SIZES[breakpoint];
@@ -818,12 +846,12 @@ export function createEmitter({
     const leaves = visibleKids(found.image);
     if (!link?.internal || !description || rest.length || leaves.length !== 1 || visibleKids(leaves[0]).length) return null;
 
-    // окно под картинку: у части карточек своя пропорция, скругление или подложка
+    // the image window: some cards have their own aspect ratio, corner radius or ground
     const window_ = { ...place(found.image, found.card), ...frameStyle(found.image, assets, assetMap) };
     const frame = {};
     for (const k of ["aspectRatio", "borderRadius", "background", "backgroundImage"]) if (window_[k] !== undefined) frame[k] = window_[k];
 
-    // сама картинка: положение в окне — из макета
+    // the image itself; its position in the window comes from the design file
     const leaf = leaves[0];
     const { backgroundImage, backgroundSize, backgroundPosition, backgroundRepeat, ...position } = {
       ...place(leaf, found.image),
@@ -832,7 +860,7 @@ export function createEmitter({
     const src = /^url\((.+)\)$/.exec(backgroundImage || "")?.[1];
     if (!src || backgroundSize !== "cover") return null;
 
-    // наведение: куда и насколько вырастает картинка
+    // hover: where the image grows to and by how much
     let hover;
     const group = variantGroup(node);
     if (group) {
@@ -859,12 +887,13 @@ export function createEmitter({
   }
 
   /**
-   * Маленькая карточка «Смотрите также» — компонент components/RelatedCard.tsx.
+   * The small "See also" card: components/RelatedCard.tsx.
    *
-   * В макете это «Card-projects-small»: окно с картинкой и подпись. Оформление и наведение
-   * живут в компоненте; отсюда уходят ссылка, подпись, картинка с её положением и
-   * увеличением при наведении, а на планшете и телефоне — ещё высота и тень окна, если
-   * они в макете не такие, как у остальных.
+   * In the design file this is "Card-projects-small": a window with an image
+   * and a caption. The styling and the hover live in the component; what goes
+   * in from here is the link, the caption, the image with its position and its
+   * hover growth, and on tablet and phone the window's height and shadow as
+   * well, when the design file gives them something other than the usual.
    */
   const RELATED_FRAME = { height: "280px", boxShadow: "0 2px 6px 0 rgba(13, 18, 46, 0.3)" };
   function relatedCard(node, pad) {
@@ -875,12 +904,13 @@ export function createEmitter({
     const label = kids.find((c) => c.type === "TEXT");
     const leaves = window_ ? visibleKids(window_) : [];
     if (kids.length !== 2 || !window_ || !label || leaves.length !== 1 || visibleKids(leaves[0]).length) return null;
-    // На одной странице макета три карточки отвязаны от компонента и зовутся иначе,
-    // поэтому узнаём карточку ещё и по устройству: окно с тёмной подложкой и подпись.
+    // On one page of the design file three cards are detached from the
+    // component and named differently, so a card is also recognised by its
+    // shape: a window with a dark ground, and a caption.
     const named = node.name === "Card-projects-small";
     if (!named && frameStyle(window_, assets, assetMap).background !== "#0c1543") return null;
 
-    // ведёт на проект из своей подписи (см. пояснение у ссылок в emit)
+    // it leads to the project named in its own caption; see the note on links in emit
     const [text] = texts(label);
     const slug = cardMap[text.toLowerCase()];
     const link = named && slug ? { href: `/${slug}-${lang}`, internal: true } : linkOf(node, linkByName, guidToUrl);
@@ -923,8 +953,9 @@ export function createEmitter({
   }
 
   /**
-   * Контурная кнопка сайта — компонент components/Button.tsx.
-   * В макете: «Button» со ссылкой, внутри плашка 40px с обводкой и одна подпись.
+   * The outlined site button: components/Button.tsx.
+   * In the design file: "Button" with a link, holding a 40px outlined plate and
+   * a single label.
    */
   function siteButton(node, parent, pad) {
     if (node.name !== "Button") return null;
@@ -952,26 +983,27 @@ export function createEmitter({
   }
 
   /**
-   * Переключатель светлой и тёмной темы в кейсах (компоненты «toggle», «toggle-mobile»).
-   * Метка нужна для общего наведения: обводка цвета круга на ползунке — см. StateGroups.tsx
-   * и `[data-toggle]` в app/globals.css.
+   * The light/dark theme switch inside the cases, the "toggle" and
+   * "toggle-mobile" components. The marker is there for the shared hover: an
+   * outline in the colour of the circle on the knob — see StateGroups.tsx and
+   * `[data-toggle]` in app/globals.css.
    */
   const toggleAttr = (node) => (/^toggle(-mobile)?$/.test(node.name || "") ? ' data-toggle=""' : "");
 
   function emit(node, parent, depth, insideLink = false, swapTargets = null) {
     const pad = indentUnit.repeat(depth);
 
-    // Невидимые узлы в вёрстку не попадают
+    // Invisible nodes never reach the markup
     if (node.visible === false) return "";
 
-    // Карточки проектов — свои компоненты, а не вёрстка из макета
+    // Project cards are hand-written components, not markup from the design file
     if (!insideLink && !hoverGroup && !stateCtx) {
       const card = projectCard(node, pad) || relatedCard(node, pad) || siteButton(node, parent, pad);
       if (card) return card;
     }
 
-    // Лист, у которого в другом состоянии блока другая картинка или текст:
-    // следом за ним выводим его «двойников», CSS покажет нужного.
+    // A leaf carrying a different image or text in another state of the block:
+    // its counterparts are emitted after it and CSS shows the right one.
     const twins = stateCtx?.marks.get(node)?.alts;
     if (twins && !expanding.has(node)) {
       expanding.add(node);
@@ -980,8 +1012,9 @@ export function createEmitter({
       return out;
     }
 
-    // Повёрнутая группа — не блок, а общий поворот для детей. Как и оригинал,
-    // раскрываем её: каждый ребёнок встаёт в родителя группы со сложенной матрицей.
+    // A rotated group is not a block but a shared rotation for its children.
+    // As the original does, it is unwrapped: each child moves into the group's
+    // parent with the matrices composed.
     if (node.type === "GROUP" && rotation(node) && node.relativeTransform) {
       const [[g00, g01, g02], [g10, g11, g12]] = node.relativeTransform;
       return (node.children || [])
@@ -1004,19 +1037,20 @@ export function createEmitter({
     }
 
     const style = { ...place(node, parent), ...frameStyle(node, assets, assetMap) };
-    // своя правка оформления блока поверх макета (overrides.json → frameStyles): по имени слоя и ширине макета
+    // a hand-made styling correction on top of the design file (overrides.json → frameStyles), by layer name and design width
     const ownFrame = frameStyles.find((r) => r.name === node.name)?.at?.[breakpoint];
     if (ownFrame) Object.assign(style, ownFrame);
     if (node.pull) style[node.pull.axis === "VERTICAL" ? "marginTop" : "marginLeft"] = px(node.pull.value);
 
-    // Поворот: вокруг центра. У стрелки «назад» это та же стрелка «вперёд», повёрнутая на 180°.
+    // Rotation about the centre. The back arrow is the forward arrow turned 180°.
     const angle = rotation(node);
     if (angle) style.transform = [style.transform, `rotate(${angle}deg)`].filter(Boolean).join(" ");
 
-    // Ссылка узла. Карточка «Смотрите также» ведёт на проект из своей подписи:
-    // в оригинале на части страниц подпись заменена, а ссылка осталась от
-    // мастер-компонента и ведёт не туда — поэтому адрес берём по подписи.
-    // Вложенные ссылки недопустимы: внутри <a> детей не оборачиваем.
+    // The node's link. A "See also" card leads to the project named in its
+    // caption: on some pages of the original the caption was replaced while the
+    // link stayed with the main component and points elsewhere, so the URL is
+    // taken from the caption. Nested links are not allowed, so children inside
+    // an <a> are not wrapped.
     let link = insideLink ? null : linkOf(node, linkByName, guidToUrl);
     if (!insideLink && node.name === "Card-projects-small") {
       const slug = cardMap[(firstText(node) || "").toLowerCase()];
@@ -1028,7 +1062,7 @@ export function createEmitter({
       : "";
     if (link) usedLinks.add(link.href);
 
-    // Интерактивный блок: выводим его состояния слоями
+    // An interactive block: its states are emitted as layers
     const enclosing = swapTargets || new Set();
     const group = variantGroup(node);
     if (group && ![...group.targets].some((t) => enclosing.has(t))) {
@@ -1040,16 +1074,16 @@ export function createEmitter({
       const box = place(node, parent);
       if (!box.position) box.position = "relative";
       if (node.pull) box[node.pull.axis === "VERTICAL" ? "marginTop" : "marginLeft"] = px(node.pull.value);
-      if (style.transform) box.transform = style.transform; // поворот: стрелка «назад» — повёрнутая «вперёд»
+      if (style.transform) box.transform = style.transform; // rotation: the back arrow is the forward one turned round
       if (style.opacity != null) box.opacity = style.opacity;
-      // сам блок может переключать состояние блока снаружи: стрелка карусели —
-      // это кнопка со своим состоянием наведения
+      // the block can itself switch the state of the block around it: a
+      // carousel arrow is a button with a hover state of its own
       const outer = triggers(node, enclosing) + motionAttrs(node, style.transform) + toggleAttr(node);
       if (outer.includes("data-swap-to") || outer.includes("data-swap-map")) box.cursor = "pointer";
       const inner = new Set([...enclosing, ...group.targets]);
       const panels = group.variants
         .map(({ id, tree: v, info }) => {
-          // панель занимает коробку блока; положение (в потоке или поверх) ставит VariantGroup
+          // the panel fills the block's box; VariantGroup decides whether it sits in the flow or over it
           const fixed = sizing(v, parent);
           const vs = { ...frameStyle(v, assets, assetMap), width: fixed.width || box.left !== undefined ? "100%" : undefined, height: fixed.height ? "100%" : undefined };
           const kids = (v.children || [])
@@ -1064,7 +1098,7 @@ export function createEmitter({
         })
         .join("");
       if (link) {
-        // блок-ссылка: коробку держит ссылка, состояния — внутри неё
+        // a link block: the link holds the box and the states sit inside it
         const fill = { position: "relative", width: "100%", height: box.height ? "100%" : undefined };
         return (
           `${pad}<${linkTag} ${linkAttrs}${outer} style=${styleLiteral({ display: "block", ...box })}>\n` +
@@ -1081,11 +1115,11 @@ export function createEmitter({
       );
     }
 
-    // Узел, который переключает состояние блока кликом или наведением
+    // A node that switches the block's state on click or on hover
     let attrs = (swapTargets ? triggers(node, swapTargets) : "") + motionAttrs(node, style.transform) + toggleAttr(node);
     if (attrs.includes("data-swap-to") || attrs.includes("data-swap-map")) style.cursor = "pointer";
 
-    // Поведение из макета: параллакс при прокрутке и увеличение по клику
+    // Behaviour from the design file: parallax on scroll and click to zoom
     const parallax = node.behaviors?.scrollParallax;
     if (parallax && parallax.axis === "VERTICAL" && parallax.speed != null) {
       attrs += ` data-parallax="${Math.round((1 - parallax.speed) * 1e4) / 1e4}"`;
@@ -1098,17 +1132,17 @@ export function createEmitter({
     }
     const swapAttr = attrs;
 
-    // Картинка или сгенерированный из Figma SVG — отдельный тег <img>
+    // An image, or an SVG generated out of Figma, becomes its own <img> tag
     const asset = nodeAsset(node, assets);
     if (asset) {
       asset.src = resolve(asset.src.replace("/a/", ""));
       usedAssets.add(asset.src);
-      // собственная прозрачность узла уже запечена в картинку; остаётся прозрачность группы
+      // the node's own opacity is already baked into the image; the group's opacity remains
       const assetOpacity = node.groupOpacity != null && node.groupOpacity !== 1 ? node.groupOpacity : null;
 
-      // Повёрнутая картинка, стоящая по координатам. Оригинал растягивает её вместе
-      // с родителем уже после поворота; то же самое даёт SVG с viewBox по габаритам
-      // повёрнутого прямоугольника и картинкой с матрицей внутри.
+      // A rotated image placed by coordinates. The original stretches it with
+      // its parent after the rotation; an SVG with a viewBox the size of the
+      // rotated rectangle, holding the image with its matrix, does the same.
       const isAbs = node.layoutPositioning === "ABSOLUTE" || !parent?.layoutMode;
       if (angle && isAbs && node.size?.x >= 1 && node.size?.y >= 1) {
         const [[a, b, tx], [c, d, ty]] = node.relativeTransform;
@@ -1128,7 +1162,7 @@ export function createEmitter({
         const img = assetBox(node, asset);
         const r = (v) => Math.round(v * 1e6) / 1e6;
         return (
-          // сам <svg> отступами не растягивается, поэтому габариты держит обёртка
+          // an <svg> is not stretched by insets, so a wrapper holds its size
           `${pad}<span${swapAttr} style=${styleLiteral(frame)}>\n` +
           `${pad}${indentUnit}<svg viewBox="0 0 ${round(bw)} ${round(bh)}" preserveAspectRatio="none" aria-hidden="true" style={{ position: "absolute", left: "0", top: "0", width: "100%", height: "100%", overflow: "visible" }}>\n` +
           `${pad}${indentUnit}${indentUnit}<image href=${JSON.stringify(asset.src)} x="${round(img.left)}" y="${round(img.top)}" width="${round(img.width)}" height="${round(img.height)}" preserveAspectRatio="none" transform="matrix(${r(a)} ${r(c)} ${r(b)} ${r(d)} ${round(-minX)} ${round(-minY)})" />\n` +
@@ -1137,23 +1171,23 @@ export function createEmitter({
         );
       }
 
-      // В картинку уже запечены заливка, обводка, скругления и тень узла,
-      // поэтому от узла остаются только положение, размер и поворот.
+      // The fill, stroke, corner radius and shadow of the node are already
+      // baked into the image, so only its position, size and rotation remain.
       const own = place(node, parent);
       for (const k of ["marginTop", "marginLeft"]) if (style[k]) own[k] = style[k];
       if (style.transform) own.transform = style.transform;
       if (assetOpacity != null) own.opacity = assetOpacity;
       if (style.cursor) own.cursor = style.cursor;
 
-      // Картинка шире коробки узла на тень и обводку — кладём её со смещением
+      // The image is wider than the node's box by the shadow and the stroke, so it is offset
       const box = assetBox(node, asset);
       const bw = node.size?.x ?? 0;
       const bh = node.size?.y ?? 0;
       const flush =
         Math.abs(box.left) < 0.05 && Math.abs(box.top) < 0.05 &&
         Math.abs(box.width - bw) < 0.05 && Math.abs(box.height - bh) < 0.05;
-      // картинке без явного размера (растянута между краями) нужна обёртка:
-      // сам <img> отступами не растягивается
+      // an image with no explicit size, stretched between edges, needs a
+      // wrapper: an <img> is not stretched by insets
       if (!flush || own.width === undefined || own.height === undefined) {
         const wrap = styleLiteral({ ...own, position: own.position ?? "relative" });
         const inner = styleLiteral({ position: "absolute", ...assetBoxCss(node, asset), maxWidth: "none" });
@@ -1171,19 +1205,20 @@ export function createEmitter({
     if (node.type === "TEXT") {
       Object.assign(style, textStyle(node, fonts));
       const { body, list, multiline } = textBody(node, pad);
-      // текст с авто-шириной в Figma не переносится
+      // auto-width text does not wrap in Figma
       if (style.textOverflow) style.whiteSpace = "nowrap";
       else if (node.textAutoResize === "WIDTH_AND_HEIGHT") style.whiteSpace = multiline ? "pre" : "nowrap";
       else if (multiline) style.whiteSpace = "pre-line";
-      // своя правка оформления текста поверх макета (overrides.json → textStyles) — последней
+      // a hand-made text styling correction on top of the design file (overrides.json → textStyles), applied last
       const own = textStyles.find((r) => (r.exact != null ? node.characters === r.exact : (node.characters || "").startsWith(r.startsWith)));
       if (own) Object.assign(style, own.style);
-      // перенос строки из макета только на телефоне: с 480px мобильная вёрстка шире
-      // макета (до 800px — планшет), и заголовок помещается в одну строку
+      // the line break from the design file applies on phones only: from 480px
+      // the mobile layout is wider than the design file — tablet starts at
+      // 800px — and the heading fits on one line
       const shown = own?.phoneBreaks ? body.replaceAll('{"\\n"}', '<br className="sm:hidden" />') : body;
       const tag = list ? "div" : tagFor(node);
       if (link) {
-        // текст-ссылка: ссылка внутри, чтобы тег текста (заголовок, абзац) сохранился
+        // text that is a link: the link goes inside, so the text's tag, a heading or a paragraph, is kept
         const s = styleLiteral(style);
         return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}><${linkTag} ${linkAttrs}>${shown}</${linkTag}></${tag}>\n`;
       }
@@ -1191,13 +1226,15 @@ export function createEmitter({
       return `${pad}<${tag}${swapAttr}${s ? ` style=${s}` : ""}>${shown}</${tag}>\n`;
     }
 
-    // Кадрированная заливка: картинку кладём отдельным тегом внутрь обрезающего блока,
-    // потому что фоном нужный кусок не выразить
+    // A cropped fill: the image goes in as its own tag inside a clipping
+    // block, because a background cannot express the part that is wanted
     const fill = imageFill(node, assets, assetMap);
     let cropped = "";
-    // Видео-заливка (прототип в экране телефона на POT). Файлы видео в выгрузке нет —
-    // он скачан с оригинала и пережат; соответствие хеша и файла — overrides.json → videos.
-    // Кадр задан как у картинки: imageTransform — какая часть видео видна в слое.
+    // A video fill: the prototype inside the phone screen on POT. The export
+    // holds no video file; it was downloaded from the original and recompressed,
+    // and overrides.json → videos maps hash to file. The frame is given as it
+    // is for an image: imageTransform says which part of the video the layer
+    // shows.
     const videoFill = (node.fills || []).find((f) => f.visible !== false && f.type === "VIDEO");
     const videoFile = videoFill && videos[videoFill.videoRef];
     let videoTag = "";
@@ -1209,8 +1246,9 @@ export function createEmitter({
       videoTag =
         `${indentUnit.repeat(depth + 1)}<video src=${JSON.stringify(videoFile.src)}${videoFile.poster ? ` poster=${JSON.stringify(videoFile.poster)}` : ""} autoPlay loop muted playsInline preload="metadata" aria-hidden="true" style={{ position: "absolute", left: "${pc(-tx / a)}", top: "${pc(-ty / d)}", width: "${pc(1 / a)}", height: "${pc(1 / d)}", maxWidth: "none", objectFit: "fill" }} />\n`;
     }
-    // своя картинка вместо картинки из макета (overrides.json → imageSwaps): окно получает
-    // пропорции новой картинки, картинка заполняет его целиком
+    // a hand-picked image in place of the design file's (overrides.json →
+    // imageSwaps): the window takes the new image's aspect ratio and the image
+    // fills it completely
     const swap = fill && imageSwaps.find((r) => fill.src.includes(r.from));
     if (swap) {
       style.position = style.position || "relative";
@@ -1224,7 +1262,7 @@ export function createEmitter({
       style.position = style.position || "relative";
       style.overflow = "hidden";
       const c = fill.crop;
-      // в процентах от блока: кадр сохраняется, когда блок растягивается
+      // as a percentage of the block, so the crop holds when the block stretches
       const bw = node.size?.x || 1;
       const bh = node.size?.y || 1;
       const pc = (v, base) => `${Math.round((v / base) * 1e4) / 100}%`;
@@ -1233,15 +1271,15 @@ export function createEmitter({
         `${indentUnit.repeat(depth + 1)}<img src=${JSON.stringify(fill.src)} alt="" aria-hidden="true" loading="lazy" decoding="async" style=${inner} />\n`;
     }
 
-    // Если внутри есть абсолютно позиционированные дети — этот узел им точка отсчёта
+    // When there are absolutely positioned children inside, this node is their origin
     const visibleKids = (node.children || []).filter((c) => c.visible !== false);
     const hasAbsoluteKid = visibleKids.some(
       (c) => c.layoutPositioning === "ABSOLUTE" || !node.layoutMode
     );
     if (hasAbsoluteKid && !style.position) style.position = "relative";
 
-    // Отрицательный зазор (элементы внахлёст) в CSS gap не выразить — сдвигаем
-    // каждого следующего ребёнка отрицательным отступом.
+    // A negative gap, with the elements overlapping, cannot be expressed by CSS
+    // gap, so each following child is pulled back by a negative margin.
     const overlap = node.layoutMode && node.itemSpacing < 0 && node.primaryAxisAlignItems !== "SPACE_BETWEEN" ? node.itemSpacing : 0;
     let flowIndex = 0;
     const kids =
@@ -1252,7 +1290,7 @@ export function createEmitter({
           const inFlow = c.layoutPositioning !== "ABSOLUTE";
           const pull = overlap && inFlow && flowIndex++ > 0 ? overlap : 0;
           const child = pull ? { ...c, pull: { axis: node.layoutMode, value: pull } } : c;
-          // свой компонент рядом с узлом: оба уходят в общий ряд или столбик
+          // a hand-written component beside the node: both go into the shared row or column
           const side = additions.find((a) => a.beside === c.name && (a.parents || []).includes(node.name));
           if (side) {
             const column = side.direction?.[breakpoint] === "column";

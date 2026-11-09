@@ -1,5 +1,5 @@
 #!/bin/bash
-# Сверка всех кейсов на одной ширине: tools/verify/matrix.sh 1440 [страницы...]
+# Compare every case at one width: tools/verify/matrix.sh 1440 [pages...]
 export PATH="$HOME/.local/node/bin:$PATH"
 cd "$(dirname "$0")/../.." || exit 1
 W=${1:-1440}; shift

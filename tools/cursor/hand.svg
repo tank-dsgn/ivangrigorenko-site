@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="31" viewBox="0 0 29 31" fill="none">
-  <!-- Рука для курсора: силуэт по значку pointer из Lucide (ISC), обводка и тень как у стрелки из макета -->
+  <!-- Hand cursor: silhouette after Lucide's pointer icon (ISC), outline and shadow as on the arrow from the design file -->
   <defs>
     <filter id="f" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" x="0" y="0" width="29" height="31">
       <feFlood flood-opacity="0" result="B"/>

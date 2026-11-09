@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import Button from "@/components/Button";
-// кнопки, которые реально стоят на страницах
+// the buttons that actually appear on the pages
 import { buttons, type Lang } from "../data";
 
 const meta: Meta<typeof Button> = {
@@ -30,7 +30,7 @@ const meta: Meta<typeof Button> = {
       },
     },
   },
-  // блок, внутри которого видно, как кнопка тянется на всю ширину
+  // a block that shows the button stretching to the full width
   decorators: [(Story) => <div className="flex w-[335px] flex-col items-start"><Story /></div>],
 };
 export default meta;
@@ -40,7 +40,7 @@ export const FitLabel: Story = { name: "Fit label" };
 export const FullWidth: Story = { name: "Full width", args: { width: "fill" } };
 export const WideLabel: Story = { name: "Wide label", args: { label: "Visit website", width: "fill", wideLabel: true } };
 
-/** Все кнопки, которые сейчас стоят на страницах сайта */
+/** Every button currently on the site */
 export const OnSite: StoryObj<{ lang: Lang }> = {
   name: "All site buttons",
   args: { lang: "en" },

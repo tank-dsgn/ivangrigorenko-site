@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Картинки в полном размере.
+Images at full size.
 
-При первой выгрузке картинки были скачаны уменьшенными (до 1600px по длинной
-стороне) и на сайте выглядели мыльно: файл оказывался меньше, чем место под него.
-Скрипт перекачивает оригиналы с Figma Sites и, если оригинал крупнее, заменяет файл.
+The first export downloaded the images reduced, to 1600px on the long side,
+and they looked soft on the site: the file was smaller than the space it had to
+fill. This script pulls the originals from Figma Sites again and replaces a file
+whenever the original is larger.
 
     python3 tools/figma/refetch_assets.py [--max-side 3000] [--quality 88]
 
-Оригинал крупнее `--max-side` уменьшается до этого размера: 3000px хватает
-на двойную плотность экрана для самой широкой картинки. Результат — WebP,
-подмена имён записывается в lib/asset-map.json.
-Нужен доступ к ivangrigorenko.com, пока там лежит версия на Figma Sites.
+An original larger than `--max-side` is reduced to that size: 3000px covers a
+double-density screen for the widest image. The result is WebP, and the name
+substitution is recorded in lib/asset-map.json.
+Needs access to ivangrigorenko.com while the Figma Sites version is still
+there.
 """
 
 import argparse
@@ -39,7 +41,7 @@ def main() -> None:
     args = ap.parse_args()
 
     mapping = json.loads(MAP_FILE.read_text()) if MAP_FILE.exists() else {}
-    # исходное имя из выгрузки → файл, который лежит сейчас
+    # the original name from the export → the file that is there now
     current = {name: ASSETS / webp for name, webp in mapping.items()}
     for f in ASSETS.iterdir():
         if f.suffix.lower() in (".png", ".jpg", ".jpeg") and f.name not in current:
@@ -48,7 +50,7 @@ def main() -> None:
     def work(item):
         name, path = item
         if not path.exists():
-            return name, "нет файла", 0
+            return name, "no file", 0
         try:
             with Image.open(path) as im:
                 have = im.size
@@ -57,13 +59,13 @@ def main() -> None:
             im = Image.open(io.BytesIO(data))
             im.load()
         except Exception as exc:  # noqa: BLE001
-            return name, f"ошибка: {exc}", 0
+            return name, f"error: {exc}", 0
 
         full = im.size
         k = min(1.0, args.max_side / max(full))
         want = (round(full[0] * k), round(full[1] * k))
         if want[0] <= have[0] * 1.05:
-            return name, "уже полный", 0
+            return name, "already full size", 0
 
         im = im.convert("RGBA" if "A" in im.getbands() or im.mode == "P" else "RGB")
         if want != full:
@@ -84,11 +86,11 @@ def main() -> None:
                 replaced += 1
                 grown += delta
                 print(f"  {name[:12]}  {note}")
-            elif note.startswith("ошибка"):
+            elif note.startswith("error"):
                 print(f"  {name[:12]}  {note}")
 
     MAP_FILE.write_text(json.dumps(mapping, indent=2, sort_keys=True) + "\n")
-    print(f"заменено {replaced} из {len(current)}, прибавка {grown / 1e6:.1f} МБ")
+    print(f"replaced {replaced} of {len(current)}, gained {grown / 1e6:.1f} MB")
 
 
 if __name__ == "__main__":

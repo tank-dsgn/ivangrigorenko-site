@@ -1,9 +1,9 @@
-// node tools/verify/ev.mjs <url> <ширина> <файл.js|выражение> — выполнить код на странице и напечатать результат.
-// SHOT=путь.png — заодно сохранить скриншот окна. PDF=путь.pdf — напечатать страницу в PDF (размер из @page).
+// node tools/verify/ev.mjs <url> <width> <file.js|expression> — run code on the page and print the result.
+// SHOT=path.png also saves a screenshot of the window. PDF=path.pdf prints the page to PDF, at the size from @page.
 import { spawn } from "child_process"; import fs from "fs"; import os from "os"; import path from "path";
 const dir = path.dirname(new URL(import.meta.url).pathname);
 const [,, url, widthArg, exprArg, waitArg] = process.argv;
-const width = +widthArg; const height = +process.env.H || (width < 700 ? 812 : 900); const PORT = 9334; // H=1800 — высота окна для длинного скриншота
+const width = +widthArg; const height = +process.env.H || (width < 700 ? 812 : 900); const PORT = 9334; // H=1800 sets the window height for a long screenshot
 const expr = fs.existsSync(exprArg) ? fs.readFileSync(exprArg, "utf8") : exprArg;
 const chrome = spawn("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", ["--headless=new", `--remote-debugging-port=${PORT}`, `--user-data-dir=${os.tmpdir()}/ig-verify-chrome2`, "--no-first-run", "--disable-extensions", "--hide-scrollbars", `--window-size=${width},${height}`, "about:blank"], { stdio: "ignore" });
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -19,11 +19,11 @@ try {
   await send("Page.navigate", { url });
   for (let i = 0; i < 150 && !events.some((e) => e.method === "Page.loadEventFired"); i++) await sleep(100);
   await sleep(+(waitArg || 4000));
-  // STEPS='[{"scroll":1300},{"move":[300,340]},{"click":[300,340]},{"wait":500}]' — настоящая мышь до выполнения кода
+  // STEPS='[{"scroll":1300},{"move":[300,340]},{"click":[300,340]},{"wait":500}]' drives a real mouse before the code runs
   for (const st of JSON.parse(process.env.STEPS || "[]")) {
     if (st.scroll != null) await send("Runtime.evaluate", { expression: `document.documentElement.style.scrollBehavior="auto";scrollTo(0,${st.scroll})` });
     if (st.move) await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.move[0], y: st.move[1], pointerType: "mouse" });
-    // down — нажать и не отпускать (проверить :active)
+    // down presses and holds, to check :active
     if (st.down) { await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.down[0], y: st.down[1] }); await send("Input.dispatchMouseEvent", { type: "mousePressed", x: st.down[0], y: st.down[1], button: "left", clickCount: 1 }); }
     if (st.click) {
       await send("Input.dispatchMouseEvent", { type: "mouseMoved", x: st.click[0], y: st.click[1], pointerType: "mouse" });

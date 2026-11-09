@@ -1,4 +1,4 @@
-// node tools/verify/behaviors.mjs <страница> <ширина фрейма> — какие узлы видимого дерева несут поведение
+// node tools/verify/behaviors.mjs <page> <frame width> — which nodes of the visible tree carry behaviour
 import fs from "fs"; import zlib from "zlib";
 import { createResolver } from "../figma/resolve.mjs";
 const [,, slug, width] = process.argv;

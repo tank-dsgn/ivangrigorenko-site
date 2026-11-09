@@ -1,4 +1,4 @@
-// node tools/verify/path.mjs <страница> <ширина фрейма> <regexp> [сколько предков] — путь до узла в развёрнутом дереве
+// node tools/verify/path.mjs <page> <frame width> <regexp> [how many ancestors] — the path to a node in the expanded tree
 import fs from "fs"; import zlib from "zlib";
 import { createResolver } from "../figma/resolve.mjs";
 const [,, slug, width, re, up = "7"] = process.argv;

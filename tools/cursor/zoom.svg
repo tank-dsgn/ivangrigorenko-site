@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-  <!-- Лупа для курсора: обводка и тень как у стрелки из макета, кончик курсора в центре линзы -->
+  <!-- Magnifier cursor: outline and shadow as on the arrow from the design file, the cursor point at the centre of the lens -->
   <defs>
     <filter id="f" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" x="0" y="0" width="30" height="31">
       <feFlood flood-opacity="0" result="B"/>

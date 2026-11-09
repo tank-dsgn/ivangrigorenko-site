@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Оптимизация картинок, выгруженных из Figma Sites.
+Optimises the images exported from Figma Sites.
 
-Крупные PNG переводятся в WebP: вес падает в разы, визуально разницы нет.
-Результат записывается в карту lib/asset-map.json — её читают и
-генератор, и приложение, поэтому ссылки в коде остаются по хешу Figma.
+Large PNGs are converted to WebP: the weight drops several times over with no
+visible difference. The result is recorded in lib/asset-map.json, which both the
+generator and the application read, so references in the code stay keyed by the
+Figma hash.
 
     python3 tools/figma/optimize_assets.py [--quality 88] [--min-bytes 60000]
 
-Скрипт идемпотентный: уже сконвертированное пропускается.
+The script is idempotent: anything already converted is skipped.
 """
 
 import argparse
@@ -48,15 +49,15 @@ def main() -> None:
 
         try:
             with Image.open(png) as im:
-                # WebP держит прозрачность, поэтому палитру разворачиваем в RGBA
+                # WebP keeps transparency, so a palette image is expanded to RGBA
                 im = im.convert("RGBA" if "A" in im.getbands() or im.mode == "P" else "RGB")
                 im.save(webp, "WEBP", quality=args.quality, method=6)
         except Exception as exc:  # noqa: BLE001
-            print(f"  пропуск {png.name}: {exc}")
+            print(f"  skipped {png.name}: {exc}")
             continue
 
         new_size = webp.stat().st_size
-        # если WebP не выиграл — оставляем оригинал
+        # if WebP did not win, keep the original
         if new_size >= size * 0.9:
             webp.unlink()
             skipped += 1
@@ -69,9 +70,9 @@ def main() -> None:
 
     MAP_FILE.write_text(json.dumps(mapping, indent=2, sort_keys=True) + "\n")
 
-    print(f"сконвертировано: {converted}, оставлено как есть: {skipped}")
-    print(f"освобождено: {saved / 1024 / 1024:.0f} МБ")
-    print(f"карта замен: {MAP_FILE.relative_to(ROOT)} ({len(mapping)} записей)")
+    print(f"converted: {converted}, left as they were: {skipped}")
+    print(f"freed: {saved / 1024 / 1024:.0f} MB")
+    print(f"substitution map: {MAP_FILE.relative_to(ROOT)} ({len(mapping)} entries)")
 
 
 if __name__ == "__main__":

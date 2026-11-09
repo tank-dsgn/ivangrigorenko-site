@@ -24,7 +24,7 @@ const meta: Meta<typeof Header> = {
       },
     },
   },
-  // шапка position: fixed — держим её внутри своей рамки, чтобы не уезжала на страницу документации
+  // the header is position: fixed, so it is kept inside its own frame and does not escape onto the docs page
   decorators: [(Story) => <div className="h-20 [transform:translateZ(0)]"><Story /></div>],
 };
 export default meta;

@@ -5,8 +5,9 @@ import "./figma-fonts.css";
 import Analytics from "@/components/Analytics";
 import { DEPLOY_URL } from "@/lib/pages";
 
-// Те же файлы Open Sans, что отдаёт оригинал на Figma Sites. У версии из Google Fonts
-// чуть другая ширина букв — заголовки выходили на 2% уже, а это риск другого переноса строк.
+// The same Open Sans files the original on Figma Sites serves. The Google Fonts
+// build has slightly different letter widths — headings came out 2% narrower,
+// which risks a different line break.
 const openSans = localFont({
   src: [
     { path: "./fonts/OpenSans-Regular.woff2", weight: "400", style: "normal" },
@@ -17,7 +18,7 @@ const openSans = localFont({
   variable: "--font-open-sans",
 });
 
-// Светлый курсив встречается только в цитатах кейса Eazychange — заранее не грузим
+// The light italic appears only in the Eazychange pull quotes, so it is not preloaded
 const openSansItalic = localFont({
   src: [{ path: "./fonts/OpenSans-LightItalic.woff2", weight: "300", style: "italic" }],
   display: "swap",

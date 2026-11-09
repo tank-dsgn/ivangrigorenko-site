@@ -1,18 +1,18 @@
-// Сборка дерева страницы из выгрузки Figma Sites.
+// Builds a page tree out of the Figma Sites export.
 //
-// В выгрузке дети лежат списком id, а инстансы компонентов — «неразвёрнутыми»:
-// у инстанса есть ссылка на мастер-компонент, коэффициент масштаба и список
-// переопределений. Чтобы получить то, что реально нарисовано на сайте, инстанс
-// нужно развернуть самим:
+// In the export children are a list of ids and component instances come
+// unexpanded: an instance carries a reference to its main component, a scale
+// factor and a list of overrides. To get at what is actually drawn on the site
+// the instance has to be expanded here:
 //
-//   1. взять детей мастер-компонента;
-//   2. умножить их размеры на масштаб инстанса (`uniformScaleFactor`);
-//   3. наложить переопределения (`overrides`) — тексты, заливки, размеры,
-//      видимость, замену вложенного компонента;
-//   4. подставить картинку именно этого инстанса (`stablePathToAssetInfo`).
+//   1. take the main component's children;
+//   2. multiply their sizes by the instance's scale (`uniformScaleFactor`);
+//   3. apply the `overrides` — text, fills, sizes, visibility, and the
+//      substitution of a nested component;
+//   4. put in the image belonging to this very instance (`stablePathToAssetInfo`).
 //
-// Адрес узла в переопределении — путь из имён слоёв с номером среди
-// одноимённых соседей: ["Frame0", "Levels0", "Wifi0"].
+// A node's address inside an override is a path of layer names, each with its
+// index among same-named siblings: ["Frame0", "Levels0", "Wifi0"].
 
 const SCALED = [
   "paddingTop", "paddingRight", "paddingBottom", "paddingLeft",
@@ -20,7 +20,7 @@ const SCALED = [
   "maxWidth", "maxHeight", "minWidth", "minHeight",
 ];
 
-/** Геометрия инстанса: при смене варианта она остаётся от самого инстанса */
+/** The instance's geometry: on a variant swap it stays with the instance */
 const GEOMETRY = [
   "id", "name", "type", "relativeTransform", "size", "constraints", "constraintValues",
   "layoutPositioning", "layoutAlign", "layoutGrow", "overrides", "uniformScaleFactor",
@@ -29,7 +29,7 @@ const GEOMETRY = [
 
 const mul = (v, f) => (typeof v === "number" ? v * f : v);
 
-/** Копия свойств узла с размерами, умноженными на масштаб */
+/** A copy of a node's properties with its sizes multiplied by the scale */
 function scaleProps(src, f) {
   if (f === 1) return { ...src };
   const n = { ...src };
@@ -39,7 +39,7 @@ function scaleProps(src, f) {
     n.relativeTransform = [[a[0], a[1], a[2] * f], [b[0], b[1], b[2] * f]];
   }
   for (const k of SCALED) if (n[k] != null) n[k] = mul(n[k], f);
-  // толщина обводки по умолчанию — 1, в выгрузке она опущена
+  // the default stroke weight is 1 and the export leaves it out
   if (n.strokeWeight == null && !n.individualStrokeWeights && n.strokes?.length) n.strokeWeight = f;
   if (n.constraintValues) {
     n.constraintValues = Object.fromEntries(
@@ -61,7 +61,7 @@ function scaleProps(src, f) {
       offset: e.offset ? { x: e.offset.x * f, y: e.offset.y * f } : e.offset,
     }));
   }
-  // переопределения вложенного инстанса заданы в координатах мастера — масштабируем и их
+  // a nested instance's overrides are given in the main component's coordinates, so they are scaled too
   if (Array.isArray(n.overrides)) {
     n.overrides = n.overrides.map((o) => ({ ...o, value: scaleProps(o.value, f) }));
   }
@@ -69,17 +69,17 @@ function scaleProps(src, f) {
 }
 
 /**
- * Значения в `overrides` масштабированного инстанса в данных уже конечные
- * (кегль 8.58 = 12 × 0.71), но сайт на Figma Sites сначала накладывает
- * переопределения, а потом масштабирует всё содержимое — и умножает их на
- * масштаб ещё раз. В макете Autotor текст бейджа выходит 6.1 вместо 8.58.
- * Повторяем это, потому что цель — совпасть с опубликованным сайтом.
- * `false` — «как в макете Figma».
+ * In the data, the `overrides` of a scaled instance are already final — a font
+ * size of 8.58 is 12 × 0.71 — but the Figma Sites site applies the overrides
+ * first and scales the whole content afterwards, multiplying them by the scale
+ * a second time. On the Autotor page the badge text comes out at 6.1 rather
+ * than 8.58. That is reproduced here, because the goal is to match the
+ * published site. `false` means "as in the Figma file".
  */
 const RESCALE_OVERRIDES = true;
 
 export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
-  // у компонентов из библиотеки дети адресуются не по id, а по overrideKey
+  // children of library components are addressed by overrideKey, not by id
   const byKey = {};
   for (const n of Object.values(nodeById)) if (n.overrideKey) byKey[n.overrideKey] = n;
 
@@ -90,9 +90,10 @@ export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
   const keyOf = (n) => n.overrideKey ?? n.id;
 
   /**
-   * Наложить значение переопределения на узел. Список переопределений вложенного
-   * инстанса не заменяет его собственный, а дополняет: у кнопки в мастере уже
-   * заданы цвет текста и обводка, а снаружи приходит только новая подпись.
+   * Apply one override value to a node. A nested instance's list of overrides
+   * adds to its own rather than replacing it: the button in the main component
+   * already has its text colour and its outline, and all that arrives from
+   * outside is a new label.
    */
   function applyOverride(node, value) {
     const { overrides, ...rest } = value;
@@ -101,8 +102,9 @@ export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
   }
 
   /**
-   * Свойства компонента. У узла в мастере записано, какое свойство управляет его
-   * видимостью, текстом или вложенным компонентом, а значения лежат в инстансе.
+   * Component properties. A node in the main component records which property
+   * drives its visibility, its text or its nested component, while the values
+   * live on the instance.
    */
   function applyProps(node, raw, props) {
     const refs = raw.componentPropertyReferences;
@@ -117,9 +119,9 @@ export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
   }
 
   /**
-   * @param raw       узел из выгрузки
-   * @param ctx       контекст инстанса: { path, scale, overrides } или null вне инстансов
-   * @param forceMain развернуть инстанс как другой вариант компонента
+   * @param raw       the node from the export
+   * @param ctx       instance context: { path, scale, overrides }, or null outside an instance
+   * @param forceMain expand the instance as a different variant of the component
    */
   function build(raw, ctx, depth = 0, forceMain = null) {
     if (!raw || depth > 80) return null;
@@ -141,7 +143,7 @@ export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
     let childIds = raw.children || [];
     let childCtx = ctx ? { ...ctx, overrides: deeper } : null;
 
-    // размер, для которого посчитаны смещения детей: до переопределений инстанса
+    // the size the children's offsets were computed against: before the instance's overrides
     let layoutSize = raw.size && ctx ? { x: raw.size.x * ctx.scale, y: raw.size.y * ctx.scale } : raw.size;
 
     const mainId = forceMain ?? node.mainComponentId;
@@ -154,8 +156,9 @@ export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
           ? (node.overrides || []).map((o) => (o.key.length ? { ...o, value: scaleProps(o.value, factor) } : o))
           : node.overrides || [];
 
-      // Компонент заменён (переопределением или сменой варианта): свойства корня
-      // берём от нового мастера, от инстанса остаётся только геометрия.
+      // The component has been swapped, by an override or by a change of
+      // variant: the root's properties come from the new main component and
+      // only the geometry is left from the instance.
       if (mainId !== raw.mainComponentId) {
         const keep = {};
         for (const k of GEOMETRY) if (node[k] !== undefined) keep[k] = node[k];
@@ -202,9 +205,9 @@ export function createResolver({ nodeById, stablePathToAssetInfo = {} }) {
   }
 
   return {
-    /** Дерево от узла с данным id */
+    /** The tree starting at the node with this id */
     resolve: (id) => build(nodeById[id] || lookup(id), null),
-    /** Тот же инстанс, развёрнутый как другой вариант своего набора */
+    /** The same instance, expanded as another variant of its set */
     resolveVariant: (node, variantId) =>
       node.__src ? build(node.__src.raw, node.__src.ctx, 0, variantId) : null,
   };

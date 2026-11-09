@@ -4,7 +4,7 @@ import Body, { shell } from "@/components/generated/home-en";
 
 export const metadata = pageMetadata({ path: "/" });
 
-// Корень сайта — английская главная, как в оригинале
+// The site root is the English home page, as in the original
 export default function Page() {
   return (
     <SitePage lang="en" shell={shell} active="work">

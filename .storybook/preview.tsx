@@ -3,7 +3,7 @@ import "../app/globals.css";
 import "../app/figma-fonts.css";
 import "./preview.css";
 
-// ширины, под которые свёрстан сайт: телефон < 800, планшет 800–1279, десктоп от 1280
+// the widths the site is built for: phone < 800, tablet 800–1279, desktop from 1280
 const viewports = {
   mobile: { name: "Mobile 375", styles: { width: "375px", height: "812px" } },
   tablet: { name: "Tablet 800", styles: { width: "800px", height: "1024px" } },
