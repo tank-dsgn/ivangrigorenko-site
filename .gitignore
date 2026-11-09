@@ -19,3 +19,6 @@ tools/verify/.snap
 
 # сборка Storybook
 storybook-static
+
+# личные заметки по текстам — не в репозиторий
+Тексты сайта — замечания.md
