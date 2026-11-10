@@ -1,5 +1,13 @@
 # ivangrigorenko.com
 
+**Problem.** The portfolio was built in Figma Sites, so it could be changed only inside Figma.
+
+**Idea.** Rebuild it on a stack that can be edited, and generate the layout from the Figma export instead of writing it by hand.
+
+**Built.** A Next.js site in Russian and English: six case studies, About and Home. A generator turns the Figma export into pages, the components live in Storybook, and the build is checked against the original at three breakpoints.
+
+**Decision.** Layout values are carried over one to one as inline styles, not Tailwind classes. Every number can be traced back to the design file, and nothing is lost to rounding.
+
 Ivan Grigorenko's portfolio. The original site was built in Figma Sites; this
 is the same site rebuilt on a stack that can actually be edited. Layout is
 generated from the Figma export rather than written by hand, so the pages stay
