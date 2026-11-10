@@ -8,11 +8,6 @@
 
 **Decision.** Layout values are carried over one to one as inline styles, not Tailwind classes. Every number can be traced back to the design file, and nothing is lost to rounding.
 
-Ivan Grigorenko's portfolio. The original site was built in Figma Sites; this
-is the same site rebuilt on a stack that can actually be edited. Layout is
-generated from the Figma export rather than written by hand, so the pages stay
-true to the design file down to the pixel.
-
 ## Stack
 
 - Next.js 16 (App Router) + React 19
