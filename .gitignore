@@ -22,3 +22,6 @@ storybook-static
 
 # private notes on the texts: not for the repository
 text-review-notes.md
+
+# Work log, kept locally only
+work-log.md
