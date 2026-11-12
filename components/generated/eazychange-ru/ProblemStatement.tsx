@@ -1,5 +1,5 @@
-// Секция «Problem Statement» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-ru --sections
+// Section "Problem Statement" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-ru --sections
 
 export default function ProblemStatement() {
   return (

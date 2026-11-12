@@ -1,5 +1,5 @@
-// Секция «Design» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs autotor-ru --sections
+// Section "Design" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs autotor-ru --sections
 
 export default function Design() {
   return (

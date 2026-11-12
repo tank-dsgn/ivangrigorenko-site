@@ -1,5 +1,5 @@
-// Секция «Research» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-ru --sections
+// Section "Research" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-ru --sections
 
 export default function Research() {
   return (
@@ -10,7 +10,7 @@ export default function Research() {
         <div style={{ width: "960px", display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Исследование и анализ`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Было исследовано более 20 популярных платформ — включая`}{` `}{`Binance`}{`, `}{`BestChange`}{`, `}{`SimpleSwap`}{`, `}{`Changelly`}{` и другие — чтобы определить сильные и слабые стороны, а также возможности для отличия нашего продукта`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`Было исследовано 10+ популярных платформ — включая`}{` `}{`Binance`}{`, `}{`BestChange`}{`, `}{`SimpleSwap`}{`, `}{`Changelly`}{` и другие — чтобы определить сильные и слабые стороны, а также возможности для отличия нашего продукта`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Исследованные конкуренты (10+)`}</p>

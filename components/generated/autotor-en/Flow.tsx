@@ -1,5 +1,5 @@
-// Секция «Flow» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs autotor-en --sections
+// Section "Flow" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs autotor-en --sections
 
 export default function Flow() {
   return (

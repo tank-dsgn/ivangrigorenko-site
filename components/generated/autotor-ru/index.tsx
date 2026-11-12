@@ -1,4 +1,4 @@
-// Порядок секций страницы autotor-ru. Сгенерировано.
+// The order of the sections on autotor-ru. Generated.
 
 import Hero from "./Hero";
 import Overview from "./Overview";

@@ -1,5 +1,5 @@
-// Секция «More projects» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs autotor-ru --sections
+// Section "More projects" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs autotor-ru --sections
 
 import RelatedCard from "@/components/RelatedCard";
 

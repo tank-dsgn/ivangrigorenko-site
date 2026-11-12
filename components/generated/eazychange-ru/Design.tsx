@@ -1,5 +1,5 @@
-// Секция «Design» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-ru --sections
+// Section "Design" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-ru --sections
 
 import VariantGroup from "@/components/VariantGroup";
 

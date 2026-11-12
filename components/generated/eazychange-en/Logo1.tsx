@@ -1,5 +1,5 @@
-// Секция «Logo1» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-en --sections
+// Section "Logo1" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-en --sections
 
 export default function Logo1() {
   return (

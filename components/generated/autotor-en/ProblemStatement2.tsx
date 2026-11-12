@@ -1,5 +1,5 @@
-// Секция «Problem Statement» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs autotor-en --sections
+// Section "Problem Statement" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs autotor-en --sections
 
 export default function ProblemStatement2() {
   return (

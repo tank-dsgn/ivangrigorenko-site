@@ -1,5 +1,5 @@
-// Секция «Conclusion» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-ru --sections
+// Section "Conclusion" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-ru --sections
 
 export default function Conclusion() {
   return (

@@ -1,5 +1,5 @@
-// Секция «Wireframes» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-ru --sections
+// Section "Wireframes" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-ru --sections
 
 export default function Wireframes() {
   return (

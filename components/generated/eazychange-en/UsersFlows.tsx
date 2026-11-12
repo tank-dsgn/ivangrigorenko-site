@@ -1,5 +1,5 @@
-// Секция «Users & Flows» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-en --sections
+// Section "Users & Flows" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-en --sections
 
 export default function UsersFlows() {
   return (

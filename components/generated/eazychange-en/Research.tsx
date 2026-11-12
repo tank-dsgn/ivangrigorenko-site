@@ -1,5 +1,5 @@
-// Секция «Research» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-en --sections
+// Section "Research" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-en --sections
 
 export default function Research() {
   return (
@@ -10,7 +10,7 @@ export default function Research() {
         <div style={{ width: "960px", display: "flex", flexDirection: "column", gap: "64px", justifyContent: "center", alignItems: "center" }}>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
             <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "36px", lineHeight: "40px", fontWeight: 700, color: "#0f172a" }}>{`Research & Analysis`}</p>
-            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`More than 20 popular platforms were analyzed — including Binance, BestChange, SimpleSwap, Changelly, and others — to identify their strengths and weaknesses, as well as opportunities to differentiate the product`}</p>
+            <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "20px", lineHeight: "28px", fontWeight: 400, color: "#475569" }}>{`10+ popular platforms were analyzed — including Binance, BestChange, SimpleSwap, Changelly, and others — to identify their strengths and weaknesses, as well as opportunities to differentiate the product`}</p>
           </div>
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "20px", alignItems: "flex-start" }}>
             <p style={{ fontSize: "14px", lineHeight: "20px", fontWeight: 400, textTransform: "uppercase", color: "#64748b", whiteSpace: "nowrap" }}>{`Researched competitors (10+)`}</p>

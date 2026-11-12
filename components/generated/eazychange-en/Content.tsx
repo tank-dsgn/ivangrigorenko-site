@@ -1,5 +1,5 @@
-// Секция «content» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-en --sections
+// Section "content" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-en --sections
 
 import VariantGroup from "@/components/VariantGroup";
 import RelatedCard from "@/components/RelatedCard";
@@ -62,7 +62,7 @@ export default function Content() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Research & Analysis`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`More than 20 popular platforms were analyzed — including Binance, BestChange, SimpleSwap, Changelly, and others — to identify their strengths and weaknesses, as well as opportunities to differentiate the product`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`10+ popular platforms were analyzed — including Binance, BestChange, SimpleSwap, Changelly, and others — to identify their strengths and weaknesses, as well as opportunities to differentiate the product`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Researched competitors (10+)`}</p>
@@ -526,7 +526,7 @@ export default function Content() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Research & Analysis`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`More than 20 popular platforms were analyzed — including Binance, BestChange, SimpleSwap, Changelly, and others — to identify their strengths and weaknesses, as well as opportunities to differentiate the product`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`10+ popular platforms were analyzed — including Binance, BestChange, SimpleSwap, Changelly, and others — to identify their strengths and weaknesses, as well as opportunities to differentiate the product`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Researched competitors (10+)`}</p>

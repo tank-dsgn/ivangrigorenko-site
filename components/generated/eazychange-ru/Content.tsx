@@ -1,5 +1,5 @@
-// Секция «content» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs eazychange-ru --sections
+// Section "content" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs eazychange-ru --sections
 
 import Button from "@/components/Button";
 
@@ -60,7 +60,7 @@ export default function Content() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Исследование и анализ`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Было исследовано более 20 популярных платформ — включая `}{`Binance`}{`, `}{`BestChange`}{`, `}{`SimpleSwap`}{`, `}{`Changelly`}{` и другие — чтобы определить сильные и слабые стороны, а также возможности для отличия нашего продукта`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Было исследовано 10+ популярных платформ — включая `}{`Binance`}{`, `}{`BestChange`}{`, `}{`SimpleSwap`}{`, `}{`Changelly`}{` и другие — чтобы определить сильные и слабые стороны, а также возможности для отличия нашего продукта`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Исследованные конкуренты (10+)`}</p>
@@ -475,7 +475,7 @@ export default function Content() {
           <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "24px", alignItems: "flex-start" }}>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "24px", lineHeight: "32px", fontWeight: 700, color: "#0f172a" }}>{`Исследование и анализ`}</p>
-              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Было исследовано более 20 популярных платформ — включая `}{`Binance`}{`, `}{`BestChange`}{`, `}{`SimpleSwap`}{`, `}{`Changelly`}{` и другие — чтобы определить сильные и слабые стороны, а также возможности для отличия нашего продукта`}</p>
+              <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "16px", lineHeight: "24px", fontWeight: 400, color: "#334155" }}>{`Было исследовано 10+ популярных платформ — включая `}{`Binance`}{`, `}{`BestChange`}{`, `}{`SimpleSwap`}{`, `}{`Changelly`}{` и другие — чтобы определить сильные и слабые стороны, а также возможности для отличия нашего продукта`}</p>
             </div>
             <div style={{ alignSelf: "stretch", display: "flex", flexDirection: "column", gap: "8px", alignItems: "flex-start" }}>
               <p style={{ alignSelf: "stretch", width: "min-content", minWidth: "100%", fontSize: "12px", lineHeight: "16px", fontWeight: 400, textTransform: "uppercase", color: "#64748b" }}>{`Исследованные конкуренты (10+)`}</p>

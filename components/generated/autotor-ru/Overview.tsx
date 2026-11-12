@@ -1,5 +1,5 @@
-// Секция «Overview» — сгенерировано из Figma.
-// Перегенерировать: node tools/figma/generate.mjs autotor-ru --sections
+// Section "Overview" — generated from Figma.
+// To regenerate: node tools/figma/generate.mjs autotor-ru --sections
 
 import Button from "@/components/Button";
 

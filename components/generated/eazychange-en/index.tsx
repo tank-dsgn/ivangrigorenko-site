@@ -1,4 +1,4 @@
-// Порядок секций страницы eazychange-en. Сгенерировано.
+// The order of the sections on eazychange-en. Generated.
 
 import Content from "./Content";
 import MoreProjects from "./MoreProjects";
