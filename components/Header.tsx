@@ -7,6 +7,7 @@ import { aboutHref, homeHref, t, type Lang } from "@/lib/site";
 import { findPage, menuHref } from "@/lib/pages";
 import MenuToggle from "@/components/MenuToggle";
 import Logo from "@/components/Logo";
+import { scrollToTop } from "@/components/SmoothScroll";
 
 const linkBase =
   "px-3 py-2 text-[16px] leading-6 font-semibold transition-colors duration-200 ease-figma";
@@ -31,7 +32,7 @@ export default function Header({
   const toTop = (href: string) => (e: MouseEvent<HTMLAnchorElement>) => {
     if (href !== pathname || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    scrollToTop();
   };
 
   // on narrow screens the burger opens a separate menu screen, as in the original

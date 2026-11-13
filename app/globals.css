@@ -38,6 +38,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Lenis moves the page itself every frame (components/SmoothScroll.tsx); a CSS
+   smooth scroll on top of it would animate each of those steps again */
+html.lenis {
+  scroll-behavior: auto;
+}
+
 /*
  * The markup generated from Figma gives images the exact sizes from the design
  * file. Tailwind's reset (img { max-width: 100% }) clips them, so it is undone

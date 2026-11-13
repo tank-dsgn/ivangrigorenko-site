@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lightbox from "@/components/Lightbox";
 import ScrollEffects from "@/components/ScrollEffects";
+import SmoothScroll from "@/components/SmoothScroll";
 import StateGroups from "@/components/StateGroups";
 import type { Lang } from "@/lib/site";
 
@@ -40,6 +41,7 @@ export default function SitePage({
       <Header lang={lang} active={active} />
       <main className="pt-14 xl:pt-20">{children}</main>
       {hasFooter && <Footer lang={lang} />}
+      <SmoothScroll />
       <ScrollEffects />
       <StateGroups />
       <Lightbox />
